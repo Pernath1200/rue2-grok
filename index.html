@@ -100,6 +100,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding: 1.5rem 1.3rem;
     }
     .hero-stack #menuMain .actions {
       margin-bottom: 1.5rem; /* gap between 3 main buttons: 1.4–1.7rem */
@@ -171,6 +172,12 @@
     #menuMain button {
       padding: 0.85rem 1rem;
       font-size: 0.95rem;
+    }
+    #treeRootsList > div {
+      transition: transform 0.1s ease;
+    }
+    #treeRootsList > div:hover {
+      transform: translateX(2px);
     }
     #referenceBtnWrap {
       padding-left: 1rem;
@@ -432,14 +439,16 @@
         <h2 style="margin: 0 0 0.75rem 0; font-size: 1.35rem;">What would you like to do?</h2>
 
         <!-- Quick Actions -->
-        <div class="actions" style="margin-bottom: 1rem;">
-          <button type="button" id="openDiagnosticSetupBtn" style="background: #2563eb; color: white; border-color: #2563eb;">
+        <div class="actions" style="margin-bottom: 0.85rem;">
+          <button type="button" id="openDiagnosticSetupBtn" style="background: #2563eb; color: white; border-color: #2563eb; font-weight: 600;">
             Start a Grammar Diagnostic
           </button>
         </div>
 
+        <div style="margin-bottom: 0.35rem; font-size: 0.8rem; color: var(--muted); font-weight: 500;">Quick actions</div>
+
         <!-- Clear next steps -->
-        <div style="display: grid; gap: 0.5rem; margin-bottom: 1rem;">
+        <div style="display: grid; gap: 0.4rem; margin-bottom: 0.85rem;">
           <button type="button" id="continueLastBtn" class="secondary">
             Continue where I left off
           </button>

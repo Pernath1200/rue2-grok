@@ -634,15 +634,48 @@ function renderSimpleTreeOverview() {
     return;
   }
 
+  // Build a map of rootId -> families for the pilot families
+  const familiesByRoot = {};
+  grammarTree.roots.forEach(r => familiesByRoot[r.id] = []);
+
+  if (grammarTree.families) {
+    grammarTree.families.forEach(fam => {
+      const rootId = fam.primary_root;
+      if (familiesByRoot[rootId]) {
+        familiesByRoot[rootId].push(fam);
+      }
+    });
+  }
+
   grammarTree.roots.forEach(root => {
-    const div = document.createElement('div');
-    div.style.cssText = 'padding: 0.6rem 0.75rem; background: var(--bg); border-radius: 6px; border: 1px solid rgba(86,95,137,0.3);';
-    div.innerHTML = `
-      <strong>${root.name}</strong>
-      <div style="font-size:0.8rem; color:var(--muted); margin-top:2px;">${root.description || ''}</div>
-    `;
-    container.appendChild(div);
+    const wrapper = document.createElement('div');
+    wrapper.style.cssText = 'margin-bottom: 0.75rem; padding: 0.5rem 0.65rem; background: var(--bg); border-radius: 6px; border: 1px solid rgba(86,95,137,0.25);';
+
+    let html = `<div style="font-weight:600; margin-bottom:0.25rem;">${root.name}</div>`;
+    html += `<div style="font-size:0.75rem; color:var(--muted); margin-bottom:0.35rem;">${root.description || ''}</div>`;
+
+    const families = familiesByRoot[root.id] || [];
+    if (families.length > 0) {
+      html += `<div style="font-size:0.8rem; padding-left:0.4rem;">`;
+      families.forEach(fam => {
+        const secondary = fam.secondary_roots && fam.secondary_roots.length > 0 
+          ? ` <span style="color:#888;">(+${fam.secondary_roots.length})</span>` : '';
+        html += `<div style="margin:2px 0;">• ${fam.name}${secondary}</div>`;
+      });
+      html += `</div>`;
+    } else {
+      html += `<div style="font-size:0.75rem; color:#888; padding-left:0.4rem;">(no pilot families yet)</div>`;
+    }
+
+    wrapper.innerHTML = html;
+    container.appendChild(wrapper);
   });
+
+  // Small footer note
+  const note = document.createElement('div');
+  note.style.cssText = 'font-size:0.7rem; color:#777; margin-top:0.5rem;';
+  note.textContent = 'Early preview — only showing the 8 pilot families we are working on.';
+  container.appendChild(note);
 }
 
 // Quick placeholders for the new buttons (we can flesh these out)
