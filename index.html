@@ -482,15 +482,17 @@
 
       <!-- New: Basic Grammar Tree Overview (hybrid visible Tree element) -->
       <div id="menuTreeOverview" class="menu-panel hidden">
-        <div style="display:flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-          <h3 style="margin: 0;">My Grammar Tree (Early Preview)</h3>
-          <button type="button" id="treeOverviewBackBtn" class="secondary" style="margin-top:0; padding: 0.4rem 0.8rem;">← Back</button>
+        <div style="display:flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <h3 style="margin: 0; font-size: 1.1rem;">My Grammar Roots</h3>
+          <button type="button" id="treeOverviewBackBtn" class="secondary" style="margin-top:0; padding: 0.35rem 0.7rem; font-size: 0.85rem;">← Back</button>
         </div>
-        <p style="color: var(--muted); font-size: 0.85rem; margin-bottom: 0.75rem;">
-          This is an early preview based on the new Grammar Tree model we're building.
+        <p style="color: var(--muted); font-size: 0.8rem; margin-bottom: 0.6rem;">
+          Early view of the grammar roots (the foundation of the full language tree).
         </p>
-        <div id="treeRootsList" style="display: grid; gap: 0.5rem;"></div>
-        <div id="treeDebugInfo" style="margin-top: 1rem; font-size: 0.75rem; color: #888;"></div>
+        <div id="treeRootsVisual" style="background: #0f0d1a; border-radius: 8px; padding: 8px; min-height: 280px; position: relative; overflow: hidden; border: 1px solid #3d2b1f;">
+          <!-- Visual roots will be rendered here by JS -->
+        </div>
+        <div id="treeDebugInfo" style="margin-top: 0.5rem; font-size: 0.7rem; color: #666;"></div>
       </div>
 
       <div id="menuTopicSelect" class="menu-panel hidden">

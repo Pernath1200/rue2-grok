@@ -625,65 +625,111 @@ function showTreeOverview() {
 }
 
 function renderSimpleTreeOverview() {
-  const container = document.getElementById('treeRootsList');
+  const visualContainer = document.getElementById('treeRootsVisual');
   const debugEl = document.getElementById('treeDebugInfo');
-  if (!container) return;
-  container.innerHTML = '';
+  if (!visualContainer) return;
+  visualContainer.innerHTML = '';
   if (debugEl) debugEl.textContent = '';
 
   if (!grammarTree || !grammarTree.roots) {
-    container.innerHTML = `
-      <div style="padding: 1rem; background: #3a2f00; border: 1px solid #f57f17; border-radius: 6px; color: #ffeb3b;">
+    visualContainer.innerHTML = `
+      <div style="padding: 1rem; background: #3a2f00; border: 1px solid #f57f17; border-radius: 6px; color: #ffeb3b; height: 100%;">
         <strong>Tree data not loaded yet.</strong><br>
-        This usually means the file <code>data/tree/tree.json</code> wasn't found.<br>
-        Try a hard refresh (Ctrl+Shift+R) with DevTools open and "Disable cache" checked.
+        Try a hard refresh (Ctrl+Shift+R) with DevTools → Network → "Disable cache" checked.
       </div>
     `;
-    if (debugEl) debugEl.textContent = 'grammarTree is null or has no roots';
     return;
   }
 
-  // Build a map of rootId -> families for the pilot families
+  // Group pilot families by their primary root
   const familiesByRoot = {};
   grammarTree.roots.forEach(r => familiesByRoot[r.id] = []);
 
   if (grammarTree.families) {
     grammarTree.families.forEach(fam => {
-      const rootId = fam.primary_root;
-      if (familiesByRoot[rootId]) {
-        familiesByRoot[rootId].push(fam);
+      if (familiesByRoot[fam.primary_root]) {
+        familiesByRoot[fam.primary_root].push(fam);
       }
     });
   }
 
-  grammarTree.roots.forEach(root => {
-    const wrapper = document.createElement('div');
-    wrapper.style.cssText = 'margin-bottom: 0.5rem; padding: 0.5rem 0.65rem; background: var(--bg); border-radius: 6px; border: 1px solid rgba(86,95,137,0.25);';
+  // Create a simple visual "roots" diagram
+  const rootVisual = document.createElement('div');
+  rootVisual.style.cssText = 'position: relative; width: 100%; height: 260px;';
 
-    let html = `<div style="font-weight:600; margin-bottom:0.2rem;">${root.name}</div>`;
-    if (root.description) {
-      html += `<div style="font-size:0.72rem; color:var(--muted); margin-bottom:0.3rem;">${root.description}</div>`;
-    }
+  // Fake progress per root (for demo purposes)
+  const fakeProgress = {
+    tap_root: 85,
+    verb_phrase: 62,
+    noun_phrase: 48,
+    sentence_syntax: 35,
+    clause_linking: 55,
+    verb_complementation: 40,
+    prepositions_particles: 52
+  };
 
-    const families = familiesByRoot[root.id] || [];
-    if (families.length > 0) {
-      html += `<div style="font-size:0.8rem; padding-left:0.3rem; line-height:1.35;">`;
-      families.forEach(fam => {
-        const secondary = fam.secondary_roots && fam.secondary_roots.length > 0 
-          ? ` <span style="color:#888; font-size:0.7rem;">(+${fam.secondary_roots.length})</span>` : '';
-        html += `<div style="margin:1px 0;">• ${fam.name}${secondary}</div>`;
-      });
-      html += `</div>`;
-    } else {
-      html += `<div style="font-size:0.72rem; color:#777; padding-left:0.3rem;">(no pilot families mapped yet)</div>`;
-    }
+  // Draw a simple central tap root + branching laterals
+  rootVisual.innerHTML = `
+    <div style="position:absolute; left:48%; top:10px; width:6px; height:220px; background: linear-gradient(#8d6e63, #5d4037); border-radius: 3px; box-shadow: 0 0 4px rgba(0,0,0,0.4);"></div>
+  `;
 
-    wrapper.innerHTML = html;
-    container.appendChild(wrapper);
+  // Add lateral root branches + families
+  const rootPositions = [
+    { id: 'verb_phrase', left: '12%', top: '35%', label: 'Verb Phrase' },
+    { id: 'noun_phrase', left: '68%', top: '32%', label: 'Noun Phrase' },
+    { id: 'clause_linking', left: '8%', top: '58%', label: 'Clause Linking' },
+    { id: 'prepositions_particles', left: '72%', top: '55%', label: 'Prepositions' },
+    { id: 'verb_complementation', left: '15%', top: '78%', label: 'Verb Comp.' },
+    { id: 'sentence_syntax', left: '65%', top: '75%', label: 'Sentence Syntax' },
+  ];
+
+  rootPositions.forEach(pos => {
+    const rootId = pos.id;
+    const families = familiesByRoot[rootId] || [];
+    const progress = fakeProgress[rootId] || 30;
+
+    const branch = document.createElement('div');
+    branch.style.cssText = `
+      position: absolute;
+      left: ${pos.left};
+      top: ${pos.top};
+      width: 110px;
+      background: rgba(93, 64, 55, 0.85);
+      border-radius: 4px;
+      padding: 6px 8px;
+      font-size: 0.72rem;
+      color: #e0d4c8;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    `;
+
+    let content = `<div style="font-weight:600; margin-bottom:2px;">${pos.label}</div>`;
+
+    // Progress bar for the root
+    content += `
+      <div style="height: 5px; background: #3e2723; border-radius: 3px; margin-bottom: 4px; overflow:hidden;">
+        <div style="width: ${progress}%; height:100%; background: #a1887f;"></div>
+      </div>
+      <div style="font-size:0.65rem; opacity:0.85; margin-bottom:3px;">${progress}% covered</div>
+    `;
+
+    families.forEach(fam => {
+      const famProgress = Math.floor(Math.random() * 55) + 25; // fake progress
+      content += `
+        <div style="margin: 2px 0; font-size:0.7rem; display:flex; align-items:center; gap:4px;">
+          <span style="flex:1;">${fam.name}</span>
+          <span style="font-size:0.6rem; background:#5d4037; padding:1px 4px; border-radius:3px;">${famProgress}%</span>
+        </div>
+      `;
+    });
+
+    branch.innerHTML = content;
+    rootVisual.appendChild(branch);
   });
 
+  visualContainer.appendChild(rootVisual);
+
   if (debugEl) {
-    debugEl.textContent = `Loaded ${grammarTree.roots.length} roots and ${grammarTree.families?.length || 0} families from tree.json`;
+    debugEl.textContent = `Showing grammar roots with pilot families. Full tree (trunk + branches) comes later.`;
   }
 }
 
