@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "name": "RUE2 Grammar Tree - Minimal Viable Model",
+    "description": "Phase 1 canonical definition of the Grammar Tree. Extracted and normalized from the reference documents in _reference/. This is the proposed source of truth going forward.",
+    "last_updated": "2026-05-26",
+    "source": "Based on Tree_Model_Of_Language_Proficiency.md, Tree Roots by Level — Master Grammar Index.md, and Grammar Tree by Root.md"
+  },
+  "roots": [
+    {
+      "id": "tap_root",
+      "number": 0,
+      "name": "Tap Root",
+      "description": "Word-class recognition (N/V/Adj/Adv/Prep/Det/Pron) + default SVO architecture. Foundational layer that everything else depends on."
+    },
+    {
+      "id": "verb_phrase",
+      "number": 1,
+      "name": "Verb Phrase",
+      "description": "Tense, aspect, modality, voice. The largest and most complex root."
+    },
+    {
+      "id": "noun_phrase",
+      "number": 2,
+      "name": "Noun Phrase",
+      "description": "Determiners, pronouns, quantifiers, comparison within the noun phrase."
+    },
+    {
+      "id": "sentence_syntax",
+      "number": 3,
+      "name": "Sentence Syntax",
+      "description": "Word order, questions, negation, inversion, clefts, basic agreement at sentence level."
+    },
+    {
+      "id": "clause_linking",
+      "number": 4,
+      "name": "Clause Linking",
+      "description": "Subordination, relatives, conditionals, reported speech, coordination, discourse markers."
+    },
+    {
+      "id": "verb_complementation",
+      "number": 5,
+      "name": "Verb Complementation",
+      "description": "Patterns after verbs: gerund vs infinitive, transitivity, causatives, etc."
+    },
+    {
+      "id": "prepositions_particles",
+      "number": 6,
+      "name": "Prepositions & Particles",
+      "description": "Preposition system, phrasal verbs, dependent prepositions, particles."
+    }
+  ],
+  "families": [
+    {
+      "id": "present_perfect",
+      "name": "Present Perfect",
+      "primary_root": "verb_phrase",
+      "description": "Present perfect simple and continuous, including since/for distinctions."
+    },
+    {
+      "id": "conditionals",
+      "name": "Conditionals",
+      "primary_root": "clause_linking",
+      "secondary_roots": ["verb_phrase"],
+      "description": "Zero, First, Second, Third, Mixed conditionals and variants."
+    },
+    {
+      "id": "articles",
+      "name": "Articles & Determiners",
+      "primary_root": "noun_phrase",
+      "description": "a/an/the, zero article, generic reference, institutional uses."
+    },
+    {
+      "id": "relative_pronouns",
+      "name": "Relative Pronouns & Clauses",
+      "primary_root": "clause_linking",
+      "description": "Defining vs non-defining relatives, who/which/that/whose/whom."
+    },
+    {
+      "id": "modal_verbs",
+      "name": "Modal Verbs",
+      "primary_root": "verb_phrase",
+      "description": "Core modals, speculation (present & past), past forms of modals."
+    },
+    {
+      "id": "phrasal_verbs",
+      "name": "Phrasal Verbs",
+      "primary_root": "prepositions_particles",
+      "secondary_roots": ["verb_complementation"],
+      "description": "Separable/inseparable phrasal verbs and multi-word verbs."
+    },
+    {
+      "id": "prepositions",
+      "name": "Prepositions",
+      "primary_root": "prepositions_particles",
+      "description": "Time, place, movement, dependent, and complex prepositions."
+    },
+    {
+      "id": "reported_speech",
+      "name": "Reported Speech",
+      "primary_root": "clause_linking",
+      "secondary_roots": ["verb_phrase"],
+      "description": "Statement and question reporting, tense backshift, reporting verbs."
+    }
+  ],
+  "notes": {
+    "design_principles": [
+      "Every content unit should eventually declare exactly one primary root_id.",
+      "Families are the main grouping concept for UI (roughly maps to current 'topics').",
+      "Some families legitimately span multiple roots (e.g. conditionals, reported speech, passives). These get secondary_root tags for diagnostics.",
+      "This file is intentionally minimal for Phase 1. We can add rule/lexical face distinctions, full root_id lists per family, and richer metadata later."
+    ]
+  }
+}
