@@ -1,0 +1,297 @@
+{
+  "intro": {
+    "title": "Inversion for emphasis",
+    "sections": [
+      {
+        "title": "What this section covers",
+        "content": "Sometimes in English we **change the normal word order** (subject + verb) for **emphasis**, especially in formal writing. This section covers **inversion** with: *Not only ... but (also)*, *Never / Rarely / Seldom*, *Only then / only later / only when*, and *Under no circumstances*."
+      },
+      {
+        "title": "What is inversion?",
+        "content": "**Inversion** means the **auxiliary verb comes before the subject**, like in questions.\nNormal: *I have never seen such a film.* Inversion: *Never have I seen such a film.*\nNormal: *We did not only visit London.* Inversion: *Not only did we visit London.*\nWe usually use these patterns in written English for **stronger emphasis**."
+      },
+      {
+        "title": "Patterns to learn (1)",
+        "content": "After certain negative or limiting expressions at the beginning of the sentence, we invert (**auxiliary + subject + main verb**):\n**Not only** + did/do/does/have/will + subject: *Not only did we visit London, but we also went to Oxford.*\n**Never / Rarely / Seldom** + have/has/do/does/did/will + subject: *Never have I felt so nervous.*"
+      },
+      {
+        "title": "Patterns to learn (2)",
+        "content": "**Only then / only later / only when / only after** + did/do/does/will + subject: *Only then did I realise my mistake.*\n**Under no circumstances** + must/should/can/may/will + subject: *Under no circumstances should you tell anyone.*\nRemember: we always need an **auxiliary verb** (do/does/did, have/has, will, can, should, etc.)."
+      },
+      {
+        "title": "Reference",
+        "content": "For more on formal writing structures, see the Conjunctions and Linkers topic under Choose Grammar Topic."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which sentence is a correct example of inversion?",
+        "options": {
+          "a": "Not only we visited London, but we also went to Oxford.",
+          "b": "We not only did visit London, but we also went to Oxford.",
+          "c": "Did not only we visit London, but we also went to Oxford.",
+          "d": "Not only did we visit London, but we also went to Oxford."
+        },
+        "correct_option": "d",
+        "explanation": "Pattern: Not only + auxiliary + subject + base verb → Not only did we visit London, but we also went to Oxford."
+      },
+      {
+        "type": "mc",
+        "question": "Complete the sentence: Never ____ I seen such a beautiful view.",
+        "options": {
+          "a": "I have",
+          "b": "have",
+          "c": "have I",
+          "d": "I"
+        },
+        "correct_option": "b",
+        "explanation": "After Never at the beginning we invert: Never have I seen ..."
+      },
+      {
+        "type": "mc",
+        "question": "Which is the best sentence with Only then?",
+        "options": {
+          "a": "Only then I realised my mistake.",
+          "b": "Only then did I realise my mistake.",
+          "c": "Only then realised I my mistake.",
+          "d": "I only then realised my mistake."
+        },
+        "correct_option": "b",
+        "explanation": "Pattern: Only then + did + subject + base verb → Only then did I realise my mistake."
+      },
+      {
+        "type": "mc",
+        "question": "Choose the correct sentence with Under no circumstances.",
+        "options": {
+          "a": "Under no circumstances should you open the door.",
+          "b": "Under no circumstances you should open the door.",
+          "c": "You under no circumstances should open the door.",
+          "d": "Under no circumstances open you the door."
+        },
+        "correct_option": "a",
+        "explanation": "We invert after Under no circumstances: Under no circumstances should you open the door."
+      },
+      {
+        "type": "mc",
+        "question": "Which rule about inversion is true?",
+        "options": {
+          "a": "We invert after any word at the beginning of the sentence.",
+          "b": "We only invert in questions.",
+          "c": "We invert after negative or limiting expressions like Not only, Never, Only then.",
+          "d": "We never invert in formal writing."
+        },
+        "correct_option": "c",
+        "explanation": "For this topic we focus on inversion after negative/limiting expressions at the start: Not only, Never, Only then, Under no circumstances, etc."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc",
+    "error_correction_1",
+    "gap_fill_1"
+  ],
+  "practice": {
+    "mc": {
+      "title": "Practice: Inversion for emphasis (multiple choice)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "Which sentence is correct?",
+          "options": {
+            "a": "Never I have been so tired.",
+            "b": "I have never been so tired never.",
+            "c": "Never have I been so tired.",
+            "d": "Have never I been so tired."
+          },
+          "correct_option": "c",
+          "explanation": "After Never at the beginning we invert: Never have I been so tired."
+        },
+        {
+          "type": "mc",
+          "question": "Choose the correct sentence with Only later.",
+          "options": {
+            "a": "Only later did I understand the joke.",
+            "b": "Only later I understood the joke.",
+            "c": "Only later understood I the joke.",
+            "d": "I did only later understand the joke."
+          },
+          "correct_option": "a",
+          "explanation": "Pattern: Only later + did + subject + base verb."
+        },
+        {
+          "type": "mc",
+          "question": "Which sentence uses Not only correctly?",
+          "options": {
+            "a": "Not only I passed the exam, but I also got the highest mark.",
+            "b": "Not only passed I the exam, but I also got the highest mark.",
+            "c": "I not only did pass the exam, but I also got the highest mark.",
+            "d": "Not only did I pass the exam, but I also got the highest mark."
+          },
+          "correct_option": "d",
+          "explanation": "Not only did I pass ... is the correct inversion."
+        },
+        {
+          "type": "mc",
+          "question": "Choose the correct sentence with Under no circumstances.",
+          "options": {
+            "a": "Under no circumstances we can be late.",
+            "b": "Under no circumstances can we be late.",
+            "c": "We under no circumstances can be late.",
+            "d": "Under no circumstances be we late."
+          },
+          "correct_option": "b",
+          "explanation": "We invert after Under no circumstances: Under no circumstances can we be late."
+        },
+        {
+          "type": "mc",
+          "question": "Which sentence is correct?",
+          "options": {
+            "a": "Seldom I go to bed so late.",
+            "b": "Seldom do I go to bed so late.",
+            "c": "Do seldom I go to bed so late.",
+            "d": "I seldom do go to bed so late."
+          },
+          "correct_option": "b",
+          "explanation": "After Seldom at the beginning we invert: Seldom do I go to bed so late."
+        }
+      ]
+    },
+    "error_correction_1": {
+      "title": "Practice: Correct the sentence (inversion)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Not only I visited London, but I also went to Oxford.' Correct the sentence.",
+          "answers": [
+            "Not only did I visit London, but I also went to Oxford.",
+            "Not only did I visit London but I also went to Oxford.",
+            "Not only did I visit London, but I also went to Oxford",
+            "Not only did I visit London but I also went to Oxford"
+          ],
+          "explanation": "Use Not only + did + subject + base verb."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Never I have seen such a beautiful view.' Correct the sentence.",
+          "answers": [
+            "Never have I seen such a beautiful view.",
+            "Never have I seen such a beautiful view"
+          ],
+          "explanation": "After Never at the beginning we invert: Never have I seen ..."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Only then I realised what had happened.' Correct the sentence.",
+          "answers": [
+            "Only then did I realise what had happened.",
+            "Only then did I realise what had happened"
+          ],
+          "explanation": "Pattern: Only then + did + subject + base verb."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Under no circumstances you should tell anyone.' Correct the sentence.",
+          "answers": [
+            "Under no circumstances should you tell anyone.",
+            "Under no circumstances should you tell anyone"
+          ],
+          "explanation": "We invert after Under no circumstances: Under no circumstances should you tell anyone."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Rarely I go out during the week.' Correct the sentence.",
+          "answers": [
+            "Rarely do I go out during the week.",
+            "Rarely do I go out during the week"
+          ],
+          "explanation": "After Rarely at the beginning we invert: Rarely do I go out ..."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Only later I understood the story.' Correct the sentence.",
+          "answers": [
+            "Only later did I understand the story.",
+            "Only later did I understand the story"
+          ],
+          "explanation": "Only later + did + subject + base verb."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Not only I finished the project, but I also helped my friend.' Correct the sentence.",
+          "answers": [
+            "Not only did I finish the project, but I also helped my friend.",
+            "Not only did I finish the project but I also helped my friend.",
+            "Not only did I finish the project, but I also helped my friend",
+            "Not only did I finish the project but I also helped my friend"
+          ],
+          "explanation": "Again: Not only + did + subject + base verb."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Never I will forget that day.' Correct the sentence.",
+          "answers": [
+            "Never will I forget that day.",
+            "Never will I forget that day"
+          ],
+          "explanation": "After Never at the beginning we invert: Never will I forget that day."
+        }
+      ]
+    },
+    "gap_fill_1": {
+      "title": "Practice: Complete the inversion (verb + pronoun)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Complete the gap with the correct auxiliary + pronoun.\n\nNever ____ been so embarrassed.",
+          "answers": [
+            "have I",
+            "HAVE I"
+          ],
+          "explanation": "After Never at the beginning we invert: Never have I been ..."
+        },
+        {
+          "type": "open",
+          "question": "Complete the gap with the correct auxiliary + pronoun.\n\nOnly then ____ realise my mistake.",
+          "answers": [
+            "did I",
+            "DID I"
+          ],
+          "explanation": "We need did I: Only then did I realise my mistake."
+        },
+        {
+          "type": "open",
+          "question": "Complete the gap with the correct auxiliary + pronoun.\n\nNot only ____ we win the match, but we also played really well.",
+          "answers": [
+            "did",
+            "did we",
+            "DID WE",
+            "DID"
+          ],
+          "explanation": "The full pattern is Not only did we win the match ..."
+        },
+        {
+          "type": "open",
+          "question": "Complete the gap with the correct auxiliary + pronoun.\n\nUnder no circumstances ____ you tell anyone.",
+          "answers": [
+            "should you",
+            "SHOULD YOU"
+          ],
+          "explanation": "Under no circumstances should you tell anyone."
+        },
+        {
+          "type": "open",
+          "question": "Complete the gap with the correct auxiliary + pronoun.\n\nSeldom ____ she arrive late for class.",
+          "answers": [
+            "does she",
+            "DOES SHE"
+          ],
+          "explanation": "After Seldom at the beginning we invert: Seldom does she arrive late ..."
+        }
+      ]
+    }
+  }
+}

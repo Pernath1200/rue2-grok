@@ -1,0 +1,906 @@
+{
+  "easy": [
+    {
+      "type": "mc",
+      "title": "Open Cloze: The Value of Public Libraries",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "Public libraries have played a vital role in communities for more than a century. They offer free access _____ books, the internet and quiet study spaces, and many people depend _____ them every day. _____ the rise of e-books and online information, libraries have had to adapt in order to remain relevant. _____ doing so, they have introduced computer courses, children's reading clubs and other services that attract a wide range of users. Libraries are _____ longer simply places where you borrow books; they have become community hubs where people can learn new skills and meet others. It is _____ important that we continue to support them, as they provide opportunities that might otherwise be unavailable to those _____ cannot afford to buy books or pay for internet access. _____ long as libraries receive adequate funding, they will continue to serve communities for generations to come.",
+      "gaps": [
+        {
+          "options": {
+            "a": "to",
+            "b": "for",
+            "c": "with",
+            "d": "at"
+          },
+          "correct_option": "a",
+          "explanation": "Access to (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "options": {
+            "a": "on",
+            "b": "in",
+            "c": "at",
+            "d": "from"
+          },
+          "correct_option": "a",
+          "explanation": "Depend on (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "options": {
+            "a": "Despite",
+            "b": "Although",
+            "c": "With",
+            "d": "For"
+          },
+          "correct_option": "c",
+          "explanation": "With the rise of (prepositional phrase).",
+          "topic_id": "prepositions"
+        },
+        {
+          "options": {
+            "a": "By",
+            "b": "In",
+            "c": "On",
+            "d": "At"
+          },
+          "correct_option": "b",
+          "explanation": "In doing so (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "options": {
+            "a": "no",
+            "b": "not",
+            "c": "any",
+            "d": "none"
+          },
+          "correct_option": "a",
+          "explanation": "No longer (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "options": {
+            "a": "so",
+            "b": "such",
+            "c": "very",
+            "d": "too"
+          },
+          "correct_option": "a",
+          "explanation": "So important that (result clause).",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "options": {
+            "a": "who",
+            "b": "which",
+            "c": "whom",
+            "d": "whose"
+          },
+          "correct_option": "a",
+          "explanation": "Relative pronoun for people: those who.",
+          "topic_id": "relative_pronouns"
+        },
+        {
+          "options": {
+            "a": "So",
+            "b": "As",
+            "c": "Such",
+            "d": "If"
+          },
+          "correct_option": "b",
+          "explanation": "As long as (condition).",
+          "topic_id": "fixed_phrases"
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "title": "Open Cloze: Why People Travel",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "People travel for many different reasons. Some go abroad in search _____ sunshine and relaxation, while others are keen to experience new cultures and cuisines. Travel has become much more affordable over the past few decades, and it is _____ longer only the wealthy who can afford to fly to distant countries. _____ fact, budget airlines and online booking have made it possible for millions of people to take _____ in what was once considered a luxury. Many young people in particular choose to spend a year travelling before starting university or a career. _____ they return, they often say that the experience changed the way they see the world. _____ course, travel also has its drawbacks, such as the environmental impact of flying. _____ the benefits and the drawbacks, however, most people would agree that exploring new places can be one _____ the most rewarding experiences in life.",
+      "gaps": [
+        {
+          "options": {
+            "a": "of",
+            "b": "for",
+            "c": "in",
+            "d": "with"
+          },
+          "correct_option": "a",
+          "explanation": "In search of (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "options": {
+            "a": "no",
+            "b": "not",
+            "c": "any",
+            "d": "none"
+          },
+          "correct_option": "a",
+          "explanation": "No longer (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "options": {
+            "a": "In",
+            "b": "For",
+            "c": "At",
+            "d": "On"
+          },
+          "correct_option": "a",
+          "explanation": "In fact (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "options": {
+            "a": "part",
+            "b": "place",
+            "c": "care",
+            "d": "role"
+          },
+          "correct_option": "a",
+          "explanation": "Take part in (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "options": {
+            "a": "When",
+            "b": "After",
+            "c": "Once",
+            "d": "As"
+          },
+          "correct_option": "a",
+          "explanation": "When they return (time).",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "options": {
+            "a": "Of",
+            "b": "For",
+            "c": "In",
+            "d": "With"
+          },
+          "correct_option": "a",
+          "explanation": "Of course (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "options": {
+            "a": "Despite",
+            "b": "Although",
+            "c": "With",
+            "d": "For"
+          },
+          "correct_option": "a",
+          "explanation": "Despite the benefits (contrast).",
+          "topic_id": "prepositions"
+        },
+        {
+          "options": {
+            "a": "of",
+            "b": "for",
+            "c": "in",
+            "d": "to"
+          },
+          "correct_option": "a",
+          "explanation": "One of the most (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "title": "Open Cloze: Healthy Eating and an Active Lifestyle",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "Eating a balanced diet is essential _____ good health, but it is only one part of the picture. Many people find it difficult to eat well because _____ busy lifestyles, they often choose convenience foods when they are short of time. _____ fact, small changes can make a big difference to how you feel. _____ example, swapping sugary snacks for fruit or adding more vegetables _____ your meals can improve your energy levels. It is important to drink plenty of water _____ well, especially when the weather is hot. Regular exercise also helps, and you do not need to join a gym in order to stay active. Walking or cycling instead of driving can be a good start, and many people find that they sleep better when they are more active during the day. _____ long as you eat a variety of foods in moderation and move more, you will be doing your health a favour. _____ course, if you have a medical condition, you should always follow your doctor's advice before making big changes.",
+      "gaps": [
+        {
+          "options": {
+            "a": "for",
+            "b": "to",
+            "c": "with",
+            "d": "of"
+          },
+          "correct_option": "a",
+          "explanation": "Essential for (fixed phrase).",
+          "topic_id": "prepositions"
+        },
+        {
+          "options": {
+            "a": "of",
+            "b": "for",
+            "c": "with",
+            "d": "to"
+          },
+          "correct_option": "a",
+          "explanation": "Because of (reason).",
+          "topic_id": "prepositions"
+        },
+        {
+          "options": {
+            "a": "In",
+            "b": "For",
+            "c": "At",
+            "d": "On"
+          },
+          "correct_option": "a",
+          "explanation": "In fact (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "options": {
+            "a": "For",
+            "b": "In",
+            "c": "As",
+            "d": "To"
+          },
+          "correct_option": "a",
+          "explanation": "For example (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "options": {
+            "a": "to",
+            "b": "for",
+            "c": "in",
+            "d": "with"
+          },
+          "correct_option": "a",
+          "explanation": "Add ... to (preposition).",
+          "topic_id": "prepositions"
+        },
+        {
+          "options": {
+            "a": "as",
+            "b": "so",
+            "c": "to",
+            "d": "for"
+          },
+          "correct_option": "a",
+          "explanation": "As well (fixed phrase: also).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "options": {
+            "a": "As",
+            "b": "So",
+            "c": "If",
+            "d": "When"
+          },
+          "correct_option": "a",
+          "explanation": "As long as (condition).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "options": {
+            "a": "Of",
+            "b": "For",
+            "c": "In",
+            "d": "With"
+          },
+          "correct_option": "a",
+          "explanation": "Of course (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "title": "Open Cloze: Learning a New Language",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "Learning a new language can open _____ many doors, both personally and professionally. Many people start by studying grammar and vocabulary, but it is _____ important to practise speaking as well. _____ fact, the best way to improve is to use the language as much _____ possible. Some learners find it helpful to watch films or listen to music _____ the language they are learning. _____ course, everyone learns at a different pace. _____ long as you keep practising, you will make progress. It is never _____ late to start learning a new language.",
+      "gaps": [
+        {"options":{"a":"up","b":"to","c":"for","d":"of"},"correct_option":"a","explanation":"Open up (phrasal verb: create opportunities).","topic_id":"phrasal_verbs"},
+        {"options":{"a":"so","b":"such","c":"very","d":"too"},"correct_option":"a","explanation":"So important (degree).","topic_id":"conjunctions_linkers"},
+        {"options":{"a":"In","b":"For","c":"At","d":"On"},"correct_option":"a","explanation":"In fact (fixed phrase).","topic_id":"fixed_phrases"},
+        {"options":{"a":"as","b":"so","c":"to","d":"for"},"correct_option":"a","explanation":"As much as possible (fixed phrase).","topic_id":"fixed_phrases"},
+        {"options":{"a":"in","b":"on","c":"at","d":"for"},"correct_option":"a","explanation":"In the language (preposition).","topic_id":"prepositions"},
+        {"options":{"a":"Of","b":"For","c":"In","d":"At"},"correct_option":"a","explanation":"Of course (fixed phrase).","topic_id":"fixed_phrases"},
+        {"options":{"a":"As","b":"So","c":"If","d":"When"},"correct_option":"a","explanation":"As long as (condition).","topic_id":"fixed_phrases"},
+        {"options":{"a":"too","b":"so","c":"very","d":"such"},"correct_option":"a","explanation":"Never too late (fixed phrase).","topic_id":"fixed_phrases"}
+      ]
+    }
+  ],
+  "medium": [
+    {
+      "type": "open",
+      "title": "Open Cloze: The Value of Public Libraries",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "Public libraries have played a vital role in communities for more than a century. They offer free access _____ books, the internet and quiet study spaces, and many people depend _____ them every day. _____ the rise of e-books and online information, libraries have had to adapt in order to remain relevant. _____ doing so, they have introduced computer courses, children's reading clubs and other services that attract a wide range of users. Libraries are _____ longer simply places where you borrow books; they have become community hubs where people can learn new skills and meet others. It is _____ important that we continue to support them, as they provide opportunities that might otherwise be unavailable to those _____ cannot afford to buy books or pay for internet access. _____ long as libraries receive adequate funding, they will continue to serve communities for generations to come.",
+      "gaps": [
+        {
+          "answers": [
+            "to"
+          ],
+          "explanation": "Access to (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "on"
+          ],
+          "explanation": "Depend on (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "With"
+          ],
+          "explanation": "With the rise of (prepositional phrase).",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "In"
+          ],
+          "explanation": "In doing so (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "no"
+          ],
+          "explanation": "No longer (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "so"
+          ],
+          "explanation": "So important that (result clause).",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "who"
+          ],
+          "explanation": "Relative pronoun for people: those who.",
+          "topic_id": "relative_pronouns"
+        },
+        {
+          "answers": [
+            "As"
+          ],
+          "explanation": "As long as (condition).",
+          "topic_id": "fixed_phrases"
+        }
+      ]
+    },
+    {
+      "type": "open",
+      "title": "Open Cloze: Why People Travel",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "People travel for many different reasons. Some go abroad in search _____ sunshine and relaxation, while others are keen to experience new cultures and cuisines. Travel has become much more affordable over the past few decades, and it is _____ longer only the wealthy who can afford to fly to distant countries. _____ fact, budget airlines and online booking have made it possible for millions of people to take _____ in what was once considered a luxury. Many young people in particular choose to spend a year travelling before starting university or a career. _____ they return, they often say that the experience changed the way they see the world. _____ course, travel also has its drawbacks, such as the environmental impact of flying. _____ the benefits and the drawbacks, however, most people would agree that exploring new places can be one _____ the most rewarding experiences in life.",
+      "gaps": [
+        {
+          "answers": [
+            "of"
+          ],
+          "explanation": "In search of (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "no"
+          ],
+          "explanation": "No longer (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "In"
+          ],
+          "explanation": "In fact (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "part"
+          ],
+          "explanation": "Take part in (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "When"
+          ],
+          "explanation": "When they return (time).",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "Of"
+          ],
+          "explanation": "Of course (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "Despite"
+          ],
+          "explanation": "Despite the benefits (contrast).",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "of"
+          ],
+          "explanation": "One of the most (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        }
+      ]
+    },
+    {
+      "type": "open",
+      "title": "Open Cloze: Healthy Eating and an Active Lifestyle",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "Eating a balanced diet is essential _____ good health, but it is only one part of the picture. Many people find it difficult to eat well because _____ busy lifestyles, they often choose convenience foods when they are short of time. _____ fact, small changes can make a big difference to how you feel. _____ example, swapping sugary snacks for fruit or adding more vegetables _____ your meals can improve your energy levels. It is important to drink plenty of water _____ well, especially when the weather is hot. Regular exercise also helps, and you do not need to join a gym in order to stay active. Walking or cycling instead of driving can be a good start, and many people find that they sleep better when they are more active during the day. _____ long as you eat a variety of foods in moderation and move more, you will be doing your health a favour. _____ course, if you have a medical condition, you should always follow your doctor's advice before making big changes.",
+      "gaps": [
+        {
+          "answers": [
+            "for"
+          ],
+          "explanation": "Essential for (fixed phrase).",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "of"
+          ],
+          "explanation": "Because of (reason).",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "In"
+          ],
+          "explanation": "In fact (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "For"
+          ],
+          "explanation": "For example (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "to"
+          ],
+          "explanation": "Add ... to (preposition).",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "as"
+          ],
+          "explanation": "As well (fixed phrase: also).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "As"
+          ],
+          "explanation": "As long as (condition).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "Of"
+          ],
+          "explanation": "Of course (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        }
+      ]
+    }
+  ],
+  "hard": [
+    {
+      "type": "open",
+      "title": "Open Cloze: The Arctic and Climate Change",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "The Arctic is warming at more than twice the rate of the rest of the planet, and the consequences of this rapid change are becoming increasingly clear. Sea ice, which has long defined the region, is shrinking to such _____ extent that scientists predict the Arctic Ocean could be largely ice-free in summer within a few decades. Not only _____ this threaten the survival of species such as polar bears and seals, but it also has implications for global weather patterns and sea levels. The indigenous communities _____ have lived in the Arctic for thousands of years are finding their traditional way of life under threat, as the ice they depend on for hunting and travel becomes less reliable. _____ the scale of the problem, there is still no international agreement that adequately addresses the protection of the Arctic. Some experts believe _____ we have already passed a point of no return, while others hold out hope that immediate action could slow or even reverse some of the damage. _____ is certain is that the decisions made in the coming years will affect not only the Arctic _____ the entire planet. What remains to be seen is _____ governments and industry will respond to this challenge with the urgency it demands.",
+      "gaps": [
+        {
+          "answers": [
+            "an"
+          ],
+          "explanation": "To such an extent that (result).",
+          "topic_id": "articles"
+        },
+        {
+          "answers": [
+            "does"
+          ],
+          "explanation": "Not only does this threaten (inversion).",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "who"
+          ],
+          "explanation": "Relative pronoun: communities who have lived.",
+          "topic_id": "relative_pronouns"
+        },
+        {
+          "answers": [
+            "Despite"
+          ],
+          "explanation": "Despite the scale (contrast).",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "that"
+          ],
+          "explanation": "Believe that + clause.",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "What"
+          ],
+          "explanation": "What is certain (nominal relative clause).",
+          "topic_id": "relative_pronouns"
+        },
+        {
+          "answers": [
+            "but"
+          ],
+          "explanation": "Not only ... but also.",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "whether"
+          ],
+          "explanation": "Whether ... will respond (indirect question).",
+          "topic_id": "conjunctions_linkers"
+        }
+      ]
+    },
+    {
+      "type": "open",
+      "title": "Open Cloze: Renewable Energy",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "The shift towards renewable energy is gathering pace, _____ the cost of solar and wind power has fallen sharply. Not only _____ this reduce carbon emissions, but it also creates jobs in the green economy. The countries _____ have invested most in renewables are now reaping the benefits. _____ the challenges of storage and grid stability, many experts believe _____ a fully renewable electricity supply is achievable within decades. _____ is clear is that the transition will require substantial investment. The question is _____ governments and the private sector can work together effectively. _____ remains to be seen is whether the pace of change will be fast enough to limit global warming.",
+      "gaps": [
+        {
+          "answers": [
+            "as"
+          ],
+          "explanation": "As (reason: because) the cost has fallen.",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "does"
+          ],
+          "explanation": "Not only does this reduce (inversion).",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "that"
+          ],
+          "explanation": "Countries that have invested (relative pronoun).",
+          "topic_id": "relative_pronouns"
+        },
+        {
+          "answers": [
+            "Despite"
+          ],
+          "explanation": "Despite the challenges (contrast).",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "that"
+          ],
+          "explanation": "Believe that + clause.",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "What"
+          ],
+          "explanation": "What is clear (nominal relative).",
+          "topic_id": "relative_pronouns"
+        },
+        {
+          "answers": [
+            "whether"
+          ],
+          "explanation": "Whether ... can work (indirect question).",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "What"
+          ],
+          "explanation": "What remains to be seen.",
+          "topic_id": "relative_pronouns"
+        }
+      ]
+    },
+    {
+      "type": "open",
+      "title": "Open Cloze: Urban Planning",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "Urban planners face the difficult task of balancing growth _____ the need to preserve quality of life. The cities _____ have succeeded in this are often those _____ have invested in public transport and green spaces. _____ the pressure to build more housing, it is essential that new developments are well designed. Some argue _____ high-rise buildings are the only solution in densely populated areas. _____ is certain is that the decisions made today will shape _____ our cities look and feel for decades. _____ remains unclear is whether enough can be done in time to avoid congestion and pollution.",
+      "gaps": [
+        {
+          "answers": [
+            "with"
+          ],
+          "explanation": "Balance X with Y.",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "that"
+          ],
+          "explanation": "Cities that have succeeded (relative pronoun).",
+          "topic_id": "relative_pronouns"
+        },
+        {
+          "answers": [
+            "that"
+          ],
+          "explanation": "Those that have invested (relative pronoun).",
+          "topic_id": "relative_pronouns"
+        },
+        {
+          "answers": [
+            "Despite"
+          ],
+          "explanation": "Despite the pressure (contrast).",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "that"
+          ],
+          "explanation": "Argue that + clause.",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "What"
+          ],
+          "explanation": "What is certain (nominal relative).",
+          "topic_id": "relative_pronouns"
+        },
+        {
+          "answers": [
+            "how"
+          ],
+          "explanation": "Shape how our cities look.",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "What"
+          ],
+          "explanation": "What remains unclear.",
+          "topic_id": "relative_pronouns"
+        }
+      ]
+    },
+    {
+      "type": "open",
+      "title": "Open Cloze: Sustainable Fashion",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "The fashion industry has come under increasing scrutiny for its environmental impact. The clothes _____ we wear often travel thousands of miles before reaching the shops, and many garments are made from materials that take centuries to break _____. _____ the growing awareness of these issues, sustainable fashion is gaining ground. Brands that use recycled materials or reduce waste are attracting customers _____ want to make more responsible choices. _____ is clear is that consumer demand alone will not solve the problem; governments and manufacturers must also play _____ part. What remains to be seen is _____ the industry can transform itself quickly enough to meet climate targets. _____ long as fast fashion continues to dominate, the challenge will remain.",
+      "gaps": [
+        {"answers":["that"],"explanation":"Clothes that we wear (relative pronoun).","topic_id":"relative_pronouns"},
+        {"answers":["down"],"explanation":"Break down (phrasal verb: decompose).","topic_id":"phrasal_verbs"},
+        {"answers":["Despite"],"explanation":"Despite the growing awareness (contrast).","topic_id":"prepositions"},
+        {"answers":["who"],"explanation":"Customers who want (relative pronoun).","topic_id":"relative_pronouns"},
+        {"answers":["What"],"explanation":"What is clear (nominal relative).","topic_id":"relative_pronouns"},
+        {"answers":["a"],"explanation":"Play a part (fixed phrase).","topic_id":"articles"},
+        {"answers":["whether"],"explanation":"Whether the industry can transform (indirect question).","topic_id":"conjunctions_linkers"},
+        {"answers":["As"],"explanation":"As long as (condition).","topic_id":"fixed_phrases"}
+      ]
+    }
+  ],
+  "expert": [
+    {
+      "type": "open",
+      "title": "Open Cloze: The Ethics of Artificial Intelligence",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "The development of artificial intelligence raises profound ethical questions that society has only begun to confront. As machines become capable of performing tasks that were once the exclusive preserve of human beings, we are forced to reconsider what we mean by consciousness, responsibility and fairness. Algorithms that determine everything from loan applications to prison sentences can perpetuate and even amplify the biases present in the data _____ which they are trained, with consequences that may be difficult to reverse. _____ the potential benefits of AI in fields such as medicine and scientific research are considerable, there is a growing consensus that the technology must be subject _____ robust regulation and oversight. The question of _____ autonomous systems should be held accountable when their decisions cause harm remains largely unresolved, and legal frameworks in most countries have yet to catch _____ with the pace of technological change. Some philosophers and technologists have called _____ a moratorium on certain applications of AI until these issues can be properly addressed. _____ remains clear is that the choices we make in the coming decades will shape not only the role of AI in our daily lives _____ the very nature of human agency and dignity in an increasingly automated world.",
+      "gaps": [
+        {
+          "answers": [
+            "on"
+          ],
+          "explanation": "Trained on (preposition with data).",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "Although"
+          ],
+          "explanation": "Although the benefits (concession).",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "to"
+          ],
+          "explanation": "Subject to (fixed phrase).",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "whether"
+          ],
+          "explanation": "Question of whether (indirect question).",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "up"
+          ],
+          "explanation": "Catch up with (phrasal verb).",
+          "topic_id": "phrasal_verbs"
+        },
+        {
+          "answers": [
+            "for"
+          ],
+          "explanation": "Called for (phrasal verb: demanded).",
+          "topic_id": "phrasal_verbs"
+        },
+        {
+          "answers": [
+            "What"
+          ],
+          "explanation": "What remains clear (nominal relative).",
+          "topic_id": "relative_pronouns"
+        },
+        {
+          "answers": [
+            "but"
+          ],
+          "explanation": "Not only ... but also.",
+          "topic_id": "conjunctions_linkers"
+        }
+      ]
+    },
+    {
+      "type": "open",
+      "title": "Open Cloze: Philosophy of Science",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "The philosophy of science examines the assumptions _____ underlie scientific inquiry. _____ the success of the scientific method in explaining the natural world, philosophers continue to debate _____ scientific theories can be said to be true or merely useful. The question of _____ observation is theory-neutral remains contentious; some argue _____ our expectations inevitably shape what we perceive. What is beyond doubt is that science has transformed our understanding of the universe. What remains open is whether future generations will regard our current theories as definitive or as steps towards a deeper understanding. _____ is clear is that progress depends _____ continued research. _____ long as scientists remain open to new evidence, our knowledge will evolve.",
+      "gaps": [
+        {
+          "answers": [
+            "that"
+          ],
+          "explanation": "Assumptions that underlie (relative pronoun).",
+          "topic_id": "relative_pronouns"
+        },
+        {
+          "answers": [
+            "Despite"
+          ],
+          "explanation": "Despite the success (contrast).",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "whether"
+          ],
+          "explanation": "Whether ... can be said (indirect question).",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "whether"
+          ],
+          "explanation": "Question of whether (indirect question).",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "that"
+          ],
+          "explanation": "Argue that + clause.",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "What"
+          ],
+          "explanation": "What is clear (nominal relative).",
+          "topic_id": "relative_pronouns"
+        },
+        {
+          "answers": [
+            "on"
+          ],
+          "explanation": "Depends on (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "As"
+          ],
+          "explanation": "As long as (condition).",
+          "topic_id": "fixed_phrases"
+        }
+      ]
+    },
+    {
+      "type": "open",
+      "title": "Open Cloze: Legal Responsibility",
+      "instructions": "For questions 1-8, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passage": "The question of _____ autonomous systems should be held liable when they cause harm is one _____ legal systems around the world are only beginning to address. _____ the rapid development of AI in areas such _____ healthcare and transport, existing laws were not designed _____ such scenarios. Some argue _____ a new category of legal personhood may be needed for certain AI systems; others believe _____ accountability should always rest with humans. _____ is clear is that the issue cannot be ignored. What remains to be seen is whether international agreement on these matters can be reached.",
+      "gaps": [
+        {
+          "answers": [
+            "whether"
+          ],
+          "explanation": "Question of whether (indirect question).",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "that"
+          ],
+          "explanation": "One that legal systems (relative pronoun).",
+          "topic_id": "relative_pronouns"
+        },
+        {
+          "answers": [
+            "With"
+          ],
+          "explanation": "With the rapid development (prepositional phrase).",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "as"
+          ],
+          "explanation": "Such as (fixed phrase).",
+          "topic_id": "fixed_phrases"
+        },
+        {
+          "answers": [
+            "for"
+          ],
+          "explanation": "Designed for (preposition).",
+          "topic_id": "prepositions"
+        },
+        {
+          "answers": [
+            "that"
+          ],
+          "explanation": "Argue that + clause.",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "that"
+          ],
+          "explanation": "Believe that + clause.",
+          "topic_id": "conjunctions_linkers"
+        },
+        {
+          "answers": [
+            "What"
+          ],
+          "explanation": "What is clear (nominal relative).",
+          "topic_id": "relative_pronouns"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "easy": [
+    {
+      "title": "Sentence Transformation: Present and past",
+      "instructions": "Finish the second sentence so that it means the same as the first. Use between two and five words, including the key word.",
+      "items": [
+        {"sentence1": "I last saw him in May.", "keyword": "SINCE", "sentence2_prefix": "I haven't ", "sentence2_suffix": " him since May.", "answers": ["seen"], "explanation": "Present perfect: haven't seen (from a point in the past until now).", "topic_id": "past_simple_present_perfect"},
+        {"sentence1": "She started learning English three years ago.", "keyword": "LEARNING", "sentence2_prefix": "She has been ", "sentence2_suffix": " English for three years.", "answers": ["learning"], "explanation": "Present perfect continuous: has been learning (duration).", "topic_id": "present_perfect"},
+        {"sentence1": "The meeting is at 9 o'clock.", "keyword": "STARTS", "sentence2_prefix": "The meeting ", "sentence2_suffix": " at 9 o'clock.", "answers": ["starts"], "explanation": "Same meaning: is at = starts at.", "topic_id": "tenses_general"},
+        {"sentence1": "It's possible she forgot.", "keyword": "MIGHT", "sentence2_prefix": "She ", "sentence2_suffix": " forgotten.", "answers": ["might have"], "explanation": "Might have + past participle for past possibility.", "topic_id": "modal_verbs"},
+        {"sentence1": "I regret not studying harder.", "keyword": "WISH", "sentence2_prefix": "I ", "sentence2_suffix": " studied harder.", "answers": ["wish I had"], "explanation": "Wish + past perfect for regret about the past.", "topic_id": "conditionals"}
+      ]
+    },
+    {
+      "title": "Sentence Transformation: Tenses and modals",
+      "instructions": "Finish the second sentence so that it means the same as the first. Use between two and five words, including the key word.",
+      "items": [
+        {"sentence1": "They are repairing the road.", "keyword": "BEING", "sentence2_prefix": "The road is ", "sentence2_suffix": " repaired.", "answers": ["being"], "explanation": "Present continuous passive: is being repaired.", "topic_id": "passives"},
+        {"sentence1": "You must finish the report today.", "keyword": "HAS", "sentence2_prefix": "The report ", "sentence2_suffix": " be finished today.", "answers": ["has to"], "explanation": "Must = has to (obligation).", "topic_id": "modal_verbs"},
+        {"sentence1": "She went to Paris last year.", "keyword": "SINCE", "sentence2_prefix": "She hasn't been to Paris ", "sentence2_suffix": " year.", "answers": ["since last"], "explanation": "Present perfect: haven't been since (point in time).", "topic_id": "past_simple_present_perfect"},
+        {"sentence1": "It is necessary to book in advance.", "keyword": "NEED", "sentence2_prefix": "You ", "sentence2_suffix": " book in advance.", "answers": ["need to"], "explanation": "Necessary to = need to.", "topic_id": "modal_verbs"},
+        {"sentence1": "The weather was bad, so we stayed indoors.", "keyword": "IF", "sentence2_prefix": "We would have gone out ", "sentence2_suffix": " been better.", "answers": ["if the weather had"], "explanation": "Third conditional: if the weather had been better.", "topic_id": "conditionals"}
+      ]
+    }
+  ],
+  "medium": [
+    {
+      "title": "Sentence Transformation: Grammar focus",
+      "instructions": "Finish the second sentence so that it means the same as the first. Use between two and five words, including the key word.",
+      "items": [
+        {"sentence1": "They built the house in 1990.", "keyword": "WAS", "sentence2_prefix": "The house ", "sentence2_suffix": " in 1990.", "answers": ["was built"], "explanation": "Passive: was built (past simple passive).", "topic_id": "passives"},
+        {"sentence1": "She is too young to drive.", "keyword": "ENOUGH", "sentence2_prefix": "She isn't ", "sentence2_suffix": " to drive.", "answers": ["old enough"], "explanation": "Too young = not old enough.", "topic_id": "comparatives"},
+        {"sentence1": "I don't know the answer.", "keyword": "WISH", "sentence2_prefix": "I ", "sentence2_suffix": " the answer.", "answers": ["wish I knew"], "explanation": "Wish + past simple for present unreal wish.", "topic_id": "conditionals"},
+        {"sentence1": "He said: 'I will help you.'", "keyword": "THAT", "sentence2_prefix": "He said ", "sentence2_suffix": " would help me.", "answers": ["that he"], "explanation": "Reported speech: pronoun and tense change.", "topic_id": "reported_speech"},
+        {"sentence1": "We couldn't go out because of the rain.", "keyword": "PREVENTED", "sentence2_prefix": "The rain ", "sentence2_suffix": " going out.", "answers": ["prevented us from"], "explanation": "Prevent someone from doing something.", "topic_id": "prepositions_dependent"}
+      ]
+    },
+    {
+      "title": "Sentence Transformation: Structures",
+      "instructions": "Finish the second sentence so that it means the same as the first. Use between two and five words, including the key word.",
+      "items": [
+        {"sentence1": "The test was easier than I expected.", "keyword": "NOT", "sentence2_prefix": "The test ", "sentence2_suffix": " as I expected.", "answers": ["was not as difficult"], "explanation": "Easier than = not as difficult as.", "topic_id": "comparatives"},
+        {"sentence1": "He forgot to lock the door.", "keyword": "REMEMBER", "sentence2_prefix": "He didn't ", "sentence2_suffix": " the door.", "answers": ["remember to lock"], "explanation": "Forget to = didn't remember to.", "topic_id": "gerunds_infinitives"},
+        {"sentence1": "They asked us to wait.", "keyword": "TOLD", "sentence2_prefix": "We were ", "sentence2_suffix": " wait.", "answers": ["told to"], "explanation": "Asked to = were told to.", "topic_id": "reported_speech"},
+        {"sentence1": "I'll call you when I arrive.", "keyword": "SOON", "sentence2_prefix": "I'll call you ", "sentence2_suffix": " as I arrive.", "answers": ["as soon"], "explanation": "When = as soon as.", "topic_id": "conjunctions_linkers"},
+        {"sentence1": "She is the best player in the team.", "keyword": "BETTER", "sentence2_prefix": "She ", "sentence2_suffix": " anyone else in the team.", "answers": ["is better than"], "explanation": "Best = better than anyone else.", "topic_id": "comparatives"}
+      ]
+    }
+  ],
+  "hard": [
+    {
+      "title": "Sentence Transformation: Advanced",
+      "instructions": "Finish the second sentence so that it means the same as the first. Use between two and five words, including the key word.",
+      "items": [
+        {"sentence1": "It's a pity you didn't tell me earlier.", "keyword": "WISH", "sentence2_prefix": "I ", "sentence2_suffix": " me earlier.", "answers": ["wish you had told"], "explanation": "Wish + past perfect for regret (you didn't tell).", "topic_id": "conditionals"},
+        {"sentence1": "Nobody had invited her to the party.", "keyword": "HADN'T", "sentence2_prefix": "She ", "sentence2_suffix": " to the party.", "answers": ["hadn't been invited"], "explanation": "Past perfect passive: hadn't been invited.", "topic_id": "passives"},
+        {"sentence1": "The film was so boring that we left.", "keyword": "SUCH", "sentence2_prefix": "It was ", "sentence2_suffix": " that we left.", "answers": ["such a boring film"], "explanation": "So boring (adj) = such a boring (noun).", "topic_id": "conjunctions_linkers"},
+        {"sentence1": "She asked me: 'Have you finished?'", "keyword": "IF", "sentence2_prefix": "She asked me ", "sentence2_suffix": " finished.", "answers": ["if I had"], "explanation": "Reported yes/no question: if + subject + had.", "topic_id": "reported_speech"},
+        {"sentence1": "I've never been to Japan.", "keyword": "TIME", "sentence2_prefix": "It's the first ", "sentence2_suffix": " to Japan.", "answers": ["time I've been"], "explanation": "First time + present perfect.", "topic_id": "present_perfect"}
+      ]
+    },
+    {
+      "title": "Sentence Transformation: Complex structures",
+      "instructions": "Finish the second sentence so that it means the same as the first. Use between two and five words, including the key word.",
+      "items": [
+        {"sentence1": "I expect they will win.", "keyword": "EXPECTED", "sentence2_prefix": "They are ", "sentence2_suffix": " win.", "answers": ["expected to"], "explanation": "Expect they will = are expected to.", "topic_id": "passives"},
+        {"sentence1": "We got there too late to see the start.", "keyword": "EARLY", "sentence2_prefix": "We didn't get there ", "sentence2_suffix": " to see the start.", "answers": ["early enough"], "explanation": "Too late = not early enough.", "topic_id": "comparatives"},
+        {"sentence1": "He refused to help me.", "keyword": "DIDN'T", "sentence2_prefix": "He ", "sentence2_suffix": " help me.", "answers": ["didn't agree to", "didn't want to"], "explanation": "Refused to = didn't agree/want to.", "topic_id": "gerunds_infinitives"},
+        {"sentence1": "I would go if I had the time.", "keyword": "WERE", "sentence2_prefix": "I would go ", "sentence2_suffix": " the time.", "answers": ["if I had"], "explanation": "Second conditional: if I had the time.", "topic_id": "conditionals"},
+        {"sentence1": "The lecture was so interesting that nobody left early.", "keyword": "SUCH", "sentence2_prefix": "It was ", "sentence2_suffix": " that nobody left early.", "answers": ["such an interesting lecture"], "explanation": "So interesting = such an interesting lecture.", "topic_id": "conjunctions_linkers"}
+      ]
+    }
+  ],
+  "expert": [
+    {
+      "title": "Sentence Transformation: Expert",
+      "instructions": "Finish the second sentence so that it means the same as the first. Use between two and five words, including the key word.",
+      "items": [
+        {"sentence1": "They say he escaped from prison.", "keyword": "SAID", "sentence2_prefix": "He is ", "sentence2_suffix": " from prison.", "answers": ["said to have escaped"], "explanation": "Passive reporting: is said to have + past participle.", "topic_id": "passives"},
+        {"sentence1": "Despite the cost, we decided to go.", "keyword": "ALTHOUGH", "sentence2_prefix": "We decided to go ", "sentence2_suffix": " the cost.", "answers": ["although it cost", "although it was expensive"], "explanation": "Although + clause (same meaning as despite + noun).", "topic_id": "conjunctions_linkers"},
+        {"sentence1": "I last saw her at the conference.", "keyword": "SINCE", "sentence2_prefix": "I haven't ", "sentence2_suffix": " the conference.", "answers": ["seen her since"], "explanation": "Present perfect: haven't seen her since.", "topic_id": "past_simple_present_perfect"},
+        {"sentence1": "She might not have received the message.", "keyword": "POSSIBLE", "sentence2_prefix": "It's ", "sentence2_suffix": " received the message.", "answers": ["possible she didn't", "possible that she didn't"], "explanation": "Might not have = it's possible (that) she didn't.", "topic_id": "modal_verbs"},
+        {"sentence1": "The project will be completed by Friday.", "keyword": "HAVE", "sentence2_prefix": "They ", "sentence2_suffix": " the project by Friday.", "answers": ["will have completed"], "explanation": "Future perfect: will have completed (by Friday).", "topic_id": "tenses_general"}
+      ]
+    },
+    {
+      "title": "Sentence Transformation: Expert level",
+      "instructions": "Finish the second sentence so that it means the same as the first. Use between two and five words, including the key word.",
+      "items": [
+        {"sentence1": "It is believed that the storm caused the damage.", "keyword": "BELIEVED", "sentence2_prefix": "The storm ", "sentence2_suffix": " caused the damage.", "answers": ["is believed to have"], "explanation": "Passive reporting: is believed to have + past participle.", "topic_id": "passives"},
+        {"sentence1": "I had no idea she was coming.", "keyword": "KNEW", "sentence2_prefix": "I ", "sentence2_suffix": " she was coming.", "answers": ["didn't know", "didn't know that"], "explanation": "Had no idea = didn't know.", "topic_id": "reported_speech"},
+        {"sentence1": "He was the only person who applied.", "keyword": "ELSE", "sentence2_prefix": "Nobody ", "sentence2_suffix": " applied.", "answers": ["else"], "explanation": "The only person = nobody else.", "topic_id": "indefinite_pronouns"},
+        {"sentence1": "She couldn't concentrate because of the noise.", "keyword": "PREVENTED", "sentence2_prefix": "The noise ", "sentence2_suffix": " concentrating.", "answers": ["prevented her from"], "explanation": "Prevent someone from doing something.", "topic_id": "prepositions_dependent"},
+        {"sentence1": "They finished the work in record time.", "keyword": "WAS", "sentence2_prefix": "The work ", "sentence2_suffix": " in record time.", "answers": ["was finished"], "explanation": "Active to passive: was finished.", "topic_id": "passives"}
+      ]
+    }
+  ]
+}

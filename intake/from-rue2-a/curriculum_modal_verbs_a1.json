@@ -1,0 +1,74 @@
+{
+  "intro": {
+    "title": "Can, Must, Would like",
+    "sections": [
+      {
+        "title": "Can",
+        "content": "**Can** = ability or permission:\n\n• I **can** swim. (ability)\n• You **can** go now. (permission)\n• She **can** speak English.\n\n**Can't** = cannot:\n• I **can't** run fast."
+      },
+      {
+        "title": "Must",
+        "content": "**Must** = you have to do it:\n\n• You **must** wear a seatbelt.\n• I **must** go now.\n• She **must** finish her work."
+      },
+      {
+        "title": "Would like",
+        "content": "**Would like** = want (polite):\n\n• I **would like** a cup of tea.\n• Would you **like** a biscuit?\n• She **would like** to go home."
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "She _____ swim very well.",
+        "options": {"a": "can", "b": "must", "c": "to can", "d": "cans"},
+        "correct_option": "a",
+        "explanation": "Ability: can swim."
+      },
+      {
+        "type": "mc",
+        "question": "You _____ stop at the red light.",
+        "options": {"a": "can", "b": "must", "c": "would like", "d": "to must"},
+        "correct_option": "b",
+        "explanation": "Obligation: must stop."
+      },
+      {
+        "type": "mc",
+        "question": "I _____ a cup of coffee, please.",
+        "options": {"a": "can", "b": "must", "c": "would like", "d": "to like"},
+        "correct_option": "c",
+        "explanation": "Polite want: would like."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Can, Must, Would like",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "_____ you help me?",
+          "options": {"a": "Can", "b": "Must", "c": "Do", "d": "Are"},
+          "correct_option": "a",
+          "explanation": "Request: Can you help me?"
+        },
+        {
+          "type": "mc",
+          "question": "We _____ be quiet. The baby is sleeping.",
+          "options": {"a": "can", "b": "must", "c": "would like", "d": "to must"},
+          "correct_option": "b",
+          "explanation": "Obligation: must be quiet."
+        },
+        {
+          "type": "mc",
+          "question": "Would you _____ some tea?",
+          "options": {"a": "can", "b": "must", "c": "like", "d": "to like"},
+          "correct_option": "c",
+          "explanation": "Would you like = offer."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "intro": {
+    "title": "There is / There are",
+    "sections": [
+      {
+        "title": "There is",
+        "content": "We use **There is** for one thing:\n\n• **There is** a book on the table.\n• **There is** a cat in the garden.\n• **There is** an apple in the bag."
+      },
+      {
+        "title": "There are",
+        "content": "We use **There are** for more than one:\n\n• **There are** three books on the table.\n• **There are** two cats in the garden.\n• **There are** many people here."
+      },
+      {
+        "title": "Questions and Negatives",
+        "content": "**Question:** **Is there** a book? **Are there** any books?\n\n**Negative:** **There is not** (isn't) a book. **There are not** (aren't) any books."
+      },
+      {
+        "title": "Past: There was / There were",
+        "content": "For the past:\n\n• **There was** a party yesterday.\n• **There were** many people at the party."
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "_____ a book on the table.",
+        "options": {"a": "There is", "b": "There are", "c": "It is", "d": "They are"},
+        "correct_option": "a",
+        "explanation": "One book = There is."
+      },
+      {
+        "type": "mc",
+        "question": "_____ three chairs in the room.",
+        "options": {"a": "There is", "b": "There are", "c": "It is", "d": "Is there"},
+        "correct_option": "b",
+        "explanation": "Three chairs = more than one. We use There are."
+      },
+      {
+        "type": "mc",
+        "question": "_____ any milk in the fridge?",
+        "options": {"a": "There is", "b": "Is there", "c": "Are there", "d": "There are"},
+        "correct_option": "b",
+        "explanation": "Milk is uncountable. Question: Is there."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: There is / There are",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "_____ a dog in the garden.",
+          "options": {"a": "There is", "b": "There are", "c": "It is", "d": "They are"},
+          "correct_option": "a",
+          "explanation": "One dog = There is."
+        },
+        {
+          "type": "mc",
+          "question": "_____ many people at the party.",
+          "options": {"a": "There is", "b": "There are", "c": "It is", "d": "Is there"},
+          "correct_option": "b",
+          "explanation": "Many people = plural. There are."
+        },
+        {
+          "type": "mc",
+          "question": "_____ a shop near here?",
+          "options": {"a": "There is", "b": "There are", "c": "Is there", "d": "Are there"},
+          "correct_option": "c",
+          "explanation": "Question about one thing: Is there."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "intro": {
+    "title": "Past Simple",
+    "sections": [
+      {
+        "title": "What is the Past Simple?",
+        "content": "We use the **Past Simple** for things that are finished. They happened in the past.\n\n• I **worked** yesterday.\n• She **went** to London last year.\n• They **saw** a film last night."
+      },
+      {
+        "title": "Regular verbs",
+        "content": "Most verbs add **-ed** for the past:\n\n• work → work**ed**\n• play → play**ed**\n• want → want**ed**\n• live → liv**ed**"
+      },
+      {
+        "title": "Irregular verbs",
+        "content": "Some verbs do not add -ed. They have special forms:\n\n• go → **went**\n• see → **saw**\n• make → **made**\n• write → **wrote**\n\nYou must learn each one. See Reference → Irregular verbs."
+      },
+      {
+        "title": "Negatives and Questions",
+        "content": "**Negative:** I **did not** (didn't) go. She **did not** work.\n\n**Question:** **Did** you go? **Did** she work?\n\nWith **did** we use the base form of the verb (go, work, not went, worked)."
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "I _____ to London last year. (go)",
+        "options": {"a": "go", "b": "goed", "c": "went", "d": "going"},
+        "correct_option": "c",
+        "explanation": "Go is irregular: go → went."
+      },
+      {
+        "type": "mc",
+        "question": "She _____ a letter yesterday. (write)",
+        "options": {"a": "writed", "b": "wrote", "c": "written", "d": "write"},
+        "correct_option": "b",
+        "explanation": "Write is irregular: write → wrote."
+      },
+      {
+        "type": "mc",
+        "question": "_____ you see him yesterday?",
+        "options": {"a": "Do", "b": "Did", "c": "Were", "d": "Was"},
+        "correct_option": "b",
+        "explanation": "Past questions: Did + base verb."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Past Simple",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "They _____ football yesterday. (play)",
+          "options": {"a": "play", "b": "played", "c": "playing", "d": "plays"},
+          "correct_option": "b",
+          "explanation": "Play is regular: add -ed."
+        },
+        {
+          "type": "mc",
+          "question": "He _____ the film. (see)",
+          "options": {"a": "seed", "b": "saw", "c": "seen", "d": "see"},
+          "correct_option": "b",
+          "explanation": "See is irregular: see → saw."
+        },
+        {
+          "type": "mc",
+          "question": "I _____ go to work yesterday. I was ill.",
+          "options": {"a": "don't", "b": "didn't", "c": "wasn't", "d": "not"},
+          "correct_option": "b",
+          "explanation": "Past negative: didn't + base verb."
+        }
+      ]
+    }
+  }
+}

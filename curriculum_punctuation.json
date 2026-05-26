@@ -1,0 +1,340 @@
+{
+  "intro": {
+    "title": "Punctuation and capitalisation",
+    "sections": [
+      {
+        "title": "What this section covers",
+        "content": "This topic covers **punctuation** (especially commas) and **capitalisation** in English, focusing on common mistakes."
+      },
+      {
+        "title": "Commas: when to use them (1)",
+        "content": "**In lists:** *apples, oranges, and bananas* (last comma optional in British English).\n**After introductory words or phrases:** *However, we agreed. After the meeting, he left.*"
+      },
+      {
+        "title": "Commas: when to use them (2)",
+        "content": "**Before** *but*, *and*, *or*, *so*, *yet* when joining two full sentences: *I called, but she was busy.*\n**Around extra (non-defining) information:** *My brother, who lives in London, is a doctor.*"
+      },
+      {
+        "title": "Commas: when to use them (3)",
+        "content": "Do **not** use a comma when information is essential (defining): *The man who called yesterday left a message.*"
+      },
+      {
+        "title": "Commas: common mistakes",
+        "content": "**Before *that*:** usually **no** comma in English. *I think that he is right* (no comma before *that*).\n**Before *and*/*but*:** comma only when joining two **full sentences**. *She smiled, and I waved.* But no comma for: *She smiled and waved.*"
+      },
+      {
+        "title": "Capitalisation: the rules (1)",
+        "content": "In English, capitalise:\n\n**I** (always): *He and I went.*\n**First word** of a sentence.\n**Proper nouns:** *London, Jan, the European Union.*\n**Days and months:** *Monday, March.*"
+      },
+      {
+        "title": "Capitalisation: the rules (2)",
+        "content": "**Nationalities and languages:** *English, French, German.*\n**Titles of books/films** (main words): *The Lord of the Rings.*\nDo **not** capitalise general nouns unless part of a name: *university* vs *Oxford University*."
+      },
+      {
+        "title": "Capitalisation: common mistakes",
+        "content": "**Days and months** — always capitalise in English: *Monday, January.*\n**I** — always a capital letter.\n**Nationalities and languages** — always capitalise: *English, German, French.*"
+      },
+      {
+        "title": "Colons",
+        "content": "**Colon (:)** — used to introduce a list, explanation, or example. *We need three things: time, money, and help. There was one problem: the door was locked.* Also used for time: *12:30.*"
+      },
+      {
+        "title": "Semicolons (1)",
+        "content": "**Semicolon (;)** — joins two closely related full sentences (instead of comma + *and*): *It was late; we went home.*"
+      },
+      {
+        "title": "Semicolons (2)",
+        "content": "Also separates list items that already contain commas: *We visited Paris, France; Rome, Italy; and Berlin, Germany.*\nDo **not** use a semicolon before a dependent clause (before *because* or *although*) — use a comma instead."
+      },
+      {
+        "title": "Summary table",
+        "content": "",
+        "diagram": {
+          "type": "table",
+          "title": "Key punctuation and capitalisation rules",
+          "headers": [
+            "Rule",
+            "English",
+            "Example"
+          ],
+          "rows": [
+            [
+              "Comma before 'that'",
+              "Usually **no**",
+              "I think that he is right."
+            ],
+            [
+              "Comma + but/and",
+              "Yes, joining **two sentences**",
+              "I called, but she was busy."
+            ],
+            [
+              "Days and months",
+              "**Capitalise**",
+              "Monday, January"
+            ],
+            [
+              "Pronoun I",
+              "Always **capital**",
+              "He and I went."
+            ],
+            [
+              "Nationalities",
+              "**Capitalise**",
+              "English, French, German"
+            ],
+            [
+              "Colon",
+              "Before list, explanation, example",
+              "We need two things: time and money."
+            ],
+            [
+              "Semicolon",
+              "Between two related sentences; or in lists with commas",
+              "It was late; we left."
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Reference",
+        "content": "For more on comma use with relative clauses, see the Relative Pronouns topic under Choose Grammar Topic."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "I think that he is right.",
+          "b": "I think, that he is right.",
+          "c": "I think that, he is right.",
+          "d": "I think, that, he is right."
+        },
+        "correct_option": "a",
+        "explanation": "In English we usually do not put a comma before 'that' in this type of sentence."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "monday and tuesday",
+          "b": "Monday and tuesday",
+          "c": "Monday and Tuesday",
+          "d": "monday and Tuesday"
+        },
+        "correct_option": "c",
+        "explanation": "Days of the week are capitalised in English."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "She smiled and i waved.",
+          "b": "She smiled and i Waved.",
+          "c": "She smiled and I waved.",
+          "d": "she smiled and I waved."
+        },
+        "correct_option": "c",
+        "explanation": "The pronoun I is always capitalised in English. First word of sentence is capitalised."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct? (You have more than one brother; the London one is the doctor.)",
+        "options": {
+          "a": "My brother, who lives in London, is a doctor.",
+          "b": "My brother who lives in London is a doctor.",
+          "c": "My brother, who lives in London is a doctor.",
+          "d": "My brother who lives in London, is a doctor."
+        },
+        "correct_option": "a",
+        "explanation": "When the clause is extra (non-defining) information, we put commas around it: My brother, who lives in London, is a doctor."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "We speak english and czech.",
+          "b": "We speak English and czech.",
+          "c": "We speak English and Czech.",
+          "d": "we speak English and Czech."
+        },
+        "correct_option": "c",
+        "explanation": "Languages and nationalities are capitalised in English. Sentence starts with a capital."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "We need three things time, money, and help.",
+          "b": "We need three things: time, money, and help.",
+          "c": "We need three things; time, money, and help.",
+          "d": "We need three things, time, money, and help."
+        },
+        "correct_option": "b",
+        "explanation": "Use a colon to introduce a list (three things: time, money, and help)."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct? (Two related sentences.)",
+        "options": {
+          "a": "It was late, we went home.",
+          "b": "It was late; we went home.",
+          "c": "It was late we went home.",
+          "d": "It was late: we went home."
+        },
+        "correct_option": "b",
+        "explanation": "Use a semicolon to join two closely related full sentences. A comma alone would be a run-on."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc"
+  ],
+  "practice": {
+    "commas_capitals": {
+      "title": "Practice: Commas and capitalisation",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'I think, that she is coming.' Correct the sentence.",
+          "answers": [
+            "I think that she is coming.",
+            "I think that she's coming.",
+            "I think that she is coming",
+            "I think that she's coming"
+          ],
+          "explanation": "No comma before 'that' in English in this pattern."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'we went on monday.' Correct the sentence.",
+          "answers": [
+            "We went on Monday.",
+            "We went on Monday"
+          ],
+          "explanation": "Capitalise first word of sentence and the day of the week."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He and i left early.' Correct the sentence.",
+          "answers": [
+            "He and I left early.",
+            "He and I left early"
+          ],
+          "explanation": "The pronoun I is always written with a capital letter in English."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She speaks english and german.' Correct the sentence.",
+          "answers": [
+            "She speaks English and German.",
+            "She speaks English and German"
+          ],
+          "explanation": "Languages are capitalised in English."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I called but she was busy.' (Add a comma where needed.)",
+          "answers": [
+            "I called, but she was busy.",
+            "I called, but she was busy"
+          ],
+          "explanation": "Use a comma before 'but' when it joins two full sentences."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'However we decided to stay.' Correct the sentence.",
+          "answers": [
+            "However, we decided to stay.",
+            "However, we decided to stay"
+          ],
+          "explanation": "Use a comma after introductory words like However."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'In january we went to prague.' Correct the sentence.",
+          "answers": [
+            "In January we went to Prague.",
+            "In January we went to Prague"
+          ],
+          "explanation": "Capitalise months and place names (proper nouns)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The man, who stole the bag, was caught.' (The clause is essential – there were several men, and we mean the one who stole the bag.) Correct by removing unnecessary commas.",
+          "answers": [
+            "The man who stole the bag was caught.",
+            "The man who stole the bag was caught"
+          ],
+          "explanation": "No commas when the clause is defining (essential to identify which man)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'after the meeting he went home.' Correct the sentence.",
+          "answers": [
+            "After the meeting, he went home.",
+            "After the meeting, he went home"
+          ],
+          "explanation": "Capitalise first word; comma after introductory phrase 'After the meeting'."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She said that, she would come.' Correct the sentence.",
+          "answers": [
+            "She said that she would come.",
+            "She said that she would come"
+          ],
+          "explanation": "No comma before or after 'that' in this type of sentence."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We need two things time and money.' Add the correct punctuation.",
+          "answers": [
+            "We need two things: time and money.",
+            "We need two things: time and money"
+          ],
+          "explanation": "Use a colon to introduce a list (two things: time and money)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The train was delayed we missed the meeting.' Join the two sentences with the correct punctuation.",
+          "answers": [
+            "The train was delayed; we missed the meeting.",
+            "The train was delayed; we missed the meeting"
+          ],
+          "explanation": "Use a semicolon between two closely related full sentences."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'There was one problem the door was locked.' Add the correct punctuation.",
+          "answers": [
+            "There was one problem: the door was locked.",
+            "There was one problem: the door was locked"
+          ],
+          "explanation": "Use a colon to introduce an explanation (one problem: the door was locked)."
+        }
+      ]
+    },
+    "mc": {
+      "title": "Practice: Punctuation and capitalisation (multiple choice)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "Which is correct? (List of places with commas inside.)",
+          "options": {
+            "a": "We visited Paris, France, Rome, Italy, and Berlin, Germany.",
+            "b": "We visited Paris, France; Rome, Italy; and Berlin, Germany.",
+            "c": "We visited Paris, France: Rome, Italy: and Berlin, Germany.",
+            "d": "We visited Paris; France, Rome; Italy, and Berlin; Germany."
+          },
+          "correct_option": "b",
+          "explanation": "Use semicolons to separate list items when each item already contains a comma."
+        }
+      ]
+    }
+  }
+}

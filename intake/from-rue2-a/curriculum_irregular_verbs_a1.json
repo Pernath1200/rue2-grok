@@ -1,0 +1,74 @@
+{
+  "intro": {
+    "title": "Irregular Verbs",
+    "sections": [
+      {
+        "title": "Regular and irregular",
+        "content": "**Regular** verbs add **-ed** for the past:\n• work → work**ed**, play → play**ed**\n\n**Irregular** verbs have special forms. You must learn them:\n• go → **went**\n• see → **saw**\n• make → **made**"
+      },
+      {
+        "title": "Common irregular verbs",
+        "content": "• go → went\n• see → saw\n• make → made\n• write → wrote\n• speak → spoke\n• take → took\n• come → came\n• get → got\n• have → had\n• do → did"
+      },
+      {
+        "title": "Do not add -ed",
+        "content": "Wrong: he **goed**, she **speaked**, I **writed**\n\nRight: he **went**, she **spoke**, I **wrote**\n\nSee Reference → Irregular verbs for a full list."
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "I _____ to London last year. (go)",
+        "options": {"a": "go", "b": "goed", "c": "went", "d": "going"},
+        "correct_option": "c",
+        "explanation": "Go is irregular: went."
+      },
+      {
+        "type": "mc",
+        "question": "She _____ a letter. (write)",
+        "options": {"a": "writed", "b": "wrote", "c": "written", "d": "write"},
+        "correct_option": "b",
+        "explanation": "Write is irregular: wrote."
+      },
+      {
+        "type": "mc",
+        "question": "They _____ a cake. (make)",
+        "options": {"a": "maked", "b": "made", "c": "making", "d": "make"},
+        "correct_option": "b",
+        "explanation": "Make is irregular: made."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Irregular Verbs",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "He _____ me yesterday. (see)",
+          "options": {"a": "seed", "b": "saw", "c": "seen", "d": "see"},
+          "correct_option": "b",
+          "explanation": "See is irregular: saw."
+        },
+        {
+          "type": "mc",
+          "question": "We _____ home late. (come)",
+          "options": {"a": "come", "b": "comed", "c": "came", "d": "coming"},
+          "correct_option": "c",
+          "explanation": "Come is irregular: came."
+        },
+        {
+          "type": "mc",
+          "question": "She _____ to me. (speak)",
+          "options": {"a": "speaked", "b": "spoke", "c": "spoken", "d": "speak"},
+          "correct_option": "b",
+          "explanation": "Speak is irregular: spoke."
+        }
+      ]
+    }
+  }
+}

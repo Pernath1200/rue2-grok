@@ -1,0 +1,331 @@
+{
+  "intro": {
+    "title": "Past Perfect Simple and Past Perfect Continuous",
+    "sections": [
+      {
+        "title": "Link to Present Perfect (1)",
+        "content": "In the **Present Perfect** topic you learned: **present perfect simple** = have/has + past participle (result, experience). **Present perfect continuous** = have/has been + *-ing* (how long, activity)."
+      },
+      {
+        "title": "Link to Present Perfect (2)",
+        "content": "**Past perfect** is the same idea, but for a time **before another past time**. We use **had** instead of have/has. **Past perfect simple** = had + past participle. **Past perfect continuous** = had been + *-ing*."
+      },
+      {
+        "title": "Past perfect simple",
+        "content": "**Had** + past participle (*had gone*, *had finished*, *had written*). **Completed before** another past action or time. *When I arrived, she had already left. He had finished his homework before dinner. By 2020 they had sold the house.*"
+      },
+      {
+        "title": "Past perfect continuous (1)",
+        "content": "**Had been** + *-ing* (*had been waiting*, *had been working*). Focus on **how long** something had been happening before another past event, or on the **activity** itself. *When she arrived, I had been waiting for an hour.*"
+      },
+      {
+        "title": "Past perfect continuous (2)",
+        "content": "*His hands were dirty because he had been repairing the car.* **Compare:** *She had left* (simple — completed). *She had been living there for years* (continuous — duration)."
+      },
+      {
+        "title": "Past perfect vs past simple (1)",
+        "content": "**Two past events:** the one that happened **first** → past perfect. The one that happened **later** (main focus) → past simple. *When I arrived* (past simple), *the film had already started* (past perfect)."
+      },
+      {
+        "title": "Past perfect vs past simple (2)",
+        "content": "If the order is clear from *before* / *after* / *when*, past simple for both is sometimes possible: *She left before I arrived.* But past perfect is clearer."
+      },
+      {
+        "title": "Timeline diagram",
+        "content": "",
+        "diagram": {
+          "type": "timeline",
+          "title": "Past perfect: two events in the past",
+          "events": [
+            {
+              "label": "Earlier event",
+              "detail": "had + past participle",
+              "style": "past"
+            },
+            {
+              "label": "Later event",
+              "detail": "past simple",
+              "style": "past"
+            },
+            {
+              "label": "Now",
+              "detail": "speaking time",
+              "style": "now"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Simple vs continuous: how to choose (1)",
+        "content": "Same idea as present perfect. **Past perfect simple** — result, completion, single event: *By 9 she had left. He hadn't slept well.*"
+      },
+      {
+        "title": "Simple vs continuous: how to choose (2)",
+        "content": "**Past perfect continuous** — duration, ongoing activity: *They had been arguing for hours. It had been raining.* Simple = result / how many. Continuous = how long / activity."
+      },
+      {
+        "title": "Form (1)",
+        "content": "**Past perfect simple:** subject + **had** + past participle. *She had gone.* **Negative:** *hadn't* + participle. **Question:** *Had you left?*"
+      },
+      {
+        "title": "Form (2)",
+        "content": "**Past perfect continuous:** subject + **had been** + *-ing*. *She had been waiting.* **Negative:** *hadn't been* + *-ing*. **Question:** *Had you been waiting?*"
+      },
+      {
+        "title": "Typical errors (1)",
+        "content": "**Wrong:** *When I arrived, she left.* **Right:** *she had left* (earlier action → past perfect). **Wrong:** *I had went.* **Right:** **I had gone** (*had* + past participle, not past form)."
+      },
+      {
+        "title": "Typical errors (2)",
+        "content": "**Wrong:** *She had left when I had arrived.* **Right:** *when I arrived* (main event → past simple). **Wrong:** *She had been left.* **Right:** **She had left** (completed) or **She had been waiting** (duration)."
+      },
+      {
+        "title": "Typical errors (3)",
+        "content": "**Tip:** Earlier past = *had*. Later past = past simple."
+      },
+      {
+        "title": "Reference",
+        "content": "For more on past tenses, see Past Simple and Past Continuous and Past Simple vs Present Perfect under Choose Grammar Topic."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "'When she arrived, I _____ for an hour.' (Focus on how long I had been waiting.) Which fits?",
+        "options": {
+          "a": "waited",
+          "b": "had waited",
+          "c": "had been waiting",
+          "d": "was waiting"
+        },
+        "correct_option": "c",
+        "explanation": "How long before another past event → past perfect continuous."
+      },
+      {
+        "type": "mc",
+        "question": "'When I got there, she _____ home.' (She left before I got there.) Which fits?",
+        "options": {
+          "a": "had left",
+          "b": "left",
+          "c": "has left",
+          "d": "was leaving"
+        },
+        "correct_option": "a",
+        "explanation": "Action before another past action → past perfect."
+      },
+      {
+        "type": "mc",
+        "question": "'By 9 o'clock he _____ his homework.' Which fits?",
+        "options": {
+          "a": "finished",
+          "b": "has finished",
+          "c": "had finished",
+          "d": "was finishing"
+        },
+        "correct_option": "c",
+        "explanation": "By + time in the past → past perfect."
+      },
+      {
+        "type": "mc",
+        "question": "Which sentence is correct?",
+        "options": {
+          "a": "I had went to London.",
+          "b": "I had go to London.",
+          "c": "I had going to London.",
+          "d": "I had gone to London."
+        },
+        "correct_option": "d",
+        "explanation": "Past perfect = had + past participle. Go → gone."
+      },
+      {
+        "type": "mc",
+        "question": "'She was tired because she _____ well.' Which fits?",
+        "options": {
+          "a": "hadn't slept",
+          "b": "didn't sleep",
+          "c": "hadn't sleep",
+          "d": "wasn't sleeping"
+        },
+        "correct_option": "a",
+        "explanation": "Cause in the past (before she was tired) → past perfect."
+      },
+      {
+        "type": "mc",
+        "question": "'When they arrived, the meeting _____.' (The meeting started before they arrived.) Which fits?",
+        "options": {
+          "a": "started",
+          "b": "has started",
+          "c": "was starting",
+          "d": "had started"
+        },
+        "correct_option": "d",
+        "explanation": "Earlier past action → past perfect."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc"
+  ],
+  "practice": {
+    "gapfill": {
+      "title": "Practice: Past perfect simple and continuous",
+      "questions": [
+        {
+          "type": "open",
+          "question": "When she arrived, I _____ (wait) for an hour.",
+          "answers": [
+            "had been waiting"
+          ],
+          "explanation": "How long before another past event → past perfect continuous."
+        },
+        {
+          "type": "open",
+          "question": "When I got home, my sister _____ (already / go) to bed.",
+          "answers": [
+            "had already gone"
+          ],
+          "explanation": "Earlier past action → past perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "By 2020 they _____ (sell) the house.",
+          "answers": [
+            "had sold"
+          ],
+          "explanation": "By + time in the past → past perfect."
+        },
+        {
+          "type": "open",
+          "question": "She _____ (never / be) to Japan before last year.",
+          "answers": [
+            "had never been"
+          ],
+          "explanation": "Before a past time → past perfect."
+        },
+        {
+          "type": "open",
+          "question": "When I arrived, the film _____ (already / start).",
+          "answers": [
+            "had already started"
+          ],
+          "explanation": "Earlier past → past perfect."
+        },
+        {
+          "type": "open",
+          "question": "He was angry because someone _____ (take) his bag.",
+          "answers": [
+            "had taken"
+          ],
+          "explanation": "Cause in the past → past perfect."
+        },
+        {
+          "type": "open",
+          "question": "I _____ (not / see) her before that day.",
+          "answers": [
+            "hadn't seen",
+            "had not seen"
+          ],
+          "explanation": "Before a past time → past perfect negative."
+        },
+        {
+          "type": "open",
+          "question": "By the time we got to the station, the train _____ (leave).",
+          "answers": [
+            "had left"
+          ],
+          "explanation": "By the time + past → past perfect for the earlier action."
+        },
+        {
+          "type": "open",
+          "question": "She _____ (finish) her work before dinner.",
+          "answers": [
+            "had finished"
+          ],
+          "explanation": "Before another past time → past perfect."
+        },
+        {
+          "type": "open",
+          "question": "_____ you _____ (eat) when they arrived?",
+          "answers": [
+            "Had you eaten"
+          ],
+          "explanation": "Past perfect question: Had + subject + past participle."
+        },
+        {
+          "type": "open",
+          "question": "We couldn't get in because we _____ (lose) the key.",
+          "answers": [
+            "had lost"
+          ],
+          "explanation": "Reason in the past → past perfect."
+        }
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Correct the sentence",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'When I arrived, she left.' (She left before I arrived.) Correct the sentence.",
+          "answers": [
+            "When I arrived, she had left.",
+            "When I arrived, she had left"
+          ],
+          "explanation": "Earlier past action → past perfect (had left)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I had went to London in 2019.' Correct the sentence.",
+          "answers": [
+            "I had gone to London in 2019.",
+            "I went to London in 2019."
+          ],
+          "explanation": "Past perfect needs past participle: go → gone. Or use past simple for a single past event."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'By 8 o'clock she has left.' Correct the sentence.",
+          "answers": [
+            "By 8 o'clock she had left.",
+            "By 8 o'clock she had left"
+          ],
+          "explanation": "By + past time → past perfect (had left), not present perfect."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He was sad because he had didn't pass the exam.' Correct the sentence.",
+          "answers": [
+            "He was sad because he hadn't passed the exam.",
+            "He was sad because he hadn't passed the exam"
+          ],
+          "explanation": "Past perfect negative: had not (hadn't) + past participle. No 'did'."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'When they had arrived, the show had started.' Correct the sentence.",
+          "answers": [
+            "When they arrived, the show had started.",
+            "When they arrived, the show had started"
+          ],
+          "explanation": "Main past event (they arrived) → past simple. Earlier action (show started) → past perfect."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She had never saw that film before.' Correct the sentence.",
+          "answers": [
+            "She had never seen that film before.",
+            "She had never seen that film before"
+          ],
+          "explanation": "Past perfect: had + past participle. See → seen."
+        }
+      ]
+    },
+    "mc": {
+      "title": "Practice: Past Perfect Simple and Continuous (multiple choice)",
+      "questions": []
+    }
+  }
+}

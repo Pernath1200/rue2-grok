@@ -1,0 +1,230 @@
+{
+  "intro": {
+    "title": "Auxiliary Verbs",
+    "sections": [
+      {
+        "title": "What are auxiliary verbs?",
+        "content": "**Auxiliary verbs** (helping verbs) are used with a main verb to form questions, negatives, emphasis, and compound tenses. **Primary auxiliaries** in English are **be** (*am, is, are, was, were, been*), **have** (*have, has, had*), and **do** (*do, does, did*). In English we **cannot** say *I not know* or *She likes not* — we need an auxiliary: *I do not know. She does not like it.*"
+      },
+      {
+        "title": "Do, does, did",
+        "content": "**Do / does / did** form questions and negatives in the **present simple** and **past simple**:\nPresent: *Do you know? She doesn't like it.* (Third person: **does / doesn't**.)\nPast: *Did they come? I didn't see him.*\nAfter **do**, **does**, or **did**, always use the **base form** of the main verb (*go, know, like*), not the past or -s form."
+      },
+      {
+        "title": "Be and have",
+        "content": "**Be** is used for continuous tenses (*be + -ing*): *I am working. She was leaving.* Also for passives (*be + past participle*): *The letter was sent.*\n**Have** is used for perfect tenses (*have + past participle*): *I have finished. She had left.*\nModals (*will, can, must*, etc.) are a separate group — see the Modal Verbs topic."
+      },
+      {
+        "title": "Common mistakes (1)",
+        "content": "**Omitting do/does/did:** Wrong: *I not understand. She not like it.* Right: *I do not understand. She does not like it.*\n**Wrong form with he/she/it:** Wrong: *He don't know. She don't have.* Right: *He doesn't know. She doesn't have.* (Third person singular → **does / doesn't**.)"
+      },
+      {
+        "title": "Common mistakes (2)",
+        "content": "• **Have = possess:** Wrong: *Have you a car?* Right: ***Do** you have a car?* (or *Have you **got** a car?* in BrE)\n• **Word order in questions:** Wrong: *Why you did go?* Right: *Why **did you** go?*"
+      },
+      {
+        "title": "Common mistakes (3)",
+        "content": "• **Base form after did/does:** Wrong: *Did he went? She doesn't knows.* Right: *Did he **go**? She doesn't **know**.*\n• **Present perfect + past time word:** Wrong: *I have been in London yesterday.* Right: *I **went** yesterday.* (Or: *I have been to London* — no time word.)"
+      },
+      {
+        "title": "Reference",
+        "content": "For more on do/does/did in questions and negatives, see the Verb–Subject Agreement topic under Choose Grammar Topic."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which auxiliary do we use for questions and negatives in the **present simple**?",
+        "options": {
+          "a": "be",
+          "b": "have",
+          "c": "do / does",
+          "d": "will"
+        },
+        "correct_option": "c",
+        "explanation": "**Do** (I/you/we/they) and **does** (he/she/it) are used for questions and negatives in the present simple."
+      },
+      {
+        "type": "mc",
+        "question": "Why is *She don't like it* wrong?",
+        "options": {
+          "a": "We must use 'doesn't' with he/she/it in present simple",
+          "b": "We never use 'do' with 'like'",
+          "c": "We must use 'not' instead",
+          "d": "We must use past tense"
+        },
+        "correct_option": "a",
+        "explanation": "Third person singular (he/she/it) in present simple uses **does** / **doesn't**, not *do* / *don't*."
+      },
+      {
+        "type": "mc",
+        "question": "After *did* in a question or negative, which form of the main verb do we use?",
+        "options": {
+          "a": "Base form (e.g. go)",
+          "b": "Past tense (e.g. went)",
+          "c": "-ing form",
+          "d": "Past participle"
+        },
+        "correct_option": "a",
+        "explanation": "After **did** we always use the **base form** of the verb: *Did he go?* not *Did he went?*"
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct for *Have you a car?* (when 'have' means possess)?",
+        "options": {
+          "a": "Have you a car? (always correct)",
+          "b": "Have you have a car?",
+          "c": "Do you have a car? (standard)",
+          "d": "Do you has a car?"
+        },
+        "correct_option": "c",
+        "explanation": "When **have** is a main verb (possess), we usually form questions with **Do you have...?** In British English *Have you got...?* is also common."
+      },
+      {
+        "type": "mc",
+        "question": "Why is *I not know* wrong in English?",
+        "options": {
+          "a": "We must use 'no' instead of 'not'",
+          "b": "We must use 'never'",
+          "c": "The verb must be past",
+          "d": "In present simple negative we need the auxiliary **do** + not"
+        },
+        "correct_option": "d",
+        "explanation": "English requires the auxiliary **do** in present simple negatives: *I **do** not know* / *I don't know*."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc"
+  ],
+  "practice": {
+    "mc": {
+      "title": "Practice: Auxiliary verbs (multiple choice)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "He doesn't know the answer.",
+            "b": "He don't know the answer.",
+            "c": "He not know the answer.",
+            "d": "He doesn't knows the answer."
+          },
+          "correct_option": "a",
+          "explanation": "Third person singular → **doesn't** + base form **know**."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "Did she went home?",
+            "b": "Did she goes home?",
+            "c": "Did she go home?",
+            "d": "Did she going home?"
+          },
+          "correct_option": "c",
+          "explanation": "After **did** we use the **base form**: go."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "Why you did leave?",
+            "b": "Why did you left?",
+            "c": "Why you leave?",
+            "d": "Why did you leave?"
+          },
+          "correct_option": "d",
+          "explanation": "Question word + **did** + subject + base form."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct? (have = possess)",
+          "options": {
+            "a": "Do you have a pen?",
+            "b": "Have you a pen?",
+            "c": "Do you has a pen?",
+            "d": "You have a pen?"
+          },
+          "correct_option": "a",
+          "explanation": "For *have* as main verb (possess), we use **Do you have...?**"
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "They doesn't have time.",
+            "b": "They don't have time.",
+            "c": "They not have time.",
+            "d": "They don't has time."
+          },
+          "correct_option": "b",
+          "explanation": "Plural **they** → **don't**; after auxiliary, main verb is base form **have**."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "She didn't came yesterday.",
+            "b": "She not came yesterday.",
+            "c": "She didn't come yesterday.",
+            "d": "She did not came yesterday."
+          },
+          "correct_option": "c",
+          "explanation": "After **didn't** we use **base form**: come."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "What did he said?",
+            "b": "What did he say?",
+            "c": "What he said?",
+            "d": "What he did say?"
+          },
+          "correct_option": "b",
+          "explanation": "Did + subject + **base form** (say)."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "I not understand.",
+            "b": "I don't understand.",
+            "c": "I am not understand.",
+            "d": "I no understand."
+          },
+          "correct_option": "b",
+          "explanation": "Present simple negative → **don't** + base form."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "Does she likes coffee?",
+            "b": "Do she like coffee?",
+            "c": "Does she like coffee?",
+            "d": "She likes coffee?"
+          },
+          "correct_option": "c",
+          "explanation": "**Does** (he/she/it) + base form **like**."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "Where they went?",
+            "b": "Where did they went?",
+            "c": "Where did they gone?",
+            "d": "Where did they go?"
+          },
+          "correct_option": "d",
+          "explanation": "Did + subject + **base form** (go)."
+        }
+      ]
+    }
+  }
+}

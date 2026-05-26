@@ -1,0 +1,256 @@
+{
+  "intro": {
+    "title": "Open Cloze",
+    "sections": [
+      {
+        "title": "In the exam (1)",
+        "content": "In FCE and CAE, Open Cloze is **Part 2**. You have a short text with eight gaps and write **one word** in each. You do not get a list of words to choose from."
+      },
+      {
+        "title": "In the exam (2)",
+        "content": "**Tip:** Read the whole text first before you fill any gap. The context often makes the answer clear."
+      },
+      {
+        "title": "What is Open Cloze? (1)",
+        "content": "You read a short text with **eight gaps**. You write **one word** in each gap. The word must be right for grammar and meaning. You do not get options – you think of the word."
+      },
+      {
+        "title": "What is Open Cloze? (2)",
+        "content": "This task tests grammar and words: articles (a, the), verbs like do/have, prepositions, linkers, pronouns and so on."
+      },
+      {
+        "title": "One word only",
+        "content": "Write **only one word** in each gap. Short forms like *don't* or *it's* count as **one word**. Spell the word correctly.\n\nDo not write two words when you need one. Do not leave the gap empty."
+      },
+      {
+        "title": "What is often in the gaps? (1)",
+        "content": "Often you need:"
+      },
+      {
+        "title": "What is often in the gaps? (2)",
+        "content": "• **Articles**: a, an, the, or no article\n• **Verbs**: do, does, did, have, has, will, would, can, could\n• **Prepositions**: in, on, at, for, with, by, from, to\n• **Linkers**: although, however, because, so that, while\n• **Pronouns**: who, which, tha"
+      },
+      {
+        "title": "What is often in the gaps? (3)",
+        "content": "t, what, where, when\n• **Other**: some, any, much, many, all, each, every\n• **Fixed phrases**: such as, as well as, in order to"
+      },
+      {
+        "title": "What to do (1)",
+        "content": "1. Read the whole sentence. Read the sentences before and after too.\n2. Think: what **type** of word is missing? (article? verb? preposition?)\n3. Think of the word that fits the **grammar** and the **meaning**.\n4."
+      },
+      {
+        "title": "What to do (2)",
+        "content": "Check: one word only, and correct spelling."
+      },
+      {
+        "title": "Reference",
+        "content": "[[ref|Reference lists]]"
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "In Open Cloze, how many words do you write in each gap?",
+        "options": {
+          "a": "One word only",
+          "b": "One or two words",
+          "c": "Up to three words",
+          "d": "As many as fit"
+        },
+        "correct_option": "a",
+        "explanation": "Only one word per gap. Short forms like don't count as one word."
+      },
+      {
+        "type": "mc",
+        "question": "What does Open Cloze test?",
+        "options": {
+          "a": "Only vocabulary",
+          "b": "Only grammar",
+          "c": "Grammar and vocabulary (e.g. articles, linkers, prepositions)",
+          "d": "Punctuation"
+        },
+        "correct_option": "c",
+        "explanation": "It tests both grammar and vocabulary: articles, verbs, prepositions, linkers and more."
+      },
+      {
+        "type": "mc",
+        "question": "'I don't know _____ she said.' What type of word often goes in the gap?",
+        "options": {
+          "a": "An article",
+          "b": "A preposition",
+          "c": "A word like what or that",
+          "d": "A verb"
+        },
+        "correct_option": "c",
+        "explanation": "We often need what or that here: 'what she said' or 'that she said'."
+      },
+      {
+        "type": "mc",
+        "question": "Does spelling matter?",
+        "options": {
+          "a": "No",
+          "b": "Yes, the word must be spelled correctly",
+          "c": "Only for long words",
+          "d": "Only in the first gap"
+        },
+        "correct_option": "b",
+        "explanation": "Spelling must be correct for the answer to be right."
+      },
+      {
+        "type": "mc",
+        "question": "What should you do before you write a word in the gap?",
+        "options": {
+          "a": "Only look at the gap",
+          "b": "Read the whole sentence and the context",
+          "c": "Guess straight away",
+          "d": "Skip the gap"
+        },
+        "correct_option": "b",
+        "explanation": "Reading the whole sentence helps you get the right meaning and grammar."
+      }
+    ]
+  },
+  "practice_order": [
+    "guidance"
+  ],
+  "practice": {
+    "guidance": {
+      "title": "Guided Practice: Open Cloze",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "The weather was cold, _____ we stayed indoors.",
+          "options": {
+            "a": "so",
+            "b": "because",
+            "c": "although",
+            "d": "during"
+          },
+          "correct_option": "a",
+          "explanation": "Result: 'so' – we stayed indoors because of the cold.",
+          "topic": "conjunctions_linkers"
+        },
+        {
+          "type": "mc",
+          "question": "She has lived here _____ 2020.",
+          "options": {
+            "a": "for",
+            "b": "since",
+            "c": "from",
+            "d": "during"
+          },
+          "correct_option": "b",
+          "explanation": "Since + a point in time (2020). We use present perfect.",
+          "topic": "prepositions"
+        },
+        {
+          "type": "mc",
+          "question": "I don't know _____ he left. (We ask about the time.)",
+          "options": {
+            "a": "when",
+            "b": "what",
+            "c": "which",
+            "d": "whose"
+          },
+          "correct_option": "a",
+          "explanation": "When he left = the time.",
+          "topic": "relative_pronouns"
+        },
+        {
+          "type": "mc",
+          "question": "_____ you like coffee or tea?",
+          "options": {
+            "a": "Do",
+            "b": "Are",
+            "c": "Have",
+            "d": "Can"
+          },
+          "correct_option": "a",
+          "explanation": "Present simple question: Do you like...?",
+          "topic": "auxiliary_verbs"
+        },
+        {
+          "type": "mc",
+          "question": "We went out _____ the rain.",
+          "options": {
+            "a": "although",
+            "b": "despite",
+            "c": "because",
+            "d": "so"
+          },
+          "correct_option": "b",
+          "explanation": "Despite + the rain. Although needs a clause: although it was raining.",
+          "topic": "conjunctions_linkers"
+        },
+        {
+          "type": "mc",
+          "question": "This is the book _____ I was telling you about.",
+          "options": {
+            "a": "who",
+            "b": "where",
+            "c": "which",
+            "d": "when"
+          },
+          "correct_option": "c",
+          "explanation": "A thing (book) → which or that.",
+          "topic": "relative_pronouns"
+        },
+        {
+          "type": "mc",
+          "question": "He _____ have finished by now.",
+          "options": {
+            "a": "must",
+            "b": "can",
+            "c": "is",
+            "d": "has"
+          },
+          "correct_option": "a",
+          "explanation": "We think it is true: must have + past participle.",
+          "topic": "modal_verbs"
+        },
+        {
+          "type": "mc",
+          "question": "There isn't _____ milk left.",
+          "options": {
+            "a": "some",
+            "b": "any",
+            "c": "many",
+            "d": "much of"
+          },
+          "correct_option": "b",
+          "explanation": "In negative sentences we use any (with uncountable milk).",
+          "topic": "quantifiers"
+        },
+        {
+          "type": "mc",
+          "question": "She made the cake _____ hand.",
+          "options": {
+            "a": "by",
+            "b": "with",
+            "c": "from",
+            "d": "in"
+          },
+          "correct_option": "a",
+          "explanation": "By hand = she made it herself (fixed phrase).",
+          "topic": "fixed_phrases"
+        },
+        {
+          "type": "mc",
+          "question": "I'll call you _____ I arrive.",
+          "options": {
+            "a": "so",
+            "b": "because",
+            "c": "when",
+            "d": "during"
+          },
+          "correct_option": "c",
+          "explanation": "Time: when I arrive.",
+          "topic": "conjunctions_linkers"
+        }
+      ]
+    }
+  }
+}

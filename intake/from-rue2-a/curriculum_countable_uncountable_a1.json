@@ -1,0 +1,74 @@
+{
+  "intro": {
+    "title": "Countable and Uncountable",
+    "sections": [
+      {
+        "title": "Countable nouns",
+        "content": "**Countable** nouns: you can count them. Use **a/an** and add **-s** for more than one.\n\n• a book, two books\n• an apple, three apples\n• a car, many cars"
+      },
+      {
+        "title": "Uncountable nouns",
+        "content": "**Uncountable** nouns: you cannot count them. No **a/an**, no **-s**.\n\n• water, milk, coffee\n• rice, bread\n• money, time\n\nWe say: **some** water, **a cup of** coffee, **a lot of** rice."
+      },
+      {
+        "title": "Some and any",
+        "content": "**Some** – positive: I have **some** milk. There are **some** books.\n\n**Any** – questions and negatives: Do you have **any** milk? I don't have **any** money."
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "I need _____ water.",
+        "options": {"a": "a", "b": "an", "c": "some", "d": "many"},
+        "correct_option": "c",
+        "explanation": "Water is uncountable. We use some."
+      },
+      {
+        "type": "mc",
+        "question": "Do you have _____ apples?",
+        "options": {"a": "some", "b": "any", "c": "much", "d": "a"},
+        "correct_option": "b",
+        "explanation": "In questions we use any."
+      },
+      {
+        "type": "mc",
+        "question": "I have _____ books.",
+        "options": {"a": "a", "b": "an", "c": "some", "d": "much"},
+        "correct_option": "c",
+        "explanation": "Positive: some books."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Countable and Uncountable",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "She wants _____ milk.",
+          "options": {"a": "a", "b": "an", "c": "some", "d": "many"},
+          "correct_option": "c",
+          "explanation": "Milk is uncountable. Some milk."
+        },
+        {
+          "type": "mc",
+          "question": "There is _____ bread on the table.",
+          "options": {"a": "a", "b": "an", "c": "some", "d": "many"},
+          "correct_option": "c",
+          "explanation": "Bread is uncountable. Some bread."
+        },
+        {
+          "type": "mc",
+          "question": "I don't have _____ money.",
+          "options": {"a": "some", "b": "any", "c": "much", "d": "many"},
+          "correct_option": "b",
+          "explanation": "Negative: any money."
+        }
+      ]
+    }
+  }
+}

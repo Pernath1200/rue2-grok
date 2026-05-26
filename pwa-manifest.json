@@ -1,0 +1,19 @@
+{
+  "name": "English Grammar Check",
+  "short_name": "Grammar Check",
+  "description": "Grammar and exam-style practice: topics, quizzes, open cloze, fixed phrases.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#2563eb",
+  "background_color": "#1a1b26",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

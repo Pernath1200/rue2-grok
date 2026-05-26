@@ -1,0 +1,609 @@
+{
+  "intro": {
+    "title": "Phrasal verbs",
+    "sections": [
+      {
+        "title": "What are phrasal verbs?",
+        "content": "**Phrasal verb** = verb + particle with a **different meaning** from the verb alone: *look → look after* (take care of); *give → give up* (stop trying); *take → take off* (remove / leave). Very common in spoken English — learn them as **whole phrases**. Examples: *carry out* (do), *set up* (establish), *find out* (discover), *put off* (postpone), *run out of* (use up)."
+      },
+      {
+        "title": "Separable vs inseparable",
+        "content": "**Separable:** object can go in the middle or after: *Turn on the light. / Turn the light on.* With a pronoun: **Turn it on.** (not: *Turn on it.*)\n**Inseparable:** object always after the particle: *Look after the children.* (not: *look the children after.*) *Run into a friend. Go through a difficult time.*"
+      },
+      {
+        "title": "Common particles",
+        "content": "Particles often suggest direction or completion:\n**up** — complete, increase: *give up, set up, fill up.* **down** — decrease, stop: *calm down, turn down.* **out** — disappear, distribute: *find out, run out.* **off** — disconnect, cancel: *turn off, call off.* **on** — connect, continue: *turn on, carry on.* **over** — transfer, review: *take over, go over.*\nMany have more than one meaning: *take off* = remove clothes / plane leaves. Use context."
+      },
+      {
+        "title": "Typical errors",
+        "content": "**Wrong particle:** Wrong: *We put on the meeting* (postpone). Right: *We put off the meeting.* (*put on* = wear)\n**Word order (separable):** Wrong: *Turn on it.* Right: **Turn it on.** (Pronoun in the middle.)\n**Similar verbs:** *look up* (search) vs *look after* (take care of) vs *look for* (search for)."
+      },
+      {
+        "title": "Separable vs inseparable",
+        "content": "",
+        "diagram": {
+          "type": "comparison",
+          "title": "Separable vs inseparable phrasal verbs",
+          "left": {
+            "title": "Separable",
+            "points": [
+              "Object can go in the middle",
+              "Turn **the light** on.",
+              "Pronoun MUST go in middle",
+              "Turn **it** on. (not: turn on it)"
+            ]
+          },
+          "right": {
+            "title": "Inseparable",
+            "points": [
+              "Object always after particle",
+              "Look after **the children**.",
+              "Pronoun also after particle",
+              "Look after **them**."
+            ]
+          }
+        }
+      },
+      {
+        "title": "Reference",
+        "content": "For a full list of phrasal verbs and their meanings, see the Phrasal Verbs section under Reference."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "'We need to _____ the meeting.' (postpone) Which fits?",
+        "options": {
+          "a": "put off",
+          "b": "put on",
+          "c": "put up",
+          "d": "put down"
+        },
+        "correct_option": "a",
+        "explanation": "Put off = postpone. Put on = wear; put up = raise; put down = place down."
+      },
+      {
+        "type": "mc",
+        "question": "'Who will _____ the children?' (take care of) Which fits?",
+        "options": {
+          "a": "look up",
+          "b": "look for",
+          "c": "look after",
+          "d": "look at"
+        },
+        "correct_option": "c",
+        "explanation": "Look after = take care of. Look up = search; look for = search for."
+      },
+      {
+        "type": "mc",
+        "question": "'Don't _____ !' (stop trying) Which fits?",
+        "options": {
+          "a": "give in",
+          "b": "give out",
+          "c": "give up",
+          "d": "give back"
+        },
+        "correct_option": "c",
+        "explanation": "Give up = stop trying. Give in = yield; give out = distribute; give back = return."
+      },
+      {
+        "type": "mc",
+        "question": "'We've _____ milk.' (used up) Which fits?",
+        "options": {
+          "a": "run off",
+          "b": "run into",
+          "c": "run over",
+          "d": "run out of"
+        },
+        "correct_option": "d",
+        "explanation": "Run out of = use up, have none left. Run into = meet by chance; run over = hit."
+      },
+      {
+        "type": "mc",
+        "question": "'_____ the light.' (switch on) With a pronoun: _____",
+        "options": {
+          "a": "Turn on it",
+          "b": "Turn on",
+          "c": "Turn it on",
+          "d": "It turn on"
+        },
+        "correct_option": "c",
+        "explanation": "Separable phrasal verb: pronoun goes between verb and particle (Turn it on)."
+      },
+      {
+        "type": "mc",
+        "question": "'She _____ a solution.' (thought of an idea) Which fits?",
+        "options": {
+          "a": "came up with",
+          "b": "came across",
+          "c": "came down with",
+          "d": "came back"
+        },
+        "correct_option": "a",
+        "explanation": "Come up with = think of (an idea). Come across = find by chance; come down with = become ill."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc_meaning"
+  ],
+  "practice": {
+    "gapfill_top50": {
+      "title": "Practice: Top 50 phrasal verbs (gap fill)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Please _____ with your work. (continue)",
+          "answers": [
+            "go on"
+          ],
+          "explanation": "Go on = continue."
+        },
+        {
+          "type": "open",
+          "question": "They _____ the experiment. (did, completed)",
+          "answers": [
+            "carried out"
+          ],
+          "explanation": "Carry out = do or complete a task."
+        },
+        {
+          "type": "open",
+          "question": "We _____ a meeting for Monday. (arranged)",
+          "answers": [
+            "set up"
+          ],
+          "explanation": "Set up = establish, arrange."
+        },
+        {
+          "type": "open",
+          "question": "I'll _____ you at seven. (collect)",
+          "answers": [
+            "pick you up",
+            "pick up"
+          ],
+          "explanation": "Pick up = collect. Separable: pick you up."
+        },
+        {
+          "type": "open",
+          "question": "Don't _____ ! (stop trying)",
+          "answers": [
+            "give up"
+          ],
+          "explanation": "Give up = stop trying."
+        },
+        {
+          "type": "open",
+          "question": "_____ the word in a dictionary. (search for)",
+          "answers": [
+            "Look up"
+          ],
+          "explanation": "Look up = search for information."
+        },
+        {
+          "type": "open",
+          "question": "Who will _____ the children? (take care of)",
+          "answers": [
+            "look after"
+          ],
+          "explanation": "Look after = take care of."
+        },
+        {
+          "type": "open",
+          "question": "We _____ the meeting. Replace 'postponed' with a two-word phrasal verb that means the same.",
+          "answers": [
+            "put off"
+          ],
+          "explanation": "Put off = postpone."
+        },
+        {
+          "type": "open",
+          "question": "_____ your homework. (submit)",
+          "answers": [
+            "Hand in"
+          ],
+          "explanation": "Hand in = submit."
+        },
+        {
+          "type": "open",
+          "question": "We've _____ of milk. (used up)",
+          "answers": [
+            "run out"
+          ],
+          "explanation": "Run out of = use up, have none left."
+        },
+        {
+          "type": "open",
+          "question": "They _____ the match. (cancelled)",
+          "answers": [
+            "called off"
+          ],
+          "explanation": "Call off = cancel."
+        },
+        {
+          "type": "open",
+          "question": "I _____ at seven. (rise from bed)",
+          "answers": [
+            "get up"
+          ],
+          "explanation": "Get up = rise from bed or seat."
+        },
+        {
+          "type": "open",
+          "question": "_____ your coat. (wear)",
+          "answers": [
+            "Put on"
+          ],
+          "explanation": "Put on = wear; switch on."
+        },
+        {
+          "type": "open",
+          "question": "_____ the light. (switch off)",
+          "answers": [
+            "Turn off"
+          ],
+          "explanation": "Turn off = switch off."
+        },
+        {
+          "type": "open",
+          "question": "Things will _____. (succeed)",
+          "answers": [
+            "work out"
+          ],
+          "explanation": "Work out = succeed; exercise; calculate."
+        }
+      ]
+    },
+    "mc_meaning": {
+      "title": "Practice: Choose the correct meaning",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "'Look up' means:",
+          "options": {
+            "a": "take care of",
+            "b": "search for (information)",
+            "c": "search for (something lost)",
+            "d": "raise your eyes"
+          },
+          "correct_option": "b",
+          "explanation": "Look up = search for information (e.g. in a dictionary)."
+        },
+        {
+          "type": "mc",
+          "question": "'Put off' means:",
+          "options": {
+            "a": "wear",
+            "b": "postpone",
+            "c": "switch on",
+            "d": "place down"
+          },
+          "correct_option": "b",
+          "explanation": "Put off = postpone."
+        },
+        {
+          "type": "mc",
+          "question": "'Take off' can mean:",
+          "options": {
+            "a": "remove (clothes); leave (plane)",
+            "b": "postpone",
+            "c": "take care of",
+            "d": "discover"
+          },
+          "correct_option": "a",
+          "explanation": "Take off = remove clothes; (plane) leave the ground."
+        },
+        {
+          "type": "mc",
+          "question": "'Run out of' means:",
+          "options": {
+            "a": "meet by chance",
+            "b": "leave quickly",
+            "c": "use up; have none left",
+            "d": "hit with a vehicle"
+          },
+          "correct_option": "c",
+          "explanation": "Run out of = use up, have no more."
+        },
+        {
+          "type": "mc",
+          "question": "'Bring up' can mean:",
+          "options": {
+            "a": "mention; raise (children)",
+            "b": "return",
+            "c": "introduce",
+            "d": "increase"
+          },
+          "correct_option": "a",
+          "explanation": "Bring up = raise children; mention a topic."
+        },
+        {
+          "type": "mc",
+          "question": "'Go through' means:",
+          "options": {
+            "a": "experience; examine",
+            "b": "review",
+            "c": "continue",
+            "d": "enter"
+          },
+          "correct_option": "a",
+          "explanation": "Go through = experience; examine."
+        },
+        {
+          "type": "mc",
+          "question": "'Find out' means:",
+          "options": {
+            "a": "search for",
+            "b": "discover",
+            "c": "invent",
+            "d": "look after"
+          },
+          "correct_option": "b",
+          "explanation": "Find out = discover."
+        },
+        {
+          "type": "mc",
+          "question": "'Take over' means:",
+          "options": {
+            "a": "remove",
+            "b": "accept (work)",
+            "c": "assume control",
+            "d": "start"
+          },
+          "correct_option": "c",
+          "explanation": "Take over = assume control."
+        },
+        {
+          "type": "mc",
+          "question": "'Set up' means:",
+          "options": {
+            "a": "postpone",
+            "b": "rise",
+            "c": "establish; arrange",
+            "d": "switch on"
+          },
+          "correct_option": "c",
+          "explanation": "Set up = establish, arrange."
+        },
+        {
+          "type": "mc",
+          "question": "'Carry on' means:",
+          "options": {
+            "a": "complete",
+            "b": "take care of",
+            "c": "continue",
+            "d": "distribute"
+          },
+          "correct_option": "c",
+          "explanation": "Carry on = continue."
+        }
+      ]
+    },
+    "gapfill_next100": {
+      "title": "Practice: Next 100 phrasal verbs (gap fill)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "He _____ a solution. (thought of)",
+          "answers": [
+            "came up with"
+          ],
+          "explanation": "Come up with = think of an idea."
+        },
+        {
+          "type": "open",
+          "question": "I _____ an old friend. (met by chance)",
+          "answers": [
+            "bumped into"
+          ],
+          "explanation": "Bump into = meet by chance."
+        },
+        {
+          "type": "open",
+          "question": "She _____ flu. (became ill with)",
+          "answers": [
+            "came down with"
+          ],
+          "explanation": "Come down with = become ill with."
+        },
+        {
+          "type": "open",
+          "question": "I _____ an interesting article. (found by chance)",
+          "answers": [
+            "came across"
+          ],
+          "explanation": "Come across = find by chance; seem."
+        },
+        {
+          "type": "open",
+          "question": "They _____ last year. (ended their relationship)",
+          "answers": [
+            "broke up"
+          ],
+          "explanation": "Break up = end a relationship; disperse."
+        },
+        {
+          "type": "open",
+          "question": "We _____ at home. (finally were)",
+          "answers": [
+            "ended up"
+          ],
+          "explanation": "End up = finally do or be."
+        },
+        {
+          "type": "open",
+          "question": "I can't _____ this problem. (solve)",
+          "answers": [
+            "figure out"
+          ],
+          "explanation": "Figure out = understand; solve."
+        },
+        {
+          "type": "open",
+          "question": "She _____ her illness. (recovered from)",
+          "answers": [
+            "got over"
+          ],
+          "explanation": "Get over = recover from."
+        },
+        {
+          "type": "open",
+          "question": "He _____ to pressure. (yielded)",
+          "answers": [
+            "gave in"
+          ],
+          "explanation": "Give in = yield; submit."
+        },
+        {
+          "type": "open",
+          "question": "I _____ in Prague. (became adult)",
+          "answers": [
+            "grew up"
+          ],
+          "explanation": "Grow up = become adult."
+        },
+        {
+          "type": "open",
+          "question": "_____ a second. (wait)",
+          "answers": [
+            "Hang on"
+          ],
+          "explanation": "Hang on = wait."
+        },
+        {
+          "type": "open",
+          "question": "_____ the good work. (maintain)",
+          "answers": [
+            "Keep up"
+          ],
+          "explanation": "Keep up = maintain; continue."
+        },
+        {
+          "type": "open",
+          "question": "We need to _____ the problem. (resolve)",
+          "answers": [
+            "sort out"
+          ],
+          "explanation": "Sort out = resolve; organise."
+        },
+        {
+          "type": "open",
+          "question": "She didn't _____. (arrive)",
+          "answers": [
+            "show up",
+            "turn up"
+          ],
+          "explanation": "Show up / turn up = arrive; appear."
+        },
+        {
+          "type": "open",
+          "question": "_____! (be careful)",
+          "answers": [
+            "Look out",
+            "Watch out"
+          ],
+          "explanation": "Look out / Watch out = be careful."
+        }
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Correct the phrasal verb",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'We put on the meeting.' (meaning postponed) Correct the sentence.",
+          "answers": [
+            "We put off the meeting.",
+            "We put off the meeting"
+          ],
+          "explanation": "Put off = postpone. Put on = wear."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Turn on it.' Correct the sentence.",
+          "answers": [
+            "Turn it on.",
+            "Turn it on"
+          ],
+          "explanation": "Separable: pronoun goes between verb and particle."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I will find the information.' (meaning search for in a book) Correct using a phrasal verb.",
+          "answers": [
+            "I will look up the information.",
+            "I will look up the information"
+          ],
+          "explanation": "Look up = search for information."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Who will look the children after?' Correct the sentence.",
+          "answers": [
+            "Who will look after the children?",
+            "Who will look after the children"
+          ],
+          "explanation": "Look after is inseparable: object after particle."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We ran out milk.' Correct the sentence.",
+          "answers": [
+            "We ran out of milk.",
+            "We ran out of milk"
+          ],
+          "explanation": "Run out of = use up. We need 'of' before the thing."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Don't give in!' (meaning don't stop trying) Correct the sentence.",
+          "answers": [
+            "Don't give up!",
+            "Don't give up"
+          ],
+          "explanation": "Give up = stop trying. Give in = yield."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She came up a solution.' Correct the sentence.",
+          "answers": [
+            "She came up with a solution.",
+            "She came up with a solution"
+          ],
+          "explanation": "Come up with = think of (an idea)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'They cancelled off the match.' Correct using the correct phrasal verb.",
+          "answers": [
+            "They called off the match.",
+            "They called off the match"
+          ],
+          "explanation": "Call off = cancel. We say 'call off', not 'cancel off'."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Pick up it.' Correct the sentence.",
+          "answers": [
+            "Pick it up.",
+            "Pick it up"
+          ],
+          "explanation": "Separable: pronoun in the middle (Pick it up)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I found out my keys.' (meaning I was searching for them) Correct the sentence.",
+          "answers": [
+            "I looked for my keys.",
+            "I was looking for my keys.",
+            "I looked for my keys"
+          ],
+          "explanation": "Find out = discover. Look for = search for something."
+        }
+      ]
+    }
+  }
+}

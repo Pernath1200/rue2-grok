@@ -1,0 +1,519 @@
+{
+  "intro": {
+    "title": "Relative pronouns",
+    "sections": [
+      {
+        "title": "What are relative pronouns? (1)",
+        "content": "Relative pronouns (*who*, *which*, *that*, *where*, *when*, *whose*) introduce a clause that tells us more about a noun. *The woman who lives next door is a doctor* (person). *The book which/that I'm reading is good* (thing)."
+      },
+      {
+        "title": "What are relative pronouns? (2)",
+        "content": "*This is the house where I was born* (place). *I remember the day when we met* (time). *The person whose bag was stolen reported it* (possession)."
+      },
+      {
+        "title": "Which pronoun to use (1)",
+        "content": "**Who** (or **that**) — people: *the man who I saw.*\n**Which** or **that** — things: *the book which I read.*\n**Where** — places: *the town where I grew up.*"
+      },
+      {
+        "title": "Which pronoun to use (2)",
+        "content": "**When** — time: *the day when we met.*\n**Whose** — possession: *the girl whose bike was stolen.*\nObject pronoun can be omitted: *The book (that) I read was good.*"
+      },
+      {
+        "title": "Defining vs non-defining (1)",
+        "content": "**Defining** (essential info, no comma): *The book that/which I lent you is on the table.* Use *that* or *which*."
+      },
+      {
+        "title": "Defining vs non-defining (2)",
+        "content": "**Non-defining** (extra info, with commas): *This book, which I bought yesterday, is good. Prague, which is the capital, is beautiful.* Use **which** only — never *that* after a comma."
+      },
+      {
+        "title": "Don't use 'what' as a relative pronoun (1)",
+        "content": "**Wrong:** *The book what I read.* **Right:** *The book that/which I read.* **Wrong:** *The man what I saw.* **Right:** *The man who/that I saw.*"
+      },
+      {
+        "title": "Don't use 'what' as a relative pronoun (2)",
+        "content": "**What** means *the thing(s) that* and starts its own clause with no noun before it: *What I need is a holiday.*"
+      },
+      {
+        "title": "Summary table",
+        "content": "",
+        "diagram": {
+          "type": "table",
+          "title": "Relative pronouns at a glance",
+          "headers": [
+            "Refers to",
+            "Defining (no comma)",
+            "Non-defining (comma)"
+          ],
+          "rows": [
+            [
+              "Person",
+              "**who** or **that**",
+              "**who**"
+            ],
+            [
+              "Thing",
+              "**which** or **that**",
+              "**which** (not that)"
+            ],
+            [
+              "Place",
+              "**where**",
+              "**where**"
+            ],
+            [
+              "Time",
+              "**when**",
+              "**when**"
+            ],
+            [
+              "Possession",
+              "**whose**",
+              "**whose**"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Typical errors (1)",
+        "content": "**Which for people:** **Wrong:** *The woman which lives next door.* **Right:** *The woman who/that lives next door.*\n**That after comma:** **Wrong:** *Prague, that is the capital.* **Right:** *Prague, which is the capital.*"
+      },
+      {
+        "title": "Typical errors (2)",
+        "content": "**What as relative pronoun:** **Wrong:** *The book what I read.* **Right:** *The book that I read.*\n**Everything/something:** *Everything that he said was true* (*that*, not *what*)."
+      },
+      {
+        "title": "Typical errors (3)",
+        "content": "**Comma for extra info:** *My car, which is ten years old, still works.*"
+      },
+      {
+        "title": "Reference",
+        "content": "For more on commas with relative clauses, see the Punctuation topic under Choose Grammar Topic."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "The book that I read was interesting.",
+          "b": "The book what I read was interesting.",
+          "c": "The book what I read it was interesting.",
+          "d": "The book I read what was interesting."
+        },
+        "correct_option": "a",
+        "explanation": "We use **that** or **which** for things in a relative clause, not **what**."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "The woman what lives next door is a doctor.",
+          "b": "The woman what she lives next door is a doctor.",
+          "c": "The woman who lives next door is a doctor.",
+          "d": "The woman which lives next door is a doctor."
+        },
+        "correct_option": "c",
+        "explanation": "We use **who** (or **that**) for people, not **what** or **which**."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "This is the town what I was born.",
+          "b": "This is the town what I was born in.",
+          "c": "This is the town who I was born.",
+          "d": "This is the town where I was born."
+        },
+        "correct_option": "d",
+        "explanation": "For places we use **where** (or 'the town that/which I was born in'), not **what**."
+      },
+      {
+        "type": "mc",
+        "question": "When is 'what' correct in a relative sense?",
+        "options": {
+          "a": "What I need is more time.",
+          "b": "The film what we saw was good.",
+          "c": "The thing what I said was wrong.",
+          "d": "The person what helped me left."
+        },
+        "correct_option": "a",
+        "explanation": "**What** means 'the thing(s) that' and starts its own clause (What I need = The thing that I need). We don't use **what** after a noun."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "The day what we met was sunny.",
+          "b": "The day what we met on was sunny.",
+          "c": "The day when we met was sunny.",
+          "d": "The day who we met was sunny."
+        },
+        "correct_option": "c",
+        "explanation": "For time we use **when** (or 'the day that we met'), not **what**."
+      }
+    ]
+  },
+  "practice_order": [
+    "guided_mc",
+    "gapfill"
+  ],
+  "practice": {
+    "guided_mc": {
+      "title": "Guided Practice: Relative pronouns (multiple choice)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "The book ____ I'm reading is by a famous author.",
+          "options": {
+            "a": "who",
+            "b": "that",
+            "c": "where",
+            "d": "when"
+          },
+          "correct_option": "b",
+          "explanation": "For things we use **that** (or which), not who."
+        },
+        {
+          "type": "mc",
+          "question": "The woman ____ lives next door is very kind.",
+          "options": {
+            "a": "which",
+            "b": "where",
+            "c": "who",
+            "d": "when"
+          },
+          "correct_option": "c",
+          "explanation": "For people (subject) we use **who** (or that)."
+        },
+        {
+          "type": "mc",
+          "question": "This is the house ____ I was born.",
+          "options": {
+            "a": "where",
+            "b": "who",
+            "c": "which",
+            "d": "when"
+          },
+          "correct_option": "a",
+          "explanation": "For place we use **where** (or that/which ... in)."
+        },
+        {
+          "type": "mc",
+          "question": "The man ____ I spoke to was the manager.",
+          "options": {
+            "a": "who",
+            "b": "where",
+            "c": "when",
+            "d": "what"
+          },
+          "correct_option": "a",
+          "explanation": "For people (object) we can use **who** (or that)."
+        },
+        {
+          "type": "mc",
+          "question": "I don't remember the day ____ we first met.",
+          "options": {
+            "a": "what",
+            "b": "why",
+            "c": "when",
+            "d": "where"
+          },
+          "correct_option": "c",
+          "explanation": "For time we use **when** (or that), not what."
+        },
+        {
+          "type": "mc",
+          "question": "The person ____ phone was stolen called the police.",
+          "options": {
+            "a": "who",
+            "b": "whose",
+            "c": "which",
+            "d": "where"
+          },
+          "correct_option": "b",
+          "explanation": "For possession we use **whose**."
+        },
+        {
+          "type": "mc",
+          "question": "The town ____ I grew up is very small.",
+          "options": {
+            "a": "who",
+            "b": "where",
+            "c": "when",
+            "d": "which"
+          },
+          "correct_option": "b",
+          "explanation": "For place we use **where** (or that/which ... in)."
+        },
+        {
+          "type": "mc",
+          "question": "The hotel ____ we stayed was very comfortable.",
+          "options": {
+            "a": "who",
+            "b": "where",
+            "c": "what",
+            "d": "why"
+          },
+          "correct_option": "b",
+          "explanation": "For place we use **where** (or that/which ... at)."
+        },
+        {
+          "type": "mc",
+          "question": "Everything ____ he said was true.",
+          "options": {
+            "a": "what",
+            "b": "that",
+            "c": "which",
+            "d": "who"
+          },
+          "correct_option": "b",
+          "explanation": "After everything/something/anything we use **that** (or nothing)."
+        },
+        {
+          "type": "mc",
+          "question": "The reason ____ I'm late is the traffic.",
+          "options": {
+            "a": "why",
+            "b": "when",
+            "c": "where",
+            "d": "who"
+          },
+          "correct_option": "a",
+          "explanation": "For reason we use **why** (or that)."
+        }
+      ]
+    },
+    "gapfill": {
+      "title": "Practice: Choose the correct relative pronoun",
+      "questions": [
+        {
+          "type": "open",
+          "question": "The book ____ I'm reading is by a famous author.",
+          "answers": [
+            "that"
+          ],
+          "explanation": "For things we use **that** (or which), not **what**."
+        },
+        {
+          "type": "open",
+          "question": "The woman ____ lives next door is very kind.",
+          "answers": [
+            "who"
+          ],
+          "explanation": "For people (subject of the clause) we use **who** (or that)."
+        },
+        {
+          "type": "open",
+          "question": "This is the house ____ I was born.",
+          "answers": [
+            "where"
+          ],
+          "explanation": "For place we use **where** (or 'that/which I was born in')."
+        },
+        {
+          "type": "open",
+          "question": "The man ____ I spoke to was the manager.",
+          "answers": [
+            "who"
+          ],
+          "explanation": "For people (object) we use **who** (or that/whom); we can also omit: The man I spoke to."
+        },
+        {
+          "type": "open",
+          "question": "I don't remember the day ____ we first met.",
+          "answers": [
+            "when"
+          ],
+          "explanation": "For time we use **when** (or that), not **what**."
+        },
+        {
+          "type": "open",
+          "question": "The film ____ we saw yesterday was boring.",
+          "answers": [
+            "that"
+          ],
+          "explanation": "For things we use **that** or **which**, never **what** after a noun."
+        },
+        {
+          "type": "open",
+          "question": "The person ____ phone was stolen called the police.",
+          "answers": [
+            "whose"
+          ],
+          "explanation": "For possession we use **whose** (whose phone = the phone of whom)."
+        },
+        {
+          "type": "open",
+          "question": "The town ____ I grew up is very small.",
+          "answers": [
+            "where"
+          ],
+          "explanation": "For place we use **where** (or 'that/which I grew up in')."
+        },
+        {
+          "type": "open",
+          "question": "The teacher ____ taught us English has retired.",
+          "answers": [
+            "who"
+          ],
+          "explanation": "For people (subject) we use **who** (or that)."
+        },
+        {
+          "type": "open",
+          "question": "Everything ____ he said was true.",
+          "answers": [
+            "that"
+          ],
+          "explanation": "After 'everything', 'something', 'anything' we use **that** (or omit). We don't use **what** here."
+        },
+        {
+          "type": "open",
+          "question": "The reason ____ I'm late is the traffic.",
+          "answers": [
+            "why"
+          ],
+          "explanation": "For reason we use **why** (or that)."
+        },
+        {
+          "type": "open",
+          "question": "The hotel ____ we stayed was very comfortable.",
+          "answers": [
+            "where"
+          ],
+          "explanation": "For place we use **where** (or that/which we stayed at)."
+        }
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Correct the relative pronoun (common mistakes)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: The book what I read was very long. Correct the sentence.",
+          "answers": [
+            "The book that I read was very long.",
+            "The book which I read was very long.",
+            "The book that I read was very long",
+            "The book which I read was very long"
+          ],
+          "explanation": "Use **that** or **which** for things, never **what** after a noun."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: The man what I met yesterday is a doctor. Correct the sentence.",
+          "answers": [
+            "The man who I met yesterday is a doctor.",
+            "The man that I met yesterday is a doctor.",
+            "The man who I met yesterday is a doctor",
+            "The man that I met yesterday is a doctor"
+          ],
+          "explanation": "Use **who** or **that** for people, not **what**."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: This is the house what I was born in. Correct the sentence.",
+          "answers": [
+            "This is the house where I was born.",
+            "This is the house that I was born in.",
+            "This is the house which I was born in.",
+            "This is the house where I was born",
+            "This is the house that I was born in",
+            "This is the house which I was born in"
+          ],
+          "explanation": "Use **where** or **that/which I was born in**, not **what**."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: The film what we saw was really good. Correct the sentence.",
+          "answers": [
+            "The film that we saw was really good.",
+            "The film which we saw was really good.",
+            "The film that we saw was really good",
+            "The film which we saw was really good"
+          ],
+          "explanation": "For things use **that** or **which**, never **what**."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: The woman what works here is from Prague. Correct the sentence.",
+          "answers": [
+            "The woman who works here is from Prague.",
+            "The woman that works here is from Prague.",
+            "The woman who works here is from Prague",
+            "The woman that works here is from Prague"
+          ],
+          "explanation": "For people use **who** or **that**, not **what**."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: I don't like the things what he said. Correct the sentence.",
+          "answers": [
+            "I don't like the things that he said.",
+            "I don't like what he said.",
+            "I don't like the things that he said",
+            "I don't like what he said"
+          ],
+          "explanation": "After 'the things' use **that** (or omit). Or use **What he said** (the thing that he said) as the object."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: The place what we stayed was very nice. Correct the sentence.",
+          "answers": [
+            "The place where we stayed was very nice.",
+            "The place that we stayed at was very nice.",
+            "The place which we stayed at was very nice.",
+            "The place where we stayed was very nice",
+            "The place that we stayed at was very nice",
+            "The place which we stayed at was very nice"
+          ],
+          "explanation": "For place use **where** or **that/which we stayed at**, not **what**."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: The day what we arrived was Monday. Correct the sentence.",
+          "answers": [
+            "The day when we arrived was Monday.",
+            "The day that we arrived was Monday.",
+            "The day when we arrived was Monday",
+            "The day that we arrived was Monday"
+          ],
+          "explanation": "For time use **when** or **that**, not **what**."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: The person what helped me was very kind. Correct the sentence.",
+          "answers": [
+            "The person who helped me was very kind.",
+            "The person that helped me was very kind.",
+            "The person who helped me was very kind",
+            "The person that helped me was very kind"
+          ],
+          "explanation": "For people (subject) use **who** or **that**, not **what**."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: That's the reason what I left. Correct the sentence.",
+          "answers": [
+            "That's the reason why I left.",
+            "That is the reason why I left.",
+            "That's the reason that I left.",
+            "That is the reason that I left.",
+            "That's the reason why I left",
+            "That is the reason why I left",
+            "That's the reason that I left",
+            "That is the reason that I left"
+          ],
+          "explanation": "For reason use **why** or **that**, not **what**."
+        }
+      ]
+    },
+    "mc": {
+      "title": "Practice: Relative pronouns (multiple choice)",
+      "questions": []
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Exam data (open cloze, word formation, sentence transformation)",
+  "description": "Tiered structure: easy/medium/hard/expert, each an array of test objects.",
+  "type": "object",
+  "patternProperties": {
+    "^(easy|medium|hard|expert)$": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [],
+        "properties": {
+          "type": { "type": "string" },
+          "title": { "type": "string" },
+          "instructions": { "type": "string" },
+          "passage": { "type": "string" },
+          "gaps": { "type": "array" },
+          "items": { "type": "array" },
+          "word_count_range": { "type": "string" }
+        }
+      }
+    }
+  }
+}

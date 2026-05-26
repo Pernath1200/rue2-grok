@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Curriculum file",
+  "description": "Guided lesson with intro, check, and practice sections.",
+  "type": "object",
+  "properties": {
+    "topic": { "type": "string" },
+    "title": { "type": "string" },
+    "intro": {
+      "type": "object",
+      "properties": {
+        "sections": { "type": "array" }
+      }
+    },
+    "check": {
+      "type": "object",
+      "properties": {
+        "questions": { "type": "array" }
+      }
+    },
+    "practice": { "type": "object" }
+  }
+}

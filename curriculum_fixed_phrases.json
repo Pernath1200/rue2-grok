@@ -1,0 +1,375 @@
+{
+  "intro": {
+    "title": "Fixed Phrases",
+    "sections": [
+      {
+        "title": "What are fixed phrases?",
+        "content": "**Fixed phrases** (also called **set phrases** or **collocations**) are groups of words that are always used together in a particular order. You cannot replace one word with a synonym without changing the meaning or sounding wrong. For example: *in search of* (not *in search for*), *no longer* (not *not longer*), *in fact* (not *in reality* in that sense), *of course* (not *for course*)."
+      },
+      {
+        "title": "Types of fixed phrases",
+        "content": "**Prepositional phrases:** *in search of, in spite of, in addition to, in charge of, in favour of, in terms of, on behalf of, on account of, as a result of, for the sake of.*\n**Adverbial phrases:** *in fact, of course, at least, at first, at once, no longer, as well, as long as, as soon as, so far, once again.*\n**Other set expressions:** *one of the, the first time, the same as, such as, as if, as though, would rather, had better.*"
+      },
+      {
+        "title": "How to learn them",
+        "content": "There is no single rule — you need to **learn each phrase as a chunk**. Reading and listening help, and so does practice. Tips: read the whole sentence and the ones around it — the phrase may span a clause (e.g. *not only … but also*). Learn phrases in context, not in isolation."
+      },
+      {
+        "title": "Reference",
+        "content": "For a full list of fixed phrases, see the Fixed Phrases section under Reference."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which phrase is correct?",
+        "options": {
+          "a": "in search for",
+          "b": "in search of",
+          "c": "in search to",
+          "d": "in search at"
+        },
+        "correct_option": "b",
+        "explanation": "The fixed phrase is **in search of** (e.g. in search of sunshine)."
+      },
+      {
+        "type": "mc",
+        "question": "Which phrase means 'not anymore'?",
+        "options": {
+          "a": "not longer",
+          "b": "no longer",
+          "c": "any longer",
+          "d": "no more"
+        },
+        "correct_option": "b",
+        "explanation": "**No longer** = not anymore (e.g. It is no longer available)."
+      },
+      {
+        "type": "mc",
+        "question": "Complete: _____ course, you can try again.",
+        "options": {
+          "a": "Of",
+          "b": "For",
+          "c": "In",
+          "d": "At"
+        },
+        "correct_option": "a",
+        "explanation": "**Of course** = certainly; naturally."
+      },
+      {
+        "type": "open",
+        "question": "Complete: _____ long as you're careful, it's fine.",
+        "answers": [
+          "As"
+        ],
+        "explanation": "**As long as** = on condition that; provided that."
+      }
+    ]
+  },
+  "practice_order": [
+    "guided_mc",
+    "gapfill_simple",
+    "gapfill_common"
+  ],
+  "practice": {
+    "guided_mc": {
+      "title": "Guided practice: Fixed phrases (10 MC)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "Which phrase is correct?",
+          "options": {
+            "a": "in search for",
+            "b": "in search of",
+            "c": "in search to",
+            "d": "in search at"
+          },
+          "correct_option": "b",
+          "explanation": "The fixed phrase is **in search of** (e.g. in search of sunshine)."
+        },
+        {
+          "type": "mc",
+          "question": "Which phrase means 'not anymore'?",
+          "options": {
+            "a": "not longer",
+            "b": "no longer",
+            "c": "any longer",
+            "d": "no more"
+          },
+          "correct_option": "b",
+          "explanation": "**No longer** = not anymore (e.g. It is no longer available)."
+        },
+        {
+          "type": "mc",
+          "question": "Complete: _____ course, you can try again.",
+          "options": {
+            "a": "Of",
+            "b": "For",
+            "c": "In",
+            "d": "At"
+          },
+          "correct_option": "a",
+          "explanation": "**Of course** = certainly; naturally."
+        },
+        {
+          "type": "mc",
+          "question": "Complete: _____ long as you're careful, it's fine.",
+          "options": {
+            "a": "So",
+            "b": "As",
+            "c": "For",
+            "d": "In"
+          },
+          "correct_option": "b",
+          "explanation": "**As long as** = on condition that; provided that."
+        },
+        {
+          "type": "mc",
+          "question": "_____ fact, I've never been there. Which word?",
+          "options": {
+            "a": "On",
+            "b": "At",
+            "c": "In",
+            "d": "For"
+          },
+          "correct_option": "c",
+          "explanation": "**In fact** = actually; in reality."
+        },
+        {
+          "type": "mc",
+          "question": "This is one _____ the best films I've seen. Which word?",
+          "options": {
+            "a": "from",
+            "b": "of",
+            "c": "in",
+            "d": "for"
+          },
+          "correct_option": "b",
+          "explanation": "**One of the** (fixed phrase)."
+        },
+        {
+          "type": "mc",
+          "question": "_____ doing so, they saved time. Which word?",
+          "options": {
+            "a": "For",
+            "b": "At",
+            "c": "By",
+            "d": "On"
+          },
+          "correct_option": "c",
+          "explanation": "**By doing so** or **In doing so** = by/in doing that."
+        },
+        {
+          "type": "mc",
+          "question": "In spite _____ the rain, we went out. Which word?",
+          "options": {
+            "a": "for",
+            "b": "from",
+            "c": "of",
+            "d": "at"
+          },
+          "correct_option": "c",
+          "explanation": "**In spite of** = despite."
+        },
+        {
+          "type": "mc",
+          "question": "_____ addition to English, she speaks Spanish. Which word?",
+          "options": {
+            "a": "On",
+            "b": "At",
+            "c": "In",
+            "d": "For"
+          },
+          "correct_option": "c",
+          "explanation": "**In addition to** = as well as."
+        },
+        {
+          "type": "mc",
+          "question": "At _____, I didn't like him, but now I do. Which word?",
+          "options": {
+            "a": "least",
+            "b": "first",
+            "c": "once",
+            "d": "last"
+          },
+          "correct_option": "b",
+          "explanation": "**At first** = in the beginning."
+        }
+      ]
+    },
+    "gapfill_simple": {
+      "title": "Practice: Gap fill – Common fixed phrases",
+      "questions": [
+        {
+          "type": "open",
+          "question": "They went abroad in search _____ sunshine.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "**In search of** (fixed phrase)."
+        },
+        {
+          "type": "open",
+          "question": "It is no _____ available.",
+          "answers": [
+            "longer"
+          ],
+          "explanation": "**No longer** = not anymore."
+        },
+        {
+          "type": "open",
+          "question": "_____ fact, I've never been there.",
+          "answers": [
+            "In"
+          ],
+          "explanation": "**In fact** = actually; in reality."
+        },
+        {
+          "type": "open",
+          "question": "_____ course, you're right.",
+          "answers": [
+            "Of"
+          ],
+          "explanation": "**Of course** = certainly."
+        },
+        {
+          "type": "open",
+          "question": "_____ long as we're together, I'm happy.",
+          "answers": [
+            "As"
+          ],
+          "explanation": "**As long as** = provided that."
+        },
+        {
+          "type": "open",
+          "question": "This is one _____ the best films I've seen.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "**One of the** (fixed phrase)."
+        },
+        {
+          "type": "open",
+          "question": "_____ doing so, they saved time.",
+          "answers": [
+            "By",
+            "In"
+          ],
+          "explanation": "**By doing so** or **In doing so** = by/in doing that."
+        }
+      ]
+    },
+    "gapfill_common": {
+      "title": "Practice: More fixed phrases",
+      "questions": [
+        {
+          "type": "open",
+          "question": "In spite _____ the rain, we went out.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "**In spite of** = despite."
+        },
+        {
+          "type": "open",
+          "question": "_____ addition to English, she speaks Spanish.",
+          "answers": [
+            "In"
+          ],
+          "explanation": "**In addition to** = as well as."
+        },
+        {
+          "type": "open",
+          "question": "At _____, I didn't like him, but now I do.",
+          "answers": [
+            "first"
+          ],
+          "explanation": "**At first** = in the beginning."
+        },
+        {
+          "type": "open",
+          "question": "_____ well as cooking, she cleans.",
+          "answers": [
+            "As"
+          ],
+          "explanation": "**As well as** = in addition to."
+        },
+        {
+          "type": "open",
+          "question": "It was _____ first time I had flown.",
+          "answers": [
+            "the"
+          ],
+          "explanation": "**The first time** (fixed phrase)."
+        },
+        {
+          "type": "open",
+          "question": "_____ the end of the day, we were tired.",
+          "answers": [
+            "By"
+          ],
+          "explanation": "**By the end of the day** (fixed phrase)."
+        },
+        {
+          "type": "open",
+          "question": "The match was cancelled on account _____ the rain.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "**On account of** = because of."
+        },
+        {
+          "type": "open",
+          "question": "We went out in spite of the _____ that it was raining.",
+          "answers": [
+            "fact"
+          ],
+          "explanation": "**In spite of the fact that** = although."
+        },
+        {
+          "type": "open",
+          "question": "The _____ of the matter is that we need more time.",
+          "answers": [
+            "truth"
+          ],
+          "explanation": "**The truth of the matter** = the real fact; what is actually the case."
+        },
+        {
+          "type": "open",
+          "question": "Why don't you _____ a go? I'm sure you'll do well.",
+          "answers": [
+            "have"
+          ],
+          "explanation": "**Have a go** = try; attempt (informal)."
+        },
+        {
+          "type": "open",
+          "question": "I've never tried sushi, but I'll _____ it a go.",
+          "answers": [
+            "give"
+          ],
+          "explanation": "**Give it a go** = try it; attempt it (informal)."
+        },
+        {
+          "type": "open",
+          "question": "She gave three reasons, _____ of which were convincing.",
+          "answers": [
+            "all"
+          ],
+          "explanation": "**All of which** = referring to all the things just mentioned (in a relative clause)."
+        },
+        {
+          "type": "open",
+          "question": "Prices rose to _____ an extent that many could not afford to buy.",
+          "answers": [
+            "such"
+          ],
+          "explanation": "**To such an extent** = to so great a degree (often followed by *that*)."
+        }
+      ]
+    }
+  }
+}

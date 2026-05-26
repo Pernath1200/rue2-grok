@@ -1,0 +1,74 @@
+{
+  "intro": {
+    "title": "Word Order",
+    "sections": [
+      {
+        "title": "Basic order",
+        "content": "In English we usually say: **Subject + Verb + Object**\n\n• I like coffee.\n• She reads books.\n• They play football."
+      },
+      {
+        "title": "Questions",
+        "content": "In questions we put the verb (or Do/Does/Did) before the subject:\n\n• **Do** you like coffee?\n• **Does** she work here?\n• **Is** he at home?\n• **Where** do you live?"
+      },
+      {
+        "title": "Time and place",
+        "content": "We usually put **time** at the end:\n• I go to work **every day**.\n\nWe put **place** after the verb:\n• She lives **in London**."
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {"a": "I coffee like.", "b": "I like coffee.", "c": "Like I coffee.", "d": "Coffee I like."},
+        "correct_option": "b",
+        "explanation": "Subject + verb + object: I like coffee."
+      },
+      {
+        "type": "mc",
+        "question": "_____ you live?",
+        "options": {"a": "Where do", "b": "Do where", "c": "Where you", "d": "You where"},
+        "correct_option": "a",
+        "explanation": "Question: Where do you live?"
+      },
+      {
+        "type": "mc",
+        "question": "She _____ every morning.",
+        "options": {"a": "work goes", "b": "goes work", "c": "goes to work", "d": "to work goes"},
+        "correct_option": "c",
+        "explanation": "She goes to work. Time at end."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Word Order",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {"a": "He books reads.", "b": "He reads books.", "c": "Reads he books.", "d": "Books he reads."},
+          "correct_option": "b",
+          "explanation": "Subject + verb + object."
+        },
+        {
+          "type": "mc",
+          "question": "_____ she work?",
+          "options": {"a": "Where does", "b": "Does where", "c": "Where", "d": "Work where"},
+          "correct_option": "a",
+          "explanation": "Question: Where does she work?"
+        },
+        {
+          "type": "mc",
+          "question": "I go to the gym _____.",
+          "options": {"a": "every day", "b": "go", "c": "I", "d": "the gym"},
+          "correct_option": "a",
+          "explanation": "Time goes at the end."
+        }
+      ]
+    }
+  }
+}

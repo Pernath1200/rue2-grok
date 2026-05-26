@@ -1,0 +1,326 @@
+{
+  "intro": {
+    "title": "Will and going to",
+    "sections": [
+      {
+        "title": "Will vs going to",
+        "content": "Both talk about the **future**. The difference is about **how you see the situation** — was it planned before, or decided now? In practice, both are often possible. These cards cover the main patterns."
+      },
+      {
+        "title": "Going to (1)",
+        "content": "**Already decided or planned:** *I'm going to study medicine. We're going to meet on Friday.*\n**Prediction from present evidence** (you can see it): *Look at those clouds — it's going to rain.*"
+      },
+      {
+        "title": "Going to (2)",
+        "content": "*He's going to fall!*\n**Tip:** Plan or intention before now → **going to**."
+      },
+      {
+        "title": "Will (1)",
+        "content": "**Decision at the moment:** *The phone's ringing. — I'll get it.*\n**Offer, promise, refusal:** *I'll help you. I won't tell anyone.*\n**General prediction** (guess, no evidence now): *I think it will rain tomorrow.*"
+      },
+      {
+        "title": "Will (2)",
+        "content": "**With** *think*, *hope*, *probably:* *I hope she'll come. She'll probably be late.*\n**Tip:** Just decided now or offering/promising → **will**."
+      },
+      {
+        "title": "Comparison diagram",
+        "content": "",
+        "diagram": {
+          "type": "comparison",
+          "title": "Will vs going to",
+          "left": {
+            "title": "Going to",
+            "points": [
+              "Already decided / planned",
+              "Intention before now",
+              "Prediction from present evidence",
+              "Look – it's going to rain!"
+            ]
+          },
+          "right": {
+            "title": "Will",
+            "points": [
+              "Decision at the moment",
+              "Offer, promise, refusal",
+              "General prediction (guess)",
+              "I'll get it! I'll help you."
+            ]
+          }
+        }
+      },
+      {
+        "title": "Typical errors (1)",
+        "content": "**Plan:** **Wrong:** *I will meet her tomorrow* (already arranged). **Right:** *I'm going to meet her tomorrow.*\n**Spontaneous:** **Wrong:** (Phone rings) *I'm going to get it.* **Right:** *I'll get it.*"
+      },
+      {
+        "title": "Typical errors (2)",
+        "content": "**Evidence:** **Wrong:** *Look at the sky — it will rain.* **Right:** *It's going to rain.*\n**Offer:** **Wrong:** *I'm going to help you* (offering now). **Right:** *I'll help you.*"
+      },
+      {
+        "title": "Reference",
+        "content": "For more on future forms, see **Tenses: General** under Choose Grammar Topic."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "You already decided yesterday to see a film tonight. Which do you say?",
+        "options": {
+          "a": "I'm going to see a film tonight.",
+          "b": "I will see a film tonight.",
+          "c": "I'm seeing a film tonight.",
+          "d": "I see a film tonight."
+        },
+        "correct_option": "a",
+        "explanation": "Already planned → going to."
+      },
+      {
+        "type": "mc",
+        "question": "The phone rings. You decide at that moment to answer it. Which do you say?",
+        "options": {
+          "a": "I'm going to get it.",
+          "b": "I get it.",
+          "c": "I'll get it.",
+          "d": "I'm getting it."
+        },
+        "correct_option": "c",
+        "explanation": "Decision at the moment of speaking → will."
+      },
+      {
+        "type": "mc",
+        "question": "You can see black clouds. You predict rain. Which is natural?",
+        "options": {
+          "a": "It will rain.",
+          "b": "It rains.",
+          "c": "It's raining.",
+          "d": "It's going to rain."
+        },
+        "correct_option": "d",
+        "explanation": "Prediction based on present evidence (you can see the clouds) → going to."
+      },
+      {
+        "type": "mc",
+        "question": "You want to offer to carry someone's bag. Which do you say?",
+        "options": {
+          "a": "I'll carry your bag.",
+          "b": "I'm going to carry your bag.",
+          "c": "I'm carrying your bag.",
+          "d": "I carry your bag."
+        },
+        "correct_option": "a",
+        "explanation": "Offer (deciding now) → will."
+      },
+      {
+        "type": "mc",
+        "question": "You have a general opinion about tomorrow's weather (no clouds now). Which is natural?",
+        "options": {
+          "a": "I think it's going to rain tomorrow.",
+          "b": "I think it rains tomorrow.",
+          "c": "I think it will rain tomorrow.",
+          "d": "I think it will be raining tomorrow."
+        },
+        "correct_option": "c",
+        "explanation": "General prediction (no present evidence), often with I think → will."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc"
+  ],
+  "practice": {
+    "gapfill": {
+      "title": "Practice: Will or going to?",
+      "questions": [
+        {
+          "type": "open",
+          "question": "I ____ (see) the dentist tomorrow at 10. (I already have an appointment.)",
+          "answers": [
+            "am going to see",
+            "'m going to see"
+          ],
+          "explanation": "Already planned (appointment) → going to."
+        },
+        {
+          "type": "open",
+          "question": "The phone's ringing. – I ____ (get) it.",
+          "answers": [
+            "will get",
+            "'ll get"
+          ],
+          "explanation": "Decision at the moment of speaking → will."
+        },
+        {
+          "type": "open",
+          "question": "Look at those clouds – it ____ (rain).",
+          "answers": [
+            "is going to rain",
+            "'s going to rain"
+          ],
+          "explanation": "Prediction from present evidence → going to."
+        },
+        {
+          "type": "open",
+          "question": "I'm so tired. I ____ (have) a rest. (I just decided.)",
+          "answers": [
+            "will have",
+            "'ll have"
+          ],
+          "explanation": "Spontaneous decision → will."
+        },
+        {
+          "type": "open",
+          "question": "She ____ (study) law at university. (She decided last year.)",
+          "answers": [
+            "is going to study",
+            "'s going to study"
+          ],
+          "explanation": "Plan/intention already made → going to."
+        },
+        {
+          "type": "open",
+          "question": "That bag looks heavy. I ____ (carry) it for you.",
+          "answers": [
+            "will carry",
+            "'ll carry",
+            "can carry"
+          ],
+          "explanation": "Offer: both will (I'll do it) and can (I'm able to) are natural here."
+        },
+        {
+          "type": "open",
+          "question": "We ____ (meet) at 6. (We arranged it yesterday.)",
+          "answers": [
+            "are going to meet",
+            "'re going to meet"
+          ],
+          "explanation": "Already arranged → going to."
+        },
+        {
+          "type": "open",
+          "question": "I think the match ____ (be) exciting.",
+          "answers": [
+            "will be",
+            "'ll be"
+          ],
+          "explanation": "General prediction (I think) → will."
+        },
+        {
+          "type": "open",
+          "question": "He's running towards the bus but it's leaving – he ____ (miss) it.",
+          "answers": [
+            "is going to miss",
+            "'s going to miss"
+          ],
+          "explanation": "Prediction from what we can see now → going to."
+        },
+        {
+          "type": "open",
+          "question": "I promise I ____ (not tell) anyone.",
+          "answers": [
+            "won't tell",
+            "will not tell"
+          ],
+          "explanation": "Promise → will."
+        },
+        {
+          "type": "open",
+          "question": "They ____ (buy) a new car next year. (They've been saving for it.)",
+          "answers": [
+            "are going to buy",
+            "'re going to buy"
+          ],
+          "explanation": "Plan/intention (they've been saving) → going to."
+        },
+        {
+          "type": "open",
+          "question": "I don't think she ____ (come) to the party.",
+          "answers": [
+            "will come",
+            "'ll come"
+          ],
+          "explanation": "General prediction (I don't think) → will."
+        }
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Correct the form (will vs going to)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'I will meet John at 5.' (You already arranged it.) Correct the sentence.",
+          "answers": [
+            "I'm going to meet John at 5.",
+            "I am going to meet John at 5.",
+            "I'm going to meet John at 5",
+            "I am going to meet John at 5"
+          ],
+          "explanation": "Already arranged → going to."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: (Phone rings) 'I'm going to get it.' (You decide at that moment.) Correct the sentence.",
+          "answers": [
+            "I'll get it.",
+            "I will get it.",
+            "I'll get it",
+            "I will get it"
+          ],
+          "explanation": "Decision at the moment → will."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Look at the sky – it will rain.' (You can see the clouds.) Correct the sentence.",
+          "answers": [
+            "Look at the sky – it's going to rain.",
+            "Look at the sky – it is going to rain.",
+            "Look at the sky – it's going to rain",
+            "Look at the sky – it is going to rain",
+            "It's going to rain.",
+            "It is going to rain."
+          ],
+          "explanation": "Prediction from present evidence → going to. Contractions (it's) and full form (it is) are both accepted."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I'm going to help you.' (You are offering now.) Correct the sentence.",
+          "answers": [
+            "I'll help you.",
+            "I will help you.",
+            "I'll help you",
+            "I will help you"
+          ],
+          "explanation": "Offer → will."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I think it's going to be sunny tomorrow.' (No special evidence, just your guess.) Correct the sentence.",
+          "answers": [
+            "I think it will be sunny tomorrow.",
+            "I think it'll be sunny tomorrow.",
+            "I think it will be sunny tomorrow",
+            "I think it'll be sunny tomorrow"
+          ],
+          "explanation": "General prediction with I think → will. (Going to is also possible but will is more common for a simple guess.)"
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She will study in Prague.' (She decided and applied last month.) Correct the sentence.",
+          "answers": [
+            "She's going to study in Prague.",
+            "She is going to study in Prague.",
+            "She's going to study in Prague",
+            "She is going to study in Prague"
+          ],
+          "explanation": "Plan already made → going to."
+        }
+      ]
+    },
+    "mc": {
+      "title": "Practice: Will and going to (multiple choice)",
+      "questions": []
+    }
+  }
+}

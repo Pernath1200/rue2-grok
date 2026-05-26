@@ -1,0 +1,22 @@
+---
+description: Quality checks for spelling curriculum and questions
+globs: curriculum_spelling.json, questions.json
+alwaysApply: false
+---
+
+# Spelling Question Quality Rules
+
+When adding or editing "Correct the spelling" items (Wrong: '…' / Correct the sentence):
+
+1. **Wrong sentence must contain a misspelling.** The "Wrong:" text must actually spell the target word incorrectly. Verify by comparing the Wrong sentence to the correct spelling – if they match, it is invalid.
+
+2. **No duplicates.** Before adding a new item, verify the target word (the correctly spelled word) is not already in `curriculum_spelling.json` or in the spelling section of `questions.json`. Search for the word in explanations and answers.
+
+3. **Checklist before adding:**
+   - [ ] Does the Wrong sentence contain a real misspelling? (Read it letter by letter.)
+   - [ ] Is the target word new? (Grep curriculum_spelling.json and questions.json for it.)
+   - [ ] Is the correct answer in the answers array?
+
+## Related
+
+- **Curriculum intro** layout and design principles: `RUE2_CURSOR_PLAN.md` → **Design Principles & Intro Card Schema**. Spelling rules here remain about **Wrong/Correct** item quality; no change to those checks.

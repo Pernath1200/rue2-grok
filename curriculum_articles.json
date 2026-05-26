@@ -1,0 +1,539 @@
+{
+  "intro": {
+    "title": "Articles: a, an, the and no article",
+    "sections": [
+      {
+        "title": "Why we use articles",
+        "content": "English uses **articles** (a/an, the) or **no article** (∅) before nouns to signal two things:\n\n• **Known or new?** Does the listener already know which one you mean (*the*), or are you mentioning it for the first time (*a/an*)?\n• **Specific or general?** Are you talking about a particular thing (*the water in this bottle*) or things in general (*water is essential*)?\n\nCzech has no articles, so this signal has to be learned. Get the **core rules** right and you'll fix most of your article mistakes — the exceptions can wait."
+      },
+      {
+        "title": "Which article to use?",
+        "content": "",
+        "diagram": {
+          "type": "table",
+          "title": "Which article to use?",
+          "headers": [
+            "Article",
+            "When",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**a / an**",
+              "First mention, one of many, singular countable",
+              "I bought **a** car. She's **an** engineer."
+            ],
+            [
+              "**the**",
+              "Listener knows which; unique; second mention",
+              "**The** sun. I bought a car. **The** car is red."
+            ],
+            [
+              "**∅ (none)**",
+              "General plural/uncountable; meals; most names",
+              "Cats are animals. Go to work. London."
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Indefinite: a/an",
+        "content": "Use **a/an** with singular countable nouns when we mention something for the **first time** or mean **one of many**:\n\n• I bought **a** new car. (first mention)\n• She's **an** engineer. (one of many)\n• We need **a** bottle of water.\n\n**a or an?** It's the **sound** that matters, not the letter:\n\n• **a** book, **a** university (yoo-), **a** European country\n• **an** apple, **an** hour (silent h), **an** MBA (em-)"
+      },
+      {
+        "title": "Definite: the",
+        "content": "Use **the** when the listener knows **which one**:\n\n• **Second mention:** I bought a car. **The** car is red.\n• **Unique:** the sun, the moon, the internet\n• **Generic reference** (the whole species or type): the lion, the telephone\n• **Context:** Close **the** door. (this room's door)\n• **Superlatives:** the best, the first\n• **Specific set:** **The** water in the bottle is cold.\n• **Some place names:** the USA, the UK, the Czech Republic"
+      },
+      {
+        "title": "No article (∅)",
+        "content": "Use **no article** (∅) for:\n\n• **Plural/uncountable in general:** Cats are animals. Water is important.\n• **Meals:** We had breakfast. (But: *The breakfast was cold* = that specific meal.)\n• **Places as activity:** go to work, go to school, at home\n• **Most names:** London, January, Mary\n• **Abstract/general:** love, happiness, information\n• **Continents and most countries:** Africa, Europe, France, Japan (but: **the** USA, **the** UK, **the** Czech Republic)\n\nCompare: *The water in the bottle* (specific) vs *Water is important* (general)."
+      },
+      {
+        "title": "Top 5 Czech-learner article traps",
+        "content": "Czech has no articles, so five mistakes are very common:\n\n1. **Dropping 'the' before unique/known referents** — *Open ~~∅~~ door* → **Open the door.**\n2. **Overusing 'the' with generic plurals/uncountables** — *~~The~~ Cats are animals* → **Cats are animals.** / *~~The~~ Knowledge is power* → **Knowledge is power.**\n3. **Dropping 'a/an' before professions** — *She's ~~∅~~ doctor* → **She's a doctor.**\n4. **Wrong article at institutions (literal vs activity)** — *He's in ~~the~~ hospital* (patient, BrE) → **He's in hospital.** / *Go to ~~the~~ work* → **Go to work.**\n5. **Wrong article with country and continent names** — *~~The~~ Africa is huge* → **Africa is huge.** / *Czech Republic is small* → **The Czech Republic is small.**"
+      },
+      {
+        "title": "Summary — and what comes next",
+        "content": "**The core, in one card:**\n\n• **a/an** — first mention, one of many, singular countable. Sound, not letter.\n• **the** — listener knows which one; unique; second mention; superlatives.\n• **∅ (no article)** — general plural/uncountable; meals; *go to work/school*; most names; continents and most countries.\n\n---\n\n**That's the core. Stop here and practise.**\n\nMost article mistakes Czech learners make are at this level. Master these and your English will jump noticeably. The exceptions and edge cases (abstract nouns generic vs specific, *the rich/the poor*, rivers and mountains, newspaper and hotel names) are in a separate topic: **Articles — extension**. Come back to them when the core feels automatic."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "'I need _____ umbrella.' Which fits?",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "correct_option": "b",
+        "explanation": "Umbrella starts with a vowel sound → an."
+      },
+      {
+        "type": "mc",
+        "question": "'_____ life is short.' (general) Which fits?",
+        "options": {
+          "a": "A",
+          "b": "An",
+          "c": "The",
+          "d": "No article"
+        },
+        "correct_option": "d",
+        "explanation": "Life in general (uncountable) → no article."
+      },
+      {
+        "type": "mc",
+        "question": "'I bought a car. _____ car is red.' Which fits in the second sentence?",
+        "options": {
+          "a": "A",
+          "b": "An",
+          "c": "The",
+          "d": "No article"
+        },
+        "correct_option": "c",
+        "explanation": "Second mention – we know which car → the."
+      },
+      {
+        "type": "mc",
+        "question": "'She goes to _____ work by bus.' Which fits?",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "correct_option": "d",
+        "explanation": "Go to work (as activity) → no article."
+      },
+      {
+        "type": "mc",
+        "question": "'We had _____ breakfast at eight.' Which fits?",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "correct_option": "d",
+        "explanation": "Meals in general (have breakfast) → no article."
+      },
+      {
+        "type": "mc",
+        "question": "'She dreams of visiting _____ Africa.' Which fits?",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "correct_option": "d",
+        "explanation": "Continents take no article → Africa, Europe, Asia."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc"
+  ],
+  "practice": {
+    "gapfill": {
+      "title": "Practice: Choose a, an, the or no article (∅)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "I need _____ umbrella.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "b",
+          "explanation": "Vowel sound (umbrella) → an."
+        },
+        {
+          "type": "mc",
+          "question": "She's _____ engineer.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "b",
+          "explanation": "Vowel sound (engineer) → an. One of many."
+        },
+        {
+          "type": "mc",
+          "question": "_____ sun is very bright today.",
+          "options": {
+            "a": "A",
+            "b": "An",
+            "c": "The",
+            "d": "No article"
+          },
+          "correct_option": "c",
+          "explanation": "Unique – there is only one sun → the."
+        },
+        {
+          "type": "mc",
+          "question": "We had _____ breakfast at eight.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "d",
+          "explanation": "Meals in general → no article."
+        },
+        {
+          "type": "mc",
+          "question": "He goes to _____ work by bus.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "d",
+          "explanation": "Go to work (activity) → no article."
+        },
+        {
+          "type": "mc",
+          "question": "I bought _____ new car. _____ car is red.",
+          "options": {
+            "a": "a / A",
+            "b": "a / The",
+            "c": "the / The",
+            "d": "no article / The"
+          },
+          "correct_option": "b",
+          "explanation": "First mention → a. Second mention (we know which one) → the."
+        },
+        {
+          "type": "mc",
+          "question": "_____ cats are animals.",
+          "options": {
+            "a": "A",
+            "b": "An",
+            "c": "The",
+            "d": "No article"
+          },
+          "correct_option": "d",
+          "explanation": "Plural in general → no article."
+        },
+        {
+          "type": "mc",
+          "question": "She has _____ hour for lunch.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "b",
+          "explanation": "Hour starts with vowel sound (silent h) → an."
+        },
+        {
+          "type": "mc",
+          "question": "Close _____ door, please.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "c",
+          "explanation": "The door in this room – listener knows which one → the."
+        },
+        {
+          "type": "mc",
+          "question": "They live in _____ USA.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "c",
+          "explanation": "Country name that includes a common noun (United States) → the."
+        },
+        {
+          "type": "mc",
+          "question": "_____ water in the bottle is cold.",
+          "options": {
+            "a": "A",
+            "b": "An",
+            "c": "The",
+            "d": "No article"
+          },
+          "correct_option": "c",
+          "explanation": "Specific water (in that bottle) → the."
+        },
+        {
+          "type": "mc",
+          "question": "It's _____ best film I've ever seen.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "c",
+          "explanation": "Superlative (best) → the."
+        },
+        {
+          "type": "mc",
+          "question": "_____ life is full of surprises.",
+          "options": {
+            "a": "A",
+            "b": "An",
+            "c": "The",
+            "d": "No article"
+          },
+          "correct_option": "d",
+          "explanation": "Life in general (uncountable) → no article."
+        },
+        {
+          "type": "mc",
+          "question": "I'll meet you at _____ home.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "d",
+          "explanation": "At home (fixed phrase) → no article."
+        },
+        {
+          "type": "mc",
+          "question": "She dreams of visiting _____ Africa.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "d",
+          "explanation": "Continents take no article → Africa, Europe, Asia."
+        }
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Correct the article",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'The cats are animals.' (meaning all cats) Correct the sentence.",
+          "answers": [
+            "Cats are animals.",
+            "cats are animals"
+          ],
+          "explanation": "Plural in general → no article."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I went to the London.' Correct the sentence.",
+          "answers": [
+            "I went to London.",
+            "I went to London"
+          ],
+          "explanation": "Most city names → no article."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She goes to the work by bus.' Correct the sentence.",
+          "answers": [
+            "She goes to work by bus.",
+            "She goes to work by bus"
+          ],
+          "explanation": "Go to work (activity) → no article."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We had a breakfast at eight.' Correct the sentence.",
+          "answers": [
+            "We had breakfast at eight.",
+            "We had breakfast at eight"
+          ],
+          "explanation": "Meals in general (have breakfast) → no article."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I need a umbrella.' Correct the sentence.",
+          "answers": [
+            "I need an umbrella.",
+            "I need an umbrella"
+          ],
+          "explanation": "Vowel sound (umbrella) → an."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He is an university student.' Correct the sentence.",
+          "answers": [
+            "He is a university student.",
+            "He is a university student"
+          ],
+          "explanation": "University starts with consonant sound (yoo-) → a."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Sun is very bright today.' Correct the sentence.",
+          "answers": [
+            "The sun is very bright today.",
+            "The sun is very bright today"
+          ],
+          "explanation": "Unique (the sun) → the."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'They live in USA.' Correct the sentence.",
+          "answers": [
+            "They live in the USA.",
+            "They live in the USA"
+          ],
+          "explanation": "USA (country name with common noun) → the."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He visited the Africa.' Correct the sentence.",
+          "answers": [
+            "He visited Africa.",
+            "He visited Africa"
+          ],
+          "explanation": "Continents take no article → Africa, Europe, Asia."
+        }
+      ]
+    },
+    "mc": {
+      "title": "Practice: Choose a, an, the or no article (∅) (multiple choice)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "I need _____ umbrella.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "b",
+          "explanation": "Vowel sound (umbrella) → an."
+        },
+        {
+          "type": "mc",
+          "question": "She's _____ engineer.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "b",
+          "explanation": "Vowel sound (engineer) → an. One of many."
+        },
+        {
+          "type": "mc",
+          "question": "_____ sun is very bright today.",
+          "options": {
+            "a": "A",
+            "b": "An",
+            "c": "The",
+            "d": "No article"
+          },
+          "correct_option": "c",
+          "explanation": "Unique – there is only one sun → the."
+        },
+        {
+          "type": "mc",
+          "question": "We had _____ breakfast at eight.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "d",
+          "explanation": "Meals in general → no article."
+        },
+        {
+          "type": "mc",
+          "question": "He goes to _____ work by bus.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "d",
+          "explanation": "Go to work (activity) → no article."
+        },
+        {
+          "type": "mc",
+          "question": "I bought _____ new car. _____ car is red.",
+          "options": {
+            "a": "a / A",
+            "b": "a / The",
+            "c": "the / The",
+            "d": "no article / The"
+          },
+          "correct_option": "b",
+          "explanation": "First mention → a. Second mention (we know which one) → the."
+        },
+        {
+          "type": "mc",
+          "question": "_____ cats are animals.",
+          "options": {
+            "a": "A",
+            "b": "An",
+            "c": "The",
+            "d": "No article"
+          },
+          "correct_option": "d",
+          "explanation": "Plural in general → no article."
+        },
+        {
+          "type": "mc",
+          "question": "She has _____ hour for lunch.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "b",
+          "explanation": "Hour starts with vowel sound (silent h) → an."
+        },
+        {
+          "type": "mc",
+          "question": "Close _____ door, please.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "c",
+          "explanation": "The door in this room – listener knows which one → the."
+        },
+        {
+          "type": "mc",
+          "question": "They live in _____ USA.",
+          "options": {
+            "a": "a",
+            "b": "an",
+            "c": "the",
+            "d": "no article"
+          },
+          "correct_option": "c",
+          "explanation": "Country name that includes a common noun (United States) → the."
+        }
+      ]
+    }
+  }
+}

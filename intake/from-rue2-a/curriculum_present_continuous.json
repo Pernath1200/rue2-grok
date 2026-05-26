@@ -1,0 +1,78 @@
+{
+  "intro": {
+    "title": "Present Continuous",
+    "sections": [
+      {
+        "title": "What is the Present Continuous?",
+        "content": "We use the **Present Continuous** for things happening **now** or **around now**.\n\n• I **am working** now.\n• She **is reading** a book.\n• They **are playing** football."
+      },
+      {
+        "title": "Form",
+        "content": "**am / is / are** + verb + **-ing**\n\n• I **am working**\n• He/she/it **is working**\n• You/we/they **are working**"
+      },
+      {
+        "title": "Spelling: -ing",
+        "content": "• work → work**ing**\n• make → mak**ing** (drop e)\n• run → runn**ing** (double n)\n• sit → sitt**ing** (double t)"
+      },
+      {
+        "title": "Negatives and Questions",
+        "content": "**Negative:** I **am not** working. She **is not** (isn't) working.\n\n**Question:** **Am** I working? **Is** she working? **Are** they working?"
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "She _____ a book right now.",
+        "options": {"a": "read", "b": "reads", "c": "is reading", "d": "reading"},
+        "correct_option": "c",
+        "explanation": "Right now = we use is + -ing."
+      },
+      {
+        "type": "mc",
+        "question": "_____ you working today?",
+        "options": {"a": "Do", "b": "Does", "c": "Are", "d": "Is"},
+        "correct_option": "c",
+        "explanation": "Present continuous question: Are + you."
+      },
+      {
+        "type": "mc",
+        "question": "He _____ TV. He is doing his homework.",
+        "options": {"a": "is not watching", "b": "don't watch", "c": "not watching", "d": "watches"},
+        "correct_option": "a",
+        "explanation": "Negative: is not + -ing."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Present Continuous",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "Look! They _____ football.",
+          "options": {"a": "play", "b": "plays", "c": "are playing", "d": "playing"},
+          "correct_option": "c",
+          "explanation": "Look! = now. We use are playing."
+        },
+        {
+          "type": "mc",
+          "question": "She _____ a letter. (write)",
+          "options": {"a": "is writeing", "b": "is writing", "c": "writes", "d": "write"},
+          "correct_option": "b",
+          "explanation": "She is writing. We drop the e when we add -ing."
+        },
+        {
+          "type": "mc",
+          "question": "_____ he sleeping?",
+          "options": {"a": "Do", "b": "Does", "c": "Is", "d": "Are"},
+          "correct_option": "c",
+          "explanation": "Present continuous: Is he sleeping?"
+        }
+      ]
+    }
+  }
+}

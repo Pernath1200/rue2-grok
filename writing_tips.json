@@ -1,0 +1,127 @@
+{
+  "title": "Writing Tips: FCE",
+  "intro": "General information about the FCE Writing paper, grading criteria, and how to gain or avoid losing marks.",
+  "intro_sections": [
+    {
+      "title": "FCE Writing paper: time and word limits",
+      "content": "**Time:** You have 1 hour 20 minutes for the whole Writing paper.\n\n**Part 1 (compulsory):** Essay, 140–190 words.\n\n**Part 2 (choose one):** Letter/email, article, review, or story – 140–190 words each.\n\nStaying within the word range matters; going far under or over can cost marks. Short forms (e.g. don't) count as one word."
+    },
+    {
+      "title": "FCE task types: essay, letter, article, review, story",
+      "content": "**Essay (Part 1):** Discuss the topic; give your opinion; often two sides + your view. Formal/neutral. Clear paragraphs (e.g. intro, points for, points against, conclusion).\n\n**Letter/email (Part 2):** Check instructions for register (formal vs informal). Include greeting and sign-off. Cover all bullet points.\n\n**Article (Part 2):** Title; engaging opening; clear paragraphs; often for a magazine/website. Register as specified.\n\n**Review (Part 2):** Book, film, place, etc. Describe and give your opinion. Title optional but useful.\n\n**Story (Part 2):** Narrative; past tenses; clear beginning, middle and end."
+    },
+    {
+      "title": "How your writing is marked: the four criteria",
+      "content": "Each criterion is equally weighted (5 marks each at FCE).\n\n**Content** – Did you do the task? All bullet points covered? Relevant ideas?\n\n**Communicative Achievement** – Right register (formal/informal)? Correct format (letter, article, etc.)? Reader informed and engaged?\n\n**Organisation** – Clear structure? Paragraphs? Linking words? Logical order?\n\n**Language** – Range and accuracy of grammar and vocabulary. Spelling and punctuation matter."
+    },
+    {
+      "title": "Examples: what helps and what hurts your mark",
+      "content": "**Weak:** One long paragraph with no linkers – Organisation and readability suffer.\n\n**Strong:** Clear paragraphs and linkers (e.g. However, In addition) – Organisation is strong.\n\n**Weak:** Very informal tone in a task that asks for a formal reply – Communicative Achievement is affected.\n\n**Strong:** Appropriate register and format (greeting, sign-off, paragraphs) – Communicative Achievement is met."
+    },
+    {
+      "title": "How to get a good mark",
+      "content": "**Content:** Read the task; cover every bullet; add ideas where asked.\n\n**Communicative Achievement:** Match register and format; use correct layout (greeting/sign-off for letters).\n\n**Organisation:** Plan first; one main idea per paragraph; use linkers (however, in addition, as a result).\n\n**Language:** Vary grammar and vocabulary; check spelling and punctuation; avoid repeated errors."
+    },
+    {
+      "title": "What to avoid",
+      "content": "**Content:** Don't go off-topic; don't skip bullets; don't write too little or far over the limit.\n\n**Communicative Achievement:** Don't use wrong register or format (e.g. no greeting in a letter).\n\n**Organisation:** Avoid one huge paragraph or only \"and\" or \"also\".\n\n**Language:** Avoid repeated mistakes and very basic vocabulary if aiming high; watch fixed phrases (e.g. at the end vs in the end)."
+    }
+  ],
+  "quiz": [
+    {
+      "type": "mc",
+      "question": "What is the word range for the FCE Part 1 essay?",
+      "options": { "a": "140–190", "b": "100–140", "c": "220–260", "d": "240–280" },
+      "correct_option": "a",
+      "explanation": "FCE essay is 140–190 words."
+    },
+    {
+      "type": "mc",
+      "question": "How long do you have for the FCE Writing paper?",
+      "options": { "a": "1 hour", "b": "1 hour 30 minutes", "c": "1 hour 20 minutes", "d": "2 hours" },
+      "correct_option": "c",
+      "explanation": "FCE Writing is 1 hour 20 minutes."
+    },
+    {
+      "type": "mc",
+      "question": "Which is one of the four marking criteria for FCE Writing?",
+      "options": { "a": "Handwriting", "b": "Number of paragraphs", "c": "Use of idioms", "d": "Content" },
+      "correct_option": "d",
+      "explanation": "The four are Content, Communicative Achievement, Organisation, Language."
+    },
+    {
+      "type": "mc",
+      "question": "What does 'Content' mainly check?",
+      "options": { "a": "Grammar only", "b": "Whether you covered the task and all points", "c": "Spelling", "d": "Paragraph length" },
+      "correct_option": "b",
+      "explanation": "Content checks if you did the task and addressed all bullet points."
+    },
+    {
+      "type": "mc",
+      "question": "What does 'Communicative Achievement' include?",
+      "options": { "a": "Register and format (e.g. letter, article)", "b": "Only vocabulary", "c": "Number of words", "d": "Punctuation only" },
+      "correct_option": "a",
+      "explanation": "It includes register, format, and whether the reader is informed and engaged."
+    },
+    {
+      "type": "mc",
+      "question": "Which helps your 'Organisation' mark?",
+      "options": { "a": "One long paragraph", "b": "Using only 'and'", "c": "Clear paragraphs and linking words", "d": "No headings" },
+      "correct_option": "c",
+      "explanation": "Clear structure, paragraphs and linkers improve Organisation."
+    },
+    {
+      "type": "mc",
+      "question": "For an FCE Part 2 letter or email you should:",
+      "options": { "a": "Omit the greeting and sign-off", "b": "Use no paragraphs", "c": "Ignore the bullet points", "d": "Use an appropriate greeting and sign-off and match the register" },
+      "correct_option": "d",
+      "explanation": "Letters and emails need a greeting, sign-off and the right register."
+    },
+    {
+      "type": "mc",
+      "question": "Before you write, you should:",
+      "options": { "a": "Plan and check you address every bullet", "b": "Skip the task", "c": "Write as much as possible", "d": "Avoid paragraphs" },
+      "correct_option": "a",
+      "explanation": "Planning and covering every bullet point help Content and Organisation."
+    },
+    {
+      "type": "mc",
+      "question": "Writing far over the word limit can:",
+      "options": { "a": "Give extra marks", "b": "Only affect spelling", "c": "Improve Content", "d": "Mean the examiner may not mark the extra" },
+      "correct_option": "d",
+      "explanation": "Examiners may not mark content beyond the limit."
+    },
+    {
+      "type": "mc",
+      "question": "Why might a single long paragraph with no linkers lose marks?",
+      "options": { "a": "Only Language", "b": "Only Content", "c": "Mainly Organisation (and readability)", "d": "Communicative Achievement only" },
+      "correct_option": "c",
+      "explanation": "Organisation marks structure, paragraphs and linking."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Writing exams: FCE, CAE, CPE",
+      "content": "The Cambridge Writing paper has two tasks. You must do both.\n\n**FCE (B2):** Part 1 is an essay (140–190 words). Part 2 is a choice of tasks – letter/email, article, review, story – (140–190 words). 1 hour 20 minutes.\n\n**CAE (C1):** Part 1 is a compulsory essay (220–260 words). Part 2 is a choice of tasks – letter, proposal, report, review – (220–260 words). 1 hour 30 minutes.\n\n**CPE (C2):** Part 1 is a compulsory essay (240–280 words). Part 2 is a choice of tasks – article, letter, report, review – (280–320 words). 1 hour 30 minutes.\n\nStaying within the word count and following the task instructions are essential."
+    },
+    {
+      "title": "Grading criteria",
+      "content": "Scripts are marked using four criteria. Each carries equal weight (e.g. 5 marks each at FCE).\n\n**Content** – Have you done what the task asked? Have you covered all points and added relevant ideas?\n\n**Communicative Achievement** – Is the register (formal/informal) right? Is the format correct (e.g. letter, article)? Would the reader be informed and engaged?\n\n**Organisation** – Is the text well structured with clear paragraphs, linking words, and a logical order?\n\n**Language** – Have you used a range of grammar and vocabulary? Are they accurate? Spelling and punctuation count."
+    },
+    {
+      "title": "How to gain marks",
+      "content": "**Content:** Read the task and the input material carefully. Address every bullet point. Add your own ideas where the task invites them.\n\n**Communicative Achievement:** Match the register to the task (e.g. formal for a report, informal for a letter to a friend). Use the correct layout (greeting/sign-off for letters, clear heading for reports).\n\n**Organisation:** Plan before you write. Use paragraphs (e.g. one per main point). Use linkers (however, in addition, as a result) to connect ideas.\n\n**Language:** Use a variety of structures and vocabulary. Check grammar and spelling. Use punctuation correctly (full stops, commas, apostrophes)."
+    },
+    {
+      "title": "How to avoid losing marks",
+      "content": "**Content:** Do not go off-topic. Do not ignore part of the task. Do not write too little (you will lose marks) or way over the limit (examiners may not mark the extra).\n\n**Communicative Achievement:** Do not use the wrong register (e.g. very informal in a formal report). Do not use the wrong format (e.g. no greeting in a letter when one is expected).\n\n**Organisation:** Avoid a single long paragraph or a list of unconnected sentences. Avoid overusing the same linker (e.g. \"and\" or \"also\" only).\n\n**Language:** Avoid repeated grammar or spelling mistakes. Avoid very basic vocabulary if you are aiming for a higher grade. Small errors (e.g. wrong preposition, wrong phrase) can add up – so check fixed phrases (e.g. at the end vs in the end) and common confusions."
+    }
+  ],
+  "commonErrors": [
+    {
+      "wrong": "In the end I am going to write about...",
+      "right": "At the end (of the day / of this section) I am going to write about...",
+      "explanation": "**In the end** = finally; after everything (e.g. We argued for hours. In the end, we agreed). **At the end** = at the final part of something (e.g. at the end of the essay, at the end of the day). When you mean 'at the end of the essay' or 'when I finish this part', use **at the end**."
+    }
+  ]
+}

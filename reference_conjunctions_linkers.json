@@ -1,0 +1,43 @@
+{
+  "title": "Conjunctions and Linkers",
+  "intro": "Linkers and conjunctions connect ideas within and between sentences. Using them correctly improves **cohesion** (clear connections) and **coherence** (logical flow) in writing and speaking.",
+  "logical_categories": [
+    {
+      "category": "Addition",
+      "meaning": "Add information or another point; show that two ideas go together.",
+      "linkers": "and, also, as well as, moreover, furthermore, in addition, in addition to, not only … but also, besides, what is more"
+    },
+    {
+      "category": "Contrast",
+      "meaning": "Show a difference, opposition, or unexpected turn between ideas.",
+      "linkers": "but, however, although, though, even though, whereas, while, nevertheless, on the other hand, in contrast, despite, in spite of, yet, still"
+    },
+    {
+      "category": "Cause / Reason",
+      "meaning": "Explain why something happens or why you hold a view.",
+      "linkers": "because, since, as, due to, owing to, because of, for this reason, the reason why"
+    },
+    {
+      "category": "Result / Purpose",
+      "meaning": "Show the result of something, or the aim or intention behind an action.",
+      "linkers": "so, therefore, thus, as a result, consequently, so that, in order to, so as to, for this reason"
+    }
+  ],
+  "essay_linkers": [
+    { "phrase": "In conclusion / To conclude", "use": "Introduce the concluding paragraph; sum up the argument." },
+    { "phrase": "In my opinion / I believe that / I think that", "use": "State your personal view clearly." },
+    { "phrase": "Firstly, Secondly, Thirdly / First, Second, Finally", "use": "Order your main points or arguments." },
+    { "phrase": "Furthermore / Moreover / In addition", "use": "Add another supporting point in an essay." },
+    { "phrase": "On the one hand … on the other hand", "use": "Present two contrasting sides of an argument." },
+    { "phrase": "For example / For instance / Such as", "use": "Introduce examples to support a point." },
+    { "phrase": "However / Nevertheless / Despite this", "use": "Introduce a contrast or counter-argument." },
+    { "phrase": "As a result / Therefore / Consequently", "use": "Show the result or conclusion of an argument." },
+    { "phrase": "To sum up / In summary / In short", "use": "Summarise the main points before a conclusion." },
+    { "phrase": "It is often said that / Many people believe that", "use": "Introduce a general or common view (e.g. in discussion essays)." },
+    { "phrase": "From my point of view / From my perspective", "use": "State your viewpoint in a formal way." },
+    { "phrase": "In general / Generally speaking", "use": "Make a broad statement before giving details." },
+    { "phrase": "In other words / That is to say", "use": "Rephrase or clarify an idea." },
+    { "phrase": "As far as … is concerned / When it comes to", "use": "Focus on a particular topic or aspect." },
+    { "phrase": "On the whole / All in all", "use": "Give an overall assessment or conclusion." }
+  ]
+}

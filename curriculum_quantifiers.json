@@ -1,0 +1,323 @@
+{
+  "intro": {
+    "title": "Quantifiers: some, any, much, many, all, etc.",
+    "sections": [
+      {
+        "title": "What are quantifiers?",
+        "content": "**Quantifiers** tell us **how much** or **how many**. They come before nouns:\n\n• **some** water, **many** books, **all** students\n\nThe right quantifier depends on two things:\n• Is the noun **countable** or **uncountable**?\n• Is the sentence **positive**, **negative**, or a **question**?"
+      },
+      {
+        "title": "Some and any",
+        "content": "**Some** — positive statements, offers, and requests: *I have some milk. Would you like some tea?*\n**Any** — questions and negatives: *Do you have any milk? I don't have any money.*\n**Some in questions** when we expect 'yes' (offers): *Would you like some cake? Can I have some water?*"
+      },
+      {
+        "title": "Much and many",
+        "content": "**Much** — uncountable nouns (often in questions/negatives): *How much water? I don't have much time.*\n**Many** — countable nouns (often in questions/negatives): *How many books? There aren't many people.*\nIn positive statements, we often use **a lot of** instead: *I have a lot of time.* (not: *I have much time.*)"
+      },
+      {
+        "title": "A lot of, lots of, enough",
+        "content": "**A lot of / lots of** — both countable and uncountable; mainly positive: *A lot of people. Lots of milk.*\n**Enough** — sufficient; before a noun: *enough time, enough money.* After an adjective: *old enough, big enough.* *We have enough water. She's old enough to drive.*"
+      },
+      {
+        "title": "All, most, no, none",
+        "content": "**All** — the whole amount or group: *all the water, all students.*\n**Most** — the majority: *most people, most of the time.*\n**No** — zero (positive verb): *I have no time* = *I don't have any time.*\n**None** — not any (used without a noun): *None of it. None left.*"
+      },
+      {
+        "title": "Few, a few, little, a little",
+        "content": "**Few / a few** — with countable nouns: **Few** = not many (negative): *Few people came.* (almost nobody). **A few** = some (positive): *I have a few friends.* (a small number).\n**Little / a little** — with uncountable nouns: **Little** = not much (negative): *Little progress was made.* **A little** = some (positive): *I need a little help.*"
+      },
+      {
+        "title": "Quantifiers: countable vs uncountable",
+        "content": "",
+        "diagram": {
+          "type": "table",
+          "title": "Quantifiers: countable vs uncountable",
+          "headers": ["", "Countable", "Uncountable"],
+          "rows": [
+            ["How many/much?", "**many** books", "**much** water"],
+            ["Some (positive)", "some books", "some water"],
+            ["Any (question/neg)", "any books", "any water"],
+            ["A lot of", "a lot of books", "a lot of water"],
+            ["Not many/much", "**few** (almost none)", "**little** (almost none)"],
+            ["Some (small amount)", "**a few** (positive)", "**a little** (positive)"]
+          ]
+        }
+      },
+      {
+        "title": "Typical errors (1)",
+        "content": "• **Any in positive:** Wrong: *I have any milk.* Right: *I have **some** milk.*\n• **Much + countable:** Wrong: *much books.* Right: ***many** books.*\n• **Many + uncountable:** Wrong: *many water.* Right: ***much** water.*"
+      },
+      {
+        "title": "Typical errors (2)",
+        "content": "• **Few vs a few:** *Few people came* = almost nobody. *A few people came* = some people (positive).\n• **Little vs a little:** *Little hope* = almost no hope. *A little hope* = some hope (positive)."
+      },
+      {
+        "title": "Reference",
+        "content": "For more on countable and uncountable nouns, see the Uncountable Nouns topic under Choose Grammar Topic."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "'I have _____ milk.' (positive) Which fits?",
+        "options": {
+          "a": "some",
+          "b": "any",
+          "c": "much",
+          "d": "many"
+        },
+        "correct_option": "a",
+        "explanation": "Positive statement with uncountable → some."
+      },
+      {
+        "type": "mc",
+        "question": "'How _____ books did you read?' Which fits?",
+        "options": {
+          "a": "much",
+          "b": "many",
+          "c": "some",
+          "d": "little"
+        },
+        "correct_option": "b",
+        "explanation": "Books = countable → many."
+      },
+      {
+        "type": "mc",
+        "question": "'She has _____ friends.' (a small number, positive) Which fits?",
+        "options": {
+          "a": "few",
+          "b": "a few",
+          "c": "little",
+          "d": "a little"
+        },
+        "correct_option": "b",
+        "explanation": "Friends = countable; positive (some) → a few."
+      },
+      {
+        "type": "mc",
+        "question": "'There isn't _____ time.' Which fits?",
+        "options": {
+          "a": "some",
+          "b": "any",
+          "c": "many",
+          "d": "few"
+        },
+        "correct_option": "b",
+        "explanation": "Negative → any."
+      },
+      {
+        "type": "mc",
+        "question": "'I need _____ help.' (a small amount, positive) Which fits?",
+        "options": {
+          "a": "little",
+          "b": "a little",
+          "c": "few",
+          "d": "a few"
+        },
+        "correct_option": "b",
+        "explanation": "Help = uncountable; positive → a little."
+      }
+    ]
+  },
+  "practice_order": [
+    "gapfill"
+  ],
+  "practice": {
+    "gapfill": {
+      "title": "Practice: Choose the correct quantifier",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "I have _____ milk in the fridge.",
+          "options": {
+            "a": "some",
+            "b": "any",
+            "c": "many",
+            "d": "few"
+          },
+          "correct_option": "a",
+          "explanation": "Positive, uncountable → some."
+        },
+        {
+          "type": "mc",
+          "question": "Do you have _____ sugar?",
+          "options": {
+            "a": "some",
+            "b": "any",
+            "c": "much",
+            "d": "many"
+          },
+          "correct_option": "b",
+          "explanation": "Question → any."
+        },
+        {
+          "type": "mc",
+          "question": "How _____ people were at the party?",
+          "options": {
+            "a": "much",
+            "b": "many",
+            "c": "some",
+            "d": "little"
+          },
+          "correct_option": "b",
+          "explanation": "Countable (people) → many."
+        },
+        {
+          "type": "mc",
+          "question": "She has _____ friends in London.",
+          "options": {
+            "a": "few",
+            "b": "a few",
+            "c": "little",
+            "d": "a little"
+          },
+          "correct_option": "b",
+          "explanation": "Countable, positive (some) → a few."
+        },
+        {
+          "type": "mc",
+          "question": "There is _____ water left. (almost none)",
+          "options": {
+            "a": "little",
+            "b": "a little",
+            "c": "few",
+            "d": "a few"
+          },
+          "correct_option": "a",
+          "explanation": "Uncountable, negative (almost none) → little."
+        },
+        {
+          "type": "mc",
+          "question": "We have _____ time to finish. (some)",
+          "options": {
+            "a": "little",
+            "b": "a little",
+            "c": "many",
+            "d": "much"
+          },
+          "correct_option": "b",
+          "explanation": "Uncountable, positive (some) → a little."
+        },
+        {
+          "type": "mc",
+          "question": "_____ the students passed the exam.",
+          "options": {
+            "a": "All",
+            "b": "Most",
+            "c": "No",
+            "d": "Any"
+          },
+          "correct_option": "a",
+          "explanation": "The whole group → all."
+        },
+        {
+          "type": "mc",
+          "question": "I don't have _____ money.",
+          "options": {
+            "a": "some",
+            "b": "any",
+            "c": "many",
+            "d": "few"
+          },
+          "correct_option": "b",
+          "explanation": "Negative → any."
+        },
+        {
+          "type": "mc",
+          "question": "There are _____ apples on the table. (a small number)",
+          "options": {
+            "a": "few",
+            "b": "a few",
+            "c": "little",
+            "d": "a little"
+          },
+          "correct_option": "b",
+          "explanation": "Countable, positive → a few."
+        },
+        {
+          "type": "mc",
+          "question": "He has _____ experience in teaching.",
+          "options": {
+            "a": "much",
+            "b": "many",
+            "c": "a lot of",
+            "d": "few"
+          },
+          "correct_option": "c",
+          "explanation": "Positive statement, uncountable → a lot of."
+        }
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Correct the quantifier",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'I have any milk.' Correct the sentence.",
+          "answers": [
+            "I have some milk.",
+            "I have some milk"
+          ],
+          "explanation": "Positive → some, not any."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'How much books did you read?' Correct the sentence.",
+          "answers": [
+            "How many books did you read?",
+            "How many books did you read"
+          ],
+          "explanation": "Books = countable → many."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She has few friends.' (meaning she has some friends) Correct the sentence.",
+          "answers": [
+            "She has a few friends.",
+            "She has a few friends"
+          ],
+          "explanation": "Positive (some) → a few."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I need a little eggs.' Correct the sentence.",
+          "answers": [
+            "I need a few eggs.",
+            "I need a few eggs"
+          ],
+          "explanation": "Eggs = countable → a few."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'There isn't some bread.' Correct the sentence.",
+          "answers": [
+            "There isn't any bread.",
+            "There isn't any bread"
+          ],
+          "explanation": "Negative → any."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'How many water do you need?' Correct the sentence.",
+          "answers": [
+            "How much water do you need?",
+            "How much water do you need"
+          ],
+          "explanation": "Water = uncountable → much."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Less and less people are using public transport.' Correct the sentence.",
+          "answers": [
+            "Fewer and fewer people are using public transport.",
+            "Fewer and fewer people are using public transport"
+          ],
+          "explanation": "People is countable → use **fewer**, not **less**. **Less** is for uncountable nouns (less time, less water); **fewer** is for countable nouns (fewer people, fewer books)."
+        }
+      ]
+    }
+  }
+}

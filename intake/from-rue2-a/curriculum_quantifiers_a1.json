@@ -1,0 +1,74 @@
+{
+  "intro": {
+    "title": "Some, Any, Much, Many",
+    "sections": [
+      {
+        "title": "Some and any",
+        "content": "**Some** – when we have something (positive):\n• I have **some** milk. There are **some** books.\n\n**Any** – in questions and when we don't have (negative):\n• Do you have **any** milk? I don't have **any** money."
+      },
+      {
+        "title": "Much and many",
+        "content": "**Much** – with uncountable:\n• How **much** water? I don't have **much** time.\n\n**Many** – with countable:\n• How **many** books? There aren't **many** people."
+      },
+      {
+        "title": "A lot of",
+        "content": "**A lot of** – both countable and uncountable; when we have a lot:\n• I have **a lot of** friends. She has **a lot of** work."
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "How _____ water do you need?",
+        "options": {"a": "many", "b": "much", "c": "some", "d": "any"},
+        "correct_option": "b",
+        "explanation": "Water is uncountable. We use much."
+      },
+      {
+        "type": "mc",
+        "question": "How _____ books do you have?",
+        "options": {"a": "many", "b": "much", "c": "some", "d": "any"},
+        "correct_option": "a",
+        "explanation": "Books are countable. We use many."
+      },
+      {
+        "type": "mc",
+        "question": "I have _____ friends.",
+        "options": {"a": "much", "b": "many", "c": "a lot of", "d": "any"},
+        "correct_option": "c",
+        "explanation": "Positive: a lot of friends."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Quantifiers",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "There aren't _____ people here.",
+          "options": {"a": "much", "b": "many", "c": "some", "d": "a"},
+          "correct_option": "b",
+          "explanation": "People = countable. Negative: many."
+        },
+        {
+          "type": "mc",
+          "question": "I don't have _____ time.",
+          "options": {"a": "many", "b": "much", "c": "some", "d": "any"},
+          "correct_option": "b",
+          "explanation": "Time is uncountable. Much time."
+        },
+        {
+          "type": "mc",
+          "question": "She has _____ work to do.",
+          "options": {"a": "many", "b": "much", "c": "a lot of", "d": "any"},
+          "correct_option": "c",
+          "explanation": "Positive: a lot of work."
+        }
+      ]
+    }
+  }
+}

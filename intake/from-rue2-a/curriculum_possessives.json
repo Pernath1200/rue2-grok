@@ -1,0 +1,70 @@
+{
+  "intro": {
+    "title": "Possessives: my, your, his, her...",
+    "sections": [
+      {
+        "title": "Possessive adjectives",
+        "content": "We use these words before a noun to show who has something:\n\n• **my** book = the book is mine\n• **your** car = the car is yours\n• **his** dog = the dog is his\n• **her** bag = the bag is hers\n• **its** name = the name of it\n• **our** house = the house is ours\n• **their** children = the children are theirs"
+      },
+      {
+        "title": "Possessive 's",
+        "content": "We add **'s** to a name or noun to show who has something:\n\n• **Tom's** book = the book of Tom\n• **my mother's** car = the car of my mother\n• **the dog's** tail = the tail of the dog"
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "This is _____ book.",
+        "options": {"a": "I", "b": "me", "c": "my", "d": "mine"},
+        "correct_option": "c",
+        "explanation": "Before a noun we use my."
+      },
+      {
+        "type": "mc",
+        "question": "That is _____ car. (Tom)",
+        "options": {"a": "Tom", "b": "Toms", "c": "Tom's", "d": "Toms'"},
+        "correct_option": "c",
+        "explanation": "We add 's to show it is Tom's car."
+      },
+      {
+        "type": "mc",
+        "question": "She loves _____ job.",
+        "options": {"a": "she", "b": "her", "c": "hers", "d": "his"},
+        "correct_option": "b",
+        "explanation": "Her = possessive for she."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Possessives",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "_____ name is John.",
+          "options": {"a": "He", "b": "His", "c": "Him", "d": "Himself"},
+          "correct_option": "b",
+          "explanation": "His name = the name of him."
+        },
+        {
+          "type": "mc",
+          "question": "This is _____ house. (Mary)",
+          "options": {"a": "Mary", "b": "Marys", "c": "Mary's", "d": "Marys'"},
+          "correct_option": "c",
+          "explanation": "Mary's = the house of Mary."
+        },
+        {
+          "type": "mc",
+          "question": "We love _____ new flat.",
+          "options": {"a": "we", "b": "us", "c": "our", "d": "ours"},
+          "correct_option": "c",
+          "explanation": "Our = possessive for we."
+        }
+      ]
+    }
+  }
+}

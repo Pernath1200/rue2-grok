@@ -1,0 +1,471 @@
+{
+  "intro": {
+    "title": "Present Perfect Simple vs Continuous",
+    "sections": [
+      {
+        "title": "What are we comparing?",
+        "content": "Both use **have/has**, but:\n\n• **Simple:** I have waited. She has read. (have + past participle)\n• **Continuous:** I have been waiting. She has been reading. (have been + -ing)\n\nWe choose: **result or how many** → simple. **How long or what you see now** → continuous."
+      },
+      {
+        "title": "When to use SIMPLE",
+        "content": "Use **simple** when you talk about:\n\n• **Result or finish:** I've finished. She's broken her phone.\n• **How many:** I've read three books. He's sent five emails.\n• **Life experience:** Have you ever been to Japan?\n• **Stative verbs** (know, like, have, want): I've known him for years. She's had that car since 2020.\n\nStative verbs = states, not actions . We use simple only."
+      },
+      {
+        "title": "When to use CONTINUOUS (1)",
+        "content": "Use **continuous** when you talk about:\n\n• **How long:** I've been waiting for an hour. They've been living here since 2019.\n• **Activity that is still going or just stopped:** She's been studying all evening.\n• **What you see now:** Why are your hands dirty? — Because I've been painting."
+      },
+      {
+        "title": "When to use CONTINUOUS (2)",
+        "content": "• **Repeated/temporary activity:** We've been looking for a flat for months.\n\nFor, since, all day, lately → we often use continuous."
+      },
+      {
+        "title": "Quick summary",
+        "content": "• Result / how many / stative verb → SIMPLE (have + past participle).\n• Duration / how long / visible effect now → CONTINUOUS (have been + -ing).\n• When both are possible, simple = result; continuous = activity or time.",
+        "diagram": {
+          "type": "comparison",
+          "title": "Present perfect: simple vs continuous",
+          "left": {
+            "title": "Simple (have + pp)",
+            "points": [
+              "Result or completion",
+              "How many (I've read 3 books)",
+              "Life experience (ever been?)",
+              "Stative verbs (know, like, have)"
+            ]
+          },
+          "right": {
+            "title": "Continuous (have been + -ing)",
+            "points": [
+              "Duration / how long",
+              "Activity in progress or just stopped",
+              "Visible effect now (dirty hands)",
+              "Repeated / temporary activity"
+            ]
+          }
+        }
+      },
+      {
+        "title": "Common mistakes (1)",
+        "content": "• **Life experience:** Wrong: I never *saw* that film. Right: I've never **seen** that film.\n• **Stative verbs:** Wrong: I have *been knowing* him for years. Right: I have **known** him for years.\n• **Finished time:** Wrong: I have finished *yesterday*. Right: I **finished** yesterday.\n• **How many:** Wrong: I have been *read* three books. Right: I have **read** three books."
+      },
+      {
+        "title": "Common mistakes (2)",
+        "content": "Tip: Yesterday, last week → past simple. Up to now, so far, ever → present perfect."
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "We want to say how long something has been happening. Which form do we use?",
+        "options": {
+          "a": "Present perfect continuous",
+          "b": "Present perfect simple",
+          "c": "Past simple",
+          "d": "Present continuous"
+        },
+        "correct_option": "a",
+        "explanation": "How long = we use present perfect continuous."
+      },
+      {
+        "type": "mc",
+        "question": "Which sentence is correct? (Stative verb)",
+        "options": {
+          "a": "I have been knowing him for years.",
+          "b": "I know him for years.",
+          "c": "I have known him for years.",
+          "d": "I am knowing him for years."
+        },
+        "correct_option": "c",
+        "explanation": "'Know' is stative. We use present perfect simple."
+      },
+      {
+        "type": "mc",
+        "question": "We want to say how many things are done. Which form do we use?",
+        "options": {
+          "a": "Present perfect continuous",
+          "b": "Past continuous",
+          "c": "Present perfect simple",
+          "d": "Present simple"
+        },
+        "correct_option": "c",
+        "explanation": "How many completed = present perfect simple."
+      },
+      {
+        "type": "mc",
+        "question": "Someone's hands are dirty. They did an activity. Which is more natural?",
+        "options": {
+          "a": "I have repaired the bike.",
+          "b": "I repaired the bike.",
+          "c": "I repair the bike.",
+          "d": "I have been repairing the bike."
+        },
+        "correct_option": "d",
+        "explanation": "What you see now = present perfect continuous."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc"
+  ],
+  "practice": {
+    "mc": {
+      "title": "Practice: Present Perfect Simple vs Continuous ",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "We want to say how long something has been happening. Which form do we use?",
+          "options": {
+            "a": "Present perfect continuous",
+            "b": "Present perfect simple",
+            "c": "Past simple",
+            "d": "Present continuous"
+          },
+          "correct_option": "a",
+          "explanation": "How long = we use present perfect continuous."
+        },
+        {
+          "type": "mc",
+          "question": "Which sentence is correct? (Stative verb)",
+          "options": {
+            "a": "I have been knowing him for years.",
+            "b": "I know him for years.",
+            "c": "I have known him for years.",
+            "d": "I am knowing him for years."
+          },
+          "correct_option": "c",
+          "explanation": "'Know' is stative. We use present perfect simple."
+        },
+        {
+          "type": "mc",
+          "question": "We want to say how many things are done. Which form do we use?",
+          "options": {
+            "a": "Present perfect continuous",
+            "b": "Past continuous",
+            "c": "Present perfect simple",
+            "d": "Present simple"
+          },
+          "correct_option": "c",
+          "explanation": "How many completed = present perfect simple."
+        },
+        {
+          "type": "mc",
+          "question": "Someone's hands are dirty. They did an activity. Which is more natural?",
+          "options": {
+            "a": "I have repaired the bike.",
+            "b": "I repaired the bike.",
+            "c": "I repair the bike.",
+            "d": "I have been repairing the bike."
+          },
+          "correct_option": "d",
+          "explanation": "What you see now = present perfect continuous."
+        },
+        {
+          "type": "mc",
+          "question": "Which sentence is correct? (Stative verb 'have')",
+          "options": {
+            "a": "She has been having that car since 2020.",
+            "b": "She has had that car since 2020.",
+            "c": "She is having that car since 2020.",
+            "d": "She had that car since 2020."
+          },
+          "correct_option": "b",
+          "explanation": "'Have' (possession) is stative; we use the present perfect simple."
+        },
+        {
+          "type": "mc",
+          "question": "'I've read three books this month.' – Why do we use the simple form?",
+          "options": {
+            "a": "We focus on duration.",
+            "b": "We focus on how many completed.",
+            "c": "We focus on visible effect now.",
+            "d": "We focus on activity in progress."
+          },
+          "correct_option": "b",
+          "explanation": "How many completed → present perfect simple."
+        },
+        {
+          "type": "mc",
+          "question": "'They've been looking for a flat for months.' – Why do we use the continuous form?",
+          "options": {
+            "a": "We focus on the number of flats.",
+            "b": "We focus on duration (how long).",
+            "c": "We focus on a stative verb.",
+            "d": "We focus on a single completed action."
+          },
+          "correct_option": "b",
+          "explanation": "How long = present perfect continuous."
+        },
+        {
+          "type": "mc",
+          "question": "Which is wrong? (Stative verb)",
+          "options": {
+            "a": "I have known him for years.",
+            "b": "I have been knowing him for years.",
+            "c": "She has had that job since 2019.",
+            "d": "We have believed in it for a long time."
+          },
+          "correct_option": "b",
+          "explanation": "'Know' is stative; we do not use the continuous form."
+        },
+        {
+          "type": "mc",
+          "question": "We want to say how long something has been happening. Which form do we use?",
+          "options": {
+            "a": "Present perfect continuous",
+            "b": "Present perfect simple",
+            "c": "Past simple",
+            "d": "Present continuous"
+          },
+          "correct_option": "a",
+          "explanation": "How long = we use present perfect continuous."
+        },
+        {
+          "type": "mc",
+          "question": "We want to say how many things are done. Which form do we use?",
+          "options": {
+            "a": "Present perfect continuous",
+            "b": "Past continuous",
+            "c": "Present perfect simple",
+            "d": "Present simple"
+          },
+          "correct_option": "c",
+          "explanation": "How many completed = present perfect simple."
+        }
+      ]
+    },
+    "gapfill": {
+      "title": "Practice: Gap fill",
+      "questions": [
+        {
+          "type": "open",
+          "question": "I'm sorry I'm late. I ____ (wait) for the train for almost an hour.",
+          "answers": [
+            "have been waiting"
+          ],
+          "explanation": "How long = present perfect continuous."
+        },
+        {
+          "type": "open",
+          "question": "She ____ (read) five books so far this summer.",
+          "answers": [
+            "has read"
+          ],
+          "explanation": "How many completed = present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "Your hair is wet. ____ you ____ (run) in the rain?",
+          "answers": [
+            "have you been running"
+          ],
+          "explanation": "What you see now = present perfect continuous."
+        },
+        {
+          "type": "open",
+          "question": "I ____ (know) him since we started high school.",
+          "answers": [
+            "have known"
+          ],
+          "explanation": "'Know' is stative; we use the present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "They ____ (not sleep) well lately because of the noisy neighbours.",
+          "answers": [
+            "have not been sleeping",
+            "haven't been sleeping"
+          ],
+          "explanation": "Something that is still going on lately = present perfect continuous."
+        },
+        {
+          "type": "open",
+          "question": "He ____ (send) ten job applications this week.",
+          "answers": [
+            "has sent"
+          ],
+          "explanation": "How many completed → present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "She ____ (have) that car since 2020.",
+          "answers": [
+            "has had"
+          ],
+          "explanation": "'Have' (possession) is stative. Present perfect simple."
+        }
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Error correction",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'I have been loving this new series since the first episode.' Correct the sentence.",
+          "answers": [
+            "I have loved this new series since the first episode.",
+            "I've loved this new series since the first episode.",
+            "I have loved this new series since the first episode",
+            "I've loved this new series since the first episode"
+          ],
+          "explanation": "'Love' is stative; we use the present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I have been having this phone for two years.' Correct the sentence.",
+          "answers": [
+            "I have had this phone for two years.",
+            "I've had this phone for two years.",
+            "I have had this phone for two years",
+            "I've had this phone for two years"
+          ],
+          "explanation": "'Have' (possession) is stative. Present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She has been owning that shop since 2019.' Correct the sentence.",
+          "answers": [
+            "She has owned that shop since 2019.",
+            "She's owned that shop since 2019.",
+            "She has owned that shop since 2019",
+            "She's owned that shop since 2019"
+          ],
+          "explanation": "'Own' is stative; we use the present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We have been believing in recycling for years.' Correct the sentence.",
+          "answers": [
+            "We have believed in recycling for years.",
+            "We've believed in recycling for years.",
+            "We have believed in recycling for years",
+            "We've believed in recycling for years"
+          ],
+          "explanation": "'Believe' is stative; present perfect simple."
+        }
+      ]
+    },
+    "makesentence": {
+      "title": "Practice: Making sentences (make a full sentence from the cues)",
+      "questions": [
+        {
+          "type": "makesentence",
+          "prompt": "you / wait / the bus / 20 minutes",
+          "answers": [
+            "I have been waiting for the bus for 20 minutes.",
+            "I've been waiting for the bus for 20 minutes."
+          ],
+          "explanation": "How long = present perfect continuous."
+        },
+        {
+          "type": "makesentence",
+          "prompt": "she / read / three books / this month",
+          "answers": [
+            "She has read three books this month.",
+            "She's read three books this month."
+          ],
+          "explanation": "How many completed → present perfect simple."
+        },
+        {
+          "type": "makesentence",
+          "prompt": "you / know / your best friend / since primary school",
+          "answers": [
+            "I have known my best friend since primary school.",
+            "I've known my best friend since primary school."
+          ],
+          "explanation": "Stative verb 'know' → present perfect simple."
+        },
+        {
+          "type": "makesentence",
+          "prompt": "they / live / London / five years",
+          "answers": [
+            "They have been living in London for five years.",
+            "They've been living in London for five years.",
+            "They have lived in London for five years.",
+            "They've lived in London for five years."
+          ],
+          "explanation": "Both forms are OK here with 'live'."
+        },
+        {
+          "type": "makesentence",
+          "prompt": "he / just / finish / his homework",
+          "answers": [
+            "He has just finished his homework.",
+            "He's just finished his homework."
+          ],
+          "explanation": "Result = present perfect simple."
+        },
+        {
+          "type": "makesentence",
+          "prompt": "you / study / all evening (you are tired now)",
+          "answers": [
+            "I have been studying all evening.",
+            "I've been studying all evening."
+          ],
+          "explanation": "How long and what you see now (tired) = present perfect continuous."
+        }
+      ]
+    },
+    "makequestion": {
+      "title": "Practice: Making questions (make a question from the cues)",
+      "questions": [
+        {
+          "type": "makequestion",
+          "prompt": "they / learn / English / how long",
+          "answers": [
+            "How long have they been learning English?",
+            "How long have they been learning English"
+          ],
+          "explanation": "How long = present perfect continuous question."
+        },
+        {
+          "type": "makequestion",
+          "prompt": "she / read / books / this year / how many",
+          "answers": [
+            "How many books has she read this year?",
+            "How many books has she read this year"
+          ],
+          "explanation": "How many done = present perfect simple question."
+        },
+        {
+          "type": "makequestion",
+          "prompt": "he / out of breath – suggest: exercise",
+          "answers": [
+            "Have you been exercising?",
+            "Have you been exercising"
+          ],
+          "explanation": "What you see now = present perfect continuous question."
+        },
+        {
+          "type": "makequestion",
+          "prompt": "they / ever / Japan",
+          "answers": [
+            "Have they ever been to Japan?",
+            "Have they ever been to Japan"
+          ],
+          "explanation": "Experience = present perfect simple question."
+        },
+        {
+          "type": "makequestion",
+          "prompt": "she / have / car / how long",
+          "answers": [
+            "How long has she had her car?",
+            "How long has she had her car"
+          ],
+          "explanation": "Stative 'have' (possession) = present perfect simple question."
+        },
+        {
+          "type": "makequestion",
+          "prompt": "they / do / all morning / what (they look tired)",
+          "answers": [
+            "What have they been doing all morning?",
+            "What have they been doing all morning"
+          ],
+          "explanation": "How long and what you see = present perfect continuous question."
+        }
+      ]
+    }
+  }
+}

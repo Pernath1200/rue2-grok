@@ -1,0 +1,74 @@
+{
+  "intro": {
+    "title": "Articles: a, an, the",
+    "sections": [
+      {
+        "title": "A and An",
+        "content": "We use **a** or **an** with one thing. **A** before a consonant sound, **an** before a vowel sound.\n\n• **a** book, **a** car, **a** dog\n• **an** apple, **an** egg, **an** hour"
+      },
+      {
+        "title": "The",
+        "content": "We use **the** when we know which one we mean:\n\n• I bought a car. **The** car is red.\n• **The** sun is bright.\n• Close **the** door."
+      },
+      {
+        "title": "No article",
+        "content": "Sometimes we use no article:\n\n• **Cats** are animals. (general)\n• I like **coffee**. (general)\n• We had **breakfast** at eight. (meals)"
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "I need _____ umbrella.",
+        "options": {"a": "a", "b": "an", "c": "the", "d": "no article"},
+        "correct_option": "b",
+        "explanation": "Umbrella starts with a vowel sound. We use an."
+      },
+      {
+        "type": "mc",
+        "question": "_____ sun is very bright today.",
+        "options": {"a": "A", "b": "An", "c": "The", "d": "No article"},
+        "correct_option": "c",
+        "explanation": "There is only one sun. We use the."
+      },
+      {
+        "type": "mc",
+        "question": "We had _____ breakfast at eight.",
+        "options": {"a": "a", "b": "an", "c": "the", "d": "no article"},
+        "correct_option": "d",
+        "explanation": "Meals in general: no article."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Articles",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "She is _____ engineer.",
+          "options": {"a": "a", "b": "an", "c": "the", "d": "no article"},
+          "correct_option": "b",
+          "explanation": "Engineer starts with a vowel sound. We use an."
+        },
+        {
+          "type": "mc",
+          "question": "I bought _____ car. _____ car is red.",
+          "options": {"a": "a / A", "b": "a / The", "c": "the / The", "d": "an / The"},
+          "correct_option": "b",
+          "explanation": "First: a car. Second: we know which car, so the."
+        },
+        {
+          "type": "mc",
+          "question": "He goes to _____ work by bus.",
+          "options": {"a": "a", "b": "an", "c": "the", "d": "no article"},
+          "correct_option": "d",
+          "explanation": "Go to work = no article."
+        }
+      ]
+    }
+  }
+}

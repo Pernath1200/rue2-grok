@@ -1,0 +1,22 @@
+{
+  "title": "Modal verbs and semi-modals",
+  "intro": "Modal verbs express modality: possibility, necessity, permission, ability, obligation, advice. They have no -s in the third person and are followed by the base form. Semi-modals behave like ordinary verbs (may take -s, or to + infinitive).",
+  "modals": [
+    {"modal": "can", "meaning": "ability; permission", "example": "I can swim. You can leave early.", "form": "can + base verb"},
+    {"modal": "could", "meaning": "past ability; polite request; possibility", "example": "I could run fast. Could you help me? It could rain.", "form": "could + base verb"},
+    {"modal": "may", "meaning": "possibility; permission (formal)", "example": "It may rain. May I sit here?", "form": "may + base verb"},
+    {"modal": "might", "meaning": "possibility (often weaker than may)", "example": "It might snow tomorrow.", "form": "might + base verb"},
+    {"modal": "must", "meaning": "obligation (strong); strong deduction", "example": "You must wear a seatbelt. She must be at home.", "form": "must + base verb"},
+    {"modal": "shall", "meaning": "offer; suggestion; future (formal)", "example": "Shall I open the window?", "form": "shall + base verb"},
+    {"modal": "should", "meaning": "advice; weak obligation", "example": "You should see a doctor.", "form": "should + base verb"},
+    {"modal": "will", "meaning": "future; willingness; request", "example": "I will call you. Will you help me?", "form": "will + base verb"},
+    {"modal": "would", "meaning": "polite request; conditional; past habit", "example": "Would you pass the salt? I would go if I could.", "form": "would + base verb"}
+  ],
+  "semi_modals": [
+    {"modal": "ought to", "meaning": "advice; moral obligation (formal)", "example": "You ought to apologise.", "form": "ought to + base verb"},
+    {"modal": "have to", "meaning": "necessity; external obligation", "example": "I have to go now. She has to wear a uniform.", "form": "have to + base verb"},
+    {"modal": "need to", "meaning": "necessity", "example": "You need to apply by Friday.", "form": "need to + base verb"},
+    {"modal": "be able to", "meaning": "ability (when can not possible, e.g. future)", "example": "She will be able to come.", "form": "be able to + base verb"},
+    {"modal": "used to", "meaning": "past habit", "example": "I used to play tennis.", "form": "used to + base verb"}
+  ]
+}

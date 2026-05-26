@@ -1,0 +1,254 @@
+{
+  "intro": {
+    "title": "Word Formation (Part 3)",
+    "sections": [
+      {
+        "title": "In the exam (1)",
+        "content": "In FCE and CAE, Word Formation is **Part 3**. You see a text with eight gaps; each line has a word in **capitals**. You form a new word from that word for each gap."
+      },
+      {
+        "title": "In the exam (2)",
+        "content": "**Tip:** Read the whole sentence first. The meaning tells you whether you need a noun, adjective, adverb or negative form."
+      },
+      {
+        "title": "What is Word Formation? (1)",
+        "content": "You read a short text with **eight gaps**. At the end of each line you see a word in **capitals** (the stem). You must **make a new word** from this stem for the gap."
+      },
+      {
+        "title": "What is Word Formation? (2)",
+        "content": "For example: **HOPE** → *hopeful*, *hopefully*, or *hopeless* – it depends on the sentence."
+      },
+      {
+        "title": "What is Word Formation? (3)",
+        "content": "This task tests **prefixes**, **suffixes**, and **word families** (noun, verb, adjective, adverb)."
+      },
+      {
+        "title": "What to do (1)",
+        "content": "• Read the **whole sentence** (and the sentences around it). Understand the meaning.\n• Look at the **stem word** in capitals.\n• Think: do you need a **noun**? An **adjective**? An **adverb**? A **negative** form?\n• **Spell** the word correctly."
+      },
+      {
+        "title": "What to do (2)",
+        "content": "One wrong letter can make the answer wrong."
+      },
+      {
+        "title": "Common patterns (1)",
+        "content": "• **-ful / -less**: hope → hopeful, hopeless; care → careful, careless\n• **-ly** (adverb): quick → quickly; happy → happily\n• **-tion / -sion / -ment** (noun): decide → decision; develop → development\n• **-ive / -able** (adjective): effect → effectiv"
+      },
+      {
+        "title": "Common patterns (2)",
+        "content": "e; rely → reliable"
+      },
+      {
+        "title": "Common patterns (2)",
+        "content": "• **un- / in- / im- / dis-** (negative): able → unable; correct → incorrect\n• **-ence / -ance** (noun): different → difference; appear → appearance"
+      },
+      {
+        "title": "Reference: Prefixes and suffixes (1)",
+        "content": "A **reference list** shows the **30 most common prefixes** and **30 most common suffixes** with examples. Use it to learn word families before or during practice."
+      },
+      {
+        "title": "Reference: Prefixes and suffixes (2)",
+        "content": "**Where to find it:** Open **Reference** (at the bottom of any menu), then choose **Word Formation: Prefixes & Suffixes**."
+      },
+      {
+        "title": "Reference",
+        "content": "[[ref|Reference lists]]"
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "What do you do with the word in capitals?",
+        "options": {
+          "a": "Copy it into the gap",
+          "b": "Make a new word from it that fits the gap",
+          "c": "Ignore it",
+          "d": "Use it in the next sentence"
+        },
+        "correct_option": "b",
+        "explanation": "You make a new word (e.g. HOPE → hopeful) that fits the gap."
+      },
+      {
+        "type": "mc",
+        "question": "How many gaps are there in Part 3?",
+        "options": {
+          "a": "Five",
+          "b": "Six",
+          "c": "Eight",
+          "d": "Ten"
+        },
+        "correct_option": "c",
+        "explanation": "There are usually eight gaps."
+      },
+      {
+        "type": "mc",
+        "question": "Which of these can you make from HAPPY?",
+        "options": {
+          "a": "happiness",
+          "b": "happily",
+          "c": "unhappy",
+          "d": "All of these"
+        },
+        "correct_option": "d",
+        "explanation": "Happy can make happiness (noun), happily (adverb), and unhappy (negative)."
+      },
+      {
+        "type": "mc",
+        "question": "Does spelling matter?",
+        "options": {
+          "a": "No",
+          "b": "Yes, the word must be spelled correctly",
+          "c": "Only for long words",
+          "d": "Only in the first gap"
+        },
+        "correct_option": "b",
+        "explanation": "Spelling must be correct for the answer to be right."
+      },
+      {
+        "type": "mc",
+        "question": "What should you do before you write your answer?",
+        "options": {
+          "a": "Only look at the stem word",
+          "b": "Read the whole sentence to understand meaning and grammar",
+          "c": "Guess straight away",
+          "d": "Skip the gap"
+        },
+        "correct_option": "b",
+        "explanation": "Reading the sentence helps you choose the right form (noun, adjective, etc.) and meaning."
+      }
+    ]
+  },
+  "practice_order": [
+    "guidance"
+  ],
+  "practice": {
+    "guidance": {
+      "title": "Guided Practice: Word Formation",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "The weather was _____ (SUN) so we went to the beach.",
+          "options": {
+            "a": "sunny",
+            "b": "sun",
+            "c": "sunned",
+            "d": "sunshine"
+          },
+          "correct_option": "a",
+          "explanation": "We need an adjective: sunny (describes the weather)."
+        },
+        {
+          "type": "mc",
+          "question": "She spoke very _____ (QUIET) so as not to wake the baby.",
+          "options": {
+            "a": "quiet",
+            "b": "quietly",
+            "c": "quietness",
+            "d": "quieter"
+          },
+          "correct_option": "b",
+          "explanation": "Adverb: quietly (how she spoke)."
+        },
+        {
+          "type": "mc",
+          "question": "We need to make a _____ (DECIDE) by Friday.",
+          "options": {
+            "a": "decide",
+            "b": "decided",
+            "c": "decision",
+            "d": "deciding"
+          },
+          "correct_option": "c",
+          "explanation": "Noun: decision (make a decision)."
+        },
+        {
+          "type": "mc",
+          "question": "The _____ (LOCAL) were very friendly.",
+          "options": {
+            "a": "locally",
+            "b": "location",
+            "c": "locals",
+            "d": "locate"
+          },
+          "correct_option": "c",
+          "explanation": "Noun (plural): locals (people who live there)."
+        },
+        {
+          "type": "mc",
+          "question": "It was a _____ (WONDER) holiday.",
+          "options": {
+            "a": "wonderful",
+            "b": "wondered",
+            "c": "wonderfully",
+            "d": "wondering"
+          },
+          "correct_option": "a",
+          "explanation": "Adjective: wonderful (describes the holiday)."
+        },
+        {
+          "type": "mc",
+          "question": "He completed the task _____ (SUCCESS).",
+          "options": {
+            "a": "success",
+            "b": "successful",
+            "c": "successfully",
+            "d": "succeed"
+          },
+          "correct_option": "c",
+          "explanation": "Adverb: successfully (how he completed it)."
+        },
+        {
+          "type": "mc",
+          "question": "There was a lot of _____ (ACTIVE) in the classroom.",
+          "options": {
+            "a": "active",
+            "b": "action",
+            "c": "activity",
+            "d": "actively"
+          },
+          "correct_option": "c",
+          "explanation": "Noun: activity (a lot of activity)."
+        },
+        {
+          "type": "mc",
+          "question": "The results were _____ (DISAPPOINT).",
+          "options": {
+            "a": "disappoint",
+            "b": "disappointed",
+            "c": "disappointing",
+            "d": "disappointment"
+          },
+          "correct_option": "c",
+          "explanation": "Adjective: disappointing (describes the results)."
+        },
+        {
+          "type": "mc",
+          "question": "She has great _____ (DETERMINE) to succeed.",
+          "options": {
+            "a": "determine",
+            "b": "determined",
+            "c": "determination",
+            "d": "determining"
+          },
+          "correct_option": "c",
+          "explanation": "Noun: determination (has + noun)."
+        },
+        {
+          "type": "mc",
+          "question": "The book is _____ (READ) in one sitting.",
+          "options": {
+            "a": "read",
+            "b": "readable",
+            "c": "reader",
+            "d": "reading"
+          },
+          "correct_option": "b",
+          "explanation": "Adjective: readable (you can read it)."
+        }
+      ]
+    }
+  }
+}

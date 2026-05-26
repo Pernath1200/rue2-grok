@@ -1,0 +1,496 @@
+{
+  "intro": {
+    "title": "Word order in sentences",
+    "sections": [
+      {
+        "title": "Three problem areas",
+        "content": "English word order — three areas: 1) **Embedded questions** — **statement** order after *I don't know*, *Can you tell me*. 2) **Frequency adverbs** — *often*, *usually*, *always*. 3) **Also**, *too*, *as well*. No examples.\n\n[[ref|Reference lists]]"
+      },
+      {
+        "title": "Embedded questions: the rule (1)",
+        "content": "In a **direct question**, verb before subject: What **is** the answer? In an **embedded** question, use **statement** order — subject before verb: I don't know what the answer **is**.\n\n[[ref|Reference lists]]"
+      },
+      {
+        "title": "Embedded questions: the rule (2)",
+        "content": "This pattern applies after: *I don't know*, *Can you tell me*, *I wonder*, *Do you know*, *I'm not sure*, *Tell me*.\n\n[[ref|Reference lists]]"
+      },
+      {
+        "title": "Embedded questions: examples (1)",
+        "content": "**Wrong:** ~~I don't know what is the answer.~~ **Right:** I don't know what the answer **is**.\n**Wrong:** ~~Can you tell me where is the station?~~ **Right:** Can you tell me where the station **is**?\n\n[[ref|Reference lists]]"
+      },
+      {
+        "title": "Embedded questions: examples (2)",
+        "content": "**Wrong:** ~~I wonder when did he leave.~~ **Right:** I wonder when he left (no *did*).\n**Wrong:** ~~Tell me how much does it cost.~~ **Right:** Tell me how much it **costs**.\n\n[[ref|Reference lists]]"
+      },
+      {
+        "title": "Embedded questions: diagram",
+        "content": "[[ref|Reference lists]]",
+        "diagram": {
+          "type": "formula",
+          "title": "Direct vs embedded word order",
+          "items": [
+            {
+              "label": "Direct:",
+              "formula": "Question word + **verb** + subject?"
+            },
+            {
+              "label": "Embedded:",
+              "formula": "… question word + **subject** + verb."
+            },
+            {
+              "label": "Example:",
+              "formula": "What **is** the answer? → I don't know what the answer **is**."
+            }
+          ]
+        }
+      },
+      {
+        "title": "Frequency adverbs: the rule",
+        "content": "Frequency adverbs (*often*, *usually*, *always*, *sometimes*, *never*) use **mid-position**: before the main verb (I **often go**); after *be* (She **is always** late); after first auxiliary (She doesn't **often** eat out).\n\n[[ref|Reference lists]]"
+      },
+      {
+        "title": "Frequency adverbs: examples",
+        "content": "**Wrong:** ~~I go often to the gym.~~ **Right:** I **often go** to the gym.\n**Wrong:** ~~She always is late.~~ **Right:** She **is always** late.\n**Wrong:** ~~They usually are busy.~~ **Right:** They **are usually** busy.\n\n[[ref|Reference lists]]"
+      },
+      {
+        "title": "Frequency adverbs: diagram",
+        "content": "[[ref|Reference lists]]",
+        "diagram": {
+          "type": "formula",
+          "title": "Frequency adverb position",
+          "items": [
+            {
+              "label": "With be:",
+              "formula": "subject + **be** + adverb (She **is always** late)"
+            },
+            {
+              "label": "Other verbs:",
+              "formula": "subject + adverb + **verb** (I **often go** to the gym)"
+            },
+            {
+              "label": "With auxiliary:",
+              "formula": "auxiliary + adverb + verb (She doesn't **often** eat out)"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Also: the rule",
+        "content": "**Also** — **mid-position**: before the main verb or after the first auxiliary. **Wrong:** ~~Also I want coffee.~~ **Wrong:** ~~I want also coffee.~~ **Right:** I **also** want coffee. Auxiliary: She **has also** finished.\n\n[[ref|Reference lists]]"
+      },
+      {
+        "title": "Also vs too / as well",
+        "content": "*Also* = middle. *Too* / *as well* = end. I **also** want tea. = I want tea **too**. = I want tea **as well**. Same meaning — different position.\n\n[[ref|Reference lists]]"
+      },
+      {
+        "title": "Typical errors (1)",
+        "content": "**Wrong:** ~~I don't know what is the problem.~~ **Right:** I don't know what the **problem is**.\n**Wrong:** ~~I go often to the gym.~~ **Right:** I **often go** to the gym.\n\n[[ref|Reference lists]]"
+      },
+      {
+        "title": "Typical errors (2)",
+        "content": "**Wrong:** ~~Also I need help.~~ **Right:** I **also** need help (or: I need help **too**).\n\n[[ref|Reference lists]]"
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "I don't know what the answer is.",
+          "b": "I don't know what is the answer.",
+          "c": "I don't know what the answer.",
+          "d": "I don't know what does the answer."
+        },
+        "correct_option": "a",
+        "explanation": "Embedded question: use statement word order (subject + verb). What the answer is."
+      },
+      {
+        "type": "mc",
+        "question": "'Can you tell me _____?' (Where is the station?) Which fits?",
+        "options": {
+          "a": "where is the station",
+          "b": "where the station",
+          "c": "where the station is",
+          "d": "where does the station"
+        },
+        "correct_option": "c",
+        "explanation": "Embedded: where the station is (statement order)."
+      },
+      {
+        "type": "mc",
+        "question": "'I wonder _____.' (When did he leave?) Which fits?",
+        "options": {
+          "a": "when he left",
+          "b": "when did he leave",
+          "c": "when left he",
+          "d": "when he did leave"
+        },
+        "correct_option": "a",
+        "explanation": "Embedded: when he left (statement order; no auxiliary 'did')."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "She always is late.",
+          "b": "She is always late.",
+          "c": "Always she is late.",
+          "d": "She is late always."
+        },
+        "correct_option": "b",
+        "explanation": "With the verb **be**, the frequency adverb goes **after** be: is always."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "I go often to the gym.",
+          "b": "I often go to the gym.",
+          "c": "I go to the gym often.",
+          "d": "Often I go to the gym."
+        },
+        "correct_option": "b",
+        "explanation": "Frequency adverb in mid-position: before the main verb (I often go)."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "Also I want coffee.",
+          "b": "I want also coffee.",
+          "c": "I also want coffee.",
+          "d": "I want coffee also."
+        },
+        "correct_option": "c",
+        "explanation": "**Also** usually goes in mid-position: before the main verb (I also want)."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc"
+  ],
+  "practice": {
+    "mc": {
+      "title": "Practice: Word order (multiple choice)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "I don't know what is the answer.",
+            "b": "I don't know what the answer is.",
+            "c": "I don't know what the answer.",
+            "d": "I don't know what does the answer."
+          },
+          "correct_option": "b",
+          "explanation": "Embedded: what the answer is (statement order)."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "Can you tell me where is the station?",
+            "b": "Can you tell me where the station?",
+            "c": "Can you tell me where the station is?",
+            "d": "Can you tell me where does the station?"
+          },
+          "correct_option": "c",
+          "explanation": "Embedded: where the station is."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "She always is busy.",
+            "b": "She is always busy.",
+            "c": "Always she is busy.",
+            "d": "She is busy always."
+          },
+          "correct_option": "b",
+          "explanation": "With be: adverb after is (is always)."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "He often goes there.",
+            "b": "He goes often there.",
+            "c": "He goes there often.",
+            "d": "Often he goes there."
+          },
+          "correct_option": "a",
+          "explanation": "Frequency adverb before main verb: often goes."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "Also I need help.",
+            "b": "I need also help.",
+            "c": "I also need help.",
+            "d": "I need help also."
+          },
+          "correct_option": "c",
+          "explanation": "Also in mid-position: I also need."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "I wonder when did he leave.",
+            "b": "I wonder when left he.",
+            "c": "I wonder when he left.",
+            "d": "I wonder when he did leave."
+          },
+          "correct_option": "c",
+          "explanation": "Embedded: when he left (no did)."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "They usually are at home.",
+            "b": "They are usually at home.",
+            "c": "Usually they are at home.",
+            "d": "They are at home usually."
+          },
+          "correct_option": "b",
+          "explanation": "With be: are usually (adverb after auxiliary)."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "Do you know what is his name?",
+            "b": "Do you know what his name?",
+            "c": "Do you know what his name is?",
+            "d": "Do you know what does his name?"
+          },
+          "correct_option": "c",
+          "explanation": "Embedded: what his name is."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "I sometimes am tired.",
+            "b": "I am sometimes tired.",
+            "c": "Sometimes I am tired.",
+            "d": "I am tired sometimes."
+          },
+          "correct_option": "b",
+          "explanation": "With be: am sometimes (adverb after be)."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "She has also finished.",
+            "b": "She also has finished.",
+            "c": "Also she has finished.",
+            "d": "She has finished also."
+          },
+          "correct_option": "a",
+          "explanation": "Also after first auxiliary: has also finished. (Or: She has finished too.)"
+        }
+      ]
+    },
+    "gapfill": {
+      "title": "Practice: Embedded questions (statement word order)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "I don't know what _____ (the answer / be). Use statement order.",
+          "answers": [
+            "the answer is"
+          ],
+          "explanation": "Embedded: what the answer is (subject + verb)."
+        },
+        {
+          "type": "open",
+          "question": "Can you tell me where _____ (the station / be)? Use statement order.",
+          "answers": [
+            "the station is"
+          ],
+          "explanation": "Embedded: where the station is."
+        },
+        {
+          "type": "open",
+          "question": "Do you know what _____ (his name / be)? Use statement order.",
+          "answers": [
+            "his name is"
+          ],
+          "explanation": "Embedded: what his name is."
+        },
+        {
+          "type": "open",
+          "question": "I wonder when _____ (he / leave). Use statement order.",
+          "answers": [
+            "he left"
+          ],
+          "explanation": "Embedded: when he left (no 'did')."
+        },
+        {
+          "type": "open",
+          "question": "Tell me how much _____ (it / cost). Use statement order.",
+          "answers": [
+            "it costs"
+          ],
+          "explanation": "Embedded: how much it costs."
+        },
+        {
+          "type": "open",
+          "question": "I'm not sure what _____ (the problem / be). Use statement order.",
+          "answers": [
+            "the problem is"
+          ],
+          "explanation": "Embedded: what the problem is."
+        },
+        {
+          "type": "open",
+          "question": "Do you know where _____ (she / live)? Use statement order.",
+          "answers": [
+            "she lives"
+          ],
+          "explanation": "Embedded: where she lives."
+        },
+        {
+          "type": "open",
+          "question": "I don't know if _____ (she / be) coming. Use statement order.",
+          "answers": [
+            "she is",
+            "she's"
+          ],
+          "explanation": "Yes/No embedded: if she is coming."
+        },
+        {
+          "type": "open",
+          "question": "Can you tell me what time _____ (it / be)? Use statement order.",
+          "answers": [
+            "it is",
+            "it's"
+          ],
+          "explanation": "Embedded: what time it is."
+        },
+        {
+          "type": "open",
+          "question": "I wonder why _____ (he / leave). Use statement order.",
+          "answers": [
+            "he left"
+          ],
+          "explanation": "Embedded: why he left."
+        }
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Correct the word order",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'I don't know what is the answer.' Correct the sentence.",
+          "answers": [
+            "I don't know what the answer is.",
+            "I do not know what the answer is.",
+            "I don't know what the answer is",
+            "I do not know what the answer is"
+          ],
+          "explanation": "Embedded question: statement order (what the answer is)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Can you tell me where is the station?' Correct the sentence.",
+          "answers": [
+            "Can you tell me where the station is?",
+            "Can you tell me where the station is"
+          ],
+          "explanation": "Embedded: where the station is."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I wonder when did he leave.' Correct the sentence.",
+          "answers": [
+            "I wonder when he left.",
+            "I wonder when he left"
+          ],
+          "explanation": "Embedded: when he left (no 'did')."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She always is late.' Correct the sentence.",
+          "answers": [
+            "She is always late.",
+            "She's always late.",
+            "She is always late",
+            "She's always late"
+          ],
+          "explanation": "With be: adverb after be (is always)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I go often to the gym.' Correct the sentence.",
+          "answers": [
+            "I often go to the gym.",
+            "I often go to the gym"
+          ],
+          "explanation": "Frequency adverb before main verb: often go."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Also I want coffee.' Correct the sentence.",
+          "answers": [
+            "I also want coffee.",
+            "I also want coffee"
+          ],
+          "explanation": "Also in mid-position: I also want."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Do you know what is his name?' Correct the sentence.",
+          "answers": [
+            "Do you know what his name is?",
+            "Do you know what his name is"
+          ],
+          "explanation": "Embedded: what his name is."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Tell me how much does it cost.' Correct the sentence.",
+          "answers": [
+            "Tell me how much it costs.",
+            "Tell me how much it costs"
+          ],
+          "explanation": "Embedded: how much it costs."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'They usually are at home.' Correct the sentence.",
+          "answers": [
+            "They are usually at home.",
+            "They're usually at home.",
+            "They are usually at home",
+            "They're usually at home"
+          ],
+          "explanation": "With be: are usually."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I don't know if is she coming?' Correct the sentence.",
+          "answers": [
+            "Do you know if she is coming?",
+            "I don't know if she is coming.",
+            "Do you know if she's coming?",
+            "I don't know if she's coming.",
+            "Do you know if she is coming",
+            "I don't know if she is coming",
+            "Do you know if she's coming",
+            "I don't know if she's coming"
+          ],
+          "explanation": "Yes/No embedded: if she is coming."
+        }
+      ]
+    }
+  }
+}

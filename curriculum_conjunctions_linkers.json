@@ -1,0 +1,269 @@
+{
+  "intro": {
+    "title": "Conjunctions and linkers",
+    "sections": [
+      {
+        "title": "What are conjunctions and linkers?",
+        "content": "**Conjunctions** join clauses or words inside a sentence:\n• *and, but, or, because, when, although*\n\n**Linkers** connect separate sentences:\n• *however, therefore, for example, moreover*"
+      },
+      {
+        "title": "Five purposes",
+        "content": "• **Addition:** *and*, *moreover*\n• **Contrast:** *but*, *although*, *however*\n• **Cause / result:** *because*, *so*, *therefore*\n• **Time:** *when*, *while*, *before*, *after*\n• **Purpose:** *so that*, *in order to*"
+      },
+      {
+        "title": "Coordinating conjunctions",
+        "content": "**And / but / or / so / yet** go **between** two main clauses:\n\n• I called **and** she answered.\n• He tried **but** he failed.\n• Stay **or** leave.\n• It was late **so** we went home."
+      },
+      {
+        "title": "Subordinating conjunctions",
+        "content": "**Because / although / when / if / while / whether** start a dependent clause. Either order works:\n\n• *Because it was late, we left.*\n• *We left because it was late.*\n• *I don't know whether he agreed.*"
+      },
+      {
+        "title": "Linkers",
+        "content": "Linkers start a **new sentence** and are followed by a **comma**:\n\n• *It was hard. **However,** we succeeded.*\n• *He was late. **Therefore,** we started without him.*\n• *I like fruit, **for example** apples.*"
+      },
+      {
+        "title": "Contrast: but vs although vs however",
+        "content": "Three ways to say the same thing:\n\n• **But** (coordinating): *It was cold **but** we went out.*\n• **Although** (subordinating): ***Although** it was cold, we went out.*\n• **However** (linker): *It was cold. **However,** we went out.*\n\n**Whereas / while** compare two things: *She likes tea **whereas** he prefers coffee.*"
+      },
+      {
+        "title": "Cause and result",
+        "content": "**Cause:** *because / since / as* (reason)\n**Result:** *so / therefore* (what happened next)\n\n• *Because it rained, we stayed.*\n• *It rained **so** we stayed.*\n• *It rained. **Therefore,** we stayed.*"
+      },
+      {
+        "title": "Time: when, while, during",
+        "content": "• **When** = at that moment: *I'll call you **when** I arrive.*\n• **While** + clause = during: *I read **while** she cooked.*\n• **During** + noun only: ***during** the meeting* (not ~~during I waited~~)"
+      },
+      {
+        "title": "The biggest mistake: double linking",
+        "content": "Never combine a conjunction **and** a linker for the same idea:\n\n• **Wrong:** ~~Because it rained, **so** we stayed.~~\n• **Right:** Because it rained, we stayed. **Or:** It rained **so** we stayed.\n\n• **Wrong:** ~~Although she tried, **but** she failed.~~\n• **Right:** Although she tried, she failed. **Or:** She tried **but** she failed."
+      },
+      {
+        "title": "Summary table",
+        "content": "",
+        "diagram": {
+          "type": "table",
+          "title": "Conjunctions and linkers by type",
+          "headers": [
+            "Type",
+            "Words",
+            "Position"
+          ],
+          "rows": [
+            [
+              "Coordinating",
+              "and, but, or, so, yet",
+              "Between two main clauses"
+            ],
+            [
+              "Subordinating",
+              "because, although, when, if, while",
+              "Start of dependent clause"
+            ],
+            [
+              "Linkers",
+              "however, therefore, for example",
+              "Start of new sentence + comma"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Reference",
+        "content": "Full lists by category (essay linkers too): [[reflinkers|Linkers and Conjunctions]] in **Reference**.\n\n[[ref|Reference lists]]"
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "Because it rained, we stayed at home.",
+          "b": "Because it rained, so we stayed at home.",
+          "c": "Because it rained, therefore we stayed.",
+          "d": "It rained, because we stayed at home."
+        },
+        "correct_option": "a",
+        "explanation": "Don't use because and so (or therefore) in the same sentence. Use one: Because it rained, we stayed. Or: It rained so we stayed."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "Although he tried, but he failed.",
+          "b": "Although he tried, however he failed.",
+          "c": "Although he tried, he failed.",
+          "d": "Although he tried, and he failed."
+        },
+        "correct_option": "c",
+        "explanation": "Don't use although and but (or however) together. Use one: Although he tried, he failed. Or: He tried but he failed."
+      },
+      {
+        "type": "mc",
+        "question": "Which linker fits? 'It was expensive. _____, we bought it.'",
+        "options": {
+          "a": "Therefore",
+          "b": "Because",
+          "c": "Moreover",
+          "d": "However"
+        },
+        "correct_option": "d",
+        "explanation": "However shows contrast (expensive vs we bought it). Therefore would mean 'because it was expensive we bought it' which is odd."
+      },
+      {
+        "type": "mc",
+        "question": "Which fits? 'I'll call you _____ I arrive.'",
+        "options": {
+          "a": "when",
+          "b": "while",
+          "c": "during",
+          "d": "however"
+        },
+        "correct_option": "a",
+        "explanation": "When = at the time (I arrive). While is for two ongoing actions; during needs a noun (during the meeting)."
+      },
+      {
+        "type": "mc",
+        "question": "Which fits? 'She likes tea, _____ he prefers coffee.' (contrast)",
+        "options": {
+          "a": "whereas",
+          "b": "however",
+          "c": "therefore",
+          "d": "because"
+        },
+        "correct_option": "a",
+        "explanation": "Whereas (or while) compares two contrasting facts inside one sentence: She likes tea, whereas he prefers coffee."
+      },
+      {
+        "type": "mc",
+        "question": "Which fits? 'I don't know _____ she agreed.'",
+        "options": {
+          "a": "if",
+          "b": "whether",
+          "c": "that",
+          "d": "Both a and b are correct."
+        },
+        "correct_option": "d",
+        "explanation": "Whether and if can both introduce an indirect yes/no question (I don't know whether/if she agreed). Whether is often preferred in formal writing."
+      }
+    ]
+  },
+  "practice_order": [
+    "conjunctions_linkers"
+  ],
+  "practice": {
+    "conjunctions_linkers": {
+      "title": "Practice: Conjunctions and linkers",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Because it was late, so we went home.' Correct the sentence.",
+          "answers": [
+            "Because it was late, we went home.",
+            "It was late so we went home.",
+            "Because it was late, we went home",
+            "It was late so we went home"
+          ],
+          "explanation": "Don't use because and so together. Use one or the other."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Although she was tired, but she continued.' Correct the sentence.",
+          "answers": [
+            "Although she was tired, she continued.",
+            "She was tired but she continued.",
+            "Although she was tired, she continued",
+            "She was tired but she continued"
+          ],
+          "explanation": "Don't use although and but together."
+        },
+        {
+          "type": "open",
+          "question": "Fill in: It was difficult. _____, we managed to finish. (contrast)",
+          "answers": [
+            "However"
+          ],
+          "explanation": "However shows contrast (difficult vs we managed)."
+        },
+        {
+          "type": "open",
+          "question": "Fill in: He didn't study. _____, he failed the exam. (result)",
+          "answers": [
+            "Therefore"
+          ],
+          "explanation": "Therefore shows result (didn't study → failed)."
+        },
+        {
+          "type": "open",
+          "question": "Fill in: I was reading _____ she was cooking. (at the same time)",
+          "answers": [
+            "while"
+          ],
+          "explanation": "While = during, two ongoing actions."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Because he was ill, therefore he stayed in bed.' Correct the sentence.",
+          "answers": [
+            "Because he was ill, he stayed in bed.",
+            "He was ill so he stayed in bed.",
+            "Because he was ill, he stayed in bed",
+            "He was ill so he stayed in bed"
+          ],
+          "explanation": "Don't use because and therefore together."
+        },
+        {
+          "type": "open",
+          "question": "Fill in: We need to hurry _____ we miss the train. (negative purpose / result to avoid)",
+          "answers": [
+            "or",
+            "otherwise",
+            "or we will",
+            "otherwise we will"
+          ],
+          "explanation": "Or (we'll) miss = otherwise we'll miss. Shows negative result to avoid."
+        },
+        {
+          "type": "open",
+          "question": "Fill in: The film was long. _____, it was very good.",
+          "answers": [
+            "However"
+          ],
+          "explanation": "Contrast: long vs good. However."
+        },
+        {
+          "type": "open",
+          "question": "Fill in: _____ you see him, tell him to call me.",
+          "answers": [
+            "When"
+          ],
+          "explanation": "When = at the time you see him."
+        },
+        {
+          "type": "open",
+          "question": "Fill in: I don't know _____ she's coming. (introducing a yes/no alternative – one word)",
+          "answers": [
+            "whether",
+            "if"
+          ],
+          "explanation": "Whether and if can both introduce an indirect yes/no question (whether/if she's coming or not)."
+        },
+        {
+          "type": "open",
+          "question": "Fill in: _____ it was expensive, we decided to buy it. (contrast)",
+          "answers": [
+            "Although"
+          ],
+          "explanation": "Although introduces a contrast (expensive vs we bought it)."
+        }
+      ]
+    },
+    "mc": {
+      "title": "Practice: Conjunctions and linkers (multiple choice)",
+      "questions": []
+    }
+  }
+}

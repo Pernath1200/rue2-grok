@@ -1,0 +1,236 @@
+{
+  "intro": {
+    "title": "Uncountable Nouns and Plural-only Nouns",
+    "sections": [
+      {
+        "title": "What this section covers",
+        "content": "**Countable** nouns can be singular or plural: *a book, two books.* **Uncountable** nouns have no plural with -s: *water, information, advice.* **Plural-only** nouns always take a plural verb: *scissors, trousers.* This topic covers common mistakes with all three."
+      },
+      {
+        "title": "Countable nouns",
+        "content": "You can count them. Use **a/an** and plural **-s**: *a book, two books; an apple, three apples.* Use **many**, **few**, **a few**: *How many books?*"
+      },
+      {
+        "title": "Uncountable nouns",
+        "content": "Treated as one mass. No **a/an**, no plural -s: *water, information, advice, rice, money, furniture.* Use **much**, **little**, **a little**: *How much water?* To count them, use a phrase: *a piece of advice, a bottle of water.*"
+      },
+      {
+        "title": "Common uncountable nouns (1)",
+        "content": "These are **uncountable** in English — no plural -s, no *a/an*:\n**advice** — *Give me some advice.* **information** — *I need more information.* **news** (singular verb) — *The news is good.* **furniture** — *We need new furniture.* **homework** — *I have a lot of homework.*"
+      },
+      {
+        "title": "Common uncountable nouns (2)",
+        "content": "**research** — *She does research.* **luggage / baggage** — *How much luggage?* **weather** — *The weather is nice.* **progress** — *We're making progress.* **hair** (uncountable for all hair on head) — *She has long hair.* But: *three hairs on the jacket* (countable for individual hairs)."
+      },
+      {
+        "title": "Plural-only nouns",
+        "content": "Some nouns have **only a plural form** and take a **plural verb**: **scissors** — *The scissors are on the table.* **trousers / pants** — *These trousers are too long.* **jeans, shorts, pyjamas** — *My jeans are blue.* **glasses** (spectacles) — *Where are my glasses?* For one item, say **a pair of**: *a pair of scissors, a pair of trousers.*"
+      },
+      {
+        "title": "Countable vs uncountable",
+        "content": "",
+        "diagram": {
+          "type": "comparison",
+          "title": "Countable vs uncountable nouns",
+          "left": {
+            "title": "Countable",
+            "points": [
+              "a book, two books",
+              "a/an + singular",
+              "many, few, a few",
+              "How **many** books?"
+            ]
+          },
+          "right": {
+            "title": "Uncountable",
+            "points": [
+              "water, advice, information",
+              "No a/an, no plural -s",
+              "much, little, a little",
+              "How **much** water?"
+            ]
+          }
+        }
+      },
+      {
+        "title": "Reference",
+        "content": "For more on quantifiers with countable and uncountable nouns, see the Quantifiers topic under Choose Grammar Topic."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "I need some advice.",
+          "b": "I need some advices.",
+          "c": "I need an advice.",
+          "d": "I need many advices."
+        },
+        "correct_option": "a",
+        "explanation": "Advice is uncountable in English. Use 'some advice' or 'a piece of advice'."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "The scissors is on the table.",
+          "b": "A scissors is on the table.",
+          "c": "The scissors are on the table.",
+          "d": "The scissor is on the table."
+        },
+        "correct_option": "c",
+        "explanation": "Scissors is always plural and takes a plural verb (are)."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "I have many homeworks.",
+          "b": "I have a lot of homework.",
+          "c": "I have many homework.",
+          "d": "I have five homeworks."
+        },
+        "correct_option": "b",
+        "explanation": "Homework is uncountable. Use 'a lot of homework' or 'some homework'."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "This trousers is too long.",
+          "b": "This trouser is too long.",
+          "c": "These trousers are too long.",
+          "d": "These trousers is too long."
+        },
+        "correct_option": "c",
+        "explanation": "Trousers is always plural; use 'these' and a plural verb (are)."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "The news are good.",
+          "b": "A news is good.",
+          "c": "The news are good today.",
+          "d": "The news is good."
+        },
+        "correct_option": "d",
+        "explanation": "News is uncountable and takes a singular verb (is)."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc"
+  ],
+  "practice": {
+    "countable_uncountable": {
+      "title": "Practice: Countable and uncountable",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Can you give me an advice?' Correct the sentence.",
+          "answers": [
+            "Can you give me some advice?",
+            "Can you give me a piece of advice?",
+            "Can you give me some advice",
+            "Can you give me a piece of advice"
+          ],
+          "explanation": "Advice is uncountable; use 'some advice' or 'a piece of advice'."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I need more informations.' Correct the sentence.",
+          "answers": [
+            "I need more information.",
+            "I need more information"
+          ],
+          "explanation": "Information is uncountable; no plural -s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Where is my glasses?' Correct the sentence.",
+          "answers": [
+            "Where are my glasses?",
+            "Where are my glasses"
+          ],
+          "explanation": "Glasses (spectacles) is always plural; use plural verb (are)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She has many homeworks.' Correct the sentence.",
+          "answers": [
+            "She has a lot of homework.",
+            "She has lots of homework.",
+            "She has a lot of homework",
+            "She has lots of homework"
+          ],
+          "explanation": "Homework is uncountable; use 'a lot of' or 'lots of'."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The scissors is in the drawer.' Correct the sentence.",
+          "answers": [
+            "The scissors are in the drawer.",
+            "The scissors are in the drawer"
+          ],
+          "explanation": "Scissors is always plural; use plural verb (are)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We have made a good progress.' Correct the sentence.",
+          "answers": [
+            "We have made good progress.",
+            "We have made good progress"
+          ],
+          "explanation": "Progress is uncountable; no 'a' before it."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'These jeans is too tight.' Correct the sentence.",
+          "answers": [
+            "These jeans are too tight.",
+            "These jeans are too tight"
+          ],
+          "explanation": "Jeans is always plural; use plural verb (are)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I have too many luggages.' Correct the sentence.",
+          "answers": [
+            "I have too much luggage.",
+            "I have too much luggage"
+          ],
+          "explanation": "Luggage is uncountable; use 'much' and no -s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The furniture are old.' Correct the sentence.",
+          "answers": [
+            "The furniture is old.",
+            "The furniture is old"
+          ],
+          "explanation": "Furniture is uncountable and takes a singular verb (is)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He did a research.' Correct the sentence.",
+          "answers": [
+            "He did research.",
+            "He did some research.",
+            "He did research",
+            "He did some research"
+          ],
+          "explanation": "Research is uncountable; no 'a'. Use 'research' or 'some research'."
+        }
+      ]
+    },
+    "mc": {
+      "title": "Practice: Uncountable Nouns and Plural-only Nouns (multiple choice)",
+      "questions": []
+    }
+  }
+}

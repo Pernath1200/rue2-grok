@@ -1,0 +1,2985 @@
+{
+  "intro": {
+    "title": "Spelling",
+    "sections": [
+      {
+        "title": "What this section covers",
+        "content": "This section practises words that students often misspell. Each question gives you a sentence with one spelling mistake — find it and correct it."
+      },
+      {
+        "title": "How to improve your spelling",
+        "content": "There are very few reliable spelling rules in English. The best way to improve is to notice which words you get wrong and learn them. Pay special attention to **double letters**, **-ance / -ence endings**, and **silent letters** — these cause the most mistakes."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your spelling",
+    "questions": [
+      {
+        "type": "open",
+        "question": "Spell this word correctly: accomodation",
+        "answers": [
+          "accommodation"
+        ],
+        "explanation": "Accommodation has double c and double m."
+      },
+      {
+        "type": "open",
+        "question": "Spell this word correctly: recieve",
+        "answers": [
+          "receive"
+        ],
+        "explanation": "Receive: i before e except after c."
+      },
+      {
+        "type": "open",
+        "question": "Spell this word correctly: definately",
+        "answers": [
+          "definitely"
+        ],
+        "explanation": "Definitely has -ite- in the middle, from 'finite'."
+      },
+      {
+        "type": "open",
+        "question": "Spell this word correctly: neccessary",
+        "answers": [
+          "necessary"
+        ],
+        "explanation": "Necessary: one c, double s (one collar, two sleeves)."
+      },
+      {
+        "type": "open",
+        "question": "Spell this word correctly: seperate",
+        "answers": [
+          "separate"
+        ],
+        "explanation": "Separate: -par- in the middle (like 'part')."
+      }
+    ]
+  },
+  "practice_order": [
+    "error_correction_1",
+    "error_correction_2",
+    "error_correction_3",
+    "error_correction_4",
+    "error_correction_5",
+    "error_correction_6",
+    "error_correction_7",
+    "error_correction_8",
+    "error_correction_9",
+    "error_correction_10",
+    "error_correction_11",
+    "error_correction_12",
+    "error_correction_13",
+    "error_correction_14",
+    "error_correction_15",
+    "error_correction_16",
+    "error_correction_17",
+    "error_correction_18",
+    "error_correction_19",
+    "error_correction_20",
+    "error_correction_21",
+    "error_correction_22",
+    "error_correction_23",
+    "error_correction_24",
+    "error_correction_25",
+    "error_correction_26",
+    "error_correction_27",
+    "error_correction_28",
+    "error_correction_29",
+    "error_correction_30",
+    "error_correction_31"
+  ],
+  "practice": {
+    "error_correction_1": {
+      "title": "Practice: Correct the spelling (1–10)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'We need accomodation for two nights.' Correct the sentence.",
+          "answers": [
+            "We need accommodation for two nights."
+          ],
+          "explanation": "Accommodation has double c and double m."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She managed to acheive her goal.' Correct the sentence.",
+          "answers": [
+            "She managed to achieve her goal."
+          ],
+          "explanation": "Achieve: i before e (not acheive)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We walked accross the road.' Correct the sentence.",
+          "answers": [
+            "We walked across the road."
+          ],
+          "explanation": "Across has one c."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Please send your adress.' Correct the sentence.",
+          "answers": [
+            "Please send your address."
+          ],
+          "explanation": "Address has double d."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He was very agressive.' Correct the sentence.",
+          "answers": [
+            "He was very aggressive."
+          ],
+          "explanation": "Aggressive: double g, double s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She was apparantly very tired.' Correct the sentence.",
+          "answers": [
+            "She was apparently very tired."
+          ],
+          "explanation": "Apparently: double p, -ent- not -ant-."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'His appearence had changed.' Correct the sentence.",
+          "answers": [
+            "His appearance had changed."
+          ],
+          "explanation": "Appearance: -ance (not -ence)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'They had an arguement.' Correct the sentence.",
+          "answers": [
+            "They had an argument."
+          ],
+          "explanation": "Argument: no e after u (argue → argument)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'From the begining, it was clear.' Correct the sentence.",
+          "answers": [
+            "From the beginning, it was clear."
+          ],
+          "explanation": "Beginning: double n."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I can't beleive it.' Correct the sentence.",
+          "answers": [
+            "I can't believe it."
+          ],
+          "explanation": "Believe: i before e."
+        }
+      ]
+    },
+    "error_correction_2": {
+      "title": "Practice: Correct the spelling (11–20)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'It's none of your buisness.' Correct the sentence.",
+          "answers": [
+            "It's none of your business.",
+            "It is none of your business."
+          ],
+          "explanation": "Business: -i- then -ness (busy → business)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Check the calender for the date.' Correct the sentence.",
+          "answers": [
+            "Check the calendar for the date."
+          ],
+          "explanation": "Calendar: -ar at the end (not -er)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Which catagory does it belong to?' Correct the sentence.",
+          "answers": [
+            "Which category does it belong to?"
+          ],
+          "explanation": "Category: -e- not -a- in the middle."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'There was a leak in the cieling.' Correct the sentence.",
+          "answers": [
+            "There was a leak in the ceiling."
+          ],
+          "explanation": "Ceiling: i before e."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'His consience troubled him.' Correct the sentence.",
+          "answers": [
+            "His conscience troubled him."
+          ],
+          "explanation": "Conscience: -science (science)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She was concious of the risk.' Correct the sentence.",
+          "answers": [
+            "She was conscious of the risk."
+          ],
+          "explanation": "Conscious: -sci- (like science)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I will definately be there.' Correct the sentence.",
+          "answers": [
+            "I will definitely be there.",
+            "I'll definitely be there."
+          ],
+          "explanation": "Definitely: -ite- from finite."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'They were desparate for help.' Correct the sentence.",
+          "answers": [
+            "They were desperate for help."
+          ],
+          "explanation": "Desperate: -per- (not -par-)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'What's the diffrence?' Correct the sentence.",
+          "answers": [
+            "What's the difference?",
+            "What is the difference?"
+          ],
+          "explanation": "Difference: double f, -ence."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Don't dissapoint them.' Correct the sentence.",
+          "answers": [
+            "Don't disappoint them.",
+            "Do not disappoint them."
+          ],
+          "explanation": "Disappoint: one s, double p."
+        }
+      ]
+    },
+    "error_correction_3": {
+      "title": "Practice: Correct the spelling (21–30)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'It takes disipline to succeed.' Correct the sentence.",
+          "answers": [
+            "It takes discipline to succeed."
+          ],
+          "explanation": "Discipline: -ci- not -i-."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She didn't want to embarass him.' Correct the sentence.",
+          "answers": [
+            "She didn't want to embarrass him."
+          ],
+          "explanation": "Embarrass: double r, double s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The existance of life on other planets.' Correct the sentence.",
+          "answers": [
+            "The existence of life on other planets."
+          ],
+          "explanation": "Existence: -ence (not -ance)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She has a lot of experiance.' Correct the sentence.",
+          "answers": [
+            "She has a lot of experience."
+          ],
+          "explanation": "Experience: -ence (not -ance)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We're going in Febuary.' Correct the sentence.",
+          "answers": [
+            "We're going in February.",
+            "We are going in February."
+          ],
+          "explanation": "February: first r after Feb-."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'It's a foriegn language.' Correct the sentence.",
+          "answers": [
+            "It's a foreign language.",
+            "It is a foreign language."
+          ],
+          "explanation": "Foreign: e before i (reign, foreign)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She's my best freind.' Correct the sentence.",
+          "answers": [
+            "She's my best friend.",
+            "She is my best friend."
+          ],
+          "explanation": "Friend: i before e."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The goverment announced new plans.' Correct the sentence.",
+          "answers": [
+            "The government announced new plans."
+          ],
+          "explanation": "Government: n before m (govern + -ment)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'You must not harrass people.' Correct the sentence.",
+          "answers": [
+            "You must not harass people."
+          ],
+          "explanation": "Harass: one r, double s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'What's the hight of the building?' Correct the sentence.",
+          "answers": [
+            "What's the height of the building?",
+            "What is the height of the building?"
+          ],
+          "explanation": "Height: -eigh- (like eight)."
+        }
+      ]
+    },
+    "error_correction_4": {
+      "title": "Practice: Correct the spelling (31–40)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Reply imediately.' Correct the sentence.",
+          "answers": [
+            "Reply immediately."
+          ],
+          "explanation": "Immediately: double m, -ately."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She's very independant.' Correct the sentence.",
+          "answers": [
+            "She's very independent.",
+            "She is very independent."
+          ],
+          "explanation": "Independent: -ent at the end (not -ant)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He has a lot of knowlege.' Correct the sentence.",
+          "answers": [
+            "He has a lot of knowledge."
+          ],
+          "explanation": "Knowledge: -ledge (know + ledge)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'You need a lisence to drive.' Correct the sentence.",
+          "answers": [
+            "You need a license to drive."
+          ],
+          "explanation": "License (AmE noun): -ense. (BrE noun = licence.)"
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Regular maintainance is required.' Correct the sentence.",
+          "answers": [
+            "Regular maintenance is required."
+          ],
+          "explanation": "Maintenance: -ten- in the middle (maintain + -ance)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'It's neccessary to book in advance.' Correct the sentence.",
+          "answers": [
+            "It's necessary to book in advance.",
+            "It is necessary to book in advance."
+          ],
+          "explanation": "Necessary: one c, double s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Our neigbour is very kind.' Correct the sentence.",
+          "answers": [
+            "Our neighbour is very kind."
+          ],
+          "explanation": "Neighbour (BrE): -eigh- (neighbor in AmE)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'On this occassion we will celebrate.' Correct the sentence.",
+          "answers": [
+            "On this occasion we will celebrate."
+          ],
+          "explanation": "Occasion: double c, one s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Such an occurance is rare.' Correct the sentence.",
+          "answers": [
+            "Such an occurrence is rare."
+          ],
+          "explanation": "Occurrence: double c, double r, -ence."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Would you like a peice of cake?' Correct the sentence.",
+          "answers": [
+            "Would you like a piece of cake?"
+          ],
+          "explanation": "Piece: i before e (piece of pie)."
+        }
+      ]
+    },
+    "error_correction_5": {
+      "title": "Practice: Correct the spelling (41–50)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'It was a great priviledge to meet her.' Correct the sentence.",
+          "answers": [
+            "It was a great privilege to meet her."
+          ],
+          "explanation": "Privilege: -i- then -lege (no d)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Your pronounciation is very good.' Correct the sentence.",
+          "answers": [
+            "Your pronunciation is very good."
+          ],
+          "explanation": "Pronunciation: from 'pronounce' – -nun- not -noun-."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I recieved your letter.' Correct the sentence.",
+          "answers": [
+            "I received your letter."
+          ],
+          "explanation": "Receive: i before e except after c."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I would recomend the fish.' Correct the sentence.",
+          "answers": [
+            "I would recommend the fish."
+          ],
+          "explanation": "Recommend: double c, double m."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We had dinner at a restuarant.' Correct the sentence.",
+          "answers": [
+            "We had dinner at a restaurant."
+          ],
+          "explanation": "Restaurant: -au- in the middle."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She has a good sense of rythm.' Correct the sentence.",
+          "answers": [
+            "She has a good sense of rhythm."
+          ],
+          "explanation": "Rhythm: no vowel between th and m (rh-y-th-m)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Keep them seperate.' Correct the sentence.",
+          "answers": [
+            "Keep them separate."
+          ],
+          "explanation": "Separate: -par- (like 'part')."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'It was a complete suprise.' Correct the sentence.",
+          "answers": [
+            "It was a complete surprise."
+          ],
+          "explanation": "Surprise: double r, -ise (not -ize in this word)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'That's a wierd story.' Correct the sentence.",
+          "answers": [
+            "That's a weird story.",
+            "That is a weird story."
+          ],
+          "explanation": "Weird: e before i (exception to the rule)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We need accomodation and the restuarant is full.' Correct the sentence.",
+          "answers": [
+            "We need accommodation and the restaurant is full."
+          ],
+          "explanation": "Accommodation (double c, double m); restaurant (-au-)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I definately believe it was necessary.' Correct the sentence.",
+          "answers": [
+            "I definitely believe it was necessary."
+          ],
+          "explanation": "Definitely (-ite-); necessary (one c, double s)."
+        }
+      ]
+    },
+    "error_correction_6": {
+      "title": "Practice: Correct the spelling (51–60)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'The parliment voted.' Correct the sentence.",
+          "answers": [
+            "The parliament voted."
+          ],
+          "explanation": "Parliament: i after l."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Nothing particuler.' Correct the sentence.",
+          "answers": [
+            "Nothing in particular."
+          ],
+          "explanation": "Particular: -ar not -er. The common phrase is 'nothing in particular'."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I tried to persaude him.' Correct the sentence.",
+          "answers": [
+            "I tried to persuade him."
+          ],
+          "explanation": "Persuade: u before a."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'In posession of a ticket.' Correct the sentence.",
+          "answers": [
+            "In possession of a ticket."
+          ],
+          "explanation": "Possession: double s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She prefered to stay.' Correct the sentence.",
+          "answers": [
+            "She preferred to stay."
+          ],
+          "explanation": "Preferred: double r before -ed."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'It was a priviledge.' Correct the sentence.",
+          "answers": [
+            "It was a privilege."
+          ],
+          "explanation": "Privilege: i before e."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'His proffession is teaching.' Correct the sentence.",
+          "answers": [
+            "His profession is teaching."
+          ],
+          "explanation": "Profession: one f, double s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Check the pronounciation.' Correct the sentence.",
+          "answers": [
+            "Check the pronunciation."
+          ],
+          "explanation": "Pronunciation: nunci (from pronounce)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Join the que.' Correct the sentence.",
+          "answers": [
+            "Join the queue."
+          ],
+          "explanation": "Queue: double u, then e."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Did you recieve it?' Correct the sentence.",
+          "answers": [
+            "Did you receive it?"
+          ],
+          "explanation": "Receive: e before i (after c)."
+        }
+      ]
+    },
+    "error_correction_7": {
+      "title": "Practice: Correct the spelling (61–70)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'I reccommend this book.' Correct the sentence.",
+          "answers": [
+            "I recommend this book."
+          ],
+          "explanation": "Recommend: one c, double m."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'See the referance list.' Correct the sentence.",
+          "answers": [
+            "See the reference list."
+          ],
+          "explanation": "Reference: e before a."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Is this relevent?' Correct the sentence.",
+          "answers": [
+            "Is this relevant?"
+          ],
+          "explanation": "Relevant: a before e."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We ate at the restarant.' Correct the sentence.",
+          "answers": [
+            "We ate at the restaurant."
+          ],
+          "explanation": "Restaurant: au in the middle."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A sense of rythm.' Correct the sentence.",
+          "answers": [
+            "A sense of rhythm."
+          ],
+          "explanation": "Rhythm: h after r, no vowel between."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Check the schedual.' Correct the sentence.",
+          "answers": [
+            "Check the schedule."
+          ],
+          "explanation": "Schedule: c-h, then edule."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Talk to the secratary.' Correct the sentence.",
+          "answers": [
+            "Talk to the secretary."
+          ],
+          "explanation": "Secretary: e before t, a before r."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Keep them seperate.' Correct the sentence.",
+          "answers": [
+            "Keep them separate."
+          ],
+          "explanation": "Separate: a in the middle (par in the middle)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Yours sincerly.' Correct the sentence.",
+          "answers": [
+            "Yours sincerely."
+          ],
+          "explanation": "Sincerely: e before l."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A successfull campaign.' Correct the sentence.",
+          "answers": [
+            "A successful campaign."
+          ],
+          "explanation": "Successful: one l, double s."
+        }
+      ]
+    },
+    "error_correction_8": {
+      "title": "Practice: Correct the spelling (71–80)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'See you tommorrow.' Correct the sentence.",
+          "answers": [
+            "See you tomorrow."
+          ],
+          "explanation": "Tomorrow: one m, double r."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Heavy trafic today.' Correct the sentence.",
+          "answers": [
+            "Heavy traffic today."
+          ],
+          "explanation": "Traffic: double f, double c."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'That was unneccessary.' Correct the sentence.",
+          "answers": [
+            "That was unnecessary."
+          ],
+          "explanation": "Unnecessary: one c, double s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Wait untill Monday.' Correct the sentence.",
+          "answers": [
+            "Wait until Monday."
+          ],
+          "explanation": "Until: one l."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The whether is fine today.' Correct the sentence.",
+          "answers": [
+            "The weather is fine today."
+          ],
+          "explanation": "Weather: a (rain, etc.); whether = if."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Next Wensday.' Correct the sentence.",
+          "answers": [
+            "Next Wednesday."
+          ],
+          "explanation": "Wednesday: d before n."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'That's wierd.' Correct the sentence.",
+          "answers": [
+            "That's weird."
+          ],
+          "explanation": "Weird: e before i (exception to rule)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Creative writting.' Correct the sentence.",
+          "answers": [
+            "Creative writing."
+          ],
+          "explanation": "Writing: one t (from write)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The comittee met.' Correct the sentence.",
+          "answers": [
+            "The committee met."
+          ],
+          "explanation": "Committee: double m, double t, double e."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Don't embarass me.' Correct the sentence.",
+          "answers": [
+            "Don't embarrass me."
+          ],
+          "explanation": "Embarrass: double r, double s."
+        }
+      ]
+    },
+    "error_correction_9": {
+      "title": "Practice: Correct the spelling (81–90)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'It was appparent to everyone.' Correct the sentence.",
+          "answers": [
+            "It was apparent to everyone."
+          ],
+          "explanation": "Apparent: double p."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Attendance is compulsary.' Correct the sentence.",
+          "answers": [
+            "Attendance is compulsory."
+          ],
+          "explanation": "Compulsory: o before u, -ory."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Exercise is benificial.' Correct the sentence.",
+          "answers": [
+            "Exercise is beneficial."
+          ],
+          "explanation": "Beneficial: one n, -cial."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The plan is changable.' Correct the sentence.",
+          "answers": [
+            "The plan is changeable."
+          ],
+          "explanation": "Changeable: keep the e before -able."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She is commited to the project.' Correct the sentence.",
+          "answers": [
+            "She is committed to the project."
+          ],
+          "explanation": "Committed: double m, double t."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We reached a concensus.' Correct the sentence.",
+          "answers": [
+            "We reached a consensus."
+          ],
+          "explanation": "Consensus: -sus not -census."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The decision caused controversey.' Correct the sentence.",
+          "answers": [
+            "The decision caused controversy."
+          ],
+          "explanation": "Controversy: -sy not -sey."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'For your conveniance.' Correct the sentence.",
+          "answers": [
+            "For your convenience."
+          ],
+          "explanation": "Convenience: -ience, i before e."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He accepted the critisism.' Correct the sentence.",
+          "answers": [
+            "He accepted the criticism."
+          ],
+          "explanation": "Criticism: -ism not -isim."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Out of curiocity.' Correct the sentence.",
+          "answers": [
+            "Out of curiosity."
+          ],
+          "explanation": "Curiosity: -osity (from curious)."
+        }
+      ]
+    },
+    "error_correction_10": {
+      "title": "Practice: Correct the spelling (91–100)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Make a descision.' Correct the sentence.",
+          "answers": [
+            "Make a decision."
+          ],
+          "explanation": "Decision: -sion not -cion."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A detailed discription.' Correct the sentence.",
+          "answers": [
+            "A detailed description."
+          ],
+          "explanation": "Description: e after s (from describe)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Economic developement.' Correct the sentence.",
+          "answers": [
+            "Economic development.",
+            "Economic development"
+          ],
+          "explanation": "Development: no e after p. With or without full stop."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Look it up in the dictionery.' Correct the sentence.",
+          "answers": [
+            "Look it up in the dictionary."
+          ],
+          "explanation": "Dictionary: -ary not -ery."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The stain will disapear.' Correct the sentence.",
+          "answers": [
+            "The stain will disappear."
+          ],
+          "explanation": "Disappear: double p."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'On the eigth floor.' Correct the sentence.",
+          "answers": [
+            "On the eighth floor."
+          ],
+          "explanation": "Eighth: add -h to eight."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'An efficent system.' Correct the sentence.",
+          "answers": [
+            "An efficient system."
+          ],
+          "explanation": "Efficient: double f, -ient."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Are you eligable?' Correct the sentence.",
+          "answers": [
+            "Are you eligible?"
+          ],
+          "explanation": "Eligible: -ible not -able."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'In case of emergancy.' Correct the sentence.",
+          "answers": [
+            "In case of emergency."
+          ],
+          "explanation": "Emergency: -ency not -ancy."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Enviromental issues matter.' Correct the sentence.",
+          "answers": [
+            "Environmental issues matter."
+          ],
+          "explanation": "Environmental: from environment, -mental."
+        }
+      ]
+    },
+    "error_correction_11": {
+      "title": "Practice: Correct the spelling (101–110)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'She said becuase she was tired.' Correct the sentence.",
+          "answers": [
+            "She said because she was tired."
+          ],
+          "explanation": "Because: be + cause."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Althought it rained, we went out.' Correct the sentence.",
+          "answers": [
+            "Although it rained, we went out."
+          ],
+          "explanation": "Although: no t at the end."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Howver, I disagree.' Correct the sentence.",
+          "answers": [
+            "However, I disagree."
+          ],
+          "explanation": "However: how + ever."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Therefor, we must act.' Correct the sentence.",
+          "answers": [
+            "Therefore, we must act."
+          ],
+          "explanation": "Therefore: there + fore."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I wonder wether she will come.' Correct the sentence.",
+          "answers": [
+            "I wonder whether she will come."
+          ],
+          "explanation": "Whether: wh- + ether (like weather but different meaning)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Dispight the rain, we continued.' Correct the sentence.",
+          "answers": [
+            "Despite the rain, we continued."
+          ],
+          "explanation": "Despite: de- + spite (no g)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Acording to the report.' Correct the sentence.",
+          "answers": [
+            "According to the report."
+          ],
+          "explanation": "According: double c."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'They did it themselfs.' Correct the sentence.",
+          "answers": [
+            "They did it themselves."
+          ],
+          "explanation": "Themselves: them + selves."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I need somthing to drink.' Correct the sentence.",
+          "answers": [
+            "I need something to drink."
+          ],
+          "explanation": "Something: some + thing."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She has beautifull eyes.' Correct the sentence.",
+          "answers": [
+            "She has beautiful eyes."
+          ],
+          "explanation": "Beautiful: beauty + -ful (one l)."
+        }
+      ]
+    },
+    "error_correction_12": {
+      "title": "Practice: Correct the spelling (111–120)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'It was a wonderfull day.' Correct the sentence.",
+          "answers": [
+            "It was a wonderful day."
+          ],
+          "explanation": "Wonderful: wonder + -ful (one l)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'See you on Thursay.' Correct the sentence.",
+          "answers": [
+            "See you on Thursday."
+          ],
+          "explanation": "Thursday: Thurs + day (like Thor)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We bought new furnature.' Correct the sentence.",
+          "answers": [
+            "We bought new furniture."
+          ],
+          "explanation": "Furniture: -iture (not -ature)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'It was a long jurney.' Correct the sentence.",
+          "answers": [
+            "It was a long journey."
+          ],
+          "explanation": "Journey: jour- + ney."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We went on holaday.' Correct the sentence.",
+          "answers": [
+            "We went on holiday."
+          ],
+          "explanation": "Holiday: holi + day (holy day)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'It was quite an advendure.' Correct the sentence.",
+          "answers": [
+            "It was quite an adventure."
+          ],
+          "explanation": "Adventure: -vent- in the middle."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We did an experement.' Correct the sentence.",
+          "answers": [
+            "We did an experiment."
+          ],
+          "explanation": "Experiment: -per- in the middle."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The course was chalenging.' Correct the sentence.",
+          "answers": [
+            "The course was challenging."
+          ],
+          "explanation": "Challenging: challenge + -ing (double l)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She showed great determanation.' Correct the sentence.",
+          "answers": [
+            "She showed great determination."
+          ],
+          "explanation": "Determination: determine + -ation (i before n)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'It was an efective solution.' Correct the sentence.",
+          "answers": [
+            "It was an effective solution."
+          ],
+          "explanation": "Effective: effect + -ive (double f)."
+        }
+      ]
+    },
+    "error_correction_13": {
+      "title": "Practice: Correct the spelling (121–130)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'The students were motiviated.' Correct the sentence.",
+          "answers": [
+            "The students were motivated."
+          ],
+          "explanation": "Motivated: motivate + -d (one i)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He strives for perfecton.' Correct the sentence.",
+          "answers": [
+            "He strives for perfection."
+          ],
+          "explanation": "Perfection: perfect + -ion."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The scenary was stunning.' Correct the sentence.",
+          "answers": [
+            "The scenery was stunning."
+          ],
+          "explanation": "Scenery: scene + -ery."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Full-time employement.' Correct the sentence.",
+          "answers": [
+            "Full-time employment."
+          ],
+          "explanation": "Employment: employ + -ment."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Job secuirty is important.' Correct the sentence.",
+          "answers": [
+            "Job security is important."
+          ],
+          "explanation": "Security: secure + -ity."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The distibution of wealth.' Correct the sentence.",
+          "answers": [
+            "The distribution of wealth."
+          ],
+          "explanation": "Distribution: distribute + -ion."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A good relatonship with colleagues.' Correct the sentence.",
+          "answers": [
+            "A good relationship with colleagues."
+          ],
+          "explanation": "Relationship: relate + -tion + -ship."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'An enquiry into the matter.' Correct the sentence.",
+          "answers": [
+            "An inquiry into the matter."
+          ],
+          "explanation": "Inquiry: inquire + -y (AmE; BrE inquiry or enquiry)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Greater autonamy for staff.' Correct the sentence.",
+          "answers": [
+            "Greater autonomy for staff."
+          ],
+          "explanation": "Autonomy: auto- + -nomy."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She will probaly agree.' Correct the sentence.",
+          "answers": [
+            "She will probably agree."
+          ],
+          "explanation": "Probably: probable + -ly (double b)."
+        }
+      ]
+    },
+    "error_correction_14": {
+      "title": "Practice: Correct the spelling (131–140)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Especialy in summer.' Correct the sentence.",
+          "answers": [
+            "Especially in summer."
+          ],
+          "explanation": "Especially: especial + -ly."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I actualy enjoyed it.' Correct the sentence.",
+          "answers": [
+            "I actually enjoyed it."
+          ],
+          "explanation": "Actually: actual + -ly."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I realy appreciate it.' Correct the sentence.",
+          "answers": [
+            "I really appreciate it."
+          ],
+          "explanation": "Really: real + -ly (double l)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She usualy arrives early.' Correct the sentence.",
+          "answers": [
+            "She usually arrives early."
+          ],
+          "explanation": "Usually: usual + -ly."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We generaly avoid that.' Correct the sentence.",
+          "answers": [
+            "We generally avoid that."
+          ],
+          "explanation": "Generally: general + -ly."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A comfortible chair.' Correct the sentence.",
+          "answers": [
+            "A comfortable chair."
+          ],
+          "explanation": "Comfortable: comfort + -able."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She is responsibile for the team.' Correct the sentence.",
+          "answers": [
+            "She is responsible for the team."
+          ],
+          "explanation": "Responsible: respond + -ible."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Are you availible tomorrow?' Correct the sentence.",
+          "answers": [
+            "Are you available tomorrow?"
+          ],
+          "explanation": "Available: avail + -able."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Is it possable?' Correct the sentence.",
+          "answers": [
+            "Is it possible?"
+          ],
+          "explanation": "Possible: poss + -ible (double s)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Perhapse we should wait.' Correct the sentence.",
+          "answers": [
+            "Perhaps we should wait."
+          ],
+          "explanation": "Perhaps: per + haps."
+        }
+      ]
+    },
+    "error_correction_15": {
+      "title": "Practice: Correct the spelling (141–150)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'That was very intresting.' Correct the sentence.",
+          "answers": [
+            "That was very interesting."
+          ],
+          "explanation": "Interesting: interest + -ing."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She is a proffessional.' Correct the sentence.",
+          "answers": [
+            "She is a professional."
+          ],
+          "explanation": "Professional: profession + -al (one f)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Traditonal methods.' Correct the sentence.",
+          "answers": [
+            "Traditional methods."
+          ],
+          "explanation": "Traditional: tradition + -al."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'In Janurary we travelled.' Correct the sentence.",
+          "answers": [
+            "In January we travelled."
+          ],
+          "explanation": "January: Janu- + -ary."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We're meeting in Septmber.' Correct the sentence.",
+          "answers": [
+            "We're meeting in September."
+          ],
+          "explanation": "September: Sept + -ember."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We climbed the mountian.' Correct the sentence.",
+          "answers": [
+            "We climbed the mountain."
+          ],
+          "explanation": "Mountain: mount + -ain."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We visited the museam.' Correct the sentence.",
+          "answers": [
+            "We visited the museum."
+          ],
+          "explanation": "Museum: muse + -um."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She studies at univercity.' Correct the sentence.",
+          "answers": [
+            "She studies at university."
+          ],
+          "explanation": "University: uni- + -versity."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We went to the cinima.' Correct the sentence.",
+          "answers": [
+            "We went to the cinema."
+          ],
+          "explanation": "Cinema: cine- + -ma."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The stadiam was full.' Correct the sentence.",
+          "answers": [
+            "The stadium was full."
+          ],
+          "explanation": "Stadium: stadi- + -um."
+        }
+      ]
+    },
+    "error_correction_16": {
+      "title": "Practice: Correct the spelling (151–160)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'We saw a play at the theator.' Correct the sentence.",
+          "answers": [
+            "We saw a play at the theatre."
+          ],
+          "explanation": "Theatre: theat- + -re (BrE; theater in AmE)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The cathederal is magnificent.' Correct the sentence.",
+          "answers": [
+            "The cathedral is magnificent."
+          ],
+          "explanation": "Cathedral: cathed- + -ral."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She sed she would come.' Correct the sentence.",
+          "answers": [
+            "She said she would come."
+          ],
+          "explanation": "Said: from say (irregular past)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Many peple were there.' Correct the sentence.",
+          "answers": [
+            "Many people were there."
+          ],
+          "explanation": "People: peo- + ple."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Please anwser the question.' Correct the sentence.",
+          "answers": [
+            "Please answer the question."
+          ],
+          "explanation": "Answer: an- + -swer (silent w)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We have enogh time.' Correct the sentence.",
+          "answers": [
+            "We have enough time."
+          ],
+          "explanation": "Enough: e-nough (gh = f sound)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We walked throught the park.' Correct the sentence.",
+          "answers": [
+            "We walked through the park."
+          ],
+          "explanation": "Through: throu- + gh (no t)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I throught about it.' Correct the sentence.",
+          "answers": [
+            "I thought about it."
+          ],
+          "explanation": "Thought: from think (irregular)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She bot a new phone.' Correct the sentence.",
+          "answers": [
+            "She bought a new phone."
+          ],
+          "explanation": "Bought: from buy (irregular)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He brung some flowers.' Correct the sentence.",
+          "answers": [
+            "He brought some flowers."
+          ],
+          "explanation": "Brought: from bring (irregular)."
+        }
+      ]
+    },
+    "error_correction_17": {
+      "title": "Practice: Correct the spelling (161–170)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'It was very dificult.' Correct the sentence.",
+          "answers": [
+            "It was very difficult."
+          ],
+          "explanation": "Difficult: dif- + -ficult (double f)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We finaly finished.' Correct the sentence.",
+          "answers": [
+            "We finally finished."
+          ],
+          "explanation": "Finally: final + -ly."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He works in the feild.' Correct the sentence.",
+          "answers": [
+            "He works in the field."
+          ],
+          "explanation": "Field: i before e."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'What's your wieght?' Correct the sentence.",
+          "answers": [
+            "What's your weight?"
+          ],
+          "explanation": "Weight: weigh + -t (e before i)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Ether option is fine.' Correct the sentence.",
+          "answers": [
+            "Either option is fine."
+          ],
+          "explanation": "Either: ei- + -ther."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Nieghter of them came.' Correct the sentence.",
+          "answers": [
+            "Neither of them came."
+          ],
+          "explanation": "Neither: ne- + -ither (ei)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'It's diferent from before.' Correct the sentence.",
+          "answers": [
+            "It's different from before."
+          ],
+          "explanation": "Different: differ + -ent (double f)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Try anothe one.' Correct the sentence.",
+          "answers": [
+            "Try another one."
+          ],
+          "explanation": "Another: an + other."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We need to suceed.' Correct the sentence.",
+          "answers": [
+            "We need to succeed."
+          ],
+          "explanation": "Succeed: suc- + ceed (double c, double e)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A wide variaty of options.' Correct the sentence.",
+          "answers": [
+            "A wide variety of options."
+          ],
+          "explanation": "Variety: vary + -ety."
+        }
+      ]
+    },
+    "error_correction_18": {
+      "title": "Practice: Correct the spelling (171–180)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Yours sincerly.' Correct the sentence.",
+          "answers": [
+            "Yours sincerely."
+          ],
+          "explanation": "Sincerely: sincere + -ly."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We need to accomodate everyone.' Correct the sentence.",
+          "answers": [
+            "We need to accommodate everyone."
+          ],
+          "explanation": "Accommodate: double c, double m."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She apreciates your help.' Correct the sentence.",
+          "answers": [
+            "She appreciates your help."
+          ],
+          "explanation": "Appreciates: ap- + preciate (double p)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A heirachy of levels.' Correct the sentence.",
+          "answers": [
+            "A hierarchy of levels."
+          ],
+          "explanation": "Hierarchy: hier- + archy."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I'm gratefull for your help.' Correct the sentence.",
+          "answers": [
+            "I'm grateful for your help."
+          ],
+          "explanation": "Grateful: grate + -ful (one l)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A neccessary change.' Correct the sentence.",
+          "answers": [
+            "A necessary change."
+          ],
+          "explanation": "Necessary: one c, double s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He's very independant.' Correct the sentence.",
+          "answers": [
+            "He's very independent."
+          ],
+          "explanation": "Independent: -ent at the end."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The goverment announced it.' Correct the sentence.",
+          "answers": [
+            "The government announced it."
+          ],
+          "explanation": "Government: n before m."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She recieved the award.' Correct the sentence.",
+          "answers": [
+            "She received the award."
+          ],
+          "explanation": "Received: i before e except after c."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I would recomend it.' Correct the sentence.",
+          "answers": [
+            "I would recommend it."
+          ],
+          "explanation": "Recommend: double c, double m."
+        }
+      ]
+    },
+    "error_correction_19": {
+      "title": "Practice: Correct the spelling (181–190)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'A neccessary change.' Correct the sentence.",
+          "answers": [
+            "A necessary change."
+          ],
+          "explanation": "Necessary: one c, double s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He's very independant.' Correct the sentence.",
+          "answers": [
+            "He's very independent."
+          ],
+          "explanation": "Independent: -ent at the end."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The goverment announced it.' Correct the sentence.",
+          "answers": [
+            "The government announced it."
+          ],
+          "explanation": "Government: n before m."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She recieved the award.' Correct the sentence.",
+          "answers": [
+            "She received the award."
+          ],
+          "explanation": "Received: i before e except after c."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I would recomend it.' Correct the sentence.",
+          "answers": [
+            "I would recommend it."
+          ],
+          "explanation": "Recommend: double c, double m."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'They're very sucessful.' Correct the sentence.",
+          "answers": [
+            "They're very successful."
+          ],
+          "explanation": "Successful: success + -ful (one l)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The enviornment is at risk.' Correct the sentence.",
+          "answers": [
+            "The environment is at risk."
+          ],
+          "explanation": "Environment: n before m."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I definately agree.' Correct the sentence.",
+          "answers": [
+            "I definitely agree."
+          ],
+          "explanation": "Definitely: -ite- from finite."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She has alot of experiance.' Correct the sentence.",
+          "answers": [
+            "She has a lot of experience."
+          ],
+          "explanation": "Experience: -ence (not -ance)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'An oportunity to learn.' Correct the sentence.",
+          "answers": [
+            "An opportunity to learn."
+          ],
+          "explanation": "Opportunity: double p."
+        }
+      ]
+    },
+    "error_correction_20": {
+      "title": "Practice: Correct the spelling (191–200)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Keep them seperate.' Correct the sentence.",
+          "answers": [
+            "Keep them separate."
+          ],
+          "explanation": "Separate: -par- in the middle."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'It was a suprise.' Correct the sentence.",
+          "answers": [
+            "It was a surprise."
+          ],
+          "explanation": "Surprise: double r."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Occassionally we meet.' Correct the sentence.",
+          "answers": [
+            "Occasionally we meet."
+          ],
+          "explanation": "Occasionally: occasion + -ally."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I'm begining to understand.' Correct the sentence.",
+          "answers": [
+            "I'm beginning to understand."
+          ],
+          "explanation": "Beginning: double n."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She's embarassed.' Correct the sentence.",
+          "answers": [
+            "She's embarrassed."
+          ],
+          "explanation": "Embarrassed: double r, double s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The existance of evidence.' Correct the sentence.",
+          "answers": [
+            "The existence of evidence."
+          ],
+          "explanation": "Existence: -ence not -ance."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Immediatly after that.' Correct the sentence.",
+          "answers": [
+            "Immediately after that."
+          ],
+          "explanation": "Immediately: double m."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Knowlege is power.' Correct the sentence.",
+          "answers": [
+            "Knowledge is power."
+          ],
+          "explanation": "Knowledge: -ledge."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A peice of advice.' Correct the sentence.",
+          "answers": [
+            "A piece of advice."
+          ],
+          "explanation": "Piece: i before e."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Your pronounciation is good.' Correct the sentence.",
+          "answers": [
+            "Your pronunciation is good."
+          ],
+          "explanation": "Pronunciation: -nun- from pronounce."
+        }
+      ]
+    },
+    "error_correction_21": {
+      "title": "Practice: Correct the spelling (201–216)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'I checked everythning twice.' Correct the sentence.",
+          "answers": [
+            "I checked everything twice."
+          ],
+          "explanation": "Everything: every + thing."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We bought all the engredients for dinner.' Correct the sentence.",
+          "answers": [
+            "We bought all the ingredients for dinner."
+          ],
+          "explanation": "Ingredients: -ie- and plural -s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'That sounds recenable to me.' Correct the sentence.",
+          "answers": [
+            "That sounds reasonable to me."
+          ],
+          "explanation": "Reasonable: reason + -able."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Please squezze the lemon.' Correct the sentence.",
+          "answers": [
+            "Please squeeze the lemon."
+          ],
+          "explanation": "Squeeze: squ- + -eeze."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We stayed home insted of going out.' Correct the sentence.",
+          "answers": [
+            "We stayed home instead of going out."
+          ],
+          "explanation": "Instead: in- + stead."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'They made the cake themselfs.' Correct the sentence.",
+          "answers": [
+            "They made the cake themselves."
+          ],
+          "explanation": "Themselves: them + selves."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Everybodies welcome at the event.' Correct the sentence.",
+          "answers": [
+            "Everybody's welcome at the event."
+          ],
+          "explanation": "Everybody's = everybody is (apostrophe + s)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'My perents are very supportive.' Correct the sentence.",
+          "answers": [
+            "My parents are very supportive."
+          ],
+          "explanation": "Parents: par- + -ents."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Thank you so mutch for your help.' Correct the sentence.",
+          "answers": [
+            "Thank you so much for your help."
+          ],
+          "explanation": "Much: no t."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I stayed home becose it was raining.' Correct the sentence.",
+          "answers": [
+            "I stayed home because it was raining."
+          ],
+          "explanation": "Because: be + cause."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Be cautiose when crossing the road.' Correct the sentence.",
+          "answers": [
+            "Be cautious when crossing the road."
+          ],
+          "explanation": "Cautious: cauti- + -ous."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I need to buy some grocerise.' Correct the sentence.",
+          "answers": [
+            "I need to buy some groceries."
+          ],
+          "explanation": "Groceries: grocer + ies."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'This method gives us a big advantige.' Correct the sentence.",
+          "answers": [
+            "This method gives us a big advantage."
+          ],
+          "explanation": "Advantage: -tage ending."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Her pearants were waiting outside.' Correct the sentence.",
+          "answers": [
+            "Her parents were waiting outside."
+          ],
+          "explanation": "Parents: par- + -ents."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Genually speaking, this works well.' Correct the sentence.",
+          "answers": [
+            "Generally speaking, this works well."
+          ],
+          "explanation": "Generally: general + -ly."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Mabey we can try again tomorrow.' Correct the sentence.",
+          "answers": [
+            "Maybe we can try again tomorrow."
+          ],
+          "explanation": "Maybe: may + be."
+        }
+      ]
+    },
+    "error_correction_22": {
+      "title": "Practice: Correct the spelling (217–228)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'We had many visiters last week.' Correct the sentence.",
+          "answers": [
+            "We had many visitors last week."
+          ],
+          "explanation": "Visitors: -or not -er."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I had forgoten my keys.' Correct the sentence.",
+          "answers": [
+            "I had forgotten my keys."
+          ],
+          "explanation": "Forgotten: double t."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We had many difficultys.' Correct the sentence.",
+          "answers": [
+            "We had many difficulties."
+          ],
+          "explanation": "Difficulties: difficult + -ies (y → i before -es)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'They went to the consultate.' Correct the sentence.",
+          "answers": [
+            "They went to the consulate."
+          ],
+          "explanation": "Consulate: -su- not -ate."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She will presentate the results.' Correct the sentence.",
+          "answers": [
+            "She will present the results."
+          ],
+          "explanation": "Present: the verb is present (no -ate)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I need to improve my vocabularies.' Correct the sentence.",
+          "answers": [
+            "I need to improve my vocabulary."
+          ],
+          "explanation": "Vocabulary: uncountable; use singular vocabulary."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Thanks for your feedbacks.' Correct the sentence.",
+          "answers": [
+            "Thanks for your feedback."
+          ],
+          "explanation": "Feedback: uncountable; no plural -s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I need more informations.' Correct the sentence.",
+          "answers": [
+            "I need more information."
+          ],
+          "explanation": "Information: uncountable; no plural -s."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We need to preparate the room.' Correct the sentence.",
+          "answers": [
+            "We need to prepare the room."
+          ],
+          "explanation": "Prepare: -re at the end (not -ate)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She dances balet.' Correct the sentence.",
+          "answers": [
+            "She dances ballet."
+          ],
+          "explanation": "Ballet: double l, -et."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Do whathever you like.' Correct the sentence.",
+          "answers": [
+            "Do whatever you like."
+          ],
+          "explanation": "Whatever: what + ever (one word, no h in the middle)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I need to buy a think.' Correct the sentence.",
+          "answers": [
+            "I need to buy a thing."
+          ],
+          "explanation": "Thing: -ing not -ink (thing vs think)."
+        }
+      ]
+    },
+    "error_correction_23": {
+      "title": "Practice: Correct the spelling (229–238)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'All the equiptment was damaged.' Correct the sentence.",
+          "answers": [
+            "All the equipment was damaged.",
+            "All the equipment was damaged"
+          ],
+          "explanation": "Equipment: no a; -ment."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Don't exagerate the problem.' Correct the sentence.",
+          "answers": [
+            "Don't exaggerate the problem.",
+            "Don't exaggerate the problem"
+          ],
+          "explanation": "Exaggerate: double g, double r."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'That was an exellant performance.' Correct the sentence.",
+          "answers": [
+            "That was an excellent performance.",
+            "That was an excellent performance"
+          ],
+          "explanation": "Excellent: double l, -ent."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The name sounds familier.' Correct the sentence.",
+          "answers": [
+            "The name sounds familiar.",
+            "The name sounds familiar"
+          ],
+          "explanation": "Familiar: -iar (not -ier)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She has great intellegence.' Correct the sentence.",
+          "answers": [
+            "She has great intelligence.",
+            "She has great intelligence"
+          ],
+          "explanation": "Intelligence: -ence; double l."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She wore expensive jewlery.' Correct the sentence.",
+          "answers": [
+            "She wore expensive jewellery.",
+            "She wore expensive jewellery"
+          ],
+          "explanation": "Jewellery (BrE): jewel + -lery."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Experiments in the labaratory.' Correct the sentence.",
+          "answers": [
+            "Experiments in the laboratory.",
+            "Experiments in the laboratory"
+          ],
+          "explanation": "Laboratory: -ora- (not -aro-)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Reading in your leasure time.' Correct the sentence.",
+          "answers": [
+            "Reading in your leisure time.",
+            "Reading in your leisure time"
+          ],
+          "explanation": "Leisure: -ei- (not -ie-)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A minature version.' Correct the sentence.",
+          "answers": [
+            "A miniature version.",
+            "A miniature version"
+          ],
+          "explanation": "Miniature: -iature."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The lines are parrallel.' Correct the sentence.",
+          "answers": [
+            "The lines are parallel.",
+            "The lines are parallel"
+          ],
+          "explanation": "Parallel: one r, double l."
+        }
+      ]
+    },
+    "error_correction_24": {
+      "title": "Practice: Correct the spelling (239–248)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Please confrim the booking.' Correct the sentence.",
+          "answers": [
+            "Please confirm the booking.",
+            "Please confirm the booking"
+          ],
+          "explanation": "Confirm: -firm (not -form)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I symathise with you.' Correct the sentence.",
+          "answers": [
+            "I sympathise with you.",
+            "I sympathise with you"
+          ],
+          "explanation": "Sympathise: sym- + path + -ise."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He was very ancious.' Correct the sentence.",
+          "answers": [
+            "He was very anxious.",
+            "He was very anxious"
+          ],
+          "explanation": "Anxious: -x- (not -cs-)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The porpose of the meeting.' Correct the sentence.",
+          "answers": [
+            "The purpose of the meeting.",
+            "The purpose of the meeting"
+          ],
+          "explanation": "Purpose: pur- + pose (not porpose)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The venu was perfect.' Correct the sentence.",
+          "answers": [
+            "The venue was perfect.",
+            "The venue was perfect"
+          ],
+          "explanation": "Venue: -ue (not -eu)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She was very irratated.' Correct the sentence.",
+          "answers": [
+            "She was very irritated.",
+            "She was very irritated"
+          ],
+          "explanation": "Irritated: double r, one t."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A frustating experience.' Correct the sentence.",
+          "answers": [
+            "A frustrating experience.",
+            "A frustrating experience"
+          ],
+          "explanation": "Frustrating: double t (frustrate + -ing)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I envi their success.' Correct the sentence.",
+          "answers": [
+            "I envy their success.",
+            "I envy their success"
+          ],
+          "explanation": "Envy: -vy (not -vey)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'They lack confidance.' Correct the sentence.",
+          "answers": [
+            "They lack confidence.",
+            "They lack confidence"
+          ],
+          "explanation": "Confidence: -ence (confide + -ence)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We need imediate action.' Correct the sentence.",
+          "answers": [
+            "We need immediate action.",
+            "We need immediate action"
+          ],
+          "explanation": "Immediate: double m, -ate."
+        }
+      ]
+    },
+    "error_correction_25": {
+      "title": "Practice: Correct the spelling (249–258)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Millenium celebrations.' Correct the sentence.",
+          "answers": [
+            "Millennium celebrations.",
+            "Millennium celebrations"
+          ],
+          "explanation": "Millennium: double l, double n."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Bureacracy slows things down.' Correct the sentence.",
+          "answers": [
+            "Bureaucracy slows things down.",
+            "Bureaucracy slows things down"
+          ],
+          "explanation": "Bureaucracy: -eau- (not -ure-)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A committment to quality.' Correct the sentence.",
+          "answers": [
+            "A commitment to quality.",
+            "A commitment to quality"
+          ],
+          "explanation": "Commitment: double m, double t."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The equivelant amount.' Correct the sentence.",
+          "answers": [
+            "The equivalent amount.",
+            "The equivalent amount"
+          ],
+          "explanation": "Equivalent: -quiv- (not -qual-)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'An exagerated claim.' Correct the sentence.",
+          "answers": [
+            "An exaggerated claim.",
+            "An exaggerated claim"
+          ],
+          "explanation": "Exaggerated: double g, double r."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Tempereture rose.' Correct the sentence.",
+          "answers": [
+            "Temperature rose.",
+            "Temperature rose"
+          ],
+          "explanation": "Temperature: -pera- (not -ature)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A treshold was set.' Correct the sentence.",
+          "answers": [
+            "A threshold was set.",
+            "A threshold was set"
+          ],
+          "explanation": "Threshold: -resh- (one h)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The neigbourhood was friendly.' Correct the sentence.",
+          "answers": [
+            "The neighbourhood was friendly.",
+            "The neighbourhood was friendly"
+          ],
+          "explanation": "Neighbourhood: -our-; double h (BrE)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Unfortunatly we missed it.' Correct the sentence.",
+          "answers": [
+            "Unfortunately we missed it.",
+            "Unfortunately we missed it"
+          ],
+          "explanation": "Unfortunately: un- + fortunate + -ly."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'It's not suitible.' Correct the sentence.",
+          "answers": [
+            "It's not suitable.",
+            "It's not suitable"
+          ],
+          "explanation": "Suitable: suit + -able."
+        }
+      ]
+    },
+    "error_correction_26": {
+      "title": "Practice: Correct the spelling (259–268)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'It was avoidible.' Correct the sentence.",
+          "answers": [
+            "It was avoidable.",
+            "It was avoidable"
+          ],
+          "explanation": "Avoidable: avoid + -able."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Highly recomendable.' Correct the sentence.",
+          "answers": [
+            "Highly recommendable.",
+            "Highly recommendable"
+          ],
+          "explanation": "Recommendable: double c, double m."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'An acceptible solution.' Correct the sentence.",
+          "answers": [
+            "An acceptable solution.",
+            "An acceptable solution"
+          ],
+          "explanation": "Acceptable: accept + -able."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The proceduce was clear.' Correct the sentence.",
+          "answers": [
+            "The procedure was clear.",
+            "The procedure was clear"
+          ],
+          "explanation": "Procedure: -ure (not -uce)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We need to procede.' Correct the sentence.",
+          "answers": [
+            "We need to proceed.",
+            "We need to proceed"
+          ],
+          "explanation": "Proceed: double e (pro- + ceed)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Supercede the old rule.' Correct the sentence.",
+          "answers": [
+            "Supersede the old rule.",
+            "Supersede the old rule"
+          ],
+          "explanation": "Supersede: -sede (not -cede)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The prevelance of the problem.' Correct the sentence.",
+          "answers": [
+            "The prevalence of the problem.",
+            "The prevalence of the problem"
+          ],
+          "explanation": "Prevalence: -ence (prevalent + -ence)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A signifcant increase.' Correct the sentence.",
+          "answers": [
+            "A significant increase.",
+            "A significant increase"
+          ],
+          "explanation": "Significant: -cant (signify → significant)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Techology is changing.' Correct the sentence.",
+          "answers": [
+            "Technology is changing.",
+            "Technology is changing"
+          ],
+          "explanation": "Technology: -nol- (not -nolo-)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Completly wrong.' Correct the sentence.",
+          "answers": [
+            "Completely wrong.",
+            "Completely wrong"
+          ],
+          "explanation": "Completely: complete + -ly."
+        }
+      ]
+    },
+    "error_correction_27": {
+      "title": "Practice: Correct the spelling (269–278)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Absolutly necessary.' Correct the sentence.",
+          "answers": [
+            "Absolutely necessary.",
+            "Absolutely necessary"
+          ],
+          "explanation": "Absolutely: absolute + -ly."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Occured last week.' Correct the sentence.",
+          "answers": [
+            "Occurred last week.",
+            "Occurred last week"
+          ],
+          "explanation": "Occurred: double c, double r."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Refered to the report.' Correct the sentence.",
+          "answers": [
+            "Referred to the report.",
+            "Referred to the report"
+          ],
+          "explanation": "Referred: double r (refer + -ed)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Truely amazing.' Correct the sentence.",
+          "answers": [
+            "Truly amazing.",
+            "Truly amazing"
+          ],
+          "explanation": "Truly: true → tru-ly (drop e)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Genuinly interested.' Correct the sentence.",
+          "answers": [
+            "Genuinely interested.",
+            "Genuinely interested"
+          ],
+          "explanation": "Genuinely: genuine + -ly (drop e)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Unforgetable experience.' Correct the sentence.",
+          "answers": [
+            "Unforgettable experience.",
+            "Unforgettable experience"
+          ],
+          "explanation": "Unforgettable: double t (forget + -able)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A regretable mistake.' Correct the sentence.",
+          "answers": [
+            "A regrettable mistake.",
+            "A regrettable mistake"
+          ],
+          "explanation": "Regrettable: double t (regret + -able)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Permited to enter.' Correct the sentence.",
+          "answers": [
+            "Permitted to enter.",
+            "Permitted to enter"
+          ],
+          "explanation": "Permitted: double t (permit + -ed)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Submited the form.' Correct the sentence.",
+          "answers": [
+            "Submitted the form.",
+            "Submitted the form"
+          ],
+          "explanation": "Submitted: double t (submit + -ed)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Persistant effort.' Correct the sentence.",
+          "answers": [
+            "Persistent effort.",
+            "Persistent effort"
+          ],
+          "explanation": "Persistent: -ent (persist + -ent)."
+        }
+      ]
+    },
+    "error_correction_28": {
+      "title": "Practice: Correct the spelling (279–288)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Independance Day.' Correct the sentence.",
+          "answers": [
+            "Independence Day.",
+            "Independence Day"
+          ],
+          "explanation": "Independence: -ence (independent → independence)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Importance of attendence.' Correct the sentence.",
+          "answers": [
+            "Importance of attendance.",
+            "Importance of attendance"
+          ],
+          "explanation": "Attendance: attend + -ance."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She is very consciencious.' Correct the sentence.",
+          "answers": [
+            "She is very conscientious.",
+            "She is very conscientious"
+          ],
+          "explanation": "Conscientious: -tious (conscience → conscientious)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He lost conciousness.' Correct the sentence.",
+          "answers": [
+            "He lost consciousness.",
+            "He lost consciousness"
+          ],
+          "explanation": "Consciousness: -ness (conscious + -ness)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We garantee delivery.' Correct the sentence.",
+          "answers": [
+            "We guarantee delivery.",
+            "We guarantee delivery"
+          ],
+          "explanation": "Guarantee: u before a; -antee."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Please fill in the questionaire.' Correct the sentence.",
+          "answers": [
+            "Please fill in the questionnaire.",
+            "Please fill in the questionnaire"
+          ],
+          "explanation": "Questionnaire: -nn-; -aire."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He is an amatuer photographer.' Correct the sentence.",
+          "answers": [
+            "He is an amateur photographer.",
+            "He is an amateur photographer"
+          ],
+          "explanation": "Amateur: -eur (not -uer)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We need a liasion between the teams.' Correct the sentence.",
+          "answers": [
+            "We need a liaison between the teams.",
+            "We need a liaison between the teams"
+          ],
+          "explanation": "Liaison: -ai- (two i's)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'It was a difficult manouevre.' Correct the sentence.",
+          "answers": [
+            "It was a difficult manoeuvre.",
+            "It was a difficult manoeuvre"
+          ],
+          "explanation": "Manoeuvre (BrE): -oeu-."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A subtel difference.' Correct the sentence.",
+          "answers": [
+            "A subtle difference.",
+            "A subtle difference"
+          ],
+          "explanation": "Subtle: silent b; -le."
+        }
+      ]
+    },
+    "error_correction_29": {
+      "title": "Practice: Correct the spelling (289–298)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Write it in the next colomn.' Correct the sentence.",
+          "answers": [
+            "Write it in the next column.",
+            "Write it in the next column"
+          ],
+          "explanation": "Column: -mn (silent n)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A solem promise.' Correct the sentence.",
+          "answers": [
+            "A solemn promise.",
+            "A solemn promise"
+          ],
+          "explanation": "Solemn: silent n."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We met in autum.' Correct the sentence.",
+          "answers": [
+            "We met in autumn.",
+            "We met in autumn"
+          ],
+          "explanation": "Autumn: double n."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'They condamn the decision.' Correct the sentence.",
+          "answers": [
+            "They condemn the decision.",
+            "They condemn the decision"
+          ],
+          "explanation": "Condemn: -mn (silent n)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He pulled a musle.' Correct the sentence.",
+          "answers": [
+            "He pulled a muscle.",
+            "He pulled a muscle"
+          ],
+          "explanation": "Muscle: -cle (not -le)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Where are the scisors?' Correct the sentence.",
+          "answers": [
+            "Where are the scissors?",
+            "Where are the scissors"
+          ],
+          "explanation": "Scissors: double s, -ors."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I percived a change.' Correct the sentence.",
+          "answers": [
+            "I perceived a change.",
+            "I perceived a change"
+          ],
+          "explanation": "Perceived: i before e after c."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Don't decieve yourself.' Correct the sentence.",
+          "answers": [
+            "Don't deceive yourself.",
+            "Don't deceive yourself"
+          ],
+          "explanation": "Deceive: i before e after c."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She showed great persistance.' Correct the sentence.",
+          "answers": [
+            "She showed great persistence.",
+            "She showed great persistence"
+          ],
+          "explanation": "Persistence: -ence (persist + -ence)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'There was strong resistence.' Correct the sentence.",
+          "answers": [
+            "There was strong resistance.",
+            "There was strong resistance"
+          ],
+          "explanation": "Resistance: -ance (resist + -ance)."
+        }
+      ]
+    },
+    "error_correction_30": {
+      "title": "Practice: Correct the spelling (299–308)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Thank you for your assistence.' Correct the sentence.",
+          "answers": [
+            "Thank you for your assistance.",
+            "Thank you for your assistance"
+          ],
+          "explanation": "Assistance: double s; -ance."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'In these circumstences.' Correct the sentence.",
+          "answers": [
+            "In these circumstances.",
+            "In these circumstances"
+          ],
+          "explanation": "Circumstances: -stan- (not -stence)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A great performence.' Correct the sentence.",
+          "answers": [
+            "A great performance.",
+            "A great performance"
+          ],
+          "explanation": "Performance: -ance (perform + -ance)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'My preferance is tea.' Correct the sentence.",
+          "answers": [
+            "My preference is tea.",
+            "My preference is tea"
+          ],
+          "explanation": "Preference: -ence (prefer + -ence)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We attended a conferance.' Correct the sentence.",
+          "answers": [
+            "We attended a conference.",
+            "We attended a conference"
+          ],
+          "explanation": "Conference: -ence (confer + -ence)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Draw your own inferance.' Correct the sentence.",
+          "answers": [
+            "Draw your own inference.",
+            "Draw your own inference"
+          ],
+          "explanation": "Inference: -ence (infer + -ence)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Success requires perseverence.' Correct the sentence.",
+          "answers": [
+            "Success requires perseverance.",
+            "Success requires perseverance"
+          ],
+          "explanation": "Perseverance: -ance (persevere + -ance)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Award for exellence.' Correct the sentence.",
+          "answers": [
+            "Award for excellence.",
+            "Award for excellence"
+          ],
+          "explanation": "Excellence: double l; -ence."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The silance was awkward.' Correct the sentence.",
+          "answers": [
+            "The silence was awkward.",
+            "The silence was awkward"
+          ],
+          "explanation": "Silence: -ence (silent + -ce)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Acts of violance.' Correct the sentence.",
+          "answers": [
+            "Acts of violence.",
+            "Acts of violence"
+          ],
+          "explanation": "Violence: -ence (violent + -ce)."
+        }
+      ]
+    },
+    "error_correction_31": {
+      "title": "Practice: Correct the spelling (309–327)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'We need more guidence.' Correct the sentence.",
+          "answers": [
+            "We need more guidance.",
+            "We need more guidance"
+          ],
+          "explanation": "Guidance: -ance (guide + -ance)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Strict complience with the rules.' Correct the sentence.",
+          "answers": [
+            "Strict compliance with the rules.",
+            "Strict compliance with the rules"
+          ],
+          "explanation": "Compliance: -ance (comply → compliance)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'An act of defience.' Correct the sentence.",
+          "answers": [
+            "An act of defiance.",
+            "An act of defiance"
+          ],
+          "explanation": "Defiance: -ance (defy → defiance)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Too much relience on one person.' Correct the sentence.",
+          "answers": [
+            "Too much reliance on one person.",
+            "Too much reliance on one person"
+          ],
+          "explanation": "Reliance: -ance (rely → reliance)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Household appliences.' Correct the sentence.",
+          "answers": [
+            "Household appliances.",
+            "Household appliances"
+          ],
+          "explanation": "Appliances: -ance (apply → appliance)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A monthly allowence.' Correct the sentence.",
+          "answers": [
+            "A monthly allowance.",
+            "A monthly allowance"
+          ],
+          "explanation": "Allowance: double l; -ance."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Check your balence.' Correct the sentence.",
+          "answers": [
+            "Check your balance.",
+            "Check your balance"
+          ],
+          "explanation": "Balance: -ance (not -ence)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The relevency of the data.' Correct the sentence.",
+          "answers": [
+            "The relevance of the data.",
+            "The relevance of the data"
+          ],
+          "explanation": "Relevance: -ance (relevant + -ce)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She served a sentance.' Correct the sentence.",
+          "answers": [
+            "She served a sentence.",
+            "She served a sentence"
+          ],
+          "explanation": "Sentence: -ence (not -ance)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'The audiance applauded.' Correct the sentence.",
+          "answers": [
+            "The audience applauded.",
+            "The audience applauded"
+          ],
+          "explanation": "Audience: -ence (audible → audience)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I have no patiance.' Correct the sentence.",
+          "answers": [
+            "I have no patience.",
+            "I have no patience"
+          ],
+          "explanation": "Patience: -ence (patient → patience)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We studied scince.' Correct the sentence.",
+          "answers": [
+            "We studied science.",
+            "We studied science"
+          ],
+          "explanation": "Science: -ence (not -ance)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Strict obidience.' Correct the sentence.",
+          "answers": [
+            "Strict obedience.",
+            "Strict obedience"
+          ],
+          "explanation": "Obedience: -ence (obey → obedience)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Be more leniant.' Correct the sentence.",
+          "answers": [
+            "Be more lenient.",
+            "Be more lenient"
+          ],
+          "explanation": "Lenient: -ent (not -ant)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Is there sufficent time?' Correct the sentence.",
+          "answers": [
+            "Is there sufficient time?",
+            "Is there sufficient time"
+          ],
+          "explanation": "Sufficient: double f; -ient."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She is proficent in Spanish.' Correct the sentence.",
+          "answers": [
+            "She is proficient in Spanish.",
+            "She is proficient in Spanish"
+          ],
+          "explanation": "Proficient: -ient (not -ant)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'A deficency was found.' Correct the sentence.",
+          "answers": [
+            "A deficiency was found.",
+            "A deficiency was found"
+          ],
+          "explanation": "Deficiency: -ency (deficient + -cy)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Improve efficency.' Correct the sentence.",
+          "answers": [
+            "Improve efficiency.",
+            "Improve efficiency"
+          ],
+          "explanation": "Efficiency: double f; -ency."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'That's very conveniant.' Correct the sentence.",
+          "answers": [
+            "That's very convenient.",
+            "That's very convenient"
+          ],
+          "explanation": "Convenient: -ient (not -iant)."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "description": "A1-A2 word list for content authors. Use only these words in intro sections, explanations, and questions.",
+  "note": "Based on Oxford 3000 and CEFR A1-A2 bands. When writing curriculum or questions, prefer words from this list.",
+  "sample_words": [
+    "a", "about", "after", "again", "all", "am", "an", "and", "any", "are", "at", "be", "because", "been", "before", "big", "book", "but", "by", "can", "car", "come", "day", "do", "does", "don't", "down", "eat", "go", "good", "got", "have", "he", "her", "here", "him", "his", "how", "I", "in", "is", "it", "know", "like", "little", "look", "make", "many", "me", "much", "my", "new", "no", "not", "now", "of", "on", "one", "or", "our", "out", "people", "say", "see", "she", "so", "some", "take", "than", "that", "the", "their", "them", "there", "they", "this", "time", "to", "up", "us", "use", "want", "was", "we", "were", "what", "when", "where", "which", "who", "will", "with", "work", "would", "year", "you", "your"
+  ]
+}

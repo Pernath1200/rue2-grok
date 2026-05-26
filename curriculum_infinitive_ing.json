@@ -1,0 +1,481 @@
+{
+  "intro": {
+    "title": "Verb Patterns: to-infinitive, -ing & bare infinitive",
+    "sections": [
+      {
+        "title": "Key rule",
+        "content": "When one verb follows another, you usually need **to** + infinitive or **verb-ing**. You cannot use the base form alone (~~I hope see~~). The first verb decides which pattern. Exceptions: **bare infinitive** (see later card)."
+      },
+      {
+        "title": "Verbs + to-infinitive (1)",
+        "content": "These verbs take **to** + verb: want, would like, hope, expect, decide, plan, agree, refuse, promise, offer, manage, fail, afford, need, **try** (= attempt).\n\nExamples: I want **to learn**. She decided **to stay**."
+      },
+      {
+        "title": "Verbs + to-infinitive (2)",
+        "content": "After adjectives: **happy to**, **glad to**, **easy to**, **difficult to**. After **too**/**enough**: too late **to change**, old enough **to drive**. For purpose: I came **to see** you. She phoned **to ask**."
+      },
+      {
+        "title": "Verbs + -ing form (1)",
+        "content": "These verbs take **verb-ing**: enjoy, finish, avoid, consider, suggest, mind, keep, imagine, miss, practise, risk, deny, admit, delay, postpone.\n\nExamples: I enjoy **reading**. Do you mind **waiting**?"
+      },
+      {
+        "title": "Verbs + -ing form (2)",
+        "content": "After prepositions: **interested in** doing, **good at** doing, **tired of** doing. After expressions: **it's no use**, **it's worth**, **can't help** doing."
+      },
+      {
+        "title": "Both patterns, same meaning",
+        "content": "Some verbs take either with little change: **like**, **love**, **prefer**, **hate**, **start**, **begin**, **continue**.\n\nExamples: I like **to swim** / I like **swimming**. She started **to cry** / She started **crying**."
+      },
+      {
+        "title": "Both patterns, different meaning (1)",
+        "content": "**remember to do** = don't forget (future) vs **remember doing** = recall (past). **forget to do** = fail to do vs **forget doing** = no memory of. **stop to do** = pause in order to vs **stop doing** = give up."
+      },
+      {
+        "title": "Both patterns, different meaning (2)",
+        "content": "**try to do** = attempt vs **try doing** = experiment. **regret to do** = sorry to say vs **regret doing** = sorry about past."
+      },
+      {
+        "title": "After prepositions → always -ing",
+        "content": "After any preposition, always use **-ing**: interested in learning, good at swimming, tired of waiting. **look forward to** — here **to** is a preposition, so I look forward to **seeing** you, not *to see*. He left without saying goodbye."
+      },
+      {
+        "title": "Bare infinitive (1)",
+        "content": "**Modal verbs** (can, must, will, should, may): I **can swim**. **make**/**let** + object: They **made me laugh**. **Let me help**."
+      },
+      {
+        "title": "Bare infinitive (2)",
+        "content": "**Verbs of perception** (see, hear, watch): I **saw her leave**. **help** (both OK): Help me **carry** / **to carry**. Fixed phrases: you'd **better go**, I'd **rather stay**."
+      },
+      {
+        "title": "Summary table",
+        "content": "",
+        "diagram": {
+          "type": "table",
+          "title": "Verb patterns: to-infinitive vs -ing",
+          "headers": [
+            "Pattern",
+            "Verbs",
+            "Example"
+          ],
+          "rows": [
+            [
+              "verb + **to do**",
+              "want, decide, hope, promise, agree",
+              "I want **to learn**."
+            ],
+            [
+              "verb + **doing**",
+              "enjoy, finish, avoid, mind, suggest",
+              "I enjoy **reading**."
+            ],
+            [
+              "verb + both (same)",
+              "like, love, start, begin",
+              "I like **to swim** / **swimming**."
+            ],
+            [
+              "verb + both (different)",
+              "remember, forget, stop, try",
+              "Stop **to drink** ≠ stop **drinking**."
+            ],
+            [
+              "preposition + **doing**",
+              "interested in, good at, tired of",
+              "Good at **swimming**."
+            ],
+            [
+              "too / enough + **to do**",
+              "too + adj + to, adj + enough + to",
+              "Too late **to change**."
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Typical errors (1)",
+        "content": "Wrong: I want learning English. Right: I want **to learn** English. Wrong: She enjoys to read. Right: She enjoys **reading**."
+      },
+      {
+        "title": "Typical errors (2)",
+        "content": "Wrong: I look forward to see you. Right: I look forward to **seeing** you. Wrong: She made him to laugh. Right: She **made him laugh**."
+      },
+      {
+        "title": "Reference",
+        "content": "For complete verb lists (which verbs take to-infinitive, which take -ing, and which take both), see **Reference → Infinitive and -ing form**."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "I want to learn English.",
+          "b": "I want learning English.",
+          "c": "I want learn English.",
+          "d": "I want learning English well."
+        },
+        "correct_option": "a",
+        "explanation": "Want is followed by to-infinitive, not -ing."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "She enjoys to read.",
+          "b": "She enjoys read.",
+          "c": "She enjoys to reading.",
+          "d": "She enjoys reading."
+        },
+        "correct_option": "d",
+        "explanation": "Enjoy is followed by -ing, not to-infinitive."
+      },
+      {
+        "type": "mc",
+        "question": "'I remember _____ the door.' (I recall doing it.) Which fits?",
+        "options": {
+          "a": "to lock",
+          "b": "lock",
+          "c": "locking",
+          "d": "to locking"
+        },
+        "correct_option": "c",
+        "explanation": "Remember doing = recall a past action. Remember to do = not forget to do something."
+      },
+      {
+        "type": "mc",
+        "question": "'I look forward to _____ you.' Which is correct?",
+        "options": {
+          "a": "see",
+          "b": "to see",
+          "c": "seeing",
+          "d": "to seeing"
+        },
+        "correct_option": "c",
+        "explanation": "Look forward to is followed by -ing (to is a preposition here)."
+      },
+      {
+        "type": "mc",
+        "question": "'She stopped _____.' (She gave up smoking.) Which fits?",
+        "options": {
+          "a": "to smoke",
+          "b": "smoke",
+          "c": "to smoking",
+          "d": "smoking"
+        },
+        "correct_option": "d",
+        "explanation": "Stop doing = give up. Stop to do = pause in order to do."
+      },
+      {
+        "type": "mc",
+        "question": "'She made him _____ the form.' Which is correct?",
+        "options": {
+          "a": "to sign",
+          "b": "sign",
+          "c": "signing",
+          "d": "to signing"
+        },
+        "correct_option": "b",
+        "explanation": "Make + object + bare infinitive (no 'to')."
+      },
+      {
+        "type": "mc",
+        "question": "'I saw her _____ the room.' Which fits?",
+        "options": {
+          "a": "to leave",
+          "b": "leave",
+          "c": "leaving",
+          "d": "to leaving"
+        },
+        "correct_option": "b",
+        "explanation": "Verbs of perception (see, hear, watch) can take bare infinitive or -ing; bare infinitive often for the complete action."
+      },
+      {
+        "type": "mc",
+        "question": "Why is 'I hope see you soon' wrong?",
+        "options": {
+          "a": "Hope must be followed by -ing.",
+          "b": "After hope we need to-infinitive, not the base form alone.",
+          "c": "Hope is followed by that + clause only.",
+          "d": "We must use 'hoping'."
+        },
+        "correct_option": "b",
+        "explanation": "When one verb follows another, we usually need to + infinitive or -ing; we cannot use the base form alone after hope."
+      },
+      {
+        "type": "mc",
+        "question": "'You'd better _____ now.' Which is correct?",
+        "options": {
+          "a": "to go",
+          "b": "go",
+          "c": "going",
+          "d": "to going"
+        },
+        "correct_option": "b",
+        "explanation": "Fixed phrase 'd better is followed by bare infinitive (no 'to')."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc"
+  ],
+  "practice": {
+    "gapfill": {
+      "title": "Practice: Infinitive or -ing?",
+      "questions": [
+        {
+          "type": "open",
+          "question": "I want ____ (learn) Spanish.",
+          "answers": [
+            "to learn"
+          ],
+          "explanation": "Want + to-infinitive."
+        },
+        {
+          "type": "open",
+          "question": "She enjoys ____ (read) in the evening.",
+          "answers": [
+            "reading"
+          ],
+          "explanation": "Enjoy + -ing."
+        },
+        {
+          "type": "open",
+          "question": "He decided ____ (apply) for the job.",
+          "answers": [
+            "to apply"
+          ],
+          "explanation": "Decide + to-infinitive."
+        },
+        {
+          "type": "open",
+          "question": "Do you mind ____ (wait) a few minutes?",
+          "answers": [
+            "waiting"
+          ],
+          "explanation": "Mind + -ing."
+        },
+        {
+          "type": "open",
+          "question": "We hope ____ (see) you soon.",
+          "answers": [
+            "to see"
+          ],
+          "explanation": "Hope + to-infinitive."
+        },
+        {
+          "type": "open",
+          "question": "She finished ____ (write) the report.",
+          "answers": [
+            "writing"
+          ],
+          "explanation": "Finish + -ing."
+        },
+        {
+          "type": "open",
+          "question": "I'm looking forward to ____ (meet) you.",
+          "answers": [
+            "meeting"
+          ],
+          "explanation": "Look forward to + -ing (to is a preposition)."
+        },
+        {
+          "type": "open",
+          "question": "He promised ____ (help) us. Use the verb in brackets in the correct form (infinitive with or without to).",
+          "answers": [
+            "to help"
+          ],
+          "explanation": "Promise + to-infinitive."
+        },
+        {
+          "type": "open",
+          "question": "They avoided ____ (answer) the question.",
+          "answers": [
+            "answering"
+          ],
+          "explanation": "Avoid + -ing."
+        },
+        {
+          "type": "open",
+          "question": "Don't forget ____ (lock) the door.",
+          "answers": [
+            "to lock"
+          ],
+          "explanation": "Forget to do = fail to do (future)."
+        },
+        {
+          "type": "open",
+          "question": "I'll never forget ____ (visit) Paris for the first time.",
+          "answers": [
+            "visiting"
+          ],
+          "explanation": "Forget doing = no memory of (past experience)."
+        },
+        {
+          "type": "open",
+          "question": "She suggested ____ (go) to the cinema.",
+          "answers": [
+            "going"
+          ],
+          "explanation": "Suggest + -ing."
+        },
+        {
+          "type": "open",
+          "question": "She can ____ (swim) very well.",
+          "answers": [
+            "swim"
+          ],
+          "explanation": "Modal verbs (can, must, will…) take bare infinitive (no 'to')."
+        },
+        {
+          "type": "open",
+          "question": "They made us ____ (wait) for an hour.",
+          "answers": [
+            "wait"
+          ],
+          "explanation": "Make + object + bare infinitive (no 'to')."
+        },
+        {
+          "type": "open",
+          "question": "I heard him ____ (leave) early.",
+          "answers": [
+            "leave"
+          ],
+          "explanation": "Verbs of perception (hear, see, watch) can take bare infinitive."
+        }
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Correct the form (infinitive vs -ing)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'I want learning English.' Correct the sentence.",
+          "answers": [
+            "I want to learn English.",
+            "I want to learn English"
+          ],
+          "explanation": "Want + to-infinitive, not -ing."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She enjoys to read.' Correct the sentence.",
+          "answers": [
+            "She enjoys reading.",
+            "She enjoys reading"
+          ],
+          "explanation": "Enjoy + -ing, not to-infinitive."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I look forward to see you.' Correct the sentence.",
+          "answers": [
+            "I look forward to seeing you.",
+            "I look forward to seeing you"
+          ],
+          "explanation": "Look forward to + -ing (to is a preposition)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He suggested to go early.' Correct the sentence.",
+          "answers": [
+            "He suggested going early.",
+            "He suggested going early"
+          ],
+          "explanation": "Suggest + -ing, not to-infinitive."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We decided staying longer.' Correct the sentence.",
+          "answers": [
+            "We decided to stay longer.",
+            "We decided to stay longer"
+          ],
+          "explanation": "Decide + to-infinitive, not -ing."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She finished to write the email.' Correct the sentence.",
+          "answers": [
+            "She finished writing the email.",
+            "She finished writing the email"
+          ],
+          "explanation": "Finish + -ing, not to-infinitive."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She made him to laugh.' Correct the sentence.",
+          "answers": [
+            "She made him laugh.",
+            "She made him laugh"
+          ],
+          "explanation": "Make + object + bare infinitive (no 'to')."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Let me to help you.' Correct the sentence.",
+          "answers": [
+            "Let me help you.",
+            "Let me help you"
+          ],
+          "explanation": "Let + object + bare infinitive (no 'to')."
+        }
+      ]
+    },
+    "mc": {
+      "title": "Practice: Infinitive and -ing form (multiple choice)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "'Let me _____ you with that.' Which is correct?",
+          "options": {
+            "a": "to help",
+            "b": "help",
+            "c": "helping",
+            "d": "to helping"
+          },
+          "correct_option": "b",
+          "explanation": "Let + object + bare infinitive (no 'to')."
+        },
+        {
+          "type": "mc",
+          "question": "'I'd rather _____ at home tonight.' Which fits?",
+          "options": {
+            "a": "to stay",
+            "b": "stay",
+            "c": "staying",
+            "d": "to staying"
+          },
+          "correct_option": "b",
+          "explanation": "Fixed phrase 'd rather is followed by bare infinitive (no 'to')."
+        },
+        {
+          "type": "mc",
+          "question": "'We watched them _____ the match.' Which is correct?",
+          "options": {
+            "a": "to win",
+            "b": "win",
+            "c": "winning",
+            "d": "to winning"
+          },
+          "correct_option": "b",
+          "explanation": "Verbs of perception (watch, see, hear) take bare infinitive or -ing; bare infinitive for the complete action."
+        },
+        {
+          "type": "mc",
+          "question": "'He agreed _____ early.' Which is correct?",
+          "options": {
+            "a": "to come",
+            "b": "come",
+            "c": "coming",
+            "d": "to coming"
+          },
+          "correct_option": "a",
+          "explanation": "Agree is followed by to-infinitive, not bare infinitive."
+        }
+      ]
+    }
+  }
+}

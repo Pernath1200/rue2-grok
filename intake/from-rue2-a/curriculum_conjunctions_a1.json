@@ -1,0 +1,78 @@
+{
+  "intro": {
+    "title": "And, But, Or, Because",
+    "sections": [
+      {
+        "title": "And",
+        "content": "**And** = add things together:\n• I like tea **and** coffee.\n• She works **and** studies."
+      },
+      {
+        "title": "But",
+        "content": "**But** = show a difference:\n• I like tea **but** I don't like coffee.\n• He is tired **but** he is happy."
+      },
+      {
+        "title": "Or",
+        "content": "**Or** = give a choice:\n• Do you want tea **or** coffee?\n• We can go now **or** later."
+      },
+      {
+        "title": "Because",
+        "content": "**Because** = give a reason:\n• I am happy **because** it is my birthday.\n• She is tired **because** she worked all day."
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "I like tea _____ I don't like coffee.",
+        "options": {"a": "and", "b": "but", "c": "or", "d": "because"},
+        "correct_option": "b",
+        "explanation": "Difference: but."
+      },
+      {
+        "type": "mc",
+        "question": "Do you want milk _____ sugar?",
+        "options": {"a": "and", "b": "but", "c": "or", "d": "because"},
+        "correct_option": "c",
+        "explanation": "Choice: or."
+      },
+      {
+        "type": "mc",
+        "question": "She is sad _____ her cat is ill.",
+        "options": {"a": "and", "b": "but", "c": "or", "d": "because"},
+        "correct_option": "d",
+        "explanation": "Reason: because."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Conjunctions",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "I have a dog _____ a cat.",
+          "options": {"a": "and", "b": "but", "c": "or", "d": "because"},
+          "correct_option": "a",
+          "explanation": "Add: and."
+        },
+        {
+          "type": "mc",
+          "question": "He is old _____ he is very fit.",
+          "options": {"a": "and", "b": "but", "c": "or", "d": "because"},
+          "correct_option": "b",
+          "explanation": "Difference: but."
+        },
+        {
+          "type": "mc",
+          "question": "We stayed at home _____ it was raining.",
+          "options": {"a": "and", "b": "but", "c": "or", "d": "because"},
+          "correct_option": "d",
+          "explanation": "Reason: because."
+        }
+      ]
+    }
+  }
+}

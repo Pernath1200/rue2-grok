@@ -1,0 +1,1762 @@
+{
+  "intro": {
+    "title": "Prepositions",
+    "sections": [
+      {
+        "title": "What are prepositions?",
+        "content": "Prepositions are short words that link a noun to the rest of a sentence, showing relationships like when, where, how, or why. Examples: at 5 o'clock, in the room, by train, about the project. English often differs — don't translate word for word."
+      },
+      {
+        "title": "Time: at / on / in",
+        "content": "",
+        "diagram": {
+          "type": "table",
+          "title": "at / on / in for time",
+          "headers": [
+            "Preposition",
+            "Used with",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**at**",
+              "Clock time, night, weekend",
+              "at 5 o'clock, at noon"
+            ],
+            [
+              "**on**",
+              "Days, dates",
+              "on Monday, on 15th March"
+            ],
+            [
+              "**in**",
+              "Months, years, periods",
+              "in August, in the morning"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Time: other prepositions (1)",
+        "content": "• **for** + duration: for two hours, for a week\n• **since** + start point: since 2020, since Monday\n• **by** = no later than: by Friday, by 5 pm\n• **until** = up to a time: until tomorrow, until midnight"
+      },
+      {
+        "title": "Time: other prepositions (2)",
+        "content": "• **during** = within a period: during the meeting, during the film\n• **before** / **after**: before dinner, after the lesson"
+      },
+      {
+        "title": "Place: at / on / in",
+        "content": "",
+        "diagram": {
+          "type": "table",
+          "title": "at / on / in for place",
+          "headers": [
+            "Preposition",
+            "Meaning",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**in**",
+              "Inside / enclosed",
+              "in the box, in London"
+            ],
+            [
+              "**on**",
+              "On a surface",
+              "on the table, on the wall"
+            ],
+            [
+              "**at**",
+              "At a point / place",
+              "at the door, at the bus stop"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Place: other prepositions (1)",
+        "content": "• **above** / **below**: above the clouds, below zero\n• **under**: under the table, under the bridge\n• **behind** / **in front of**: behind the door, in front of the house"
+      },
+      {
+        "title": "Place: other prepositions (2)",
+        "content": "• **between** (two): between you and me, between 9 and 10\n• **among** (group): among friends, among the crowd\n• **near**: near the station\n• **beside** / **next to**: beside the window"
+      },
+      {
+        "title": "Movement and direction (1)",
+        "content": "• **to**: go to school, walk to the station\n• **from**: from London, from the shop\n• **into**: go into the room, get into the car\n• **out of**: get out of the car, out of the room\n• **through**: through the tunnel, through the park"
+      },
+      {
+        "title": "Movement and direction (2)",
+        "content": "• **across**: across the road, across the bridge\n• **along**: along the river, along the street\n• **up** / **down**: up the stairs, down the hill\n• **towards**: towards the city\n• **over**: over the bridge, over the wall"
+      },
+      {
+        "title": "Other uses (1)",
+        "content": "• **by** + means: by train, by car, written by hand\n• **with** / **without**: with a friend, cut with a knife; without money, without help\n• **about** (topic): talk about the project, a film about war"
+      },
+      {
+        "title": "Other uses (2)",
+        "content": "• **for** (purpose/recipient): for you, for the meeting, reason for the delay\n• **of** (belonging/material): the capital of France, cup of tea, made of wood\n• **as** (role): work as a teacher\n• **like** (similar to): look like, sound like"
+      },
+      {
+        "title": "Typical errors",
+        "content": "Wrong: I'm interested **on** music. Right: **interested in**. Wrong: It depends **from** you. Right: **depends on**. Wrong: She arrived **to** Prague. Right: **arrived in** Prague. Wrong: I go **to** home. Right: **I go home** (no preposition)."
+      },
+      {
+        "title": "Related topics",
+        "content": "[[preplist|Prepositions list]] — 50 words + examples (**Reference**). [[topic:prepositions_dependent|Dependent Prepositions]] — fixed prep + verbs/nouns/adjectives. [[topic:phrasal_verbs|Phrasal Verbs]] — **give up**, **look after**, **turn on**."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "'At 5 o'clock' – what does 'at' express here?",
+        "options": {
+          "a": "Place (point)",
+          "b": "Time (point)",
+          "c": "Movement",
+          "d": "Direction"
+        },
+        "correct_option": "b",
+        "explanation": "'At' with a clock time is Time (point) – a point in time. Some times are periods, e.g. in 1980. Place (point) is for location, e.g. at the door."
+      },
+      {
+        "type": "mc",
+        "question": "'The picture is on the wall.' – What does 'on' express?",
+        "options": {
+          "a": "Time",
+          "b": "Movement",
+          "c": "Place (surface/line)",
+          "d": "Direction"
+        },
+        "correct_option": "c",
+        "explanation": "'On' with a surface (wall) is place – something on a line or surface."
+      },
+      {
+        "type": "mc",
+        "question": "Which preposition often goes with enclosed spaces (room, box, city)?",
+        "options": {
+          "a": "at",
+          "b": "on",
+          "c": "to",
+          "d": "in"
+        },
+        "correct_option": "d",
+        "explanation": "'In' is used for enclosed spaces: in the room, in the box, in London."
+      },
+      {
+        "type": "mc",
+        "question": "The keys are ____ the box. (We keep them inside.)",
+        "options": {
+          "a": "at",
+          "b": "in",
+          "c": "on",
+          "d": "to"
+        },
+        "correct_option": "b",
+        "explanation": "Inside a space → in."
+      },
+      {
+        "type": "mc",
+        "question": "The picture is ____ the wall.",
+        "options": {
+          "a": "in",
+          "b": "at",
+          "c": "on",
+          "d": "by"
+        },
+        "correct_option": "c",
+        "explanation": "On a surface → on."
+      },
+      {
+        "type": "mc",
+        "question": "We'll meet ____ the bus stop.",
+        "options": {
+          "a": "in",
+          "b": "on",
+          "c": "for",
+          "d": "at"
+        },
+        "correct_option": "d",
+        "explanation": "At a point or place → at."
+      }
+    ]
+  },
+  "practice_order": [
+    "guided_mc",
+    "gapfill_simple"
+  ],
+  "practice": {
+    "guided_mc": {
+      "title": "Guided Practice: Prepositions (multiple choice)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "I get up ____ 7 o'clock every day.",
+          "options": {
+            "a": "at",
+            "b": "on",
+            "c": "in",
+            "d": "for"
+          },
+          "correct_option": "a",
+          "explanation": "Use **at** with exact clock times (at 7 o'clock, at noon)."
+        },
+        {
+          "type": "mc",
+          "question": "The meeting is ____ Monday.",
+          "options": {
+            "a": "at",
+            "b": "on",
+            "c": "in",
+            "d": "for"
+          },
+          "correct_option": "b",
+          "explanation": "Use **on** with days and dates (on Monday, on 15th March)."
+        },
+        {
+          "type": "mc",
+          "question": "She was born ____ 1995.",
+          "options": {
+            "a": "on",
+            "b": "in",
+            "c": "at",
+            "d": "from"
+          },
+          "correct_option": "b",
+          "explanation": "Use **in** with years, months and seasons (in 1995, in January)."
+        },
+        {
+          "type": "mc",
+          "question": "The book is lying ____ the table. (on the surface)",
+          "options": {
+            "a": "in",
+            "b": "at",
+            "c": "on",
+            "d": "by"
+          },
+          "correct_option": "c",
+          "explanation": "**On** is used when something is on top of a surface."
+        },
+        {
+          "type": "mc",
+          "question": "He lives ____ London.",
+          "options": {
+            "a": "at",
+            "b": "on",
+            "c": "to",
+            "d": "in"
+          },
+          "correct_option": "d",
+          "explanation": "We live **in** a city or country (in London, in Spain)."
+        },
+        {
+          "type": "mc",
+          "question": "We'll meet ____ the bus stop.",
+          "options": {
+            "a": "in",
+            "b": "at",
+            "c": "on",
+            "d": "to"
+          },
+          "correct_option": "b",
+          "explanation": "Use **at** for a specific point or meeting place (at the bus stop)."
+        },
+        {
+          "type": "mc",
+          "question": "I'm going ____ the supermarket.",
+          "options": {
+            "a": "to",
+            "b": "at",
+            "c": "in",
+            "d": "on"
+          },
+          "correct_option": "a",
+          "explanation": "Use **to** for movement towards a place (to the supermarket)."
+        },
+        {
+          "type": "mc",
+          "question": "She's been waiting ____ two hours.",
+          "options": {
+            "a": "for",
+            "b": "since",
+            "c": "during",
+            "d": "from"
+          },
+          "correct_option": "a",
+          "explanation": "**For** + period of time (for two hours)."
+        },
+        {
+          "type": "mc",
+          "question": "I've lived here ____ 2020.",
+          "options": {
+            "a": "for",
+            "b": "since",
+            "c": "during",
+            "d": "from"
+          },
+          "correct_option": "b",
+          "explanation": "**Since** + starting point in time (since 2020)."
+        },
+        {
+          "type": "mc",
+          "question": "I'll see you ____ the morning.",
+          "options": {
+            "a": "at",
+            "b": "on",
+            "c": "in",
+            "d": "by"
+          },
+          "correct_option": "c",
+          "explanation": "Parts of the day usually take **in** (in the morning), except at night."
+        }
+      ]
+    },
+    "gapfill_simple": {
+      "title": "Practice: Gap fill – Simple (time and place)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "I get up ____ 7 o'clock every day.",
+          "answers": [
+            "at"
+          ],
+          "explanation": "We use **at** with exact clock times (at 7 o'clock, at noon, at midnight). Use **on** for days (on Monday) and **in** for longer periods (in 1995, in summer)."
+        },
+        {
+          "type": "open",
+          "question": "The meeting is ____ Monday.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "We use **on** with days of the week and dates (on Monday, on 5th March). Use **at** for clock times and **in** for months, years or seasons."
+        },
+        {
+          "type": "open",
+          "question": "She was born ____ 1995.",
+          "answers": [
+            "in"
+          ],
+          "explanation": "We use **in** with years, months and seasons (in 1995, in January, in summer). Use **on** for specific days and **at** for clock times."
+        },
+        {
+          "type": "open",
+          "question": "The book is lying ____ the table. (on the surface)",
+          "answers": [
+            "on"
+          ],
+          "explanation": "We use **on** when something is on top of a surface (on the table, on the wall). 'Lying' implies contact with the surface → **on**."
+        },
+        {
+          "type": "open",
+          "question": "He lives ____ London.",
+          "answers": [
+            "in"
+          ],
+          "explanation": "We use **in** with cities, countries and enclosed or large areas (in London, in the box, in the room). Use **at** for a specific point (at the station) and **on** for a street or surface."
+        },
+        {
+          "type": "open",
+          "question": "We'll meet ____ the bus stop.",
+          "answers": [
+            "at"
+          ],
+          "explanation": "We use **at** for a specific point or place where something happens (at the bus stop, at the door, at home). Use **in** for being inside a building or area."
+        },
+        {
+          "type": "open",
+          "question": "I'm going ____ the supermarket.",
+          "answers": [
+            "to"
+          ],
+          "explanation": "We use **to** for movement or direction towards a place (to the supermarket, to school, to work). Use **at** when we are already there (at the supermarket)."
+        },
+        {
+          "type": "open",
+          "question": "She's been waiting ____ two hours.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "We use **for** to say how long something lasts (for two hours, for a week). Use **since** when we say when it started (since 9 o'clock) and **during** when we say when it happened (during the meeting)."
+        },
+        {
+          "type": "open",
+          "question": "I've lived here ____ 2020.",
+          "answers": [
+            "since"
+          ],
+          "explanation": "We use **since** with a point in time when something started and is still true (since 2020, since Monday). Use **for** with a duration (for three years)."
+        },
+        {
+          "type": "open",
+          "question": "I'll see you ____ the morning.",
+          "answers": [
+            "in"
+          ],
+          "explanation": "We use **in** with parts of the day (in the morning, in the afternoon) but **at** for night (at night)."
+        },
+        {
+          "type": "open",
+          "question": "The shop opens ____ 9 am.",
+          "answers": [
+            "at"
+          ],
+          "explanation": "Exact time → at (at 9 am, at noon)."
+        },
+        {
+          "type": "open",
+          "question": "She was born ____ 15th March.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "Specific date → on (on 15th March, on Monday)."
+        },
+        {
+          "type": "open",
+          "question": "We're going on holiday ____ August.",
+          "answers": [
+            "in"
+          ],
+          "explanation": "Month → in (in August, in 2024)."
+        },
+        {
+          "type": "open",
+          "question": "The pen is lying ____ the desk. (on the surface)",
+          "answers": [
+            "on"
+          ],
+          "explanation": "On top of a surface → **on**. 'Lying' implies contact with the surface."
+        },
+        {
+          "type": "open",
+          "question": "They live ____ the end of the street.",
+          "answers": [
+            "at"
+          ],
+          "explanation": "A specific point (end of the street) → at."
+        },
+        {
+          "type": "open",
+          "question": "I've been learning English ____ six months.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Duration (how long) → for."
+        },
+        {
+          "type": "open",
+          "question": "We stayed ____ midnight.",
+          "answers": [
+            "until"
+          ],
+          "explanation": "Up to a time (we stayed up to midnight) → until."
+        },
+        {
+          "type": "open",
+          "question": "The answer is ____ the bottom of the page.",
+          "answers": [
+            "at"
+          ],
+          "explanation": "A specific point (bottom of the page) → at."
+        }
+      ]
+    },
+    "gapfill_advanced": {
+      "title": "Practice: Gap fill – Advanced",
+      "questions": [
+        {
+          "type": "open",
+          "question": "The project must be finished ____ Friday.",
+          "answers": [
+            "by"
+          ],
+          "explanation": "We use **by** to mean 'no later than' or 'before' a time (by Friday, by 5 pm). Use **until** when something continues up to that time (wait until Friday), and **on** for the day itself (on Friday)."
+        },
+        {
+          "type": "open",
+          "question": "We walked right ____ the park from one side to the other to reach the station.",
+          "answers": [
+            "through"
+          ],
+          "explanation": "We use **through** when we move from one side of an area or space to the other (through the park, through the tunnel). Use **across** for a surface (across the road) and **along** for following a line (along the path)."
+        },
+        {
+          "type": "open",
+          "question": "She sat right ____ me in the cinema so we could share the popcorn.",
+          "answers": [
+            "beside",
+            "next to"
+          ],
+          "explanation": "We use **beside** or **next to** when one thing is at the side of another (beside me, next to the window). Use **between** for something in the middle of two others (between you and me)."
+        },
+        {
+          "type": "open",
+          "question": "Divide the sweets ____ the four children.",
+          "answers": [
+            "between"
+          ],
+          "explanation": "We use **between** when we talk about two or more separate people or things (between the four children, between A and B). Use **among** for a general group when we don't name them individually (among the crowd)."
+        },
+        {
+          "type": "open",
+          "question": "I'll be there ____ 9 and 10 o'clock.",
+          "answers": [
+            "between"
+          ],
+          "explanation": "We use **between** for a time (or place) in the middle of two points (between 9 and 10, between Monday and Friday). Use **from...to** for a range (from 9 to 10)."
+        },
+        {
+          "type": "open",
+          "question": "We discussed the problem ____ the meeting.",
+          "answers": [
+            "during"
+          ],
+          "explanation": "We use **during** when something happens within a period or event (during the meeting, during the film). Use **for** for how long (for two hours) and **while** with a clause (while we were meeting)."
+        },
+        {
+          "type": "open",
+          "question": "The cat is hiding ____ the sofa—you can see its tail sticking out from underneath.",
+          "answers": [
+            "under"
+          ],
+          "explanation": "We use **under** when something is below or beneath another thing (under the sofa, under the table). Use **below** for a lower level and **over** for above."
+        },
+        {
+          "type": "open",
+          "question": "They walked ____ the bridge.",
+          "answers": [
+            "across"
+          ],
+          "explanation": "We use **across** when we go from one side of a surface or area to the other (across the bridge, across the road). Use **through** for going inside something (through the tunnel) and **along** for following the length (along the bridge)."
+        },
+        {
+          "type": "open",
+          "question": "We drove ____ the coast for miles, following the shoreline.",
+          "answers": [
+            "along"
+          ],
+          "explanation": "We use **along** when we follow a line or length (along the coast, along the river, along the road). Use **through** for from one end to the other inside something, and **across** for from one side to the other."
+        },
+        {
+          "type": "open",
+          "question": "He arrived ____ train.",
+          "answers": [
+            "by"
+          ],
+          "explanation": "We use **by** with means of transport when we say how we travel (by train, by car, by plane). Use **on** for some transport (on foot, on the bus) and **in** for others (in a car, in a taxi)."
+        },
+        {
+          "type": "open",
+          "question": "The ball rolled ____ the table and onto the floor.",
+          "answers": [
+            "off"
+          ],
+          "explanation": "Off = from on top of something down or away (off the table)."
+        },
+        {
+          "type": "open",
+          "question": "There's a poster ____ the wall above the sofa.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "On a vertical surface (the wall) → on."
+        },
+        {
+          "type": "open",
+          "question": "We cycled ____ the river for about five miles.",
+          "answers": [
+            "along"
+          ],
+          "explanation": "Following a line (the river) → along."
+        },
+        {
+          "type": "open",
+          "question": "The tunnel goes ____ the mountain.",
+          "answers": [
+            "through"
+          ],
+          "explanation": "From one side to the other inside something (the mountain) → through."
+        },
+        {
+          "type": "open",
+          "question": "She stood ____ the window, looking out.",
+          "answers": [
+            "by",
+            "beside",
+            "next to"
+          ],
+          "explanation": "At the side of → by, beside, or next to."
+        },
+        {
+          "type": "open",
+          "question": "The deadline is ____ the end of the week.",
+          "answers": [
+            "by"
+          ],
+          "explanation": "No later than → by."
+        },
+        {
+          "type": "open",
+          "question": "We had a break ____ the journey.",
+          "answers": [
+            "during"
+          ],
+          "explanation": "Within the time of the journey → during."
+        },
+        {
+          "type": "open",
+          "question": "The temperature dropped ____ zero.",
+          "answers": [
+            "below"
+          ],
+          "explanation": "Lower than (temperature) → below."
+        },
+        {
+          "type": "open",
+          "question": "They ran ____ the road to the other side.",
+          "answers": [
+            "across"
+          ],
+          "explanation": "From one side of a surface to the other → across."
+        }
+      ]
+    },
+    "gapfill_tricky": {
+      "title": "Practice: Gap fill – Tricky and idiomatic",
+      "questions": [
+        {
+          "type": "open",
+          "question": "I'm interested ____ learning Spanish.",
+          "answers": [
+            "in"
+          ],
+          "explanation": "Dependent preposition (adjective). The fixed phrase is **interested in** (interested in music, interested in learning). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "She's good ____ maths.",
+          "answers": [
+            "at"
+          ],
+          "explanation": "Dependent preposition (adjective). We say **good at** a subject or skill (good at maths, good at swimming). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "We're looking ____ our keys.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Dependent preposition (verb). **Look for** means to search for or try to find (looking for our keys, look for a job). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "It depends ____ the weather.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "Dependent preposition (verb). The fixed phrase is **depend on** (it depends on the weather, it depends on you). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "He's afraid ____ spiders.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (adjective). We say **afraid of** (afraid of spiders, afraid of the dark). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "I'm tired ____ waiting.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (adjective). We say **tired of** when we've had enough of something (tired of waiting, tired of this weather). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "She insisted ____ paying the bill.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "Dependent preposition (verb). The fixed phrase is **insist on** (insist on paying, insist on coming). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "They complained ____ the noise.",
+          "answers": [
+            "about"
+          ],
+          "explanation": "Dependent preposition (verb). We say **complain about** something (complain about the noise, complain about the service). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "We need to focus ____ the main point.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "Dependent preposition (verb). We say **focus on** something (focus on the main point, focus on your work). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "The book was written ____ a famous author.",
+          "answers": [
+            "by"
+          ],
+          "explanation": "Passive agent: **by** introduces who or what does the action (written by a famous author). Not a dependent preposition."
+        },
+        {
+          "type": "open",
+          "question": "She's responsible ____ the project.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Dependent preposition (adjective). Responsible **for** something. See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "He's very proud ____ his daughter.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (adjective). Proud **of** someone or something. See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "We're worried ____ the results.",
+          "answers": [
+            "about"
+          ],
+          "explanation": "Dependent preposition (adjective). Worried **about** something. See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "She's capable ____ doing the job.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (adjective). Capable **of** doing something. See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "They're keen ____ starting soon.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "Dependent preposition (adjective). Keen **on** something. See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "I'm grateful ____ your help.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Dependent preposition (adjective). Grateful **for** something. See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "He's allergic ____ nuts.",
+          "answers": [
+            "to"
+          ],
+          "explanation": "Dependent preposition (adjective). Allergic **to** something. See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "We're familiar ____ the system.",
+          "answers": [
+            "with"
+          ],
+          "explanation": "Dependent preposition (adjective). Familiar **with** something. See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "She's famous ____ her novels.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Dependent preposition (adjective). Famous **for** something. See Reference → Dependent prepositions: Adjectives."
+        }
+      ]
+    },
+    "gapfill_top40": {
+      "title": "Practice: Top 40 prepositions (all in use)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "I need a cup ____ tea.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "**of** – part of / belonging (cup of tea, capital of France)."
+        },
+        {
+          "type": "open",
+          "question": "She's proud ____ her son.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "**of** – after adjectives (proud of, afraid of, tired of)."
+        },
+        {
+          "type": "open",
+          "question": "The table is made ____ wood.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "**of** – material (made of wood)."
+        },
+        {
+          "type": "open",
+          "question": "I'm going ____ the station.",
+          "answers": [
+            "to"
+          ],
+          "explanation": "**to** – direction (go to, walk to)."
+        },
+        {
+          "type": "open",
+          "question": "Give it ____ me.",
+          "answers": [
+            "to"
+          ],
+          "explanation": "**to** – recipient (give to, say to)."
+        },
+        {
+          "type": "open",
+          "question": "He's allergic ____ nuts.",
+          "answers": [
+            "to"
+          ],
+          "explanation": "**to** – fixed phrase (allergic to)."
+        },
+        {
+          "type": "open",
+          "question": "She was born ____ 1995.",
+          "answers": [
+            "in"
+          ],
+          "explanation": "**in** – year/month (in 1995, in August)."
+        },
+        {
+          "type": "open",
+          "question": "I'm interested ____ history.",
+          "answers": [
+            "in"
+          ],
+          "explanation": "**in** – interested in (fixed phrase)."
+        },
+        {
+          "type": "open",
+          "question": "She's been waiting ____ two hours.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "**for** – duration (for two hours)."
+        },
+        {
+          "type": "open",
+          "question": "This present is ____ you.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "**for** – intended for (for you, for the meeting)."
+        },
+        {
+          "type": "open",
+          "question": "What's the reason ____ the delay?",
+          "answers": [
+            "for"
+          ],
+          "explanation": "**for** – reason for (fixed phrase)."
+        },
+        {
+          "type": "open",
+          "question": "The book is lying ____ the table. (on the surface)",
+          "answers": [
+            "on"
+          ],
+          "explanation": "**on** – on a surface (on the table). 'Lying' implies contact with the surface."
+        },
+        {
+          "type": "open",
+          "question": "We meet ____ Monday.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "**on** – day (on Monday, on 5th March)."
+        },
+        {
+          "type": "open",
+          "question": "It depends ____ the weather.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "**on** – depend on (fixed phrase)."
+        },
+        {
+          "type": "open",
+          "question": "I went ____ my friend.",
+          "answers": [
+            "with"
+          ],
+          "explanation": "**with** – together with (with a friend)."
+        },
+        {
+          "type": "open",
+          "question": "Cut it ____ a knife.",
+          "answers": [
+            "with"
+          ],
+          "explanation": "**with** – means (with a knife, with a pen)."
+        },
+        {
+          "type": "open",
+          "question": "We'll meet ____ the bus stop.",
+          "answers": [
+            "at"
+          ],
+          "explanation": "**at** – point or place (at the bus stop, at home)."
+        },
+        {
+          "type": "open",
+          "question": "The shop opens ____ 9 am.",
+          "answers": [
+            "at"
+          ],
+          "explanation": "**at** – clock time (at 9 am, at noon)."
+        },
+        {
+          "type": "open",
+          "question": "She's good ____ maths.",
+          "answers": [
+            "at"
+          ],
+          "explanation": "**at** – good at (fixed phrase)."
+        },
+        {
+          "type": "open",
+          "question": "He arrived ____ train.",
+          "answers": [
+            "by"
+          ],
+          "explanation": "**by** – means of transport (by train, by car)."
+        },
+        {
+          "type": "open",
+          "question": "Finish it ____ Friday.",
+          "answers": [
+            "by"
+          ],
+          "explanation": "**by** – no later than (by Friday)."
+        },
+        {
+          "type": "open",
+          "question": "The book was written ____ a famous author.",
+          "answers": [
+            "by"
+          ],
+          "explanation": "**by** – agent in passive (written by)."
+        },
+        {
+          "type": "open",
+          "question": "The parcel came ____ Paris.",
+          "answers": [
+            "from"
+          ],
+          "explanation": "**from** – origin (the parcel came from Paris = it was sent from there)."
+        },
+        {
+          "type": "open",
+          "question": "I've lived here ____ 2020.",
+          "answers": [
+            "since"
+          ],
+          "explanation": "**since** – from (time) until now (since 2020)."
+        },
+        {
+          "type": "open",
+          "question": "He suffers ____ headaches.",
+          "answers": [
+            "from"
+          ],
+          "explanation": "**from** – suffer from (fixed phrase)."
+        },
+        {
+          "type": "open",
+          "question": "We talked ____ the project.",
+          "answers": [
+            "about"
+          ],
+          "explanation": "**about** – concerning (talk about, about the project)."
+        },
+        {
+          "type": "open",
+          "question": "She's worried ____ the exam.",
+          "answers": [
+            "about"
+          ],
+          "explanation": "**about** – worried about (fixed phrase)."
+        },
+        {
+          "type": "open",
+          "question": "What's the film ____?",
+          "answers": [
+            "about"
+          ],
+          "explanation": "**about** – concerning (a film about war)."
+        },
+        {
+          "type": "open",
+          "question": "He works ____ a teacher.",
+          "answers": [
+            "as"
+          ],
+          "explanation": "**as** – role (work as, act as)."
+        },
+        {
+          "type": "open",
+          "question": "She went ____ the room.",
+          "answers": [
+            "into"
+          ],
+          "explanation": "**into** – movement inside (into the room)."
+        },
+        {
+          "type": "open",
+          "question": "That sounds ____ a good idea.",
+          "answers": [
+            "like"
+          ],
+          "explanation": "**like** – similar to (sound like, look like)."
+        },
+        {
+          "type": "open",
+          "question": "We walked ____ the park.",
+          "answers": [
+            "through"
+          ],
+          "explanation": "**through** – from one side to the other (through the park, through the tunnel)."
+        },
+        {
+          "type": "open",
+          "question": "The bridge goes ____ the river.",
+          "answers": [
+            "over"
+          ],
+          "explanation": "**over** – above, across (over the river, over the bridge)."
+        },
+        {
+          "type": "open",
+          "question": "We'll start ____ dinner.",
+          "answers": [
+            "after"
+          ],
+          "explanation": "**after** – later than (after dinner, after 5 pm)."
+        },
+        {
+          "type": "open",
+          "question": "I'll be there ____ 9 and 10.",
+          "answers": [
+            "between"
+          ],
+          "explanation": "**between** – in the middle of two (between 9 and 10)."
+        },
+        {
+          "type": "open",
+          "question": "Get ____ the car quickly.",
+          "answers": [
+            "out of"
+          ],
+          "explanation": "**out of** – exit (get out of, out of the room)."
+        },
+        {
+          "type": "open",
+          "question": "The cat is ____ the sofa.",
+          "answers": [
+            "under"
+          ],
+          "explanation": "**under** – below (under the sofa, under the table)."
+        },
+        {
+          "type": "open",
+          "question": "Please finish ____ 5 pm.",
+          "answers": [
+            "before"
+          ],
+          "explanation": "**before** – earlier than (before 5 pm)."
+        },
+        {
+          "type": "open",
+          "question": "We have no money. We can't buy it ____ money. (one word: not having)",
+          "answers": [
+            "without"
+          ],
+          "explanation": "**without** – not having (we can't buy it without money)."
+        },
+        {
+          "type": "open",
+          "question": "It costs ____ 10 pounds.",
+          "answers": [
+            "about"
+          ],
+          "explanation": "**about** – approximately (about 10)."
+        },
+        {
+          "type": "open",
+          "question": "They sat ____ the table.",
+          "answers": [
+            "around"
+          ],
+          "explanation": "**around** – surrounding (around the table)."
+        },
+        {
+          "type": "open",
+          "question": "I've known her ____ 2020.",
+          "answers": [
+            "since"
+          ],
+          "explanation": "**since** – from (time) until now."
+        },
+        {
+          "type": "open",
+          "question": "That's ____ the law.",
+          "answers": [
+            "against"
+          ],
+          "explanation": "**against** – opposing (against the law)."
+        },
+        {
+          "type": "open",
+          "question": "We met ____ the meeting.",
+          "answers": [
+            "during"
+          ],
+          "explanation": "**during** – within a period (during the meeting)."
+        },
+        {
+          "type": "open",
+          "question": "We stayed ____ midnight.",
+          "answers": [
+            "until"
+          ],
+          "explanation": "**until** – up to a time (until midnight)."
+        },
+        {
+          "type": "open",
+          "question": "We discussed it ____ ourselves.",
+          "answers": [
+            "among"
+          ],
+          "explanation": "**among** – in a group (among friends)."
+        },
+        {
+          "type": "open",
+          "question": "They ran ____ the road.",
+          "answers": [
+            "across"
+          ],
+          "explanation": "**across** – from one side to the other (across the road)."
+        },
+        {
+          "type": "open",
+          "question": "The keys are ____ the door. (We hid them at the back so nobody would see them.)",
+          "answers": [
+            "behind"
+          ],
+          "explanation": "**behind** – at the back of (behind the door). Context (hid at the back) rules out by, on, in."
+        },
+        {
+          "type": "open",
+          "question": "The plane flew ____ the clouds.",
+          "answers": [
+            "above"
+          ],
+          "explanation": "**above** – higher than (above the clouds)."
+        },
+        {
+          "type": "open",
+          "question": "The temperature dropped ____ zero.",
+          "answers": [
+            "below"
+          ],
+          "explanation": "**below** – lower than (below zero)."
+        },
+        {
+          "type": "open",
+          "question": "They live ____ the station.",
+          "answers": [
+            "near"
+          ],
+          "explanation": "**near** – close to (near the station)."
+        },
+        {
+          "type": "open",
+          "question": "We walked ____ the riverbank for a couple of miles.",
+          "answers": [
+            "along"
+          ],
+          "explanation": "**along** – following a line (along the riverbank)."
+        },
+        {
+          "type": "open",
+          "question": "The ball rolled ____ the table.",
+          "answers": [
+            "off"
+          ],
+          "explanation": "**off** – away from a surface (off the table)."
+        },
+        {
+          "type": "open",
+          "question": "She ran ____ the stairs.",
+          "answers": [
+            "up"
+          ],
+          "explanation": "**up** – direction (up the stairs)."
+        },
+        {
+          "type": "open",
+          "question": "We walked ____ the hill.",
+          "answers": [
+            "down"
+          ],
+          "explanation": "**down** – direction (down the hill)."
+        },
+        {
+          "type": "open",
+          "question": "They drove ____ the city.",
+          "answers": [
+            "towards"
+          ],
+          "explanation": "**towards** – in the direction of (towards the city)."
+        },
+        {
+          "type": "open",
+          "question": "We'll finish ____ an hour.",
+          "answers": [
+            "within"
+          ],
+          "explanation": "**within** – inside a time or space (within an hour)."
+        },
+        {
+          "type": "open",
+          "question": "Once ____ a time there was a king.",
+          "answers": [
+            "upon"
+          ],
+          "explanation": "**upon** – formal for **on** (once upon a time)."
+        },
+        {
+          "type": "open",
+          "question": "Everyone came ____ Tom.",
+          "answers": [
+            "except"
+          ],
+          "explanation": "**except** – not including (everyone except Tom)."
+        }
+      ]
+    },
+    "gapfill_dependent_verbs": {
+      "title": "Practice: Dependent prepositions – Verbs",
+      "questions": [
+        {
+          "type": "open",
+          "question": "They accused him ____ stealing.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (verb). Accuse someone **of** something (accuse of stealing, accuse of lying). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "She suffers ____ migraines.",
+          "answers": [
+            "from"
+          ],
+          "explanation": "Dependent preposition (verb). Suffer **from** an illness or problem (suffer from headaches). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "He apologized ____ being late.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Dependent preposition (verb). Apologize **for** something (apologize for the delay). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "I don't approve ____ that plan.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (verb). Approve **of** something (approve of the idea). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "She applied ____ the job.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Dependent preposition (verb). Apply **for** a job or place (apply for a visa). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "We arrived ____ the station at 8.",
+          "answers": [
+            "at"
+          ],
+          "explanation": "Dependent preposition (verb). Arrive **at** a place (arrive at the airport). Use **in** for cities/countries. See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "He believes ____ climate change.",
+          "answers": [
+            "in"
+          ],
+          "explanation": "Dependent preposition (verb). Believe **in** something (believe in justice). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "They complained ____ the manager about the noise.",
+          "answers": [
+            "to"
+          ],
+          "explanation": "Dependent preposition (verb). Complain **to** someone (complain to the manager). Complain **about** something. See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "She congratulated him ____ passing the exam.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "Dependent preposition (verb). Congratulate someone **on** something (congratulate on your success). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "We consist ____ ten members.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (verb). Consist **of** = be made up of (the team consists of five people). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "He decided ____ a new car.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "Dependent preposition (verb). Decide **on** something (decide on a date). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "She dreams ____ travelling the world.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (verb). Dream **of** something (dream of success). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "They insisted ____ paying for dinner.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "Dependent preposition (verb). Insist **on** doing something (insist on coming). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "He listened ____ the radio.",
+          "answers": [
+            "to"
+          ],
+          "explanation": "Dependent preposition (verb). Listen **to** something (listen to music). See Reference → Dependent prepositions: Verbs."
+        },
+        {
+          "type": "open",
+          "question": "She objected ____ the proposal.",
+          "answers": [
+            "to"
+          ],
+          "explanation": "Dependent preposition (verb). Object **to** something (object to the plan). See Reference → Dependent prepositions: Verbs."
+        }
+      ]
+    },
+    "gapfill_dependent_adjectives": {
+      "title": "Practice: Dependent prepositions – Adjectives",
+      "questions": [
+        {
+          "type": "open",
+          "question": "She's famous ____ her research.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Dependent preposition (adjective). Famous **for** something (famous for her work). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "He's aware ____ the problem.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (adjective). Aware **of** something (aware of the risk). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "I'm bad ____ remembering names.",
+          "answers": [
+            "at"
+          ],
+          "explanation": "Dependent preposition (adjective). Bad **at** something (bad at maths). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "She's capable ____ making quick decisions.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (adjective). Capable **of** doing something (capable of winning). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "They're excited ____ the trip.",
+          "answers": [
+            "about"
+          ],
+          "explanation": "Dependent preposition (adjective). Excited **about** something (excited about the holiday). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "He's good ____ languages.",
+          "answers": [
+            "at"
+          ],
+          "explanation": "Dependent preposition (adjective). Good **at** a skill or subject (good at swimming). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "We're grateful ____ your support.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Dependent preposition (adjective). Grateful **for** something (grateful for your help). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "She's interested ____ archaeology.",
+          "answers": [
+            "in"
+          ],
+          "explanation": "Dependent preposition (adjective). Interested **in** something (interested in history). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "He's jealous ____ his brother's success.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (adjective). Jealous **of** someone or something (jealous of her). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "I'm keen ____ learning to cook.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "Dependent preposition (adjective). Keen **on** something (keen on sport). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "They're nervous ____ the interview.",
+          "answers": [
+            "about"
+          ],
+          "explanation": "Dependent preposition (adjective). Nervous **about** something (nervous about the exam). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "She's proud ____ her team.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (adjective). Proud **of** someone or something (proud of his son). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "He's responsible ____ the budget.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Dependent preposition (adjective). Responsible **for** something (responsible for the project). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "We're tired ____ waiting.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (adjective). Tired **of** something (tired of this weather). See Reference → Dependent prepositions: Adjectives."
+        },
+        {
+          "type": "open",
+          "question": "She's worried ____ the delay.",
+          "answers": [
+            "about"
+          ],
+          "explanation": "Dependent preposition (adjective). Worried **about** something (worried about him). See Reference → Dependent prepositions: Adjectives."
+        }
+      ]
+    },
+    "gapfill_dependent_nouns": {
+      "title": "Practice: Dependent prepositions – Nouns",
+      "questions": [
+        {
+          "type": "open",
+          "question": "She's the leader ____ the team.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (noun). Leader **of** something (leader of the party). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "There's been an increase ____ demand.",
+          "answers": [
+            "in"
+          ],
+          "explanation": "Dependent preposition (noun). Increase **in** something (increase in prices). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "He has a lot of experience ____ teaching.",
+          "answers": [
+            "in"
+          ],
+          "explanation": "Dependent preposition (noun). Experience **in** something (experience in teaching). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "What's the reason ____ the delay?",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Dependent preposition (noun). Reason **for** something (reason for the change). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "She has a good relationship ____ her boss.",
+          "answers": [
+            "with"
+          ],
+          "explanation": "Dependent preposition (noun). Relationship **with** someone (relationship with his parents). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "There's a solution ____ the problem.",
+          "answers": [
+            "to"
+          ],
+          "explanation": "Dependent preposition (noun). Solution **to** a problem (answer to the question). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "He made a complaint ____ the service.",
+          "answers": [
+            "about"
+          ],
+          "explanation": "Dependent preposition (noun). Complaint **about** something (complaint about the noise). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "She has a fear ____ flying.",
+          "answers": [
+            "of"
+          ],
+          "explanation": "Dependent preposition (noun). Fear **of** something (fear of heights). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "There's a demand ____ better transport.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Dependent preposition (noun). Demand **for** something (demand for action). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "He showed an interest ____ the project.",
+          "answers": [
+            "in"
+          ],
+          "explanation": "Dependent preposition (noun). Interest **in** something (interest in art). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "She gave a talk ____ climate change.",
+          "answers": [
+            "on"
+          ],
+          "explanation": "Dependent preposition (noun). Talk **on** something (a talk on health). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "There's a difference ____ the two versions.",
+          "answers": [
+            "between"
+          ],
+          "explanation": "Dependent preposition (noun). Difference **between** two things (difference between A and B). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "He has a talent ____ music.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Dependent preposition (noun). Talent **for** something (talent for languages). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "She has confidence ____ her ability.",
+          "answers": [
+            "in"
+          ],
+          "explanation": "Dependent preposition (noun). Confidence **in** someone or something (confidence in the team). See Reference → Dependent prepositions: Nouns."
+        },
+        {
+          "type": "open",
+          "question": "There's a need ____ more staff.",
+          "answers": [
+            "for"
+          ],
+          "explanation": "Dependent preposition (noun). Need **for** something (need for change). See Reference → Dependent prepositions: Nouns."
+        }
+      ]
+    },
+    "mc": {
+      "title": "Practice: Prepositions (multiple choice)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "'At 5 o'clock' – what does 'at' express here?",
+          "options": {
+            "a": "Time (point)",
+            "b": "Place (point)",
+            "c": "Movement",
+            "d": "Direction"
+          },
+          "correct_option": "a",
+          "explanation": "'At' with a clock time is Time (point) – a point in time. Some times are periods, e.g. in 1980. Place (point) is for location, e.g. at the door."
+        },
+        {
+          "type": "mc",
+          "question": "'The picture is on the wall.' – What does 'on' express?",
+          "options": {
+            "a": "Time",
+            "b": "Movement",
+            "c": "Place (surface/line)",
+            "d": "Direction"
+          },
+          "correct_option": "c",
+          "explanation": "'On' with a surface (wall) is place – something on a line or surface."
+        },
+        {
+          "type": "mc",
+          "question": "Which preposition often goes with enclosed spaces (room, box, city)?",
+          "options": {
+            "a": "at",
+            "b": "on",
+            "c": "to",
+            "d": "in"
+          },
+          "correct_option": "d",
+          "explanation": "'In' is used for enclosed spaces: in the room, in the box, in London."
+        },
+        {
+          "type": "mc",
+          "question": "The keys are ____ the box. (We keep them inside.)",
+          "options": {
+            "a": "at",
+            "b": "in",
+            "c": "on",
+            "d": "to"
+          },
+          "correct_option": "b",
+          "explanation": "Inside a space → in."
+        },
+        {
+          "type": "mc",
+          "question": "The picture is ____ the wall.",
+          "options": {
+            "a": "in",
+            "b": "at",
+            "c": "on",
+            "d": "by"
+          },
+          "correct_option": "c",
+          "explanation": "On a surface → on."
+        },
+        {
+          "type": "mc",
+          "question": "We'll meet ____ the bus stop.",
+          "options": {
+            "a": "in",
+            "b": "on",
+            "c": "at",
+            "d": "for"
+          },
+          "correct_option": "c",
+          "explanation": "At a point or place → at."
+        },
+        {
+          "type": "mc",
+          "question": "'At 5 o'clock' – what does 'at' express here?",
+          "options": {
+            "a": "Place (point)",
+            "b": "Time (point)",
+            "c": "Movement",
+            "d": "Direction"
+          },
+          "correct_option": "b",
+          "explanation": "'At' with a clock time is Time (point) – a point in time. Some times are periods, e.g. in 1980. Place (point) is for location, e.g. at the door."
+        },
+        {
+          "type": "mc",
+          "question": "'The picture is on the wall.' – What does 'on' express?",
+          "options": {
+            "a": "Time",
+            "b": "Movement",
+            "c": "Place (surface/line)",
+            "d": "Direction"
+          },
+          "correct_option": "c",
+          "explanation": "'On' with a surface (wall) is place – something on a line or surface."
+        },
+        {
+          "type": "mc",
+          "question": "Which preposition often goes with enclosed spaces (room, box, city)?",
+          "options": {
+            "a": "at",
+            "b": "on",
+            "c": "to",
+            "d": "in"
+          },
+          "correct_option": "d",
+          "explanation": "'In' is used for enclosed spaces: in the room, in the box, in London."
+        },
+        {
+          "type": "mc",
+          "question": "The keys are ____ the box. (We keep them inside.)",
+          "options": {
+            "a": "at",
+            "b": "on",
+            "c": "to",
+            "d": "in"
+          },
+          "correct_option": "d",
+          "explanation": "Inside a space → in."
+        }
+      ]
+    }
+  }
+}

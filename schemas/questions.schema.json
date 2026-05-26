@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Questions bank",
+  "description": "Top-level keys are topic IDs, each containing set1, set2, etc.",
+  "type": "object",
+  "patternProperties": {
+    "^.+$": {
+      "type": "object",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "required": ["questions"],
+          "properties": {
+            "title": { "type": "string" },
+            "summary": { "type": "string" },
+            "questions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["question"],
+                "properties": {
+                  "question": { "type": "string" },
+                  "prompt": { "type": "string" },
+                  "type": { "type": "string", "enum": ["mc", "open"] },
+                  "answers": { "type": "array", "items": { "type": "string" } },
+                  "options": { "type": "object" },
+                  "correct_option": { "type": "string" },
+                  "explanation": { "type": "string" },
+                  "topic": { "type": "string" },
+                  "topicTitle": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

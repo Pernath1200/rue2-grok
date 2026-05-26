@@ -1,0 +1,305 @@
+{
+  "intro": {
+    "title": "It – subject in English",
+    "sections": [
+      {
+        "title": "What this section covers",
+        "content": "In English we often need **it** as a **subject**, even when it does not refer to anything (no person or thing). Grammar books sometimes call this a **dummy / empty it**.\n\nThis section looks at:\n\n• **Weather and temperature** – *It's raining. It's cold.*\n• **Time and days** – *It's three o'clock. It's Monday.*\n• **Distance** – *It's five kilometres to the town.*\n• **It + adjective + to‑infinitive** – *It's important to read the question.*\n• **It + adjective / noun + that‑clause** – *It's clear that he's tired. It's a good idea that you came early.*\n• **It + seem / appear / look** – *It seems that they're late.*"
+      },
+      {
+        "title": "It for weather, time and distance",
+        "content": "In English we **must use a subject**. With weather, time and distance we normally use **it**.\n\n**Weather**\n• It's raining.\n• It's snowing.\n• It's cold / It's very hot today.\n\n**Time and days**\n• It's three o'clock.\n• It's late.\n• It's Monday today.\n\n**Distance**\n• It's five kilometres to the town.\n• It's ten minutes to the station.\n\nIn many other languages (including Czech) you can say just \"Raining\" or \"Is three o'clock\". In English you normally need **It + be**."
+      },
+      {
+        "title": "It + adjective + to‑infinitive",
+        "content": "We often move the real subject to the end of the sentence and use **it** at the beginning. This makes the sentence more natural and easier to start.\n\nPattern: **It + be + adjective + to‑infinitive**\n\n• It's important to read the instructions.\n• It's hard to wake up early.\n• It's easy to get lost in this city.\n• It's not necessary to answer all the questions.\n\nCompare:\n• To read the instructions is important. (possible, but not common)\n• **It's important to read the instructions.** (natural)"
+      },
+      {
+        "title": "It + adjective / noun + that‑clause",
+        "content": "We can also use **it** when the real subject is a **that‑clause** (a clause starting with *that*):\n\nPattern: **It + be + adjective / noun + that‑clause**\n\n• It's clear that he is tired.\n• It's obvious that they don't agree.\n• It's a pity that she can't come.\n• It's a good idea that you called before the exam.\n\nAgain, English prefers **It + be** at the start instead of beginning with the big clause."
+      },
+      {
+        "title": "It with seem / appear / look",
+        "content": "We also use **it** with verbs like **seem, appear, look** when the real idea comes later:\n\n• It seems that they're late.\n• It appears that there is a problem.\n• It looks as if it's going to rain.\n\nIn conversation we sometimes drop *that*: *It seems they're late.*"
+      },
+      {
+        "title": "Quick summary",
+        "content": "• English usually needs a **subject** – we cannot leave the subject empty.\n• For **weather, time and distance**, we normally use **It + be**: It's raining. It's three o'clock. It's ten kilometres to Prague.\n• For long subjects (to‑infinitive or that‑clause), we often use **It** at the start: It's important to practise. It's clear that he is tired.\n• Remember: sentences like *Is raining* or *Important is to read the text* are wrong in English – we need **It**."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "It's raining.",
+          "b": "Is raining.",
+          "c": "Rains.",
+          "d": "There is raining."
+        },
+        "correct_option": "a",
+        "explanation": "In English we need a subject. For weather we use it: It's raining."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {
+          "a": "Is three o'clock.",
+          "b": "There is three o'clock.",
+          "c": "Three o'clock is.",
+          "d": "It's three o'clock."
+        },
+        "correct_option": "d",
+        "explanation": "For time we normally say It's three o'clock."
+      },
+      {
+        "type": "mc",
+        "question": "Complete the sentence: ____ important to read the instructions.",
+        "options": {
+          "a": "Is",
+          "b": "It is",
+          "c": "There is",
+          "d": "It"
+        },
+        "correct_option": "b",
+        "explanation": "Pattern: It is + adjective + to‑infinitive → It's important to read the instructions."
+      },
+      {
+        "type": "mc",
+        "question": "Which sentence uses it correctly?",
+        "options": {
+          "a": "Clear is that he is tired.",
+          "b": "That he is tired is clear.",
+          "c": "It's clear that he is tired.",
+          "d": "Is clear that he is tired."
+        },
+        "correct_option": "c",
+        "explanation": "Natural English: It's clear that he is tired. (b is possible but formal; d is wrong – missing subject.)"
+      },
+      {
+        "type": "mc",
+        "question": "Which is most natural in English?",
+        "options": {
+          "a": "To get up early is difficult.",
+          "b": "Difficult is to get up early.",
+          "c": "It's difficult to get up early.",
+          "d": "Is difficult to get up early."
+        },
+        "correct_option": "c",
+        "explanation": "We usually start with It: It's difficult to get up early."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc",
+    "error_correction_1"
+  ],
+  "practice": {
+    "mc": {
+      "title": "Practice: It as subject (multiple choice)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "Which is correct for weather?",
+          "options": {
+            "a": "It's snowing.",
+            "b": "Is snowing.",
+            "c": "Snows.",
+            "d": "There is snowing."
+          },
+          "correct_option": "a",
+          "explanation": "We need a subject: It's snowing."
+        },
+        {
+          "type": "mc",
+          "question": "Choose the best sentence.",
+          "options": {
+            "a": "Is very cold today.",
+            "b": "It very cold today.",
+            "c": "It's very cold today.",
+            "d": "There is very cold today."
+          },
+          "correct_option": "c",
+          "explanation": "For temperature we use It + be: It's very cold today."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct for distance?",
+          "options": {
+            "a": "Is ten kilometres to the village.",
+            "b": "It's ten kilometres to the village.",
+            "c": "There is ten kilometres to the village.",
+            "d": "Ten kilometres is to the village."
+          },
+          "correct_option": "b",
+          "explanation": "We say: It's ten kilometres to the village."
+        },
+        {
+          "type": "mc",
+          "question": "Complete: ____ hard to understand this text.",
+          "options": {
+            "a": "Is",
+            "b": "It",
+            "c": "There is",
+            "d": "It is"
+          },
+          "correct_option": "d",
+          "explanation": "Pattern: It is + adjective + to‑infinitive / clause."
+        },
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "Is obvious that they are angry.",
+            "b": "It's obvious that they are angry.",
+            "c": "Obvious is that they are angry.",
+            "d": "That they are angry it's obvious."
+          },
+          "correct_option": "b",
+          "explanation": "Use It + be + adjective + that‑clause: It's obvious that they are angry."
+        },
+        {
+          "type": "mc",
+          "question": "Which sentence is best?",
+          "options": {
+            "a": "Seems that they are late.",
+            "b": "That they are late seems.",
+            "c": "It seems that they are late.",
+            "d": "Is seems that they are late."
+          },
+          "correct_option": "c",
+          "explanation": "We say: It seems that they are late. (We need the subject it.)"
+        }
+      ]
+    },
+    "error_correction_1": {
+      "title": "Practice: Correct the sentence (It as subject)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'Is raining.' Correct the sentence.",
+          "answers": [
+            "It's raining.",
+            "It is raining.",
+            "It's raining",
+            "It is raining"
+          ],
+          "explanation": "For weather we use It + be: It's raining."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Is very cold today.' Correct the sentence.",
+          "answers": [
+            "It's very cold today.",
+            "It is very cold today.",
+            "It's very cold today",
+            "It is very cold today"
+          ],
+          "explanation": "Temperature: It's very cold today."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Is three o'clock.' Correct the sentence.",
+          "answers": [
+            "It's three o'clock.",
+            "It is three o'clock.",
+            "It's three o'clock",
+            "It is three o'clock"
+          ],
+          "explanation": "For time we say It's three o'clock."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Is five kilometres to the town.' Correct the sentence.",
+          "answers": [
+            "It's five kilometres to the town.",
+            "It is five kilometres to the town.",
+            "It's five kilometers to the town.",
+            "It is five kilometers to the town.",
+            "It's five kilometres to the town",
+            "It is five kilometres to the town",
+            "It's five kilometers to the town",
+            "It is five kilometers to the town"
+          ],
+          "explanation": "Distance: It's five kilometres to the town."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Important is to read the instructions.' Correct the sentence.",
+          "answers": [
+            "It's important to read the instructions.",
+            "It is important to read the instructions.",
+            "It's important to read the instructions",
+            "It is important to read the instructions"
+          ],
+          "explanation": "Use It + be + adjective + to‑infinitive: It's important to read the instructions."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Difficult is to wake up early.' Correct the sentence.",
+          "answers": [
+            "It's difficult to wake up early.",
+            "It is difficult to wake up early.",
+            "It's difficult to wake up early",
+            "It is difficult to wake up early"
+          ],
+          "explanation": "Natural English: It's difficult to wake up early."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Is obvious that he is angry.' Correct the sentence.",
+          "answers": [
+            "It's obvious that he is angry.",
+            "It is obvious that he is angry.",
+            "It's obvious that he's angry.",
+            "It is obvious that he's angry.",
+            "It's obvious that he is angry",
+            "It is obvious that he is angry",
+            "It's obvious that he's angry",
+            "It is obvious that he's angry"
+          ],
+          "explanation": "Use It + be + adjective + that‑clause."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Is clear that they don't agree.' Correct the sentence.",
+          "answers": [
+            "It's clear that they don't agree.",
+            "It is clear that they don't agree.",
+            "It's clear that they do not agree.",
+            "It is clear that they do not agree.",
+            "It's clear that they don't agree",
+            "It is clear that they don't agree",
+            "It's clear that they do not agree",
+            "It is clear that they do not agree"
+          ],
+          "explanation": "Again, we need It as subject: It's clear that they don't agree."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Was a good idea to call.' Correct the sentence.",
+          "answers": [
+            "It was a good idea to call.",
+            "It was a good idea to call"
+          ],
+          "explanation": "Use It + be + noun phrase: It was a good idea to call."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Is not easy to learn English.' Correct the sentence.",
+          "answers": [
+            "It's not easy to learn English.",
+            "It is not easy to learn English.",
+            "It's not easy to learn English",
+            "It is not easy to learn English"
+          ],
+          "explanation": "We normally say: It's not easy to learn English."
+        }
+      ]
+    }
+  }
+}
+

@@ -1,0 +1,242 @@
+{
+  "intro": {
+    "title": "Verbs: Irregular Past Forms",
+    "sections": [
+      {
+        "title": "Regular vs irregular",
+        "content": "**Regular verbs** form the past simple and past participle by adding **-ed**: *work → worked, play → played, want → wanted.* **Irregular verbs** do not follow this pattern — each has its own forms: *go → went → gone; speak → spoke → spoken; write → wrote → written.*"
+      },
+      {
+        "title": "Why irregular forms matter",
+        "content": "There is no rule to predict irregular forms — you must **learn each verb**. Common mistakes occur when learners add -ed to irregular verbs: *he speaked* (wrong) → he **spoke**; *I goed* (wrong) → I **went**."
+      },
+      {
+        "title": "When you need irregular forms",
+        "content": "**Past simple:** *I saw him yesterday.* **Present/past perfect:** *I have seen him. She had written it.* **Passive:** *The letter was written. English is spoken here.* **Conditionals:** *If I had known, I would have told you.*"
+      },
+      {
+        "title": "Common learner errors",
+        "content": "*he speaked* → he **spoke**; *I goed* → I **went**; *she writed* → she **wrote**; *they maked* → they **made**; *we taked* → we **took**. Learn the 50 most common irregular verbs — a full list is in Reference → Irregular verbs."
+      },
+      {
+        "title": "Reference",
+        "content": "For a full list of irregular verb forms, see the Irregular Verbs section under Reference."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "He _____ to me yesterday. (speak – past)",
+        "options": {
+          "a": "speaked",
+          "b": "spoke",
+          "c": "spoken",
+          "d": "speak"
+        },
+        "correct_option": "b",
+        "explanation": "Speak is irregular: speak → spoke → spoken."
+      },
+      {
+        "type": "mc",
+        "question": "I _____ to London last year. (go – past)",
+        "options": {
+          "a": "goed",
+          "b": "went",
+          "c": "gone",
+          "d": "go"
+        },
+        "correct_option": "b",
+        "explanation": "Go is irregular: go → went → gone."
+      },
+      {
+        "type": "mc",
+        "question": "She _____ a letter. (write – past)",
+        "options": {
+          "a": "writed",
+          "b": "wrote",
+          "c": "written",
+          "d": "write"
+        },
+        "correct_option": "b",
+        "explanation": "Write is irregular: write → wrote → written."
+      },
+      {
+        "type": "mc",
+        "question": "They _____ a mistake. (make – past)",
+        "options": {
+          "a": "maked",
+          "b": "maded",
+          "c": "made",
+          "d": "make"
+        },
+        "correct_option": "c",
+        "explanation": "Make is irregular: make → made → made."
+      },
+      {
+        "type": "mc",
+        "question": "We _____ him at the party. (see – past)",
+        "options": {
+          "a": "seed",
+          "b": "saw",
+          "c": "seen",
+          "d": "see"
+        },
+        "correct_option": "b",
+        "explanation": "See is irregular: see → saw → seen."
+      }
+    ]
+  },
+  "practice_order": [
+    "gapfill",
+    "errorcorrection"
+  ],
+  "practice": {
+    "gapfill": {
+      "title": "Practice: Irregular past forms",
+      "questions": [
+        {
+          "type": "open",
+          "question": "He _____ (speak) to her last week.",
+          "answers": [
+            "spoke"
+          ],
+          "explanation": "Speak → spoke (irregular)."
+        },
+        {
+          "type": "open",
+          "question": "I _____ (go) to the cinema yesterday.",
+          "answers": [
+            "went"
+          ],
+          "explanation": "Go → went (irregular)."
+        },
+        {
+          "type": "open",
+          "question": "She _____ (write) an email this morning.",
+          "answers": [
+            "wrote"
+          ],
+          "explanation": "Write → wrote (irregular)."
+        },
+        {
+          "type": "open",
+          "question": "They _____ (make) a cake for the party.",
+          "answers": [
+            "made"
+          ],
+          "explanation": "Make → made (irregular)."
+        },
+        {
+          "type": "open",
+          "question": "We _____ (see) a film last night.",
+          "answers": [
+            "saw"
+          ],
+          "explanation": "See → saw (irregular)."
+        },
+        {
+          "type": "open",
+          "question": "He _____ (take) the bus to work.",
+          "answers": [
+            "took"
+          ],
+          "explanation": "Take → took (irregular)."
+        },
+        {
+          "type": "open",
+          "question": "She _____ (know) the answer.",
+          "answers": [
+            "knew"
+          ],
+          "explanation": "Know → knew (irregular)."
+        },
+        {
+          "type": "open",
+          "question": "I _____ (think) about it yesterday.",
+          "answers": [
+            "thought"
+          ],
+          "explanation": "Think → thought (irregular)."
+        },
+        {
+          "type": "open",
+          "question": "They _____ (find) the key under the mat.",
+          "answers": [
+            "found"
+          ],
+          "explanation": "Find → found (irregular)."
+        },
+        {
+          "type": "open",
+          "question": "She _____ (give) him a present.",
+          "answers": [
+            "gave"
+          ],
+          "explanation": "Give → gave (irregular)."
+        }
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Correct the irregular verb",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'He speaked to her yesterday.' Correct the sentence.",
+          "answers": [
+            "He spoke to her yesterday.",
+            "He spoke to her yesterday"
+          ],
+          "explanation": "Speak → spoke (not speaked)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'I goed to the shop.' Correct the sentence.",
+          "answers": [
+            "I went to the shop.",
+            "I went to the shop"
+          ],
+          "explanation": "Go → went (not goed)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She writed a letter.' Correct the sentence.",
+          "answers": [
+            "She wrote a letter.",
+            "She wrote a letter"
+          ],
+          "explanation": "Write → wrote (not writed)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'They maked a mistake.' Correct the sentence.",
+          "answers": [
+            "They made a mistake.",
+            "They made a mistake"
+          ],
+          "explanation": "Make → made (not maked)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'We taked the bus.' Correct the sentence.",
+          "answers": [
+            "We took the bus.",
+            "We took the bus"
+          ],
+          "explanation": "Take → took (not taked)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She seed him at the party.' Correct the sentence.",
+          "answers": [
+            "She saw him at the party.",
+            "She saw him at the party"
+          ],
+          "explanation": "See → saw (not seed)."
+        }
+      ]
+    }
+  }
+}

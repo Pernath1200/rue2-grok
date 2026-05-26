@@ -1,0 +1,84 @@
+{
+  "title": "Open Cloze: Word types (grammar and function words)",
+  "intro": "Words that commonly fill gaps in Open Cloze tasks. One word per gap; spelling counts.",
+  "categories": [
+    {
+      "type": "Auxiliaries: Modal",
+      "definition": "Express ability, permission, obligation, possibility, or habit (e.g. will, can, must).",
+      "example": "You <b>can</b> leave now.",
+      "words": "will, would, can, could, may, might, must, should, need, used to"
+    },
+    {
+      "type": "Auxiliaries: Primary",
+      "definition": "Form questions, negatives, and tenses (be, have, do and their forms).",
+      "example": "She <b>has</b> finished the report.",
+      "words": "do, does, did, have, has, had, am, is, are, was, were, been, being"
+    },
+    {
+      "type": "Determiners: Articles",
+      "definition": "Specify whether the noun is definite (the), indefinite (a/an), or unspecified (no article).",
+      "example": "He bought <b>a</b> new car.",
+      "words": "a, an, the"
+    },
+    {
+      "type": "Determiners: Quantifiers",
+      "definition": "Specify quantity or scope (how much, how many, which ones, all, some, etc.).",
+      "example": "There are <b>many</b> options.",
+      "words": "some, any, no, every, each, all, both, either, neither, much, many, few, little, a few, a little, more, most, less, another, other, such"
+    },
+    {
+      "type": "Fixed phrases: Two-part",
+      "definition": "Set expressions of two (or more) words that function as a single unit (e.g. in order to, such as).",
+      "example": "We need to act <b>as soon as</b> possible.",
+      "words": "such as, as well as, in order to, so that, as long as, as soon as, in spite of, due to, owing to, according to, instead of, rather than, even though, as if, as though"
+    },
+    {
+      "type": "Linkers: Contrast",
+      "definition": "Introduce a contrast or opposition between ideas.",
+      "example": "<b>Although</b> it rained, we went out.",
+      "words": "although, though, however, nevertheless, yet, while, whereas, despite, in spite of"
+    },
+    {
+      "type": "Linkers: Purpose & condition",
+      "definition": "Introduce purpose (why someone does something) or a condition (if something is true).",
+      "example": "Call me <b>if</b> you need help.",
+      "words": "so that, in order to, to, if, unless, as long as, provided that"
+    },
+    {
+      "type": "Linkers: Reason & result",
+      "definition": "Introduce a reason (why something happens) or a result (what follows).",
+      "example": "I stayed home <b>because</b> I was tired.",
+      "words": "because, as, since, so, therefore, thus, hence"
+    },
+    {
+      "type": "Linkers: Time",
+      "definition": "Show when one action happens relative to another, or sequence in time.",
+      "example": "She called <b>when</b> she arrived.",
+      "words": "when, while, as, as soon as, before, after, until, once"
+    },
+    {
+      "type": "Other: Function words",
+      "definition": "Conjunction (that), negation (not), degree (so, such), or place/time reference (there, here, then, now).",
+      "example": "I said <b>that</b> I would come.",
+      "words": "that, not, so, such, there, here, then, now"
+    },
+    {
+      "type": "Prepositions: Place & other",
+      "definition": "Show position, direction, cause, manner, or relationship between elements.",
+      "example": "The keys are <b>on</b> the table.",
+      "words": "in, on, at, to, from, for, with, without, by, about, of, into, out, up, down, between, among, through, across, despite, like, as"
+    },
+    {
+      "type": "Prepositions: Time",
+      "definition": "Show when something happens (point in time, duration, or period).",
+      "example": "We meet <b>at</b> noon.",
+      "words": "at, on, in, for, since, during, before, after, until, till, by, from, to"
+    },
+    {
+      "type": "Words: Relative & question",
+      "definition": "Introduce relative clauses (who/which/that) or questions (what/where/when/why/how).",
+      "example": "This is the person <b>who</b> called.",
+      "words": "who, whom, whose, which, that, what, where, when, why, how"
+    }
+  ]
+}

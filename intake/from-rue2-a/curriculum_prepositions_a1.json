@@ -1,0 +1,70 @@
+{
+  "intro": {
+    "title": "Prepositions: in, on, at",
+    "sections": [
+      {
+        "title": "Place: in, on, at",
+        "content": "**in** = inside:\n• in the box, in the room, in London\n\n**on** = on top of:\n• on the table, on the floor\n\n**at** = at a place:\n• at home, at the door, at school"
+      },
+      {
+        "title": "Time: in, on, at",
+        "content": "**at** + clock time:\n• at 5 o'clock, at noon\n\n**on** + day:\n• on Monday, on Saturday\n\n**in** + month, year, or part of day:\n• in August, in 2020, in the morning"
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "The book is _____ the table.",
+        "options": {"a": "in", "b": "on", "c": "at", "d": "to"},
+        "correct_option": "b",
+        "explanation": "On top of = on the table."
+      },
+      {
+        "type": "mc",
+        "question": "I get up _____ 7 o'clock.",
+        "options": {"a": "in", "b": "on", "c": "at", "d": "to"},
+        "correct_option": "c",
+        "explanation": "Clock time: at 7 o'clock."
+      },
+      {
+        "type": "mc",
+        "question": "She lives _____ London.",
+        "options": {"a": "in", "b": "on", "c": "at", "d": "to"},
+        "correct_option": "a",
+        "explanation": "City = in London."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Prepositions",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "I work _____ Monday to Friday.",
+          "options": {"a": "in", "b": "on", "c": "at", "d": "to"},
+          "correct_option": "b",
+          "explanation": "Days: on Monday."
+        },
+        {
+          "type": "mc",
+          "question": "The cat is _____ the box.",
+          "options": {"a": "in", "b": "on", "c": "at", "d": "to"},
+          "correct_option": "a",
+          "explanation": "Inside = in the box."
+        },
+        {
+          "type": "mc",
+          "question": "We have breakfast _____ the morning.",
+          "options": {"a": "in", "b": "on", "c": "at", "d": "to"},
+          "correct_option": "a",
+          "explanation": "Part of day: in the morning."
+        }
+      ]
+    }
+  }
+}

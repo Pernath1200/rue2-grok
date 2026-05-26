@@ -1,0 +1,29 @@
+# User data (each machine can have its own)
+scores.json
+review_wrong_answers.txt
+
+# Node
+node_modules/
+dist/
+test-results/
+playwright-report/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Cursor debug logs (keep rules)
+.cursor/*.log
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Local working reference docs (vault-internal, not for public repo)
+_reference/

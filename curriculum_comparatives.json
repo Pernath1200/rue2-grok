@@ -1,0 +1,516 @@
+{
+  "intro": {
+    "title": "Comparatives and Superlatives",
+    "sections": [
+      {
+        "title": "What are comparatives? (1)",
+        "content": "Comparatives compare **two people, things or situations**. **Short adjectives** (1–2 syllables): add *-er* (*taller*, *faster*). **Longer adjectives** (2+ syllables): *more* + adjective (*more interesting*, *more expensive*)."
+      },
+      {
+        "title": "What are comparatives? (2)",
+        "content": "Use **than** after: *taller than*, *more expensive than*. *My sister is taller than me. This film is more interesting than the book.*"
+      },
+      {
+        "title": "Forming comparatives",
+        "content": "",
+        "diagram": {
+          "type": "table",
+          "title": "Forming comparatives",
+          "headers": [
+            "Type",
+            "Rule",
+            "Example"
+          ],
+          "rows": [
+            [
+              "Short (1–2 syll.)",
+              "adj + **-er**",
+              "tall → taller, easy → easier"
+            ],
+            [
+              "Long (2+ syll.)",
+              "**more** + adj",
+              "expensive → more expensive"
+            ],
+            [
+              "Irregular",
+              "learn each one",
+              "good → better, bad → worse"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Using comparatives (1)",
+        "content": "**Comparative + than:** *Tom is taller than his brother.*\n**Not as … as** (negative comparison): *She is not as tall as her sister.*"
+      },
+      {
+        "title": "Using comparatives (2)",
+        "content": "**Degree modifiers** — *much*, *a lot*, *far* (stronger), *a bit*, *slightly* (weaker): *This book is much better than the film. A bit easier than the last one.*"
+      },
+      {
+        "title": "More patterns",
+        "content": "**Adverbs:** *She speaks more slowly than before.*\n**The … the …:** *The more you practise, the better you get.*\n**Than + clause:** *The meeting took longer than we expected.*"
+      },
+      {
+        "title": "Superlatives: the rule (1)",
+        "content": "Superlatives compare **one thing with all others** in a group. Use **the** + superlative. **Short adjectives:** add *-est* (*the tallest*, *the biggest*, *the easiest*)."
+      },
+      {
+        "title": "Superlatives: the rule (2)",
+        "content": "**Long adjectives:** *the most* + adjective (*the most interesting*, *the most expensive*)."
+      },
+      {
+        "title": "Forming superlatives",
+        "content": "",
+        "diagram": {
+          "type": "table",
+          "title": "Forming superlatives",
+          "headers": [
+            "Type",
+            "Rule",
+            "Example"
+          ],
+          "rows": [
+            [
+              "Short (1–2 syll.)",
+              "the + adj + **-est**",
+              "tall → the tallest"
+            ],
+            [
+              "Long (2+ syll.)",
+              "**the most** + adj",
+              "the most interesting"
+            ],
+            [
+              "Irregular",
+              "learn each one",
+              "good → the best, bad → the worst"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Irregular forms",
+        "content": "*good* → *better* → *the best*\n*bad* → *worse* → *the worst*\n*far* → *farther/further* → *the farthest/furthest*\n*little* → *less* → *the least*\n*many/much* → *more* → *the most*"
+      },
+      {
+        "title": "Using superlatives",
+        "content": "Use with **in** + place/group or **I've ever** + past participle. *She is the tallest in the class. This is the most difficult test I've ever done. It's the best restaurant in town.*"
+      },
+      {
+        "title": "Typical errors (1)",
+        "content": "**No double comparative:** **Wrong:** *more easier*, *more better*. **Right:** *easier*, *better*.\n**Short adjective:** **Wrong:** *more tall*. **Right:** *taller*.\n**Long adjective:** **Wrong:** *interestinger*. **Right:** *more interesting*."
+      },
+      {
+        "title": "Typical errors (2)",
+        "content": "**Than:** **Wrong:** *She is taller me.* **Right:** *She is taller than me.*\n**Not as … as:** **Wrong:** *not so tall like her brother*. **Right:** *not as tall as her brother*."
+      },
+      {
+        "title": "Reference",
+        "content": "For irregular forms and full lists, see **Reference** → **Comparatives and Superlatives**."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which sentence is correct?",
+        "options": {
+          "a": "This exercise is easier than the last one.",
+          "b": "This exercise is more easier than the last one.",
+          "c": "This exercise is more easy than the last one.",
+          "d": "This exercise is easyer than the last one."
+        },
+        "correct_option": "a",
+        "explanation": "Easy → easier. We cannot use both more + adjective and -er together."
+      },
+      {
+        "type": "mc",
+        "question": "Choose the correct comparative.",
+        "options": {
+          "a": "more tall than",
+          "b": "tallest than",
+          "c": "taller than",
+          "d": "more taller than"
+        },
+        "correct_option": "c",
+        "explanation": "Tall is a short adjective → taller than."
+      },
+      {
+        "type": "mc",
+        "question": "Which is the correct form?",
+        "options": {
+          "a": "more interesting than",
+          "b": "interestinger than",
+          "c": "interester than",
+          "d": "more interestinger than"
+        },
+        "correct_option": "a",
+        "explanation": "Interesting is a long adjective → more interesting than."
+      },
+      {
+        "type": "mc",
+        "question": "Complete the sentence: 'His English is ____ mine.'",
+        "options": {
+          "a": "gooder than",
+          "b": "more good than",
+          "c": "better than",
+          "d": "best than"
+        },
+        "correct_option": "c",
+        "explanation": "Good → better (irregular comparative)."
+      },
+      {
+        "type": "mc",
+        "question": "Which negative comparison is correct?",
+        "options": {
+          "a": "She is not so tall like her brother.",
+          "b": "She is not so taller as her brother.",
+          "c": "She is not as tall like her brother.",
+          "d": "She is not as tall as her brother."
+        },
+        "correct_option": "d",
+        "explanation": "The pattern is not as + adjective + as (not so ... like is a common mistake)."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc"
+  ],
+  "practice": {
+    "gapfill": {
+      "title": "Practice: Gap fill – Form the comparative (basic)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "1. My sister is ____ (tall) me.",
+          "answers": [
+            "taller than"
+          ],
+          "explanation": "Tall → taller (short adjective + -er) + than."
+        },
+        {
+          "type": "open",
+          "question": "2. This exercise is ____ (easy) the last one.",
+          "answers": [
+            "easier than"
+          ],
+          "explanation": "Easy → easier (y → ier)."
+        },
+        {
+          "type": "open",
+          "question": "3. London is ____ (big) Prague.",
+          "answers": [
+            "bigger than"
+          ],
+          "explanation": "Big → bigger (double the final consonant)."
+        },
+        {
+          "type": "open",
+          "question": "4. Today is ____ (hot) yesterday.",
+          "answers": [
+            "hotter than"
+          ],
+          "explanation": "Hot → hotter (double the final consonant)."
+        },
+        {
+          "type": "open",
+          "question": "5. This task is ____ (interesting) the others.",
+          "answers": [
+            "more interesting than"
+          ],
+          "explanation": "Interesting is long → more interesting than."
+        },
+        {
+          "type": "open",
+          "question": "6. His English is ____ (good) mine.",
+          "answers": [
+            "better than"
+          ],
+          "explanation": "Good → better."
+        },
+        {
+          "type": "open",
+          "question": "7. The situation is ____ (bad) before.",
+          "answers": [
+            "worse than"
+          ],
+          "explanation": "Bad → worse."
+        },
+        {
+          "type": "open",
+          "question": "8. This street is ____ (narrow) the main road.",
+          "answers": [
+            "narrower than"
+          ],
+          "explanation": "Narrow → narrower (add -er)."
+        },
+        {
+          "type": "open",
+          "question": "9. The film was ____ (boring) I expected.",
+          "answers": [
+            "more boring than"
+          ],
+          "explanation": "Boring is long → more boring than."
+        },
+        {
+          "type": "open",
+          "question": "10. My flat is ____ (far) from the centre than yours.",
+          "answers": [
+            "farther than",
+            "further than"
+          ],
+          "explanation": "Far → farther/further."
+        },
+        {
+          "type": "open",
+          "question": "11. This exam is ____ (difficult) the last one.",
+          "answers": [
+            "more difficult than"
+          ],
+          "explanation": "Difficult is long → more difficult than."
+        },
+        {
+          "type": "open",
+          "question": "12. She is ____ (old) she looks. (She looks younger than she is.)",
+          "answers": [
+            "older than"
+          ],
+          "explanation": "Old → older + than. Context: she looks younger, so she is older than she looks."
+        }
+      ]
+    },
+    "advanced": {
+      "title": "Practice: Advanced comparatives",
+      "questions": [
+        {
+          "type": "open",
+          "question": "13. This book is ____ (far / interesting) the film.",
+          "answers": [
+            "far more interesting than",
+            "much more interesting than"
+          ],
+          "explanation": "Use a modifier (far/much) + more interesting than."
+        },
+        {
+          "type": "open",
+          "question": "14. The new system is ____ (a bit / efficient) the old one.",
+          "answers": [
+            "a bit more efficient than",
+            "slightly more efficient than"
+          ],
+          "explanation": "Use a bit/slightly + more efficient than."
+        },
+        {
+          "type": "open",
+          "question": "15. Rewrite using 'not as ... as': 'Her car is cheaper than mine.'",
+          "answers": [
+            "My car is not as cheap as hers.",
+            "My car isn't as cheap as hers."
+          ],
+          "explanation": "Cheaper than → my car is not as cheap as hers."
+        },
+        {
+          "type": "open",
+          "question": "16. Rewrite using 'the more ... the more ...': 'If you practise more, your English will get better.'",
+          "answers": [
+            "The more you practise, the better your English gets.",
+            "The more you practise, the better your English will get."
+          ],
+          "explanation": "If you practise more, your English will get better → The more you practise, the better your English (will) get(s)."
+        },
+        {
+          "type": "open",
+          "question": "17. Complete: 'The ____ (soon) we start, the ____ (soon) we can finish.'",
+          "answers": [
+            "The sooner we start, the sooner we can finish.",
+            "the sooner we start, the sooner we can finish"
+          ],
+          "explanation": "The sooner ..., the sooner ..."
+        },
+        {
+          "type": "open",
+          "question": "18. Complete: 'He drives ____ (carefully) he used to.'",
+          "answers": [
+            "more carefully than"
+          ],
+          "explanation": "Carefully is an adverb → more carefully than ..."
+        },
+        {
+          "type": "open",
+          "question": "19. The meeting took ____ (long) we expected.",
+          "answers": [
+            "longer than"
+          ],
+          "explanation": "Comparative with than + clause: longer than we expected."
+        },
+        {
+          "type": "open",
+          "question": "20. This year's results are ____ (slightly / good) last year's.",
+          "answers": [
+            "slightly better than",
+            "a bit better than"
+          ],
+          "explanation": "Use a small degree adverb + better (slightly/a bit better than)."
+        }
+      ]
+    },
+    "superlatives": {
+      "title": "Practice: Superlatives",
+      "questions": [
+        {
+          "type": "open",
+          "question": "21. She is ____ (tall) girl in the class.",
+          "answers": [
+            "the tallest"
+          ],
+          "explanation": "Tall → the tallest (superlative with the)."
+        },
+        {
+          "type": "open",
+          "question": "22. This is ____ (good) restaurant in town.",
+          "answers": [
+            "the best"
+          ],
+          "explanation": "Good → the best (irregular superlative)."
+        },
+        {
+          "type": "open",
+          "question": "23. That was the ____ (bad) exam I've ever done.",
+          "answers": [
+            "worst"
+          ],
+          "explanation": "Superlative of bad → worst (the worst exam)."
+        },
+        {
+          "type": "open",
+          "question": "24. It’s ____ (interesting) book I've ever read.",
+          "answers": [
+            "the most interesting",
+            "the most interesting book I've ever read.",
+            "the most interesting book I have ever read.",
+            "the most interesting book I’ve ever read."
+          ],
+          "explanation": "Long adjective → the most interesting (superlative) + I've ever read."
+        },
+        {
+          "type": "open",
+          "question": "25. January is usually ____ (cold) month of the year here.",
+          "answers": [
+            "the coldest"
+          ],
+          "explanation": "Cold → the coldest."
+        },
+        {
+          "type": "open",
+          "question": "26. This question is ____ (difficult) one in the test.",
+          "answers": [
+            "the most difficult"
+          ],
+          "explanation": "Difficult → the most difficult (long adjective)."
+        },
+        {
+          "type": "open",
+          "question": "27. Of all the villages around here, he lives in ____ (far) from the city.",
+          "answers": [
+            "the farthest",
+            "the furthest"
+          ],
+          "explanation": "Superlative (comparing all villages): far → the farthest / the furthest."
+        },
+        {
+          "type": "open",
+          "question": "28. This is one of ____ (expensive) hotels in the city.",
+          "answers": [
+            "the most expensive"
+          ],
+          "explanation": "Pattern: one of the + superlative plural → one of the most expensive hotels."
+        }
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Error correction – Comparatives",
+      "questions": [
+        {
+          "type": "open",
+          "question": "1. Wrong: 'This exercise is more easier than the last one.' Correct the sentence.",
+          "answers": [
+            "This exercise is easier than the last one.",
+            "This exercise is easier than the last one"
+          ],
+          "explanation": "Don't use more + -er together. Just easier."
+        },
+        {
+          "type": "open",
+          "question": "2. Wrong: 'He is more tall than his brother.' Correct the sentence.",
+          "answers": [
+            "He is taller than his brother.",
+            "He is taller than his brother"
+          ],
+          "explanation": "Tall is short → taller than, not more tall than."
+        },
+        {
+          "type": "open",
+          "question": "3. Wrong: 'Today is more cold than yesterday.' Correct the sentence.",
+          "answers": [
+            "Today is colder than yesterday.",
+            "Today is colder than yesterday"
+          ],
+          "explanation": "Cold is short → colder than, not more cold than."
+        },
+        {
+          "type": "open",
+          "question": "4. Wrong: 'Prague is more small than London.' Correct the sentence.",
+          "answers": [
+            "Prague is smaller than London.",
+            "Prague is smaller than London"
+          ],
+          "explanation": "Small is short → smaller than, not more small than."
+        },
+        {
+          "type": "open",
+          "question": "5. Wrong: 'This problem is worser than the last one.' Correct the sentence.",
+          "answers": [
+            "This problem is worse than the last one.",
+            "This problem is worse than the last one"
+          ],
+          "explanation": "Bad → worse, not worser."
+        },
+        {
+          "type": "open",
+          "question": "6. Wrong: 'She is not so tall like her brother.' Correct the sentence.",
+          "answers": [
+            "She is not as tall as her brother.",
+            "She is not as tall as her brother"
+          ],
+          "explanation": "Pattern: not as + adjective + as (not so ... like)."
+        },
+        {
+          "type": "open",
+          "question": "7. Wrong: 'This road is the more dangerous than that one.' Correct the sentence.",
+          "answers": [
+            "This road is more dangerous than that one.",
+            "This road is more dangerous than that one"
+          ],
+          "explanation": "Comparative: more dangerous than (no the before a simple comparative)."
+        },
+        {
+          "type": "open",
+          "question": "8. Wrong: 'Her English is better than my sister.' Correct the sentence.",
+          "answers": [
+            "Her English is better than my sister's.",
+            "Her English is better than my sister's English."
+          ],
+          "explanation": "We compare English with English: better than my sister's (English)."
+        }
+      ]
+    },
+    "mc": {
+      "title": "Practice: Comparatives and Superlatives (multiple choice)",
+      "questions": []
+    }
+  }
+}

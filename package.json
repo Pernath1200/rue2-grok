@@ -1,0 +1,35 @@
+{
+  "name": "rue2.cz",
+  "version": "1.0.0",
+  "description": "Upper-intermediate grammar practice for Czech learners (B1–B2): tenses, prepositions, relative pronouns, will vs going to, infinitive vs -ing.",
+  "main": "audit_questions.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/validate-data.js && node test/validate-schemas.js",
+    "test:e2e": "npx playwright test",
+    "audit": "node audit_questions.js",
+    "validate": "node test/validate-data.js",
+    "validate:schema": "node test/validate-schemas.js",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pernath1200/tenses-quiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Pernath1200/tenses-quiz/issues"
+  },
+  "homepage": "https://github.com/Pernath1200/tenses-quiz#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "ajv": "^8.18.0",
+    "esbuild": "^0.27.4"
+  }
+}

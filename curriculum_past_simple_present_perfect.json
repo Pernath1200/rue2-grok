@@ -1,0 +1,352 @@
+{
+  "intro": {
+    "title": "Past Simple vs Present Perfect",
+    "sections": [
+      {
+        "title": "What are we comparing?",
+        "content": "**Past simple** (*I went, she finished*) talks about a **finished time** in the past. **Present perfect** (*I have been, she has finished*) **links the past to now** — no specific past time, or the result is still relevant. The choice often depends on **time words**: *yesterday, last week, in 2019* → past simple. *Ever, never, just, yet, already, since, for* (with present meaning) → often present perfect."
+      },
+      {
+        "title": "When we use past simple",
+        "content": "The time is **finished and stated or clear**: *I saw him yesterday. She left in 2020.*\nWe ask **when** something happened: *When did you go? What time did it start?*\nWe tell a **story or sequence** of past events: *I got up, had breakfast, and left.*\nTypical time expressions: *yesterday, last week/month/year, ago, in 2019, when I was young.*"
+      },
+      {
+        "title": "When we use present perfect",
+        "content": "The exact time is **not important or not said**: *I've been to Japan. She's lost her keys.*\nThe result is **still relevant now**: *I've broken my phone* (it's still broken).\nWe talk about **life experience**: *Have you ever tried sushi?*\nWith **for/since** (duration up to now): *I've lived here for five years.*\nTypical time expressions: *ever, never, just, already, yet, for, since, so far, up to now.*"
+      },
+      {
+        "title": "Past simple vs present perfect",
+        "content": "",
+        "diagram": {
+          "type": "comparison",
+          "title": "Past simple vs present perfect",
+          "left": {
+            "title": "Past Simple",
+            "points": [
+              "Finished past time",
+              "yesterday, last week, ago, in 2019",
+              "When did you go?",
+              "Sequence: got up, had breakfast, left",
+              "Form: did / went / saw"
+            ]
+          },
+          "right": {
+            "title": "Present Perfect",
+            "points": [
+              "Linked to now, no specific time",
+              "ever, never, just, yet, already",
+              "Have you ever been to …?",
+              "for / since (still true now)",
+              "Form: have/has + past participle"
+            ]
+          }
+        }
+      },
+      {
+        "title": "Typical errors",
+        "content": "**Ever/never:** Wrong: *I never saw him.* Right: *I've never seen him.* (life experience → present perfect)\n**Finished time:** Wrong: *I have seen him yesterday.* Right: *I saw him yesterday.*\n**When?:** Wrong: *When have you been to London?* Right: *When did you go to London?* (*When?* → past simple)\n**For/since (still true):** Wrong: *I lived here since 2020.* Right: *I've lived here since 2020.*\n**Tip:** *Yesterday, ago, last week, when?* → past simple. *Ever, never, yet, for, since (until now)* → present perfect."
+      },
+      {
+        "title": "Reference",
+        "content": "For more on past tense forms, see the Past Simple and Past Continuous topic under Choose Grammar Topic."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which sentence is correct?",
+        "options": {
+          "a": "I saw him yesterday.",
+          "b": "I have seen him yesterday.",
+          "c": "I have seen him when?",
+          "d": "I saw him ever."
+        },
+        "correct_option": "a",
+        "explanation": "Yesterday is a finished past time → past simple."
+      },
+      {
+        "type": "mc",
+        "question": "We want to ask about life experience (no specific time). Which is natural?",
+        "options": {
+          "a": "Did you ever go to Paris?",
+          "b": "Do you ever go to Paris?",
+          "c": "Have you ever been to Paris?",
+          "d": "Were you ever in Paris?"
+        },
+        "correct_option": "c",
+        "explanation": "Ever (life experience) → present perfect."
+      },
+      {
+        "type": "mc",
+        "question": "She moved here in 2020 and still lives here. Which is correct?",
+        "options": {
+          "a": "She lived here since 2020.",
+          "b": "She lives here since 2020.",
+          "c": "She has lived here in 2020.",
+          "d": "She has lived here since 2020."
+        },
+        "correct_option": "d",
+        "explanation": "Since + duration up to now → present perfect."
+      },
+      {
+        "type": "mc",
+        "question": "We want to know when something happened. Which is natural?",
+        "options": {
+          "a": "When have you left?",
+          "b": "When do you leave?",
+          "c": "When have you been leaving?",
+          "d": "When did you leave?"
+        },
+        "correct_option": "d",
+        "explanation": "When (specific past time) → past simple."
+      }
+    ]
+  },
+  "practice_order": [
+    "mc"
+  ],
+  "practice": {
+    "mc": {
+      "title": "Practice: Past simple vs Present perfect (multiple choice)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "Which is correct?",
+          "options": {
+            "a": "I have been to the cinema yesterday.",
+            "b": "I went to the cinema yesterday.",
+            "c": "I have gone to the cinema yesterday.",
+            "d": "I go to the cinema yesterday."
+          },
+          "correct_option": "b",
+          "explanation": "Yesterday → past simple."
+        },
+        {
+          "type": "mc",
+          "question": "'She ____ last month.' (She left and is gone.) Which fits?",
+          "options": {
+            "a": "has left",
+            "b": "left",
+            "c": "has been leaving",
+            "d": "leaves"
+          },
+          "correct_option": "b",
+          "explanation": "Last month = finished time → past simple."
+        },
+        {
+          "type": "mc",
+          "question": "'I ____ never ____ him.' (life experience) Which fits?",
+          "options": {
+            "a": "did / see",
+            "b": "have / seen",
+            "c": "have / saw",
+            "d": "did / seen"
+          },
+          "correct_option": "b",
+          "explanation": "Never (life experience) → present perfect."
+        },
+        {
+          "type": "mc",
+          "question": "'We ____ here for five years.' (We still live here.) Which fits?",
+          "options": {
+            "a": "lived",
+            "b": "have lived",
+            "c": "live",
+            "d": "were living"
+          },
+          "correct_option": "b",
+          "explanation": "For + duration up to now → present perfect."
+        },
+        {
+          "type": "mc",
+          "question": "Which is wrong?",
+          "options": {
+            "a": "When did you start your job?",
+            "b": "Have you ever been to Japan?",
+            "c": "I have seen him yesterday.",
+            "d": "She has lived here since 2020."
+          },
+          "correct_option": "c",
+          "explanation": "Yesterday → past simple, not present perfect."
+        },
+        {
+          "type": "mc",
+          "question": "'Just' (recently, result now) usually takes:",
+          "options": {
+            "a": "past simple",
+            "b": "present perfect",
+            "c": "past continuous",
+            "d": "present continuous"
+          },
+          "correct_option": "b",
+          "explanation": "Just (recent past, result now) → present perfect."
+        }
+      ]
+    },
+    "gapfill": {
+      "title": "Practice: Gap fill (Past simple vs Present perfect)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "I ____ (see) that film last week.",
+          "answers": [
+            "saw"
+          ],
+          "explanation": "Last week = finished past time → past simple."
+        },
+        {
+          "type": "open",
+          "question": "She ____ (live) in London for three years. (She still lives there.)",
+          "answers": [
+            "has lived"
+          ],
+          "explanation": "For + duration up to now → present perfect."
+        },
+        {
+          "type": "open",
+          "question": "____ you ever ____ (be) to Japan?",
+          "answers": [
+            "have you ever been"
+          ],
+          "explanation": "Ever (life experience) → present perfect."
+        },
+        {
+          "type": "open",
+          "question": "They ____ (go) home an hour ago.",
+          "answers": [
+            "went"
+          ],
+          "explanation": "Ago = finished past time → past simple."
+        },
+        {
+          "type": "open",
+          "question": "I ____ (just / finish) my homework.",
+          "answers": [
+            "have just finished",
+            "have just finished my homework"
+          ],
+          "explanation": "Just (recent, result now) → present perfect."
+        },
+        {
+          "type": "open",
+          "question": "When ____ you ____ (start) learning English?",
+          "answers": [
+            "did you start"
+          ],
+          "explanation": "When (specific time) → past simple."
+        }
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Error correction (Past simple vs Present perfect)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'I have been to the cinema yesterday.' Correct the sentence.",
+          "answers": [
+            "i went to the cinema yesterday",
+            "I went to the cinema yesterday.",
+            "I went to the cinema yesterday"
+          ],
+          "explanation": "Yesterday → past simple."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She has left last month.' Correct the sentence.",
+          "answers": [
+            "she left last month",
+            "She left last month.",
+            "She left last month"
+          ],
+          "explanation": "Last month → past simple."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'Did you ever try Indian food?' (asking about life experience) Correct the sentence.",
+          "answers": [
+            "have you ever tried indian food",
+            "Have you ever tried Indian food?",
+            "Have you ever tried Indian food"
+          ],
+          "explanation": "Ever (life experience) → present perfect."
+        }
+      ]
+    },
+    "makesentence": {
+      "title": "Practice: Making sentences (Past simple vs Present perfect)",
+      "questions": [
+        {
+          "type": "makesentence",
+          "prompt": "you / see / film / last week",
+          "answers": [
+            "I saw the film last week.",
+            "I saw a film last week."
+          ],
+          "explanation": "Last week → past simple."
+        },
+        {
+          "type": "makesentence",
+          "prompt": "she / live / here / five years (still lives here)",
+          "answers": [
+            "She has lived here for five years.",
+            "She's lived here for five years."
+          ],
+          "explanation": "Duration up to now → present perfect."
+        },
+        {
+          "type": "makesentence",
+          "prompt": "you / ever / be / New York (form the question)",
+          "answers": [
+            "Have you ever been to New York?",
+            "Have you ever been to New York"
+          ],
+          "explanation": "Life experience question: Have you ever been to ...? (ever with present perfect)."
+        },
+        {
+          "type": "makesentence",
+          "prompt": "they / just / arrive",
+          "answers": [
+            "They have just arrived.",
+            "They've just arrived."
+          ],
+          "explanation": "Just (recent) → present perfect."
+        }
+      ]
+    },
+    "makequestion": {
+      "title": "Practice: Making questions (Past simple vs Present perfect)",
+      "questions": [
+        {
+          "type": "makequestion",
+          "prompt": "when / you / start / job",
+          "answers": [
+            "When did you start your job?",
+            "When did you start the job?"
+          ],
+          "explanation": "When (specific time) → past simple."
+        },
+        {
+          "type": "makequestion",
+          "prompt": "they / ever / be / Australia",
+          "answers": [
+            "Have they ever been to Australia?",
+            "Have they ever been to Australia"
+          ],
+          "explanation": "Ever (life experience) → present perfect."
+        },
+        {
+          "type": "makequestion",
+          "prompt": "how long / she / have / car",
+          "answers": [
+            "How long has she had the car?",
+            "How long has she had her car?"
+          ],
+          "explanation": "How long (duration up to now) → present perfect."
+        }
+      ]
+    }
+  }
+}

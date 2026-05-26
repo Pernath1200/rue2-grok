@@ -1,0 +1,53 @@
+---
+description: Quality checks for grammar questions in Further Practice (questions.json)
+globs: questions.json
+alwaysApply: false
+---
+
+# Grammar Question Quality Rules
+
+When adding or editing questions in `questions.json` (Further Practice sets):
+
+## Gap-fill questions
+
+1. **Full sentence with clear blank.** Use `____` for the gap. Avoid bare fragments like `____ (go)` with no surrounding sentence.
+2. **Clear instruction.** Add a task, e.g. "Put the verb in the correct tense.", "Fill in the auxiliary and use the correct form of the verb."
+3. **Context.** The sentence should be a complete, natural utterance a B2 learner might encounter.
+
+Example: `"She ____ (not / like) coffee. Put the correct form (negative present simple)."`
+
+## Error-correction questions
+
+1. **Complete wrong sentence.** The "Wrong:" text must be a full, plausible sentence a B2 learner might write, not a bare fragment.
+   - Poor: `"Wrong: 'Is raining.'"` (no subject, not a real sentence)
+   - Better: `"Wrong: 'When I arrived, was raining.'"` (full context)
+2. **Real error.** The wrong sentence must contain a genuine grammar/spelling/punctuation mistake to correct.
+3. **Instruction.** Use "Correct the sentence." or "Add the correct punctuation."
+
+## Numbering and format
+
+- Use consistent numbering within each set: `"1."`, `"2."`, etc.
+- Answers array: include the correct form(s). Where the app accepts both with and without a full stop, include both variants.
+
+## Explanations
+
+- Short, rule-focused (one or two sentences).
+- Cite the pattern or rule (e.g. "Third person singular negative → **doesn't** + base form.")
+- Avoid long-winded or vague explanations.
+
+## Checklist before adding
+
+- [ ] Full sentence context (no bare fragments)
+- [ ] Clear instruction for the learner
+- [ ] Correct answer(s) in the answers array (include with and without full stop if the app accepts both)
+- [ ] No duplicate target pattern within the same set
+- [ ] Explanation cites the relevant rule
+
+## Quick audit
+
+To verify question counts per topic:  
+`node -e "const d=require('./questions.json'); Object.keys(d).filter(k=>d[k]&&d[k].set1&&Array.isArray(d[k].set1.questions)).forEach(k=>console.log(k+': '+d[k].set1.questions.length))"`
+
+## Related
+
+- **Curriculum intro cards** (guided Part 1 screens) and overall UX principles: see `RUE2_CURSOR_PLAN.md` → **Design Principles & Intro Card Schema**. This rule file stays scoped to **questions.json** Further Practice items; there is no conflict—different content surfaces.

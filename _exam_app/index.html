@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <title>Exam-style practice (separate bundle)</title>
+  <style>
+    :root {
+      --bg: #1a1b26;
+      --surface: #24283b;
+      --text: #c0caf5;
+      --muted: #9ca0b8;
+      --correct: #7eb87a;
+      --wrong: #e8a498;
+      --accent: #2563eb;
+      --radius: 8px;
+    }
+    /* Dark/minimal theme */
+    body.theme-cursor {
+      --bg: #0d0d0d;
+      --surface: #141414;
+      --text: #ffffff;
+      --muted: #a0a0a0;
+      --correct: #22c55e;
+      --wrong: #ef4444;
+      --accent: #569cd6;
+    }
+    body.theme-cursor { padding: 0.5rem; }
+    body.theme-cursor .card { padding: 1rem; margin-bottom: 0.75rem; }
+    body.theme-cursor button { border-color: var(--accent); background: transparent; }
+    body.theme-cursor button.secondary { border-color: var(--accent); background: transparent; }
+    body.theme-cursor input,
+    body.theme-cursor select { border-color: var(--accent); }
+    body.theme-cursor .option { border-color: rgba(86, 156, 214, 0.5); color: #fff; }
+    body.theme-cursor .option span { color: #fff; }
+    body.theme-cursor .option:hover,
+    body.theme-cursor .option.selected { border-color: var(--accent); }
+    body.theme-light {
+      --bg: #f3f4f6;
+      --surface: #ffffff;
+      --text: #1a1b26;
+      --muted: #6b7280;
+      --correct: #16a34a;
+      --wrong: #dc2626;
+      --accent: #2563eb;
+    }
+    body.theme-light button { border-color: rgba(37, 99, 235, 0.4); }
+    body.theme-light button.secondary { border-color: rgba(37, 99, 235, 0.3); background: rgba(37, 99, 235, 0.06); }
+    body.theme-light input,
+    body.theme-light select { border-color: rgba(37, 99, 235, 0.35); }
+    body.theme-light .option { border-color: #d1d5db; }
+    body.theme-light .option:hover,
+    body.theme-light .option.selected { border-color: var(--accent); }
+    body.theme-light .divider { border-top-color: #d1d5db; }
+    body.theme-light .card { box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 1rem;
+      min-height: 100vh;
+    }
+    .container { max-width: min(96vw, 120rem); margin: 0 auto; }
+    .hero-stack {
+      max-width: none;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2.5rem 1rem 2.5rem; /* top 2.2–2.8rem, bottom 2.2–2.8rem */
+    }
+    /* Narrow layout when menu or content (intro/quiz/exam) is visible */
+    .container:has(#menuScreen:not(.hidden)) { max-width: min(96vw, 600px); }
+    .container:has(#introScreen:not(.hidden)) { max-width: min(96vw, 600px); }
+    .container:has(#quizScreen:not(.hidden)) { max-width: min(96vw, 600px); }
+    .container:has(#sectionCompleteScreen:not(.hidden)) { max-width: min(96vw, 600px); }
+    .container:has(#resultScreen:not(.hidden)) { max-width: min(96vw, 600px); }
+    .container:has(#prepositionsListScreen:not(.hidden)) { max-width: min(96vw, 600px); }
+    .container:has(#phrasalVerbsDictionaryScreen:not(.hidden)) { max-width: min(96vw, 600px); }
+    .container:has(#referenceScreen:not(.hidden)) { max-width: min(96vw, 600px); }
+    .container:has(#examClozeTestScreen:not(.hidden)) { max-width: min(96vw, 37.5rem); }
+    .container:has(#examTransformTestScreen:not(.hidden)) { max-width: min(96vw, 37.5rem); }
+    .hero-stack:has(#menuScreen:not(.hidden)) { max-width: min(96vw, 37.5rem); }
+    .hero-stack:has(#introScreen:not(.hidden)) { max-width: min(96vw, 37.5rem); }
+    .hero-stack:has(#quizScreen:not(.hidden)) { max-width: min(96vw, 37.5rem); }
+    .hero-stack:has(#sectionCompleteScreen:not(.hidden)) { max-width: min(96vw, 37.5rem); }
+    .hero-stack:has(#resultScreen:not(.hidden)) { max-width: min(96vw, 37.5rem); }
+    .hero-stack:has(#prepositionsListScreen:not(.hidden)) { max-width: min(96vw, 37.5rem); }
+    .hero-stack:has(#phrasalVerbsDictionaryScreen:not(.hidden)) { max-width: min(96vw, 37.5rem); }
+    .hero-stack:has(#referenceScreen:not(.hidden)) { max-width: min(96vw, 37.5rem); }
+    .hero-stack:has(#examClozeTestScreen:not(.hidden)) { max-width: min(96vw, 37.5rem); }
+    .hero-stack:has(#examTransformTestScreen:not(.hidden)) { max-width: min(96vw, 37.5rem); }
+    .hero-stack #menuScreen {
+      padding: 2.2rem 1.25rem;
+      margin-bottom: 0;
+    }
+    .hero-stack #menuMain .actions {
+      margin-bottom: 1.5rem; /* gap between 3 main buttons: 1.4–1.7rem */
+    }
+    .hero-stack #menuMain .actions button {
+      margin-top: 0;
+      padding: 1.2rem 2rem; /* 1.15–1.3rem vertical × 2rem horizontal */
+    }
+    .hero-stack #menuMain hr {
+      margin: 1.5rem 0;
+    }
+    .hero-stack #menuMain > button {
+      margin-top: 1.5rem;
+      padding: 1.2rem 2rem;
+    }
+    .hero-stack #menuMain .memory-bank {
+      margin-top: 1.5rem;
+    }
+    .hero-stack #referenceBtnWrap {
+      margin-top: 3rem; /* 2.8–3.3rem gap to Reference */
+    }
+    .hero-stack:has(#introScreen:not(.hidden)) #referenceBtnWrap {
+      margin-top: 0.75rem;
+    }
+    .hero-stack:has(#sectionCompleteScreen:not(.hidden)) #referenceBtnWrap,
+    .hero-stack:has(#resultScreen:not(.hidden)) #referenceBtnWrap,
+    .hero-stack:has(#prepositionsListScreen:not(.hidden)) #referenceBtnWrap,
+    .hero-stack:has(#phrasalVerbsDictionaryScreen:not(.hidden)) #referenceBtnWrap {
+      margin-top: 0.75rem;
+    }
+    .hero-stack #referenceBtnWrap button {
+      padding: 1.2rem 2rem;
+    }
+    @media (max-height: 720px) {
+      .hero-stack { padding: 1.75rem 1rem 1.75rem; }
+      .hero-stack #menuScreen { padding: 1.75rem 1.25rem; }
+      .hero-stack #menuMain .actions { margin-bottom: 1.25rem; }
+      .hero-stack #menuMain hr { margin: 1.25rem 0; }
+      .hero-stack #menuMain > button { margin-top: 1.25rem; padding: 1.1rem 2rem; }
+      .hero-stack #menuMain .actions button { padding: 1.1rem 2rem; }
+      .hero-stack #menuMain .memory-bank { margin-top: 1.25rem; }
+      .hero-stack #referenceBtnWrap { margin-top: 2.25rem; }
+    .hero-stack:has(#introScreen:not(.hidden)) #referenceBtnWrap,
+    .hero-stack:has(#sectionCompleteScreen:not(.hidden)) #referenceBtnWrap,
+    .hero-stack:has(#resultScreen:not(.hidden)) #referenceBtnWrap,
+    .hero-stack:has(#prepositionsListScreen:not(.hidden)) #referenceBtnWrap,
+    .hero-stack:has(#phrasalVerbsDictionaryScreen:not(.hidden)) #referenceBtnWrap { margin-top: 0.75rem; }
+      .hero-stack #referenceBtnWrap button { padding: 1.1rem 2rem; }
+    }
+    h1 { font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--accent); }
+    .sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      max-width: min(96vw, 37.5rem);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #menuScreen {
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    #referenceBtnWrap {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    label { display: block; margin-bottom: 0.25rem; color: var(--muted); font-size: 0.85rem; }
+    select, input[type="number"], button {
+      width: 100%;
+      padding: 0.6rem;
+      border-radius: var(--radius);
+      border: 1px solid rgba(86, 95, 137, 0.5);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 1rem;
+    }
+    button {
+      cursor: pointer;
+      background: rgba(37, 99, 235, 0.12);
+      border: 1px solid rgba(37, 99, 235, 0.35);
+      color: var(--text);
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+    #menuScreen button { margin-top: 0.35rem; }
+    button:hover { filter: brightness(1.1); }
+    button.secondary { background: rgba(37, 99, 235, 0.12); color: var(--text); border: 1px solid rgba(37, 99, 235, 0.35); }
+    .scores { font-size: 0.9rem; color: var(--muted); margin-bottom: 1rem; }
+    .question-block { margin-bottom: 1.5rem; }
+    .question-text { white-space: pre-line; margin-bottom: 0.75rem; line-height: 1.5; }
+    .options { display: flex; flex-direction: column; gap: 0.5rem; border: none; padding: 0; margin: 0; }
+    .options legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+    .option {
+      padding: 0.6rem;
+      min-height: 44px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(86, 95, 137, 0.5);
+      background: var(--bg);
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .option input[type="radio"] { position: absolute; opacity: 0; width: 0; height: 0; }
+    .option:hover { border-color: var(--accent); }
+    .option.selected { border-color: var(--accent); background: rgba(37, 99, 235, 0.2); }
+    .option.correct { border-color: var(--correct); background: rgba(126, 184, 122, 0.15); }
+    .option.wrong { border-color: var(--wrong); background: rgba(232, 164, 152, 0.15); }
+    .explanation { margin-top: 0.75rem; padding: 0.75rem; background: var(--bg); border-radius: var(--radius); font-size: 0.9rem; color: var(--text); }
+    .correct-answer-line { margin: 0.5rem 0 0; padding: 0.5rem; background: rgba(126, 184, 122, 0.12); border-radius: var(--radius); color: var(--text); font-size: 0.95rem; }
+    .explanation-label { margin: 0.5rem 0 0; font-weight: 600; font-size: 0.9rem; color: var(--text); }
+    .result-ok { color: var(--correct); }
+    .result-fail { color: var(--wrong); }
+    .progress { margin-bottom: 1rem; color: var(--muted); font-size: 0.9rem; }
+    #quizScreen #progress { max-width: min(96vw, 37.5rem); margin: 0 auto 0.5rem; }
+    #quizScreen .quiz-nav-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem; max-width: min(96vw, 37.5rem); margin-left: auto; margin-right: auto; }
+    #quizScreen .quiz-nav-row #exitQuizBtn,
+    #quizScreen .quiz-nav-row #quizMainMenuBtn { flex: 1 1 calc(50% - 0.25rem); margin-top: 0; }
+    .topic-label { display: block; font-size: 0.85rem; color: var(--accent); margin-bottom: 0.35rem; font-weight: 600; }
+    .topic-label.diagnostic-topic-link { cursor: pointer; text-decoration: underline; }
+    .topic-label.diagnostic-topic-link:hover { opacity: 0.9; }
+    .question-block-flag-row { display: flex; justify-content: flex-end; margin-bottom: 0.35rem; }
+    .flag-question-btn { font-size: 0.8rem; padding: 0.35rem 0.6rem; border: 1px solid rgba(220, 80, 80, 0.8); background: rgba(220, 80, 80, 0.1); color: var(--text); border-radius: var(--radius); white-space: nowrap; }
+    .flag-question-btn:hover { background: rgba(220, 80, 80, 0.2); border-color: rgba(220, 80, 80, 1); }
+    input[type="text"] { width: 100%; padding: 0.6rem; border-radius: var(--radius); border: 1px solid rgba(86, 95, 137, 0.5); background: var(--bg); color: var(--text); }
+    .summary { margin-top: 1.5rem; padding: 1rem; background: var(--surface); border-radius: var(--radius); font-size: 0.9rem; line-height: 1.6; }
+    .hidden { display: none !important; }
+    @keyframes screen-fade-in { from { opacity: 0; } to { opacity: 1; } }
+    .screen-enter { animation: screen-fade-in 0.15s ease; }
+    .score-chart { display: flex; align-items: flex-end; justify-content: stretch; gap: 4px; margin: 0.5rem 0 0.25rem; }
+    .score-chart-col { flex: 1; min-width: 28px; display: flex; flex-direction: column; align-items: stretch; gap: 0.2rem; }
+    .score-chart-bar-track { height: 56px; position: relative; width: 100%; flex-shrink: 0; }
+    .score-bar {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      min-height: 4px; border-radius: 3px 3px 0 0;
+      transition: height 0.2s ease;
+      background: var(--border);
+      border: 1px solid color-mix(in srgb, var(--text) 12%, var(--border));
+      box-sizing: border-box;
+    }
+    .score-chart-meta { text-align: center; line-height: 1.15; }
+    .score-chart-score { font-size: 0.65rem; color: var(--text); font-variant-numeric: tabular-nums; }
+    .score-chart-date { font-size: 0.6rem; color: var(--muted); }
+    .score-chart-label { font-size: 0.75rem; color: var(--muted); margin-bottom: 0.15rem; }
+    .score-chart-hint { font-size: 0.7rem; color: var(--muted); margin: 0 0 0.35rem 0; line-height: 1.35; }
+    .actions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+    .actions button { flex: 1; min-width: 140px; }
+    .progress-card { margin-top: 1rem; }
+    .progress-card h3 { font-size: 1rem; color: var(--accent); margin-bottom: 0.5rem; }
+    .progress-stats { display: grid; gap: 0.5rem; font-size: 0.9rem; color: var(--muted); }
+    .progress-stats span { color: var(--text); }
+    .history-line { font-size: 0.85rem; padding: 0.25rem 0; border-bottom: 1px solid var(--bg); }
+    .memory-bank { margin-top: 1rem; }
+    .memory-bank h3 { font-size: 1rem; color: var(--accent); margin-bottom: 0.5rem; }
+    .memory-bank p { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.5rem; }
+    .tab-row { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+    .tab-row button { margin-top: 0; flex: none; }
+    .tab-row button.active { background: var(--muted); color: var(--text); }
+
+    .intro-section { white-space: pre-line; line-height: 1.6; margin-bottom: 1rem; }
+    .intro-section h3 { font-size: 1rem; color: var(--accent); margin-bottom: 0.5rem; }
+    .intro-card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+    .intro-card-header #introTitle { margin: 0; flex: 1; min-width: 0; font-size: 1.25rem; }
+    .intro-page-indicator { font-size: 0.8rem; color: var(--muted); flex-shrink: 0; font-variant-numeric: tabular-nums; line-height: 1.4; padding-top: 0.15rem; }
+    .intro-content-link { color: var(--accent); text-decoration: underline; text-underline-offset: 0.12em; cursor: pointer; }
+    .intro-content-link:hover { filter: brightness(1.08); }
+    .intro-strike { text-decoration: line-through; text-decoration-thickness: 1px; color: var(--muted); }
+    #introScreen .card { margin-bottom: 1rem; display: flex; flex-direction: column; height: 80vh; min-height: 20rem; }
+    #introScreen .card .intro-content-scroll { flex: 1; min-height: 0; overflow-y: auto; }
+    #introScreen .card .intro-button-row,
+    #introScreen .card #introOpenClozeRefBar,
+    #introScreen .card #introReportedSpeechRefBar { flex-shrink: 0; }
+    #introScreen .intro-button-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    #introScreen .intro-button-row #introBackBtn,
+    #introScreen .intro-button-row #introNextBtn { flex: 1 1 calc(50% - 0.25rem); }
+    #introScreen .intro-button-row #introMainMenuBtn { flex: 1 1 100%; }
+    .prepositions-list-card h3 { font-size: 1rem; color: var(--accent); margin: 1rem 0 0.5rem 0; }
+    .prepositions-list-card .list-words { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.5rem; }
+    .prepositions-list-card .list-words span { background: var(--bg); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.9rem; }
+    .reference-phrasal-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .reference-phrasal-table th, .reference-phrasal-table td { border: 1px solid rgba(86, 95, 137, 0.5); padding: 0.4rem 0.6rem; text-align: left; vertical-align: top; }
+.reference-phrasal-table th { background: var(--bg); color: var(--accent); font-weight: 600; }
+.reference-phrasal-table td, .reference-phrasal-table th { overflow-wrap: break-word; word-break: break-word; }
+    .exam-cloze-passage { overflow-wrap: break-word; }
+    .exam-cloze-passage input[type="text"] { width: 6em; min-width: 4em; margin: 0 0.2rem; padding: 0.25rem 0.35rem; font-size: 1rem; }
+    .exam-cloze-passage input.correct { border: 1px solid #2e7d32; background: rgba(46,125,50,0.15); }
+    .exam-cloze-passage input.wrong { border: 1px solid #c62828; background: rgba(198,40,40,0.1); }
+    .exam-cloze-topic-link { color: var(--accent); text-decoration: underline; cursor: pointer; }
+    .exam-cloze-topic-link:hover { opacity: 0.9; }
+    .exam-cloze-mc-row { margin: 0.4rem 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; }
+    .exam-cloze-mc-row .option { display: inline-block; padding: 0.25rem 0.5rem; cursor: pointer; border: 1px solid rgba(86,95,137,0.5); border-radius: 4px; }
+    .exam-cloze-mc-row .option.selected { border-color: var(--accent); background: rgba(86,95,137,0.2); }
+    .exam-cloze-mc-row .option.correct { border-color: #2e7d32; background: rgba(46,125,50,0.15); }
+    .exam-cloze-mc-row .option.wrong { border-color: #c62828; background: rgba(198,40,40,0.1); }
+.wrong-example { color: var(--muted); font-size: 0.9em; }
+.wrong-example s { text-decoration: line-through; }
+    .reference-index-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem 0.75rem; max-width: 100%; }
+    @media (max-width: 480px) { .reference-index-grid { grid-template-columns: 1fr; } }
+    body.viewing-reference { padding-top: 0.5rem; }
+    body.viewing-reference h1 { margin-bottom: 0.3rem; }
+    body.viewing-reference .sub { margin-bottom: 0.5rem; font-size: 0.85rem; }
+    body.viewing-reference #referenceScreen .card { padding: 1rem; }
+    body.viewing-reference #referenceScreen h2 { margin: 0 0 0.4rem 0; font-size: 1.1rem; }
+    body.viewing-reference #referenceScreen .reference-index-grid { gap: 0.35rem 0.6rem; }
+    body.viewing-reference #referenceScreen .reference-index-grid button { margin-top: 0; }
+    body.viewing-reference #referenceScreen .actions { margin-top: 0.65rem; }
+    body.viewing-reference .container { max-width: min(96vw, 37.5rem); }
+    body.viewing-content { padding-top: 0.5rem; }
+    body.viewing-content h1 { margin-bottom: 0.3rem; }
+    body.viewing-content .sub { margin-bottom: 0.5rem; font-size: 0.85rem; }
+    body.viewing-content #introScreen .card { padding: 1.25rem; margin-bottom: 0.65rem; }
+    body.viewing-content #introScreen .intro-section { margin-bottom: 0.65rem; font-size: 0.9rem; line-height: 1.5; }
+    body.viewing-content #introScreen .intro-section h3 { margin-bottom: 0.35rem; font-size: 0.95rem; }
+    body.viewing-content #introScreen .diagram { margin: 0.5rem 0 0.35rem; }
+    body.viewing-content #introScreen .diagram-title { font-size: 0.8rem; margin-bottom: 0.35rem; }
+    body.viewing-content #introScreen .diagram-table { font-size: 0.8rem; }
+    body.viewing-content #introScreen .diagram-table th,
+    body.viewing-content #introScreen .diagram-table td { padding: 0.3rem 0.4rem; }
+    body.viewing-content #quizScreen .card { padding: 1.25rem; }
+    body.viewing-content #quizScreen .question-block { margin-bottom: 0.75rem; }
+    body.viewing-content #quizScreen .question-text { margin-bottom: 0.5rem; }
+    body.viewing-content #quizScreen .options { gap: 0.35rem; }
+    body.viewing-content #quizScreen .option { padding: 0.5rem; }
+    body.viewing-content #examClozeTestScreen .card { padding: 1.25rem; }
+    body.viewing-content #examClozeTestScreen .question-block { margin-bottom: 0; }
+    body.viewing-content #examClozeTestScreen #examClozePassage { margin-bottom: 0.75rem; }
+    body.viewing-content #examTransformTestScreen .card { padding: 1.25rem; }
+    body.viewing-content #examTransformTestScreen .question-block { margin-bottom: 0; }
+    body.viewing-content #examTransformItems .card { margin-bottom: 0.5rem; }
+    body.viewing-content .reference-phrasal-table td, body.viewing-content .reference-phrasal-table th { word-break: normal; }
+    .reference-phrasal-table td, .reference-phrasal-table th { word-break: normal; }
+    .diagram-table td, .diagram-table th { word-break: normal; overflow-wrap: break-word; }
+    @media print {
+      body * { visibility: hidden; }
+      .no-print-hide, .no-print-hide * { visibility: visible; }
+      .no-print-hide { position: absolute; left: 0; top: 0; width: 100%; background: white; color: #111; padding: 1rem; }
+      .no-print-hide .actions { display: none !important; }
+    }
+    .diagram { margin: 1rem 0 0.5rem; border-radius: var(--radius); overflow: hidden; }
+    .diagram-title { font-size: 0.85rem; font-weight: 600; color: var(--accent); margin-bottom: 0.5rem; }
+    .diagram-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    .diagram-table th { background: rgba(37, 99, 235, 0.15); color: var(--accent); font-weight: 600; padding: 0.45rem 0.5rem; text-align: left; border: 1px solid rgba(86, 95, 137, 0.35); }
+    .diagram-table td { padding: 0.4rem 0.5rem; border: 1px solid rgba(86, 95, 137, 0.25); vertical-align: top; }
+    .diagram-table tr:nth-child(even) td { background: rgba(37, 99, 235, 0.04); }
+    .diagram-table td.dt-highlight { background: rgba(37, 99, 235, 0.1); font-weight: 600; }
+    .diagram-formula { display: flex; flex-direction: column; gap: 0.5rem; }
+    .diagram-formula-item { background: var(--bg); border: 1px solid rgba(86, 95, 137, 0.35); border-radius: var(--radius); padding: 0.5rem 0.65rem; font-size: 0.85rem; line-height: 1.5; }
+    .diagram-formula-label { font-weight: 600; color: var(--accent); margin-right: 0.4rem; }
+    .diagram-formula-arrow { color: var(--correct); font-weight: 700; margin: 0 0.2rem; }
+    .diagram-comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .diagram-comparison-col { background: var(--bg); border: 1px solid rgba(86, 95, 137, 0.35); border-radius: var(--radius); padding: 0.5rem 0.65rem; }
+    .diagram-comparison-col h4 { font-size: 0.85rem; font-weight: 600; color: var(--accent); margin: 0 0 0.35rem; }
+    .diagram-comparison-col ul { margin: 0; padding-left: 1.1rem; font-size: 0.82rem; line-height: 1.55; }
+    .diagram-comparison-col li { margin-bottom: 0.15rem; }
+    @media (max-width: 420px) { .diagram-comparison { grid-template-columns: 1fr; } }
+    .diagram-timeline { position: relative; display: flex; justify-content: space-between; align-items: flex-start; padding: 1.2rem 0 0; margin-bottom: 0.5rem; min-height: 60px; }
+    .diagram-timeline::before { content: ''; position: absolute; top: 1.2rem; left: 8%; right: 8%; height: 3px; background: rgba(86, 95, 137, 0.5); }
+    .diagram-timeline-point { position: relative; text-align: center; z-index: 1; flex: 1; }
+    .diagram-timeline-marker { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); margin: 0 auto 0.35rem; position: relative; top: -5px; }
+    .diagram-timeline-marker.tl-past { background: var(--muted); }
+    .diagram-timeline-marker.tl-now { background: var(--correct); box-shadow: 0 0 6px rgba(126, 184, 122, 0.5); }
+    .diagram-timeline-marker.tl-future { background: var(--accent); }
+    .diagram-timeline-label { font-size: 0.75rem; font-weight: 600; color: var(--text); }
+    .diagram-timeline-detail { font-size: 0.7rem; color: var(--muted); margin-top: 0.15rem; }
+    .diagram-timeline-span { position: absolute; top: -0.1rem; height: 3px; background: var(--accent); opacity: 0.5; }
+    .diagram-timeline-span-label { position: absolute; top: -1rem; font-size: 0.65rem; color: var(--accent); white-space: nowrap; left: 50%; transform: translateX(-50%); }
+    .divider { border: none; border-top: 1px solid rgba(86, 95, 137, 0.5); margin: 0.5rem 0; }
+    .menu-desc { margin-bottom: 0.5rem; color: var(--muted); font-size: 0.9rem; }
+    .menu-desc-sm { color: var(--muted); font-size: 0.8rem; margin: 0.25rem 0; }
+    .menu-desc-narrow { margin-bottom: 0.4rem; color: var(--muted); font-size: 0.9rem; }
+    .btn-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .mt-sm { margin-top: 0.5rem; }
+    .mt-xs { margin-top: 0.25rem; }
+    .mb-sm { margin-bottom: 0.4rem; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    button:focus-visible { outline-offset: 1px; }
+    input:focus-visible, select:focus-visible { outline-offset: 0; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    button, .option, a { touch-action: manipulation; }
+    #feedbackBlock #nextBtn { position: sticky; bottom: 0; z-index: 5; }
+    .theme-toggle { display: flex; gap: 0.35rem; margin-top: 0.5rem; }
+    .theme-toggle button { font-size: 0.8rem; padding: 0.3rem 0.6rem; }
+    .theme-toggle button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  </style>
+  <meta name="theme-color" content="#569cd6">
+  <link rel="manifest" href="../pwa-manifest.json">
+  <link rel="apple-touch-icon" href="../icon.svg">
+</head>
+<body class="theme-cursor">
+  <h1 class="sr-only">Exam-style practice</h1>
+  <div class="container">
+    <main class="hero-stack">
+    <nav id="menuScreen" class="card" aria-label="Main menu">
+      <div id="menuExamPractice" class="menu-panel">
+        <p class="menu-desc-sm" style="margin-bottom: 0.75rem;"><a href="../index.html">← Main grammar app</a></p>
+        <p class="menu-desc">Choose a task type.</p>
+        <div class="memory-bank" id="memoryBankSummary"></div>
+        <button type="button" id="examOpenClozeBtn">Open Cloze</button>
+        <button type="button" id="examWordFormationBtn" class="secondary">Word Formation</button>
+        <button type="button" id="examSentenceTransformationBtn" class="secondary">Sentence Transformation</button>
+        <button type="button" id="examWritingTipsBtn" class="secondary">Writing Tips</button>
+        <hr class="divider" />
+        <button type="button" id="examPracticeMainMenuBtn" class="secondary mt-sm">Main Menu</button>
+      </div>
+      <div id="menuOpenCloze" class="menu-panel hidden">
+        <p class="menu-desc">Open Cloze: one word per gap. Easy = choose from 4 options. Medium+ = type the word.</p>
+        <button type="button" id="openClozePart1Btn">1: Intro</button>
+        <button type="button" id="openClozePart2Btn" class="secondary mb-sm">2: Multiple Choice</button>
+        <button type="button" id="openClozeFurtherBtn" class="secondary mb-sm">3: Further Practice</button>
+        <hr class="divider" />
+        <button type="button" id="openClozeBackBtn" class="secondary mt-sm">Back to Exam Practice</button>
+        <button type="button" id="openClozeMainMenuBtn" class="secondary mt-xs">Main Menu</button>
+      </div>
+      <div id="menuOpenClozeStep3" class="menu-panel hidden">
+        <p class="menu-desc">Choose how to practise Open Cloze.</p>
+        <button type="button" id="openClozePracticeTestsBtn">Practice tests</button>
+        <p class="menu-desc-sm">Full 150-word texts with 8 gaps (exam format).</p>
+        <button type="button" id="openClozeFreePracticeBtn" class="secondary mt-sm">Free practice</button>
+        <p class="menu-desc-sm">Individual gap-fill sentences (10, 20 or unlimited).</p>
+        <hr class="divider" />
+        <button type="button" id="openClozeStep3BackBtn" class="secondary mt-sm">Back to Open Cloze</button>
+        <button type="button" id="openClozeStep3MainMenuBtn" class="secondary mt-xs">Main Menu</button>
+      </div>
+      <div id="menuOpenClozeFreeSetup" class="menu-panel hidden">
+        <p class="menu-desc">Open Cloze: Free practice</p>
+        <label for="openClozeFreeNumSelect">Number of questions in this session</label>
+        <p id="openClozeFreeSetupHelp" style="margin: 0.25rem 0 0.5rem; color: var(--muted); font-size: 0.85rem;">10 = quick check. 20 = standard practice. Unlimited = keep going until you stop.</p>
+        <select id="openClozeFreeNumSelect">
+          <option value="10">10</option>
+          <option value="20" selected>20</option>
+          <option value="unlimited">Unlimited</option>
+        </select>
+        <div class="btn-row" style="margin-top: 1rem;">
+          <button type="button" id="openClozeFreeSetupBackBtn" class="secondary">Back</button>
+          <button type="button" id="openClozeFreeSetupMainMenuBtn" class="secondary">Main Menu</button>
+          <button type="button" id="openClozeFreeStartBtn">Start</button>
+        </div>
+      </div>
+      <div id="menuOpenClozeFurther" class="menu-panel hidden">
+        <p class="menu-desc-narrow">Practice tests: Easy = choose from 4 options. Medium+ = type one word per gap.</p>
+        <button type="button" id="openClozeEasyBtn">Easy</button>
+        <button type="button" id="openClozeMediumBtn" class="secondary">Medium</button>
+        <button type="button" id="openClozeHardBtn" class="secondary">Hard</button>
+        <button type="button" id="openClozeExpertBtn" class="secondary">Expert</button>
+        <hr class="divider" />
+        <button type="button" id="openClozeFurtherBackBtn" class="secondary mt-sm">Back to Open Cloze</button>
+        <button type="button" id="openClozeFurtherMainMenuBtn" class="secondary mt-xs">Main Menu</button>
+      </div>
+      <div id="menuWordFormation" class="menu-panel hidden">
+        <p class="menu-desc">Word Formation: Use the word in capitals to make a new word for each gap.</p>
+        <button type="button" id="wordFormationPart1Btn">1: Intro</button>
+        <button type="button" id="wordFormationPart2Btn" class="secondary mb-sm">2: Multiple Choice</button>
+        <button type="button" id="wordFormationFurtherBtn" class="secondary mb-sm">3: Further Practice</button>
+        <hr class="divider" />
+        <button type="button" id="wordFormationBackBtn" class="secondary mt-sm">Back to Exam Practice</button>
+        <button type="button" id="wordFormationMainMenuBtn" class="secondary mt-xs">Main Menu</button>
+      </div>
+      <div id="menuWordFormationFurther" class="menu-panel hidden">
+        <p class="menu-desc-narrow">Sample test by difficulty:</p>
+        <button type="button" id="wordFormationEasyBtn">Easy</button>
+        <button type="button" id="wordFormationMediumBtn" class="secondary">Medium</button>
+        <button type="button" id="wordFormationHardBtn" class="secondary">Hard</button>
+        <button type="button" id="wordFormationExpertBtn" class="secondary">Expert</button>
+        <hr class="divider" />
+        <button type="button" id="wordFormationFurtherBackBtn" class="secondary mt-sm">Back to Word Formation</button>
+        <button type="button" id="wordFormationFurtherMainMenuBtn" class="secondary mt-xs">Main Menu</button>
+      </div>
+      <div id="menuSentenceTransform" class="menu-panel hidden">
+        <p class="menu-desc">Part 4: Finish the second sentence. Use the key word. Same meaning as the first.</p>
+        <button type="button" id="sentenceTransformPart1Btn">1: Intro</button>
+        <button type="button" id="sentenceTransformPart2Btn" class="secondary mb-sm">2: Multiple Choice</button>
+        <button type="button" id="sentenceTransformFurtherBtn" class="secondary mb-sm">3: Further Practice</button>
+        <hr class="divider" />
+        <button type="button" id="sentenceTransformBackBtn" class="secondary mt-sm">Back to Exam Practice</button>
+        <button type="button" id="sentenceTransformMainMenuBtn" class="secondary mt-xs">Main Menu</button>
+      </div>
+      <div id="menuSentenceTransformFurther" class="menu-panel hidden">
+        <p class="menu-desc-narrow">Sample test by difficulty:</p>
+        <button type="button" id="sentenceTransformEasyBtn">Easy</button>
+        <button type="button" id="sentenceTransformMediumBtn" class="secondary">Medium</button>
+        <button type="button" id="sentenceTransformHardBtn" class="secondary">Hard</button>
+        <button type="button" id="sentenceTransformExpertBtn" class="secondary">Expert</button>
+        <hr class="divider" />
+        <button type="button" id="sentenceTransformFurtherBackBtn" class="secondary mt-sm">Back to Sentence Transformation</button>
+        <button type="button" id="sentenceTransformFurtherMainMenuBtn" class="secondary mt-xs">Main Menu</button>
+      </div>
+      <div id="menuExamClozeTestSelect" class="menu-panel hidden">
+        <p id="examClozeTestSelectHeading" class="menu-desc">Choose a test.</p>
+        <div id="examClozeTestSelectList" style="display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.75rem;"></div>
+        <button type="button" id="examClozeTestSelectRandomBtn" class="secondary">Random</button>
+        <hr class="divider" />
+        <button type="button" id="examClozeTestSelectBackBtn" class="secondary mt-sm">Back</button>
+        <button type="button" id="examClozeTestSelectMainMenuBtn" class="secondary mt-xs">Main Menu</button>
+      </div>
+      <div id="menuOpenClozeModes" class="menu-panel hidden">
+        <p class="menu-desc">Choose a level. Easy: choose the word. Medium and above: type the word.</p>
+        <hr class="divider" />
+        <button type="button" id="openClozeModesBackBtn" class="secondary mt-sm">Back</button>
+        <button type="button" id="openClozeModesMainMenuBtn" class="secondary mt-xs">Main Menu</button>
+      </div>
+      <div id="menuTopicSelect" class="menu-panel hidden">
+        <div class="scores" id="scoresSummary"></div>
+        <p class="menu-desc">Choose a topic. Then choose how you want to practise.</p>
+        <p style="margin-bottom: 0.5rem; color: var(--muted); font-size: 0.85rem;">2 = 10 multiple-choice questions. 3 = more questions (choose how many).</p>
+        <label for="topicSelect" style="margin-top: 0.35rem;">Topic</label>
+        <select id="topicSelect" style="margin-bottom: 0.5rem;" title="Choose a grammar topic"></select>
+        <button type="button" id="startPart1Btn" class="secondary">1: Intro</button>
+        <button type="button" id="startPart2Btn" class="secondary">2: Multiple Choice</button>
+        <button type="button" id="openPracticeSetupBtn" class="secondary">3: Further Practice</button>
+        <button type="button" id="topicSelectBackToPrevBtn" class="secondary hidden" style="margin-top: 0.35rem;">Back to exam answers</button>
+        <hr class="divider" />
+        <button type="button" id="topicSelectMainMenuBtn" class="secondary mt-sm">Main Menu</button>
+      </div>
+      <div id="menuPracticeSetup" class="hidden">
+        <p id="practiceSetupTopic" class="menu-desc"></p>
+        <label for="numQuestionsSelect">Number of questions in this session</label>
+        <p id="practiceSetupHelp" style="margin: 0.25rem 0 0.5rem; color: var(--muted); font-size: 0.85rem;">10 = quick check. 20 = standard practice. Unlimited = keep going until you stop.</p>
+        <select id="numQuestionsSelect">
+          <option value="10">10</option>
+          <option value="20" selected>20</option>
+          <option value="unlimited">Unlimited</option>
+        </select>
+        <div class="btn-row" style="margin-top: 1rem;">
+          <button type="button" id="practiceSetupBackBtn" class="secondary">Back</button>
+          <button type="button" id="practiceSetupMainMenuBtn" class="secondary">Main Menu</button>
+          <button type="button" id="startBtn">Start</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="quizScreen" class="hidden">
+      <div class="progress" id="progress" style="margin-bottom: 0;"></div>
+      <div class="card question-block">
+        <div class="question-block-flag-row">
+          <button type="button" id="reportQuestionBtn" class="flag-question-btn" title="Report a problem with this question">Flag question</button>
+        </div>
+        <p id="quizWarmupLine" class="hidden" style="color: var(--muted); font-size: 0.9rem; margin-bottom: 0.5rem;"></p>
+        <p id="quizGapFillInstruction" class="hidden" style="color: var(--muted); font-size: 0.9rem; margin-bottom: 0.4rem;">Type in the missing words.</p>
+        <div class="question-text" id="questionText"></div>
+        <p id="quizQuestionInstruction" class="hidden" style="color: var(--muted); font-size: 0.85rem; margin-top: 0.25rem; margin-bottom: 0.35rem;"></p>
+        <div id="openBlock" class="hidden">
+          <input type="text" id="openInput" placeholder="Type your answer" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        </div>
+        <fieldset id="mcBlock" class="options hidden"><legend>Choose an answer</legend></fieldset>
+        <button type="button" id="submitBtn">Submit</button>
+      </div>
+      <div id="feedbackBlock" class="card hidden">
+        <div id="feedbackText"></div>
+        <div class="explanation" id="explanation"></div>
+        <button id="nextBtn">Next</button>
+      </div>
+      <div class="quiz-nav-row btn-row">
+        <button type="button" id="exitQuizBtn" class="secondary">Back</button>
+        <button type="button" id="quizMainMenuBtn" class="secondary">Main Menu</button>
+      </div>
+    </div>
+
+    <div id="examClozeTestScreen" class="hidden">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+        <div class="progress" id="examClozeProgress" style="margin-bottom: 0;"></div>
+        <div style="display: flex; gap: 0.35rem; flex: none;">
+          <button type="button" id="examClozeExitBtn" class="secondary" style="margin-top: 0;">Back</button>
+          <button type="button" id="examClozeMainMenuBtn" class="secondary" style="margin-top: 0;">Main Menu</button>
+        </div>
+      </div>
+      <div class="card question-block">
+        <h2 id="examClozeTitle" class="hidden" style="font-size: 1.1rem; margin-bottom: 0.5rem;"></h2>
+        <p id="examClozeInstructions" style="color: var(--muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Read the text. Write one word in each gap. (Easy: choose from options.)</p>
+        <div id="examClozePassage" class="exam-cloze-passage" style="line-height: 1.8; margin-bottom: 1rem;"></div>
+        <div id="examClozeMcRows" class="hidden" style="margin-top: 0.75rem;"></div>
+        <button type="button" id="examClozeSubmitBtn">Submit</button>
+      </div>
+      <div id="examClozeFeedbackBlock" class="card hidden" style="margin-top: 1rem;">
+        <div id="examClozeScoreText" style="font-weight: 600; margin-bottom: 0.5rem;"></div>
+        <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 0.35rem;">Answers and explanations:</p>
+        <div id="examClozeWrongList" class="summary" style="font-size: 0.9rem; line-height: 1.6;"></div>
+        <div class="btn-row" style="margin-top: 0.75rem;">
+          <button type="button" id="examClozeBackToTestListBtn" class="secondary">Back to test list</button>
+          <button type="button" id="examClozeBackToExamPracticeBtn" class="secondary">Back to Exam Practice</button>
+          <button type="button" id="examClozeFeedbackMainMenuBtn" class="secondary">Main Menu</button>
+          <button type="button" id="examClozeNextBtn">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="examTransformTestScreen" class="hidden">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+        <div class="progress" id="examTransformProgress" style="margin-bottom: 0;"></div>
+        <div style="display: flex; gap: 0.35rem; flex: none;">
+          <button type="button" id="examTransformExitBtn" class="secondary" style="margin-top: 0;">Back</button>
+          <button type="button" id="examTransformMainMenuBtn" class="secondary" style="margin-top: 0;">Main Menu</button>
+        </div>
+      </div>
+      <div class="card question-block">
+        <h2 id="examTransformTitle" class="hidden" style="font-size: 1.1rem; margin-bottom: 0.5rem;"></h2>
+        <p id="examTransformInstructions" style="color: var(--muted); font-size: 0.9rem; margin-bottom: 0.25rem;"></p>
+        <p id="examTransformHint" style="color: var(--muted); font-size: 0.85rem; margin-bottom: 0.75rem;">Use the number of words stated above in each gap (including the key word).</p>
+        <div id="examTransformItems" class="exam-cloze-passage" style="display: flex; flex-direction: column; gap: 1rem;"></div>
+        <button type="button" id="examTransformSubmitBtn" class="mt-sm">Submit</button>
+      </div>
+      <div id="examTransformFeedbackBlock" class="card hidden" style="margin-top: 1rem;">
+        <div id="examTransformScoreText" style="font-weight: 600; margin-bottom: 0.5rem;"></div>
+        <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 0.35rem;">Answers and explanations:</p>
+        <div id="examTransformWrongList" class="summary" style="font-size: 0.9rem; line-height: 1.6;"></div>
+        <div class="btn-row" style="margin-top: 0.75rem;">
+          <button type="button" id="examTransformBackToTestListBtn" class="secondary">Back to test list</button>
+          <button type="button" id="examTransformBackToExamPracticeBtn" class="secondary">Back to Exam Practice</button>
+          <button type="button" id="examTransformFeedbackMainMenuBtn" class="secondary">Main Menu</button>
+          <button type="button" id="examTransformNextBtn">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="introScreen" class="hidden">
+      <div class="card">
+        <div class="intro-content-scroll">
+          <div class="intro-card-header">
+            <h2 id="introTitle"></h2>
+            <span id="introPageIndicator" class="intro-page-indicator" aria-live="polite"></span>
+          </div>
+          <div id="introContent"></div>
+          <div id="introPrepositionsListWrap" class="hidden" style="margin-top: 0.75rem;">
+            <button type="button" id="viewPrepositionsListFromIntroBtn" class="secondary">View preposition lists (print)</button>
+          </div>
+          <div id="introPhrasalVerbsWrap" class="hidden" style="margin-top: 0.75rem;">
+            <button type="button" id="viewPhrasalVerbsFromIntroBtn" class="secondary">View phrasal verb dictionary (top 50 + next 100)</button>
+          </div>
+        </div>
+        <div class="intro-button-row btn-row" style="margin-top: 0.75rem;">
+          <button type="button" id="introBackBtn" class="secondary">Back</button>
+          <button type="button" id="introNextBtn">Next</button>
+          <button type="button" id="introMainMenuBtn" class="secondary">Main Menu</button>
+        </div>
+        <div id="introOpenClozeRefBar" class="hidden" style="margin-top: 1rem; padding: 0.75rem; background: var(--surface); border-radius: var(--radius); border-top: 1px solid var(--border);">
+          <p style="font-size: 0.85rem; color: var(--muted); margin: 0 0 0.5rem 0;">Reference sheets</p>
+          <button type="button" id="viewOpenClozeRefFromIntroBtn" class="secondary">Open Cloze Reference Sheet</button>
+          <button type="button" id="viewFixedPhrasesRefFromIntroBtn" class="secondary">Fixed Phrases Reference Sheet</button>
+        </div>
+        <div id="introReportedSpeechRefBar" class="hidden" style="margin-top: 1rem; padding: 0.75rem; background: var(--surface); border-radius: var(--radius); border-top: 1px solid var(--border);">
+          <p style="font-size: 0.85rem; color: var(--muted); margin: 0 0 0.5rem 0;">Reference sheets</p>
+          <button type="button" id="viewReportedSpeechRefFromIntroBtn" class="secondary">Reported Speech Reference Sheet</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="sectionCompleteScreen" class="hidden">
+      <div class="card">
+        <h3 id="sectionCompleteTitle"></h3>
+        <p id="sectionCompleteScore"></p>
+        <div id="sectionCompleteRetryWrap" class="hidden" style="margin-top: 0.75rem;">
+          <button type="button" id="sectionCompleteRetryWrongBtn" class="secondary">Retry wrong answers</button>
+        </div>
+        <div id="sectionCompleteFurtherPracticeWrap" class="hidden" style="margin-top: 0.75rem;">
+          <p id="sectionCompleteFurtherPracticeText" style="margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--muted);">Next: do more practice.</p>
+          <button type="button" id="sectionCompleteFurtherPracticeBtn" class="secondary">3: Further Practice</button>
+        </div>
+        <div id="sectionCompleteNextStepWrap" class="hidden" style="margin-top: 0.75rem;">
+          <p id="sectionCompleteNextStep" style="margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--muted);"></p>
+          <button type="button" id="sectionCompleteGuidedPracticeBtn" class="secondary">2: Multiple Choice</button>
+        </div>
+        <div id="sectionCompleteCorrectBlock" class="hidden" style="margin-top: 1rem;">
+          <h3 style="font-size: 1rem; color: var(--accent); margin-bottom: 0.5rem;">Correct spellings</h3>
+          <div id="sectionCompleteCorrectList" class="summary" style="font-size: 0.9rem; line-height: 1.6;"></div>
+        </div>
+        <div class="btn-row" style="margin-top: 1rem;">
+          <button type="button" id="sectionCompleteNextBtn">Next section</button>
+          <button type="button" id="sectionCompleteBackBtn" class="secondary">Back</button>
+          <button type="button" id="sectionCompleteMainMenuBtn" class="secondary">Main Menu</button>
+          <button type="button" id="viewReportedQuestionsBtnSection" class="secondary">View Flagged Questions</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="resultScreen" class="hidden">
+      <div class="card">
+        <h2 id="resultTitle">Quiz finished</h2>
+        <p id="resultScore"></p>
+        <div id="recentScoresChart" class="hidden">
+          <p class="score-chart-label">Recent scores</p>
+          <p class="score-chart-hint">Your last quizzes, oldest on the left. Bar height is your score as a share of that quiz; below each bar are score/total and date.</p>
+          <div class="score-chart" id="scoreChartBars"></div>
+        </div>
+        <div id="resultNextStepWrap" class="hidden" style="margin-top: 0.75rem;">
+          <p id="resultNextStep" style="margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--muted);"></p>
+          <button type="button" id="resultFurtherPracticeBtn" class="secondary">3: Further Practice</button>
+        </div>
+        <div class="summary" id="ruleSummary"></div>
+        <div id="wrongAnswersCorrectBlock" class="hidden" style="margin-top: 1rem;">
+          <h3 style="font-size: 1rem; color: var(--accent); margin-bottom: 0.5rem;">Correct spellings</h3>
+          <div id="wrongAnswersCorrectList" class="summary" style="font-size: 0.9rem; line-height: 1.6;"></div>
+        </div>
+        <div id="topicsToReviewBlock" class="hidden" style="margin-top: 1rem;">
+          <h3 style="font-size: 1rem; color: var(--accent); margin-bottom: 0.5rem;">Topics to practise</h3>
+          <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 0.5rem;">You had mistakes here. Choose a topic to learn and practise.</p>
+          <div id="topicsToReviewList" class="actions"></div>
+        </div>
+        <div id="resultDefaultActions" class="actions">
+          <button id="retryWrongBtn" class="secondary">Try again</button>
+          <button type="button" id="backToMenuBtn" class="secondary">Main Menu</button>
+          <button type="button" id="viewReportedQuestionsBtnResult" class="secondary">View Flagged Questions</button>
+        </div>
+        <div id="resultWritingTipsWrap" class="actions hidden">
+          <button type="button" id="resultBackToExamPracticeBtn" class="secondary">Back to Exam Practice</button>
+          <button type="button" id="resultViewFullWritingTipsBtn" class="secondary">View full Writing Tips reference</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="prepositionsListScreen" class="hidden no-print-hide">
+      <div class="card prepositions-list-card">
+        <div id="prepositionsListContent"></div>
+        <h2 id="prepositionsListTitle" style="margin-top: 1.25rem; margin-bottom: 0.5rem;">Prepositions in English</h2>
+        <div class="actions mt-sm">
+          <button type="button" id="prepositionsListPrintBtn" class="secondary">Print list</button>
+          <button type="button" id="prepositionsListBackBtn" class="secondary">Back</button>
+          <button type="button" id="prepositionsListMainMenuBtn" class="secondary">Main Menu</button>
+        </div>
+      </div>
+    </div>
+    <div id="phrasalVerbsDictionaryScreen" class="hidden no-print-hide">
+      <div class="card prepositions-list-card">
+        <div id="phrasalVerbsDictionaryContent"></div>
+        <h2 id="phrasalVerbsDictionaryTitle" style="margin-top: 1.25rem; margin-bottom: 0.5rem;">Phrasal verb dictionary</h2>
+        <div class="actions mt-sm">
+          <button type="button" id="phrasalVerbsDictionaryPrintBtn" class="secondary">Print dictionary</button>
+          <button type="button" id="phrasalVerbsDictionaryBackBtn" class="secondary">Back</button>
+          <button type="button" id="phrasalVerbsDictionaryMainMenuBtn" class="secondary">Main Menu</button>
+        </div>
+      </div>
+    </div>
+    <div id="referenceScreen" class="hidden no-print-hide">
+      <div class="card prepositions-list-card">
+        <div id="referenceContent"></div>
+        <h2 id="referenceTitle" style="margin-top: 1.25rem; margin-bottom: 0.5rem;">Reference</h2>
+        <div id="referenceActions" class="actions mt-sm">
+          <span id="referencePrintDownloadWrap" class="hidden">
+            <button type="button" id="referencePrintBtn" class="secondary">Print</button>
+          </span>
+          <button type="button" id="referenceBackBtn" class="secondary">Back</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="referenceBtnWrap" class="hidden" aria-hidden="true"></div>
+    </main>
+  </div>
+
+  <div id="flagReasonOverlay" class="hidden" role="dialog" aria-modal="true" aria-labelledby="flagReasonHeading" style="position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 101; display: flex; align-items: center; justify-content: center; padding: 1rem;">
+    <div class="card" style="max-width: 400px;">
+      <h3 id="flagReasonHeading" style="font-size: 1.1rem; margin-bottom: 0.75rem;">State reason</h3>
+      <label for="flagReasonInput" style="display: block; font-size: 0.9rem; color: var(--muted); margin-bottom: 0.35rem;">Why are you flagging this question?</label>
+      <input type="text" id="flagReasonInput" placeholder="Why?" style="width: 100%; margin-bottom: 1rem;" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <div class="btn-row">
+        <button type="button" id="flagReasonSubmitBtn">Submit</button>
+        <button type="button" id="flagReasonCancelBtn" class="secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="reportedQuestionsOverlay" class="hidden" role="dialog" aria-modal="true" aria-labelledby="reportedQuestionsHeading" style="position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 100; display: flex; align-items: center; justify-content: center; padding: 1rem;">
+    <div class="card" style="max-width: 520px; max-height: 85vh; overflow: auto;">
+      <h3 id="reportedQuestionsHeading" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Flagged questions (for review)</h3>
+      <p id="reportedQuestionsEmpty" class="hidden" style="color: var(--muted); font-size: 0.9rem;">No questions flagged yet. Use “Flag question” during a quiz to add one.</p>
+      <ul id="reportedQuestionsList" style="font-size: 0.9rem; line-height: 1.5; margin: 0.5rem 0 1rem 0; padding-left: 1.25rem;"></ul>
+      <div class="btn-row">
+        <button type="button" id="reportedQuestionsCopyBtn" class="secondary">Copy all to clipboard</button>
+        <button type="button" id="reportedQuestionsClearBtn" class="secondary">Clear list</button>
+        <button type="button" id="reportedQuestionsCloseBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="exam-app.js"></script>
+</body>
+</html>

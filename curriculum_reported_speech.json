@@ -1,0 +1,431 @@
+{
+  "intro": {
+    "title": "Reported speech",
+    "sections": [
+      {
+        "title": "What is reported speech?",
+        "content": "**Direct speech:** exact words in quotes. *\"I am tired.\"*\n**Reported speech:** we report what was said, changing tense, pronouns and time words: *She said (that) she was tired.* Reporting verbs: **say**, **tell**, **ask**. The word *that* is optional."
+      },
+      {
+        "title": "Tense backshift",
+        "content": "When we report with **said/told/asked** (past), we usually shift the tense back:\n**Present → Past:** *\"I like it.\"* → *He said he liked it.*\n**Will → Would:** *\"I will help.\"* → *She said she would help.*\n**Can → Could:** *\"I can swim.\"* → *He said he could swim.*\n**Present perfect → Past perfect:** *\"I have seen it.\"* → *He said he had seen it.*\n**Must → Had to:** *\"I must go.\"* → *She said she had to go.*"
+      },
+      {
+        "title": "Tense backshift table",
+        "content": "",
+        "diagram": {
+          "type": "table",
+          "title": "Tense backshift in reported speech",
+          "headers": ["Direct speech", "Example", "→", "Reported speech", "Example"],
+          "rows": [
+            ["present simple", "\"I **like** it.\"", "→", "past simple", "He said he **liked** it."],
+            ["present continuous", "\"I **am leaving**.\"", "→", "past continuous", "She said she **was leaving**."],
+            ["present perfect", "\"I **have finished**.\"", "→", "past perfect", "He said he **had finished**."],
+            ["will", "\"I **will help**.\"", "→", "would", "She said she **would help**."],
+            ["can", "\"I **can swim**.\"", "→", "could", "He said he **could swim**."],
+            ["must", "\"I **must go**.\"", "→", "had to", "She said she **had to** go."],
+            ["may", "\"I **may be** late.\"", "→", "might", "He said he **might be** late."]
+          ]
+        }
+      },
+      {
+        "title": "Pronouns and time/place words",
+        "content": "Change **pronouns** to match who is speaking: *I → he/she; my → his/her; we → they.*\nChange **time and place** words: *today → that day; yesterday → the day before; tomorrow → the next day; now → then; here → there.*\nExample: *\"I saw her yesterday.\"* → *He said he had seen her the day before.*"
+      },
+      {
+        "title": "Say vs tell",
+        "content": "**Say:** *say (that) …* or *say to someone (that) …* — *She said (that) she was leaving.*\n**Tell:** *tell someone (that) …* — always needs a person. *She told me (that) she was leaving.* (Not: *She told that …*)\n**Ask** for questions: *He asked me where I lived. He asked if I was coming.*"
+      },
+      {
+        "title": "Reported questions and commands",
+        "content": "**Reported questions:** use **statement order** (subject + verb), not question order:\n*\"Where do you live?\"* → *He asked where I lived.*\n*\"Are you coming?\"* → *He asked if I was coming.* (Yes/No → *if/whether*)\n**Commands:** tell/ask + person + to-infinitive:\n*\"Close the door.\"* → *He told me to close the door.*\n*\"Please help me.\"* → *She asked me to help her.*"
+      },
+      {
+        "title": "Typical errors",
+        "content": "**No backshift:** Wrong: *She said she is tired.* Right: *She said she was tired.*\n**Question order in reported questions:** Wrong: *He asked where do I live.* Right: *He asked where I lived.*\n**Tell without a person:** Wrong: *She told that …* Right: *She told me that …* or *She said that …*\n**Commands with say:** Wrong: *He said me close the door.* Right: *He told me to close the door.*"
+      },
+      {
+        "title": "Reference",
+        "content": "For more on tense forms used in backshift, see the Tenses: General topic under Choose Grammar Topic."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "\"I am leaving tomorrow.\" Which reported sentence is correct?",
+        "options": {
+          "a": "She said she was leaving the next day.",
+          "b": "She said she is leaving tomorrow.",
+          "c": "She said she was leaving tomorrow.",
+          "d": "She said she had left the next day."
+        },
+        "correct_option": "a",
+        "explanation": "Backshift: am leaving → was leaving; tomorrow → the next day."
+      },
+      {
+        "type": "mc",
+        "question": "\"Where do you live?\" → He asked …",
+        "options": {
+          "a": "where I lived",
+          "b": "where do I live",
+          "c": "where did I live",
+          "d": "where I live"
+        },
+        "correct_option": "a",
+        "explanation": "Reported question: statement order (where I lived) and past backshift."
+      },
+      {
+        "type": "mc",
+        "question": "Which sentence is correct?",
+        "options": {
+          "a": "She told me that she would come.",
+          "b": "She told that she would come.",
+          "c": "She said me that she would come.",
+          "d": "She told to me that she would come."
+        },
+        "correct_option": "a",
+        "explanation": "Tell + person (tell me). Say does not take indirect object without 'to'."
+      },
+      {
+        "type": "mc",
+        "question": "\"Close the window.\" → She …",
+        "options": {
+          "a": "said me to close the window",
+          "b": "said to close the window",
+          "c": "told me to close the window",
+          "d": "told to me close the window"
+        },
+        "correct_option": "c",
+        "explanation": "Reported command: tell + person + to-infinitive."
+      },
+      {
+        "type": "mc",
+        "question": "\"I have finished my work.\" → He said …",
+        "options": {
+          "a": "he has finished his work",
+          "b": "he finished his work",
+          "c": "he had finished his work",
+          "d": "he have finished his work"
+        },
+        "correct_option": "c",
+        "explanation": "Present perfect → past perfect in reported speech: had finished."
+      },
+      {
+        "type": "mc",
+        "question": "\"Are you coming?\" → She asked me …",
+        "options": {
+          "a": "are you coming",
+          "b": "if you are coming",
+          "c": "was I coming",
+          "d": "if I was coming"
+        },
+        "correct_option": "d",
+        "explanation": "Yes/No reported question: if + statement order (if I was coming)."
+      }
+    ]
+  },
+  "practice_order": [
+    "guided_mc",
+    "gapfill"
+  ],
+  "practice": {
+    "guided_mc": {
+      "title": "Guided Practice: Reported speech (multiple choice)",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "\"I am tired.\" → She said she _____ tired.",
+          "options": {
+            "a": "is",
+            "b": "was",
+            "c": "will be",
+            "d": "would be"
+          },
+          "correct_option": "b",
+          "explanation": "Backshift: present (am) → past (was) in reported speech."
+        },
+        {
+          "type": "mc",
+          "question": "\"We will help.\" → They said they _____ help.",
+          "options": {
+            "a": "will",
+            "b": "would",
+            "c": "can",
+            "d": "could"
+          },
+          "correct_option": "b",
+          "explanation": "Will → would in reported speech."
+        },
+        {
+          "type": "mc",
+          "question": "\"Where do you live?\" → He asked me where I _____.",
+          "options": {
+            "a": "live",
+            "b": "lived",
+            "c": "was living",
+            "d": "had lived"
+          },
+          "correct_option": "b",
+          "explanation": "Reported question: statement order; present → past (lived)."
+        },
+        {
+          "type": "mc",
+          "question": "\"I have seen the film.\" → She said she _____ seen the film.",
+          "options": {
+            "a": "has",
+            "b": "have",
+            "c": "had",
+            "d": "was"
+          },
+          "correct_option": "c",
+          "explanation": "Present perfect → past perfect (had seen)."
+        },
+        {
+          "type": "mc",
+          "question": "\"Close the door.\" → He _____ me to close the door.",
+          "options": {
+            "a": "said",
+            "b": "told",
+            "c": "asked",
+            "d": "tells"
+          },
+          "correct_option": "b",
+          "explanation": "Reported command: tell + person + to-infinitive."
+        },
+        {
+          "type": "mc",
+          "question": "\"I can swim.\" → He said he _____ swim.",
+          "options": {
+            "a": "can",
+            "b": "could",
+            "c": "will",
+            "d": "would"
+          },
+          "correct_option": "b",
+          "explanation": "Can → could in reported speech."
+        },
+        {
+          "type": "mc",
+          "question": "\"What is your name?\" → She asked what my name _____.",
+          "options": {
+            "a": "is",
+            "b": "was",
+            "c": "were",
+            "d": "be"
+          },
+          "correct_option": "b",
+          "explanation": "Reported question: what my name was (statement order)."
+        },
+        {
+          "type": "mc",
+          "question": "\"I saw her yesterday.\" → He said he had seen her _____.",
+          "options": {
+            "a": "yesterday",
+            "b": "the following day",
+            "c": "the day before",
+            "d": "tomorrow"
+          },
+          "correct_option": "c",
+          "explanation": "Yesterday → the day before in reported speech."
+        },
+        {
+          "type": "mc",
+          "question": "\"Are you ready?\" → He asked me _____ I was ready.",
+          "options": {
+            "a": "that",
+            "b": "if",
+            "c": "what",
+            "d": "who"
+          },
+          "correct_option": "b",
+          "explanation": "Yes/No reported questions use **if** or whether."
+        },
+        {
+          "type": "mc",
+          "question": "\"I must go now.\" → She said she _____ to go then.",
+          "options": {
+            "a": "must",
+            "b": "has",
+            "c": "had",
+            "d": "would have"
+          },
+          "correct_option": "c",
+          "explanation": "Must → had to; now → then."
+        }
+      ]
+    },
+    "gapfill": {
+      "title": "Practice: Reported speech (gap fill)",
+      "questions": [
+        {
+          "type": "open",
+          "question": "\"I am tired.\" → She said she _____ tired.",
+          "answers": [
+            "was"
+          ],
+          "explanation": "Present → past: am → was."
+        },
+        {
+          "type": "open",
+          "question": "\"We will help.\" → They said they _____ help.",
+          "answers": [
+            "would"
+          ],
+          "explanation": "Will → would in reported speech."
+        },
+        {
+          "type": "open",
+          "question": "\"Where do you live?\" → He asked me where I _____.",
+          "answers": [
+            "lived"
+          ],
+          "explanation": "Reported question: statement order; present → past."
+        },
+        {
+          "type": "open",
+          "question": "\"I have seen the film.\" → She said she _____ seen the film.",
+          "answers": [
+            "had"
+          ],
+          "explanation": "Present perfect → past perfect: had seen."
+        },
+        {
+          "type": "open",
+          "question": "\"Close the door.\" → He _____ me to close the door.",
+          "answers": [
+            "told"
+          ],
+          "explanation": "Reported command: tell + person + to-infinitive."
+        },
+        {
+          "type": "open",
+          "question": "\"I can swim.\" → He said he _____ swim.",
+          "answers": [
+            "could"
+          ],
+          "explanation": "Can → could in reported speech."
+        },
+        {
+          "type": "open",
+          "question": "\"What is your name?\" → She asked (me) what my name _____.",
+          "answers": [
+            "was"
+          ],
+          "explanation": "Reported question: what my name was (statement order)."
+        },
+        {
+          "type": "open",
+          "question": "\"I saw her yesterday.\" → He said he had seen her _____.",
+          "answers": [
+            "the day before"
+          ],
+          "explanation": "Yesterday → the day before in reported speech."
+        },
+        {
+          "type": "open",
+          "question": "\"Are you ready?\" → He asked me _____ I was ready.",
+          "answers": [
+            "if"
+          ],
+          "explanation": "Yes/No reported: if (or whether) + statement order."
+        },
+        {
+          "type": "open",
+          "question": "\"I must go now.\" → She said she _____ to go then.",
+          "answers": [
+            "had"
+          ],
+          "explanation": "Must → had to; now → then."
+        }
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Correct the reported speech",
+      "questions": [
+        {
+          "type": "open",
+          "question": "Wrong: 'She said she is tired.' (reporting past words) Correct the sentence.",
+          "answers": [
+            "She said she was tired.",
+            "She said she was tired"
+          ],
+          "explanation": "Backshift: is → was when reporting in the past."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He asked where do I live.' Correct the sentence.",
+          "answers": [
+            "He asked where I lived.",
+            "He asked where I lived"
+          ],
+          "explanation": "Reported question: statement order (where I lived)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She told that she would come.' Correct the sentence.",
+          "answers": [
+            "She told me that she would come.",
+            "She said that she would come.",
+            "She told me that she would come",
+            "She said that she would come"
+          ],
+          "explanation": "Tell needs a person: tell me. Or use said (that)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He said me to close the door.' Correct the sentence.",
+          "answers": [
+            "He told me to close the door.",
+            "He told me to close the door"
+          ],
+          "explanation": "Commands use tell + person + to-infinitive, not say."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She said she has finished.' (reporting past words) Correct the sentence.",
+          "answers": [
+            "She said she had finished.",
+            "She said she had finished"
+          ],
+          "explanation": "Present perfect → past perfect: had finished."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'He asked if am I coming.' Correct the sentence.",
+          "answers": [
+            "He asked if I was coming.",
+            "He asked if I was coming"
+          ],
+          "explanation": "Yes/No reported: if + statement order (if I was coming)."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'She said to me that she will help.' Correct the sentence. We are reporting something that was said in the past, so change the tense of the verb in the that-clause. (You may keep 'said to me' or use 'told me'.)",
+          "answers": [
+            "She said to me that she would help.",
+            "She told me that she would help.",
+            "She said to me that she would help",
+            "She told me that she would help"
+          ],
+          "explanation": "Will → would when reporting in the past."
+        },
+        {
+          "type": "open",
+          "question": "Wrong: 'They asked what time is it.' Correct the sentence.",
+          "answers": [
+            "They asked what time it was.",
+            "They asked what time it was"
+          ],
+          "explanation": "Reported question: statement order (what time it was)."
+        }
+      ]
+    },
+    "mc": {
+      "title": "Practice: Reported speech (multiple choice)",
+      "questions": []
+    }
+  }
+}

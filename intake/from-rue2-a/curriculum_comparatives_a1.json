@@ -1,0 +1,74 @@
+{
+  "intro": {
+    "title": "Comparatives and Superlatives",
+    "sections": [
+      {
+        "title": "Comparatives",
+        "content": "We use comparatives to compare two things. Add **-er** to short words:\n\n• tall → tall**er**\n• big → bigg**er** (double g)\n• easy → easi**er** (y → i)\n\nUse **than**: She is tall**er than** me."
+      },
+      {
+        "title": "Long words: more",
+        "content": "With long words we use **more**:\n• expensive → **more** expensive\n• interesting → **more** interesting"
+      },
+      {
+        "title": "Superlatives",
+        "content": "Superlatives = the best in a group. Add **-est** or use **the most**:\n\n• tall → the tall**est**\n• expensive → **the most** expensive\n• good → **the best** (irregular)\n• bad → **the worst** (irregular)"
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "She is _____ than her sister.",
+        "options": {"a": "tall", "b": "taller", "c": "tallest", "d": "more tall"},
+        "correct_option": "b",
+        "explanation": "Compare two: taller than."
+      },
+      {
+        "type": "mc",
+        "question": "This is _____ book I have.",
+        "options": {"a": "good", "b": "better", "c": "the best", "d": "more good"},
+        "correct_option": "c",
+        "explanation": "Best in group: the best."
+      },
+      {
+        "type": "mc",
+        "question": "This film is _____ than the last one.",
+        "options": {"a": "interesting", "b": "more interesting", "c": "most interesting", "d": "interestinger"},
+        "correct_option": "b",
+        "explanation": "Long word: more interesting."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Comparatives and Superlatives",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "My brother is _____ than me.",
+          "options": {"a": "big", "b": "bigger", "c": "biggest", "d": "more big"},
+          "correct_option": "b",
+          "explanation": "Compare: bigger than."
+        },
+        {
+          "type": "mc",
+          "question": "He is _____ boy in the class.",
+          "options": {"a": "tall", "b": "taller", "c": "the tallest", "d": "more tall"},
+          "correct_option": "c",
+          "explanation": "Best in group: the tallest."
+        },
+        {
+          "type": "mc",
+          "question": "This is _____ than that one.",
+          "options": {"a": "expensive", "b": "expensiver", "c": "more expensive", "d": "most expensive"},
+          "correct_option": "c",
+          "explanation": "Long word: more expensive."
+        }
+      ]
+    }
+  }
+}

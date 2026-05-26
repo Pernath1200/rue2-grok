@@ -1,0 +1,82 @@
+{
+  "intro": {
+    "title": "Present Simple",
+    "sections": [
+      {
+        "title": "What is the Present Simple?",
+        "content": "We use the **Present Simple** for things that are always true, or things we do often.\n\n• I **work** in a shop.\n• She **likes** coffee.\n• They **live** in London."
+      },
+      {
+        "title": "Form: I, you, we, they",
+        "content": "With **I, you, we, they** we use the verb as it is:\n\n• I **work**\n• You **work**\n• We **work**\n• They **work**"
+      },
+      {
+        "title": "Form: he, she, it",
+        "content": "With **he, she, it** we add **-s** or **-es**:\n\n• He **works**\n• She **works**\n• It **works**\n\n• I **go** → She **goes**\n• I **watch** → He **watches**"
+      },
+      {
+        "title": "Negatives",
+        "content": "**I, you, we, they** + **don't** + verb:\n• I **don't like** coffee.\n\n**He, she, it** + **doesn't** + verb:\n• She **doesn't work** on Saturdays."
+      },
+      {
+        "title": "Questions",
+        "content": "**Do** + I/you/we/they + verb?\n• **Do you like** coffee?\n\n**Does** + he/she/it + verb?\n• **Does she work** here?\n\n**Do** and **Does** go at the start. The verb is always the base form (no -s)."
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "She _____ coffee every morning.",
+        "options": {"a": "drink", "b": "drinks", "c": "drinking", "d": "to drink"},
+        "correct_option": "b",
+        "explanation": "With she we add -s: drinks."
+      },
+      {
+        "type": "mc",
+        "question": "_____ you like tea?",
+        "options": {"a": "Do", "b": "Does", "c": "Is", "d": "Are"},
+        "correct_option": "a",
+        "explanation": "With you we use Do."
+      },
+      {
+        "type": "mc",
+        "question": "He _____ work on Sundays.",
+        "options": {"a": "don't", "b": "doesn't", "c": "not", "d": "no"},
+        "correct_option": "b",
+        "explanation": "With he we use doesn't."
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Present Simple",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "She _____ a book every week.",
+          "options": {"a": "read", "b": "reads", "c": "reading", "d": "to read"},
+          "correct_option": "b",
+          "explanation": "She + reads."
+        },
+        {
+          "type": "mc",
+          "question": "_____ they live in London?",
+          "options": {"a": "Do", "b": "Does", "c": "Is", "d": "Are"},
+          "correct_option": "a",
+          "explanation": "With they we use Do."
+        },
+        {
+          "type": "mc",
+          "question": "I _____ like milk.",
+          "options": {"a": "don't", "b": "doesn't", "c": "am not", "d": "not"},
+          "correct_option": "a",
+          "explanation": "With I we use don't."
+        }
+      ]
+    }
+  }
+}

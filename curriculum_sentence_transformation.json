@@ -1,0 +1,242 @@
+{
+  "intro": {
+    "title": "Sentence Transformation (Part 4)",
+    "sections": [
+      {
+        "title": "In the exam (1)",
+        "content": "In FCE this is **Part 4**. You get two sentences; the second has a gap and a **key word** in capitals. You must complete the second sentence so it means the same as the first, using the key word. You usually write **between two and five words**."
+      },
+      {
+        "title": "In the exam (2)",
+        "content": "**Tip:** The key word often tells you which grammar to use (e.g. SINCE → present perfect, SO → result)."
+      },
+      {
+        "title": "What is it? (1)",
+        "content": "You get **two sentences**. The first sentence is complete. The second has a **gap** and a **key word** in capitals. You must finish the second sentence so it **means the same** as the first. You must use the key word."
+      },
+      {
+        "title": "What is it? (2)",
+        "content": "You **cannot change** the key word (e.g. **SO**, **SINCE**, **MIGHT**)."
+      },
+      {
+        "title": "What is it? (2)",
+        "content": "You usually write **two to five words** in the gap (including the key word). This task tests grammar and vocabulary."
+      },
+      {
+        "title": "What to do (1)",
+        "content": "• Read the **first sentence**. Understand what it means.\n• Look at the **key word**. It often shows you which grammar to use (e.g."
+      },
+      {
+        "title": "What to do (2)",
+        "content": "SINCE → present perfect; SO → result).\n• Finish the **second sentence** so it has the **same meaning** as the first.\n• Use **two to five words**. Do not change the key word."
+      },
+      {
+        "title": "Examples (1)",
+        "content": "• **SINCE**: I last saw him in May → I haven't **seen** him since May.\n• **MIGHT**: It's possible she forgot → She **might have** forgotten.\n• **WISH**: I regret not studying → I **wish I had studied**.\n• **Passive**: They built the house in 1990 → T"
+      },
+      {
+        "title": "Examples (2)",
+        "content": "he house **was built** in 1990."
+      },
+      {
+        "title": "Reference",
+        "content": "[[ref|Reference lists]]"
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Can you change the key word (e.g. write 'since' instead of 'SINCE')?",
+        "options": {
+          "a": "Yes, you can change the form",
+          "b": "No, you must use the key word exactly as given",
+          "c": "Only if it doesn't fit",
+          "d": "You can leave it out"
+        },
+        "correct_option": "b",
+        "explanation": "You must use the key word and you cannot change its form."
+      },
+      {
+        "type": "mc",
+        "question": "How many words do you usually write in the gap (FCE)?",
+        "options": {
+          "a": "One word only",
+          "b": "Between two and five words",
+          "c": "As many as you like",
+          "d": "Exactly five words"
+        },
+        "correct_option": "b",
+        "explanation": "FCE: usually two to five words in the gap."
+      },
+      {
+        "type": "mc",
+        "question": "The second sentence must mean _____ the first.",
+        "options": {
+          "a": "the opposite of",
+          "b": "something different from",
+          "c": "the same as",
+          "d": "more than"
+        },
+        "correct_option": "c",
+        "explanation": "The second sentence must have the same meaning as the first."
+      },
+      {
+        "type": "mc",
+        "question": "I last saw him in May. SINCE → I haven't _____ him since May. What goes in the gap?",
+        "options": {
+          "a": "see",
+          "b": "saw",
+          "c": "seen",
+          "d": "seeing"
+        },
+        "correct_option": "c",
+        "explanation": "Present perfect: haven't seen (from a point in the past until now)."
+      },
+      {
+        "type": "mc",
+        "question": "What is a good first step?",
+        "options": {
+          "a": "Ignore the first sentence",
+          "b": "Read the first sentence and understand its meaning",
+          "c": "Copy the key word only",
+          "d": "Guess the structure"
+        },
+        "correct_option": "b",
+        "explanation": "Understanding the first sentence helps you write the same meaning in the second."
+      }
+    ]
+  },
+  "practice_order": [
+    "guidance"
+  ],
+  "practice": {
+    "guidance": {
+      "title": "Guided Practice: Sentence Transformation",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "I last saw him in May. SINCE\nI haven't _____ him since May.",
+          "options": {
+            "a": "seen",
+            "b": "see",
+            "c": "saw",
+            "d": "seeing"
+          },
+          "correct_option": "a",
+          "explanation": "Present perfect: haven't seen (from a point in time until now)."
+        },
+        {
+          "type": "mc",
+          "question": "It's possible that she forgot. MIGHT\nShe _____ forgotten.",
+          "options": {
+            "a": "might",
+            "b": "might have",
+            "c": "might has",
+            "d": "might had"
+          },
+          "correct_option": "b",
+          "explanation": "Possibility in the past: might have + past participle."
+        },
+        {
+          "type": "mc",
+          "question": "They are building a new school. BEING\nA new school is _____ built.",
+          "options": {
+            "a": "being",
+            "b": "be",
+            "c": "been",
+            "d": "beening"
+          },
+          "correct_option": "a",
+          "explanation": "Passive present continuous: is being built."
+        },
+        {
+          "type": "mc",
+          "question": "I don't have enough money to buy a car. AFFORD\nI can't _____ a car.",
+          "options": {
+            "a": "afford",
+            "b": "afford to buy",
+            "c": "afford buy",
+            "d": "affording"
+          },
+          "correct_option": "b",
+          "explanation": "Afford + to-infinitive."
+        },
+        {
+          "type": "mc",
+          "question": "We couldn't go out because of the rain. PREVENTED\nThe rain _____ going out.",
+          "options": {
+            "a": "prevented us",
+            "b": "prevented from",
+            "c": "prevented us from",
+            "d": "prevented we"
+          },
+          "correct_option": "c",
+          "explanation": "Prevent someone from + -ing."
+        },
+        {
+          "type": "mc",
+          "question": "She started working here three years ago. FOR\nShe has been working here _____ three years.",
+          "options": {
+            "a": "since",
+            "b": "during",
+            "c": "for",
+            "d": "ago"
+          },
+          "correct_option": "c",
+          "explanation": "For + a period of time (how long)."
+        },
+        {
+          "type": "mc",
+          "question": "Nobody in the class is taller than Maria. TALLEST\nMaria is _____ in the class.",
+          "options": {
+            "a": "taller",
+            "b": "most tall",
+            "c": "the tallest",
+            "d": "tallest"
+          },
+          "correct_option": "c",
+          "explanation": "Superlative: the tallest."
+        },
+        {
+          "type": "mc",
+          "question": "I regret not studying harder. WISH\nI _____ harder.",
+          "options": {
+            "a": "wish I study",
+            "b": "wish I studied",
+            "c": "wish I had studied",
+            "d": "wish I would study"
+          },
+          "correct_option": "c",
+          "explanation": "I wish + past perfect (regret about the past)."
+        },
+        {
+          "type": "mc",
+          "question": "They cancelled the match. CALLED\nThe match was _____ because of the weather.",
+          "options": {
+            "a": "called",
+            "b": "called off",
+            "c": "calling off",
+            "d": "call off"
+          },
+          "correct_option": "b",
+          "explanation": "Call off = cancel (phrasal verb, passive)."
+        },
+        {
+          "type": "mc",
+          "question": "It wasn't necessary for you to bring a gift. NEED\nYou _____ brought a gift.",
+          "options": {
+            "a": "needn't have",
+            "b": "needn't",
+            "c": "didn't need",
+            "d": "need not"
+          },
+          "correct_option": "a",
+          "explanation": "Needn't have + past participle = it wasn't necessary (but you did)."
+        }
+      ]
+    }
+  }
+}

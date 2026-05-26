@@ -1,0 +1,122 @@
+{
+  "title": "Reported Speech: Quick Reference",
+  "intro": "Use this sheet to convert direct speech to reported speech: tense backshift, pronoun/time changes, and core reporting patterns.",
+  "backshift": [
+    {
+      "direct": "present simple",
+      "reported": "past simple",
+      "example": "\"I like it.\" -> He said he liked it."
+    },
+    {
+      "direct": "present continuous",
+      "reported": "past continuous",
+      "example": "\"I am leaving.\" -> She said she was leaving."
+    },
+    {
+      "direct": "present perfect",
+      "reported": "past perfect",
+      "example": "\"I have finished.\" -> He said he had finished."
+    },
+    {
+      "direct": "past simple",
+      "reported": "past perfect",
+      "example": "\"I saw him.\" -> She said she had seen him."
+    },
+    {
+      "direct": "will",
+      "reported": "would",
+      "example": "\"I will help.\" -> She said she would help."
+    },
+    {
+      "direct": "can",
+      "reported": "could",
+      "example": "\"I can swim.\" -> He said he could swim."
+    },
+    {
+      "direct": "must",
+      "reported": "had to",
+      "example": "\"I must go.\" -> She said she had to go."
+    },
+    {
+      "direct": "may",
+      "reported": "might",
+      "example": "\"I may be late.\" -> He said he might be late."
+    }
+  ],
+  "pronoun_shifts": [
+    {
+      "direct": "I / me / my / mine",
+      "reported": "he-she / him-her / his-her / his-hers"
+    },
+    {
+      "direct": "we / us / our / ours",
+      "reported": "they / them / their / theirs"
+    },
+    {
+      "direct": "you / your",
+      "reported": "depends on context (I-we-he-she-they + my-our-his-her-their)"
+    }
+  ],
+  "time_place_shifts": [
+    { "direct": "today", "reported": "that day" },
+    { "direct": "tonight", "reported": "that night" },
+    { "direct": "yesterday", "reported": "the day before" },
+    { "direct": "tomorrow", "reported": "the next day / the following day" },
+    { "direct": "now", "reported": "then" },
+    { "direct": "here", "reported": "there" },
+    { "direct": "this", "reported": "that" },
+    { "direct": "these", "reported": "those" },
+    { "direct": "last week", "reported": "the week before" },
+    { "direct": "next month", "reported": "the following month" }
+  ],
+  "patterns": [
+    {
+      "rule": "say",
+      "form": "say (that) + clause / say to + person + (that) + clause",
+      "example": "She said (that) she was tired. / She said to me (that) she was tired."
+    },
+    {
+      "rule": "tell",
+      "form": "tell + person + (that) + clause",
+      "example": "She told me (that) she was tired."
+    },
+    {
+      "rule": "yes-no questions",
+      "form": "ask + (person) + if-whether + clause",
+      "example": "He asked if I was coming."
+    },
+    {
+      "rule": "wh-questions",
+      "form": "ask + wh-word + statement order",
+      "example": "He asked where I lived."
+    },
+    {
+      "rule": "commands and requests",
+      "form": "tell-ask + person + to-infinitive",
+      "example": "She told me to close the door. / He asked me to wait."
+    }
+  ],
+  "no_backshift": [
+    "General truths often stay present: The teacher said water boils at 100 C.",
+    "If the situation is still true now, present can remain: She said she lives in Prague.",
+    "You can backshift for distance/formality, but keep one logic consistently."
+  ],
+  "common_errors": [
+    {
+      "wrong": "She said me that she was tired.",
+      "right": "She told me that she was tired. / She said to me that she was tired."
+    },
+    {
+      "wrong": "He asked where do I live.",
+      "right": "He asked where I lived."
+    },
+    {
+      "wrong": "She told that she would come.",
+      "right": "She said that she would come. / She told me that she would come."
+    },
+    {
+      "wrong": "He said me to close the window.",
+      "right": "He told me to close the window."
+    }
+  ]
+}

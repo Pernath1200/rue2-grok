@@ -1,0 +1,74 @@
+{
+  "intro": {
+    "title": "Will and Going to",
+    "sections": [
+      {
+        "title": "Will",
+        "content": "We use **will** for the future:\n• I **will** go tomorrow.\n• She **will** be here soon.\n• They **won't** (will not) come.\n\nWe use **will** when we decide now, or when we offer to do something."
+      },
+      {
+        "title": "Going to",
+        "content": "We use **going to** when we already have a plan:\n• I **am going to** see him tomorrow.\n• She **is going to** buy a new car.\n• We **are going to** have a party.\n\nForm: am/is/are + going to + verb"
+      },
+      {
+        "title": "When to use which",
+        "content": "**Will** – decision now, offer, promise: I'll help you.\n\n**Going to** – plan before now: I'm going to visit my mum next week."
+      }
+    ]
+  },
+  "check": {
+    "title": "Check you understand",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "I _____ see you tomorrow.",
+        "options": {"a": "will", "b": "am", "c": "go", "d": "to"},
+        "correct_option": "a",
+        "explanation": "Future: will see."
+      },
+      {
+        "type": "mc",
+        "question": "She _____ buy a new car next month.",
+        "options": {"a": "will", "b": "is going to", "c": "goes", "d": "going"},
+        "correct_option": "b",
+        "explanation": "Plan: is going to buy."
+      },
+      {
+        "type": "mc",
+        "question": "I'll help you. – _____ you? Thanks!",
+        "options": {"a": "Will", "b": "Do", "c": "Are", "d": "Can"},
+        "correct_option": "a",
+        "explanation": "Offer: Will you help?"
+      }
+    ]
+  },
+  "practice_order": ["mc"],
+  "practice": {
+    "mc": {
+      "title": "Practice: Will and Going to",
+      "questions": [
+        {
+          "type": "mc",
+          "question": "We _____ have a party on Saturday.",
+          "options": {"a": "will", "b": "are going to", "c": "go", "d": "have"},
+          "correct_option": "b",
+          "explanation": "Plan: are going to have."
+        },
+        {
+          "type": "mc",
+          "question": "The phone is ringing. – I _____ get it.",
+          "options": {"a": "am going to", "b": "will", "c": "go", "d": "get"},
+          "correct_option": "b",
+          "explanation": "Decision now: I'll get it."
+        },
+        {
+          "type": "mc",
+          "question": "He _____ not come to the party.",
+          "options": {"a": "will", "b": "is", "c": "does", "d": "going"},
+          "correct_option": "a",
+          "explanation": "Future negative: will not."
+        }
+      ]
+    }
+  }
+}
