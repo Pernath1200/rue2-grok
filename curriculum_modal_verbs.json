@@ -16,11 +16,15 @@
       },
       {
         "title": "Possibility",
-        "content": "**May / might** — possibility: *It may rain. She might be late.* (*might* = slightly less certain)\n**Could** — also possible: *He could be right.*\nThese all mean *perhaps* — the action is not certain."
+        "content": "**May / might** — possibility: *It may rain. She might be late.* (*might* = slightly less certain)\n**Could** — also possible: *He could be right.*\nThese all mean *perhaps* — the action is not certain.",
+        "root_ids": ["B1.modals.speculation_present"],
+        "cefr_level": "B1"
       },
       {
         "title": "Obligation and advice (1)",
-        "content": "**Must** — strong obligation or rule: *You must wear a seatbelt.* Strong deduction: *She must be at home* (I'm sure).\n**Should** — advice, weak obligation: *You should see a doctor.*"
+        "content": "**Must** — strong obligation or rule: *You must wear a seatbelt.* Strong deduction: *She must be at home* (I'm sure).\n**Should** — advice, weak obligation: *You should see a doctor.*",
+        "root_ids": ["A2.modals.should"],
+        "cefr_level": "A2"
       },
       {
         "title": "Obligation and advice (2)",
@@ -28,7 +32,9 @@
       },
       {
         "title": "Must vs have to (1)",
-        "content": "Both express obligation, but: **must** = the speaker decides (personal obligation, strong rule). **Have to** = external obligation (rules, boss, law): *I have to wear a uniform.*"
+        "content": "Both express obligation, but: **must** = the speaker decides (personal obligation, strong rule). **Have to** = external obligation (rules, boss, law): *I have to wear a uniform.*",
+        "root_ids": ["A2.modals.must_have_to_basic"],
+        "cefr_level": "A2"
       },
       {
         "title": "Must vs have to (2)",

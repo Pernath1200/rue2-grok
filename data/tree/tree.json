@@ -1,53 +1,53 @@
 {
   "meta": {
-    "version": "0.1.0",
-    "name": "RUE2 Grammar Tree - Minimal Viable Model",
-    "description": "Phase 1 canonical definition of the Grammar Tree. Extracted and normalized from the reference documents in _reference/. This is the proposed source of truth going forward.",
+    "version": "0.2.0",
+    "name": "RUE2 Grammar Tree - Phase 1 Pilot Model",
+    "description": "Evolved data model including concrete root_ids for the 8 pilot families. This is the working source of truth for tagging and implementation.",
     "last_updated": "2026-05-26",
-    "source": "Based on Tree_Model_Of_Language_Proficiency.md, Tree Roots by Level — Master Grammar Index.md, and Grammar Tree by Root.md"
+    "source": "Based on Tree_Model_Of_Language_Proficiency.md + detailed pilot analysis"
   },
   "roots": [
     {
       "id": "tap_root",
       "number": 0,
       "name": "Tap Root",
-      "description": "Word-class recognition (N/V/Adj/Adv/Prep/Det/Pron) + default SVO architecture. Foundational layer that everything else depends on."
+      "description": "Word-class recognition (N/V/Adj/Adv/Prep/Det/Pron) + default SVO architecture."
     },
     {
       "id": "verb_phrase",
       "number": 1,
       "name": "Verb Phrase",
-      "description": "Tense, aspect, modality, voice. The largest and most complex root."
+      "description": "Tense, aspect, modality, voice."
     },
     {
       "id": "noun_phrase",
       "number": 2,
       "name": "Noun Phrase",
-      "description": "Determiners, pronouns, quantifiers, comparison within the noun phrase."
+      "description": "Determiners, pronouns, quantifiers, NP comparison."
     },
     {
       "id": "sentence_syntax",
       "number": 3,
       "name": "Sentence Syntax",
-      "description": "Word order, questions, negation, inversion, clefts, basic agreement at sentence level."
+      "description": "Word order, questions, negation, inversion, clefts, agreement."
     },
     {
       "id": "clause_linking",
       "number": 4,
       "name": "Clause Linking",
-      "description": "Subordination, relatives, conditionals, reported speech, coordination, discourse markers."
+      "description": "Subordination, relatives, conditionals, reported speech, discourse markers."
     },
     {
       "id": "verb_complementation",
       "number": 5,
       "name": "Verb Complementation",
-      "description": "Patterns after verbs: gerund vs infinitive, transitivity, causatives, etc."
+      "description": "Gerund/infinitive patterns, transitivity, causatives."
     },
     {
       "id": "prepositions_particles",
       "number": 6,
       "name": "Prepositions & Particles",
-      "description": "Preposition system, phrasal verbs, dependent prepositions, particles."
+      "description": "Prepositions, phrasal verbs, particles."
     }
   ],
   "families": [
@@ -55,60 +55,98 @@
       "id": "present_perfect",
       "name": "Present Perfect",
       "primary_root": "verb_phrase",
-      "description": "Present perfect simple and continuous, including since/for distinctions."
+      "root_ids": [
+        "A2.present_perfect.basic",
+        "B1.present_perfect.since_for",
+        "B1.present_perfect.continuous"
+      ]
     },
     {
       "id": "conditionals",
       "name": "Conditionals",
       "primary_root": "clause_linking",
       "secondary_roots": ["verb_phrase"],
-      "description": "Zero, First, Second, Third, Mixed conditionals and variants."
-    },
-    {
-      "id": "articles",
-      "name": "Articles & Determiners",
-      "primary_root": "noun_phrase",
-      "description": "a/an/the, zero article, generic reference, institutional uses."
+      "root_ids": [
+        "A2.conditionals.zero_first",
+        "B1.conditionals.second",
+        "B1.conditionals.wishes_present",
+        "B2.conditionals.third",
+        "B2.conditionals.mixed",
+        "B2.conditionals.variants"
+      ]
     },
     {
       "id": "relative_pronouns",
       "name": "Relative Pronouns & Clauses",
       "primary_root": "clause_linking",
-      "description": "Defining vs non-defining relatives, who/which/that/whose/whom."
-    },
-    {
-      "id": "modal_verbs",
-      "name": "Modal Verbs",
-      "primary_root": "verb_phrase",
-      "description": "Core modals, speculation (present & past), past forms of modals."
-    },
-    {
-      "id": "phrasal_verbs",
-      "name": "Phrasal Verbs",
-      "primary_root": "prepositions_particles",
-      "secondary_roots": ["verb_complementation"],
-      "description": "Separable/inseparable phrasal verbs and multi-word verbs."
-    },
-    {
-      "id": "prepositions",
-      "name": "Prepositions",
-      "primary_root": "prepositions_particles",
-      "description": "Time, place, movement, dependent, and complex prepositions."
+      "root_ids": [
+        "A2.relative_clauses.basic",
+        "B1.relative_clauses.defining_non_defining",
+        "B2.relative_clauses.advanced"
+      ]
     },
     {
       "id": "reported_speech",
       "name": "Reported Speech",
       "primary_root": "clause_linking",
       "secondary_roots": ["verb_phrase"],
-      "description": "Statement and question reporting, tense backshift, reporting verbs."
+      "root_ids": [
+        "B1.reported_speech.statements",
+        "B2.reported_speech.extended"
+      ]
+    },
+    {
+      "id": "modal_verbs",
+      "name": "Modal Verbs",
+      "primary_root": "verb_phrase",
+      "root_ids": [
+        "A2.modals.should",
+        "A2.modals.must_have_to_basic",
+        "B1.modals.speculation_present",
+        "B1.modals.past_forms",
+        "B2.modals.speculation_past"
+      ]
+    },
+    {
+      "id": "phrasal_verbs",
+      "name": "Phrasal Verbs",
+      "primary_root": "prepositions_particles",
+      "secondary_roots": ["verb_complementation"],
+      "root_ids": [
+        "B1.phrasal_verbs.basic",
+        "B2.phrasal_verbs.extended"
+      ]
+    },
+    {
+      "id": "articles",
+      "name": "Articles & Determiners",
+      "primary_root": "noun_phrase",
+      "root_ids": [
+        "A1.articles.basic",
+        "B1.articles.extended",
+        "B2.articles.advanced"
+      ]
+    },
+    {
+      "id": "prepositions",
+      "name": "Prepositions",
+      "primary_root": "prepositions_particles",
+      "root_ids": [
+        "A1.prepositions.place_basic",
+        "A2.prepositions.time_basic",
+        "A2.prepositions.movement",
+        "B1.prepositions.cause_concession",
+        "B2.prepositions.complex",
+        "B2.collocations.dependent_prepositions"
+      ]
     }
   ],
   "notes": {
     "design_principles": [
-      "Every content unit should eventually declare exactly one primary root_id.",
-      "Families are the main grouping concept for UI (roughly maps to current 'topics').",
-      "Some families legitimately span multiple roots (e.g. conditionals, reported speech, passives). These get secondary_root tags for diagnostics.",
-      "This file is intentionally minimal for Phase 1. We can add rule/lexical face distinctions, full root_id lists per family, and richer metadata later."
+      "Every content unit should eventually declare one or more root_ids from this model.",
+      "Families remain the main UI grouping (close to current topics).",
+      "Secondary roots are used for families that genuinely span multiple systems (e.g. conditionals, reported speech, phrasal verbs).",
+      "This version (0.2.0) includes concrete root_ids only for the 8 Phase 1 pilot families."
     ]
   }
 }
