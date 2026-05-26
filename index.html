@@ -154,15 +154,23 @@
     .card {
       background: var(--surface);
       border-radius: var(--radius);
-      padding: 1.5rem;
+      padding: 1.6rem 1.35rem;
       margin-bottom: 1rem;
       max-width: min(96vw, 37.5rem);
       margin-left: auto;
       margin-right: auto;
     }
     #menuScreen {
-      padding: 1rem;
+      padding: 1.25rem 1.1rem;
       margin-bottom: 0.75rem;
+    }
+    #menuScreen h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.6rem;
+    }
+    #menuMain button {
+      padding: 0.85rem 1rem;
+      font-size: 0.95rem;
     }
     #referenceBtnWrap {
       padding-left: 1rem;
@@ -421,15 +429,53 @@
     <main class="hero-stack">
     <nav id="menuScreen" class="card" aria-label="Main menu">
       <div id="menuMain" class="menu-panel">
-        <div class="actions">
-          <button type="button" id="openDiagnosticSetupBtn" class="secondary">Start Here: Grammar Test</button>
+        <h2 style="margin: 0 0 0.75rem 0; font-size: 1.35rem;">What would you like to do?</h2>
+
+        <!-- Quick Actions -->
+        <div class="actions" style="margin-bottom: 1rem;">
+          <button type="button" id="openDiagnosticSetupBtn" style="background: #2563eb; color: white; border-color: #2563eb;">
+            Start a Grammar Diagnostic
+          </button>
         </div>
-        <hr class="divider" />
-        <button type="button" id="openTopicSelectBtn" class="secondary">Choose Grammar Topic</button>
-        <button type="button" id="openReferenceBtn" class="secondary">Reference</button>
-        <!-- Progress block: hidden for now; remove `hidden` to show again (JS in renderMenu unchanged). -->
-        <div class="memory-bank" id="memoryBankSummary" hidden></div>
+
+        <!-- Clear next steps -->
+        <div style="display: grid; gap: 0.5rem; margin-bottom: 1rem;">
+          <button type="button" id="continueLastBtn" class="secondary">
+            Continue where I left off
+          </button>
+          <button type="button" id="practiceWeakBtn" class="secondary">
+            Practice my weak areas
+          </button>
+          <button type="button" id="showTreeBtn" class="secondary">
+            See my Grammar Tree
+          </button>
+        </div>
+
+        <hr class="divider" style="margin: 1rem 0;" />
+
+        <!-- Secondary options -->
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button type="button" id="openTopicSelectBtn" class="secondary" style="flex: 1; min-width: 140px;">
+            Browse all topics
+          </button>
+          <button type="button" id="openReferenceBtn" class="secondary" style="flex: 1; min-width: 140px;">
+            Reference materials
+          </button>
+        </div>
+
+        <div class="memory-bank" id="memoryBankSummary" hidden style="margin-top: 1rem;"></div>
       </div>
+
+      <!-- New: Basic Grammar Tree Overview (hybrid visible Tree element) -->
+      <div id="menuTreeOverview" class="menu-panel hidden">
+        <h3 style="margin-top: 0;">My Grammar Tree</h3>
+        <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 0.75rem;">
+          This is an early preview based on the new Grammar Tree model.
+        </p>
+        <div id="treeRootsList" style="display: grid; gap: 0.4rem;"></div>
+        <button type="button" id="treeOverviewBackBtn" class="secondary" style="margin-top: 1rem;">Back to Menu</button>
+      </div>
+
       <div id="menuTopicSelect" class="menu-panel hidden">
         <div class="scores" id="scoresSummary"></div>
         <p class="menu-desc">Choose a topic. Then choose how you want to practise.</p>

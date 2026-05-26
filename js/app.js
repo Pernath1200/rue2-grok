@@ -609,11 +609,81 @@ registerRefCallbacks({ showExamPracticeMenu: () => {}, showWritingTipsIntroSecti
 registerCurrCallbacks({ showQuestion, loadCurriculumData, loadQuestions, hasValidTopicSelected, syncCurrentTopicFromDropdown, getTopicTitle, renderMenu });
 registerQuizCallbacks({ renderMenu, advanceCourseToNext, getWeakSpotQuestions, applyTopic, answerMatches, openTopicIntroFromResults });
 
+// === New hybrid visible elements ===
+
+document.getElementById('showTreeBtn')?.addEventListener('click', () => {
+  showTreeOverview();
+});
+
+document.getElementById('treeOverviewBackBtn')?.addEventListener('click', () => {
+  showMenuPanel('menuMain');
+});
+
+function showTreeOverview() {
+  showMenuPanel('menuTreeOverview');
+  renderSimpleTreeOverview();
+}
+
+function renderSimpleTreeOverview() {
+  const container = document.getElementById('treeRootsList');
+  if (!container) return;
+  container.innerHTML = '';
+
+  if (!grammarTree || !grammarTree.roots) {
+    container.innerHTML = '<p style="color:var(--muted)">Tree model not loaded yet.</p>';
+    return;
+  }
+
+  grammarTree.roots.forEach(root => {
+    const div = document.createElement('div');
+    div.style.cssText = 'padding: 0.6rem 0.75rem; background: var(--bg); border-radius: 6px; border: 1px solid rgba(86,95,137,0.3);';
+    div.innerHTML = `
+      <strong>${root.name}</strong>
+      <div style="font-size:0.8rem; color:var(--muted); margin-top:2px;">${root.description || ''}</div>
+    `;
+    container.appendChild(div);
+  });
+}
+
+// Quick placeholders for the new buttons (we can flesh these out)
+document.getElementById('continueLastBtn')?.addEventListener('click', () => {
+  // For now, just open the topic list as a reasonable default
+  showMenuPanel('menuTopicSelect');
+});
+
+document.getElementById('practiceWeakBtn')?.addEventListener('click', () => {
+  // Reuse existing weak spot logic if available
+  const weak = getWeakSpotQuestions?.();
+  if (weak && weak.length > 0) {
+    // Could trigger weak spot quiz here later
+    alert('Weak spot practice coming soon in the new dashboard!');
+  } else {
+    alert('No weak areas tracked yet. Do some practice first!');
+  }
+});
+
+// Load the new Grammar Tree model (hybrid approach)
+let grammarTree = null;
+
+async function loadGrammarTree() {
+  try {
+    grammarTree = await fetchJSON('data/tree/tree.json');
+    console.log('[Tree] Loaded Grammar Tree model v' + (grammarTree?.meta?.version || '?'));
+  } catch (e) {
+    console.warn('[Tree] Could not load data/tree/tree.json — falling back to basic mode', e);
+    grammarTree = null;
+  }
+}
+
 (async function init() {
   try {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./sw.js').catch(function() {});
     }
+
+    // Load Tree data early (for hybrid visible Tree features)
+    await loadGrammarTree();
+
     const mData = await fetchJSON('topics.json');
     if (mData) {
       state.topics = filterTopicsForMenu(mData.topics || []);
