@@ -626,11 +626,20 @@ function showTreeOverview() {
 
 function renderSimpleTreeOverview() {
   const container = document.getElementById('treeRootsList');
+  const debugEl = document.getElementById('treeDebugInfo');
   if (!container) return;
   container.innerHTML = '';
+  if (debugEl) debugEl.textContent = '';
 
   if (!grammarTree || !grammarTree.roots) {
-    container.innerHTML = '<p style="color:var(--muted)">Tree model not loaded yet.</p>';
+    container.innerHTML = `
+      <div style="padding: 1rem; background: #3a2f00; border: 1px solid #f57f17; border-radius: 6px; color: #ffeb3b;">
+        <strong>Tree data not loaded yet.</strong><br>
+        This usually means the file <code>data/tree/tree.json</code> wasn't found.<br>
+        Try a hard refresh (Ctrl+Shift+R) with DevTools open and "Disable cache" checked.
+      </div>
+    `;
+    if (debugEl) debugEl.textContent = 'grammarTree is null or has no roots';
     return;
   }
 
@@ -649,33 +658,33 @@ function renderSimpleTreeOverview() {
 
   grammarTree.roots.forEach(root => {
     const wrapper = document.createElement('div');
-    wrapper.style.cssText = 'margin-bottom: 0.75rem; padding: 0.5rem 0.65rem; background: var(--bg); border-radius: 6px; border: 1px solid rgba(86,95,137,0.25);';
+    wrapper.style.cssText = 'margin-bottom: 0.5rem; padding: 0.5rem 0.65rem; background: var(--bg); border-radius: 6px; border: 1px solid rgba(86,95,137,0.25);';
 
-    let html = `<div style="font-weight:600; margin-bottom:0.25rem;">${root.name}</div>`;
-    html += `<div style="font-size:0.75rem; color:var(--muted); margin-bottom:0.35rem;">${root.description || ''}</div>`;
+    let html = `<div style="font-weight:600; margin-bottom:0.2rem;">${root.name}</div>`;
+    if (root.description) {
+      html += `<div style="font-size:0.72rem; color:var(--muted); margin-bottom:0.3rem;">${root.description}</div>`;
+    }
 
     const families = familiesByRoot[root.id] || [];
     if (families.length > 0) {
-      html += `<div style="font-size:0.8rem; padding-left:0.4rem;">`;
+      html += `<div style="font-size:0.8rem; padding-left:0.3rem; line-height:1.35;">`;
       families.forEach(fam => {
         const secondary = fam.secondary_roots && fam.secondary_roots.length > 0 
-          ? ` <span style="color:#888;">(+${fam.secondary_roots.length})</span>` : '';
-        html += `<div style="margin:2px 0;">• ${fam.name}${secondary}</div>`;
+          ? ` <span style="color:#888; font-size:0.7rem;">(+${fam.secondary_roots.length})</span>` : '';
+        html += `<div style="margin:1px 0;">• ${fam.name}${secondary}</div>`;
       });
       html += `</div>`;
     } else {
-      html += `<div style="font-size:0.75rem; color:#888; padding-left:0.4rem;">(no pilot families yet)</div>`;
+      html += `<div style="font-size:0.72rem; color:#777; padding-left:0.3rem;">(no pilot families mapped yet)</div>`;
     }
 
     wrapper.innerHTML = html;
     container.appendChild(wrapper);
   });
 
-  // Small footer note
-  const note = document.createElement('div');
-  note.style.cssText = 'font-size:0.7rem; color:#777; margin-top:0.5rem;';
-  note.textContent = 'Early preview — only showing the 8 pilot families we are working on.';
-  container.appendChild(note);
+  if (debugEl) {
+    debugEl.textContent = `Loaded ${grammarTree.roots.length} roots and ${grammarTree.families?.length || 0} families from tree.json`;
+  }
 }
 
 // Quick placeholders for the new buttons (we can flesh these out)

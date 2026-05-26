@@ -11,7 +11,8 @@ export const MENU_PANEL_IDS = [
   'menuOpenClozeFreeSetup','menuOpenClozeFurther','menuWordFormation',
   'menuWordFormationFurther','menuSentenceTransform','menuSentenceTransformFurther',
   'menuExamClozeTestSelect','menuOpenClozeModes','menuTopicSelect',
-  'menuPracticeSetup','menuDiagnosticSetup'
+  'menuPracticeSetup','menuDiagnosticSetup',
+  'menuTreeOverview'   // Added for the new Grammar Tree view
 ];
 
 export function showScreen(id) {

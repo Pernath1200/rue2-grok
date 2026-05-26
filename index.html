@@ -436,6 +436,11 @@
     <main class="hero-stack">
     <nav id="menuScreen" class="card" aria-label="Main menu">
       <div id="menuMain" class="menu-panel">
+        <!-- VERY OBVIOUS DEBUG MARKER - remove later -->
+        <div style="background: #ffeb3b; color: #000; padding: 8px 12px; text-align: center; font-weight: bold; margin-bottom: 12px; border-radius: 4px; font-size: 0.9rem; border: 2px solid #f57f17;">
+          DEBUG: rue2-grok experimental build — 26 May 2026 (menu + tree changes applied)
+        </div>
+
         <h2 style="margin: 0 0 0.75rem 0; font-size: 1.35rem;">What would you like to do?</h2>
 
         <!-- Quick Actions -->
@@ -477,12 +482,15 @@
 
       <!-- New: Basic Grammar Tree Overview (hybrid visible Tree element) -->
       <div id="menuTreeOverview" class="menu-panel hidden">
-        <h3 style="margin-top: 0;">My Grammar Tree</h3>
-        <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 0.75rem;">
-          This is an early preview based on the new Grammar Tree model.
+        <div style="display:flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+          <h3 style="margin: 0;">My Grammar Tree (Early Preview)</h3>
+          <button type="button" id="treeOverviewBackBtn" class="secondary" style="margin-top:0; padding: 0.4rem 0.8rem;">← Back</button>
+        </div>
+        <p style="color: var(--muted); font-size: 0.85rem; margin-bottom: 0.75rem;">
+          This is an early preview based on the new Grammar Tree model we're building.
         </p>
-        <div id="treeRootsList" style="display: grid; gap: 0.4rem;"></div>
-        <button type="button" id="treeOverviewBackBtn" class="secondary" style="margin-top: 1rem;">Back to Menu</button>
+        <div id="treeRootsList" style="display: grid; gap: 0.5rem;"></div>
+        <div id="treeDebugInfo" style="margin-top: 1rem; font-size: 0.75rem; color: #888;"></div>
       </div>
 
       <div id="menuTopicSelect" class="menu-panel hidden">
