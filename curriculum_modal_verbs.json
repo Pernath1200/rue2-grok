@@ -91,7 +91,9 @@
       },
       {
         "title": "Typical errors (2)",
-        "content": "**Wrong:** *Do you can help?* **Right:** *Can you help?* (no *do* with modals).\n**Wrong:** *I must go to work yesterday.* **Right:** *I had to go* (*must* has no past form — use *had to*)."
+        "content": "**Wrong:** *Do you can help?* **Right:** *Can you help?* (no *do* with modals).\n**Wrong:** *I must go to work yesterday.* **Right:** *I had to go* (*must* has no past form — use *had to*).",
+        "root_ids": ["B1.modals.past_forms"],
+        "cefr_level": "B1"
       },
       {
         "title": "Reference",

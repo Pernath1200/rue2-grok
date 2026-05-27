@@ -631,33 +631,32 @@ function renderSimpleTreeOverview() {
   visualContainer.innerHTML = '';
   if (debugEl) debugEl.textContent = '';
 
-  if (!grammarTree || !grammarTree.roots) {
+  if (!grammarTree || !grammarTree.roots || !pilotMapping) {
     visualContainer.innerHTML = `
       <div style="padding: 1rem; background: #3a2f00; border: 1px solid #f57f17; border-radius: 6px; color: #ffeb3b; height: 100%;">
-        <strong>Tree data not loaded yet.</strong><br>
+        <strong>Tree data or mapping not loaded yet.</strong><br>
         Try a hard refresh (Ctrl+Shift+R) with DevTools → Network → "Disable cache" checked.
       </div>
     `;
     return;
   }
 
-  // Group pilot families by their primary root
+  // Use the proper pilot mapping to group families by root
   const familiesByRoot = {};
   grammarTree.roots.forEach(r => familiesByRoot[r.id] = []);
 
-  if (grammarTree.families) {
-    grammarTree.families.forEach(fam => {
-      if (familiesByRoot[fam.primary_root]) {
-        familiesByRoot[fam.primary_root].push(fam);
-      }
-    });
-  }
+  const pilotFamilyData = pilotMapping.pilot_families || [];
+  pilotFamilyData.forEach(fam => {
+    if (familiesByRoot[fam.primary_root]) {
+      familiesByRoot[fam.primary_root].push(fam);
+    }
+  });
 
   // Create a simple visual "roots" diagram
   const rootVisual = document.createElement('div');
   rootVisual.style.cssText = 'position: relative; width: 100%; height: 260px;';
 
-  // Fake progress per root (for demo purposes)
+  // Fake progress per root (for demo purposes - will be replaced with real data later)
   const fakeProgress = {
     tap_root: 85,
     verb_phrase: 62,
@@ -673,7 +672,7 @@ function renderSimpleTreeOverview() {
     <div style="position:absolute; left:48%; top:10px; width:6px; height:220px; background: linear-gradient(#8d6e63, #5d4037); border-radius: 3px; box-shadow: 0 0 4px rgba(0,0,0,0.4);"></div>
   `;
 
-  // Add lateral root branches + families
+  // Add lateral root branches + families from the mapping
   const rootPositions = [
     { id: 'verb_phrase', left: '12%', top: '35%', label: 'Verb Phrase' },
     { id: 'noun_phrase', left: '68%', top: '32%', label: 'Noun Phrase' },
@@ -713,7 +712,8 @@ function renderSimpleTreeOverview() {
     `;
 
     families.forEach(fam => {
-      const famProgress = Math.floor(Math.random() * 55) + 25; // fake progress
+      // For now still using fake per-family progress. Later we can drive this from actual user data + the mapping.
+      const famProgress = Math.floor(Math.random() * 55) + 25;
       content += `
         <div style="margin: 2px 0; font-size:0.7rem; display:flex; align-items:center; gap:4px;">
           <span style="flex:1;">${fam.name}</span>
@@ -729,7 +729,7 @@ function renderSimpleTreeOverview() {
   visualContainer.appendChild(rootVisual);
 
   if (debugEl) {
-    debugEl.textContent = `Showing grammar roots with pilot families. Full tree (trunk + branches) comes later.`;
+    debugEl.textContent = `Driven by pilot_families_mapping.json + tree.json. Showing ${pilotFamilyData.length} pilot families.`;
   }
 }
 
@@ -752,6 +752,7 @@ document.getElementById('practiceWeakBtn')?.addEventListener('click', () => {
 
 // Load the new Grammar Tree model (hybrid approach)
 let grammarTree = null;
+let pilotMapping = null;
 
 async function loadGrammarTree() {
   try {
@@ -763,6 +764,16 @@ async function loadGrammarTree() {
   }
 }
 
+async function loadPilotMapping() {
+  try {
+    pilotMapping = await fetchJSON('data/tree/pilot_families_mapping.json');
+    console.log('[Tree] Loaded pilot families mapping v' + (pilotMapping?.meta?.version || '?'));
+  } catch (e) {
+    console.warn('[Tree] Could not load pilot_families_mapping.json', e);
+    pilotMapping = null;
+  }
+}
+
 (async function init() {
   try {
     if ('serviceWorker' in navigator) {
@@ -771,6 +782,7 @@ async function loadGrammarTree() {
 
     // Load Tree data early (for hybrid visible Tree features)
     await loadGrammarTree();
+    await loadPilotMapping();
 
     const mData = await fetchJSON('topics.json');
     if (mData) {

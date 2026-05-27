@@ -4,19 +4,27 @@
     "sections": [
       {
         "title": "What are phrasal verbs?",
-        "content": "**Phrasal verb** = verb + particle with a **different meaning** from the verb alone: *look → look after* (take care of); *give → give up* (stop trying); *take → take off* (remove / leave). Very common in spoken English — learn them as **whole phrases**. Examples: *carry out* (do), *set up* (establish), *find out* (discover), *put off* (postpone), *run out of* (use up)."
+        "content": "**Phrasal verb** = verb + particle with a **different meaning** from the verb alone: *look → look after* (take care of); *give → give up* (stop trying); *take → take off* (remove / leave). Very common in spoken English — learn them as **whole phrases**. Examples: *carry out* (do), *set up* (establish), *find out* (discover), *put off* (postpone), *run out of* (use up).",
+        "root_ids": ["B1.phrasal_verbs.basic"],
+        "cefr_level": "B1"
       },
       {
         "title": "Separable vs inseparable",
-        "content": "**Separable:** object can go in the middle or after: *Turn on the light. / Turn the light on.* With a pronoun: **Turn it on.** (not: *Turn on it.*)\n**Inseparable:** object always after the particle: *Look after the children.* (not: *look the children after.*) *Run into a friend. Go through a difficult time.*"
+        "content": "**Separable:** object can go in the middle or after: *Turn on the light. / Turn the light on.* With a pronoun: **Turn it on.** (not: *Turn on it.*)\n**Inseparable:** object always after the particle: *Look after the children.* (not: *look the children after.*) *Run into a friend. Go through a difficult time.*",
+        "root_ids": ["B1.phrasal_verbs.basic"],
+        "cefr_level": "B1"
       },
       {
         "title": "Common particles",
-        "content": "Particles often suggest direction or completion:\n**up** — complete, increase: *give up, set up, fill up.* **down** — decrease, stop: *calm down, turn down.* **out** — disappear, distribute: *find out, run out.* **off** — disconnect, cancel: *turn off, call off.* **on** — connect, continue: *turn on, carry on.* **over** — transfer, review: *take over, go over.*\nMany have more than one meaning: *take off* = remove clothes / plane leaves. Use context."
+        "content": "Particles often suggest direction or completion:\n**up** — complete, increase: *give up, set up, fill up.* **down** — decrease, stop: *calm down, turn down.* **out** — disappear, distribute: *find out, run out.* **off** — disconnect, cancel: *turn off, call off.* **on** — connect, continue: *turn on, carry on.* **over** — transfer, review: *take over, go over.*\nMany have more than one meaning: *take off* = remove clothes / plane leaves. Use context.",
+        "root_ids": ["B1.phrasal_verbs.basic"],
+        "cefr_level": "B1"
       },
       {
         "title": "Typical errors",
-        "content": "**Wrong particle:** Wrong: *We put on the meeting* (postpone). Right: *We put off the meeting.* (*put on* = wear)\n**Word order (separable):** Wrong: *Turn on it.* Right: **Turn it on.** (Pronoun in the middle.)\n**Similar verbs:** *look up* (search) vs *look after* (take care of) vs *look for* (search for)."
+        "content": "**Wrong particle:** Wrong: *We put on the meeting* (postpone). Right: *We put off the meeting.* (*put on* = wear)\n**Word order (separable):** Wrong: *Turn on it.* Right: **Turn it on.** (Pronoun in the middle.)\n**Similar verbs:** *look up* (search) vs *look after* (take care of) vs *look for* (search for).",
+        "root_ids": ["B1.phrasal_verbs.basic"],
+        "cefr_level": "B1"
       },
       {
         "title": "Separable vs inseparable",
