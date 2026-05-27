@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "description": "Machine-readable mapping between existing RUE2 topics/curriculum and the new Grammar Tree model. Focused on the 8 Phase 1 pilot families.",
+    "last_updated": "2026-05-26",
+    "purpose": "Source of truth for tagging curriculum content and questions with root_ids during the pilot."
+  },
+  "pilot_families": [
+    {
+      "id": "present_perfect",
+      "name": "Present Perfect",
+      "primary_root": "verb_phrase",
+      "secondary_roots": [],
+      "current_topics": [
+        {
+          "id": "present_perfect",
+          "title": "Tenses: Present Perfect Simple vs Continuous",
+          "curriculum": "curriculum.json",
+          "questions_key": "sets",
+          "old_root": "verb_phrase"
+        },
+        {
+          "id": "past_simple_present_perfect",
+          "title": "Tenses: Past Simple vs Present Perfect",
+          "curriculum": "curriculum_past_simple_present_perfect.json",
+          "questions_key": "past_simple_present_perfect",
+          "old_root": "verb_phrase"
+        }
+      ],
+      "key_root_ids": [
+        "A2.present_perfect.basic",
+        "B1.present_perfect.since_for",
+        "B1.present_perfect.continuous"
+      ],
+      "tagging_priority": "Very High",
+      "notes": "Core B1 distinction. Current content is decent conceptually but needs explicit root_id tagging on sections and stronger dedicated coverage of since/for and continuous uses."
+    },
+    {
+      "id": "conditionals",
+      "name": "Conditionals",
+      "primary_root": "clause_linking",
+      "secondary_roots": ["verb_phrase"],
+      "current_topics": [
+        {
+          "id": "conditionals",
+          "title": "Tenses: Conditionals (Zero, First, Second, Third)",
+          "curriculum": "curriculum_conditionals.json",
+          "questions_key": "conditionals",
+          "old_root": "clause_linking",
+          "old_secondary_root": "verb_phrase"
+        }
+      ],
+      "key_root_ids": [
+        "A2.conditionals.zero_first",
+        "B1.conditionals.second",
+        "B1.conditionals.wishes_present",
+        "B2.conditionals.third",
+        "B2.conditionals.mixed",
+        "B2.conditionals.variants"
+      ],
+      "tagging_priority": "High",
+      "notes": "Excellent example of a cross-root family. Already has reasonable dual tagging in the old model. Needs explicit root_id tagging and clearer separation of B1 vs B2 root_ids."
+    },
+    {
+      "id": "relative_pronouns",
+      "name": "Relative Pronouns & Clauses",
+      "primary_root": "clause_linking",
+      "secondary_roots": [],
+      "current_topics": [
+        {
+          "id": "relative_pronouns",
+          "title": "Relative Pronouns",
+          "curriculum": "curriculum_relative_pronouns.json",
+          "questions_key": "relative_pronouns",
+          "old_root": "clause_linking"
+        }
+      ],
+      "key_root_ids": [
+        "A2.relative_clauses.basic",
+        "B1.relative_clauses.defining_non_defining",
+        "B2.relative_clauses.advanced"
+      ],
+      "tagging_priority": "Medium",
+      "notes": "Relatively clean mapping. Good existing content for B1. B2 advanced features need expansion."
+    },
+    {
+      "id": "reported_speech",
+      "name": "Reported Speech",
+      "primary_root": "clause_linking",
+      "secondary_roots": ["verb_phrase"],
+      "current_topics": [
+        {
+          "id": "reported_speech",
+          "title": "Reported Speech",
+          "curriculum": "curriculum_reported_speech.json",
+          "questions_key": "reported_speech",
+          "old_root": "clause_linking",
+          "old_secondary_root": "verb_phrase"
+        }
+      ],
+      "key_root_ids": [
+        "B1.reported_speech.statements",
+        "B2.reported_speech.extended"
+      ],
+      "tagging_priority": "Medium",
+      "notes": "Another strong cross-root example. Current secondary tagging is reasonable. Needs expansion of B2 reporting verbs and question forms."
+    },
+    {
+      "id": "modal_verbs",
+      "name": "Modal Verbs",
+      "primary_root": "verb_phrase",
+      "secondary_roots": [],
+      "current_topics": [
+        {
+          "id": "modal_verbs",
+          "title": "Modal Verbs",
+          "curriculum": "curriculum_modal_verbs.json",
+          "questions_key": "modal_verbs",
+          "old_root": "verb_phrase"
+        }
+      ],
+      "key_root_ids": [
+        "A2.modals.should",
+        "A2.modals.must_have_to_basic",
+        "B1.modals.speculation_present",
+        "B1.modals.past_forms",
+        "B2.modals.speculation_past"
+      ],
+      "tagging_priority": "Very High",
+      "notes": "Major gap at B2 past speculation. Content is organized by meaning rather than Tree levels. High student impact for FCE-style exams. Strong candidate for splitting into clearer sub-areas."
+    },
+    {
+      "id": "phrasal_verbs",
+      "name": "Phrasal Verbs",
+      "primary_root": "prepositions_particles",
+      "secondary_roots": ["verb_complementation"],
+      "current_topics": [
+        {
+          "id": "phrasal_verbs",
+          "title": "Phrasal Verbs",
+          "curriculum": "curriculum_phrasal_verbs.json",
+          "questions_key": "phrasal_verbs",
+          "old_root": "verb_complementation"
+        }
+      ],
+      "key_root_ids": [
+        "B1.phrasal_verbs.basic",
+        "B2.phrasal_verbs.extended"
+      ],
+      "tagging_priority": "High",
+      "notes": "Clear root assignment mismatch in current model (currently under verb_complementation). Existing content on separability is strong. Needs B2 extended content and root correction."
+    },
+    {
+      "id": "articles",
+      "name": "Articles & Determiners",
+      "primary_root": "noun_phrase",
+      "secondary_roots": [],
+      "current_topics": [
+        {
+          "id": "articles",
+          "title": "Determiners: Articles (a, an, the, ∅)",
+          "curriculum": "curriculum_articles.json",
+          "questions_key": "articles",
+          "old_root": "noun_phrase"
+        },
+        {
+          "id": "articles_advanced",
+          "title": "Determiners: Articles — extension",
+          "curriculum": "curriculum_articles_advanced.json",
+          "questions_key": "articles_advanced",
+          "old_root": "noun_phrase"
+        }
+      ],
+      "key_root_ids": [
+        "A1.articles.basic",
+        "B1.articles.extended",
+        "B2.articles.advanced"
+      ],
+      "tagging_priority": "Medium",
+      "notes": "Structurally one of the cleaner families. The existing split into basic + advanced aligns reasonably with the Tree levels."
+    },
+    {
+      "id": "prepositions",
+      "name": "Prepositions",
+      "primary_root": "prepositions_particles",
+      "secondary_roots": [],
+      "current_topics": [
+        {
+          "id": "prepositions",
+          "title": "Prepositions",
+          "curriculum": "curriculum_prepositions.json",
+          "questions_key": "prepositions",
+          "old_root": "prepositions_particles"
+        },
+        {
+          "id": "prepositions_dependent",
+          "title": "Prepositions: Dependent",
+          "curriculum": "curriculum_prepositions_dependent.json",
+          "questions_key": "prepositions_dependent",
+          "old_root": "prepositions_particles"
+        }
+      ],
+      "key_root_ids": [
+        "A1.prepositions.place_basic",
+        "A2.prepositions.time_basic",
+        "A2.prepositions.movement",
+        "B1.prepositions.cause_concession",
+        "B2.prepositions.complex",
+        "B2.collocations.dependent_prepositions"
+      ],
+      "tagging_priority": "Medium",
+      "notes": "Good existing split. Important nuance: many dependent prepositions are collocational (more trunk than pure root). The model distinguishes rule-based vs lexical items here."
+    }
+  ]
+}
