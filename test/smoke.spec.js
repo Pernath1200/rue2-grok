@@ -39,6 +39,38 @@ test('choosing a topic shows topic menu', async ({ page }) => {
   await expect(page.locator('#startPart1Btn')).toBeVisible();
 });
 
+test('category filter shows each topic under its correct category', async ({ page }) => {
+  await page.goto('/', { waitUntil: 'networkidle' });
+  await page.click('#openTopicSelectBtn');
+  await expect(page.locator('#menuTopicSelect')).toBeVisible();
+
+  const visibleTopics = () => page.evaluate(() =>
+    Array.from(document.querySelectorAll('#topicSelect option'))
+      .filter(o => !o.hidden && o.value !== '-1')
+      .map(o => o.textContent.trim()));
+
+  // Word Order belongs to Sentence Structure (root: tap_root)
+  await page.selectOption('#categorySelect', 'sentence_structure');
+  let visible = await visibleTopics();
+  expect(visible.join(' | ')).toMatch(/Word Order/i);
+
+  // Extras must not contain ghosts: Word Formation is menu-excluded and
+  // Word Order belongs to Sentence Structure
+  await page.selectOption('#categorySelect', 'extras');
+  visible = await visibleTopics();
+  expect(visible.join(' | ')).toMatch(/Spelling/i);
+  expect(visible.join(' | ')).not.toMatch(/Word Order|Word Formation/i);
+});
+
+test('shows an honest error when topics.json fails to load (no stale fallback)', async ({ page }) => {
+  await page.route('**/topics.json*', r => r.abort());
+  await page.goto('/', { waitUntil: 'networkidle' });
+  await expect(page.locator('#menuMain')).toBeVisible();
+  await expect(page.locator('#deepLinkNotice')).toContainText('Could not load the topic list');
+  // No fallback list: the topic dropdown stays empty rather than showing stale data
+  expect(await page.locator('#topicSelect option').count()).toBe(0);
+});
+
 test('exam bundle loads open cloze menu', async ({ page }) => {
   await page.goto('/_exam_app/index.html');
   await expect(page.locator('#menuExamPractice')).toBeVisible();

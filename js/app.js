@@ -106,6 +106,42 @@ function filterTopicsForMenu(topics) {
   return (topics || []).filter(function (t) { return t && !EXCLUDED_TOPIC_MENU_IDS.has(t.id); });
 }
 
+// Category definitions driven by the Tree Model root field on each topic.
+// A topic appears under a category if its `root` or `secondary_root` matches
+// any root listed here. Editing CATEGORY_DEFS is the only manual step when
+// adding new categories; topic membership flows from topics.json automatically.
+const CATEGORY_DEFS = [
+  { key: 'verbs_tenses',      roots: ['verb_phrase'] },
+  { key: 'nouns_determiners', roots: ['noun_phrase'] },
+  { key: 'sentence_structure',roots: ['sentence_syntax', 'tap_root'] },
+  { key: 'linking_clauses',   roots: ['clause_linking'] },
+  { key: 'verb_patterns',     roots: ['verb_complementation'] },
+  { key: 'prepositions',      roots: ['prepositions_particles'] },
+  { key: 'extras',            roots: ['outside_roots'] }
+];
+
+/** Hide topic options outside the chosen category (empty cat = show all + placeholder). */
+function applyCategoryToTopicOptions(cat) {
+  const sel = document.getElementById('topicSelect');
+  if (!sel) return;
+  const def = CATEGORY_DEFS.find(d => d.key === cat);
+  const roots = (def && def.roots) || [];
+  const allowed = new Set();
+  (state.topics || []).forEach(t => {
+    if (roots.indexOf(t.root) !== -1 || (t.secondary_root && roots.indexOf(t.secondary_root) !== -1)) allowed.add(t.id);
+  });
+  let firstVisible = null;
+  Array.from(sel.options).forEach(opt => {
+    const topicId = opt.dataset.topicId || '';
+    opt.hidden = !!cat && (!topicId || !allowed.has(topicId));
+    if (!opt.hidden && firstVisible === null) firstVisible = opt;
+  });
+  if (firstVisible) {
+    sel.value = firstVisible.value;
+    sel.dispatchEvent(new Event('change', { bubbles: true }));
+  }
+}
+
 const WEAK_SPOT_RIGHT_THRESHOLD = 3;
 function getWeakSpotQuestions() {
   const bank = loadMemoryBank();
@@ -311,6 +347,8 @@ function showTopicSelectMenu() {
     results.innerHTML = '';
   }
   if (sel) Array.from(sel.options).forEach(o => o.hidden = false);
+  const catSel = document.getElementById('categorySelect');
+  if (catSel) catSel.value = '';
   const backToPrevBtn = document.getElementById('topicSelectBackToPrevBtn');
   if (backToPrevBtn) {
     if (state.returnToAfterTopicSelect === 'diagnostic') {
@@ -1550,7 +1588,7 @@ function setupTopicFilter() {
       filterInput.value = '';
       resultsContainer.classList.add('hidden');
       resultsContainer.innerHTML = '';
-      Array.from(sel.options).forEach(o => o.hidden = false);
+      applyCategoryToTopicOptions(catSelect.value);
     });
   }
 }
@@ -1597,6 +1635,7 @@ function setupTopicFilter() {
         state.topics.forEach((t, i) => {
           const opt = document.createElement('option');
           opt.value = i;
+          opt.dataset.topicId = t.id;
           var label = toTitleCase(t.title || t.id);
           if (completionMap[t.id]) label = '\u2713 ' + label;
           opt.textContent = label;
@@ -1616,65 +1655,18 @@ function setupTopicFilter() {
       showMainMenu();
     }
   } catch (err) {
-    state.topics = filterTopicsForMenu([
-      { id: 'auxiliary_verbs', title: 'Auxiliary Verbs', curriculum: 'curriculum_auxiliary_verbs.json', questions_key: 'auxiliary_verbs', root: 'verb_phrase', secondary_root: null, cefr_levels: ['A1', 'A2', 'B1'] },
-      { id: 'comparatives', title: 'Comparatives and Superlatives', curriculum: 'curriculum_comparatives.json', questions_key: 'comparatives', root: 'noun_phrase', secondary_root: null, cefr_levels: ['A2', 'B2'] },
-      { id: 'conjunctions_linkers', title: 'Conjunctions and Linkers', curriculum: 'curriculum_conjunctions_linkers.json', questions_key: 'conjunctions_linkers', root: 'clause_linking', secondary_root: null, cefr_levels: ['B1', 'B2'] },
-      { id: 'articles', title: 'Determiners: Articles (a, an, the, ∅)', curriculum: 'curriculum_articles.json', questions_key: 'articles', root: 'noun_phrase', secondary_root: null, cefr_levels: ['A1', 'B1'] },
-      { id: 'articles_advanced', title: 'Determiners: Articles — extension', curriculum: 'curriculum_articles_advanced.json', questions_key: 'articles_advanced', root: 'noun_phrase', secondary_root: null, cefr_levels: ['B2'] },
-      { id: 'quantifiers', title: 'Determiners: Quantifiers', curriculum: 'curriculum_quantifiers.json', questions_key: 'quantifiers', root: 'noun_phrase', secondary_root: null, cefr_levels: ['A1', 'A2'] },
-      { id: 'fixed_phrases', title: 'Fixed Phrases', curriculum: 'curriculum_fixed_phrases.json', questions_key: 'fixed_phrases', root: 'outside_roots', secondary_root: null, cefr_levels: [] },
-      { id: 'modal_verbs', title: 'Modal Verbs', curriculum: 'curriculum_modal_verbs.json', questions_key: 'modal_verbs', root: 'verb_phrase', secondary_root: null, cefr_levels: ['A1', 'A2', 'B1', 'B2'] },
-      { id: 'countable_uncountable', title: 'Nouns: Uncountable and Always-Plural', curriculum: 'curriculum_countable_uncountable.json', questions_key: 'countable_uncountable', root: 'noun_phrase', secondary_root: null, cefr_levels: ['A2'] },
-      { id: 'passives', title: 'Passives', curriculum: 'curriculum_passives.json', questions_key: 'passives', root: 'verb_phrase', secondary_root: null, cefr_levels: ['B1', 'B2'] },
-      { id: 'phrasal_verbs', title: 'Phrasal Verbs', curriculum: 'curriculum_phrasal_verbs.json', questions_key: 'phrasal_verbs', root: 'verb_complementation', secondary_root: null, cefr_levels: ['B1', 'B2'] },
-      { id: 'prepositions', title: 'Prepositions', curriculum: 'curriculum_prepositions.json', questions_key: 'prepositions', root: 'prepositions_particles', secondary_root: null, cefr_levels: ['A1', 'A2'] },
-      { id: 'prepositions_dependent', title: 'Prepositions: Dependent', curriculum: 'curriculum_prepositions_dependent.json', questions_key: 'prepositions_dependent', root: 'prepositions_particles', secondary_root: null, cefr_levels: ['B2'] },
-      { id: 'punctuation', title: 'Punctuation and Capitalisation', curriculum: 'curriculum_punctuation.json', questions_key: 'punctuation', root: 'outside_roots', secondary_root: null, cefr_levels: [] },
-      { id: 'relative_pronouns', title: 'Relative Pronouns', curriculum: 'curriculum_relative_pronouns.json', questions_key: 'relative_pronouns', root: 'clause_linking', secondary_root: null, cefr_levels: ['A2', 'B1', 'B2'] },
-      { id: 'reported_speech', title: 'Reported Speech', curriculum: 'curriculum_reported_speech.json', questions_key: 'reported_speech', root: 'clause_linking', secondary_root: 'verb_phrase', cefr_levels: ['B1', 'B2'] },
-      { id: 'spelling', title: 'Spelling', curriculum: 'curriculum_spelling.json', questions_key: 'spelling', root: 'outside_roots', secondary_root: null, cefr_levels: [] },
-      { id: 'conditionals', title: 'Tenses: Conditionals (Zero, First, Second, Third)', curriculum: 'curriculum_conditionals.json', questions_key: 'conditionals', root: 'clause_linking', secondary_root: 'verb_phrase', cefr_levels: ['A2', 'B1', 'B2'] },
-      { id: 'tenses_general', title: 'Tenses: General', curriculum: 'curriculum_tenses_general.json', questions_key: 'tenses_general', root: 'verb_phrase', secondary_root: null, cefr_levels: ['A1', 'A2', 'B1', 'B2'] },
-      { id: 'past_perfect', title: 'Tenses: Past Perfect Simple and Past Perfect Continuous', curriculum: 'curriculum_past_perfect.json', questions_key: 'past_perfect', root: 'verb_phrase', secondary_root: null, cefr_levels: ['B1', 'B2'] },
-      { id: 'past_simple_continuous', title: 'Tenses: Past Simple and Past Continuous', curriculum: 'curriculum_past_simple_continuous.json', questions_key: 'past_simple_continuous', root: 'verb_phrase', secondary_root: null, cefr_levels: ['A1', 'A2'] },
-      { id: 'past_simple_present_perfect', title: 'Tenses: Past Simple vs Present Perfect', curriculum: 'curriculum_past_simple_present_perfect.json', questions_key: 'past_simple_present_perfect', root: 'verb_phrase', secondary_root: null, cefr_levels: ['A1', 'A2', 'B1'] },
-      { id: 'present_perfect', title: 'Tenses: Present Perfect Simple vs Continuous', curriculum: 'curriculum.json', questions_key: 'sets', root: 'verb_phrase', secondary_root: null, cefr_levels: ['A2', 'B1'] },
-      { id: 'will_going_to', title: 'Tenses: Will and Going To', curriculum: 'curriculum_will_going_to.json', questions_key: 'will_going_to', root: 'verb_phrase', secondary_root: null, cefr_levels: ['A2'] },
-      { id: 'irregular_verbs', title: 'Verbs: Irregular Past Forms', curriculum: 'curriculum_irregular_verbs.json', questions_key: 'irregular_verbs', root: 'verb_phrase', secondary_root: null, cefr_levels: ['A1', 'A2'] },
-      { id: 'infinitive_ing', title: 'Verb Patterns: to-infinitive, -ing & bare infinitive', curriculum: 'curriculum_infinitive_ing.json', questions_key: 'infinitive_ing', root: 'verb_complementation', secondary_root: null, cefr_levels: ['A2', 'B1'] },
-      { id: 'inversion', title: 'Inversion for emphasis', curriculum: 'curriculum_inversion.json', questions_key: 'inversion', root: 'sentence_syntax', secondary_root: null, cefr_levels: ['B2'] },
-      { id: 'it_subject', title: 'It – subject in English', curriculum: 'curriculum_it_subject.json', questions_key: 'it_subject', root: 'sentence_syntax', secondary_root: null, cefr_levels: ['B1'] },
-      { id: 'verb_subject_agreement', title: 'Verb–Subject Agreement', curriculum: 'curriculum_verb_subject_agreement.json', questions_key: 'verb_subject_agreement', root: 'verb_phrase', secondary_root: null, cefr_levels: ['A2', 'B1'] },
-      { id: 'word_order', title: 'Word Order in Sentences', curriculum: 'curriculum_word_order.json', questions_key: 'word_order', root: 'tap_root', secondary_root: null, cefr_levels: ['A1', 'B2'] }
-    ]);
-    state.currentTopic = state.topics[0];
-    const sel = document.getElementById('topicSelect');
-    sel.innerHTML = '';
-    const placeholder = document.createElement('option');
-    placeholder.value = '-1';
-    placeholder.textContent = 'Choose a topic';
-    placeholder.selected = true;
-    sel.appendChild(placeholder);
-    state.topics.forEach((t, i) => {
-      const opt = document.createElement('option');
-      opt.value = i;
-      opt.textContent = toTitleCase(t.title || t.id);
-      sel.appendChild(opt);
-    });
-    document.getElementById('scoresSummary').textContent = 'Could not load topics.json. Topic list loaded from fallback. Double-click start_server.bat and open http://localhost:8080 for full features.';
-    await loadQuestions().catch(function(e) {
-      document.getElementById('scoresSummary').textContent += ' Questions failed to load: ' + (e && e.message || 'unknown error');
-    });
-    renderMenu();
-    setupSearch();
-    setupTopicFilter();
-    routeHash();
-
-    // Ensure Back button is hidden on initial home screen in fallback mode too
-    if (!window.location.hash || !(window.location.hash.startsWith('#topic/') || window.location.hash.startsWith('#practice/'))) {
-      showMainMenu();
+    // No fallback topic list: topics.json is the single source of truth.
+    // Show an honest, actionable error instead of a stale copy of the data.
+    console.error('App failed to initialise:', err);
+    const notice = document.getElementById('deepLinkNotice');
+    if (notice) {
+      notice.textContent = 'Could not load the topic list (' + ((err && err.message) || 'unknown error') +
+        '). Double-click start_server.bat and open http://localhost:8080, then reload this page.';
+      notice.classList.remove('hidden');
     }
+    const summaryEl = document.getElementById('scoresSummary');
+    if (summaryEl) summaryEl.textContent = 'Could not load topics.json — the topic list is unavailable.';
+    showMainMenu();
   }
 })();
 

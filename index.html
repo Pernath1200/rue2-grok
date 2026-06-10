@@ -554,7 +554,7 @@
         <!-- Subtle dev helper for SW cache issues (can be removed later) -->
         <div style="margin-top: 0.5rem; text-align: center;">
           <a href="#" id="forceUpdateLink" style="font-size: 0.7rem; color: #888; text-decoration: underline;">Force reload latest version</a>
-          <span style="margin-left: 8px; font-size: 0.65rem; color: #f59e0b; background:#222; padding:1px 4px; border-radius:2px;">v55</span>
+          <span style="margin-left: 8px; font-size: 0.65rem; color: #f59e0b; background:#222; padding:1px 4px; border-radius:2px;">v56</span>
         </div>
       </div>
 
@@ -828,118 +828,7 @@
   </div>
 
   <script type="module" src="js/app.js"></script>
-  <script>
-  // Category definitions driven by the Tree Model root field on each topic.
-  // A topic appears under a category if its `root` or `secondary_root` matches
-  // any root listed here. Editing CATEGORY_DEFS is the only manual step when
-  // adding new categories; topic membership flows from topics.json automatically.
-  var CATEGORY_DEFS = [
-    { key: 'verbs_tenses',      roots: ['verb_phrase'] },
-    { key: 'nouns_determiners', roots: ['noun_phrase'] },
-    { key: 'sentence_structure',roots: ['sentence_syntax', 'tap_root'] },
-    { key: 'linking_clauses',   roots: ['clause_linking'] },
-    { key: 'verb_patterns',     roots: ['verb_complementation'] },
-    { key: 'prepositions',      roots: ['prepositions_particles'] },
-    { key: 'extras',            roots: ['outside_roots'] }
-  ];
-
-  var EXCLUDED_TOPIC_MENU_IDS = { open_cloze: 1, sentence_transformation: 1 };
-  var orderedTopicsPromise = null;
-
-  function getOrderedTopics() {
-    if (!orderedTopicsPromise) {
-      orderedTopicsPromise = fetch(new URL('topics.json', location.href).href)
-        .then(function (r) { return r.json(); })
-        .then(function (data) {
-          return (data.topics || []).filter(function (t) {
-            return t && !EXCLUDED_TOPIC_MENU_IDS[t.id];
-          });
-        })
-        .catch(function () { return []; });
-    }
-    return orderedTopicsPromise;
-  }
-
-  function buildCategoryTopics(topics) {
-    var map = {};
-    CATEGORY_DEFS.forEach(function (def) { map[def.key] = []; });
-    topics.forEach(function (t) {
-      CATEGORY_DEFS.forEach(function (def) {
-        var inPrimary = def.roots.indexOf(t.root) !== -1;
-        var inSecondary = t.secondary_root && def.roots.indexOf(t.secondary_root) !== -1;
-        if (inPrimary || inSecondary) map[def.key].push(t.id);
-      });
-    });
-    return map;
-  }
-
-  var categoryTopicsMap = {};
-
-  function applyCategoryToTopicOptions(cat) {
-    var topicSelect = document.getElementById('topicSelect');
-    if (!topicSelect) return;
-    var options = topicSelect.querySelectorAll('option');
-    var allowed = categoryTopicsMap[cat] || [];
-    options.forEach(function (opt) {
-      var topicId = opt.getAttribute('data-topic-id') || '';
-      if (!topicId) {
-        opt.hidden = !!cat;
-        return;
-      }
-      opt.hidden = !!cat && allowed.indexOf(topicId) === -1;
-    });
-    var firstVisible = Array.prototype.find.call(options, function (o) { return !o.hidden; });
-    if (firstVisible) {
-      topicSelect.value = firstVisible.value;
-      topicSelect.dispatchEvent(new Event('change', { bubbles: true }));
-    }
-  }
-
-  function annotateTopicOptions(orderedIds) {
-    var topicSelect = document.getElementById('topicSelect');
-    if (!topicSelect) return;
-    var options = topicSelect.querySelectorAll('option');
-    options.forEach(function (opt) {
-      var v = opt.value;
-      if (v === '' || v === '-1') {
-        opt.setAttribute('data-topic-id', '');
-        return;
-      }
-      var idx = parseInt(v, 10);
-      if (isNaN(idx) || idx < 0 || idx >= orderedIds.length) {
-        opt.setAttribute('data-topic-id', '');
-        return;
-      }
-      opt.setAttribute('data-topic-id', orderedIds[idx]);
-    });
-  }
-
-  function wireCategoryCascade() {
-    var catSel = document.getElementById('categorySelect');
-    if (!catSel || catSel.dataset.wired === '1') return;
-    catSel.dataset.wired = '1';
-    catSel.addEventListener('change', function () {
-      var cat = this.value;
-      getOrderedTopics().then(function () {
-        applyCategoryToTopicOptions(cat);
-      });
-    });
-  }
-
-  function waitForTopicOptions() {
-    var ts = document.getElementById('topicSelect');
-    if (!ts || ts.options.length < 2) {
-      requestAnimationFrame(waitForTopicOptions);
-      return;
-    }
-    getOrderedTopics().then(function (topics) {
-      categoryTopicsMap = buildCategoryTopics(topics);
-      annotateTopicOptions(topics.map(function (t) { return t.id; }));
-      wireCategoryCascade();
-    });
-  }
-
-  waitForTopicOptions();
-  </script>
+  <!-- Category filtering lives in js/app.js (CATEGORY_DEFS), driven by state.topics
+       so topics.json stays the single source of truth for the topic list. -->
 </body>
 </html>

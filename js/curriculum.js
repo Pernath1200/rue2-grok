@@ -323,16 +323,6 @@ export async function startPart2() {
   startCourseSection(first);
 }
 
-const FULL_TOPIC_TITLES = {
-  conditionals: 'Tenses: Conditionals (Zero, First, Second, Third)',
-  tenses_general: 'Tenses: General',
-  past_perfect: 'Tenses: Past Perfect Simple and Past Perfect Continuous',
-  past_simple_continuous: 'Tenses: Past Simple and Past Continuous',
-  past_simple_present_perfect: 'Tenses: Past Simple vs Present Perfect',
-  present_perfect: 'Tenses: Present Perfect Simple vs Continuous',
-  will_going_to: 'Tenses: Will and Going To'
-};
-
 export async function startDiagnostic(num) {
   num = Math.min(100, Math.max(20, parseInt(num, 10) || 50));
   let allData;
@@ -348,7 +338,7 @@ export async function startDiagnostic(num) {
       if (setId === 'set_staging') return; // exclude staging from Grammar Test pool
       const qs = set.questions || [];
       qs.forEach(function(q) {
-        pool.push(Object.assign({}, q, { topic: t.id, topicTitle: FULL_TOPIC_TITLES[t.id] || t.title || _getTopicTitle(t.id) }));
+        pool.push(Object.assign({}, q, { topic: t.id, topicTitle: t.title || _getTopicTitle(t.id) }));
       });
     });
   });
