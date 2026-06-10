@@ -89,7 +89,7 @@
       "items": [
         {"sentence1": "It is believed that the storm caused the damage.", "keyword": "BELIEVED", "sentence2_prefix": "The storm ", "sentence2_suffix": " caused the damage.", "answers": ["is believed to have"], "explanation": "Passive reporting: is believed to have + past participle.", "topic_id": "passives"},
         {"sentence1": "I had no idea she was coming.", "keyword": "KNEW", "sentence2_prefix": "I ", "sentence2_suffix": " she was coming.", "answers": ["didn't know", "didn't know that"], "explanation": "Had no idea = didn't know.", "topic_id": "reported_speech"},
-        {"sentence1": "He was the only person who applied.", "keyword": "ELSE", "sentence2_prefix": "Nobody ", "sentence2_suffix": " applied.", "answers": ["else"], "explanation": "The only person = nobody else.", "topic_id": "indefinite_pronouns"},
+        {"sentence1": "He was the only person who applied.", "keyword": "ELSE", "sentence2_prefix": "Nobody ", "sentence2_suffix": " applied.", "answers": ["else"], "explanation": "The only person = nobody else.", "topic_id": "quantifiers"},
         {"sentence1": "She couldn't concentrate because of the noise.", "keyword": "PREVENTED", "sentence2_prefix": "The noise ", "sentence2_suffix": " concentrating.", "answers": ["prevented her from"], "explanation": "Prevent someone from doing something.", "topic_id": "prepositions_dependent"},
         {"sentence1": "They finished the work in record time.", "keyword": "WAS", "sentence2_prefix": "The work ", "sentence2_suffix": " in record time.", "answers": ["was finished"], "explanation": "Active to passive: was finished.", "topic_id": "passives"}
       ]

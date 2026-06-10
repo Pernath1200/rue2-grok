@@ -589,7 +589,7 @@
         <select id="topicSelect" style="margin-bottom: 0.5rem;" title="Choose a grammar topic"></select>
         <div id="topicSearchResults" class="hidden" style="background:#111; border:1px solid #555; border-radius:6px; max-height:220px; overflow:auto; width:100%; margin: 4px 0 8px; font-size:0.85rem;"></div>
         <button type="button" id="startPart1Btn" class="secondary">1: Intro</button>
-        <button type="button" id="startPart2Btn" class="secondary">2: Multiple Choice</button>
+        <button type="button" id="startPart2Btn" class="secondary">2: Guided Practice</button>
         <button type="button" id="openPracticeSetupBtn" class="secondary">3: Further Practice</button>
 
         <div class="util-bar" style="margin-top: 0.5rem;">
@@ -702,7 +702,7 @@
         </div>
         <div id="sectionCompleteNextStepWrap" class="hidden" style="margin-top: 0.75rem;">
           <p id="sectionCompleteNextStep" style="margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--muted);"></p>
-          <button type="button" id="sectionCompleteGuidedPracticeBtn" class="secondary">2: Multiple Choice</button>
+          <button type="button" id="sectionCompleteGuidedPracticeBtn" class="secondary">2: Guided Practice</button>
         </div>
         <div id="sectionCompleteCorrectBlock" class="hidden" style="margin-top: 1rem;">
           <h3 style="font-size: 1rem; color: var(--accent); margin-bottom: 0.5rem;">Correct spellings</h3>
@@ -824,7 +824,7 @@
   var CATEGORY_DEFS = [
     { key: 'verbs_tenses',      roots: ['verb_phrase'] },
     { key: 'nouns_determiners', roots: ['noun_phrase'] },
-    { key: 'sentence_structure',roots: ['sentence_ops', 'tap_root'] },
+    { key: 'sentence_structure',roots: ['sentence_syntax', 'tap_root'] },
     { key: 'linking_clauses',   roots: ['clause_linking'] },
     { key: 'verb_patterns',     roots: ['verb_complementation'] },
     { key: 'prepositions',      roots: ['prepositions_particles'] },

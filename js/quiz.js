@@ -391,7 +391,7 @@ export function finishQuiz() {
     const sectionRetryWrap = document.getElementById('sectionCompleteRetryWrap');
     const sectionFurtherWrap = document.getElementById('sectionCompleteFurtherPracticeWrap');
     if (state.coursePart === 1) {
-      sectionNextStepEl.textContent = 'Suggested next step: 2: Multiple Choice';
+      sectionNextStepEl.textContent = 'Suggested next step: 2: Guided Practice';
       sectionNextStepWrap.classList.remove('hidden');
       sectionRetryWrap.classList.toggle('hidden', state.wrongIndices.length === 0);
       sectionFurtherWrap.classList.add('hidden');

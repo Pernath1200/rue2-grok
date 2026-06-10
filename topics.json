@@ -1,5 +1,4 @@
 {"topics":[
-  {"id":"degree_adverbs","title":"Adverbs: Degree and Intensifiers (very, really, too, so)","curriculum":"curriculum_degree_adverbs.json","questions_key":"degree_adverbs","root":"outside_roots","secondary_root":null,"cefr_levels":["A2"]},
   {"id":"auxiliary_verbs","title":"Auxiliary Verbs","curriculum":"curriculum_auxiliary_verbs.json","questions_key":"auxiliary_verbs","root":"verb_phrase","secondary_root":null,"cefr_levels":["A1","A2","B1"]},
   {"id":"comparatives","title":"Comparatives and Superlatives","curriculum":"curriculum_comparatives.json","questions_key":"comparatives","root":"noun_phrase","secondary_root":null,"cefr_levels":["A2","B2"]},
   {"id":"conjunctions_linkers","title":"Conjunctions and Linkers","curriculum":"curriculum_conjunctions_linkers.json","questions_key":"conjunctions_linkers","root":"clause_linking","secondary_root":null,"cefr_levels":["B1","B2"]},
@@ -29,5 +28,6 @@
   {"id":"inversion","title":"Inversion for emphasis","curriculum":"curriculum_inversion.json","questions_key":"inversion","root":"sentence_syntax","secondary_root":null,"cefr_levels":["B2"]},
   {"id":"it_subject","title":"It – subject in English","curriculum":"curriculum_it_subject.json","questions_key":"it_subject","root":"sentence_syntax","secondary_root":null,"cefr_levels":["B1"]},
   {"id":"verb_subject_agreement","title":"Verb–Subject Agreement","curriculum":"curriculum_verb_subject_agreement.json","questions_key":"verb_subject_agreement","root":"verb_phrase","secondary_root":null,"cefr_levels":["A2","B1"]},
+  {"id":"word_formation","title":"Word Formation (FCE Part 3)","curriculum":"curriculum_word_formation.json","questions_key":"word_formation","root":"outside_roots","secondary_root":null,"cefr_levels":["B1","B2"]},
   {"id":"word_order","title":"Word Order in Sentences","curriculum":"curriculum_word_order.json","questions_key":"word_order","root":"tap_root","secondary_root":null,"cefr_levels":["A1","B2"]}
 ]}

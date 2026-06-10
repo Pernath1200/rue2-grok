@@ -14,7 +14,12 @@
           "id": { "type": "string", "minLength": 1 },
           "title": { "type": "string", "minLength": 1 },
           "curriculum": { "type": "string", "pattern": "\\.json$" },
-          "questions_key": { "type": "string", "minLength": 1 }
+          "questions_key": { "type": "string", "minLength": 1 },
+          "root": { "type": "string" },
+          "secondary_root": { "type": ["string", "null"] },
+          "primary_root": { "type": "string" },
+          "pilot_family": { "type": "string" },
+          "cefr_levels": { "type": "array", "items": { "type": "string" } }
         },
         "additionalProperties": false
       }

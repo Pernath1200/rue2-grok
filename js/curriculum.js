@@ -315,11 +315,11 @@ export async function startPart2() {
   state.coursePart = 2;
   state.part2Order = state.courseCurriculum.practice_order || PART2_ORDER;
   showScreen('menuScreen');
-  if (!state.part2Order.length) { _renderMenu(); return; }
+  if (!state.part2Order.length) { alert('No guided practice questions for this topic yet.'); _renderMenu(); return; }
   var practice = state.courseCurriculum.practice || {};
   var first = state.part2Order[0];
   var section = practice[first];
-  if (!section || !section.questions || section.questions.length === 0) { _renderMenu(); return; }
+  if (!section || !section.questions || section.questions.length === 0) { alert('No guided practice questions for this topic yet.'); _renderMenu(); return; }
   startCourseSection(first);
 }
 

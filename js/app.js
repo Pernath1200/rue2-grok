@@ -101,7 +101,7 @@ const NAV = {
 };
 
 /** Excluded from Choose Grammar Topic only; curriculum_*.json files stay in the repo. */
-const EXCLUDED_TOPIC_MENU_IDS = new Set(['open_cloze', 'sentence_transformation']);
+const EXCLUDED_TOPIC_MENU_IDS = new Set(['open_cloze', 'sentence_transformation', 'word_formation']);
 function filterTopicsForMenu(topics) {
   return (topics || []).filter(function (t) { return t && !EXCLUDED_TOPIC_MENU_IDS.has(t.id); });
 }
@@ -145,11 +145,11 @@ async function loadCurriculumData() {
 
 async function loadQuestions() {
   state.allQuestionsData = await fetchJSON('questions.json');
-  state.setsData = state.allQuestionsData[state.currentTopic.questions_key] || state.allQuestionsData.sets || {};
+  state.setsData = state.allQuestionsData[state.currentTopic.questions_key] || {};
 }
 
 function applyTopic() {
-  state.setsData = state.allQuestionsData[state.currentTopic.questions_key] || state.allQuestionsData.sets || {};
+  state.setsData = state.allQuestionsData[state.currentTopic.questions_key] || {};
 }
 
 function renderMenu() {
@@ -1510,7 +1510,6 @@ function setupTopicFilter() {
     }
   } catch (err) {
     state.topics = filterTopicsForMenu([
-      { id: 'degree_adverbs', title: 'Adverbs: Degree and Intensifiers (very, really, too, so)', curriculum: 'curriculum_degree_adverbs.json', questions_key: 'degree_adverbs', root: 'outside_roots', secondary_root: null, cefr_levels: ['A2'] },
       { id: 'auxiliary_verbs', title: 'Auxiliary Verbs', curriculum: 'curriculum_auxiliary_verbs.json', questions_key: 'auxiliary_verbs', root: 'verb_phrase', secondary_root: null, cefr_levels: ['A1', 'A2', 'B1'] },
       { id: 'comparatives', title: 'Comparatives and Superlatives', curriculum: 'curriculum_comparatives.json', questions_key: 'comparatives', root: 'noun_phrase', secondary_root: null, cefr_levels: ['A2', 'B2'] },
       { id: 'conjunctions_linkers', title: 'Conjunctions and Linkers', curriculum: 'curriculum_conjunctions_linkers.json', questions_key: 'conjunctions_linkers', root: 'clause_linking', secondary_root: null, cefr_levels: ['B1', 'B2'] },
@@ -1537,8 +1536,8 @@ function setupTopicFilter() {
       { id: 'will_going_to', title: 'Tenses: Will and Going To', curriculum: 'curriculum_will_going_to.json', questions_key: 'will_going_to', root: 'verb_phrase', secondary_root: null, cefr_levels: ['A2'] },
       { id: 'irregular_verbs', title: 'Verbs: Irregular Past Forms', curriculum: 'curriculum_irregular_verbs.json', questions_key: 'irregular_verbs', root: 'verb_phrase', secondary_root: null, cefr_levels: ['A1', 'A2'] },
       { id: 'infinitive_ing', title: 'Verb Patterns: to-infinitive, -ing & bare infinitive', curriculum: 'curriculum_infinitive_ing.json', questions_key: 'infinitive_ing', root: 'verb_complementation', secondary_root: null, cefr_levels: ['A2', 'B1'] },
-      { id: 'inversion', title: 'Inversion for emphasis', curriculum: 'curriculum_inversion.json', questions_key: 'inversion', root: 'sentence_ops', secondary_root: null, cefr_levels: ['B2'] },
-      { id: 'it_subject', title: 'It – subject in English', curriculum: 'curriculum_it_subject.json', questions_key: 'it_subject', root: 'sentence_ops', secondary_root: null, cefr_levels: ['B1'] },
+      { id: 'inversion', title: 'Inversion for emphasis', curriculum: 'curriculum_inversion.json', questions_key: 'inversion', root: 'sentence_syntax', secondary_root: null, cefr_levels: ['B2'] },
+      { id: 'it_subject', title: 'It – subject in English', curriculum: 'curriculum_it_subject.json', questions_key: 'it_subject', root: 'sentence_syntax', secondary_root: null, cefr_levels: ['B1'] },
       { id: 'verb_subject_agreement', title: 'Verb–Subject Agreement', curriculum: 'curriculum_verb_subject_agreement.json', questions_key: 'verb_subject_agreement', root: 'verb_phrase', secondary_root: null, cefr_levels: ['A2', 'B1'] },
       { id: 'word_order', title: 'Word Order in Sentences', curriculum: 'curriculum_word_order.json', questions_key: 'word_order', root: 'tap_root', secondary_root: null, cefr_levels: ['A1', 'B2'] }
     ]);
