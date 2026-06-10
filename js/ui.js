@@ -12,7 +12,8 @@ export const MENU_PANEL_IDS = [
   'menuWordFormationFurther','menuSentenceTransform','menuSentenceTransformFurther',
   'menuExamClozeTestSelect','menuOpenClozeModes','menuTopicSelect',
   'menuPracticeSetup','menuDiagnosticSetup',
-  'menuTreeOverview'   // Added for the new Grammar Tree view
+  'menuTreeOverview',  // Added for the new Grammar Tree view
+  'menuRootPractice'   // Deep-link practice landing (#practice/root/... links)
 ];
 
 export function showScreen(id) {

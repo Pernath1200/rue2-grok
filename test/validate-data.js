@@ -178,6 +178,46 @@ if (!topicsData) {
   }
 }
 
+// ── 7. root_content_index.json integrity (powers #practice/... deep links) ─
+
+console.log('\n7. root_content_index.json integrity');
+
+const rciPath = path.join(ROOT, 'data', 'tree', 'root_content_index.json');
+const rci = fs.existsSync(rciPath) ? tryLoadJson(rciPath, 'data/tree/root_content_index.json') : null;
+if (!rci || !topicsData) {
+  fail('Cannot check — root_content_index.json or topics.json not loaded');
+} else {
+  const validIds = new Set(topicsData.topics.map(t => t.id));
+
+  function checkIndexSection(sectionName, entries, deepLinkPrefix) {
+    for (const key of Object.keys(entries || {})) {
+      const entry = entries[key];
+      for (const tid of entry.topics || []) {
+        if (validIds.has(tid)) {
+          pass(sectionName + '.' + key + ': topic "' + tid + '" is valid');
+        } else {
+          fail('root_content_index ' + sectionName + '.' + key + ': topic "' + tid + '" not found in topics.json');
+        }
+      }
+      for (const ep of entry.practice_entry_points || []) {
+        if (ep && ep.type === 'topic' && validIds.has(ep.id)) {
+          pass(sectionName + '.' + key + ': entry point "' + ep.id + '" is valid');
+        } else {
+          fail('root_content_index ' + sectionName + '.' + key + ': entry point "' + (ep && ep.id) + '" invalid or not found in topics.json');
+        }
+      }
+      if (entry.deep_link === deepLinkPrefix + key) {
+        pass(sectionName + '.' + key + ': deep_link matches key');
+      } else {
+        fail('root_content_index ' + sectionName + '.' + key + ': deep_link "' + entry.deep_link + '" does not match expected "' + deepLinkPrefix + key + '"');
+      }
+    }
+  }
+
+  checkIndexSection('roots', rci.roots, '#practice/root/');
+  checkIndexSection('pilot_families', rci.pilot_families, '#practice/root_id/');
+}
+
 // ── Summary ────────────────────────────────────────────────────────────────
 
 console.log('\n────────────────────────────────');

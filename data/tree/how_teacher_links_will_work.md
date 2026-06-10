@@ -2,7 +2,7 @@
 
 **Date**: 2026-05-28  
 **Scope**: rue2-grok only (Tree as single source of truth for "teacher prescribes exact practice from marking form")  
-**Status**: Minimal viable seed implemented. No core UX blocked.
+**Status**: Deep links LIVE (2026-06-10). `#practice/root/<root>`, `#practice/root_id/<family-or-granular-id>` and `#practice/topic/<topic>` are wired in `js/app.js` (`routeHash`), powered by `root_content_index.json`, with a `menuRootPractice` landing panel and fail-soft fallback to the main menu. Verified end-to-end by `test/verify-deeplinks.js` (run `npm start`, then `node test/verify-deeplinks.js`).
 
 ## Vision (Long-term, Non-blocking)
 - Marking form / Feedback docx (see Desktop/Marking_Template.md) tags errors to RUE2 topics or roots (e.g. "Verb Phrase", "Present Perfect", or granular "B1.present_perfect.since_for").

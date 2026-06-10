@@ -191,19 +191,110 @@ function renderMenu() {
   showMenuPanel('menuMain');
 }
 
-function applyHashAndShowTopic() {
+// === Hash router ===
+// Consumes #topic/<id> (legacy) plus the #practice/... deep links described in
+// data/tree/how_teacher_links_will_work.md, powered by root_content_index.json.
+function routeHash() {
   const hash = window.location.hash || '';
-  const match = hash.match(/^#topic\/([^/]+)$/);
-  if (!match || !state.topics || !state.topics.length) return;
-  const topicId = decodeURIComponent(match[1]);
+  let m;
+  if ((m = hash.match(/^#topic\/([^/]+)$/))) { routeTopic(decodeURIComponent(m[1]), false); return; }
+  if ((m = hash.match(/^#practice\/root\/([^/]+)$/))) { routePracticeRoot(decodeURIComponent(m[1])); return; }
+  if ((m = hash.match(/^#practice\/root_id\/(.+)$/))) { routePracticeRootId(decodeURIComponent(m[1])); return; }
+  if ((m = hash.match(/^#practice\/topic\/([^/]+)$/))) { routeTopic(decodeURIComponent(m[1]), true); return; }
+  if (hash.indexOf('#practice/') === 0) deepLinkFailSoft('That practice link was not recognised.');
+}
+
+function routeTopic(topicId, noticeOnMiss) {
+  if (!state.topics || !state.topics.length) return;
   const idx = state.topics.findIndex(t => t.id === topicId);
-  if (idx === -1) return;
+  if (idx === -1) {
+    if (noticeOnMiss) deepLinkFailSoft('Topic "' + topicId + '" was not found.');
+    return;
+  }
   state.currentTopic = state.topics[idx];
   applyTopic();
   showScreen('menuScreen');
   showTopicSelectMenu();
   const sel = document.getElementById('topicSelect');
   if (sel) sel.value = String(idx);
+}
+
+function routePracticeRoot(rootId) {
+  const entry = rootContentIndex && rootContentIndex.roots && rootContentIndex.roots[rootId];
+  if (!entry) { deepLinkFailSoft('Practice link not available for "' + rootId + '".'); return; }
+  showRootPracticePanel(entry);
+}
+
+function routePracticeRootId(id) {
+  const fams = (rootContentIndex && rootContentIndex.pilot_families) || null;
+  if (!fams) { deepLinkFailSoft('Practice links are not available right now.'); return; }
+  // 1. Exact pilot family key (e.g. "present_perfect")
+  if (fams[id]) { showRootPracticePanel(fams[id]); return; }
+  // 2. Granular root_id listed in a family (e.g. "A2.relative_clauses.basic" → relative_pronouns)
+  for (const key of Object.keys(fams)) {
+    if ((fams[key].granular_root_ids || []).indexOf(id) !== -1) { showRootPracticePanel(fams[key]); return; }
+  }
+  // 3. Parse <CEFR>.<stem>.<rest> and match the stem (covers ids not yet tagged in data).
+  //    The stem may be a family key ("present_perfect") or the middle segment its granular
+  //    ids use ("modals" → modal_verbs, "relative_clauses" → relative_pronouns).
+  const parts = id.split('.');
+  if (parts.length >= 2 && /^[ABC][12]$/.test(parts[0])) {
+    const stem = parts[1];
+    if (fams[stem]) { showRootPracticePanel(fams[stem]); return; }
+    for (const key of Object.keys(fams)) {
+      const gids = fams[key].granular_root_ids || [];
+      if (gids.some(g => g.split('.')[1] === stem)) { showRootPracticePanel(fams[key]); return; }
+    }
+  }
+  deepLinkFailSoft('No practice found for "' + id + '".');
+}
+
+function deepLinkFailSoft(msg) {
+  NAV.navigate('menuMain');
+  const el = document.getElementById('deepLinkNotice');
+  if (!el) return;
+  el.textContent = msg + ' Showing the main menu instead.';
+  el.classList.remove('hidden');
+  setTimeout(() => el.classList.add('hidden'), 6000);
+}
+
+function showRootPracticePanel(entry) {
+  const titleEl = document.getElementById('rootPracticeTitle');
+  const descEl = document.getElementById('rootPracticeDesc');
+  const listEl = document.getElementById('rootPracticeEntryPoints');
+  if (!titleEl || !descEl || !listEl) { deepLinkFailSoft('Practice view unavailable.'); return; }
+  titleEl.textContent = entry.canonical_title || 'Practice';
+  descEl.textContent = entry.short_student_description || '';
+  listEl.innerHTML = '';
+  (entry.practice_entry_points || []).forEach(ep => {
+    if (!ep || ep.type !== 'topic' || !ep.id) return;
+    const topic = (state.topics || []).find(t => t.id === ep.id);
+    if (!topic) return; // skip topics the menu can't open (e.g. exam-only modes)
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'secondary';
+    const label = ep.label || toTitleCase(topic.title || topic.id);
+    const cefr = (ep.cefr && ep.cefr.length) ? ep.cefr : (topic.cefr_levels || []);
+    btn.innerHTML = escapeHtml(label) +
+      (cefr.length ? ' <span style="color: var(--muted); font-size: 0.8rem;">· ' + escapeHtml(cefr.join(', ')) + '</span>' : '');
+    btn.addEventListener('click', () => openPracticeEntryPoint(ep.id, entry.canonical_title));
+    listEl.appendChild(btn);
+  });
+  if (!listEl.children.length) {
+    listEl.innerHTML = '<p style="color: var(--muted); font-size: 0.85rem;">No practice entry points available yet.</p>';
+  }
+  NAV.navigate('menuRootPractice', { context: entry.canonical_title || 'Practice' });
+}
+
+function openPracticeEntryPoint(topicId, contextLabel) {
+  const idx = (state.topics || []).findIndex(t => t.id === topicId);
+  if (idx === -1) { deepLinkFailSoft('Topic "' + topicId + '" was not found.'); return; }
+  state.currentTopic = state.topics[idx];
+  applyTopic();
+  NAV.navigate('menuTopicSelect', { context: contextLabel || 'Topics' });
+  const sel = document.getElementById('topicSelect');
+  if (sel) sel.value = String(idx);
+  location.hash = 'topic/' + topicId;
 }
 
 function showTopicSelectMenu() {
@@ -829,6 +920,10 @@ document.getElementById('treeOverviewBackBtn')?.addEventListener('click', () => 
   NAV.back();   // use history so Esc/Back feel consistent
 });
 
+document.getElementById('rootPracticeBackBtn')?.addEventListener('click', () => {
+  NAV.back();
+});
+
 function showTreeOverview() {
   showMenuPanel('menuTreeOverview');
   renderSimpleTreeOverview();
@@ -1360,6 +1455,17 @@ async function loadPilotMapping() {
   }
 }
 
+let rootContentIndex = null;
+
+async function loadRootContentIndex() {
+  try {
+    rootContentIndex = await fetchJSON('data/tree/root_content_index.json');
+  } catch (e) {
+    console.warn('Could not load root_content_index.json — practice deep links disabled', e);
+    rootContentIndex = null;
+  }
+}
+
 // Topic page filter — module scope so it's visible to init()
 function setupTopicFilter() {
   const filterInput = document.getElementById('topicFilterInput');
@@ -1473,6 +1579,7 @@ function setupTopicFilter() {
     // Load Tree data early (for hybrid visible Tree features)
     await loadGrammarTree();
     await loadPilotMapping();
+    await loadRootContentIndex();
 
     const mData = await fetchJSON('topics.json');
     if (mData) {
@@ -1501,11 +1608,11 @@ function setupTopicFilter() {
     renderMenu();
     setupSearch();
     setupTopicFilter();
-    applyHashAndShowTopic();
+    routeHash();
 
-    // On initial load without a direct topic hash, ensure we're on the home screen
+    // On initial load without a direct topic/practice hash, ensure we're on the home screen
     // with the Back button properly hidden (fixes regression on refresh)
-    if (!window.location.hash || !window.location.hash.startsWith('#topic/')) {
+    if (!window.location.hash || !(window.location.hash.startsWith('#topic/') || window.location.hash.startsWith('#practice/'))) {
       showMainMenu();
     }
   } catch (err) {
@@ -1562,13 +1669,13 @@ function setupTopicFilter() {
     renderMenu();
     setupSearch();
     setupTopicFilter();
-    applyHashAndShowTopic();
+    routeHash();
 
     // Ensure Back button is hidden on initial home screen in fallback mode too
-    if (!window.location.hash || !window.location.hash.startsWith('#topic/')) {
+    if (!window.location.hash || !(window.location.hash.startsWith('#topic/') || window.location.hash.startsWith('#practice/'))) {
       showMainMenu();
     }
   }
 })();
 
-window.addEventListener('hashchange', applyHashAndShowTopic);
+window.addEventListener('hashchange', routeHash);

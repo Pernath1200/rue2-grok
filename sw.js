@@ -1,7 +1,7 @@
 /**
  * Bump CACHE_VERSION whenever this file changes so stale caches are dropped on activate.
  */
-var CACHE_VERSION = 'v54';  // v54 - scaled up all root drawing lengths/offsets to actually fill the large 780x500 canvas
+var CACHE_VERSION = 'v55';  // v55 - #practice/... deep links + root practice landing panel
 var CACHE_NAME = 'rue2-' + CACHE_VERSION;
 
 var PRECACHE_URLS = [

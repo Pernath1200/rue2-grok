@@ -116,9 +116,9 @@
     "outside_roots": {
       "canonical_title": "Outside Roots / Extras",
       "short_student_description": "Misc. areas not core to the 7-root grammar tree (spelling, punctuation, fixed phrases, degree adverbs).",
-      "topics": ["degree_adverbs", "fixed_phrases", "punctuation", "spelling"],
+      "topics": ["fixed_phrases", "punctuation", "spelling"],
       "curriculum_containers": [
-        "curriculum_degree_adverbs.json", "curriculum_fixed_phrases.json",
+        "curriculum_fixed_phrases.json",
         "curriculum_punctuation.json", "curriculum_spelling.json"
       ],
       "practice_entry_points": [

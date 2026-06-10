@@ -511,6 +511,8 @@
       <div id="navSearchResults" class="hidden" style="background:#111; border:1px solid #555; border-radius:6px; max-height:260px; overflow:auto; width:100%; margin-bottom:0.6rem; font-size:0.9rem;"></div>
 
       <div id="menuMain" class="menu-panel">
+        <!-- Fail-soft notice for unrecognised deep links -->
+        <div id="deepLinkNotice" class="hidden" style="margin-bottom: 0.6rem; padding: 6px 10px; font-size: 0.85rem; color: #f5d67f; background: #2a2300; border: 1px solid #6b5d1f; border-radius: 6px;"></div>
         <h2 style="margin: 0 0 0.75rem 0; font-size: 1.35rem;">What would you like to do?</h2>
 
         <!-- Quick Actions -->
@@ -552,7 +554,7 @@
         <!-- Subtle dev helper for SW cache issues (can be removed later) -->
         <div style="margin-top: 0.5rem; text-align: center;">
           <a href="#" id="forceUpdateLink" style="font-size: 0.7rem; color: #888; text-decoration: underline;">Force reload latest version</a>
-          <span style="margin-left: 8px; font-size: 0.65rem; color: #f59e0b; background:#222; padding:1px 4px; border-radius:2px;">v54</span>
+          <span style="margin-left: 8px; font-size: 0.65rem; color: #f59e0b; background:#222; padding:1px 4px; border-radius:2px;">v55</span>
         </div>
       </div>
 
@@ -568,6 +570,16 @@
         <div id="treeRootsVisual" style="background: #0f0d1a; border-radius: 8px; padding: 10px; min-height: 560px; position: relative; overflow: hidden; border: 1px solid #3d2b1f;">
           <!-- Visual roots will be rendered here by JS (polished B: larger canvas, clearer labels, no debug) -->
         </div>
+      </div>
+
+      <!-- Deep-link practice landing (#practice/root/... and #practice/root_id/...) -->
+      <div id="menuRootPractice" class="menu-panel hidden">
+        <div style="display:flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <h3 id="rootPracticeTitle" style="margin: 0; font-size: 1.1rem;"></h3>
+          <button type="button" id="rootPracticeBackBtn" class="secondary" style="margin-top:0; padding: 0.35rem 0.7rem; font-size: 0.85rem;">← Back</button>
+        </div>
+        <p id="rootPracticeDesc" style="color: var(--muted); font-size: 0.85rem; margin-bottom: 0.6rem;"></p>
+        <div id="rootPracticeEntryPoints" style="display: grid; gap: 0.4rem;"></div>
       </div>
 
       <div id="menuTopicSelect" class="menu-panel hidden">
