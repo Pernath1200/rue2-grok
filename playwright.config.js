@@ -8,6 +8,9 @@ module.exports = defineConfig({
   use: {
     baseURL: 'http://127.0.0.1:5555',
     headless: true,
+    // Keep tests deterministic: no SW caching between runs, and page.route()
+    // can intercept JSON fetches (the SW would otherwise bypass it).
+    serviceWorkers: 'block',
   },
   webServer: {
     command: 'node server.js',

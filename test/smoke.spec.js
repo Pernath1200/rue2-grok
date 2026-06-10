@@ -1,11 +1,22 @@
+/**
+ * E2E smoke suite: quick visibility checks + the core student journeys.
+ * Run: npm run test:e2e  (auto-starts node server.js on port 5555)
+ *
+ * Each test gets a fresh browser context (clean localStorage), so journeys
+ * always start from a brand-new student profile.
+ */
 const { test, expect } = require('@playwright/test');
+const { trackErrors, selectTopic, answerThroughQuiz, getTapRootLength } = require('./e2e-helpers');
+
+// ── Quick checks ────────────────────────────────────────────────────────────
 
 test('app loads without console errors', async ({ page }) => {
-  const errors = [];
-  page.on('pageerror', err => errors.push(err.message));
+  const errors = trackErrors(page);
   await page.goto('/');
   await expect(page.locator('#menuScreen')).toBeVisible();
   await expect(page.locator('#menuMain')).toBeVisible();
+  await expect(page.locator('#openDiagnosticSetupBtn')).toBeVisible();
+  await expect(page.locator('#showTreeBtn')).toBeVisible();
   expect(errors).toEqual([]);
 });
 
@@ -15,8 +26,9 @@ test('topic select shows topics', async ({ page }) => {
   await expect(page.locator('#menuTopicSelect')).toBeVisible();
   const sel = page.locator('#topicSelect');
   await expect(sel).toBeVisible();
+  // Placeholder + all menu topics (29 at time of writing; assert a sane floor)
   const count = await sel.locator('option').count();
-  expect(count).toBeGreaterThan(5);
+  expect(count).toBeGreaterThan(20);
 });
 
 test('choosing a topic shows topic menu', async ({ page }) => {
@@ -25,43 +37,6 @@ test('choosing a topic shows topic menu', async ({ page }) => {
   await expect(page.locator('#topicSelect')).toBeVisible();
   await page.locator('#topicSelect').selectOption({ index: 1 });
   await expect(page.locator('#startPart1Btn')).toBeVisible();
-});
-
-test('start Part 1 shows intro screen', async ({ page }) => {
-  await page.goto('/');
-  await page.locator('#openTopicSelectBtn').click();
-  await page.locator('#topicSelect').selectOption({ index: 1 });
-  await page.locator('#startPart1Btn').click();
-  await expect(page.locator('#introScreen')).toBeVisible({ timeout: 10000 });
-});
-
-test('start Part 3 shows quiz screen with a question', async ({ page }) => {
-  await page.goto('/');
-  await page.locator('#openTopicSelectBtn').click();
-  await page.locator('#topicSelect').selectOption({ index: 1 });
-  await page.locator('#openPracticeSetupBtn').click();
-  await expect(page.locator('#menuPracticeSetup')).toBeVisible();
-  await page.locator('#startBtn').click();
-  await expect(page.locator('#quizScreen')).toBeVisible({ timeout: 10000 });
-  await expect(page.locator('#questionText')).not.toBeEmpty();
-});
-
-test('submit answer shows feedback', async ({ page }) => {
-  await page.goto('/');
-  await page.locator('#openTopicSelectBtn').click();
-  await page.locator('#topicSelect').selectOption({ index: 1 });
-  await page.locator('#openPracticeSetupBtn').click();
-  await page.locator('#startBtn').click();
-  await expect(page.locator('#quizScreen')).toBeVisible({ timeout: 10000 });
-  const mcOption = page.locator('#mcBlock .option').first();
-  const openInput = page.locator('#openInput');
-  if (await mcOption.isVisible({ timeout: 2000 }).catch(() => false)) {
-    await mcOption.click();
-  } else if (await openInput.isVisible({ timeout: 2000 }).catch(() => false)) {
-    await openInput.fill('test');
-    await page.locator('#submitBtn').click();
-  }
-  await expect(page.locator('#feedbackBlock')).toBeVisible({ timeout: 5000 });
 });
 
 test('exam bundle loads open cloze menu', async ({ page }) => {
@@ -75,4 +50,103 @@ test('reference button on home menu', async ({ page }) => {
   await page.goto('/');
   await page.locator('#openReferenceBtn').click();
   await expect(page.locator('#referenceScreen')).toBeVisible({ timeout: 10000 });
+});
+
+// ── Core student journeys ───────────────────────────────────────────────────
+
+test('journey: complete a lesson section (Part 1: intro + check quiz)', async ({ page }) => {
+  const errors = trackErrors(page);
+  await page.goto('/', { waitUntil: 'networkidle' });
+
+  await selectTopic(page, 'Modal Verbs');
+  await page.click('#startPart1Btn');
+  await expect(page.locator('#introScreen')).toBeVisible({ timeout: 10000 });
+  await expect(page.locator('#introTitle')).not.toBeEmpty();
+  await expect(page.locator('#introContent')).not.toBeEmpty();
+
+  // Advance through intro sections; the last one's button reads "Start test"
+  let startedCheck = false;
+  for (let i = 0; i < 40; i++) {
+    const label = (await page.locator('#introNextBtn').textContent()).trim();
+    await page.click('#introNextBtn');
+    if (label === 'Start test') { startedCheck = true; break; }
+    if (label === 'Menu') break; // topic without check questions — intro alone completes Part 1
+  }
+  expect(startedCheck, 'expected the intro to end in a short check quiz').toBe(true);
+
+  await expect(page.locator('#quizScreen')).toBeVisible();
+  const ending = await answerThroughQuiz(page);
+  expect(ending).toBe('sectionComplete');
+  await expect(page.locator('#sectionCompleteTitle')).toHaveText('Part 1 complete');
+  await expect(page.locator('#sectionCompleteScore')).toContainText(/Score: \d+ \/ \d+/);
+
+  expect(errors).toEqual([]);
+});
+
+test('journey: take a practice quiz and see results', async ({ page }) => {
+  const errors = trackErrors(page);
+  await page.goto('/', { waitUntil: 'networkidle' });
+
+  await selectTopic(page, 'Modal Verbs');
+  await page.click('#openPracticeSetupBtn');
+  await expect(page.locator('#menuPracticeSetup')).toBeVisible();
+  await page.selectOption('#numQuestionsSelect', '10');
+  await page.click('#startBtn');
+
+  await expect(page.locator('#quizScreen')).toBeVisible({ timeout: 10000 });
+  await expect(page.locator('#questionText')).not.toBeEmpty();
+
+  const ending = await answerThroughQuiz(page, 12);
+  expect(ending).toBe('result');
+  await expect(page.locator('#resultScore')).toContainText(/Score: \d+ \/ 10/);
+
+  // Back to the main menu cleanly
+  await page.click('#backToMenuBtn');
+  await expect(page.locator('#menuMain')).toBeVisible();
+
+  expect(errors).toEqual([]);
+});
+
+test('journey: tree reflects progress after a completed quiz', async ({ page }) => {
+  const errors = trackErrors(page);
+  await page.goto('/', { waitUntil: 'networkidle' });
+
+  // Baseline: fresh profile, tap root at its resting length
+  const before = await getTapRootLength(page);
+
+  // Complete a 10-question quiz (saves a score + memory bank entries)
+  await selectTopic(page, 'Modal Verbs');
+  await page.click('#openPracticeSetupBtn');
+  await page.selectOption('#numQuestionsSelect', '10');
+  await page.click('#startBtn');
+  await expect(page.locator('#quizScreen')).toBeVisible({ timeout: 10000 });
+  await answerThroughQuiz(page, 12);
+  await page.click('#backToMenuBtn');
+  await expect(page.locator('#menuMain')).toBeVisible();
+
+  // The tap root grows once the student has real history
+  const after = await getTapRootLength(page);
+  expect(after).toBeGreaterThan(before + 50);
+
+  expect(errors).toEqual([]);
+});
+
+test('journey: weak areas practice works after mistakes exist', async ({ page }) => {
+  const errors = trackErrors(page);
+  await page.goto('/', { waitUntil: 'networkidle' });
+
+  // Build memory-bank history first (dummy answers guarantee some wrong)
+  await selectTopic(page, 'Modal Verbs');
+  await page.click('#openPracticeSetupBtn');
+  await page.selectOption('#numQuestionsSelect', '10');
+  await page.click('#startBtn');
+  await expect(page.locator('#quizScreen')).toBeVisible({ timeout: 10000 });
+  await answerThroughQuiz(page, 12);
+  await page.click('#backToMenuBtn');
+
+  await page.click('#practiceWeakBtn');
+  await expect(page.locator('#quizScreen')).toBeVisible();
+  await expect(page.locator('#questionText')).not.toBeEmpty();
+
+  expect(errors).toEqual([]);
 });
