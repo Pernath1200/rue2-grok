@@ -3,7 +3,7 @@
     "version": "0.2.0",
     "name": "RUE2 Grammar Tree - Phase 1 Pilot Model",
     "description": "Evolved data model including concrete root_ids for the 8 pilot families. This is the working source of truth for tagging and implementation.",
-    "last_updated": "2026-05-26",
+    "last_updated": "2026-05-27",
     "source": "Based on Tree_Model_Of_Language_Proficiency.md + detailed pilot analysis"
   },
   "roots": [

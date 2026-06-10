@@ -4,11 +4,15 @@
     "sections": [
       {
         "title": "What this section covers",
-        "content": "Sometimes in English we **change the normal word order** (subject + verb) for **emphasis**, especially in formal writing. This section covers **inversion** with: *Not only ... but (also)*, *Never / Rarely / Seldom*, *Only then / only later / only when*, and *Under no circumstances*."
+        "content": "Sometimes in English we **change the normal word order** (subject + verb) for **emphasis**, especially in formal writing. This section covers **inversion** with: *Not only ... but (also)*, *Never / Rarely / Seldom*, *Only then / only later / only when*, and *Under no circumstances*.",
+        "root_ids": ["B2.sentence_syntax.inversion"],
+        "cefr_level": "B2"
       },
       {
         "title": "What is inversion?",
-        "content": "**Inversion** means the **auxiliary verb comes before the subject**, like in questions.\nNormal: *I have never seen such a film.* Inversion: *Never have I seen such a film.*\nNormal: *We did not only visit London.* Inversion: *Not only did we visit London.*\nWe usually use these patterns in written English for **stronger emphasis**."
+        "content": "**Inversion** means the **auxiliary verb comes before the subject**, like in questions.\nNormal: *I have never seen such a film.* Inversion: *Never have I seen such a film.*\nNormal: *We did not only visit London.* Inversion: *Not only did we visit London.*\nWe usually use these patterns in written English for **stronger emphasis**.",
+        "root_ids": ["B2.sentence_syntax.inversion"],
+        "cefr_level": "B2"
       },
       {
         "title": "Patterns to learn (1)",

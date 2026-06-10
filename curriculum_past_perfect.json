@@ -3,89 +3,116 @@
     "title": "Past Perfect Simple and Past Perfect Continuous",
     "sections": [
       {
-        "title": "Link to Present Perfect (1)",
-        "content": "In the **Present Perfect** topic you learned: **present perfect simple** = have/has + past participle (result, experience). **Present perfect continuous** = have/has been + *-ing* (how long, activity)."
+        "title": "What past perfect does (core logic)",
+        "content": "Past perfect is the tense that **establishes order between two past events**. It is the **past before the past** — when telling a story in the past tense, past perfect marks an action that happened **earlier** than another past action.\n\n**Why it matters (roots-first)**: This sits in the Verb Phrase root (#2 in the Tree Model) — perfect aspect applied backwards from a past reference point, the same logic as present perfect but anchored in the past instead of now. Czech does **not** distinguish *had done* from *did* the way English does, so Czech students routinely skip past perfect and leave sequence ambiguous. Without it, storytelling, news reports, exam transformations and formal writing all blur.\n\n**Core example**:\n- **When I arrived, she had already left.** (leaving happened **before** arriving)\n- *When I arrived, she left.* would mean she left **after** I arrived — different story.\n\n**Form**: **had + past participle** (simple) or **had been + -ing** (continuous). Same *had* for all subjects.",
+        "root_ids": [
+          "B1.past_perfect.basic"
+        ],
+        "cefr_level": "B1"
       },
       {
-        "title": "Link to Present Perfect (2)",
-        "content": "**Past perfect** is the same idea, but for a time **before another past time**. We use **had** instead of have/has. **Past perfect simple** = had + past participle. **Past perfect continuous** = had been + *-ing*."
-      },
-      {
-        "title": "Past perfect simple",
-        "content": "**Had** + past participle (*had gone*, *had finished*, *had written*). **Completed before** another past action or time. *When I arrived, she had already left. He had finished his homework before dinner. By 2020 they had sold the house.*"
-      },
-      {
-        "title": "Past perfect continuous (1)",
-        "content": "**Had been** + *-ing* (*had been waiting*, *had been working*). Focus on **how long** something had been happening before another past event, or on the **activity** itself. *When she arrived, I had been waiting for an hour.*"
-      },
-      {
-        "title": "Past perfect continuous (2)",
-        "content": "*His hands were dirty because he had been repairing the car.* **Compare:** *She had left* (simple — completed). *She had been living there for years* (continuous — duration)."
-      },
-      {
-        "title": "Past perfect vs past simple (1)",
-        "content": "**Two past events:** the one that happened **first** → past perfect. The one that happened **later** (main focus) → past simple. *When I arrived* (past simple), *the film had already started* (past perfect)."
-      },
-      {
-        "title": "Past perfect vs past simple (2)",
-        "content": "If the order is clear from *before* / *after* / *when*, past simple for both is sometimes possible: *She left before I arrived.* But past perfect is clearer."
-      },
-      {
-        "title": "Timeline diagram",
-        "content": "",
+        "title": "Forming past perfect — simple & continuous",
+        "content": "Both forms use **had** for every subject (I, you, he, she, we, they) — no agreement to worry about.\n\n**Simple**: had + past participle → *I had finished. She had gone. They had written.*\n**Continuous**: had been + -ing → *I had been working. She had been waiting. They had been arguing.*\n\n**Contractions**: I'd, you'd, she'd, we'd, they'd (= had). Negative: **hadn't** (had not). Question: **Had you …?** / **Had you been …?**\n\n**Why it matters**: Once you internalise *had* as the single past-perfect signal, the rest is mechanical — past participle for completed actions, **been + -ing** for ongoing ones. The same machinery as present perfect, just shifted one step back in time.",
         "diagram": {
-          "type": "timeline",
-          "title": "Past perfect: two events in the past",
-          "events": [
-            {
-              "label": "Earlier event",
-              "detail": "had + past participle",
-              "style": "past"
-            },
-            {
-              "label": "Later event",
-              "detail": "past simple",
-              "style": "past"
-            },
-            {
-              "label": "Now",
-              "detail": "speaking time",
-              "style": "now"
-            }
+          "type": "table",
+          "title": "Past perfect simple vs continuous — form",
+          "headers": [
+            "Form",
+            "Pattern",
+            "Example",
+            "Negative / Question"
+          ],
+          "rows": [
+            [
+              "**Simple**",
+              "had + past participle",
+              "She **had finished** her homework.",
+              "She **hadn't finished**. / **Had** she **finished**?"
+            ],
+            [
+              "**Continuous**",
+              "had been + -ing",
+              "She **had been studying** for hours.",
+              "She **hadn't been studying**. / **Had** she **been studying**?"
+            ]
           ]
-        }
+        },
+        "root_ids": [
+          "B1.past_perfect.basic",
+          "B1.past_perfect.continuous"
+        ],
+        "cefr_level": "B1"
       },
       {
-        "title": "Simple vs continuous: how to choose (1)",
-        "content": "Same idea as present perfect. **Past perfect simple** — result, completion, single event: *By 9 she had left. He hadn't slept well.*"
+        "title": "When to use past perfect SIMPLE",
+        "content": "Past perfect simple marks a **completed action before another past point**. Four main uses:\n\n- **(a) Earlier of two past actions** — *She had already left when I arrived.* / *By the time we got to the station, the train had left.*\n- **(b) Cause of a past state** — *I was tired because I had worked late. He was angry because someone had taken his bag.*\n- **(c) Third conditional** — *If I had known, I would have called.* (See Conditionals.)\n- **(d) Reported speech backshift** — present perfect or past simple in direct speech becomes past perfect in reported speech: *\"I've finished\" → She said she had finished.*\n\n**Common time markers**: **already, just, never, by the time, by + past time, when, after, before**.\n\n**Why it matters**: Narrative writing, news, exam Use of English transformations and reported-speech tasks all hinge on this. Picking the earlier action and marking it with *had* is the single highest-leverage move for clear past storytelling.",
+        "root_ids": [
+          "B1.past_perfect.basic",
+          "B2.past_perfect.narrative"
+        ],
+        "cefr_level": "B1"
       },
       {
-        "title": "Simple vs continuous: how to choose (2)",
-        "content": "**Past perfect continuous** — duration, ongoing activity: *They had been arguing for hours. It had been raining.* Simple = result / how many. Continuous = how long / activity."
+        "title": "Past perfect CONTINUOUS — duration / activity before a past point",
+        "content": "Past perfect continuous emphasises **ongoing activity leading up to a past moment** — the activity was in progress until that point, or had just stopped, with visible results.\n\n**Typical patterns**:\n- *She **had been studying** for two hours when the phone rang.* (activity in progress until the call)\n- *His hands were dirty because he **had been repairing** the car.* (visible result of the prior activity)\n- *They **had been arguing** since lunchtime.* (with *since* + starting point)\n\n**Often used with**: **for** + duration (*for an hour*), **since** + starting point (*since 10 o'clock*), **all morning / all day**.\n\n**Restriction**: cannot be used with **stative verbs** (know, believe, own, like, understand). Use the simple instead: *She had known him for years*, not *had been knowing*.\n\n**Why it matters**: This is the tense for the *backstory behind a moment* — what someone had been doing, for how long, until the moment the story focuses on. Exams test it specifically against past perfect simple.",
+        "root_ids": [
+          "B1.past_perfect.continuous"
+        ],
+        "cefr_level": "B1"
       },
       {
-        "title": "Form (1)",
-        "content": "**Past perfect simple:** subject + **had** + past participle. *She had gone.* **Negative:** *hadn't* + participle. **Question:** *Had you left?*"
+        "title": "Past perfect vs past simple — the choice",
+        "content": "When **sequence matters** and isn't obvious, use **past perfect for the earlier action** and **past simple for the later one**.\n\n**Contrast examples**:\n- *When I arrived, she **left**.* → she left **after** I arrived (two simple past actions in order).\n- *When I arrived, she **had left**.* → she left **before** I arrived (past perfect marks the earlier action).\n- *The film **had already started** when we **got** to the cinema.* (earlier = had started; later = got)\n\n**When past simple is enough**: if the conjunction (**after, before, then, as soon as**) already makes the order clear, past simple works for both — *After she **finished** work, she **went** home.* Formal writing still often prefers *After she had finished work…*\n\n**Czech-speaker traps**:\n- *When I arrived, she already left.* → **had already left** (don't skip past perfect when sequence isn't otherwise marked).\n- *I had finished yesterday.* → past simple *I finished yesterday* is fine; past perfect needs another past anchor.\n- *I had finished now.* → wrong tense — *now* anchors in the present, so use **present perfect** *I have finished now*.\n- Don't double-mark: *When they **had arrived**, the show had started* → *When they **arrived**, the show had started.* Only the **earlier** event takes *had*.\n\n**Why it matters**: This single choice — which past event gets *had* — is the most common past-tense error for B1/B2 Czech learners and one of the most-tested points on FCE/CAE Use of English.",
+        "diagram": {
+          "type": "table",
+          "title": "Which past tense — and which version?",
+          "headers": [
+            "Situation",
+            "Use",
+            "Example"
+          ],
+          "rows": [
+            [
+              "Earlier of two past events",
+              "Past perfect simple",
+              "She **had left** when I arrived."
+            ],
+            [
+              "Later / main past event",
+              "Past simple",
+              "She had left when I **arrived**."
+            ],
+            [
+              "Duration / activity up to a past point",
+              "Past perfect continuous",
+              "I **had been waiting** for an hour when she arrived."
+            ],
+            [
+              "Sequence already clear (after, before)",
+              "Past simple is enough",
+              "**After** she **finished**, she **went** home."
+            ],
+            [
+              "Present relevance (now, today)",
+              "Present perfect, NOT past perfect",
+              "I **have finished** now. (not *had finished*)"
+            ]
+          ]
+        },
+        "root_ids": [
+          "B2.past_perfect.narrative"
+        ],
+        "cefr_level": "B2"
       },
       {
-        "title": "Form (2)",
-        "content": "**Past perfect continuous:** subject + **had been** + *-ing*. *She had been waiting.* **Negative:** *hadn't been* + *-ing*. **Question:** *Had you been waiting?*"
-      },
-      {
-        "title": "Typical errors (1)",
-        "content": "**Wrong:** *When I arrived, she left.* **Right:** *she had left* (earlier action → past perfect). **Wrong:** *I had went.* **Right:** **I had gone** (*had* + past participle, not past form)."
-      },
-      {
-        "title": "Typical errors (2)",
-        "content": "**Wrong:** *She had left when I had arrived.* **Right:** *when I arrived* (main event → past simple). **Wrong:** *She had been left.* **Right:** **She had left** (completed) or **She had been waiting** (duration)."
-      },
-      {
-        "title": "Typical errors (3)",
-        "content": "**Tip:** Earlier past = *had*. Later past = past simple."
-      },
-      {
-        "title": "Reference",
-        "content": "For more on past tenses, see Past Simple and Past Continuous and Past Simple vs Present Perfect under Choose Grammar Topic."
+        "title": "Common Czech-speaker errors & roadmap",
+        "content": "**High-frequency mistakes**:\n\n- *When I arrived, she already left.* → **had already left** (skipping past perfect when sequence needs marking)\n- *I had went to London.* → **had gone** (past perfect uses **past participle**, not past simple form)\n- *She had never saw that film.* → **had never seen** (same rule — past participle)\n- *He was sad because he had didn't pass.* → **hadn't passed** (negative is *hadn't* + participle, no *did*)\n- *When they had arrived, the show had started.* → **When they arrived, the show had started.** (only the earlier event takes *had*)\n- *I had finished now.* → **I have finished now.** (*now* = present relevance → present perfect)\n- *She had been knowing him for years.* → **She had known him for years.** (stative verb — use simple)\n\n**Why it matters**: These appear constantly in writing tasks, gap-fills and Use of English transformations. Fixing them gives immediate visible progress on past-narrative quality.\n\n**Direct practice in this curriculum** (start here after the cards):\n- Gap fill — past perfect simple & continuous in context\n- Correct the sentence — common errors\n- MC — choosing between past perfect, past simple and past continuous\n\n**Next steps**: [[topic:past_simple_present_perfect|Past Simple vs Present Perfect]], [[topic:present_perfect|Present Perfect]], [[topic:conditionals|Conditionals]] (third + mixed use past perfect), [[topic:reported_speech|Reported Speech]] (backshift).",
+        "root_ids": [
+          "B1.past_perfect.basic",
+          "B1.past_perfect.continuous",
+          "B2.past_perfect.narrative"
+        ],
+        "cefr_level": "B2"
       }
     ]
   },
@@ -167,6 +194,8 @@
     ]
   },
   "practice_order": [
+    "gapfill",
+    "errorcorrection",
     "mc"
   ],
   "practice": {

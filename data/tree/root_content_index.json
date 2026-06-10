@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "description": "Minimal viable root_content_index: single source of truth mapping for canonical roots (and pilot families/root_ids) to practice containers and entry points. Enables long-term 'teacher prescribes exact practice from marking form' via deep links e.g. #practice/root/verb_phrase or #practice/root_id/B1.present_perfect.since_for. Derived from topics.json + data/tree/tree.json + pilot mappings. Reversible seed; expand later with full granular + UI routing.",
+    "last_updated": "2026-05-28",
+    "based_on": "pilot_families_mapping.json, tree.json, topics.json (sampled curricula with root_ids)",
+    "purpose": "Bridge marking/feedback (topics or roots) to exact app practice without blocking core UX. Tree (esp. topics.json + this) becomes the prescription authority."
+  },
+  "roots": {
+    "tap_root": {
+      "canonical_title": "Tap Root",
+      "short_student_description": "Word-class recognition (N/V/Adj/Adv/Prep/Det/Pron) + default SVO sentence architecture. Foundation for everything else.",
+      "topics": ["word_order"],
+      "curriculum_containers": ["curriculum_word_order.json"],
+      "practice_entry_points": [
+        {"type": "topic", "id": "word_order", "label": "Word Order in Sentences", "cefr": ["A1", "B2"]}
+      ],
+      "deep_link": "#practice/root/tap_root"
+    },
+    "verb_phrase": {
+      "canonical_title": "Verb Phrase",
+      "short_student_description": "Tense, aspect, modality, voice. How verbs locate events in time and express certainty, obligation, or reality.",
+      "topics": [
+        "auxiliary_verbs", "modal_verbs", "passives", "tenses_general", "past_perfect",
+        "past_simple_continuous", "past_simple_present_perfect", "present_perfect",
+        "will_going_to", "irregular_verbs", "verb_subject_agreement"
+      ],
+      "curriculum_containers": [
+        "curriculum_auxiliary_verbs.json", "curriculum_modal_verbs.json", "curriculum_passives.json",
+        "curriculum_tenses_general.json", "curriculum_past_perfect.json",
+        "curriculum_past_simple_continuous.json", "curriculum_past_simple_present_perfect.json",
+        "curriculum.json", "curriculum_will_going_to.json", "curriculum_irregular_verbs.json",
+        "curriculum_verb_subject_agreement.json"
+      ],
+      "pilot_families": ["present_perfect", "modal_verbs", "conditionals", "reported_speech"],
+      "practice_entry_points": [
+        {"type": "topic", "id": "tenses_general", "label": "Tenses: General"},
+        {"type": "topic", "id": "modal_verbs", "label": "Modal Verbs"},
+        {"type": "topic", "id": "present_perfect", "label": "Tenses: Present Perfect Simple vs Continuous"},
+        {"type": "topic", "id": "past_simple_present_perfect", "label": "Tenses: Past Simple vs Present Perfect"}
+      ],
+      "deep_link": "#practice/root/verb_phrase"
+    },
+    "noun_phrase": {
+      "canonical_title": "Noun Phrase",
+      "short_student_description": "Determiners (articles, quantifiers), pronouns, comparison of nouns/adjectives, countable vs uncountable.",
+      "topics": ["comparatives", "articles", "articles_advanced", "quantifiers", "countable_uncountable"],
+      "curriculum_containers": [
+        "curriculum_comparatives.json", "curriculum_articles.json", "curriculum_articles_advanced.json",
+        "curriculum_quantifiers.json", "curriculum_countable_uncountable.json"
+      ],
+      "pilot_families": ["articles"],
+      "practice_entry_points": [
+        {"type": "topic", "id": "articles", "label": "Determiners: Articles (a, an, the, ∅)"},
+        {"type": "topic", "id": "articles_advanced", "label": "Determiners: Articles — extension"}
+      ],
+      "deep_link": "#practice/root/noun_phrase"
+    },
+    "sentence_syntax": {
+      "canonical_title": "Sentence Syntax",
+      "short_student_description": "Word order variations, inversion for emphasis, it as subject, agreement, questions/negation patterns beyond basics.",
+      "topics": ["inversion", "it_subject"],
+      "curriculum_containers": ["curriculum_inversion.json", "curriculum_it_subject.json"],
+      "practice_entry_points": [
+        {"type": "topic", "id": "inversion", "label": "Inversion for emphasis"},
+        {"type": "topic", "id": "it_subject", "label": "It – subject in English"}
+      ],
+      "notes": "Normalized from legacy 'sentence_ops' in topics.json for alignment with tree.json canonical name.",
+      "deep_link": "#practice/root/sentence_syntax"
+    },
+    "clause_linking": {
+      "canonical_title": "Clause Linking",
+      "short_student_description": "Subordination, relative clauses, conditionals, reported speech, conjunctions and discourse linkers.",
+      "topics": ["conjunctions_linkers", "relative_pronouns", "reported_speech", "conditionals"],
+      "curriculum_containers": [
+        "curriculum_conjunctions_linkers.json", "curriculum_relative_pronouns.json",
+        "curriculum_reported_speech.json", "curriculum_conditionals.json"
+      ],
+      "pilot_families": ["conditionals", "relative_pronouns", "reported_speech"],
+      "practice_entry_points": [
+        {"type": "topic", "id": "conditionals", "label": "Tenses: Conditionals (Zero, First, Second, Third)"},
+        {"type": "topic", "id": "reported_speech", "label": "Reported Speech"},
+        {"type": "topic", "id": "relative_pronouns", "label": "Relative Pronouns"}
+      ],
+      "deep_link": "#practice/root/clause_linking"
+    },
+    "verb_complementation": {
+      "canonical_title": "Verb Complementation",
+      "short_student_description": "Patterns after verbs: to-infinitive, -ing forms, bare infinitive, transitivity, some causatives.",
+      "topics": ["infinitive_ing"],
+      "curriculum_containers": ["curriculum_infinitive_ing.json"],
+      "pilot_families": ["phrasal_verbs"],
+      "practice_entry_points": [
+        {"type": "topic", "id": "infinitive_ing", "label": "Verb Patterns: to-infinitive, -ing & bare infinitive"}
+      ],
+      "notes": "Phrasal verbs primary now under prepositions_particles (see pilot); some patterns may dual-tag here.",
+      "deep_link": "#practice/root/verb_complementation"
+    },
+    "prepositions_particles": {
+      "canonical_title": "Prepositions & Particles",
+      "short_student_description": "Prepositions of place/time/movement, dependent prepositions, phrasal verbs (particles change meaning).",
+      "topics": ["prepositions", "prepositions_dependent", "phrasal_verbs"],
+      "curriculum_containers": [
+        "curriculum_prepositions.json", "curriculum_prepositions_dependent.json",
+        "curriculum_phrasal_verbs.json"
+      ],
+      "pilot_families": ["prepositions", "phrasal_verbs"],
+      "practice_entry_points": [
+        {"type": "topic", "id": "prepositions", "label": "Prepositions"},
+        {"type": "topic", "id": "prepositions_dependent", "label": "Prepositions: Dependent"},
+        {"type": "topic", "id": "phrasal_verbs", "label": "Phrasal Verbs"}
+      ],
+      "notes": "Primary home for phrasal verbs per pilot (topics.json normalized from verb_complementation).",
+      "deep_link": "#practice/root/prepositions_particles"
+    },
+    "outside_roots": {
+      "canonical_title": "Outside Roots / Extras",
+      "short_student_description": "Misc. areas not core to the 7-root grammar tree (spelling, punctuation, fixed phrases, degree adverbs).",
+      "topics": ["degree_adverbs", "fixed_phrases", "punctuation", "spelling"],
+      "curriculum_containers": [
+        "curriculum_degree_adverbs.json", "curriculum_fixed_phrases.json",
+        "curriculum_punctuation.json", "curriculum_spelling.json"
+      ],
+      "practice_entry_points": [
+        {"type": "topic", "id": "spelling", "label": "Spelling"},
+        {"type": "topic", "id": "punctuation", "label": "Punctuation and Capitalisation"}
+      ],
+      "notes": "Catch-all; future tree evolution may absorb some or keep as separate trunk layer.",
+      "deep_link": "#practice/root/outside_roots"
+    }
+  },
+  "pilot_families": {
+    "present_perfect": {
+      "canonical_title": "Present Perfect",
+      "short_student_description": "Present perfect simple vs continuous; since/for; experience vs recent results.",
+      "primary_root": "verb_phrase",
+      "topics": ["present_perfect", "past_simple_present_perfect"],
+      "curriculum_containers": ["curriculum.json", "curriculum_past_simple_present_perfect.json"],
+      "granular_root_ids": ["A2.present_perfect.basic", "B1.present_perfect.since_for", "B1.present_perfect.continuous"],
+      "practice_entry_points": [
+        {"type": "topic", "id": "present_perfect"},
+        {"type": "topic", "id": "past_simple_present_perfect"}
+      ],
+      "deep_link": "#practice/root_id/present_perfect"
+    },
+    "conditionals": {
+      "canonical_title": "Conditionals",
+      "short_student_description": "Zero, first, second, third, mixed conditionals + wishes and variants (unless, as long as).",
+      "primary_root": "clause_linking",
+      "secondary_roots": ["verb_phrase"],
+      "topics": ["conditionals"],
+      "curriculum_containers": ["curriculum_conditionals.json"],
+      "granular_root_ids": ["A2.conditionals.zero_first", "B1.conditionals.second", "B1.conditionals.wishes_present", "B2.conditionals.third", "B2.conditionals.mixed", "B2.conditionals.variants"],
+      "practice_entry_points": [{"type": "topic", "id": "conditionals"}],
+      "deep_link": "#practice/root_id/conditionals"
+    },
+    "relative_pronouns": {
+      "canonical_title": "Relative Pronouns & Clauses",
+      "short_student_description": "Defining vs non-defining relatives; who/which/that/whose; advanced features at B2.",
+      "primary_root": "clause_linking",
+      "topics": ["relative_pronouns"],
+      "curriculum_containers": ["curriculum_relative_pronouns.json"],
+      "granular_root_ids": ["A2.relative_clauses.basic", "B1.relative_clauses.defining_non_defining", "B2.relative_clauses.advanced"],
+      "practice_entry_points": [{"type": "topic", "id": "relative_pronouns"}],
+      "deep_link": "#practice/root_id/relative_pronouns"
+    },
+    "reported_speech": {
+      "canonical_title": "Reported Speech",
+      "short_student_description": "Reporting statements, questions, commands; tense backshift and reporting verbs.",
+      "primary_root": "clause_linking",
+      "secondary_roots": ["verb_phrase"],
+      "topics": ["reported_speech"],
+      "curriculum_containers": ["curriculum_reported_speech.json"],
+      "granular_root_ids": ["B1.reported_speech.statements", "B2.reported_speech.extended"],
+      "practice_entry_points": [{"type": "topic", "id": "reported_speech"}],
+      "deep_link": "#practice/root_id/reported_speech"
+    },
+    "modal_verbs": {
+      "canonical_title": "Modal Verbs",
+      "short_student_description": "Ability, obligation, advice, permission, speculation (present and past deduction).",
+      "primary_root": "verb_phrase",
+      "topics": ["modal_verbs"],
+      "curriculum_containers": ["curriculum_modal_verbs.json"],
+      "granular_root_ids": ["A2.modals.should", "A2.modals.must_have_to_basic", "B1.modals.speculation_present", "B1.modals.past_forms", "B2.modals.speculation_past"],
+      "practice_entry_points": [{"type": "topic", "id": "modal_verbs"}],
+      "deep_link": "#practice/root_id/modal_verbs"
+    },
+    "phrasal_verbs": {
+      "canonical_title": "Phrasal Verbs",
+      "short_student_description": "Verb + particle with new meaning; separable vs inseparable; common particles and register.",
+      "primary_root": "prepositions_particles",
+      "secondary_roots": ["verb_complementation"],
+      "topics": ["phrasal_verbs"],
+      "curriculum_containers": ["curriculum_phrasal_verbs.json"],
+      "granular_root_ids": ["B1.phrasal_verbs.basic", "B2.phrasal_verbs.extended"],
+      "practice_entry_points": [{"type": "topic", "id": "phrasal_verbs"}],
+      "deep_link": "#practice/root_id/phrasal_verbs"
+    },
+    "articles": {
+      "canonical_title": "Articles & Determiners",
+      "short_student_description": "a/an/the/∅ rules for specific vs general, known vs new; advanced patterns and exceptions.",
+      "primary_root": "noun_phrase",
+      "topics": ["articles", "articles_advanced"],
+      "curriculum_containers": ["curriculum_articles.json", "curriculum_articles_advanced.json"],
+      "granular_root_ids": ["A1.articles.basic", "B1.articles.extended", "B2.articles.advanced"],
+      "practice_entry_points": [
+        {"type": "topic", "id": "articles"},
+        {"type": "topic", "id": "articles_advanced"}
+      ],
+      "deep_link": "#practice/root_id/articles"
+    },
+    "prepositions": {
+      "canonical_title": "Prepositions",
+      "short_student_description": "Place, time, movement; cause/concession; complex and dependent/collocational prepositions.",
+      "primary_root": "prepositions_particles",
+      "topics": ["prepositions", "prepositions_dependent"],
+      "curriculum_containers": ["curriculum_prepositions.json", "curriculum_prepositions_dependent.json"],
+      "granular_root_ids": ["A1.prepositions.place_basic", "A2.prepositions.time_basic", "A2.prepositions.movement", "B1.prepositions.cause_concession", "B2.prepositions.complex", "B2.collocations.dependent_prepositions"],
+      "practice_entry_points": [
+        {"type": "topic", "id": "prepositions"},
+        {"type": "topic", "id": "prepositions_dependent"}
+      ],
+      "deep_link": "#practice/root_id/prepositions"
+    }
+  },
+  "how_to_use_for_prescriptions": {
+    "from_marking_form": "Teacher notes topic or root (e.g. 'verb_phrase' or 'Present Perfect' or specific root_id 'B1.present_perfect.since_for') on feedback. Student or teacher clicks generated deep link to load exact practice in app.",
+    "deep_link_formats": [
+      "#practice/root/verb_phrase",
+      "#practice/root/sentence_syntax",
+      "#practice/root_id/B1.modals.speculation_past",
+      "#practice/topic/present_perfect"
+    ],
+    "single_source": "Always resolve links via this index + topics.json + tree.json. No hardcoding roots elsewhere.",
+    "next_steps": "Wire index into js/ routing; add root_id filters to curriculum loader; surface 'Prescribe practice' button in teacher views (future)."
+  }
+}

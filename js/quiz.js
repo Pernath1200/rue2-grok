@@ -210,10 +210,24 @@ export function cleanQuestionDisplay(str) {
   return { question: s.trim(), contextLabel, taskInstruction };
 }
 
+function updateQuizProgress() {
+  const el = document.getElementById('progress');
+  if (!el) return;
+  const total = (state.currentQuestions && state.currentQuestions.length) || 0;
+  const current = (state.currentIndex || 0) + 1;
+  el.textContent = `Question ${current} of ${total}`;
+
+  // Harmonious util-bar context (A): topic + truthful progress on the consistent nav bar
+  const ctx = document.getElementById('quizContext');
+  if (ctx) {
+    const topic = state.currentTopic ? (state.currentTopic.title || state.currentTopic.id || 'Practice') : 'Session';
+    ctx.innerHTML = `<strong>${topic}</strong> · ${current}/${total}`;
+  }
+}
+
 export function showQuestion() {
+  updateQuizProgress();
   const q = state.currentQuestions[state.currentIndex];
-  const total = state.currentQuestions.length;
-  document.getElementById('progress').textContent = `Question ${state.currentIndex + 1} of ${total}`;
   const { question: promptRaw, contextLabel, taskInstruction } = cleanQuestionDisplay(q.prompt || q.question || '');
   const promptHtml = escapeAndBold(promptRaw);
   const topicLabel = [
@@ -348,6 +362,7 @@ export function nextQuestion() {
     finishQuiz();
     return;
   }
+  updateQuizProgress();
   showQuestion();
 }
 
@@ -460,5 +475,6 @@ export function retryWrong() {
   document.body.classList.add('viewing-content');
   document.getElementById('quizScreen').classList.remove('hidden');
   document.getElementById('exitQuizBtn').textContent = 'Back';
+  updateQuizProgress();
   showQuestion();
 }

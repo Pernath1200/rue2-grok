@@ -3,12 +3,16 @@
     "title": "Prepositions",
     "sections": [
       {
-        "title": "What are prepositions?",
-        "content": "Prepositions are short words that link a noun to the rest of a sentence, showing relationships like when, where, how, or why. Examples: at 5 o'clock, in the room, by train, about the project. English often differs — don't translate word for word."
+        "title": "What prepositions do (core logic)",
+        "content": "Prepositions link nouns to the rest of the sentence. They express **relationships** in time, place, movement, manner, or cause.\n\n**Why it matters (roots-first)**: These tiny words are part of the Prepositions & Particles root (#6 in the Tree Model). They are rule-face logic (spatial/temporal relations) + lexical-face chunks. Wrong preposition = wrong meaning or unnatural English. English prepositions rarely translate word-for-word from Czech or other L1s — learn the distinctions, not lists.\n\n**Key principle**: Start with the big systematic contrasts (at/on/in for time & place, movement pairs). Then add fixed uses.",
+        "root_ids": [
+          "A1.prepositions.place_basic"
+        ],
+        "cefr_level": "A1"
       },
       {
         "title": "Time: at / on / in",
-        "content": "",
+        "content": "**The big three for time** — one of the highest-impact distinctions in English.\n\n**Why it matters**: Scheduling, stories, and exams all turn on this. \"Meet at 5\" vs \"on Monday\" vs \"in July\" tells the listener exactly when — or confuses them completely.\n\n**Contrast examples**:\n- I wake up **at** 7 o'clock. (exact clock time / night / weekend)\n- The lesson is **on** Monday 15 March. (specific day or date)\n- She was born **in** 2020 / **in** the morning / **in** summer. (longer periods, months, years, parts of day)\n\n**Rule of thumb**: at = point in time; on = day surface; in = container/period.",
         "diagram": {
           "type": "table",
           "title": "at / on / in for time",
@@ -21,32 +25,28 @@
             [
               "**at**",
               "Clock time, night, weekend",
-              "at 5 o'clock, at noon"
+              "at 5 o'clock, at noon, at night, at the weekend"
             ],
             [
               "**on**",
               "Days, dates",
-              "on Monday, on 15th March"
+              "on Monday, on 15th March, on my birthday"
             ],
             [
               "**in**",
-              "Months, years, periods",
-              "in August, in the morning"
+              "Months, years, longer periods",
+              "in August, in 2025, in the morning, in winter"
             ]
           ]
-        }
-      },
-      {
-        "title": "Time: other prepositions (1)",
-        "content": "• **for** + duration: for two hours, for a week\n• **since** + start point: since 2020, since Monday\n• **by** = no later than: by Friday, by 5 pm\n• **until** = up to a time: until tomorrow, until midnight"
-      },
-      {
-        "title": "Time: other prepositions (2)",
-        "content": "• **during** = within a period: during the meeting, during the film\n• **before** / **after**: before dinner, after the lesson"
+        },
+        "root_ids": [
+          "A2.prepositions.time_basic"
+        ],
+        "cefr_level": "A2"
       },
       {
         "title": "Place: at / on / in",
-        "content": "",
+        "content": "**The big three for place** — the same three prepositions, completely different logic from time.\n\n**Why it matters**: Location errors are among the most common and noticeable. \"The keys are in the car\" (inside) is not the same as \"on the car\" (surface).\n\n**Contrast examples**:\n- The book is **in** the box / **in** London / **in** the room. (enclosed space or area)\n- The picture is **on** the wall / **on** the table. (surface or line)\n- Meet me **at** the door / **at** the bus stop / **at** home. (specific point or location)\n\n**Cities & countries**: usually **in**. Specific points/addresses: often **at**.",
         "diagram": {
           "type": "table",
           "title": "at / on / in for place",
@@ -59,57 +59,70 @@
             [
               "**in**",
               "Inside / enclosed",
-              "in the box, in London"
+              "in the box, in London, in the room"
             ],
             [
               "**on**",
-              "On a surface",
-              "on the table, on the wall"
+              "On a surface or line",
+              "on the table, on the wall, on the street"
             ],
             [
               "**at**",
-              "At a point / place",
-              "at the door, at the bus stop"
+              "At a specific point or place",
+              "at the door, at the bus stop, at home"
             ]
           ]
-        }
+        },
+        "root_ids": [
+          "A1.prepositions.place_basic"
+        ],
+        "cefr_level": "A1"
       },
       {
-        "title": "Place: other prepositions (1)",
-        "content": "• **above** / **below**: above the clouds, below zero\n• **under**: under the table, under the bridge\n• **behind** / **in front of**: behind the door, in front of the house"
+        "title": "Movement and direction",
+        "content": "Movement prepositions describe **change of position** (vs static place).\n\n**Core families & contrasts**:\n- **to / into** = direction toward or inside a goal (go to school, get into the car)\n- **from / out of** = origin or leaving (from London, get out of the car)\n- **through** = crossing an enclosed space side-to-side (through the tunnel / park)\n- **across** = crossing a surface side-to-side (across the road / bridge)\n- **along** = following the length of something (along the river)\n\n**Why it matters**: \"I walked **to** the park\" (I arrived) vs \"I walked **in** the park\" (I was already inside). Direction vs location is fundamental.\n\n**Practice contrast**: across the bridge (surface) vs through the forest (inside area).",
+        "root_ids": [
+          "A2.prepositions.movement"
+        ],
+        "cefr_level": "A2"
       },
       {
-        "title": "Place: other prepositions (2)",
-        "content": "• **between** (two): between you and me, between 9 and 10\n• **among** (group): among friends, among the crowd\n• **near**: near the station\n• **beside** / **next to**: beside the window"
+        "title": "Duration, deadlines & periods",
+        "content": "Time expressions that answer \"How long?\" or \"By when?\"\n\n**Key contrasts**:\n- **for** + duration (how long something lasts): for two hours, for a week\n- **since** + starting point (still continuing): since 2020, since Monday\n- **by** = no later than (deadline): by Friday, by 5 pm\n- **until** = continues up to that point: until midnight, wait until tomorrow\n- **during** = at some point within a known period: during the meeting, during the film\n\n**Why it matters**: \"I've studied English **for** six months\" (length) tells a different story from \"**since** January\" (when it began). These are high-frequency in real life and gap-fills.\n\n**Bonus pair**: **before** / **after** (earlier/later than a point).",
+        "root_ids": [
+          "A2.prepositions.time_basic"
+        ],
+        "cefr_level": "A2"
       },
       {
-        "title": "Movement and direction (1)",
-        "content": "• **to**: go to school, walk to the station\n• **from**: from London, from the shop\n• **into**: go into the room, get into the car\n• **out of**: get out of the car, out of the room\n• **through**: through the tunnel, through the park"
+        "title": "Common errors & traps",
+        "content": "**High-frequency mistakes** (often L1 interference):\n\n- interested **on** music → **interested in**\n- It depends **from** you → **depends on**\n- She arrived **to** Prague → **arrived in** Prague (cities) / **at** the station (points)\n- I go **to** home every day → **I go home** (no preposition with home, school, work in this sense)\n- good **in** maths → **good at** maths\n\n**Why it matters**: These appear constantly in speaking, writing, and every exam gap-fill / open cloze. Fixing them gives immediate visible progress.\n\nMany more are fixed \"dependent\" combinations — see the separate Dependent Prepositions topic.",
+        "root_ids": [
+          "A2.prepositions.time_basic",
+          "A1.prepositions.place_basic"
+        ],
+        "cefr_level": "A2"
       },
       {
-        "title": "Movement and direction (2)",
-        "content": "• **across**: across the road, across the bridge\n• **along**: along the river, along the street\n• **up** / **down**: up the stairs, down the hill\n• **towards**: towards the city\n• **over**: over the bridge, over the wall"
-      },
-      {
-        "title": "Other uses (1)",
-        "content": "• **by** + means: by train, by car, written by hand\n• **with** / **without**: with a friend, cut with a knife; without money, without help\n• **about** (topic): talk about the project, a film about war"
-      },
-      {
-        "title": "Other uses (2)",
-        "content": "• **for** (purpose/recipient): for you, for the meeting, reason for the delay\n• **of** (belonging/material): the capital of France, cup of tea, made of wood\n• **as** (role): work as a teacher\n• **like** (similar to): look like, sound like"
-      },
-      {
-        "title": "Typical errors",
-        "content": "Wrong: I'm interested **on** music. Right: **interested in**. Wrong: It depends **from** you. Right: **depends on**. Wrong: She arrived **to** Prague. Right: **arrived in** Prague. Wrong: I go **to** home. Right: **I go home** (no preposition)."
-      },
-      {
-        "title": "Related topics",
-        "content": "[[preplist|Prepositions list]] — 50 words + examples (**Reference**). [[topic:prepositions_dependent|Dependent Prepositions]] — fixed prep + verbs/nouns/adjectives. [[topic:phrasal_verbs|Phrasal Verbs]] — **give up**, **look after**, **turn on**."
+        "title": "Other high-frequency uses + roadmap",
+        "content": "**Useful everyday prepositions** (beyond the big groups):\n\n- **by** = means of transport or author (by train, written by...)\n- **with / without** = together or using / lacking (with a friend, cut with a knife, without help)\n- **of** = belonging, material, or part (the capital of France, made of wood, cup of tea)\n- **as** = role or function (work as a teacher, use as a tool)\n- **like** = similarity (looks like, sounds like)\n\n**Why it matters**: These are in almost every paragraph you read or write.\n\n**Direct practice in this curriculum** (start here after the cards):\n- Guided MC (core at/on/in + time/place)\n- Gap fill – Simple (time & place basics)\n- Gap fill – Advanced & Tricky (movement, deadlines, idioms)\n- Gap fill – Top 40 (all common prepositions in context)\n\n**Next steps**: [[topic:prepositions_dependent|Dependent Prepositions]] (B2 fixed verb/noun/adjective + prep chunks — critical for exams). Full reference list: [[preplist|Prepositions list]].",
+        "root_ids": [
+          "A1.prepositions.place_basic",
+          "A2.prepositions.time_basic"
+        ],
+        "cefr_level": "A2"
       }
     ]
   },
   "check": {
     "title": "Test your understanding",
+    "root_ids": [
+      "A1.prepositions.place_basic",
+      "A2.prepositions.time_basic",
+      "A2.prepositions.movement",
+      "B1.prepositions.cause_concession"
+    ],
+    "cefr_level": "A2",
     "questions": [
       {
         "type": "mc",
@@ -187,7 +200,14 @@
   },
   "practice_order": [
     "guided_mc",
-    "gapfill_simple"
+    "gapfill_simple",
+    "gapfill_advanced",
+    "gapfill_tricky",
+    "gapfill_top40",
+    "gapfill_dependent_verbs",
+    "gapfill_dependent_adjectives",
+    "gapfill_dependent_nouns",
+    "mc"
   ],
   "practice": {
     "guided_mc": {
@@ -317,6 +337,11 @@
     },
     "gapfill_simple": {
       "title": "Practice: Gap fill – Simple (time and place)",
+      "root_ids": [
+        "A1.prepositions.place_basic",
+        "A2.prepositions.time_basic"
+      ],
+      "cefr_level": "A2",
       "questions": [
         {
           "type": "open",
@@ -466,6 +491,11 @@
     },
     "gapfill_advanced": {
       "title": "Practice: Gap fill – Advanced",
+      "root_ids": [
+        "B1.prepositions.cause_concession",
+        "B2.prepositions.complex"
+      ],
+      "cefr_level": "B1",
       "questions": [
         {
           "type": "open",
@@ -626,6 +656,10 @@
     },
     "gapfill_tricky": {
       "title": "Practice: Gap fill – Tricky and idiomatic",
+      "root_ids": [
+        "B2.prepositions.complex"
+      ],
+      "cefr_level": "B2",
       "questions": [
         {
           "type": "open",
@@ -783,6 +817,12 @@
     },
     "gapfill_top40": {
       "title": "Practice: Top 40 prepositions (all in use)",
+      "root_ids": [
+        "A1.prepositions.place_basic",
+        "A2.prepositions.time_basic",
+        "A2.prepositions.movement"
+      ],
+      "cefr_level": "A2",
       "questions": [
         {
           "type": "open",
@@ -1260,6 +1300,10 @@
     },
     "gapfill_dependent_verbs": {
       "title": "Practice: Dependent prepositions – Verbs",
+      "root_ids": [
+        "B2.collocations.dependent_prepositions"
+      ],
+      "cefr_level": "B2",
       "questions": [
         {
           "type": "open",
@@ -1385,6 +1429,10 @@
     },
     "gapfill_dependent_adjectives": {
       "title": "Practice: Dependent prepositions – Adjectives",
+      "root_ids": [
+        "B2.collocations.dependent_prepositions"
+      ],
+      "cefr_level": "B2",
       "questions": [
         {
           "type": "open",
@@ -1510,6 +1558,10 @@
     },
     "gapfill_dependent_nouns": {
       "title": "Practice: Dependent prepositions – Nouns",
+      "root_ids": [
+        "B2.collocations.dependent_prepositions"
+      ],
+      "cefr_level": "B2",
       "questions": [
         {
           "type": "open",
@@ -1635,6 +1687,14 @@
     },
     "mc": {
       "title": "Practice: Prepositions (multiple choice)",
+      "root_ids": [
+        "A1.prepositions.place_basic",
+        "A2.prepositions.time_basic",
+        "A2.prepositions.movement",
+        "B1.prepositions.cause_concession",
+        "B2.prepositions.complex"
+      ],
+      "cefr_level": "B1",
       "questions": [
         {
           "type": "mc",

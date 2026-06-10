@@ -3,59 +3,134 @@
     "title": "Present Perfect Simple vs Continuous",
     "sections": [
       {
-        "title": "What are we comparing?",
-        "content": "Both use **have/has**, but:\n\n• **Simple:** I have waited. She has read. (have + past participle)\n• **Continuous:** I have been waiting. She has been reading. (have been + -ing)\n\nWe choose: **result or how many** → simple. **How long or what you see now** → continuous."
+        "title": "What the present perfect does (core logic)",
+        "content": "The present perfect links a **past action to NOW**. The form is **have/has + past participle** — *I have worked, she has gone, they have seen*. The action started or happened in the past, but the speaker is pointing at its **present relevance**: a current result, a life experience that still counts, or a duration that reaches up to now.\n\n**Why it matters (roots-first)**: This is one of the core tenses of the **Verb Phrase** root (#2 in the Tree Model). English has two grammatical aspects — **perfect** (action with present relevance) and **continuous** (action in progress) — and present perfect is the textbook example of the perfect aspect. Czech has no direct equivalent, so this is where Czech speakers most often slip.\n\n**Where it shows up**: news (*Scientists have discovered…*), CVs and interviews (*I have worked at…*), small talk about life experience (*Have you ever been to Japan?*), and professional emails (*We have received your order*). Getting it right is one of the biggest upgrades from intermediate to confident English.",
+        "root_ids": [
+          "A2.present_perfect.basic"
+        ],
+        "cefr_level": "A2"
       },
       {
-        "title": "When to use SIMPLE",
-        "content": "Use **simple** when you talk about:\n\n• **Result or finish:** I've finished. She's broken her phone.\n• **How many:** I've read three books. He's sent five emails.\n• **Life experience:** Have you ever been to Japan?\n• **Stative verbs** (know, like, have, want): I've known him for years. She's had that car since 2020.\n\nStative verbs = states, not actions . We use simple only."
-      },
-      {
-        "title": "When to use CONTINUOUS (1)",
-        "content": "Use **continuous** when you talk about:\n\n• **How long:** I've been waiting for an hour. They've been living here since 2019.\n• **Activity that is still going or just stopped:** She's been studying all evening.\n• **What you see now:** Why are your hands dirty? — Because I've been painting."
-      },
-      {
-        "title": "When to use CONTINUOUS (2)",
-        "content": "• **Repeated/temporary activity:** We've been looking for a flat for months.\n\nFor, since, all day, lately → we often use continuous."
-      },
-      {
-        "title": "Quick summary",
-        "content": "• Result / how many / stative verb → SIMPLE (have + past participle).\n• Duration / how long / visible effect now → CONTINUOUS (have been + -ing).\n• When both are possible, simple = result; continuous = activity or time.",
+        "title": "Forming the present perfect — simple vs continuous",
+        "content": "Within the present perfect there are **two forms**. Both link past to now, but they emphasise different things.\n\n- **Simple**: have/has + past participle → *I have worked, she has gone*\n- **Continuous**: have/has been + -ing → *I have been working, she has been going*\n\n**Contractions** are the norm in speech: *I've, you've, we've, they've, he's, she's, it's*. (Note: *she's been* = *she has been*, not *she is been*.)\n\n**Negatives**: haven't / hasn't + past participle (or *been + -ing*).\n**Questions**: Have/Has + subject + past participle (or *been + -ing*)?\n\n**Why it matters**: These are the two physical shapes you have to recognise and produce. The next sections cover the meaning choice between them.",
         "diagram": {
-          "type": "comparison",
-          "title": "Present perfect: simple vs continuous",
-          "left": {
-            "title": "Simple (have + pp)",
-            "points": [
-              "Result or completion",
-              "How many (I've read 3 books)",
-              "Life experience (ever been?)",
-              "Stative verbs (know, like, have)"
+          "type": "table",
+          "title": "Present perfect — forms",
+          "headers": [
+            "",
+            "Simple",
+            "Continuous"
+          ],
+          "rows": [
+            [
+              "**Positive**",
+              "I **have worked** / she **has worked**",
+              "I **have been working** / she **has been working**"
+            ],
+            [
+              "**Contracted**",
+              "I've worked / she's worked",
+              "I've been working / she's been working"
+            ],
+            [
+              "**Negative**",
+              "I **haven't worked** / she **hasn't worked**",
+              "I **haven't been working** / she **hasn't been working**"
+            ],
+            [
+              "**Question**",
+              "**Have** you worked? / **Has** she worked?",
+              "**Have** you been working? / **Has** she been working?"
             ]
-          },
-          "right": {
-            "title": "Continuous (have been + -ing)",
-            "points": [
-              "Duration / how long",
-              "Activity in progress or just stopped",
-              "Visible effect now (dirty hands)",
-              "Repeated / temporary activity"
-            ]
-          }
-        }
+          ]
+        },
+        "root_ids": [
+          "A2.present_perfect.basic",
+          "B1.present_perfect.continuous"
+        ],
+        "cefr_level": "A2"
       },
       {
-        "title": "Common mistakes (1)",
-        "content": "• **Life experience:** Wrong: I never *saw* that film. Right: I've never **seen** that film.\n• **Stative verbs:** Wrong: I have *been knowing* him for years. Right: I have **known** him for years.\n• **Finished time:** Wrong: I have finished *yesterday*. Right: I **finished** yesterday.\n• **How many:** Wrong: I have been *read* three books. Right: I have **read** three books."
+        "title": "Three uses of the SIMPLE",
+        "content": "The present perfect simple has **three main uses** — learn them as three jobs the same tense does.\n\n1. **Life experience** (at some unspecified point before now): *I have visited Paris. Have you ever eaten sushi? She has never flown.* — the time isn't important; the experience is.\n2. **Recent action with a present result**: *I've broken my arm* (it's in a cast now). *They've arrived* (so they're here). *She's lost her keys* (she can't get in).\n3. **Duration up to now — with stative verbs**: *I have known him for ten years. She has had that job since 2019. We have lived here for ages.* For action verbs, duration usually takes continuous (see next section).\n\n**Common time markers** for present perfect simple: **ever, never, already, yet, just, so far, recently** — plus **since** and **for** with stative verbs.\n\n**Why it matters**: These three uses cover most of the present perfect you'll see in textbooks, exams, and conversation. If you can name which of the three you mean before you speak, your tense choice becomes automatic.",
+        "root_ids": [
+          "A2.present_perfect.basic",
+          "B1.present_perfect.since_for"
+        ],
+        "cefr_level": "A2"
       },
       {
-        "title": "Common mistakes (2)",
-        "content": "Tip: Yesterday, last week → past simple. Up to now, so far, ever → present perfect."
+        "title": "CONTINUOUS — emphasis on activity and duration",
+        "content": "The present perfect continuous emphasises the **activity itself** — its duration, or its recent visibility — rather than the result.\n\n- **Duration of an action**: *I've been studying English for three years. They've been living in Prague since 2019.* The focus is on the studying / living as an ongoing activity.\n- **Recently stopped, with visible evidence now**: *Have you been crying?* (your eyes are red). *Why are you out of breath? — I've been running.* You can see the activity in the result.\n- **Temporary or repeated recent activity**: *We've been looking for a flat for months. He's been working from home lately.*\n\n**Contrast with simple**: *I've read three books this month* (result: three completed) vs *I've been reading all morning* (activity, no finished count).\n\n**Important limit**: **stative verbs** (know, believe, own, belong, understand, like, want, need) do NOT take the continuous form. Wrong: *I've been knowing him for years.* Right: *I've known him for years.*\n\n**Why it matters**: This is the form that most directly answers *\"what have you been doing?\"* — the natural register for talking about ongoing activity and effort at work, in lessons, and in everyday catch-ups.",
+        "root_ids": [
+          "B1.present_perfect.continuous"
+        ],
+        "cefr_level": "B1"
+      },
+      {
+        "title": "Simple vs continuous — making the choice",
+        "content": "Both forms link past to now. The choice is about **what the speaker is pointing at**.\n\n- **Simple** = the **result**, the **completion**, the **count**, the **fact**. Look at the outcome.\n- **Continuous** = the **activity**, the **duration emphasis**, the **recent visible action**. Look at the process.\n\n**Same situation, different frames**:\n- *I've read three books this year.* (count → simple)\n- *I've been reading all morning.* (activity → continuous)\n- *She's painted the kitchen.* (it's done → simple)\n- *She's been painting the kitchen.* (that's why she's covered in paint → continuous)\n\n**Why it matters**: This is the single most-tested distinction at B1–B2 — Cambridge gap-fills, FCE Use of English, interview English. Once you can name *result vs activity*, the choice stops being guesswork.",
+        "diagram": {
+          "type": "table",
+          "title": "Simple vs continuous — the choice",
+          "headers": [
+            "Use SIMPLE for…",
+            "Use CONTINUOUS for…"
+          ],
+          "rows": [
+            [
+              "**Result / completion** (I've finished the report.)",
+              "**Activity in progress** (I've been writing the report.)"
+            ],
+            [
+              "**How many / quantity** (She's sent five emails.)",
+              "**How long — action verbs** (She's been sending emails all day.)"
+            ],
+            [
+              "**Life experience** (Have you ever been to Japan?)",
+              "**Recent visible action** (Have you been crying?)"
+            ],
+            [
+              "**Stative verbs** (I've known him for years.)",
+              "**Temporary / repeated** (We've been looking for a flat for months.)"
+            ]
+          ]
+        },
+        "root_ids": [
+          "A2.present_perfect.basic",
+          "B1.present_perfect.continuous"
+        ],
+        "cefr_level": "B1"
+      },
+      {
+        "title": "Since & for — both forms",
+        "content": "**Since** and **for** are the two duration words that go with present perfect — simple or continuous.\n\n- **since** + **starting point**: *since 2019, since Monday, since I was a child, since lunchtime*\n- **for** + **length of time**: *for three years, for ten minutes, for ages, for as long as I can remember*\n\nBoth work with **simple** (usually stative verbs) and **continuous** (action verbs):\n- *I've **known** her **since** primary school.* (stative → simple)\n- *I've **been studying** Czech **for** three years.* (action → continuous)\n- *They've **lived** / **been living** here **since** 2019.* (either is fine for *live*)\n\n**Czech-speaker note — major error zone**: Czech uses the **present tense** for situations that started in the past and are still going on (*Bydlím tady tři roky* = literally *I live here three years*). In English this MUST be present perfect: *I have lived here for three years* or *I have been living here for three years* — NEVER *I live here for three years*. This is the single most common Czech-speaker mistake with this tense.\n\n**Why it matters**: *Since* and *for* appear in almost every CV, interview, and getting-to-know-you conversation. Fixing this pattern alone removes a constant low-level error.",
+        "root_ids": [
+          "B1.present_perfect.since_for",
+          "B1.present_perfect.continuous"
+        ],
+        "cefr_level": "B1"
+      },
+      {
+        "title": "Common Czech-speaker errors & where to go next",
+        "content": "**The four error patterns to watch for**:\n\n- **Present simple instead of present perfect** for ongoing situations: ✗ *I live here for three years.* → ✓ *I have lived here for three years.* (Czech *bydlím* = English *have lived*.)\n- **Stative verb in continuous**: ✗ *I have been knowing him for years.* → ✓ *I have known him for years.* (No continuous with *know, believe, own, want, need*.)\n- **Simple where continuous fits better** (activity focus): ✗ *Why are you tired? I've worked all day.* → more natural *I've been working all day.* (visible activity)\n- **Continuous where simple fits better** (count/result focus): ✗ *I've been reading three books this month.* → ✓ *I've read three books this month.* (count = simple)\n\n**Don't confuse with past simple** — that's a different topic. The contrast between **present perfect** (connected to now) and **past simple** (finished, separate) — including time markers like *yesterday, ago, last week* vs *ever, never, just, since, for* — is covered in the dedicated **Past Simple vs Present Perfect** topic. Go there for the past-vs-perfect choice; this topic stays inside the perfect aspect itself.\n\n**Why it matters**: Once you've cleaned up these four patterns, the present perfect becomes a tool you reach for confidently — not a guess.",
+        "root_ids": [
+          "A2.present_perfect.basic",
+          "B1.present_perfect.since_for",
+          "B1.present_perfect.continuous"
+        ],
+        "cefr_level": "B1"
       }
     ]
   },
   "check": {
     "title": "Check you understand",
+    "root_ids": [
+      "A2.present_perfect.basic",
+      "B1.present_perfect.since_for",
+      "B1.present_perfect.continuous"
+    ],
+    "cefr_level": "B1",
     "questions": [
       {
         "type": "mc",
@@ -108,11 +183,21 @@
     ]
   },
   "practice_order": [
+    "gapfill",
+    "makesentence",
+    "makequestion",
+    "errorcorrection",
     "mc"
   ],
   "practice": {
     "mc": {
       "title": "Practice: Present Perfect Simple vs Continuous ",
+      "root_ids": [
+        "A2.present_perfect.basic",
+        "B1.present_perfect.since_for",
+        "B1.present_perfect.continuous"
+      ],
+      "cefr_level": "B1",
       "questions": [
         {
           "type": "mc",
@@ -238,6 +323,12 @@
     },
     "gapfill": {
       "title": "Practice: Gap fill",
+      "root_ids": [
+        "A2.present_perfect.basic",
+        "B1.present_perfect.since_for",
+        "B1.present_perfect.continuous"
+      ],
+      "cefr_level": "B1",
       "questions": [
         {
           "type": "open",
@@ -300,6 +391,12 @@
     },
     "errorcorrection": {
       "title": "Practice: Error correction",
+      "root_ids": [
+        "A2.present_perfect.basic",
+        "B1.present_perfect.since_for",
+        "B1.present_perfect.continuous"
+      ],
+      "cefr_level": "B1",
       "questions": [
         {
           "type": "open",
@@ -349,6 +446,12 @@
     },
     "makesentence": {
       "title": "Practice: Making sentences (make a full sentence from the cues)",
+      "root_ids": [
+        "A2.present_perfect.basic",
+        "B1.present_perfect.since_for",
+        "B1.present_perfect.continuous"
+      ],
+      "cefr_level": "B1",
       "questions": [
         {
           "type": "makesentence",
@@ -410,6 +513,12 @@
     },
     "makequestion": {
       "title": "Practice: Making questions (make a question from the cues)",
+      "root_ids": [
+        "A2.present_perfect.basic",
+        "B1.present_perfect.since_for",
+        "B1.present_perfect.continuous"
+      ],
+      "cefr_level": "B1",
       "questions": [
         {
           "type": "makequestion",

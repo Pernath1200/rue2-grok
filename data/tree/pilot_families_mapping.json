@@ -2,7 +2,7 @@
   "meta": {
     "version": "0.1.0",
     "description": "Machine-readable mapping between existing RUE2 topics/curriculum and the new Grammar Tree model. Focused on the 8 Phase 1 pilot families.",
-    "last_updated": "2026-05-26",
+    "last_updated": "2026-05-27",
     "purpose": "Source of truth for tagging curriculum content and questions with root_ids during the pilot."
   },
   "pilot_families": [

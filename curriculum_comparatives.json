@@ -3,112 +3,144 @@
     "title": "Comparatives and Superlatives",
     "sections": [
       {
-        "title": "What are comparatives? (1)",
-        "content": "Comparatives compare **two people, things or situations**. **Short adjectives** (1–2 syllables): add *-er* (*taller*, *faster*). **Longer adjectives** (2+ syllables): *more* + adjective (*more interesting*, *more expensive*)."
+        "title": "What comparatives & superlatives do (core logic)",
+        "content": "**Comparatives** compare **two** things (*taller than her brother*). **Superlatives** pick out **the extreme** in a group of three or more (*the tallest in the class*).\n\n**Why it matters (roots-first)**: Comparison is how English **grades adjectives** — it's part of the Noun Phrase root (#3 in the Tree Model), because the adjective is modifying a noun. Every opinion, description, recommendation, and exam writing task leans on it: *better*, *worse*, *cheaper*, *the most useful*. Without comparatives you can describe one thing; with them you can rank, choose, and argue.\n\n**Key principle**: Two camps — *-er / -est* (short adjectives) and *more / most* (long adjectives). Learn that split first; the rest is spelling, irregulars, and a handful of patterns.",
+        "root_ids": [
+          "A2.comparatives.form_basic"
+        ],
+        "cefr_level": "A2"
       },
       {
-        "title": "What are comparatives? (2)",
-        "content": "Use **than** after: *taller than*, *more expensive than*. *My sister is taller than me. This film is more interesting than the book.*"
-      },
-      {
-        "title": "Forming comparatives",
-        "content": "",
+        "title": "The form rules — short vs long adjectives",
+        "content": "**The big split** — the single most important rule in this topic.\n\n**Short adjectives** (1 syllable, or 2 ending in *-y*): add **-er / -est**.\n- *tall → taller → the tallest*\n- *big → bigger → the biggest* (double the consonant)\n- *happy → happier → the happiest* (-y → -i)\n- *nice → nicer → the nicest* (drop final -e)\n\n**Long adjectives** (2+ syllables, usually): use **more / most**.\n- *expensive → more expensive → the most expensive*\n- *interesting → more interesting → the most interesting*\n\n**Why it matters**: Mixing the two camps is the #1 error (*more taller*, *interestinger*). Get the split right and the rest follows.",
         "diagram": {
           "type": "table",
-          "title": "Forming comparatives",
+          "title": "Comparative & superlative forms",
           "headers": [
-            "Type",
-            "Rule",
+            "Adjective type",
+            "Comparative",
+            "Superlative",
             "Example"
           ],
           "rows": [
             [
-              "Short (1–2 syll.)",
-              "adj + **-er**",
-              "tall → taller, easy → easier"
+              "Short (1 syll.)",
+              "+ **-er**",
+              "the + **-est**",
+              "tall → taller → the tallest"
+            ],
+            [
+              "Short ending in consonant + y",
+              "+ **-ier**",
+              "the + **-iest**",
+              "happy → happier → the happiest"
+            ],
+            [
+              "Short ending in vowel + consonant",
+              "double + **-er**",
+              "double + **-est**",
+              "big → bigger → the biggest"
             ],
             [
               "Long (2+ syll.)",
               "**more** + adj",
-              "expensive → more expensive"
-            ],
-            [
-              "Irregular",
-              "learn each one",
-              "good → better, bad → worse"
+              "**the most** + adj",
+              "expensive → more expensive → the most expensive"
             ]
           ]
-        }
+        },
+        "root_ids": [
+          "A2.comparatives.form_basic",
+          "A2.comparatives.superlative"
+        ],
+        "cefr_level": "A2"
       },
       {
-        "title": "Using comparatives (1)",
-        "content": "**Comparative + than:** *Tom is taller than his brother.*\n**Not as … as** (negative comparison): *She is not as tall as her sister.*"
-      },
-      {
-        "title": "Using comparatives (2)",
-        "content": "**Degree modifiers** — *much*, *a lot*, *far* (stronger), *a bit*, *slightly* (weaker): *This book is much better than the film. A bit easier than the last one.*"
-      },
-      {
-        "title": "More patterns",
-        "content": "**Adverbs:** *She speaks more slowly than before.*\n**The … the …:** *The more you practise, the better you get.*\n**Than + clause:** *The meeting took longer than we expected.*"
-      },
-      {
-        "title": "Superlatives: the rule (1)",
-        "content": "Superlatives compare **one thing with all others** in a group. Use **the** + superlative. **Short adjectives:** add *-est* (*the tallest*, *the biggest*, *the easiest*)."
-      },
-      {
-        "title": "Superlatives: the rule (2)",
-        "content": "**Long adjectives:** *the most* + adjective (*the most interesting*, *the most expensive*)."
-      },
-      {
-        "title": "Forming superlatives",
-        "content": "",
+        "title": "Irregular forms — the must-know list",
+        "content": "A small group of high-frequency adjectives ignore the rules. Learn them as a set.\n\n**Why it matters**: These are some of the most-used words in English — you cannot avoid them. *Good*, *bad*, and *much/many* alone account for a huge slice of everyday comparison.",
         "diagram": {
           "type": "table",
-          "title": "Forming superlatives",
+          "title": "Irregular comparatives & superlatives",
           "headers": [
-            "Type",
-            "Rule",
-            "Example"
+            "Adjective",
+            "Comparative",
+            "Superlative"
           ],
           "rows": [
             [
-              "Short (1–2 syll.)",
-              "the + adj + **-est**",
-              "tall → the tallest"
+              "**good**",
+              "better",
+              "the best"
             ],
             [
-              "Long (2+ syll.)",
-              "**the most** + adj",
-              "the most interesting"
+              "**bad**",
+              "worse",
+              "the worst"
             ],
             [
-              "Irregular",
-              "learn each one",
-              "good → the best, bad → the worst"
+              "**far**",
+              "farther / further",
+              "the farthest / furthest"
+            ],
+            [
+              "**little**",
+              "less",
+              "the least"
+            ],
+            [
+              "**much / many**",
+              "more",
+              "the most"
             ]
           ]
-        }
+        },
+        "root_ids": [
+          "A2.comparatives.form_basic"
+        ],
+        "cefr_level": "A2"
       },
       {
-        "title": "Irregular forms",
-        "content": "*good* → *better* → *the best*\n*bad* → *worse* → *the worst*\n*far* → *farther/further* → *the farthest/furthest*\n*little* → *less* → *the least*\n*many/much* → *more* → *the most*"
+        "title": "than after comparatives",
+        "content": "The structure is **X + be + comparative + than + Y**.\n\n**Examples**:\n- She's **taller than** her brother.\n- This film is **more interesting than** the book.\n- The meeting took **longer than** we expected. (than + clause)\n\n**Czech-speaker note**: *než* maps cleanly onto *than*, but don't drop it — *She is taller me* is one of the most common errors. *Than* is obligatory.\n\n**Pronoun choice**: informal English uses *than me / than him* (*She's taller than me*). Formal English prefers *than I / than he* (*She's taller than I am*). Both are accepted in B1–B2 writing.",
+        "root_ids": [
+          "A2.comparatives.form_basic"
+        ],
+        "cefr_level": "A2"
       },
       {
-        "title": "Using superlatives",
-        "content": "Use with **in** + place/group or **I've ever** + past participle. *She is the tallest in the class. This is the most difficult test I've ever done. It's the best restaurant in town.*"
+        "title": "(not) as … as — equality and softer comparison",
+        "content": "A second comparison pattern, alongside *-er / more*.\n\n**Equal**: *as + adjective + as*\n- *She's **as tall as** her sister.* (same height)\n- *Just as / nearly as / almost as* (degrees of equality)\n\n**Unequal**: *not as + adjective + as*\n- *She's **not as tall as** her brother.* = he is taller (softer than *shorter than*)\n- *This exam wasn't as hard as the last one.*\n\n**Why it matters**: Native speakers reach for *not as … as* constantly because it sounds less blunt than the opposite comparative. Also classic exam trap.\n\n**Common error (Czech L1)**: *not so tall like her brother* — the pattern is **not as … as**, never *like*.",
+        "root_ids": [
+          "B1.comparatives.as_as"
+        ],
+        "cefr_level": "B1"
       },
       {
-        "title": "Typical errors (1)",
-        "content": "**No double comparative:** **Wrong:** *more easier*, *more better*. **Right:** *easier*, *better*.\n**Short adjective:** **Wrong:** *more tall*. **Right:** *taller*.\n**Long adjective:** **Wrong:** *interestinger*. **Right:** *more interesting*."
+        "title": "less / least — the opposite direction",
+        "content": "**less / least** = the reverse of *more / most*. Mainly used with **long adjectives**.\n\n**Examples**:\n- This phone is **less expensive** than that one. (= cheaper)\n- It's **the least difficult** question in the test. (= the easiest)\n- He's **less interested** in football than his brother.\n\n**Why it matters**: For long adjectives, *less* is the only way to say \"in the opposite direction\" — there's no *-er* alternative.\n\n**Watch out**: *less tall*, *less big* sound odd — with short adjectives, native speakers prefer *not as tall as* or *shorter than*. Save *less* for long adjectives.",
+        "root_ids": [
+          "B1.comparatives.as_as",
+          "A2.comparatives.form_basic"
+        ],
+        "cefr_level": "B1"
       },
       {
-        "title": "Typical errors (2)",
-        "content": "**Than:** **Wrong:** *She is taller me.* **Right:** *She is taller than me.*\n**Not as … as:** **Wrong:** *not so tall like her brother*. **Right:** *not as tall as her brother*."
+        "title": "Advanced patterns (B2)",
+        "content": "Higher-level moves that turn basic comparison into natural, exam-grade English.\n\n**Degree modifiers** — *how much* of a difference:\n- **Big difference**: *much / far / a lot / significantly* + comparative — *much taller*, *far more expensive*\n- **Small difference**: *a bit / a little / slightly* + comparative — *a bit older*, *slightly cheaper*\n- Modifiers go **before** the comparative, never with the bare adjective.\n\n**The … the …** (parallel change):\n- *The older he gets, the wiser he becomes.*\n- *The more you practise, the better you get.* (Czech *čím víc … tím víc …*)\n\n**Repeated comparative** (increasing change):\n- *It's getting **bigger and bigger**.*\n- *Prices are going **up and up**.*\n\n**Why it matters**: These structures are what separate B1 from B2 in speaking and writing — examiners listen for them.",
+        "root_ids": [
+          "B2.comparatives.advanced"
+        ],
+        "cefr_level": "B2"
       },
       {
-        "title": "Reference",
-        "content": "For irregular forms and full lists, see **Reference** → **Comparatives and Superlatives**."
+        "title": "Common Czech-speaker errors + roadmap",
+        "content": "**High-frequency mistakes** to drill out:\n\n- *more taller* → **taller** (no double comparative)\n- *the most happiest* → **the happiest** (no double superlative)\n- *interestinger* → **more interesting** (long adjective takes *more*)\n- *more tall than* → **taller than** (short adjective takes *-er*)\n- *She is taller me* → **taller than me** (don't drop *than*)\n- *not so tall like her brother* → **not as tall as her brother** (the pattern is *as … as*)\n- *worser* / *more better* → **worse** / **better** (irregular, no extra ending)\n- *She is taller than my sister* (when comparing English with English) → **than my sister's** (compare like with like)\n\n**Why it matters**: These appear in every gap-fill, error-correction, and writing task. Fixing them gives immediate visible progress.\n\n**Direct practice in this curriculum** (start here after the cards):\n- Gap fill – basic (form the comparative)\n- Advanced comparatives (modifiers, *the … the …*, *not as … as*)\n- Superlatives (the + -est / the most)\n- Error correction (the doubles and the *than* drops)\n\n**Next steps**: full irregular list at **Reference → Comparatives and Superlatives**.",
+        "root_ids": [
+          "A2.comparatives.form_basic",
+          "A2.comparatives.superlative",
+          "B1.comparatives.as_as"
+        ],
+        "cefr_level": "B1"
       }
     ]
   },
@@ -178,6 +210,10 @@
     ]
   },
   "practice_order": [
+    "gapfill",
+    "advanced",
+    "superlatives",
+    "errorcorrection",
     "mc"
   ],
   "practice": {

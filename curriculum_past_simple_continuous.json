@@ -146,6 +146,8 @@
     ]
   },
   "practice_order": [
+    "gapfill",
+    "errorcorrection",
     "mc"
   ],
   "practice": {

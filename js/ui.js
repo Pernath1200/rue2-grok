@@ -1,4 +1,4 @@
-export const DATA_VERSION = 38;
+export const DATA_VERSION = 40;  // v41 bundle - forcing update for user
 
 export const SCREEN_IDS = [
   'menuScreen','quizScreen','introScreen','sectionCompleteScreen',
@@ -29,6 +29,12 @@ export function showMenuPanel(id) {
     var el = document.getElementById(pid);
     if (el) el.classList.toggle('hidden', pid !== id);
   });
+
+  // Central control for the global Back button visibility
+  const backBtn = document.getElementById('navBackBtn');
+  if (backBtn) {
+    backBtn.style.display = (id === 'menuMain') ? 'none' : '';
+  }
 }
 
 var FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';

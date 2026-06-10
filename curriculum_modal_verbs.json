@@ -3,106 +3,131 @@
     "title": "Modal verbs",
     "sections": [
       {
-        "title": "What are modal verbs? (1)",
-        "content": "Modal verbs add a layer of meaning to the main verb: possibility, obligation, permission, ability, advice. **Main modals:** *can, could, may, might, must, should, will, would.*"
-      },
-      {
-        "title": "What are modal verbs? (2)",
-        "content": "**Form:** no *-s* in third person (*she can*, not *she cans*). Followed by **base form** (*can go*, *must see*). No *do* in questions or negatives (*Can you?* *I must not*)."
-      },
-      {
-        "title": "Ability and permission",
-        "content": "**Can** — ability: *I can swim.* Permission: *You can leave early.*\n**Could** — past ability: *I could run fast when I was young.* Polite request: *Could you help me?*\n**May** — formal permission: *May I sit here?*"
-      },
-      {
-        "title": "Possibility",
-        "content": "**May / might** — possibility: *It may rain. She might be late.* (*might* = slightly less certain)\n**Could** — also possible: *He could be right.*\nThese all mean *perhaps* — the action is not certain.",
-        "root_ids": ["B1.modals.speculation_present"],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "Obligation and advice (1)",
-        "content": "**Must** — strong obligation or rule: *You must wear a seatbelt.* Strong deduction: *She must be at home* (I'm sure).\n**Should** — advice, weak obligation: *You should see a doctor.*",
-        "root_ids": ["A2.modals.should"],
+        "title": "What modals do (core logic)",
+        "content": "Modal verbs (**can, could, may, might, must, shall, should, will, would**) add a layer of **speaker stance** to the main verb — necessity, ability, possibility, advice, permission. They tell the listener how the speaker sees the action.\n\n**Why it matters (roots-first)**: Modals are the modality dimension of the Verb Phrase root (#2 in the Tree Model). Tenses locate events in time; modals colour them with the speaker's attitude. Without them, English sounds robotic — every workplace email, polite request, exam essay, and real conversation runs on them.\n\n**Form — the three rules that never change**:\n- **No -s** in the third person: *she can swim* (not *she cans*).\n- **Base form** of the main verb follows: *I must go*, *you should see* (no *to*, no *-ing*, no past tense).\n- **No do** in questions or negatives: *Can you help?* / *I can't help* (not *Do you can help?*).\n\n**Czech note**: *můžu, musím, měl bych* often map to modals, but the form rules are different — Czech conjugates the modal (*musíš, musíme*), English does not.",
+        "root_ids": [
+          "A2.modals.must_have_to_basic",
+          "A2.modals.should"
+        ],
         "cefr_level": "A2"
       },
       {
-        "title": "Obligation and advice (2)",
-        "content": "**Ought to** — similar to *should*, often more formal: *You ought to apologise.* Form: *ought to* + base verb."
-      },
-      {
-        "title": "Must vs have to (1)",
-        "content": "Both express obligation, but: **must** = the speaker decides (personal obligation, strong rule). **Have to** = external obligation (rules, boss, law): *I have to wear a uniform.*",
-        "root_ids": ["A2.modals.must_have_to_basic"],
+        "title": "Ability & permission: can / could / be able to",
+        "content": "**Ability** = what someone is capable of. **Permission** = what someone is allowed to do.\n\n**Contrast examples**:\n- *I **can** swim.* (present ability) vs *I **could** swim when I was six.* (past ability)\n- *You **can** leave early.* (informal permission) vs ***May** I sit here?* (formal permission) vs ***Could** you help me?* (polite request)\n- *She **will be able to** come tomorrow.* (future — *can* has no future form, so we switch to **be able to**)\n- *He **has been able to** finish.* (perfect — same reason)\n\n**Why it matters**: Asking for things politely is one of the most visible markers of fluent English. *Can I?* / *Could I?* / *May I?* is a gradient from casual to formal — students who only have *can* sound abrupt in work and exam contexts.\n\n**Key gap**: *can* covers present only. The moment you need future, perfect, or *-ing*, you must use **be able to**.",
+        "root_ids": [
+          "A2.modals.must_have_to_basic"
+        ],
         "cefr_level": "A2"
       },
       {
-        "title": "Must vs have to (2)",
-        "content": "**Have to** behaves like a normal verb: *She has to go. Do you have to? I don't have to.* Use **be able to** when you need a form that *can* doesn't have: *She will be able to come.*"
-      },
-      {
-        "title": "Summary table",
-        "content": "",
+        "title": "Necessity & obligation: must / have to / mustn't / don't have to",
+        "content": "This is the highest-error area for Czech speakers. Four forms, four distinct meanings.\n\n**Positive — must vs have to**:\n- ***must*** = internal / speaker-decided obligation: *I **must** call my mother* (I feel I should).\n- ***have to*** = external obligation (rule, boss, law): *I **have to** wear a uniform at work.*\n\n**Negative — the critical trap**:\n- ***mustn't*** = prohibition (don't do it!): *You **mustn't** smoke here.*\n- ***don't have to*** = no obligation (you can if you want): *You **don't have to** come — it's optional.*\n\n**Why it matters**: *mustn't* and *don't have to* look like opposites of the same thing but mean completely different things. Confusing them in a workplace email (\"You mustn't reply\" when you meant \"you don't have to reply\") changes the message entirely.\n\n**Form note**: ***have to*** behaves like a normal verb — *She **has to** go. **Do** you **have to**? I **don't have to**.* It takes *do/does/did* in questions and negatives, unlike true modals.\n\n**Czech trap**: *musím* maps to both *must* and *have to* depending on context. *Nemusím* is **don't have to** (no obligation), NOT *mustn't*.",
         "diagram": {
           "type": "table",
-          "title": "Modal verbs by meaning",
+          "title": "Necessity contrast",
           "headers": [
+            "Form",
             "Meaning",
-            "Modals",
             "Example"
           ],
           "rows": [
             [
-              "Obligation (strong)",
-              "must, have to",
-              "You **must** wear a seatbelt."
+              "**must**",
+              "Internal / strong personal obligation",
+              "I **must** finish this today."
             ],
             [
-              "Advice / weak obligation",
-              "should, ought to",
-              "You **should** see a doctor."
+              "**have to**",
+              "External rule or requirement",
+              "We **have to** wear ID badges."
             ],
             [
-              "Possibility",
-              "may, might, could",
-              "It **might** rain tomorrow."
+              "**mustn't**",
+              "Prohibition — don't do it",
+              "You **mustn't** park here."
             ],
             [
-              "Ability",
-              "can, could, be able to",
-              "She **can** swim."
-            ],
-            [
-              "Permission",
-              "can, may, could",
-              "**May** I sit here?"
-            ],
-            [
-              "Offer / promise",
-              "will, shall",
-              "I**'ll** help you."
+              "**don't have to**",
+              "No obligation — optional",
+              "You **don't have to** stay late."
             ]
           ]
-        }
+        },
+        "root_ids": [
+          "A2.modals.must_have_to_basic"
+        ],
+        "cefr_level": "A2"
       },
       {
-        "title": "Typical errors (1)",
-        "content": "**Wrong:** *She cans swim.* **Right:** *She can swim* (no *-s*).\n**Wrong:** *You must to go.* **Right:** *You must go* (no *to* after modals)."
+        "title": "Advice: should / ought to / had better",
+        "content": "Three forms on a gradient of **urgency**.\n\n**Contrast examples**:\n- *You **should** see a doctor.* (general advice — neutral, friendly)\n- *You **ought to** apologise.* (similar to *should*, slightly more formal / moral)\n- *You'**d better** leave now or you'll miss the train.* (urgent — warning of a bad consequence)\n\n**Why it matters**: Giving advice is everywhere — to friends, colleagues, students, in writing tasks. The wrong level of urgency makes the speaker sound either bossy or weak. ***had better*** is much stronger than students realise — it implies a threat or warning, not gentle advice.\n\n**Form notes**:\n- ***ought to*** is the only modal that keeps *to*: *ought to go* (not *ought go*).\n- ***had better*** + base form: *you'd better go* (not *had better to go*). Contraction *'d better* is normal.\n- Negative of *should* is *shouldn't*; of *had better* is ***had better not***: *You'd better **not** be late.*",
+        "root_ids": [
+          "A2.modals.should"
+        ],
+        "cefr_level": "A2"
       },
       {
-        "title": "Typical errors (2)",
-        "content": "**Wrong:** *Do you can help?* **Right:** *Can you help?* (no *do* with modals).\n**Wrong:** *I must go to work yesterday.* **Right:** *I had to go* (*must* has no past form — use *had to*).",
-        "root_ids": ["B1.modals.past_forms"],
+        "title": "Speculation & deduction — present: must / might / could / can't",
+        "content": "Modals also express how **certain** the speaker is about something now. This is one of the most useful skills at B1+ — guessing, deducing, hedging.\n\n**Contrast examples (degree of certainty)**:\n- *She **must** be at home — her car's outside.* (almost sure — positive)\n- *She **might / may / could** be at home — I'm not sure.* (possible — about 50/50)\n- *She **can't** be at home — she's in Paris.* (almost sure — negative; NOT *mustn't*)\n\n**Why it matters**: This is the heart of natural conversation — \"He **must** be tired,\" \"That **might** work,\" \"She **can't** be serious.\" Exam speaking tasks (FCE/CAE) reward students who can hedge with *might/could* rather than asserting flat facts.\n\n**Critical trap**: For negative deduction, the opposite of ***must*** (certain) is ***can't*** (certain not) — NOT ***mustn't***. *Mustn't* is prohibition, not deduction.\n\n**Form**: All take **base form** of the verb: *must be, might rain, could work, can't know*.",
+        "diagram": {
+          "type": "table",
+          "title": "Present deduction by certainty",
+          "headers": [
+            "Certainty",
+            "Modal",
+            "Example"
+          ],
+          "rows": [
+            [
+              "Almost sure (positive)",
+              "**must**",
+              "He **must** know — he was there."
+            ],
+            [
+              "Possible (50/50)",
+              "**may / might / could**",
+              "It **might** rain later."
+            ],
+            [
+              "Almost sure (negative)",
+              "**can't** (not *mustn't*)",
+              "That **can't** be true."
+            ]
+          ]
+        },
+        "root_ids": [
+          "B1.modals.speculation_present"
+        ],
         "cefr_level": "B1"
       },
       {
-        "title": "Reference",
-        "content": "For full modal verb lists and examples, see **Reference** → **Modal Verbs**."
+        "title": "Speculation & deduction — past: must have / might have / can't have",
+        "content": "Same logic as present deduction, but about something that already happened. **Modal + have + past participle**.\n\n**Contrast examples**:\n- *She **must have** left early — her coat's gone.* (almost sure she left)\n- *He **might / may / could have** missed the train.* (possible)\n- *They **can't have** finished already — it's only been an hour.* (almost sure they didn't)\n- *I **should have** called her.* (regret — I didn't, but I wish I had)\n\n**Why it matters**: This is the modality structure that separates B1 from B2 speakers. Native English uses it constantly to reason about past events (\"He must have forgotten,\" \"They could have warned us\"). It's heavily tested in CAE/FCE Use of English (key word transformations).\n\n**Form trap**: It's *must **have** done* — the *have* is required. In speech it contracts to *must've /ˈmʌstəv/*, which Czech learners often hear as *must of* and write incorrectly. It's always **have**.",
+        "root_ids": [
+          "B2.modals.speculation_past"
+        ],
+        "cefr_level": "B2"
+      },
+      {
+        "title": "Past forms & common errors",
+        "content": "Most modals have **no past form** — you switch to a different verb or structure.\n\n**Past equivalents**:\n- ***must*** → ***had to*** (past obligation): *I **had to** work late yesterday.* (NOT *I must work yesterday*)\n- ***can*** → ***could*** / ***was able to***: *I **could** swim at five.* (general past ability) vs *I **was able to** finish the report on time.* (one specific success)\n- ***should*** → ***should have + past participle*** (past regret): *I **should have called** her.*\n- ***may/might*** → ***might have + past participle*** (past possibility): *He **might have forgotten**.*\n\n**Top errors Czech speakers make**:\n- *She cans swim.* → *She **can** swim.* (no *-s*)\n- *You must to go.* → *You **must** go.* (no *to* after true modals)\n- *I can to swim.* → *I **can** swim.* (no *to*)\n- *Do you can help?* → ***Can** you help?* (no *do* with modals)\n- *I should went.* → *I **should go** / I **should have gone**.* (modal + base form, always)\n- *I must work yesterday.* → *I **had to** work yesterday.* (*must* has no past)\n- *He must of forgotten.* → *He **must have** forgotten.* (always *have*, never *of*)\n\n**Why it matters**: These six patterns cover the vast majority of modal errors in marked work. Fixing them gives an immediate, visible level-up in writing and speaking — and they're all checked in every Use of English paper.\n\nFor full modal reference, see **Reference** → **Modal Verbs**.",
+        "root_ids": [
+          "B1.modals.past_forms",
+          "A2.modals.must_have_to_basic"
+        ],
+        "cefr_level": "B1"
       }
     ]
   },
   "check": {
     "title": "Test your understanding",
+    "root_ids": [
+      "A2.modals.must_have_to_basic",
+      "A2.modals.should",
+      "B1.modals.speculation_present",
+      "B1.modals.past_forms"
+    ],
+    "cefr_level": "B1",
     "questions": [
       {
         "type": "mc",
@@ -179,11 +204,19 @@
     ]
   },
   "practice_order": [
+    "gapfill",
     "mc"
   ],
   "practice": {
     "gapfill": {
       "title": "Practice: Choose the modal or semi-modal",
+      "root_ids": [
+        "A2.modals.must_have_to_basic",
+        "A2.modals.should",
+        "B1.modals.speculation_present",
+        "B1.modals.past_forms"
+      ],
+      "cefr_level": "B1",
       "questions": [
         {
           "type": "open",
@@ -242,6 +275,13 @@
     },
     "mc": {
       "title": "Practice: Modal verbs (multiple choice)",
+      "root_ids": [
+        "A2.modals.must_have_to_basic",
+        "A2.modals.should",
+        "B1.modals.speculation_present",
+        "B1.modals.past_forms"
+      ],
+      "cefr_level": "B1",
       "questions": []
     }
   }

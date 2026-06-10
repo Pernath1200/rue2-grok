@@ -8,6 +8,98 @@ import { registerCallbacks as registerRefCallbacks, renderPrepositionsListConten
 migrateStorageKeys();
 const COURSE_ORDER = ['check', 'gapfill', 'errorcorrection', 'makesentence', 'makequestion'];
 
+// === Minimal Navigation State Machine + History Stack ===
+// Goal: Reliable Back everywhere + support for keyboard-first navigation with low cognitive load.
+const NAV = {
+  history: [], // Array of { type: 'screen' | 'panel', id: string, context?: string, params?: object }
+  current: null,
+
+  _pushCurrent() {
+    if (this.current) {
+      this.history.push({ ...this.current });
+      // Keep history reasonable size
+      if (this.history.length > 12) this.history.shift();
+    }
+  },
+
+  navigate(target, params = {}) {
+    const isFullScreen = SCREEN_IDS.includes(target);
+    const id = target;
+
+    this._pushCurrent();
+
+    this.current = {
+      type: isFullScreen ? 'screen' : 'panel',
+      id,
+      context: params.context || '',
+      params: { ...params }
+    };
+
+    if (isFullScreen) {
+      showScreen(id);
+      document.body.classList.remove('viewing-reference', 'viewing-content');
+    } else {
+      showScreen('menuScreen');
+      showMenuPanel(id);
+
+      // Special case: the tree panel needs its SVG rendered after being shown
+      if (id === 'menuTreeOverview' && typeof renderSimpleTreeOverview === 'function') {
+        renderSimpleTreeOverview();
+      }
+    }
+
+    if (typeof updateNavContext === 'function') {
+      updateNavContext(this.current.context);
+    }
+
+    // Keep the global Back button hidden on the true home screen
+    const backBtn = document.getElementById('navBackBtn');
+    if (backBtn) {
+      backBtn.style.display = (id === 'menuMain') ? 'none' : '';
+    }
+  },
+
+  back() {
+    if (this.history.length === 0) {
+      this.navigate('menuMain');
+      return;
+    }
+
+    const previous = this.history.pop();
+    this.current = previous;
+
+    if (previous.type === 'screen') {
+      showScreen(previous.id);
+    } else {
+      showScreen('menuScreen');
+      showMenuPanel(previous.id);
+    }
+
+    if (typeof updateNavContext === 'function') {
+      updateNavContext(previous.context || '');
+    }
+
+    // Extra safety: if we just landed on the home screen via back, force-hide the Back button
+    if (previous.id === 'menuMain') {
+      const backBtn = document.getElementById('navBackBtn');
+      if (backBtn) backBtn.style.display = 'none';
+    }
+
+    const backBtn = document.getElementById('navBackBtn');
+    if (backBtn) backBtn.style.display = (this.history.length === 0) ? 'none' : '';
+  },
+
+  // Helper to mark the current state with better context
+  setContext(context) {
+    if (this.current) {
+      this.current.context = context;
+      if (typeof updateNavContext === 'function') {
+        updateNavContext(context);
+      }
+    }
+  }
+};
+
 /** Excluded from Choose Grammar Topic only; curriculum_*.json files stay in the repo. */
 const EXCLUDED_TOPIC_MENU_IDS = new Set(['open_cloze', 'sentence_transformation']);
 function filterTopicsForMenu(topics) {
@@ -116,6 +208,18 @@ function applyHashAndShowTopic() {
 
 function showTopicSelectMenu() {
   showMenuPanel('menuTopicSelect');
+  updateNavContext('Choose topic');
+
+  const f = document.getElementById('topicFilterInput');
+  const results = document.getElementById('topicSearchResults');
+  const sel = document.getElementById('topicSelect');
+
+  if (f) f.value = '';
+  if (results) {
+    results.classList.add('hidden');
+    results.innerHTML = '';
+  }
+  if (sel) Array.from(sel.options).forEach(o => o.hidden = false);
   const backToPrevBtn = document.getElementById('topicSelectBackToPrevBtn');
   if (backToPrevBtn) {
     if (state.returnToAfterTopicSelect === 'diagnostic') {
@@ -130,6 +234,15 @@ function showTopicSelectMenu() {
     const sel = document.getElementById('topicSelect');
     if (sel && idx >= 0) sel.value = String(idx);
   }
+
+  // Keyboard-first: focus the first action button (or the filter if empty) to minimize mouse
+  setTimeout(() => {
+    if (f && f.value.trim() === '') {
+      f.focus();
+    } else if (topicActionButtons[0]) {
+      topicActionButtons[0].focus();
+    }
+  }, 0);
 }
 
 function navigateFromIntroToTopic(topicId) {
@@ -166,6 +279,11 @@ function showMainMenu() {
   showScreen('menuScreen');
   document.body.classList.remove('viewing-reference', 'viewing-content');
   showMenuPanel('menuMain');
+  updateNavContext('');
+
+  // No point showing Back on the very first screen
+  const backBtn = document.getElementById('navBackBtn');
+  if (backBtn) backBtn.style.display = (NAV.history.length === 0) ? 'none' : '';
 }
 
 
@@ -191,7 +309,17 @@ async function openTopicIntroFromResults(topicId) {
 try {
 document.getElementById('startBtn').addEventListener('click', startQuiz);
 document.getElementById('startPart1Btn').addEventListener('click', startPart1);
-document.getElementById('startPart2Btn').addEventListener('click', startPart2);
+document.getElementById('startPart2Btn').addEventListener('click', async () => {
+  // "2: Multiple Choice" path — enforce the documented 10-question limit for predictability
+  state._directMCLaunch = true;
+  await startPart2();
+  // Post-process: enforce limit + update title for honest progress display
+  if (state._directMCLaunch && state.currentQuestions && state.currentQuestions.length > 10) {
+    state.currentQuestions = state.currentQuestions.slice(0, 10);
+    state.currentSetTitle = (state.currentTopic?.title || state.currentTopic?.id || 'Topic') + ' — 10 MC questions';
+  }
+  state._directMCLaunch = false;
+});
 document.getElementById('openPracticeSetupBtn').addEventListener('click', () => {
   if (!hasValidTopicSelected()) {
     alert('Please choose a topic first.');
@@ -207,13 +335,78 @@ document.getElementById('openPracticeSetupBtn').addEventListener('click', () => 
   }
 });
 document.getElementById('practiceSetupBackBtn').addEventListener('click', () => {
-  document.getElementById('menuPracticeSetup').classList.add('hidden');
-  document.getElementById('menuTopicSelect').classList.remove('hidden');
+  NAV.back();   // reliable history-backed back
 });
-document.getElementById('practiceSetupMainMenuBtn').addEventListener('click', showMainMenu);
-document.getElementById('openTopicSelectBtn').addEventListener('click', () => { state.returnToAfterTopicSelect = null; showTopicSelectMenu(); });
-document.getElementById('topicSelectMainMenuBtn').addEventListener('click', () => { state.returnToAfterTopicSelect = null; showMainMenu(); });
-document.getElementById('topicSelectBackToPrevBtn').addEventListener('click', () => {
+document.getElementById('openTopicSelectBtn').addEventListener('click', () => {
+  state.returnToAfterTopicSelect = null;
+  NAV.navigate('menuTopicSelect', { context: 'Topics' });
+});
+// Keyboard support on topic selection screen
+const topicActionButtons = [
+  'startPart1Btn',
+  'startPart2Btn',
+  'openPracticeSetupBtn'
+].map(id => document.getElementById(id)).filter(Boolean);
+
+let topicActionIndex = 0;
+
+function focusTopicAction(index) {
+  topicActionIndex = (index + topicActionButtons.length) % topicActionButtons.length;
+  topicActionButtons[topicActionIndex].focus();
+}
+
+// When showing the topic panel, make the first action button the default focus target
+const originalShowTopicSelectMenu = showTopicSelectMenu;
+showTopicSelectMenu = function() {
+  originalShowTopicSelectMenu.apply(this, arguments);
+  // Reset to first action as default
+  topicActionIndex = 0;
+  // Give focus to the first action button after a tick so the panel is visible
+  setTimeout(() => {
+    if (topicActionButtons[0] && !document.getElementById('topicFilterInput')?.matches(':focus')) {
+      topicActionButtons[0].focus();
+    }
+  }, 0);
+};
+
+// Keyboard navigation on the topic action buttons
+document.addEventListener('keydown', (e) => {
+  const panel = document.getElementById('menuTopicSelect');
+  if (!panel || panel.classList.contains('hidden')) return;
+
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+    e.preventDefault();
+    focusTopicAction(topicActionIndex + 1);
+  }
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+    e.preventDefault();
+    focusTopicAction(topicActionIndex - 1);
+  }
+  if (e.key === 'Enter') {
+    // If focus is on one of the action buttons, let it click naturally
+    // If focus is elsewhere (e.g. select or filter), trigger the current focused action
+    const active = document.activeElement;
+    if (!topicActionButtons.includes(active)) {
+      e.preventDefault();
+      topicActionButtons[topicActionIndex].click();
+    }
+  }
+});
+
+// Also support Enter on the native select for convenience
+document.getElementById('topicSelect').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && hasValidTopicSelected()) {
+    e.preventDefault();
+    topicActionButtons[topicActionIndex].click();
+  }
+});
+// Always-visible back controls on the topic select screen (normal flow)
+document.getElementById('topicSelectBackBtn')?.addEventListener('click', () => {
+  NAV.back();
+});
+
+// Keep the old diagnostic-only back button working
+document.getElementById('topicSelectBackToPrevBtn')?.addEventListener('click', () => {
   if (state.returnToAfterTopicSelect === 'diagnostic') {
     document.getElementById('menuScreen').classList.add('hidden');
     document.body.classList.add('viewing-content');
@@ -227,7 +420,7 @@ document.getElementById('openDiagnosticSetupBtn').addEventListener('click', () =
   document.getElementById('menuPracticeSetup').classList.add('hidden');
   document.getElementById('menuDiagnosticSetup').classList.remove('hidden');
 });
-document.getElementById('diagnosticSetupMainMenuBtn').addEventListener('click', showMainMenu);
+
 document.getElementById('diagnostic20Btn').addEventListener('click', () => startDiagnostic(20));
 document.getElementById('diagnostic50Btn').addEventListener('click', () => startDiagnostic(50));
 document.getElementById('diagnostic100Btn').addEventListener('click', () => startDiagnostic(100));
@@ -332,23 +525,34 @@ document.getElementById('sectionCompleteFurtherPracticeBtn').addEventListener('c
   if (topicEl) topicEl.textContent = state.currentTopic ? toTitleCase(state.currentTopic.title || state.currentTopic.id) : '';
 });
 document.getElementById('resultFurtherPracticeBtn').addEventListener('click', () => {
-  document.getElementById('resultScreen').classList.add('hidden');
-  document.getElementById('menuScreen').classList.remove('hidden');
-  document.getElementById('menuMain').classList.add('hidden');
-  document.getElementById('menuTopicSelect').classList.add('hidden');
-  document.getElementById('menuPracticeSetup').classList.remove('hidden');
-  applyTopic();
-  const topicEl = document.getElementById('practiceSetupTopic');
-  if (topicEl) topicEl.textContent = state.currentTopic ? toTitleCase(state.currentTopic.title || state.currentTopic.id) : '';
+  // Go back to topic select then immediately open the practice setup panel
+  NAV.navigate('menuTopicSelect', { context: 'Further practice' });
+  // After the panel is shown, open the setup (small delay for DOM)
+  setTimeout(() => {
+    const topicSelectPanel = document.getElementById('menuTopicSelect');
+    if (topicSelectPanel) topicSelectPanel.classList.add('hidden');
+    const practicePanel = document.getElementById('menuPracticeSetup');
+    if (practicePanel) {
+      practicePanel.classList.remove('hidden');
+      applyTopic();
+      const topicEl = document.getElementById('practiceSetupTopic');
+      if (topicEl) topicEl.textContent = state.currentTopic ? toTitleCase(state.currentTopic.title || state.currentTopic.id) : '';
+    }
+  }, 0);
 });
 document.getElementById('submitBtn').addEventListener('click', submitAnswer);
 document.getElementById('nextBtn').addEventListener('click', nextQuestion);
 document.getElementById('retryWrongBtn').addEventListener('click', retryWrong);
-document.getElementById('backToMenuBtn').addEventListener('click', showMainMenu);
+document.getElementById('backToMenuBtn').addEventListener('click', () => NAV.navigate('menuMain'));
 document.getElementById('exitQuizBtn').addEventListener('click', () => {
-  renderMenu();
+  // Prefer NAV history for consistent Back feel (A); fallback safe
+  if (NAV.history && NAV.history.length > 0) {
+    NAV.back();
+  } else {
+    NAV.navigate('menuMain');
+  }
 });
-document.getElementById('quizMainMenuBtn').addEventListener('click', showMainMenu);
+document.getElementById('quizMainMenuBtn').addEventListener('click', () => NAV.navigate('menuMain'));
 document.getElementById('quizScreen').addEventListener('click', function(e) {
   const link = e.target && e.target.closest && e.target.closest('.diagnostic-topic-link');
   if (!link) return;
@@ -541,11 +745,17 @@ document.addEventListener('keydown', function(e) {
     if (flagOverlay && !flagOverlay.classList.contains('hidden')) { closeOverlay('flagReasonOverlay'); return; }
     var reportedOverlay = document.getElementById('reportedQuestionsOverlay');
     if (reportedOverlay && !reportedOverlay.classList.contains('hidden')) { closeOverlay('reportedQuestionsOverlay'); return; }
-    var menuScreen = document.getElementById('menuScreen');
-    if (!menuScreen || menuScreen.classList.contains('hidden')) {
+
+    // Use real navigation history when possible
+    if (NAV.history.length > 0) {
       e.preventDefault();
-      showMainMenu();
+      NAV.back();
+      return;
     }
+
+    // Always provide a reliable escape from any content screen
+    e.preventDefault();
+    NAV.navigate('menuMain');
     return;
   }
 
@@ -612,24 +822,24 @@ registerQuizCallbacks({ renderMenu, advanceCourseToNext, getWeakSpotQuestions, a
 // === New hybrid visible elements ===
 
 document.getElementById('showTreeBtn')?.addEventListener('click', () => {
-  showTreeOverview();
+  NAV.navigate('menuTreeOverview', { context: 'Grammar Tree' });
 });
 
 document.getElementById('treeOverviewBackBtn')?.addEventListener('click', () => {
-  showMenuPanel('menuMain');
+  NAV.back();   // use history so Esc/Back feel consistent
 });
 
 function showTreeOverview() {
   showMenuPanel('menuTreeOverview');
   renderSimpleTreeOverview();
+  // Note: NAV.navigate should be used by callers so history is correct
 }
 
 function renderSimpleTreeOverview() {
   const visualContainer = document.getElementById('treeRootsVisual');
-  const debugEl = document.getElementById('treeDebugInfo');
   if (!visualContainer) return;
+
   visualContainer.innerHTML = '';
-  if (debugEl) debugEl.textContent = '';
 
   if (!grammarTree || !grammarTree.roots || !pilotMapping) {
     visualContainer.innerHTML = `
@@ -641,96 +851,324 @@ function renderSimpleTreeOverview() {
     return;
   }
 
-  // Use the proper pilot mapping to group families by root
+  // Group families by primary root
   const familiesByRoot = {};
   grammarTree.roots.forEach(r => familiesByRoot[r.id] = []);
-
-  const pilotFamilyData = pilotMapping.pilot_families || [];
-  pilotFamilyData.forEach(fam => {
-    if (familiesByRoot[fam.primary_root]) {
-      familiesByRoot[fam.primary_root].push(fam);
-    }
+  (pilotMapping.pilot_families || []).forEach(fam => {
+    if (familiesByRoot[fam.primary_root]) familiesByRoot[fam.primary_root].push(fam);
   });
 
-  // Create a simple visual "roots" diagram
-  const rootVisual = document.createElement('div');
-  rootVisual.style.cssText = 'position: relative; width: 100%; height: 260px;';
+  // Real progress computation (defensive). Uses scores + completion + memory bank activity for tap_root lift.
+  let rootProgress = {};
+  let familyProgress = {};
+  try {
+    const bank = loadMemoryBank();
+    const completionMap = getTopicCompletionMap();
+    const stats = getProgressStats();
 
-  // Fake progress per root (for demo purposes - will be replaced with real data later)
-  const fakeProgress = {
-    tap_root: 85,
-    verb_phrase: 62,
-    noun_phrase: 48,
-    sentence_syntax: 35,
-    clause_linking: 55,
-    verb_complementation: 40,
-    prepositions_particles: 52
-  };
+    grammarTree.roots.forEach(r => { rootProgress[r.id] = 0.26; });
 
-  // Draw a simple central tap root + branching laterals
-  rootVisual.innerHTML = `
-    <div style="position:absolute; left:48%; top:10px; width:6px; height:220px; background: linear-gradient(#8d6e63, #5d4037); border-radius: 3px; box-shadow: 0 0 4px rgba(0,0,0,0.4);"></div>
-  `;
+    (pilotMapping.pilot_families || []).forEach(fam => {
+      const rootId = fam.primary_root;
+      if (!rootProgress[rootId]) return;
 
-  // Add lateral root branches + families from the mapping
-  const rootPositions = [
-    { id: 'verb_phrase', left: '12%', top: '35%', label: 'Verb Phrase' },
-    { id: 'noun_phrase', left: '68%', top: '32%', label: 'Noun Phrase' },
-    { id: 'clause_linking', left: '8%', top: '58%', label: 'Clause Linking' },
-    { id: 'prepositions_particles', left: '72%', top: '55%', label: 'Prepositions' },
-    { id: 'verb_complementation', left: '15%', top: '78%', label: 'Verb Comp.' },
-    { id: 'sentence_syntax', left: '65%', top: '75%', label: 'Sentence Syntax' },
-  ];
+      let strength = 0.26;
+      let counted = 0;
 
-  rootPositions.forEach(pos => {
-    const rootId = pos.id;
-    const families = familiesByRoot[rootId] || [];
-    const progress = fakeProgress[rootId] || 30;
+      (fam.current_topics || []).forEach(t => {
+        const topicId = t.id;
+        const lastBest = getLastBest(topicId);
+        if (lastBest.best && lastBest.best[1] > 0) {
+          strength += (lastBest.best[0] / lastBest.best[1]);
+          counted++;
+        } else if (completionMap[topicId]) {
+          strength += 0.52;
+          counted++;
+        }
+      });
 
-    const branch = document.createElement('div');
-    branch.style.cssText = `
-      position: absolute;
-      left: ${pos.left};
-      top: ${pos.top};
-      width: 110px;
-      background: rgba(93, 64, 55, 0.85);
-      border-radius: 4px;
-      padding: 6px 8px;
-      font-size: 0.72rem;
-      color: #e0d4c8;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-    `;
-
-    let content = `<div style="font-weight:600; margin-bottom:2px;">${pos.label}</div>`;
-
-    // Progress bar for the root
-    content += `
-      <div style="height: 5px; background: #3e2723; border-radius: 3px; margin-bottom: 4px; overflow:hidden;">
-        <div style="width: ${progress}%; height:100%; background: #a1887f;"></div>
-      </div>
-      <div style="font-size:0.65rem; opacity:0.85; margin-bottom:3px;">${progress}% covered</div>
-    `;
-
-    families.forEach(fam => {
-      // For now still using fake per-family progress. Later we can drive this from actual user data + the mapping.
-      const famProgress = Math.floor(Math.random() * 55) + 25;
-      content += `
-        <div style="margin: 2px 0; font-size:0.7rem; display:flex; align-items:center; gap:4px;">
-          <span style="flex:1;">${fam.name}</span>
-          <span style="font-size:0.6rem; background:#5d4037; padding:1px 4px; border-radius:3px;">${famProgress}%</span>
-        </div>
-      `;
+      if (counted > 0) strength = strength / (counted + 1);
+      const blended = Math.max(0.24, Math.min(0.91, strength));
+      rootProgress[rootId] = Math.max(rootProgress[rootId], blended);
+      familyProgress[fam.id] = blended;
     });
 
-    branch.innerHTML = content;
-    rootVisual.appendChild(branch);
+    // Stronger tap_root boost: memory bank activity + history volume + completion for pleasant real-data feel
+    const hasAnyHistory = (loadScores().history || []).length > 0;
+    const bankSize = Object.keys(bank || {}).length;
+    const bankLift = Math.min(0.19, bankSize * 0.012);
+    if (hasAnyHistory || bankSize > 0) {
+      let tapBase = 0.59;
+      if (bankSize >= 5 || stats.total >= 4) tapBase = 0.67;
+      rootProgress.tap_root = Math.max(rootProgress.tap_root || 0.32, tapBase + bankLift);
+    }
+    // Mild overall lift when user has solid bank activity (helps non-pilot roots feel alive too)
+    if (bankSize > 7) {
+      Object.keys(rootProgress).forEach(k => {
+        if (k !== 'tap_root') rootProgress[k] = Math.min(0.89, rootProgress[k] + 0.05);
+      });
+    }
+  } catch (e) {
+    console.warn('Tree progress calculation failed, using safe defaults:', e);
+    rootProgress = {
+      tap_root: 0.74,
+      verb_phrase: 0.66,
+      noun_phrase: 0.51,
+      sentence_syntax: 0.40,
+      clause_linking: 0.59,
+      verb_complementation: 0.47,
+      prepositions_particles: 0.55
+    };
+    familyProgress = {};
+  }
+
+  const width = 920;
+  const height = 620;
+  const centerX = width / 2;
+  const baseY = 38;
+  const maxRootLength = 410;
+
+  const svgNS = "http://www.w3.org/2000/svg";
+  let svg;
+  try {
+    svg = document.createElementNS(svgNS, "svg");
+    svg.setAttribute("width", "100%");
+    svg.setAttribute("height", "100%");
+    svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+    svg.style.display = "block";
+  } catch (e) {
+    console.warn('SVG creation failed', e);
+    visualContainer.innerHTML = '<div style="color:#888; padding:1rem;">Tree visual unavailable right now.</div>';
+    return;
+  }
+
+  const cyan = "#569cd6";
+  const cyanDark = "#3d7aa3";
+  const cyanLight = "#7fb8e8";
+
+  // Central tap root (strong vertical, thickness based on progress)
+  const tapProgress = rootProgress.tap_root || 0.8;
+  const tapThickness = 4 + tapProgress * 6; // 4px → 10px
+
+  const tapRoot = document.createElementNS(svgNS, "line");
+  tapRoot.setAttribute("x1", centerX);
+  tapRoot.setAttribute("y1", baseY);
+  tapRoot.setAttribute("x2", centerX);
+  tapRoot.setAttribute("y2", baseY + maxRootLength * tapProgress);
+  tapRoot.setAttribute("stroke", cyan);
+  tapRoot.setAttribute("stroke-width", tapThickness);
+  tapRoot.setAttribute("stroke-linecap", "round");
+  svg.appendChild(tapRoot);
+
+  // Define geometric lateral roots with controlled angles (larger canvas + scaled lengths for breathing room)
+  const lateralRoots = [
+    { rootId: "verb_phrase",         angle: -38, baseLength: 260, side: "left" },
+    { rootId: "noun_phrase",         angle:  38, baseLength: 242, side: "right" },
+    { rootId: "clause_linking",      angle: -22, baseLength: 295, side: "left" },
+    { rootId: "prepositions_particles", angle:  22, baseLength: 278, side: "right" },
+    { rootId: "verb_complementation", angle: -52, baseLength: 207, side: "left" },
+    { rootId: "sentence_syntax",     angle:  52, baseLength: 195, side: "right" },
+  ];
+
+  // Small helper for clear multi-line labels on long family names (prevents overlap, keeps pleasant spacing)
+  function appendMultilineLabel(labelEl, fullName) {
+    labelEl.textContent = '';
+    const maxLen = 17;
+    let line1 = fullName;
+    let line2 = '';
+    if (fullName.length > maxLen) {
+      const breakAt = fullName.lastIndexOf(' ', maxLen);
+      if (breakAt > 6) {
+        line1 = fullName.slice(0, breakAt);
+        line2 = fullName.slice(breakAt + 1);
+      } else if (fullName.includes(' & ')) {
+        const parts = fullName.split(' & ');
+        line1 = parts[0];
+        line2 = '& ' + parts[1];
+      }
+    }
+    const t1 = document.createElementNS(svgNS, 'tspan');
+    t1.textContent = line1;
+    labelEl.appendChild(t1);
+    if (line2) {
+      const t2 = document.createElementNS(svgNS, 'tspan');
+      t2.textContent = line2;
+      t2.setAttribute('x', labelEl.getAttribute('x') || '0');
+      t2.setAttribute('dy', '1.15em');
+      labelEl.appendChild(t2);
+    }
+  }
+
+  lateralRoots.forEach(def => {
+    const prog = rootProgress[def.rootId] || 0.5;
+    const length = def.baseLength * (0.6 + prog * 0.55); // growth in depth
+    const thickness = 2.5 + prog * 5.5;                   // growth in thickness
+
+    const rad = (def.angle * Math.PI) / 180;
+    const endX = centerX + Math.sin(rad) * length;
+    const endY = baseY + Math.cos(rad) * length * 0.92;
+
+    // Main lateral root
+    const main = document.createElementNS(svgNS, "line");
+    main.setAttribute("x1", centerX);
+    main.setAttribute("y1", baseY + 50);
+    main.setAttribute("x2", endX);
+    main.setAttribute("y2", endY);
+    main.setAttribute("stroke", cyan);
+    main.setAttribute("stroke-width", thickness);
+    main.setAttribute("stroke-linecap", "round");
+    main.setAttribute("opacity", 0.95);
+    svg.appendChild(main);
+
+    // Small geometric sub-branches (more appear with higher progress) — scaled for large canvas
+    const subCount = Math.floor(prog * 3);
+    for (let i = 0; i < subCount; i++) {
+      const t = 0.35 + i * 0.22;
+      const sx = centerX + (endX - centerX) * t;
+      const sy = (baseY + 50) + (endY - (baseY + 50)) * t;
+
+      const subAngle = def.angle + (def.side === "left" ? -28 : 28) * (i % 2 === 0 ? 1 : -1);
+      const subLen = 42 + prog * 27;
+      const srad = (subAngle * Math.PI) / 180;
+
+      const sub = document.createElementNS(svgNS, "line");
+      sub.setAttribute("x1", sx);
+      sub.setAttribute("y1", sy);
+      sub.setAttribute("x2", sx + Math.sin(srad) * subLen);
+      sub.setAttribute("y2", sy + Math.cos(srad) * subLen * 0.85);
+      sub.setAttribute("stroke", cyanLight);
+      sub.setAttribute("stroke-width", 1.5 + prog * 1.2);
+      sub.setAttribute("stroke-linecap", "round");
+      sub.setAttribute("opacity", 0.75);
+      svg.appendChild(sub);
+    }
+
+    // Place families along this root (interactive nodes + labels)
+    const families = familiesByRoot[def.rootId] || [];
+    families.forEach((fam, idx) => {
+      const t = 0.55 + idx * 0.18;
+      const fx = centerX + (endX - centerX) * t;
+      const fy = (baseY + 50) + (endY - (baseY + 50)) * t;
+
+      const group = document.createElementNS(svgNS, "g");
+      group.style.cursor = 'pointer';
+
+      // Node: visually distinct by real progress (larger + brighter stroke for high-progress families)
+      const fProg = familyProgress[fam.id] || prog || 0.48;
+      const nodeR = (6.8 + fProg * 4.2).toFixed(1);
+      const nStrokeW = (1.4 + fProg * 2.1).toFixed(1);
+      const node = document.createElementNS(svgNS, "circle");
+      node.setAttribute("cx", fx);
+      node.setAttribute("cy", fy);
+      node.setAttribute("r", nodeR);
+      let nodeFill = cyan;
+      let nodeStroke = "#0d0d0d";
+      if (fProg > 0.71) {
+        nodeFill = cyanLight;
+        nodeStroke = cyanDark;
+      } else if (fProg < 0.32) {
+        node.setAttribute("opacity", "0.82");
+      }
+      node.setAttribute("fill", nodeFill);
+      node.setAttribute("stroke", nodeStroke);
+      node.setAttribute("stroke-width", nStrokeW);
+      group.appendChild(node);
+
+      // Label: stronger side-specific offset + stagger to guarantee zero overlap; <tspan> for long names
+      const labelOffsetX = def.side === "left" ? -46 : 38;
+      const labelStagger = idx * 17;
+      const label = document.createElementNS(svgNS, "text");
+      label.setAttribute("x", fx + labelOffsetX);
+      label.setAttribute("y", fy + 3.5 + labelStagger);
+      label.setAttribute("fill", "#e0f0ff");
+      label.setAttribute("font-size", "14");
+      label.setAttribute("font-family", "system-ui, sans-serif");
+      label.setAttribute("text-anchor", def.side === "left" ? "end" : "start");
+      appendMultilineLabel(label, fam.name);
+      group.appendChild(label);
+
+      // Accessibility + discoverability
+      const title = document.createElementNS(svgNS, "title");
+      title.textContent = `Practise: ${fam.name} (click to go to Topics)`;
+      group.appendChild(title);
+
+      // Click / keyboard activation + perfect focus highlight for SVG groups
+      const activate = () => {
+        navigateToFamilyTopics(fam);
+      };
+      group.addEventListener('click', activate);
+      group.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); activate(); }
+      });
+      const origStroke = node.getAttribute('stroke');
+      const origStrokeW = node.getAttribute('stroke-width');
+      group.addEventListener('focus', () => {
+        node.setAttribute('stroke', cyanLight);
+        node.setAttribute('stroke-width', '3');
+      });
+      group.addEventListener('blur', () => {
+        node.setAttribute('stroke', origStroke);
+        node.setAttribute('stroke-width', origStrokeW);
+      });
+      group.setAttribute('tabindex', '0');
+      group.setAttribute('role', 'button');
+      group.setAttribute('aria-label', `Go to ${fam.name} topics`);
+
+      svg.appendChild(group);
+    });
   });
 
-  visualContainer.appendChild(rootVisual);
+  // Minimal legend (honest, low-clutter) + tiny discoverability hint
+  const legend = document.createElementNS(svgNS, "g");
+  legend.setAttribute("transform", `translate(20, ${height - 46})`);
+  const legLine = document.createElementNS(svgNS, "line");
+  legLine.setAttribute("x1", 0); legLine.setAttribute("y1", 0);
+  legLine.setAttribute("x2", 42); legLine.setAttribute("y2", 0);
+  legLine.setAttribute("stroke", cyan); legLine.setAttribute("stroke-width", 6); legLine.setAttribute("stroke-linecap", "round");
+  legend.appendChild(legLine);
+  const legText = document.createElementNS(svgNS, "text");
+  legText.setAttribute("x", 50); legText.setAttribute("y", 4);
+  legText.setAttribute("fill", "#a0b8d8"); legText.setAttribute("font-size", "9");
+  legText.textContent = "thicker = stronger (your real practice data)";
+  legend.appendChild(legText);
+  const hintText = document.createElementNS(svgNS, "text");
+  hintText.setAttribute("x", 50); hintText.setAttribute("y", 14);
+  hintText.setAttribute("fill", "#6a7c94"); hintText.setAttribute("font-size", "8");
+  hintText.textContent = "click nodes to explore families";
+  legend.appendChild(hintText);
+  svg.appendChild(legend);
 
-  if (debugEl) {
-    debugEl.textContent = `Driven by pilot_families_mapping.json + tree.json. Showing ${pilotFamilyData.length} pilot families.`;
+  // Tiny non-clutter top-right hint (reinforces without crowding roots/labels)
+  const topHint = document.createElementNS(svgNS, "text");
+  topHint.setAttribute("x", width - 168);
+  topHint.setAttribute("y", 16);
+  topHint.setAttribute("fill", "#5c6a80");
+  topHint.setAttribute("font-size", "8.5");
+  topHint.setAttribute("text-anchor", "end");
+  topHint.textContent = "click any family";
+  svg.appendChild(topHint);
+
+  visualContainer.appendChild(svg);
+}
+
+// Helper: from tree click, go to Topics and pre-select a relevant topic from the family
+function navigateToFamilyTopics(fam) {
+  if (!fam || !fam.current_topics || !fam.current_topics.length) {
+    NAV.navigate('menuTopicSelect', { context: fam?.name || 'Topics' });
+    return;
   }
+  const firstTopic = fam.current_topics[0];
+  const idx = (state.topics || []).findIndex(t => t.id === firstTopic.id);
+  if (idx >= 0) {
+    state.currentTopic = state.topics[idx];
+    applyTopic();
+  }
+  NAV.navigate('menuTopicSelect', { context: fam.name || 'Topics' });
+  // After the panel renders, focus the first action button for immediate keyboard use
+  setTimeout(() => {
+    const firstBtn = document.getElementById('startPart1Btn');
+    if (firstBtn) firstBtn.focus();
+  }, 60);
 }
 
 // Quick placeholders for the new buttons (we can flesh these out)
@@ -743,12 +1181,162 @@ document.getElementById('practiceWeakBtn')?.addEventListener('click', () => {
   // Reuse existing weak spot logic if available
   const weak = getWeakSpotQuestions?.();
   if (weak && weak.length > 0) {
-    // Could trigger weak spot quiz here later
-    alert('Weak spot practice coming soon in the new dashboard!');
+    // Launch weak spots quiz immediately (uses existing engine)
+    state.quizMode = 'weak';
+    state.currentQuestions = weak;
+    state.currentIndex = 0;
+    state.score = 0;
+    state.wrongIndices = [];
+    state.isRetryRound = false;
+    document.getElementById('menuScreen').classList.add('hidden');
+    document.body.classList.add('viewing-content');
+    document.getElementById('quizScreen').classList.remove('hidden');
+    document.getElementById('exitQuizBtn').textContent = 'Exit weak spots';
+    showQuestion();
   } else {
-    alert('No weak areas tracked yet. Do some practice first!');
+    alert('No weak areas tracked yet (need 3+ wrong on a question with <3 correct). Do some practice first!');
   }
 });
+
+// === Global persistent nav wiring (simple + functional) ===
+function updateNavContext(text) {
+  const el = document.getElementById('navContext');
+  if (el) el.textContent = text || '';
+}
+
+function goHome() {
+  showMainMenu();
+  updateNavContext('');
+}
+
+document.getElementById('navHomeBtn')?.addEventListener('click', () => {
+  NAV.navigate('menuMain');
+});
+document.getElementById('navTopicsBtn')?.addEventListener('click', () => {
+  state.returnToAfterTopicSelect = null;
+  NAV.navigate('menuTopicSelect', { context: 'Topics' });
+});
+document.getElementById('navTreeBtn')?.addEventListener('click', () => {
+  NAV.navigate('menuTreeOverview', { context: 'Grammar Tree' });
+});
+document.getElementById('navBackBtn')?.addEventListener('click', () => {
+  NAV.back();
+});
+
+// Wire the new reference Main Menu button (added for harmonious util-bar consistency)
+document.getElementById('referenceMainMenuBtn')?.addEventListener('click', () => {
+  NAV.navigate('menuMain');
+});
+
+// Lightweight context updater for content screens (quiz/intro util bars)
+function setContentContext(type, label) {
+  const ctx = document.getElementById(type === 'quiz' ? 'quizContext' : 'introContext');
+  if (ctx) ctx.innerHTML = label ? `<strong>${label}</strong>` : '';
+}
+
+// Very lightweight search (topics + pilot families)
+let searchResultsEl = null;
+function showNavSearchResults(matches) {
+  const container = document.getElementById('navSearchResults');
+  if (!container) return;
+  container.innerHTML = '';
+  if (!matches || !matches.length) {
+    container.classList.add('hidden');
+    return;
+  }
+  matches.forEach(m => {
+    const btn = document.createElement('button');
+    btn.textContent = m.label + (m.type === 'family' ? '  · family' : '');
+    btn.style.cssText = 'background:#141414; color:#ccc; border:none; width:100%; text-align:left; padding:6px 10px; font-size:0.82rem;';
+    btn.addEventListener('click', () => {
+      container.classList.add('hidden');
+      const input = document.getElementById('navSearchInput');
+      if (input) input.value = '';
+      if (m.type === 'topic' && m.id) {
+        const idx = (state.topics || []).findIndex(t => t.id === m.id);
+        if (idx >= 0) {
+          state.currentTopic = state.topics[idx];
+          applyTopic();
+          showMenuPanel('menuTopicSelect');
+          const sel = document.getElementById('topicSelect');
+          if (sel) sel.value = String(idx);
+          updateNavContext(m.label);
+        }
+      } else if (m.type === 'family' && m.id) {
+        showTreeOverview();
+        updateNavContext('Tree');
+      }
+    });
+    container.appendChild(btn);
+  });
+  container.classList.remove('hidden');
+}
+
+function handleNavSearch(q) {
+  const term = (q || '').trim().toLowerCase();
+  if (!term || term.length < 2) {
+    document.getElementById('navSearchResults')?.classList.add('hidden');
+    return;
+  }
+  const results = [];
+
+  // Topics from state
+  (state.topics || []).forEach(t => {
+    if ((t.title || t.id || '').toLowerCase().includes(term)) {
+      results.push({ type: 'topic', id: t.id, label: toTitleCase(t.title || t.id) });
+    }
+  });
+
+  // Pilot families (from loaded mapping)
+  if (pilotMapping && pilotMapping.pilot_families) {
+    pilotMapping.pilot_families.forEach(f => {
+      if ((f.name || f.id || '').toLowerCase().includes(term)) {
+        results.push({ type: 'family', id: f.id, label: f.name });
+      }
+    });
+  }
+
+  showNavSearchResults(results.slice(0, 8));
+}
+
+// Search is set up late (after data loads) so state.topics and pilotMapping are available
+function setupSearch() {
+  const input = document.getElementById('navSearchInput');
+  const clearBtn = document.getElementById('navSearchClear');
+
+  if (!input) {
+    console.warn('navSearchInput not found in DOM');
+    return;
+  }
+
+  // Attach listeners directly (simpler and more reliable)
+  input.addEventListener('input', (e) => {
+    handleNavSearch(e.target.value);
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.getElementById('navSearchResults')?.classList.add('hidden');
+      e.target.value = '';
+    }
+    if (e.key === 'Enter') {
+      const res = document.getElementById('navSearchResults');
+      if (res && !res.classList.contains('hidden') && res.firstChild) {
+        res.firstChild.click();
+      }
+    }
+  });
+
+  if (clearBtn) {
+    clearBtn.onclick = () => {
+      input.value = '';
+      document.getElementById('navSearchResults')?.classList.add('hidden');
+      input.focus();
+    };
+  }
+}
+
+// Nav context is updated explicitly from key flows (showMainMenu, topic select, tree, etc.)
 
 // Load the new Grammar Tree model (hybrid approach)
 let grammarTree = null;
@@ -757,9 +1345,8 @@ let pilotMapping = null;
 async function loadGrammarTree() {
   try {
     grammarTree = await fetchJSON('data/tree/tree.json');
-    console.log('[Tree] Loaded Grammar Tree model v' + (grammarTree?.meta?.version || '?'));
   } catch (e) {
-    console.warn('[Tree] Could not load data/tree/tree.json — falling back to basic mode', e);
+    console.warn('Could not load data/tree/tree.json — falling back to basic mode', e);
     grammarTree = null;
   }
 }
@@ -767,18 +1354,121 @@ async function loadGrammarTree() {
 async function loadPilotMapping() {
   try {
     pilotMapping = await fetchJSON('data/tree/pilot_families_mapping.json');
-    console.log('[Tree] Loaded pilot families mapping v' + (pilotMapping?.meta?.version || '?'));
   } catch (e) {
-    console.warn('[Tree] Could not load pilot_families_mapping.json', e);
+    console.warn('Could not load pilot_families_mapping.json', e);
     pilotMapping = null;
+  }
+}
+
+// Topic page filter — module scope so it's visible to init()
+function setupTopicFilter() {
+  const filterInput = document.getElementById('topicFilterInput');
+  const sel = document.getElementById('topicSelect');
+  const resultsContainer = document.getElementById('topicSearchResults');
+
+  if (!filterInput || !sel || !resultsContainer) return;
+
+  filterInput.value = '';
+
+  filterInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && hasValidTopicSelected()) {
+      e.preventDefault();
+      document.getElementById('startPart1Btn').click();
+    }
+  });
+
+  filterInput.addEventListener('input', () => {
+    const term = filterInput.value.trim().toLowerCase();
+
+    if (!term || term.length < 2) {
+      resultsContainer.classList.add('hidden');
+      resultsContainer.innerHTML = '';
+      Array.from(sel.options).forEach(o => o.hidden = false);
+      return;
+    }
+
+    const matches = [];
+
+    (state.topics || []).forEach(t => {
+      if ((t.title || t.id || '').toLowerCase().includes(term)) {
+        matches.push({ type: 'topic', id: t.id, label: toTitleCase(t.title || t.id) });
+      }
+    });
+
+    if (pilotMapping && pilotMapping.pilot_families) {
+      pilotMapping.pilot_families.forEach(f => {
+        if ((f.name || f.id || '').toLowerCase().includes(term)) {
+          matches.push({ type: 'family', id: f.id, label: f.name });
+        }
+      });
+    }
+
+    if (matches.length === 0) {
+      resultsContainer.classList.add('hidden');
+      resultsContainer.innerHTML = '';
+      return;
+    }
+
+    resultsContainer.innerHTML = '';
+
+    matches.slice(0, 10).forEach(m => {
+      const btn = document.createElement('button');
+      btn.textContent = m.label + (m.type === 'family' ? '  · family' : '');
+      btn.style.cssText = 'background:#141414; color:#ccc; border:none; width:100%; text-align:left; padding:6px 10px; font-size:0.85rem;';
+
+      btn.addEventListener('click', () => {
+        resultsContainer.classList.add('hidden');
+        resultsContainer.innerHTML = '';
+        filterInput.value = '';
+
+        if (m.type === 'topic' && m.id) {
+          const idx = (state.topics || []).findIndex(t => t.id === m.id);
+          if (idx >= 0) {
+            sel.value = String(idx);
+            sel.dispatchEvent(new Event('change', { bubbles: true }));
+          }
+        } else if (m.type === 'family') {
+          showTreeOverview();
+        }
+      });
+
+      resultsContainer.appendChild(btn);
+    });
+
+    resultsContainer.classList.remove('hidden');
+  });
+
+  const catSelect = document.getElementById('categorySelect');
+  if (catSelect) {
+    catSelect.addEventListener('change', () => {
+      filterInput.value = '';
+      resultsContainer.classList.add('hidden');
+      resultsContainer.innerHTML = '';
+      Array.from(sel.options).forEach(o => o.hidden = false);
+    });
   }
 }
 
 (async function init() {
   try {
+    // App initialized (v42 fixes live)
+
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./sw.js').catch(function() {});
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => {
+          // Check for updates on load (helps keep things fresh on localhost)
+          reg.update().catch(() => {});
+        })
+        .catch(function() {});
     }
+
+    // Subtle force update link for when SW cache gets stuck
+    document.getElementById('forceUpdateLink')?.addEventListener('click', async (e) => {
+      e.preventDefault();
+      const regs = await navigator.serviceWorker.getRegistrations();
+      for (const r of regs) await r.unregister();
+      location.reload(true);
+    });
 
     // Load Tree data early (for hybrid visible Tree features)
     await loadGrammarTree();
@@ -809,7 +1499,15 @@ async function loadPilotMapping() {
     }
     await loadQuestions();
     renderMenu();
+    setupSearch();
+    setupTopicFilter();
     applyHashAndShowTopic();
+
+    // On initial load without a direct topic hash, ensure we're on the home screen
+    // with the Back button properly hidden (fixes regression on refresh)
+    if (!window.location.hash || !window.location.hash.startsWith('#topic/')) {
+      showMainMenu();
+    }
   } catch (err) {
     state.topics = filterTopicsForMenu([
       { id: 'degree_adverbs', title: 'Adverbs: Degree and Intensifiers (very, really, too, so)', curriculum: 'curriculum_degree_adverbs.json', questions_key: 'degree_adverbs', root: 'outside_roots', secondary_root: null, cefr_levels: ['A2'] },
@@ -863,7 +1561,14 @@ async function loadPilotMapping() {
       document.getElementById('scoresSummary').textContent += ' Questions failed to load: ' + (e && e.message || 'unknown error');
     });
     renderMenu();
+    setupSearch();
+    setupTopicFilter();
     applyHashAndShowTopic();
+
+    // Ensure Back button is hidden on initial home screen in fallback mode too
+    if (!window.location.hash || !window.location.hash.startsWith('#topic/')) {
+      showMainMenu();
+    }
   }
 })();
 
