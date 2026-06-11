@@ -28,11 +28,89 @@ export function loadMemoryBank() {
   } catch (e) { return {}; }
 }
 
+// === Spaced repetition (Leitner boxes) ===
+//
+// Every answered question is scheduled for review. Two tracks:
+// - a wrong answer drops the item to box 0 (due tomorrow, then 1→3→7… days);
+// - a right answer climbs a box, so known items resurface at ever longer
+//   intervals. The top box recycles forever (nothing graduates out) — correct
+//   answers keep coming back, just rarely.
+// Entries written before scheduling existed are migrated lazily on first
+// touch: ever-wrong items become due immediately; never-wrong items join the
+// long track with their due dates staggered deterministically over the next
+// three weeks, so day one isn't a flood.
+export const REVIEW_INTERVAL_DAYS = [1, 1, 3, 7, 21, 60];
+export const REVIEW_DAILY_CAP = 20;
+const NEW_RIGHT_BOX = 3;          // first-ever answer correct → 7-day track
+const MIGRATED_RIGHT_BOX = 4;     // legacy never-wrong entries → 21-day track
+const DAY_MS = 24 * 60 * 60 * 1000;
+
+function hashStaggerDays(key, maxDays) {
+  let h = 0;
+  for (let i = 0; i < key.length; i++) h = ((h << 5) - h) + key.charCodeAt(i) | 0;
+  return (Math.abs(h) % maxDays) + 1;
+}
+
+// Adds box/due to a pre-scheduling entry in place. Returns true if it changed.
+function ensureReviewSchedule(entry, key) {
+  if (entry.box != null && entry.due) return false;
+  if ((entry.wrong || 0) > 0) {
+    entry.box = 0;
+    entry.due = new Date().toISOString();
+  } else {
+    entry.box = MIGRATED_RIGHT_BOX;
+    entry.due = new Date(Date.now() + hashStaggerDays(key, 21) * DAY_MS).toISOString();
+  }
+  return true;
+}
+
 export function saveMemoryBankEntry(key, correct) {
   const bank = loadMemoryBank();
-  if (!bank[key]) bank[key] = { wrong: 0, right: 0, lastWrong: null };
-  if (correct) bank[key].right++; else { bank[key].wrong++; bank[key].lastWrong = new Date().toISOString(); }
+  const isNew = !bank[key];
+  if (isNew) bank[key] = { wrong: 0, right: 0, lastWrong: null };
+  const entry = bank[key];
+  if (correct) entry.right++; else { entry.wrong++; entry.lastWrong = new Date().toISOString(); }
+  if (isNew) {
+    entry.box = correct ? NEW_RIGHT_BOX : 0;
+  } else {
+    ensureReviewSchedule(entry, key);
+    entry.box = correct ? Math.min(entry.box + 1, REVIEW_INTERVAL_DAYS.length - 1) : 0;
+  }
+  entry.last = new Date().toISOString();
+  entry.due = new Date(Date.now() + REVIEW_INTERVAL_DAYS[entry.box] * DAY_MS).toISOString();
   localStorage.setItem(MEMORY_KEY, JSON.stringify(bank));
+}
+
+// Questions due for review today, most overdue first (ties: most wrongs
+// first), capped at `limit`. Scans every topic's questions so review crosses
+// topic boundaries; requires state.allQuestionsData (loaded at startup).
+export function getDueReviews(limit = REVIEW_DAILY_CAP) {
+  const bank = loadMemoryBank();
+  const now = Date.now();
+  const due = [];
+  const seen = new Set();
+  let migrated = false;
+  Object.values(state.allQuestionsData || {}).forEach(topicSets => {
+    Object.values(topicSets || {}).forEach(s => {
+      (s.questions || []).forEach(q => {
+        const key = questionHash(q);
+        if (seen.has(key)) return;
+        const entry = bank[key];
+        if (!entry) return;
+        seen.add(key);
+        if (ensureReviewSchedule(entry, key)) migrated = true;
+        if (new Date(entry.due).getTime() <= now) due.push({ q, entry });
+      });
+    });
+  });
+  // Persist lazy migrations, otherwise staggered due dates would be
+  // recomputed relative to "now" forever and never come due.
+  if (migrated) localStorage.setItem(MEMORY_KEY, JSON.stringify(bank));
+  due.sort((a, b) => {
+    const d = new Date(a.entry.due) - new Date(b.entry.due);
+    return d !== 0 ? d : (b.entry.wrong || 0) - (a.entry.wrong || 0);
+  });
+  return due.slice(0, limit).map(x => x.q);
 }
 
 export function saveScore(setId, setTitle, score, total) {

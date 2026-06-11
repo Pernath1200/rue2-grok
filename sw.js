@@ -1,7 +1,7 @@
 /**
  * Bump CACHE_VERSION whenever this file changes so stale caches are dropped on activate.
  */
-var CACHE_VERSION = 'v59';  // v59 - tree correction pass: root collar junction + dark/cyan reskin
+var CACHE_VERSION = 'v60';  // v60 - spaced repetition: Leitner review scheduling + Today's review button
 var CACHE_NAME = 'rue2-' + CACHE_VERSION;
 
 var PRECACHE_URLS = [

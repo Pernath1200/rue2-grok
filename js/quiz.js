@@ -1,6 +1,6 @@
 import state from './state.js';
 import { showScreen, showMenuPanel, fetchJSON, escapeAndBold, normalize, toTitleCase, shuffleArray } from './ui.js';
-import { STORAGE_KEY, MEMORY_KEY, REPORTED_QUESTIONS_KEY, loadScores, saveScore, saveMemoryBankEntry, getLastBest, questionHash, getReportedQuestions } from './storage.js';
+import { STORAGE_KEY, MEMORY_KEY, REPORTED_QUESTIONS_KEY, loadScores, saveScore, saveMemoryBankEntry, getLastBest, questionHash, getReportedQuestions, getDueReviews } from './storage.js';
 import { renderScoreChart } from './ui.js';
 
 let _renderMenu = null;
@@ -71,6 +71,37 @@ export function startWeakSpotsQuiz() {
   state.currentSetId = 'weakspots';
   state.currentSetTitle = 'Revise weak spots (' + shuffled.length + ' questions)';
   state.summary = 'Questions you got wrong – get each right 3 times and it will drop off.';
+  state.currentIndex = 0;
+  state.score = 0;
+  state.wrongIndices = [];
+  state.isRetryRound = false;
+
+  document.getElementById('menuScreen').classList.add('hidden');
+  document.body.classList.add('viewing-content');
+  document.getElementById('quizScreen').classList.remove('hidden');
+  document.getElementById('feedbackBlock').classList.add('hidden');
+  document.getElementById('exitQuizBtn').textContent = 'Back';
+  showQuestion();
+}
+
+export function startReviewQuiz() {
+  state.coursePhase = null;
+  state.quizMode = 'normal';
+  state.wrongTopics = new Set();
+  const questions = getDueReviews();
+  if (questions.length === 0) {
+    alert('Nothing is due for review today. Come back tomorrow!');
+    return;
+  }
+  const shuffled = questions.slice();
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  state.currentQuestions = shuffled;
+  state.currentSetId = 'review';
+  state.currentSetTitle = "Today's review (" + shuffled.length + ' questions)';
+  state.summary = 'Spaced repetition: questions you get right come back later, ones you get wrong come back sooner.';
   state.currentIndex = 0;
   state.score = 0;
   state.wrongIndices = [];

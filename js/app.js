@@ -1,8 +1,8 @@
 import state from './state.js';
-import { STORAGE_KEY, MEMORY_KEY, REPORTED_QUESTIONS_KEY, migrateStorageKeys, loadScores, loadMemoryBank, saveMemoryBankEntry, saveScore, getLastBest, getProgressStats, getTopicCompletionMap, getReportedQuestions, questionHash } from './storage.js';
+import { STORAGE_KEY, MEMORY_KEY, REPORTED_QUESTIONS_KEY, migrateStorageKeys, loadScores, loadMemoryBank, saveMemoryBankEntry, saveScore, getLastBest, getProgressStats, getTopicCompletionMap, getReportedQuestions, questionHash, getDueReviews } from './storage.js';
 import { DATA_VERSION, SCREEN_IDS, MENU_PANEL_IDS, showScreen, showMenuPanel, openOverlay, closeOverlay, escapeAndBold, normalize, toTitleCase, shuffleArray, getBaseUrl, fetchJSON, renderScoreChart } from './ui.js';
 import { registerCallbacks as registerCurrCallbacks, renderDiagram, showIntroSection, showWritingTipsIntroSection, startWritingTipsQuiz, startCourseSection, advanceCourseToNext, startPart1, startPart2, startDiagnostic, startMixedPractice, getCourseIntroSections } from './curriculum.js';
-import { registerCallbacks as registerQuizCallbacks, startQuiz, startWeakSpotsQuiz, hasValidTopicSelected, syncCurrentTopicFromDropdown, getTopicTitle, getTopicLabelForDisplay, addReportedQuestion, addReportedIntroCard, getReportedReasonLabel, renderReportedQuestionsList, escapeHtml, cleanQuestionDisplay, showQuestion, submitAnswer, nextQuestion, finishQuiz, retryWrong } from './quiz.js';
+import { registerCallbacks as registerQuizCallbacks, startQuiz, startWeakSpotsQuiz, startReviewQuiz, hasValidTopicSelected, syncCurrentTopicFromDropdown, getTopicTitle, getTopicLabelForDisplay, addReportedQuestion, addReportedIntroCard, getReportedReasonLabel, renderReportedQuestionsList, escapeHtml, cleanQuestionDisplay, showQuestion, submitAnswer, nextQuestion, finishQuiz, retryWrong } from './quiz.js';
 import { registerCallbacks as registerRefCallbacks, renderPrepositionsListContent, prepositionsListAsText, showPrepositionsList, hidePrepositionsList, renderPhrasalVerbsDictionaryContent, phrasalVerbsDictionaryAsText, showPhrasalVerbsDictionary, hidePhrasalVerbsDictionary, renderReferenceIndex, showReferenceIndexFromIntro, renderReferencePrepositionsContent, showReferencePrepositions, renderReferenceOpenClozeContent, showReferenceOpenCloze, showOpenClozeRefFromIntro, showFixedPhrasesRefFromIntro, showReportedSpeechRefFromIntro, showInfinitiveIngRefFromIntro, showConjunctionsLinkersRefFromIntro, renderReferenceWordFormationContent, showReferenceWordFormation, renderReferenceConjunctionsLinkersContent, showReferenceConjunctionsLinkers, renderReferenceReportedSpeechContent, showReferenceReportedSpeech, renderReferenceIrregularVerbsContent, showReferenceIrregularVerbs, renderReferenceFixedPhrasesContent, showReferenceFixedPhrases, renderReferenceDependentSection, showReferenceDependentSection, dependentPrepositionsSectionAsText, renderReferenceCountableUncountableContent, showReferenceCountableUncountable, countableUncountableAsText, renderReferencePhrasalVerbsContent, showReferencePhrasalVerbs, renderReferenceInfinitiveIngContent, referenceAsText, showReference, showReferenceInfinitiveIng, renderReferenceModalVerbsContent, showReferenceModalVerbs, hideReference, onReferenceBackClick } from './reference.js';
 
 migrateStorageKeys();
@@ -46,6 +46,10 @@ const NAV = {
       if (id === 'menuTreeOverview' && typeof renderSimpleTreeOverview === 'function') {
         renderSimpleTreeOverview();
       }
+      // The home panel's review count can change after any quiz
+      if (id === 'menuMain' && typeof refreshReviewButton === 'function') {
+        refreshReviewButton();
+      }
     }
 
     if (typeof updateNavContext === 'function') {
@@ -83,6 +87,7 @@ const NAV = {
     if (previous.id === 'menuMain') {
       const backBtn = document.getElementById('navBackBtn');
       if (backBtn) backBtn.style.display = 'none';
+      if (typeof refreshReviewButton === 'function') refreshReviewButton();
     }
 
     const backBtn = document.getElementById('navBackBtn');
@@ -404,11 +409,23 @@ function navigateFromIntroToTopic(topicId) {
   }
 }
 
+// "Today's review: N items" — shown only when the spaced-repetition scheduler
+// has something due (storage.js getDueReviews; counts are capped per day).
+function refreshReviewButton() {
+  const btn = document.getElementById('reviewDueBtn');
+  if (!btn) return;
+  let n = 0;
+  try { n = getDueReviews().length; } catch (e) { n = 0; }
+  btn.classList.toggle('hidden', n === 0);
+  if (n > 0) btn.textContent = "Today's review: " + n + (n === 1 ? ' item' : ' items');
+}
+
 function showMainMenu() {
   showScreen('menuScreen');
   document.body.classList.remove('viewing-reference', 'viewing-content');
   showMenuPanel('menuMain');
   updateNavContext('');
+  refreshReviewButton();
 
   // No point showing Back on the very first screen
   const backBtn = document.getElementById('navBackBtn');
@@ -1317,6 +1334,10 @@ function renderSimpleTreeOverview() {
 document.getElementById('continueLastBtn')?.addEventListener('click', () => {
   // For now, just open the topic list as a reasonable default
   showMenuPanel('menuTopicSelect');
+});
+
+document.getElementById('reviewDueBtn')?.addEventListener('click', () => {
+  startReviewQuiz();
 });
 
 document.getElementById('practiceWeakBtn')?.addEventListener('click', () => {
