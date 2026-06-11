@@ -4,47 +4,91 @@
     "sections": [
       {
         "title": "What this section covers",
-        "content": "This topic covers **punctuation** (especially commas) and **capitalisation** in English, focusing on common mistakes."
+        "content": "This topic covers **punctuation** (especially commas) and **capitalisation** in English, focusing on common mistakes.",
+        "root_ids": [
+          "B1.punctuation.commas"
+        ],
+        "cefr_level": "B1"
       },
       {
         "title": "Commas: when to use them (1)",
-        "content": "**In lists:** *apples, oranges, and bananas* (last comma optional in British English).\n**After introductory words or phrases:** *However, we agreed. After the meeting, he left.*"
+        "content": "**In lists:** *apples, oranges, and bananas* (last comma optional in British English).\n**After introductory words or phrases:** *However, we agreed. After the meeting, he left.*",
+        "root_ids": [
+          "B1.punctuation.commas"
+        ],
+        "cefr_level": "B1"
       },
       {
         "title": "Commas: when to use them (2)",
-        "content": "**Before** *but*, *and*, *or*, *so*, *yet* when joining two full sentences: *I called, but she was busy.*\n**Around extra (non-defining) information:** *My brother, who lives in London, is a doctor.*"
+        "content": "**Before** *but*, *and*, *or*, *so*, *yet* when joining two full sentences: *I called, but she was busy.*\n**Around extra (non-defining) information:** *My brother, who lives in London, is a doctor.*",
+        "root_ids": [
+          "B1.punctuation.commas"
+        ],
+        "cefr_level": "B1"
       },
       {
         "title": "Commas: when to use them (3)",
-        "content": "Do **not** use a comma when information is essential (defining): *The man who called yesterday left a message.*"
+        "content": "Do **not** use a comma when information is essential (defining): *The man who called yesterday left a message.*",
+        "root_ids": [
+          "B1.punctuation.commas"
+        ],
+        "cefr_level": "B1"
       },
       {
         "title": "Commas: common mistakes",
-        "content": "**Before *that*:** usually **no** comma in English. *I think that he is right* (no comma before *that*).\n**Before *and*/*but*:** comma only when joining two **full sentences**. *She smiled, and I waved.* But no comma for: *She smiled and waved.*"
+        "content": "**Before *that*:** usually **no** comma in English. *I think that he is right* (no comma before *that*).\n**Before *and*/*but*:** comma only when joining two **full sentences**. *She smiled, and I waved.* But no comma for: *She smiled and waved.*",
+        "root_ids": [
+          "B1.punctuation.commas"
+        ],
+        "cefr_level": "B1"
       },
       {
         "title": "Capitalisation: the rules (1)",
-        "content": "In English, capitalise:\n\n**I** (always): *He and I went.*\n**First word** of a sentence.\n**Proper nouns:** *London, Jan, the European Union.*\n**Days and months:** *Monday, March.*"
+        "content": "In English, capitalise:\n\n**I** (always): *He and I went.*\n**First word** of a sentence.\n**Proper nouns:** *London, Jan, the European Union.*\n**Days and months:** *Monday, March.*",
+        "root_ids": [
+          "A2.punctuation.capitalisation"
+        ],
+        "cefr_level": "A2"
       },
       {
         "title": "Capitalisation: the rules (2)",
-        "content": "**Nationalities and languages:** *English, French, German.*\n**Titles of books/films** (main words): *The Lord of the Rings.*\nDo **not** capitalise general nouns unless part of a name: *university* vs *Oxford University*."
+        "content": "**Nationalities and languages:** *English, French, German.*\n**Titles of books/films** (main words): *The Lord of the Rings.*\nDo **not** capitalise general nouns unless part of a name: *university* vs *Oxford University*.",
+        "root_ids": [
+          "A2.punctuation.capitalisation"
+        ],
+        "cefr_level": "A2"
       },
       {
         "title": "Capitalisation: common mistakes",
-        "content": "**Days and months** — always capitalise in English: *Monday, January.*\n**I** — always a capital letter.\n**Nationalities and languages** — always capitalise: *English, German, French.*"
+        "content": "**Days and months** — always capitalise in English: *Monday, January.*\n**I** — always a capital letter.\n**Nationalities and languages** — always capitalise: *English, German, French.*",
+        "root_ids": [
+          "A2.punctuation.capitalisation"
+        ],
+        "cefr_level": "A2"
       },
       {
         "title": "Colons",
-        "content": "**Colon (:)** — used to introduce a list, explanation, or example. *We need three things: time, money, and help. There was one problem: the door was locked.* Also used for time: *12:30.*"
+        "content": "**Colon (:)** — used to introduce a list, explanation, or example. *We need three things: time, money, and help. There was one problem: the door was locked.* Also used for time: *12:30.*",
+        "root_ids": [
+          "B2.punctuation.advanced"
+        ],
+        "cefr_level": "B2"
       },
       {
         "title": "Semicolons (1)",
-        "content": "**Semicolon (;)** — joins two closely related full sentences (instead of comma + *and*): *It was late; we went home.*"
+        "content": "**Semicolon (;)** — joins two closely related full sentences (instead of comma + *and*): *It was late; we went home.*",
+        "root_ids": [
+          "B2.punctuation.advanced"
+        ],
+        "cefr_level": "B2"
       },
       {
         "title": "Semicolons (2)",
-        "content": "Also separates list items that already contain commas: *We visited Paris, France; Rome, Italy; and Berlin, Germany.*\nDo **not** use a semicolon before a dependent clause (before *because* or *although*) — use a comma instead."
+        "content": "Also separates list items that already contain commas: *We visited Paris, France; Rome, Italy; and Berlin, Germany.*\nDo **not** use a semicolon before a dependent clause (before *because* or *although*) — use a comma instead.",
+        "root_ids": [
+          "B2.punctuation.advanced"
+        ],
+        "cefr_level": "B2"
       },
       {
         "title": "Summary table",
@@ -94,11 +138,19 @@
               "It was late; we left."
             ]
           ]
-        }
+        },
+        "root_ids": [
+          "B1.punctuation.commas"
+        ],
+        "cefr_level": "B1"
       },
       {
         "title": "Reference",
-        "content": "For more on comma use with relative clauses, see the Relative Pronouns topic under Choose Grammar Topic."
+        "content": "For more on comma use with relative clauses, see the Relative Pronouns topic under Choose Grammar Topic.",
+        "root_ids": [
+          "B1.punctuation.commas"
+        ],
+        "cefr_level": "B1"
       }
     ]
   },
@@ -189,7 +241,11 @@
         "correct_option": "b",
         "explanation": "Use a semicolon to join two closely related full sentences. A comma alone would be a run-on."
       }
-    ]
+    ],
+    "root_ids": [
+      "B1.punctuation.commas"
+    ],
+    "cefr_level": "B1"
   },
   "practice_order": [
     "commas_capitals",
@@ -318,7 +374,11 @@
           ],
           "explanation": "Use a colon to introduce an explanation (one problem: the door was locked)."
         }
-      ]
+      ],
+      "root_ids": [
+        "B1.punctuation.commas"
+      ],
+      "cefr_level": "B1"
     },
     "mc": {
       "title": "Practice: Punctuation and capitalisation (multiple choice)",
@@ -335,7 +395,11 @@
           "correct_option": "b",
           "explanation": "Use semicolons to separate list items when each item already contains a comma."
         }
-      ]
+      ],
+      "root_ids": [
+        "B1.punctuation.commas"
+      ],
+      "cefr_level": "B1"
     }
   }
 }

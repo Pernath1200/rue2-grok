@@ -4,11 +4,19 @@
     "sections": [
       {
         "title": "What are tenses? (1)",
-        "content": "In English, **tense** tells us **when** something happens. We combine **three times** (past, present, future) with **four aspects** (simple, continuous, perfect, perfect continuous) to get **12** tense forms."
+        "content": "In English, **tense** tells us **when** something happens. We combine **three times** (past, present, future) with **four aspects** (simple, continuous, perfect, perfect continuous) to get **12** tense forms.",
+        "root_ids": [
+          "A1.tenses.system"
+        ],
+        "cefr_level": "A1"
       },
       {
         "title": "What are tenses? (2)",
-        "content": "English uses **auxiliary verbs** (*do*, *have*, *be*, *will*) to build these forms — it doesn't change verb endings for each person (except 3rd person present: *he works*)."
+        "content": "English uses **auxiliary verbs** (*do*, *have*, *be*, *will*) to build these forms — it doesn't change verb endings for each person (except 3rd person present: *he works*).",
+        "root_ids": [
+          "A1.tenses.system"
+        ],
+        "cefr_level": "A1"
       },
       {
         "title": "The 12 English tenses",
@@ -46,63 +54,123 @@
               "I will have been working"
             ]
           ]
-        }
+        },
+        "root_ids": [
+          "A1.tenses.system"
+        ],
+        "cefr_level": "A1"
       },
       {
         "title": "Simple aspect (1)",
-        "content": "**Simple aspect** — Fact, habit, or single completed event — no focus on duration or completion. **Present simple:** *I work every day. She likes coffee.* **Past simple:** *I worked yesterday. She left at 5.*"
+        "content": "**Simple aspect** — Fact, habit, or single completed event — no focus on duration or completion. **Present simple:** *I work every day. She likes coffee.* **Past simple:** *I worked yesterday. She left at 5.*",
+        "root_ids": [
+          "A2.tenses.simple_continuous"
+        ],
+        "cefr_level": "A2"
       },
       {
         "title": "Simple aspect (2)",
-        "content": "**Future simple:** *I will help you. She is going to study medicine.* **Structure:** base verb (present), *-ed* or irregular (past), *will* + base (future)."
+        "content": "**Future simple:** *I will help you. She is going to study medicine.* **Structure:** base verb (present), *-ed* or irregular (past), *will* + base (future).",
+        "root_ids": [
+          "A2.tenses.simple_continuous"
+        ],
+        "cefr_level": "A2"
       },
       {
         "title": "Continuous aspect (1)",
-        "content": "**Continuous aspect** — Action in progress at a given time. **Structure:** *be* + *-ing*. **Present continuous:** *I am working right now.* **Past continuous:** *I was working when she called.*"
+        "content": "**Continuous aspect** — Action in progress at a given time. **Structure:** *be* + *-ing*. **Present continuous:** *I am working right now.* **Past continuous:** *I was working when she called.*",
+        "root_ids": [
+          "A2.tenses.simple_continuous"
+        ],
+        "cefr_level": "A2"
       },
       {
         "title": "Continuous aspect (2)",
-        "content": "**Future continuous:** *I will be working at 5 tomorrow.* Also used for temporary situations and background actions."
+        "content": "**Future continuous:** *I will be working at 5 tomorrow.* Also used for temporary situations and background actions.",
+        "root_ids": [
+          "A2.tenses.simple_continuous"
+        ],
+        "cefr_level": "A2"
       },
       {
         "title": "Perfect aspect (1)",
-        "content": "**Perfect aspect** — Completed action with result or relevance at a later time. **Structure:** *have/has/had* + past participle. **Present perfect:** *I have finished. She has been to Japan.* **Past perfect:** *I had finished when she arrived.*"
+        "content": "**Perfect aspect** — Completed action with result or relevance at a later time. **Structure:** *have/has/had* + past participle. **Present perfect:** *I have finished. She has been to Japan.* **Past perfect:** *I had finished when she arrived.*",
+        "root_ids": [
+          "B1.tenses.perfect"
+        ],
+        "cefr_level": "B1"
       },
       {
         "title": "Perfect aspect (2)",
-        "content": "**Future perfect:** *I will have finished by 5.* Often used with *for*, *since*, *by*, *already*, *yet*, *ever*, *never*."
+        "content": "**Future perfect:** *I will have finished by 5.* Often used with *for*, *since*, *by*, *already*, *yet*, *ever*, *never*.",
+        "root_ids": [
+          "B1.tenses.perfect"
+        ],
+        "cefr_level": "B1"
       },
       {
         "title": "Perfect continuous aspect (1)",
-        "content": "**Perfect continuous aspect** — Action lasting over a period, often with visible result. **Structure:** *have/has/had been* + *-ing*."
+        "content": "**Perfect continuous aspect** — Action lasting over a period, often with visible result. **Structure:** *have/has/had been* + *-ing*.",
+        "root_ids": [
+          "B1.tenses.perfect"
+        ],
+        "cefr_level": "B1"
       },
       {
         "title": "Perfect continuous aspect (2)",
-        "content": "**Present perfect continuous:** *I have been waiting for an hour.* **Past perfect continuous:** *I had been waiting for an hour when she came.*"
+        "content": "**Present perfect continuous:** *I have been waiting for an hour.* **Past perfect continuous:** *I had been waiting for an hour when she came.*",
+        "root_ids": [
+          "B1.tenses.perfect"
+        ],
+        "cefr_level": "B1"
       },
       {
         "title": "Perfect continuous aspect (3)",
-        "content": "**Future perfect continuous:** *By next month I will have been working here for ten years.* Focus on **duration**."
+        "content": "**Future perfect continuous:** *By next month I will have been working here for ten years.* Focus on **duration**.",
+        "root_ids": [
+          "B1.tenses.perfect"
+        ],
+        "cefr_level": "B1"
       },
       {
         "title": "How to choose the right tense (1)",
-        "content": "Ask two questions: **When?** (past, present, future) → this gives you the time. **How do I view the action?** → this gives you the aspect."
+        "content": "Ask two questions: **When?** (past, present, future) → this gives you the time. **How do I view the action?** → this gives you the aspect.",
+        "root_ids": [
+          "A1.tenses.system"
+        ],
+        "cefr_level": "A1"
       },
       {
         "title": "How to choose the right tense (2)",
-        "content": "Fact or habit = **simple**. In progress right now = **continuous**. Completed with a result = **perfect**. Lasting over a period with a result = **perfect continuous**."
+        "content": "Fact or habit = **simple**. In progress right now = **continuous**. Completed with a result = **perfect**. Lasting over a period with a result = **perfect continuous**.",
+        "root_ids": [
+          "A1.tenses.system"
+        ],
+        "cefr_level": "A1"
       },
       {
         "title": "Typical errors (1)",
-        "content": "**Wrong:** *I am work every day.* **Right:** **I work** every day (simple) or **I am working** now (continuous). **Wrong:** *She have finished.* **Right:** **She has** finished. **Wrong:** *I did went* yesterday. **Right:** **I went** yesterday."
+        "content": "**Wrong:** *I am work every day.* **Right:** **I work** every day (simple) or **I am working** now (continuous). **Wrong:** *She have finished.* **Right:** **She has** finished. **Wrong:** *I did went* yesterday. **Right:** **I went** yesterday.",
+        "root_ids": [
+          "A1.tenses.system"
+        ],
+        "cefr_level": "A1"
       },
       {
         "title": "Typical errors (2)",
-        "content": "**Wrong:** *I am waiting* for an hour. **Right:** **I have been waiting** for an hour (duration → perfect continuous)."
+        "content": "**Wrong:** *I am waiting* for an hour. **Right:** **I have been waiting** for an hour (duration → perfect continuous).",
+        "root_ids": [
+          "A1.tenses.system"
+        ],
+        "cefr_level": "A1"
       },
       {
         "title": "Reference",
-        "content": "For detailed rules on each tense, see the individual topics under Choose Grammar Topic (Past Simple, Present Perfect, Past Perfect, etc.)."
+        "content": "For detailed rules on each tense, see the individual topics under Choose Grammar Topic (Past Simple, Present Perfect, Past Perfect, etc.).",
+        "root_ids": [
+          "A1.tenses.system"
+        ],
+        "cefr_level": "A1"
       }
     ]
   },
@@ -205,7 +273,11 @@
         "correct_option": "b",
         "explanation": "**English** uses auxiliaries and often two or more words (e.g. I have been waiting). Time and aspect are shown by the verb structure, not by a single conjugated form."
       }
-    ]
+    ],
+    "root_ids": [
+      "A1.tenses.system"
+    ],
+    "cefr_level": "A1"
   },
   "practice_order": [
     "mc"
@@ -213,7 +285,11 @@
   "practice": {
     "mc": {
       "title": "Practice: Tenses general (multiple choice)",
-      "questions": []
+      "questions": [],
+      "root_ids": [
+        "A1.tenses.system"
+      ],
+      "cefr_level": "A1"
     }
   }
 }

@@ -4,9 +4,13 @@
     "convention": "<CEFR>.<family>.<concept>  — CEFR in {A1,A2,B1,B2}; family = the middle grouping key below; concept = lowercase_snake.",
     "how_to_add": "To introduce a new root_id, add it under its family here FIRST (create the family key if needed), then tag curriculum sections/questions with it. Validation fails if a curriculum uses an id absent here.",
     "version": "1.0.0",
-    "total": 64
+    "total": 81
   },
   "families": {
+    "agreement": [
+      "A2.agreement.basic",
+      "B1.agreement.tricky"
+    ],
     "articles": [
       "A1.articles.basic",
       "B1.articles.extended",
@@ -29,12 +33,23 @@
       "B2.conditionals.third",
       "B2.conditionals.variants"
     ],
+    "countability": [
+      "A2.countability.basic",
+      "A2.countability.plural_only"
+    ],
+    "fixed_phrases": [
+      "B1.fixed_phrases.basic"
+    ],
     "future": [
       "A2.future.going_to",
       "A2.future.system",
       "A2.future.will",
       "B1.future.present_continuous_arrangements",
       "B1.future.present_simple_timetable"
+    ],
+    "irregular_verbs": [
+      "A1.irregular_verbs.basic",
+      "A2.irregular_verbs.extended"
     ],
     "linkers": [
       "B1.linkers.cause_result",
@@ -61,6 +76,10 @@
       "B1.past_perfect.continuous",
       "B2.past_perfect.narrative"
     ],
+    "past_tense": [
+      "A1.past_tense.simple",
+      "A2.past_tense.continuous"
+    ],
     "phrasal_verbs": [
       "B1.phrasal_verbs.basic",
       "B2.phrasal_verbs.extended"
@@ -76,6 +95,11 @@
       "A2.present_perfect.basic",
       "B1.present_perfect.continuous",
       "B1.present_perfect.since_for"
+    ],
+    "punctuation": [
+      "A2.punctuation.capitalisation",
+      "B1.punctuation.commas",
+      "B2.punctuation.advanced"
     ],
     "quantifiers": [
       "A1.quantifiers.some_any",
@@ -93,7 +117,16 @@
       "B2.reported_speech.extended"
     ],
     "sentence_syntax": [
+      "B1.sentence_syntax.it_subject",
       "B2.sentence_syntax.inversion"
+    ],
+    "spelling": [
+      "A2.spelling.basic"
+    ],
+    "tenses": [
+      "A1.tenses.system",
+      "A2.tenses.simple_continuous",
+      "B1.tenses.perfect"
     ],
     "verb_patterns": [
       "A2.verb_patterns.basic",

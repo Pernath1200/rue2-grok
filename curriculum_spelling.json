@@ -4,11 +4,19 @@
     "sections": [
       {
         "title": "What this section covers",
-        "content": "This section practises words that students often misspell. Each question gives you a sentence with one spelling mistake — find it and correct it."
+        "content": "This section practises words that students often misspell. Each question gives you a sentence with one spelling mistake — find it and correct it.",
+        "root_ids": [
+          "A2.spelling.basic"
+        ],
+        "cefr_level": "A2"
       },
       {
         "title": "How to improve your spelling",
-        "content": "There are very few reliable spelling rules in English. The best way to improve is to notice which words you get wrong and learn them. Pay special attention to **double letters**, **-ance / -ence endings**, and **silent letters** — these cause the most mistakes."
+        "content": "There are very few reliable spelling rules in English. The best way to improve is to notice which words you get wrong and learn them. Pay special attention to **double letters**, **-ance / -ence endings**, and **silent letters** — these cause the most mistakes.",
+        "root_ids": [
+          "A2.spelling.basic"
+        ],
+        "cefr_level": "A2"
       }
     ]
   },
@@ -55,7 +63,11 @@
         ],
         "explanation": "Separate: -par- in the middle (like 'part')."
       }
-    ]
+    ],
+    "root_ids": [
+      "A2.spelling.basic"
+    ],
+    "cefr_level": "A2"
   },
   "practice_order": [
     "error_correction_1",
@@ -174,7 +186,11 @@
           ],
           "explanation": "Believe: i before e."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_2": {
       "title": "Practice: Correct the spelling (11–20)",
@@ -263,7 +279,11 @@
           ],
           "explanation": "Disappoint: one s, double p."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_3": {
       "title": "Practice: Correct the spelling (21–30)",
@@ -352,7 +372,11 @@
           ],
           "explanation": "Height: -eigh- (like eight)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_4": {
       "title": "Practice: Correct the spelling (31–40)",
@@ -439,7 +463,11 @@
           ],
           "explanation": "Piece: i before e (piece of pie)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_5": {
       "title": "Practice: Correct the spelling (41–50)",
@@ -533,7 +561,11 @@
           ],
           "explanation": "Definitely (-ite-); necessary (one c, double s)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_6": {
       "title": "Practice: Correct the spelling (51–60)",
@@ -618,7 +650,11 @@
           ],
           "explanation": "Receive: e before i (after c)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_7": {
       "title": "Practice: Correct the spelling (61–70)",
@@ -703,7 +739,11 @@
           ],
           "explanation": "Successful: one l, double s."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_8": {
       "title": "Practice: Correct the spelling (71–80)",
@@ -788,7 +828,11 @@
           ],
           "explanation": "Embarrass: double r, double s."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_9": {
       "title": "Practice: Correct the spelling (81–90)",
@@ -873,7 +917,11 @@
           ],
           "explanation": "Curiosity: -osity (from curious)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_10": {
       "title": "Practice: Correct the spelling (91–100)",
@@ -959,7 +1007,11 @@
           ],
           "explanation": "Environmental: from environment, -mental."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_11": {
       "title": "Practice: Correct the spelling (101–110)",
@@ -1044,7 +1096,11 @@
           ],
           "explanation": "Beautiful: beauty + -ful (one l)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_12": {
       "title": "Practice: Correct the spelling (111–120)",
@@ -1129,7 +1185,11 @@
           ],
           "explanation": "Effective: effect + -ive (double f)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_13": {
       "title": "Practice: Correct the spelling (121–130)",
@@ -1214,7 +1274,11 @@
           ],
           "explanation": "Probably: probable + -ly (double b)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_14": {
       "title": "Practice: Correct the spelling (131–140)",
@@ -1299,7 +1363,11 @@
           ],
           "explanation": "Perhaps: per + haps."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_15": {
       "title": "Practice: Correct the spelling (141–150)",
@@ -1384,7 +1452,11 @@
           ],
           "explanation": "Stadium: stadi- + -um."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_16": {
       "title": "Practice: Correct the spelling (151–160)",
@@ -1469,7 +1541,11 @@
           ],
           "explanation": "Brought: from bring (irregular)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_17": {
       "title": "Practice: Correct the spelling (161–170)",
@@ -1554,7 +1630,11 @@
           ],
           "explanation": "Variety: vary + -ety."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_18": {
       "title": "Practice: Correct the spelling (171–180)",
@@ -1639,7 +1719,11 @@
           ],
           "explanation": "Recommend: double c, double m."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_19": {
       "title": "Practice: Correct the spelling (181–190)",
@@ -1724,7 +1808,11 @@
           ],
           "explanation": "Opportunity: double p."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_20": {
       "title": "Practice: Correct the spelling (191–200)",
@@ -1809,7 +1897,11 @@
           ],
           "explanation": "Pronunciation: -nun- from pronounce."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_21": {
       "title": "Practice: Correct the spelling (201–216)",
@@ -1942,7 +2034,11 @@
           ],
           "explanation": "Maybe: may + be."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_22": {
       "title": "Practice: Correct the spelling (217–228)",
@@ -2043,7 +2139,11 @@
           ],
           "explanation": "Thing: -ing not -ink (thing vs think)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_23": {
       "title": "Practice: Correct the spelling (229–238)",
@@ -2138,7 +2238,11 @@
           ],
           "explanation": "Parallel: one r, double l."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_24": {
       "title": "Practice: Correct the spelling (239–248)",
@@ -2233,7 +2337,11 @@
           ],
           "explanation": "Immediate: double m, -ate."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_25": {
       "title": "Practice: Correct the spelling (249–258)",
@@ -2328,7 +2436,11 @@
           ],
           "explanation": "Suitable: suit + -able."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_26": {
       "title": "Practice: Correct the spelling (259–268)",
@@ -2423,7 +2535,11 @@
           ],
           "explanation": "Completely: complete + -ly."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_27": {
       "title": "Practice: Correct the spelling (269–278)",
@@ -2518,7 +2634,11 @@
           ],
           "explanation": "Persistent: -ent (persist + -ent)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_28": {
       "title": "Practice: Correct the spelling (279–288)",
@@ -2613,7 +2733,11 @@
           ],
           "explanation": "Subtle: silent b; -le."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_29": {
       "title": "Practice: Correct the spelling (289–298)",
@@ -2708,7 +2832,11 @@
           ],
           "explanation": "Resistance: -ance (resist + -ance)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_30": {
       "title": "Practice: Correct the spelling (299–308)",
@@ -2803,7 +2931,11 @@
           ],
           "explanation": "Violence: -ence (violent + -ce)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     },
     "error_correction_31": {
       "title": "Practice: Correct the spelling (309–327)",
@@ -2979,7 +3111,11 @@
           ],
           "explanation": "Convenient: -ient (not -iant)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.spelling.basic"
+      ],
+      "cefr_level": "A2"
     }
   }
 }

@@ -4,23 +4,43 @@
     "sections": [
       {
         "title": "Regular vs irregular",
-        "content": "**Regular verbs** form the past simple and past participle by adding **-ed**: *work → worked, play → played, want → wanted.* **Irregular verbs** do not follow this pattern — each has its own forms: *go → went → gone; speak → spoke → spoken; write → wrote → written.*"
+        "content": "**Regular verbs** form the past simple and past participle by adding **-ed**: *work → worked, play → played, want → wanted.* **Irregular verbs** do not follow this pattern — each has its own forms: *go → went → gone; speak → spoke → spoken; write → wrote → written.*",
+        "root_ids": [
+          "A1.irregular_verbs.basic"
+        ],
+        "cefr_level": "A1"
       },
       {
         "title": "Why irregular forms matter",
-        "content": "There is no rule to predict irregular forms — you must **learn each verb**. Common mistakes occur when learners add -ed to irregular verbs: *he speaked* (wrong) → he **spoke**; *I goed* (wrong) → I **went**."
+        "content": "There is no rule to predict irregular forms — you must **learn each verb**. Common mistakes occur when learners add -ed to irregular verbs: *he speaked* (wrong) → he **spoke**; *I goed* (wrong) → I **went**.",
+        "root_ids": [
+          "A1.irregular_verbs.basic"
+        ],
+        "cefr_level": "A1"
       },
       {
         "title": "When you need irregular forms",
-        "content": "**Past simple:** *I saw him yesterday.* **Present/past perfect:** *I have seen him. She had written it.* **Passive:** *The letter was written. English is spoken here.* **Conditionals:** *If I had known, I would have told you.*"
+        "content": "**Past simple:** *I saw him yesterday.* **Present/past perfect:** *I have seen him. She had written it.* **Passive:** *The letter was written. English is spoken here.* **Conditionals:** *If I had known, I would have told you.*",
+        "root_ids": [
+          "A1.irregular_verbs.basic"
+        ],
+        "cefr_level": "A1"
       },
       {
         "title": "Common learner errors",
-        "content": "*he speaked* → he **spoke**; *I goed* → I **went**; *she writed* → she **wrote**; *they maked* → they **made**; *we taked* → we **took**. Learn the 50 most common irregular verbs — a full list is in Reference → Irregular verbs."
+        "content": "*he speaked* → he **spoke**; *I goed* → I **went**; *she writed* → she **wrote**; *they maked* → they **made**; *we taked* → we **took**. Learn the 50 most common irregular verbs — a full list is in Reference → Irregular verbs.",
+        "root_ids": [
+          "A1.irregular_verbs.basic"
+        ],
+        "cefr_level": "A1"
       },
       {
         "title": "Reference",
-        "content": "For a full list of irregular verb forms, see the Irregular Verbs section under Reference."
+        "content": "For a full list of irregular verb forms, see the Irregular Verbs section under Reference.",
+        "root_ids": [
+          "A1.irregular_verbs.basic"
+        ],
+        "cefr_level": "A1"
       }
     ]
   },
@@ -87,7 +107,11 @@
         "correct_option": "b",
         "explanation": "See is irregular: see → saw → seen."
       }
-    ]
+    ],
+    "root_ids": [
+      "A2.irregular_verbs.extended"
+    ],
+    "cefr_level": "A2"
   },
   "practice_order": [
     "gapfill",
@@ -177,7 +201,11 @@
           ],
           "explanation": "Give → gave (irregular)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.irregular_verbs.extended"
+      ],
+      "cefr_level": "A2"
     },
     "errorcorrection": {
       "title": "Practice: Correct the irregular verb",
@@ -236,7 +264,11 @@
           ],
           "explanation": "See → saw (not seed)."
         }
-      ]
+      ],
+      "root_ids": [
+        "A2.irregular_verbs.extended"
+      ],
+      "cefr_level": "A2"
     }
   }
 }
