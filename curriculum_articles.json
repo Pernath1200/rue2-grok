@@ -4,70 +4,567 @@
     "sections": [
       {
         "title": "What articles do (core logic)",
-        "content": "Before almost every noun in English you make a three-way choice: **a / an** (indefinite), **the** (definite), or **∅** (no article). The speaker is signalling one thing to the listener: **\"Is this thing identifiable to you or not?\"**\n\n• **a / an** = singular countable, **not yet identifiable** (first mention, one of many): *I bought **a** car.*\n• **the** = **identifiable** to both speaker and listener (already mentioned, unique, or specified by context): *The sun. The car I bought.*\n• **∅** = used with **uncountables and plurals in general**, names, most countries: *Water is essential. Cats are animals. Prague.*\n\n**Why it matters (roots-first)**: Articles sit in the Noun Phrase root (#3 in the Tree Model). They are the **most frequent grammatical decision in English** — you make it almost every time you open your mouth, several times per sentence. Czech has **no articles at all**, which is why this is the single hardest English structure for Czech speakers to acquire. The good news: ~80% of cases are covered by the core rules below.\n\nB2 exceptions, idiomatic uses and edge cases (abstract nouns generic vs specific, *the rich / the poor*, rivers and mountains, newspaper and hotel names) live in a separate topic: [[topic:articles_advanced|Articles — extension]]. Master the core first.",
-        "diagram": {
-          "type": "table",
-          "title": "The three-way choice at a glance",
-          "headers": [
-            "Article",
-            "When",
-            "Example"
-          ],
-          "rows": [
-            [
-              "**a / an**",
-              "Singular countable, first mention, one of many",
-              "I bought **a** car. She's **an** engineer."
-            ],
-            [
-              "**the**",
-              "Listener can identify which one (mentioned, unique, specified)",
-              "**The** sun. **The** car I bought is red."
-            ],
-            [
-              "**∅ (no article)**",
-              "Plural / uncountable in general, most names",
-              "Cats are animals. Go to work. Prague."
+        "content": "Before almost every noun: a three-way choice — **a / an**, **the**, or **∅** (no article). The signal: *is this identifiable to you?*\n- Articles sit in the Noun Phrase root (#3 in the Tree Model) — the **most frequent grammatical decision in English**: several times per sentence, almost every time you open your mouth.\n- B2 exceptions and edge cases (abstract nouns generic vs specific, *the rich / the poor*, rivers and mountains, newspaper and hotel names): [[topic:articles_advanced|Articles — extension]]. Master the core first.",
+        "diagrams": [
+          {
+            "type": "decision",
+            "title": "Which article?",
+            "steps": [
+              {
+                "q": "Can the listener identify exactly which one? (already mentioned, unique, or specified by context)",
+                "yes": "the"
+              },
+              {
+                "q": "Singular and countable? (first mention, one of many)",
+                "yes": "a / an"
+              },
+              {
+                "end": "∅ — no article (uncountables and plurals in general, names, most countries)"
+              }
             ]
-          ]
-        },
-        "root_ids": ["A1.articles.basic"],
+          },
+          {
+            "type": "table",
+            "title": "The three-way choice at a glance",
+            "headers": [
+              "Article",
+              "When",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**a / an**",
+                "Singular countable, first mention, one of many",
+                "I bought **a** car. She's **an** engineer."
+              ],
+              [
+                "**the**",
+                "Listener can identify which one (mentioned, unique, specified)",
+                "**The** sun. **The** car I bought is red."
+              ],
+              [
+                "**∅ (no article)**",
+                "Plural / uncountable in general, most names",
+                "Cats are animals. Go to work. Prague."
+              ]
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech has **no articles at all** — the single hardest English structure for Czech speakers to acquire. Good news: ~80% of cases are covered by the core rules in this topic."
+          }
+        ],
+        "root_ids": [
+          "A1.articles.basic"
+        ],
         "cefr_level": "A1"
       },
       {
         "title": "a / an — first mention, indefinite, \"one of many\"",
-        "content": "Use **a / an** with a **singular countable noun** when the listener doesn't yet know which one — there are many possibilities, and you're picking one.\n\n• **First mention** in a story or conversation: *I bought **a** book yesterday.*\n• **One of many** (profession, type, category): *She's **a** teacher. That's **a** Honda.*\n• **One per** something: *Take **a** pill three times **a** day.*\n\n**a or an? Listen to the SOUND, not the letter.**\n\n**Why it matters**: This is rule one of every spoken English exchange — introducing a new thing into the conversation. Get the *a / an* sound rule right and you sound natural from sentence one. Get it wrong and every listener notices.\n\n**Contrast examples** (sound, not spelling):\n- **a** university, **a** European country, **a** one-way street (start with *yoo-*, *yur-*, *wun-* → consonant sound)\n- **an** hour, **an** honest man (silent *h* → vowel sound)\n- **an** MBA, **an** FBI agent, **an** X-ray (letter names *em-*, *ef-*, *ex-* start with vowel sounds)",
-        "root_ids": ["A1.articles.basic"],
+        "content": "Use **a / an** with a **singular countable noun** the listener can't yet identify — there are many possibilities, and you're picking one.\n**a or an? Listen to the SOUND, not the letter.** This is rule one of every spoken exchange — get it right and you sound natural from sentence one; get it wrong and every listener notices.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "When to use a / an",
+            "headers": [
+              "Use",
+              "Example"
+            ],
+            "rows": [
+              [
+                "First mention in a story or conversation",
+                "I bought **a** book yesterday."
+              ],
+              [
+                "One of many (profession, type, category)",
+                "She's **a** teacher. That's **a** Honda."
+              ],
+              [
+                "One per something",
+                "Take **a** pill three times **a** day."
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "title": "Sound, not spelling",
+            "headers": [
+              "Form",
+              "Why",
+              "Examples"
+            ],
+            "rows": [
+              [
+                "**a**",
+                "*yoo-*, *yur-*, *wun-* start with consonant sounds",
+                "**a** university, **a** European country, **a** one-way street"
+              ],
+              [
+                "**an**",
+                "silent *h* → vowel sound",
+                "**an** hour, **an** honest man"
+              ],
+              [
+                "**an**",
+                "letter names *em-*, *ef-*, *ex-* start with vowel sounds",
+                "**an** MBA, **an** FBI agent, **an** X-ray"
+              ]
+            ]
+          }
+        ],
+        "root_ids": [
+          "A1.articles.basic"
+        ],
         "cefr_level": "A1"
       },
       {
         "title": "the — definite, identifiable, \"we both know which one\"",
-        "content": "Use **the** when both speaker and listener can identify **which one**. Three main triggers:\n\n• **(a) Already mentioned** (second-mention rule — see next card): *I saw a dog. **The** dog was barking.*\n• **(b) Only one in context** — unique by nature or by situation: ***The** sun. **The** moon. **The** manager. Close **the** door.* (this room's door)\n• **(c) Defined by what follows** — a phrase or clause that pins it down: ***The** book I bought yesterday. **The** capital of France. **The** water in this bottle.*\n\nAlso: superlatives (***the** best, **the** first*), and some place names with common-noun elements (***the** USA, **the** UK, **the** Czech Republic*).\n\n**Why it matters**: Czech speakers tend to under-use *the*. Every time you refer back to something already known, English requires a signal — *the* is that signal. Missing it doesn't usually break meaning, but it sounds noticeably foreign in every email, exam answer and conversation.\n\n**Pronunciation tip**: *the* is pronounced **\"thee\"** before a vowel sound (*thee apple, thee hour*) and **\"thuh\"** before a consonant sound (*thuh book, thuh university*).",
-        "root_ids": ["A1.articles.basic"],
+        "content": "Use **the** when both speaker and listener can identify **which one** — three main triggers.\nPronunciation: **\"thee\"** before a vowel sound (*thee apple, thee hour*), **\"thuh\"** before a consonant sound (*thuh book, thuh university*).",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Three triggers for the",
+            "headers": [
+              "Trigger",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**(a)** Already mentioned — the second-mention rule (see the storytelling card)",
+                "I saw a dog. **The** dog was barking."
+              ],
+              [
+                "**(b)** Only one in context — unique by nature or by situation",
+                "**The** sun. **The** moon. **The** manager. Close **the** door. (this room's door)"
+              ],
+              [
+                "**(c)** Defined by what follows — a phrase or clause that pins it down",
+                "**The** book I bought yesterday. **The** capital of France. **The** water in this bottle."
+              ]
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "Also with the",
+            "groups": [
+              {
+                "label": "superlatives",
+                "items": [
+                  "the best",
+                  "the first"
+                ]
+              },
+              {
+                "label": "some place names with common-noun elements",
+                "items": [
+                  "the USA",
+                  "the UK",
+                  "the Czech Republic"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech speakers tend to **under-use the**. Every reference back to something already known needs the signal — missing it doesn't usually break meaning, but it sounds noticeably foreign in every email, exam answer and conversation."
+          }
+        ],
+        "root_ids": [
+          "A1.articles.basic"
+        ],
         "cefr_level": "A1"
       },
       {
         "title": "No article (∅) — general, abstract, plural, uncountable",
-        "content": "Use **no article** (∅) when you're talking about something in **general**, not a specific instance.\n\n• **(a) Uncountable nouns in general**: ∅ *Water is essential. ∅ Information is power.*\n• **(b) Plural countable nouns in general**: ∅ *Dogs are friendly. ∅ Children need sleep.*\n• **(c) Abstract nouns in general**: ∅ *Love is patient. ∅ Time flies.*\n• **(d) Names**: ∅ *Mary, ∅ Prague, ∅ France, ∅ Japan, ∅ January.* (Most personal names, cities, countries, months.)\n• **(e) Set categories**: meals (*have ∅ breakfast*), transport with *by* (*by ∅ car, by ∅ train*), days/months alone (*see you on ∅ Monday*), institutions as activity (*go to ∅ work, at ∅ home, go to ∅ school*).\n\n**Why it matters**: This is the rule Czech speakers find most natural — Czech also says these without an article. **But beware:** the moment the noun becomes specific (defined by context or a following phrase), English switches to *the*.\n\n**Contrast** — the most important pair in this topic:\n- ∅ ***Water** is essential.* (water in general — uncountable, general → ∅)\n- ***The water** in this bottle is cold.* (this specific water → the)\n- ∅ ***Dogs** bark.* (dogs in general → ∅)\n- ***The dogs** next door bark all night.* (these specific dogs → the)",
-        "root_ids": ["A1.articles.basic", "B1.articles.extended"],
+        "content": "Use **no article** (∅) when you're talking about something in **general**, not a specific instance — five categories.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "∅ in general",
+            "headers": [
+              "Category",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**(a)** Uncountable nouns in general",
+                "∅ Water is essential. ∅ Information is power."
+              ],
+              [
+                "**(b)** Plural countable nouns in general",
+                "∅ Dogs are friendly. ∅ Children need sleep."
+              ],
+              [
+                "**(c)** Abstract nouns in general",
+                "∅ Love is patient. ∅ Time flies."
+              ],
+              [
+                "**(d)** Names — most personal names, cities, countries, months",
+                "∅ Mary, ∅ Prague, ∅ France, ∅ Japan, ∅ January"
+              ]
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "(e) Set categories — fixed ∅ expressions",
+            "groups": [
+              {
+                "label": "meals",
+                "items": [
+                  "have breakfast"
+                ]
+              },
+              {
+                "label": "transport with by",
+                "items": [
+                  "by car",
+                  "by train"
+                ]
+              },
+              {
+                "label": "days/months alone",
+                "items": [
+                  "see you on Monday"
+                ]
+              },
+              {
+                "label": "institutions as activity",
+                "items": [
+                  "go to work",
+                  "at home",
+                  "go to school"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "This is the rule Czech speakers find most natural — Czech also says these without an article."
+          }
+        ],
+        "root_ids": [
+          "A1.articles.basic",
+          "B1.articles.extended"
+        ],
+        "cefr_level": "A2"
+      },
+      {
+        "title": "∅ general vs the specific — the key contrast",
+        "content": "**But beware:** the moment the noun becomes specific — defined by context or a following phrase — English switches to **the**.\nGeneral → ∅, specific → *the*: the most important pair in this topic.",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "title": "General vs specific",
+            "left": {
+              "title": "∅ — in general",
+              "points": [
+                "∅ **Water** is essential. (water in general — uncountable)",
+                "∅ **Dogs** bark. (dogs in general)"
+              ]
+            },
+            "right": {
+              "title": "the — specific",
+              "points": [
+                "**The water** in this bottle is cold. (this specific water)",
+                "**The dogs** next door bark all night. (these specific dogs)"
+              ]
+            }
+          }
+        ],
+        "root_ids": [
+          "A1.articles.basic",
+          "B1.articles.extended"
+        ],
         "cefr_level": "A2"
       },
       {
         "title": "a/an → the (the storytelling rule)",
-        "content": "**The most fundamental discourse pattern in English**: a thing is **a/an** the first time you mention it, then **the** every time after — because now we both know which one you mean.\n\n• *I saw **a** dog in the park. **The** dog was chasing **a** squirrel. **The** squirrel ran up **a** tree. **The** tree was huge.*\n\nEach new noun enters with *a/an* (or ∅ for plurals/uncountables), then graduates to *the* on the next mention. This is how English stories, news articles, emails and conversations are knitted together.\n\n**Why it matters**: This single pattern is behind a huge proportion of *a* vs *the* decisions. Every email you write, every exam essay, every story you tell uses it constantly. If you only remember **one rule** about articles, remember this one.\n\n**Contrast chain**:\n- *I need **a** new phone.* (first mention → a)\n- *Did you see **the** phone I bought?* (now identifiable → the)\n- *Yes, **the** screen is huge!* (part of the known phone → the)\n\nThe same logic works with plurals/uncountables: first mention with ∅, then *the* once known.\n- *I bought ∅ **flowers** for my mother. **The** flowers were beautiful.*",
-        "root_ids": ["A1.articles.basic"],
+        "content": "**The most fundamental discourse pattern in English**: **a/an** at first mention, then **the** every time after — now we both know which one.\n- *I saw **a** dog in the park. **The** dog was chasing **a** squirrel. **The** squirrel ran up **a** tree. **The** tree was huge.*\nThis single pattern is behind a huge proportion of *a* vs *the* decisions — every story, news article, email and conversation is knitted together this way. If you only remember **one rule** about articles, remember this one.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "title": "How nouns graduate",
+            "items": [
+              {
+                "label": "first mention",
+                "formula": "a / an (or ∅ for plurals & uncountables) → new to the listener"
+              },
+              {
+                "label": "next mention",
+                "formula": "graduates to **the** → now identifiable"
+              }
+            ]
+          },
+          {
+            "type": "formula",
+            "title": "Contrast chain",
+            "items": [
+              {
+                "label": "first mention → a",
+                "formula": "I need **a** new phone."
+              },
+              {
+                "label": "now identifiable → the",
+                "formula": "Did you see **the** phone I bought?"
+              },
+              {
+                "label": "part of the known phone → the",
+                "formula": "Yes, **the** screen is huge!"
+              },
+              {
+                "label": "plurals/uncountables: ∅ first, then the",
+                "formula": "I bought ∅ flowers for my mother. → **The** flowers were beautiful."
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "A1.articles.basic"
+        ],
         "cefr_level": "A1"
       },
       {
-        "title": "Articles with names — quick guide",
-        "content": "Most **names** take no article — but a small, learnable set takes **the**.\n\n**∅ No article** (the default for names):\n- Personal names: ∅ *John, ∅ Mary, ∅ Mr Novák*\n- Cities: ∅ *Prague, ∅ London, ∅ New York*\n- Most countries: ∅ *Spain, ∅ Japan, ∅ France, ∅ Germany*\n- Continents: ∅ *Europe, ∅ Africa, ∅ Asia*\n- Streets: ∅ *Wenceslas Square, ∅ Oxford Street*\n- Single mountains and lakes (with their generic word): ∅ *Mount Everest, ∅ Lake Geneva*\n\n**With \"the\"** (learnable categories):\n- Countries with a common noun in the name: ***the** UK, **the** USA, **the** Czech Republic, **the** Netherlands*\n- Rivers, seas, oceans: ***the** Vltava, **the** Thames, **the** Atlantic, **the** Mediterranean*\n- Mountain ranges and groups of islands: ***the** Alps, **the** Himalayas, **the** Canary Islands*\n- A few set expressions: ***the** Hague, **the** Bronx*\n\n**Why it matters**: Saying *\"I live in Czech Republic\"* or *\"I went to the London\"* are two of the most instantly noticeable Czech-speaker errors. Fixing this gives the most visible quick win.\n\n*(Newspapers, hotels, ships, institutions, and the full geography list are in [[topic:articles_advanced|Articles — extension]].)*",
-        "root_ids": ["B1.articles.extended"],
+        "title": "Articles with names — the ∅ default",
+        "content": "Most **names** take **no article** — ∅ is the default.",
+        "diagrams": [
+          {
+            "type": "chips",
+            "title": "∅ — no article (the default for names)",
+            "groups": [
+              {
+                "label": "personal names",
+                "items": [
+                  "John",
+                  "Mary",
+                  "Mr Novák"
+                ]
+              },
+              {
+                "label": "cities",
+                "items": [
+                  "Prague",
+                  "London",
+                  "New York"
+                ]
+              },
+              {
+                "label": "most countries",
+                "items": [
+                  "Spain",
+                  "Japan",
+                  "France",
+                  "Germany"
+                ]
+              },
+              {
+                "label": "continents",
+                "items": [
+                  "Europe",
+                  "Africa",
+                  "Asia"
+                ]
+              },
+              {
+                "label": "streets",
+                "items": [
+                  "Wenceslas Square",
+                  "Oxford Street"
+                ]
+              },
+              {
+                "label": "single mountains and lakes (with their generic word)",
+                "items": [
+                  "Mount Everest",
+                  "Lake Geneva"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I went to London.",
+                "bad": "I went to the London.",
+                "why": "cities → ∅"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B1.articles.extended"
+        ],
         "cefr_level": "B1"
       },
       {
-        "title": "Common Czech-speaker errors (and roadmap)",
-        "content": "Because Czech has no articles, five mistakes appear constantly. Fix these and your English improves visibly within a week.\n\n1. **Dropping articles altogether** — *I went to ∅ shop* → **I went to the shop.** / *She's ∅ doctor* → **She's a doctor.**\n2. **Over-using \"the\" with generics** — *~~The~~ cats are animals* → **Cats are animals.** / *I like ~~the~~ music* → **I like music.** (in general)\n3. **a/an based on letter, not sound** — *~~a~~ hour* → **an hour.** / *~~an~~ university* → **a university.**\n4. **Wrong article with countries** — *~~The~~ France is beautiful* → **France is beautiful.** / *I live in ~~∅~~ Czech Republic* → **I live in the Czech Republic.**\n5. **First / subsequent mention confusion** — *I bought ~~the~~ car yesterday* (introducing for the first time) → **I bought a car yesterday.**\n\n**Why it matters**: These are the exact mistakes that mark out a Czech speaker in every email, exam answer and conversation. They're not difficult — they're just unfamiliar. Practice the cards in this topic, then move on.\n\n---\n\n**Direct practice in this curriculum**:\n- Choose a / an / the / ∅ (MC)\n- Gap fill: articles\n- Error correction: fix the wrong article\n\n**Next steps**: When the core feels automatic, move to [[topic:articles_advanced|Articles — extension]] (B2: abstract nouns generic vs specific, *the rich/the poor*, full geography list, newspaper/hotel/ship names, subjects of study, title vs role).",
-        "root_ids": ["A1.articles.basic", "B1.articles.extended"],
+        "title": "Names that take the — learnable categories",
+        "content": "A small, learnable set of names takes **the**.\n*(Newspapers, hotels, ships, institutions, and the full geography list are in [[topic:articles_advanced|Articles — extension]].)*",
+        "diagrams": [
+          {
+            "type": "chips",
+            "title": "the — learnable categories",
+            "groups": [
+              {
+                "label": "countries with a common noun in the name",
+                "items": [
+                  "the UK",
+                  "the USA",
+                  "the Czech Republic",
+                  "the Netherlands"
+                ]
+              },
+              {
+                "label": "rivers, seas, oceans",
+                "items": [
+                  "the Vltava",
+                  "the Thames",
+                  "the Atlantic",
+                  "the Mediterranean"
+                ]
+              },
+              {
+                "label": "mountain ranges and groups of islands",
+                "items": [
+                  "the Alps",
+                  "the Himalayas",
+                  "the Canary Islands"
+                ]
+              },
+              {
+                "label": "a few set expressions",
+                "items": [
+                  "the Hague",
+                  "the Bronx"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I live in the Czech Republic.",
+                "bad": "I live in Czech Republic.",
+                "why": "common noun in the name → the"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "*\"I live in Czech Republic\"* and *\"I went to the London\"* are two of the most instantly noticeable Czech-speaker errors — fixing this gives the most visible quick win."
+          }
+        ],
+        "root_ids": [
+          "B1.articles.extended"
+        ],
+        "cefr_level": "B1"
+      },
+      {
+        "title": "Common Czech-speaker errors (1–3)",
+        "content": "Because Czech has no articles, five mistakes appear constantly. Fix these and your English improves visibly within a week.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "title": "1 · Dropping articles altogether",
+            "items": [
+              {
+                "good": "I went to the shop.",
+                "bad": "I went to shop."
+              },
+              {
+                "good": "She's a doctor.",
+                "bad": "She's doctor."
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "title": "2 · Over-using \"the\" with generics",
+            "items": [
+              {
+                "good": "Cats are animals.",
+                "bad": "The cats are animals."
+              },
+              {
+                "good": "I like music.",
+                "bad": "I like the music.",
+                "why": "in general"
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "title": "3 · a/an based on letter, not sound",
+            "items": [
+              {
+                "good": "an hour",
+                "bad": "a hour"
+              },
+              {
+                "good": "a university",
+                "bad": "an university"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "A1.articles.basic",
+          "B1.articles.extended"
+        ],
+        "cefr_level": "A2"
+      },
+      {
+        "title": "Czech-speaker errors (4–5) and roadmap",
+        "content": "Two more constant errors — then the roadmap.\n**Next steps**: when the core feels automatic, move to [[topic:articles_advanced|Articles — extension]] (B2: abstract nouns generic vs specific, *the rich/the poor*, full geography list, newspaper/hotel/ship names, subjects of study, title vs role).",
+        "diagrams": [
+          {
+            "type": "examples",
+            "title": "4 · Wrong article with countries",
+            "items": [
+              {
+                "good": "France is beautiful.",
+                "bad": "The France is beautiful."
+              },
+              {
+                "good": "I live in the Czech Republic.",
+                "bad": "I live in Czech Republic."
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "title": "5 · First / subsequent mention confusion",
+            "items": [
+              {
+                "good": "I bought a car yesterday.",
+                "bad": "I bought the car yesterday.",
+                "why": "introducing it for the first time → a"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "These are the exact mistakes that mark out a Czech speaker in every email, exam answer and conversation. They're not difficult — they're just unfamiliar. Practise the cards in this topic, then move on."
+          },
+          {
+            "type": "chips",
+            "title": "Direct practice in this curriculum",
+            "items": [
+              "Choose a / an / the / ∅ (MC)",
+              "Gap fill: articles",
+              "Error correction: fix the wrong article"
+            ]
+          }
+        ],
+        "root_ids": [
+          "A1.articles.basic",
+          "B1.articles.extended"
+        ],
         "cefr_level": "A2"
       }
     ]
