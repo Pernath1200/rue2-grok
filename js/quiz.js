@@ -416,14 +416,18 @@ export function finishQuiz() {
   const isSpellingWithWrong = state.currentTopic && state.currentTopic.id === 'spelling' && state.wrongIndices.length > 0;
   const correctAnswersHtml = isSpellingWithWrong ? buildSpellingCorrectAnswersHtml() : '';
   if (state.coursePhase) {
-    // One continuous lesson: check quiz → guided rounds. Work out what comes
-    // next (skipping empty rounds) and offer it as the single obvious step.
-    const lessonOrder = ['check'].concat(state.part2Order || []);
+    // Main-app lesson (coursePart 1): one continuous journey, so work out what
+    // comes next (skipping empty rounds) and offer it as the single obvious
+    // step. coursePart 2 is the exam bundle's flow — preserved as it was.
+    const isLesson = state.coursePart === 1;
     const practiceSections = (state.courseCurriculum && state.courseCurriculum.practice) || {};
     let nextPhase = null;
-    for (let i = lessonOrder.indexOf(state.coursePhase) + 1; i < lessonOrder.length; i++) {
-      const s = practiceSections[lessonOrder[i]];
-      if (s && s.questions && s.questions.length > 0) { nextPhase = lessonOrder[i]; break; }
+    if (isLesson) {
+      const lessonOrder = ['check'].concat(state.part2Order || []);
+      for (let i = lessonOrder.indexOf(state.coursePhase) + 1; i < lessonOrder.length; i++) {
+        const s = practiceSections[lessonOrder[i]];
+        if (s && s.questions && s.questions.length > 0) { nextPhase = lessonOrder[i]; break; }
+      }
     }
     document.getElementById('sectionCompleteTitle').textContent =
       state.coursePhase === 'check' ? 'Check complete' : (state.currentSetTitle + ' – complete');
