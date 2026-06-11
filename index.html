@@ -465,6 +465,34 @@
     .diagram-timeline-detail { font-size: 0.7rem; color: var(--muted); margin-top: 0.15rem; }
     .diagram-timeline-span { position: absolute; top: -0.1rem; height: 3px; background: var(--accent); opacity: 0.5; }
     .diagram-timeline-span-label { position: absolute; top: -1rem; font-size: 0.65rem; color: var(--accent); white-space: nowrap; left: 50%; transform: translateX(-50%); }
+    /* Intro bullet lists (renderIntroContentHtml turns "- " lines into <ul>) */
+    .intro-list { margin: 0.3rem 0 0.5rem 1.15rem; padding: 0; }
+    .intro-list li { margin-bottom: 0.3rem; line-height: 1.45; }
+    /* Decision flowchart */
+    .diagram-decision .dd-step { margin-bottom: 0.35rem; }
+    .dd-q { background: var(--bg); border: 1px solid var(--accent); border-radius: 6px; padding: 0.45rem 0.6rem; font-weight: 600; font-size: 0.92rem; }
+    .dd-branches { display: flex; gap: 1.1rem; padding: 0.3rem 0.6rem 0.1rem; flex-wrap: wrap; }
+    .dd-tag { font-size: 0.72rem; border-radius: 4px; padding: 0 0.35rem; border: 1px solid var(--muted); color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+    .dd-yes .dd-tag { color: var(--correct); border-color: var(--correct); }
+    .dd-no .dd-tag { color: var(--wrong); border-color: var(--wrong); }
+    .dd-answer { font-weight: 700; color: var(--accent); }
+    .dd-end { background: rgba(86, 156, 214, 0.12); border: 1px dashed var(--accent); border-radius: 6px; padding: 0.4rem 0.6rem; font-weight: 700; color: var(--accent); }
+    /* ✓/✗ example pairs (wrong form keeps the strikethrough convention) */
+    .diagram-examples .dex-item { border-left: 3px solid rgba(86, 156, 214, 0.55); padding: 0.3rem 0.6rem; margin-bottom: 0.45rem; background: var(--bg); border-radius: 0 6px 6px 0; }
+    .dex-good { color: var(--correct); }
+    .dex-bad { color: var(--wrong); }
+    .dex-bad .intro-strike { color: inherit; }
+    .dex-why { color: var(--muted); font-size: 0.85rem; margin-top: 0.1rem; }
+    /* Callout box (Czech notes, tips) */
+    .diagram-callout { display: flex; gap: 0.6rem; align-items: baseline; border: 1px solid var(--accent); border-left-width: 4px; border-radius: 6px; padding: 0.5rem 0.7rem; background: var(--bg); }
+    .dc-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+    .dc-cz { border-color: #f59e0b; }
+    .dc-cz .dc-label { color: #f59e0b; }
+    .dc-text { font-size: 0.92rem; }
+    /* Chips: closed word-sets as scannable badges */
+    .dch-group { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; margin-bottom: 0.4rem; }
+    .dch-label { color: var(--muted); font-size: 0.85rem; margin-right: 0.2rem; }
+    .dch-chip { border: 1px solid rgba(86, 156, 214, 0.6); border-radius: 999px; padding: 0.08rem 0.6rem; font-size: 0.88rem; background: rgba(86, 156, 214, 0.10); white-space: nowrap; }
     .divider { border: none; border-top: 1px solid rgba(86, 95, 137, 0.5); margin: 0.5rem 0; }
     .menu-desc { margin-bottom: 0.5rem; color: var(--muted); font-size: 0.9rem; }
     .menu-desc-sm { color: var(--muted); font-size: 0.8rem; margin: 0.25rem 0; }
@@ -566,7 +594,7 @@
         <!-- Subtle dev helper for SW cache issues (can be removed later) -->
         <div style="margin-top: 0.5rem; text-align: center;">
           <a href="#" id="forceUpdateLink" style="font-size: 0.7rem; color: #888; text-decoration: underline;">Force reload latest version</a>
-          <span style="margin-left: 8px; font-size: 0.65rem; color: #f59e0b; background:#222; padding:1px 4px; border-radius:2px;">v62</span>
+          <span style="margin-left: 8px; font-size: 0.65rem; color: #f59e0b; background:#222; padding:1px 4px; border-radius:2px;">v63</span>
         </div>
       </div>
 

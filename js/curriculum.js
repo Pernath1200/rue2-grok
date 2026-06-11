@@ -89,6 +89,65 @@ export function renderDiagram(diagramData) {
     return html;
   }
 
+  // Decision: a vertical yes/no flowchart. steps = [{q, yes, no?}, ..., {end}]
+  // — "yes" answers immediately; "no" falls through to the next step unless it
+  // carries its own answer; {end} is the terminal answer.
+  if (diagramData.type === 'decision') {
+    const steps = diagramData.steps || [];
+    let html = '<div class="diagram">' + titleHtml + '<div class="diagram-decision">';
+    steps.forEach(step => {
+      if (step.end != null) {
+        html += '<div class="dd-end">' + esc(step.end) + '</div>';
+        return;
+      }
+      html += '<div class="dd-step"><div class="dd-q">' + esc(step.q || '') + '</div><div class="dd-branches">';
+      html += '<div class="dd-yes"><span class="dd-tag">yes</span> → <span class="dd-answer">' + esc(step.yes || '') + '</span></div>';
+      html += '<div class="dd-no"><span class="dd-tag">no</span> ' + (step.no ? '→ <span class="dd-answer">' + esc(step.no) + '</span>' : '↓') + '</div>';
+      html += '</div></div>';
+    });
+    html += '</div></div>';
+    return html;
+  }
+
+  // Examples: ✓/✗ sentence pairs. The wrong sentence keeps the app-wide
+  // strikethrough convention (same as worksheets and flipcharts).
+  if (diagramData.type === 'examples') {
+    const items = diagramData.items || [];
+    let html = '<div class="diagram">' + titleHtml + '<div class="diagram-examples">';
+    items.forEach(item => {
+      html += '<div class="dex-item">';
+      if (item.good) html += '<div class="dex-good">✓ ' + esc(item.good) + '</div>';
+      if (item.bad) html += '<div class="dex-bad">✗ <span class="intro-strike">' + esc(item.bad) + '</span></div>';
+      if (item.why) html += '<div class="dex-why">' + esc(item.why) + '</div>';
+      html += '</div>';
+    });
+    html += '</div></div>';
+    return html;
+  }
+
+  // Callout: small flagged box (style 'cz' = Czech contrastive note).
+  if (diagramData.type === 'callout') {
+    const isCz = diagramData.style === 'cz';
+    const label = diagramData.label || (isCz ? 'Czech note' : 'Tip');
+    return '<div class="diagram"><div class="diagram-callout ' + (isCz ? 'dc-cz' : 'dc-tip') + '">'
+      + '<span class="dc-label">' + esc(label) + '</span>'
+      + '<span class="dc-text">' + esc(diagramData.text || '') + '</span></div></div>';
+  }
+
+  // Chips: closed word-sets as scannable badges, optionally in labeled groups.
+  if (diagramData.type === 'chips') {
+    const groups = diagramData.groups || (diagramData.items ? [{ label: '', items: diagramData.items }] : []);
+    let html = '<div class="diagram">' + titleHtml + '<div class="diagram-chips">';
+    groups.forEach(g => {
+      html += '<div class="dch-group">';
+      if (g.label) html += '<span class="dch-label">' + esc(g.label) + '</span>';
+      (g.items || []).forEach(it => { html += '<span class="dch-chip">' + esc(it) + '</span>'; });
+      html += '</div>';
+    });
+    html += '</div></div>';
+    return html;
+  }
+
   return '';
 }
 
@@ -123,7 +182,9 @@ export function showIntroSection(index) {
   }
   document.getElementById('introTitle').textContent = sections[index].title || 'Introduction';
   const introHtml = renderIntroContentHtml(sections[index].content || '');
-  const diagramHtml = sections[index].diagram ? renderDiagram(sections[index].diagram) : '';
+  // A section may carry one `diagram` or an array `diagrams` (house style:
+  // lead line → visuals → micro-note).
+  const diagramHtml = [].concat(sections[index].diagrams || sections[index].diagram || []).map(renderDiagram).join('');
   const isOpenCloze = state.currentTopic && state.currentTopic.id === 'open_cloze';
   const isReportedSpeech = state.currentTopic && state.currentTopic.id === 'reported_speech';
   const isInfinitiveIng = state.currentTopic && state.currentTopic.id === 'infinitive_ing';

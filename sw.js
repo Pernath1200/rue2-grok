@@ -1,7 +1,7 @@
 /**
  * Bump CACHE_VERSION whenever this file changes so stale caches are dropped on activate.
  */
-var CACHE_VERSION = 'v62';  // v62 - one continuous Intro lesson (check + guided rounds), 2: Practice, real Continue button
+var CACHE_VERSION = 'v63';  // v63 - visual-first intros: decision/examples/callout/chips diagrams, bullet lists, showcase conversions
 var CACHE_NAME = 'rue2-' + CACHE_VERSION;
 
 var PRECACHE_URLS = [

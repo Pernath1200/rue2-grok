@@ -112,7 +112,24 @@ export function renderIntroContentHtml(str) {
       markers.push({ type: 'reflinkers', label: label });
       return '__ILINK_' + (markers.length - 1) + '__';
     });
-  let html = escapeAndBold(s).replace(/\n/g, '<br>');
+  // Lines starting "- " render as real list items; other lines keep <br>
+  // separation (no <br> straight after a list — the list carries its margin).
+  const lines = escapeAndBold(s).split('\n');
+  let html = '';
+  let list = null;
+  let prevWasText = false;
+  lines.forEach(function(line) {
+    const m = /^\s*-\s+(.*)$/.exec(line);
+    if (m) {
+      if (!list) list = [];
+      list.push('<li>' + m[1] + '</li>');
+      return;
+    }
+    if (list) { html += '<ul class="intro-list">' + list.join('') + '</ul>'; list = null; prevWasText = false; }
+    html += (prevWasText ? '<br>' : '') + line;
+    prevWasText = true;
+  });
+  if (list) html += '<ul class="intro-list">' + list.join('') + '</ul>';
   markers.forEach(function(m, i) {
     const token = '__ILINK_' + i + '__';
     if (m.type === 'topic') {

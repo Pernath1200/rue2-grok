@@ -96,15 +96,19 @@ test('journey: one continuous lesson — intro, check, then straight into guided
   await expect(page.locator('#introTitle')).not.toBeEmpty();
   await expect(page.locator('#introContent')).not.toBeEmpty();
 
-  // Advance through intro sections; the last one's button reads "Start test"
+  // Advance through intro sections; the last one's button reads "Start test".
+  // Visual-first house style: at least one section must render a diagram.
   let startedCheck = false;
+  let sawDiagram = false;
   for (let i = 0; i < 40; i++) {
+    if (await page.locator('#introContent .diagram').count() > 0) sawDiagram = true;
     const label = (await page.locator('#introNextBtn').textContent()).trim();
     await page.click('#introNextBtn');
     if (label === 'Start test') { startedCheck = true; break; }
     if (label === 'Menu') break; // topic with neither check nor practice — intro alone completes the lesson
   }
   expect(startedCheck, 'expected the intro to end in a short check quiz').toBe(true);
+  expect(sawDiagram, 'expected at least one intro section to render a diagram').toBe(true);
 
   await expect(page.locator('#quizScreen')).toBeVisible();
   const ending = await answerThroughQuiz(page);
