@@ -533,6 +533,78 @@ function main() {
 
   fs.writeFileSync(OUT_MD, md, 'utf8');
   console.log('Wrote ' + OUT_MD);
+
+  gateAgainstBaseline(report);
+}
+
+// --- Baseline ratchet ---
+// The heuristic checks flag suspects, not certainties; every flag in
+// audit_baseline.json has been human-triaged and accepted (false positive, or
+// already accommodated via accepted alternatives). The audit FAILS (exit 1)
+// only on flags that are not in the baseline — so CI guards against NEW
+// ambiguous/faulty questions without re-litigating reviewed ones.
+//
+//   node audit_questions.js                  → gate against the baseline
+//   node audit_questions.js --write-baseline → accept all current flags
+//
+// Structural checks (orphans, empty sets, duplicates, missing curricula,
+// invalid topic ids) are never baselined: they always fail when non-empty.
+const BASELINE_FILE = path.join(DIR, 'audit_baseline.json');
+const BASELINED_CHECKS = ['missing_alternative', 'missing_alternative_fixed', 'short_or_context_free', 'ambiguity'];
+const STRUCTURAL_CHECKS = ['orphaned_topics', 'missing_curriculum', 'empty_sets', 'duplicate_questions', 'invalid_topic_ids'];
+
+function flagKey(bucket, item) {
+  const text = (item.questionSnippet || '').trim().toLowerCase().replace(/\s+/g, ' ');
+  let h = 0;
+  for (let i = 0; i < text.length; i++) h = ((h << 5) - h) + text.charCodeAt(i) | 0;
+  return bucket + '|' + (item.topicOrSet || '') + '|' + (h >>> 0).toString(36);
+}
+
+function gateAgainstBaseline(report) {
+  const current = [];
+  BASELINED_CHECKS.forEach(bucket => {
+    (report[bucket] || []).forEach(item => current.push({ key: flagKey(bucket, item), bucket, item }));
+  });
+
+  if (process.argv.includes('--write-baseline')) {
+    const baseline = {};
+    current.forEach(({ key, item }) => { baseline[key] = (item.questionSnippet || '').slice(0, 80); });
+    fs.writeFileSync(BASELINE_FILE, JSON.stringify(baseline, null, 1), 'utf8');
+    console.log('Wrote ' + BASELINE_FILE + ' (' + current.length + ' triaged flags accepted)');
+    return;
+  }
+
+  let failed = false;
+
+  STRUCTURAL_CHECKS.forEach(bucket => {
+    const items = report[bucket] || [];
+    if (items.length > 0) {
+      failed = true;
+      console.error('AUDIT FAIL: ' + bucket + ' has ' + items.length + ' finding(s) — see audit_report.md');
+    }
+  });
+
+  let baseline = null;
+  try { baseline = JSON.parse(fs.readFileSync(BASELINE_FILE, 'utf8')); } catch (e) {}
+  if (!baseline) {
+    console.warn('No audit_baseline.json — heuristic flags are not gated. Run with --write-baseline after triage.');
+  } else {
+    const fresh = current.filter(({ key }) => !(key in baseline));
+    if (fresh.length > 0) {
+      failed = true;
+      console.error('AUDIT FAIL: ' + fresh.length + ' new heuristic flag(s) not in the triaged baseline:');
+      fresh.forEach(({ bucket, item }) => {
+        console.error('  [' + bucket + '] ' + (item.topicOrSet || '') + '/' + (item.setId || '') +
+          ' #' + item.questionIndex + ': ' + (item.questionSnippet || '').slice(0, 90));
+      });
+      console.error('Fix the question(s), or triage and re-run with --write-baseline.');
+    } else {
+      const stale = Object.keys(baseline).filter(k => !current.some(c => c.key === k)).length;
+      console.log('Audit gate: ' + current.length + ' known flags, 0 new' + (stale ? ' (' + stale + ' baseline entries no longer flagged — consider --write-baseline to prune)' : '') + '.');
+    }
+  }
+
+  if (failed) process.exitCode = 1;
 }
 
 main();
