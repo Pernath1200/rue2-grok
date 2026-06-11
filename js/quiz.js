@@ -1,6 +1,6 @@
 import state from './state.js';
 import { showScreen, showMenuPanel, fetchJSON, escapeAndBold, normalize, toTitleCase, shuffleArray } from './ui.js';
-import { STORAGE_KEY, MEMORY_KEY, REPORTED_QUESTIONS_KEY, loadScores, saveScore, saveMemoryBankEntry, getLastBest, questionHash, getReportedQuestions, getDueReviews } from './storage.js';
+import { STORAGE_KEY, MEMORY_KEY, REPORTED_QUESTIONS_KEY, loadScores, saveScore, saveMemoryBankEntry, getLastBest, questionHash, getReportedQuestions, getDueReviews, saveLastActivity } from './storage.js';
 import { renderScoreChart } from './ui.js';
 
 let _renderMenu = null;
@@ -38,6 +38,7 @@ export function startQuiz() {
   const max = (val === 'unlimited') ? questions.length : (parseInt(val, 10) || 20);
   state.currentQuestions = questions.slice(0, max);
   state.currentSetId = state.currentTopic.id;
+  saveLastActivity(state.currentTopic.id);
   state.currentSetTitle = (state.currentTopic.title || state.currentTopic.id) + ' (' + max + ' questions)';
   state.summary = max + ' questions from this topic (random order).';
   state.currentIndex = 0;
@@ -415,23 +416,33 @@ export function finishQuiz() {
   const isSpellingWithWrong = state.currentTopic && state.currentTopic.id === 'spelling' && state.wrongIndices.length > 0;
   const correctAnswersHtml = isSpellingWithWrong ? buildSpellingCorrectAnswersHtml() : '';
   if (state.coursePhase) {
-    document.getElementById('sectionCompleteTitle').textContent = state.coursePart === 1 ? 'Part 1 complete' : (state.currentSetTitle + ' – complete');
+    // One continuous lesson: check quiz → guided rounds. Work out what comes
+    // next (skipping empty rounds) and offer it as the single obvious step.
+    const lessonOrder = ['check'].concat(state.part2Order || []);
+    const practiceSections = (state.courseCurriculum && state.courseCurriculum.practice) || {};
+    let nextPhase = null;
+    for (let i = lessonOrder.indexOf(state.coursePhase) + 1; i < lessonOrder.length; i++) {
+      const s = practiceSections[lessonOrder[i]];
+      if (s && s.questions && s.questions.length > 0) { nextPhase = lessonOrder[i]; break; }
+    }
+    document.getElementById('sectionCompleteTitle').textContent =
+      state.coursePhase === 'check' ? 'Check complete' : (state.currentSetTitle + ' – complete');
     document.getElementById('sectionCompleteScore').textContent = 'Score: ' + state.score + ' / ' + state.currentQuestions.length;
     const sectionNextStepWrap = document.getElementById('sectionCompleteNextStepWrap');
     const sectionNextStepEl = document.getElementById('sectionCompleteNextStep');
     const sectionRetryWrap = document.getElementById('sectionCompleteRetryWrap');
     const sectionFurtherWrap = document.getElementById('sectionCompleteFurtherPracticeWrap');
-    if (state.coursePart === 1) {
-      sectionNextStepEl.textContent = 'Suggested next step: 2: Guided Practice';
+    if (nextPhase) {
+      const nextTitle = (practiceSections[nextPhase] && practiceSections[nextPhase].title) || nextPhase.replace(/_/g, ' ');
+      sectionNextStepEl.textContent = 'Next: ' + nextTitle;
       sectionNextStepWrap.classList.remove('hidden');
-      sectionRetryWrap.classList.toggle('hidden', state.wrongIndices.length === 0);
       sectionFurtherWrap.classList.add('hidden');
     } else {
       sectionNextStepWrap.classList.add('hidden');
       sectionNextStepEl.textContent = '';
-      sectionRetryWrap.classList.toggle('hidden', state.wrongIndices.length === 0);
       sectionFurtherWrap.classList.remove('hidden');
     }
+    sectionRetryWrap.classList.toggle('hidden', state.wrongIndices.length === 0);
     const sectionCorrectBlock = document.getElementById('sectionCompleteCorrectBlock');
     const sectionCorrectList = document.getElementById('sectionCompleteCorrectList');
     if (isSpellingWithWrong) {
@@ -442,8 +453,9 @@ export function finishQuiz() {
       sectionCorrectList.innerHTML = '';
     }
     document.getElementById('sectionCompleteScreen').classList.remove('hidden');
-    document.getElementById('sectionCompleteNextBtn').textContent = state.coursePart === 1 ? 'Menu' : (state.coursePart === 2 && state.part2Order[0] === state.coursePhase ? 'Menu' : (state.part2Order.indexOf(state.coursePhase) < state.part2Order.length - 1 ? 'Next section' : 'Menu'));
-    document.getElementById('sectionCompleteMainMenuBtn').classList.toggle('hidden', document.getElementById('sectionCompleteNextBtn').textContent === 'Menu');
+    document.getElementById('sectionCompleteNextBtn').textContent =
+      nextPhase ? (state.coursePhase === 'check' ? 'Start practice' : 'Next section') : 'Menu';
+    document.getElementById('sectionCompleteMainMenuBtn').classList.toggle('hidden', !nextPhase);
   } else {
     document.getElementById('resultScreen').classList.remove('hidden');
     document.getElementById('resultScore').textContent = `Score: ${state.score} / ${state.currentQuestions.length}`;

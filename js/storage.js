@@ -181,6 +181,18 @@ export function getReportedQuestions() {
   try { return JSON.parse(localStorage.getItem(REPORTED_QUESTIONS_KEY) || '[]'); } catch (e) { return []; }
 }
 
+// === Last activity ("Continue where I left off") ===
+export const LAST_ACTIVITY_KEY = 'rue2LastActivity';
+
+export function saveLastActivity(topicId) {
+  if (!topicId) return;
+  try { localStorage.setItem(LAST_ACTIVITY_KEY, JSON.stringify({ topicId, date: new Date().toISOString() })); } catch (e) {}
+}
+
+export function getLastActivity() {
+  try { return JSON.parse(localStorage.getItem(LAST_ACTIVITY_KEY) || 'null'); } catch (e) { return null; }
+}
+
 // === Progress portability (export / import as a JSON file) ===
 //
 // A student's whole state is four localStorage keys: quiz history, the memory
@@ -197,6 +209,7 @@ export function exportProgress() {
   data[MEMORY_KEY] = loadMemoryBank();
   data[REPORTED_QUESTIONS_KEY] = getReportedQuestions();
   data[THEME_KEY] = localStorage.getItem(THEME_KEY) || null;
+  data[LAST_ACTIVITY_KEY] = getLastActivity();
   return { format: PROGRESS_EXPORT_FORMAT, version: 1, exported: new Date().toISOString(), data };
 }
 
@@ -253,9 +266,12 @@ export function importProgress(envelope) {
   });
   localStorage.setItem(REPORTED_QUESTIONS_KEY, JSON.stringify(reported));
 
-  // Theme: the local choice wins if one was ever made.
+  // Theme and last activity: the local value wins if one exists.
   if (!localStorage.getItem(THEME_KEY) && typeof d[THEME_KEY] === 'string' && d[THEME_KEY]) {
     localStorage.setItem(THEME_KEY, d[THEME_KEY]);
+  }
+  if (!getLastActivity() && d[LAST_ACTIVITY_KEY] && d[LAST_ACTIVITY_KEY].topicId) {
+    saveLastActivity(d[LAST_ACTIVITY_KEY].topicId);
   }
 
   return {

@@ -1,6 +1,7 @@
-import state, { COURSE_ORDER, PART2_ORDER } from './state.js';
+import state, { PART2_ORDER } from './state.js';
 import { showScreen, showMenuPanel, fetchJSON, escapeAndBold, renderIntroContentHtml } from './ui.js';
 import { switchToReference } from './reference.js';
+import { saveLastActivity } from './storage.js';
 
 let _showQuestion = null;
 let _loadCurriculumData = null;
@@ -117,7 +118,7 @@ export function showIntroSection(index) {
   const sections = getCourseIntroSections();
   if (index >= sections.length) {
     document.getElementById('introScreen').classList.add('hidden');
-    if (state.coursePart === 1) startCourseSection('check');
+    if (state.coursePart === 1) startLessonAfterIntro();
     return;
   }
   document.getElementById('introTitle').textContent = sections[index].title || 'Introduction';
@@ -129,7 +130,8 @@ export function showIntroSection(index) {
   document.getElementById('introContent').innerHTML = '<div class="intro-section">' + introHtml + '</div>' + diagramHtml;
   const isLastSection = index >= sections.length - 1;
   const hasCheckQuestions = ((state.courseCurriculum && state.courseCurriculum.check && state.courseCurriculum.check.questions) || []).length > 0;
-  document.getElementById('introNextBtn').textContent = !isLastSection ? 'Next' : (hasCheckQuestions ? 'Start test' : 'Menu');
+  const lastLabel = hasCheckQuestions ? 'Start test' : (nextLessonPhaseAfter('check') ? 'Start practice' : 'Menu');
+  document.getElementById('introNextBtn').textContent = !isLastSection ? 'Next' : lastLabel;
   document.getElementById('introMainMenuBtn').classList.toggle('hidden', document.getElementById('introNextBtn').textContent === 'Menu');
   state.introSectionIndex = index;
   document.getElementById('introPrepositionsListWrap').classList.add('hidden');
@@ -204,12 +206,6 @@ export function startCourseSection(phase) {
       return;
     }
     questions = section.questions.slice();
-    if (state.coursePart === 2 && questions.length > 1) {
-      for (let i = questions.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [questions[i], questions[j]] = [questions[j], questions[i]];
-      }
-    }
     title = section.title || phase;
     state.currentSetId = 'course_' + phase;
   }
@@ -221,13 +217,8 @@ export function startCourseSection(phase) {
   state.isRetryRound = false;
   const warmupEl = document.getElementById('quizWarmupLine');
   if (warmupEl) {
-    if (state.coursePart === 2 && state.examMode && phase === 'guidance') {
-      warmupEl.textContent = 'Warm-up: choose the answer. In 3 (Further Practice) you will type the word yourself.';
-      warmupEl.classList.remove('hidden');
-    } else {
-      warmupEl.textContent = '';
-      warmupEl.classList.add('hidden');
-    }
+    warmupEl.textContent = '';
+    warmupEl.classList.add('hidden');
   }
   showScreen('quizScreen');
   document.body.classList.add('viewing-content');
@@ -236,58 +227,45 @@ export function startCourseSection(phase) {
   _showQuestion();
 }
 
+// The Intro lesson is one continuous journey: intro sections → check quiz →
+// the guided rounds (curriculum practice_order), with the section-complete
+// screen as the natural pause between rounds. Empty rounds are skipped.
+export function lessonOrder() {
+  return ['check'].concat(state.part2Order || []);
+}
+
+function nextLessonPhaseAfter(phase) {
+  const order = lessonOrder();
+  const practice = (state.courseCurriculum && state.courseCurriculum.practice) || {};
+  for (let i = order.indexOf(phase) + 1; i < order.length; i++) {
+    const s = practice[order[i]];
+    if (s && s.questions && s.questions.length > 0) return order[i];
+  }
+  return null;
+}
+
 export function advanceCourseToNext() {
   document.getElementById('sectionCompleteScreen').classList.add('hidden');
-  if (state.coursePart === 1) {
+  const nextPhase = state.coursePart ? nextLessonPhaseAfter(state.coursePhase) : null;
+  if (!nextPhase) {
     state.coursePart = null;
     state.coursePhase = null;
     _renderMenu();
     return;
   }
-  const order = state.coursePart === 2 ? state.part2Order : COURSE_ORDER;
-  const idx = order.indexOf(state.coursePhase);
-  const nextPhase = (state.coursePart === 2 && idx === 0) ? null : (idx >= 0 && idx < order.length - 1 ? order[idx + 1] : null);
-  const stoppedAfterFirstSection = (state.coursePart === 2 && idx === 0);
-  if (!nextPhase) {
-    state.coursePhase = null;
-    if (state.coursePart === 2) {
-      state.coursePart = null;
-      if (state.examMode === 'open_cloze') {
-        showScreen('menuScreen');
-        showMenuPanel('menuOpenCloze');
-        return;
-      }
-      if (state.examMode === 'word_formation') {
-        showScreen('menuScreen');
-        showMenuPanel('menuWordFormation');
-        return;
-      }
-      if (state.examMode === 'sentence_transformation') {
-        showScreen('menuScreen');
-        showMenuPanel('menuSentenceTransform');
-        return;
-      }
-      document.getElementById('resultScreen').classList.remove('hidden');
-      document.getElementById('resultScore').textContent = 'Part 2 complete! Well done.';
-      const sectionsToName = stoppedAfterFirstSection ? state.part2Order.slice(0, 1) : state.part2Order;
-      const sectionNames = sectionsToName.map(function(k) {
-        const s = state.courseCurriculum.practice && state.courseCurriculum.practice[k];
-        return (s && s.title) ? s.title.replace(new RegExp('^Practice: Gap fill –?\\s*', 'i'), '').trim() : k.replace(/_/g, ' ');
-      });
-      document.getElementById('ruleSummary').textContent = 'You have finished Practice: ' + sectionNames.join(', ') + '.';
-      document.getElementById('resultNextStep').textContent = 'Suggested next step: 3: Further Practice';
-      document.getElementById('resultNextStepWrap').classList.remove('hidden');
-      document.getElementById('retryWrongBtn').classList.add('hidden');
-    }
-    return;
-  }
-  const practice = state.courseCurriculum.practice || {};
-  const section = practice[nextPhase];
-  if (!section || !section.questions || section.questions.length === 0) {
-    advanceCourseToNext();
-    return;
-  }
   startCourseSection(nextPhase);
+}
+
+// Where the lesson goes when the intro sections run out: the check quiz if the
+// topic has one, otherwise straight to the first guided round, otherwise menu.
+export function startLessonAfterIntro() {
+  const cc = state.courseCurriculum || {};
+  if ((((cc.check || {}).questions) || []).length > 0) { startCourseSection('check'); return; }
+  const first = nextLessonPhaseAfter('check');
+  if (first) { startCourseSection(first); return; }
+  state.coursePart = null;
+  state.coursePhase = null;
+  _renderMenu();
 }
 
 export async function startPart1() {
@@ -297,30 +275,14 @@ export async function startPart1() {
     var msg = window.location.protocol === 'file:' ? 'This app must run from a local server. Double-click start_server.bat in this folder, or run: python -m http.server 8080' : ('Could not load curriculum. ' + e.message);
     alert(msg); return;
   }
+  saveLastActivity(state.currentTopic && state.currentTopic.id);
   state.writingTipsIntroActive = false;
   state.coursePart = 1;
+  state.part2Order = state.courseCurriculum.practice_order || PART2_ORDER;
   showScreen('introScreen');
   document.body.classList.add('viewing-content');
   state.introSectionIndex = 0;
   showIntroSection(0);
-}
-
-export async function startPart2() {
-  if (!_hasValidTopicSelected()) { alert('Please choose a topic first.'); return; }
-  _syncCurrentTopicFromDropdown();
-  try { await _loadCurriculumData(); } catch (e) {
-    var msg = window.location.protocol === 'file:' ? 'This app must run from a local server. Double-click start_server.bat in this folder, or run: python -m http.server 8080' : ('Could not load curriculum. ' + e.message);
-    alert(msg); return;
-  }
-  state.coursePart = 2;
-  state.part2Order = state.courseCurriculum.practice_order || PART2_ORDER;
-  showScreen('menuScreen');
-  if (!state.part2Order.length) { alert('No guided practice questions for this topic yet.'); _renderMenu(); return; }
-  var practice = state.courseCurriculum.practice || {};
-  var first = state.part2Order[0];
-  var section = practice[first];
-  if (!section || !section.questions || section.questions.length === 0) { alert('No guided practice questions for this topic yet.'); _renderMenu(); return; }
-  startCourseSection(first);
 }
 
 export async function startDiagnostic(num) {

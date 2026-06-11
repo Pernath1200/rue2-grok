@@ -1,7 +1,7 @@
 /**
  * Bump CACHE_VERSION whenever this file changes so stale caches are dropped on activate.
  */
-var CACHE_VERSION = 'v61';  // v61 - progress portability: export/import progress as a JSON file
+var CACHE_VERSION = 'v62';  // v62 - one continuous Intro lesson (check + guided rounds), 2: Practice, real Continue button
 var CACHE_NAME = 'rue2-' + CACHE_VERSION;
 
 var PRECACHE_URLS = [

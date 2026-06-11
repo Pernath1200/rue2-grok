@@ -86,7 +86,7 @@ test('reference button on home menu', async ({ page }) => {
 
 // ── Core student journeys ───────────────────────────────────────────────────
 
-test('journey: complete a lesson section (Part 1: intro + check quiz)', async ({ page }) => {
+test('journey: one continuous lesson — intro, check, then straight into guided practice', async ({ page }) => {
   const errors = trackErrors(page);
   await page.goto('/', { waitUntil: 'networkidle' });
 
@@ -102,17 +102,42 @@ test('journey: complete a lesson section (Part 1: intro + check quiz)', async ({
     const label = (await page.locator('#introNextBtn').textContent()).trim();
     await page.click('#introNextBtn');
     if (label === 'Start test') { startedCheck = true; break; }
-    if (label === 'Menu') break; // topic without check questions — intro alone completes Part 1
+    if (label === 'Menu') break; // topic with neither check nor practice — intro alone completes the lesson
   }
   expect(startedCheck, 'expected the intro to end in a short check quiz').toBe(true);
 
   await expect(page.locator('#quizScreen')).toBeVisible();
   const ending = await answerThroughQuiz(page);
   expect(ending).toBe('sectionComplete');
-  await expect(page.locator('#sectionCompleteTitle')).toHaveText('Part 1 complete');
+  await expect(page.locator('#sectionCompleteTitle')).toHaveText('Check complete');
   await expect(page.locator('#sectionCompleteScore')).toContainText(/Score: \d+ \/ \d+/);
 
+  // The check flows on into the first guided round — one unbroken journey
+  await expect(page.locator('#sectionCompleteNextBtn')).toHaveText('Start practice');
+  await page.click('#sectionCompleteNextBtn');
+  await expect(page.locator('#quizScreen')).toBeVisible();
+  const guidedEnding = await answerThroughQuiz(page);
+  expect(guidedEnding).toBe('sectionComplete');
+  await expect(page.locator('#sectionCompleteTitle')).toContainText('– complete');
+
   expect(errors).toEqual([]);
+});
+
+test('journey: Continue picks up the last topic', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('#continueLastBtn')).toHaveText('Continue where I left off');
+
+  await selectTopic(page, 'Modal Verbs');
+  await page.click('#startPart1Btn');
+  await expect(page.locator('#introScreen')).toBeVisible({ timeout: 10000 });
+
+  // Leave mid-lesson; the home screen should now offer to resume the topic
+  await page.goto('/');
+  await expect(page.locator('#continueLastBtn')).toHaveText('Continue: Modal Verbs');
+  await page.click('#continueLastBtn');
+  await expect(page.locator('#menuTopicSelect')).toBeVisible();
+  await expect(page.locator('#startPart1Btn')).toBeVisible();
+  await expect(page.locator('#topicSelect option:checked')).toHaveText(/Modal Verbs/);
 });
 
 test('journey: take a practice quiz and see results', async ({ page }) => {

@@ -1,7 +1,7 @@
 import state from './state.js';
-import { STORAGE_KEY, MEMORY_KEY, REPORTED_QUESTIONS_KEY, migrateStorageKeys, loadScores, loadMemoryBank, saveMemoryBankEntry, saveScore, getLastBest, getProgressStats, getTopicCompletionMap, getReportedQuestions, questionHash, getDueReviews, exportProgress, importProgress } from './storage.js';
+import { STORAGE_KEY, MEMORY_KEY, REPORTED_QUESTIONS_KEY, migrateStorageKeys, loadScores, loadMemoryBank, saveMemoryBankEntry, saveScore, getLastBest, getProgressStats, getTopicCompletionMap, getReportedQuestions, questionHash, getDueReviews, exportProgress, importProgress, getLastActivity, saveLastActivity } from './storage.js';
 import { DATA_VERSION, SCREEN_IDS, MENU_PANEL_IDS, showScreen, showMenuPanel, openOverlay, closeOverlay, escapeAndBold, normalize, toTitleCase, shuffleArray, getBaseUrl, fetchJSON, renderScoreChart } from './ui.js';
-import { registerCallbacks as registerCurrCallbacks, renderDiagram, showIntroSection, showWritingTipsIntroSection, startWritingTipsQuiz, startCourseSection, advanceCourseToNext, startPart1, startPart2, startDiagnostic, startMixedPractice, getCourseIntroSections } from './curriculum.js';
+import { registerCallbacks as registerCurrCallbacks, renderDiagram, showIntroSection, showWritingTipsIntroSection, startWritingTipsQuiz, startCourseSection, advanceCourseToNext, startLessonAfterIntro, startPart1, startDiagnostic, startMixedPractice, getCourseIntroSections } from './curriculum.js';
 import { registerCallbacks as registerQuizCallbacks, startQuiz, startWeakSpotsQuiz, startReviewQuiz, hasValidTopicSelected, syncCurrentTopicFromDropdown, getTopicTitle, getTopicLabelForDisplay, addReportedQuestion, addReportedIntroCard, getReportedReasonLabel, renderReportedQuestionsList, escapeHtml, cleanQuestionDisplay, showQuestion, submitAnswer, nextQuestion, finishQuiz, retryWrong } from './quiz.js';
 import { registerCallbacks as registerRefCallbacks, renderPrepositionsListContent, prepositionsListAsText, showPrepositionsList, hidePrepositionsList, renderPhrasalVerbsDictionaryContent, phrasalVerbsDictionaryAsText, showPhrasalVerbsDictionary, hidePhrasalVerbsDictionary, renderReferenceIndex, showReferenceIndexFromIntro, renderReferencePrepositionsContent, showReferencePrepositions, renderReferenceOpenClozeContent, showReferenceOpenCloze, showOpenClozeRefFromIntro, showFixedPhrasesRefFromIntro, showReportedSpeechRefFromIntro, showInfinitiveIngRefFromIntro, showConjunctionsLinkersRefFromIntro, renderReferenceWordFormationContent, showReferenceWordFormation, renderReferenceConjunctionsLinkersContent, showReferenceConjunctionsLinkers, renderReferenceReportedSpeechContent, showReferenceReportedSpeech, renderReferenceIrregularVerbsContent, showReferenceIrregularVerbs, renderReferenceFixedPhrasesContent, showReferenceFixedPhrases, renderReferenceDependentSection, showReferenceDependentSection, dependentPrepositionsSectionAsText, renderReferenceCountableUncountableContent, showReferenceCountableUncountable, countableUncountableAsText, renderReferencePhrasalVerbsContent, showReferencePhrasalVerbs, renderReferenceInfinitiveIngContent, referenceAsText, showReference, showReferenceInfinitiveIng, renderReferenceModalVerbsContent, showReferenceModalVerbs, hideReference, onReferenceBackClick } from './reference.js';
 
@@ -46,9 +46,10 @@ const NAV = {
       if (id === 'menuTreeOverview' && typeof renderSimpleTreeOverview === 'function') {
         renderSimpleTreeOverview();
       }
-      // The home panel's review count can change after any quiz
+      // The home panel's review count and continue target can change after any quiz
       if (id === 'menuMain' && typeof refreshReviewButton === 'function') {
         refreshReviewButton();
+        refreshContinueButton();
       }
     }
 
@@ -88,6 +89,7 @@ const NAV = {
       const backBtn = document.getElementById('navBackBtn');
       if (backBtn) backBtn.style.display = 'none';
       if (typeof refreshReviewButton === 'function') refreshReviewButton();
+      if (typeof refreshContinueButton === 'function') refreshContinueButton();
     }
 
     const backBtn = document.getElementById('navBackBtn');
@@ -333,6 +335,7 @@ function openPracticeEntryPoint(topicId, contextLabel) {
   const idx = (state.topics || []).findIndex(t => t.id === topicId);
   if (idx === -1) { deepLinkFailSoft('Topic "' + topicId + '" was not found.'); return; }
   state.currentTopic = state.topics[idx];
+  saveLastActivity(topicId);
   applyTopic();
   NAV.navigate('menuTopicSelect', { context: contextLabel || 'Topics' });
   const sel = document.getElementById('topicSelect');
@@ -428,6 +431,7 @@ function showMainMenu() {
   showMenuPanel('menuMain');
   updateNavContext('');
   refreshReviewButton();
+  refreshContinueButton();
 
   // No point showing Back on the very first screen
   const backBtn = document.getElementById('navBackBtn');
@@ -457,17 +461,6 @@ async function openTopicIntroFromResults(topicId) {
 try {
 document.getElementById('startBtn').addEventListener('click', startQuiz);
 document.getElementById('startPart1Btn').addEventListener('click', startPart1);
-document.getElementById('startPart2Btn').addEventListener('click', async () => {
-  // "2: Multiple Choice" path — enforce the documented 10-question limit for predictability
-  state._directMCLaunch = true;
-  await startPart2();
-  // Post-process: enforce limit + update title for honest progress display
-  if (state._directMCLaunch && state.currentQuestions && state.currentQuestions.length > 10) {
-    state.currentQuestions = state.currentQuestions.slice(0, 10);
-    state.currentSetTitle = (state.currentTopic?.title || state.currentTopic?.id || 'Topic') + ' — 10 MC questions';
-  }
-  state._directMCLaunch = false;
-});
 document.getElementById('openPracticeSetupBtn').addEventListener('click', () => {
   if (!hasValidTopicSelected()) {
     alert('Please choose a topic first.');
@@ -479,7 +472,7 @@ document.getElementById('openPracticeSetupBtn').addEventListener('click', () => 
   const topicEl = document.getElementById('practiceSetupTopic');
   if (topicEl) {
     const baseTitle = state.currentTopic ? toTitleCase(state.currentTopic.title || state.currentTopic.id) : '';
-    topicEl.textContent = baseTitle ? ('3: Further Practice – ' + baseTitle) : '3: Further Practice';
+    topicEl.textContent = baseTitle ? ('2: Practice – ' + baseTitle) : '2: Practice';
   }
 });
 document.getElementById('practiceSetupBackBtn').addEventListener('click', () => {
@@ -492,7 +485,6 @@ document.getElementById('openTopicSelectBtn').addEventListener('click', () => {
 // Keyboard support on topic selection screen
 const topicActionButtons = [
   'startPart1Btn',
-  'startPart2Btn',
   'openPracticeSetupBtn'
 ].map(id => document.getElementById(id)).filter(Boolean);
 
@@ -635,20 +627,12 @@ document.getElementById('introNextBtn').addEventListener('click', () => {
     showIntroSection(state.introSectionIndex + 1);
   } else {
     document.getElementById('introScreen').classList.add('hidden');
-    if (state.coursePart === 1) {
-      const checkQuestions = (state.courseCurriculum && state.courseCurriculum.check && state.courseCurriculum.check.questions) || [];
-      if (checkQuestions.length > 0) startCourseSection('check');
-      else renderMenu();
-    }
+    if (state.coursePart === 1) startLessonAfterIntro();
   }
 });
 document.getElementById('sectionCompleteNextBtn').addEventListener('click', advanceCourseToNext);
 document.getElementById('sectionCompleteBackBtn').addEventListener('click', renderMenu);
 document.getElementById('sectionCompleteMainMenuBtn').addEventListener('click', showMainMenu);
-document.getElementById('sectionCompleteGuidedPracticeBtn').addEventListener('click', () => {
-  document.getElementById('sectionCompleteScreen').classList.add('hidden');
-  startPart2();
-});
 document.getElementById('sectionCompleteRetryWrongBtn').addEventListener('click', () => {
   const toRetry = state.wrongIndices.map(i => state.currentQuestions[i]);
   state.currentQuestions = toRetry;
@@ -1332,10 +1316,27 @@ function renderSimpleTreeOverview() {
 
 }
 
-// Quick placeholders for the new buttons (we can flesh these out)
+// "Continue where I left off" — resumes the last topic a session was started
+// in (recorded by startPart1/startQuiz/openPracticeEntryPoint). Falls back to
+// the topic list for brand-new students.
+function lastActivityTopic() {
+  const last = getLastActivity();
+  return (last && (state.topics || []).find(t => t.id === last.topicId)) || null;
+}
+
+function refreshContinueButton() {
+  const btn = document.getElementById('continueLastBtn');
+  if (!btn) return;
+  const topic = lastActivityTopic();
+  btn.textContent = topic ? 'Continue: ' + toTitleCase(topic.title || topic.id) : 'Continue where I left off';
+}
+
 document.getElementById('continueLastBtn')?.addEventListener('click', () => {
-  // For now, just open the topic list as a reasonable default
-  showMenuPanel('menuTopicSelect');
+  const topic = lastActivityTopic();
+  if (!topic) { showMenuPanel('menuTopicSelect'); return; }
+  // Route via the shareable hash so the dropdown, menu and history all agree
+  if (window.location.hash === '#topic/' + topic.id) routeHash();
+  else window.location.hash = 'topic/' + topic.id;
 });
 
 document.getElementById('reviewDueBtn')?.addEventListener('click', () => {

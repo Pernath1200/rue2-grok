@@ -566,7 +566,7 @@
         <!-- Subtle dev helper for SW cache issues (can be removed later) -->
         <div style="margin-top: 0.5rem; text-align: center;">
           <a href="#" id="forceUpdateLink" style="font-size: 0.7rem; color: #888; text-decoration: underline;">Force reload latest version</a>
-          <span style="margin-left: 8px; font-size: 0.65rem; color: #f59e0b; background:#222; padding:1px 4px; border-radius:2px;">v61</span>
+          <span style="margin-left: 8px; font-size: 0.65rem; color: #f59e0b; background:#222; padding:1px 4px; border-radius:2px;">v62</span>
         </div>
       </div>
 
@@ -613,8 +613,7 @@
         <select id="topicSelect" style="margin-bottom: 0.5rem;" title="Choose a grammar topic"></select>
         <div id="topicSearchResults" class="hidden" style="background:#111; border:1px solid #555; border-radius:6px; max-height:220px; overflow:auto; width:100%; margin: 4px 0 8px; font-size:0.85rem;"></div>
         <button type="button" id="startPart1Btn" class="secondary">1: Intro</button>
-        <button type="button" id="startPart2Btn" class="secondary">2: Guided Practice</button>
-        <button type="button" id="openPracticeSetupBtn" class="secondary">3: Further Practice</button>
+        <button type="button" id="openPracticeSetupBtn" class="secondary">2: Practice</button>
 
         <div class="util-bar" style="margin-top: 0.5rem;">
           <button type="button" id="topicSelectBackBtn" class="secondary">← Back</button>
@@ -721,12 +720,11 @@
           <button type="button" id="sectionCompleteRetryWrongBtn" class="secondary">Retry wrong answers</button>
         </div>
         <div id="sectionCompleteFurtherPracticeWrap" class="hidden" style="margin-top: 0.75rem;">
-          <p id="sectionCompleteFurtherPracticeText" style="margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--muted);">Next: do more practice.</p>
-          <button type="button" id="sectionCompleteFurtherPracticeBtn" class="secondary">3: Further Practice</button>
+          <p id="sectionCompleteFurtherPracticeText" style="margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--muted);">Lesson complete — now make it stick with mixed practice.</p>
+          <button type="button" id="sectionCompleteFurtherPracticeBtn" class="secondary">2: Practice</button>
         </div>
         <div id="sectionCompleteNextStepWrap" class="hidden" style="margin-top: 0.75rem;">
           <p id="sectionCompleteNextStep" style="margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--muted);"></p>
-          <button type="button" id="sectionCompleteGuidedPracticeBtn" class="secondary">2: Guided Practice</button>
         </div>
         <div id="sectionCompleteCorrectBlock" class="hidden" style="margin-top: 1rem;">
           <h3 style="font-size: 1rem; color: var(--accent); margin-bottom: 0.5rem;">Correct spellings</h3>
@@ -752,7 +750,7 @@
         </div>
         <div id="resultNextStepWrap" class="hidden" style="margin-top: 0.75rem;">
           <p id="resultNextStep" style="margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--muted);"></p>
-          <button type="button" id="resultFurtherPracticeBtn" class="secondary">3: Further Practice</button>
+          <button type="button" id="resultFurtherPracticeBtn" class="secondary">2: Practice</button>
         </div>
         <div class="summary" id="ruleSummary"></div>
         <div id="wrongAnswersCorrectBlock" class="hidden" style="margin-top: 1rem;">
