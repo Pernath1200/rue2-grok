@@ -4,7 +4,30 @@
     "sections": [
       {
         "title": "What conditionals do (core logic)",
-        "content": "Conditionals link two clauses — **if X, then Y** — and the **pair of tenses** on either side of *if* tells the listener how **real** or **unreal** the situation is.\n\n**Why it matters (roots-first)**: Conditionals sit at the heart of the Clause Linking root (#4 in the Tree Model) — they are the most powerful clause-linker English has. They also pull in the Verb Phrase root, because each conditional type uses a specific tense combination. Master the four tense-pairings and you can speculate, hypothesise, regret, warn, promise, and negotiate — all the high-stakes moves in conversation and writing.\n\n**Two simple rules** that solve most errors:\n- **No *will* in an if-clause for the first conditional.** *If it rains* — not *if it will rain*.\n- **No *would* in an if-clause for the second / third.** *If I had time* — not *if I would have time*.\n\n**Czech-speaker note**: *kdyby* covers both second and third conditional in Czech. In English you must pick: past tense for present/future hypotheticals (*if I had…*) vs past perfect for past hypotheticals (*if I had had…*). Choosing the wrong one is the #1 conditional error.",
+        "content": "Conditionals link two clauses — **if X, then Y** — and the tense pair around *if* tells the listener how **real** or **unreal** it is.\n- The most powerful clause-linker English has — heart of the **Clause Linking** root (#4 in the Tree Model), pulling in the **Verb Phrase** root: each type uses a specific tense combination.\n- Master the four tense-pairings and you can speculate, hypothesise, regret, warn, promise and negotiate — the high-stakes moves in conversation and writing.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "title": "Two simple rules that solve most errors",
+            "items": [
+              {
+                "good": "If it rains…",
+                "bad": "If it will rain…",
+                "why": "no *will* in an if-clause for the first conditional"
+              },
+              {
+                "good": "If I had time…",
+                "bad": "If I would have time…",
+                "why": "no *would* in an if-clause for the second / third"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "*kdyby* covers both second and third conditional in Czech. In English you must pick: **past tense** for present/future hypotheticals (*if I had…*) vs **past perfect** for past hypotheticals (*if I had had…*). Choosing the wrong one is the #1 conditional error."
+          }
+        ],
         "root_ids": [
           "A2.conditionals.zero_first",
           "B1.conditionals.second",
@@ -14,48 +37,87 @@
       },
       {
         "title": "The four types at a glance",
-        "content": "A single table is worth a hundred bullet points here. Learn the **four tense-pairings** and the **use** that goes with each — everything else is detail.\n\n**Why it matters**: When you hear or write *If + (tense)…*, the tense alone signals the speaker's stance toward reality. Wrong tense pair = wrong meaning, not just wrong grammar.",
-        "diagram": {
-          "type": "table",
-          "title": "The four conditional types",
-          "headers": [
-            "Type",
-            "If-clause",
-            "Main clause",
-            "Use",
-            "Example"
-          ],
-          "rows": [
-            [
-              "**Zero**",
-              "if + present simple",
-              "present simple",
-              "Facts, general truths",
-              "If you heat ice, it **melts**."
+        "content": "Learn the **four tense-pairings** and the **use** that goes with each — everything else is detail.\nThe tense pair alone signals the speaker's stance toward reality: wrong tense pair = wrong **meaning**, not just wrong grammar.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "The four conditional types",
+            "headers": [
+              "Type",
+              "If-clause",
+              "Main clause",
+              "Use",
+              "Example"
             ],
-            [
-              "**First**",
-              "if + present simple",
-              "will + base",
-              "Real future possibility",
-              "If it **rains**, I'**ll stay** at home."
-            ],
-            [
-              "**Second**",
-              "if + past simple",
-              "would + base",
-              "Unreal / hypothetical present or future",
-              "If I **had** time, I **would help** you."
-            ],
-            [
-              "**Third**",
-              "if + past perfect",
-              "would have + past participle",
-              "Unreal past (didn't happen)",
-              "If I **had known**, I **would have told** you."
+            "rows": [
+              [
+                "**Zero**",
+                "if + present simple",
+                "present simple",
+                "Facts, general truths",
+                "If you heat ice, it **melts**."
+              ],
+              [
+                "**First**",
+                "if + present simple",
+                "will + base",
+                "Real future possibility",
+                "If it **rains**, I'**ll stay** at home."
+              ],
+              [
+                "**Second**",
+                "if + past simple",
+                "would + base",
+                "Unreal / hypothetical present or future",
+                "If I **had** time, I **would help** you."
+              ],
+              [
+                "**Third**",
+                "if + past perfect",
+                "would have + past participle",
+                "Unreal past (didn't happen)",
+                "If I **had known**, I **would have told** you."
+              ]
             ]
-          ]
-        },
+          }
+        ],
+        "root_ids": [
+          "A2.conditionals.zero_first",
+          "B1.conditionals.second",
+          "B2.conditionals.third"
+        ],
+        "cefr_level": "B1"
+      },
+      {
+        "title": "Which conditional do I need?",
+        "content": "Ask the questions in order — the first *yes* gives your type.\n*If I see him, I'll tell him* = First (one-off future event); *if you press this button, the light comes on* = Zero (general law of behaviour).",
+        "diagrams": [
+          {
+            "type": "decision",
+            "title": "Choosing the type",
+            "steps": [
+              {
+                "q": "A general law of nature / behaviour — always true?",
+                "yes": "Zero: if + present, present"
+              },
+              {
+                "q": "A specific, real future possibility?",
+                "yes": "First: if + present, will + base"
+              },
+              {
+                "q": "Imaginary / contrary to fact right now?",
+                "yes": "Second: if + past simple, would + base"
+              },
+              {
+                "q": "Unreal past — it didn't happen?",
+                "yes": "Third: if + past perfect, would have + past participle"
+              },
+              {
+                "end": "Condition and result in different time-frames → Mixed conditional"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.conditionals.zero_first",
           "B1.conditionals.second",
@@ -65,7 +127,36 @@
       },
       {
         "title": "Real conditionals — Zero & First",
-        "content": "The **real** conditionals describe situations the speaker treats as **actually possible** or **factually true**.\n\n**Why it matters**: These two cover everyday talk about cause-and-effect, plans, warnings, and instructions. They are also the foundation — get these solid before moving to the unreal types.\n\n**Contrast — Zero vs First**:\n- **Zero** (general truth, always-true cause-and-effect): *If you **heat** water to 100°, it **boils**.* / *If you **mix** red and blue, you **get** purple.* — Both clauses in **present**.\n- **First** (specific real future possibility): *If it **rains** tomorrow, I'**ll stay** home.* / *If you **finish** early, **call** me.* — Present in the if-clause, **will + base** (or imperative) in the main clause.\n\n**Czech-speaker trap**: Don't put *will* in the if-clause. **Wrong**: *If it will rain…* **Right**: *If it **rains**, I will stay.* Czech uses *bude pršet* (future) inside *jestli/když*; English does not.\n\n**Zero or First?** When the result is a general law of nature/behaviour → Zero. When it's a one-off future event → First. (*If I see him, I'll tell him* = First; *If you press this button, the light comes on* = Zero.)",
+        "content": "The **real** conditionals treat the situation as actually possible or factually true — everyday cause-and-effect, plans, warnings, instructions.\nThey are the foundation — get these solid before moving to the unreal types.",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "title": "Zero vs First",
+            "left": {
+              "title": "Zero — general truth",
+              "points": [
+                "always-true cause-and-effect",
+                "both clauses in **present**",
+                "If you **heat** water to 100°, it **boils**.",
+                "If you **mix** red and blue, you **get** purple."
+              ]
+            },
+            "right": {
+              "title": "First — real future",
+              "points": [
+                "specific one-off future possibility",
+                "if + present; **will + base** (or imperative) in the main clause",
+                "If it **rains** tomorrow, I'**ll stay** home.",
+                "If you **finish** early, **call** me."
+              ]
+            }
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Don't put *will* in the if-clause. Czech uses the future (*bude pršet*) inside *jestli/když*; English does not. Say *If it **rains**, I will stay* — never *if it will rain*."
+          }
+        ],
         "root_ids": [
           "A2.conditionals.zero_first"
         ],
@@ -73,7 +164,75 @@
       },
       {
         "title": "Unreal present — Second conditional",
-        "content": "**If + past simple, would + base.** The past tense doesn't mean past time here — it signals **distance from reality**. The situation is **imaginary** or **contrary to fact** right now.\n\n**Why it matters**: This is the workhorse for speculation, advice, daydreams, and polite suggestion — *If I were you…*, *If I had a million crowns…*, *If we lived in Italy…* Exam tasks (sentence transformation, CAE/FCE Use of English) lean on it heavily.\n\n**Contrast**:\n- *If I **had** more time, I **would help** you.* — I don't have time (now); helping is hypothetical.\n- *If we **lived** in Prague, we **would see** each other more.* — We don't live there.\n\n**Formal *were* for all persons**: *If I **were** you, I **would apologise**.* / *If he **were** here, he **would explain**.* In informal speech you'll hear *was*, but exams and writing expect *were*.\n\n**Czech-speaker traps**:\n- **Don't translate *kdybych měl* literally.** **Wrong**: *If I would have time…* **Right**: *If I **had** time, I would help.* Past simple in the if-clause, never *would*.\n- The English past tense after *if* is **not** a real past — it's the unreal-marker. *If I knew* = *Kdybych věděl*, not *Když jsem věděl*.",
+        "content": "**If + past simple, would + base.** The past doesn't mean past time — it signals **distance from reality**: imaginary or contrary to fact now.\nWorkhorse phrases: *If I were you…*, *If I had a million crowns…*, *If we lived in Italy…* Exam tasks (sentence transformation, CAE/FCE Use of English) lean on it heavily.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "items": [
+              {
+                "label": "Pattern",
+                "formula": "If + past simple → would + base"
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "If I had more time, I would help you.",
+                "why": "I don't have time (now); helping is hypothetical"
+              },
+              {
+                "good": "If we lived in Prague, we would see each other more.",
+                "why": "we don't live there"
+              }
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "What it's for",
+            "items": [
+              "speculation",
+              "advice",
+              "daydreams",
+              "polite suggestion"
+            ]
+          }
+        ],
+        "root_ids": [
+          "B1.conditionals.second"
+        ],
+        "cefr_level": "B1"
+      },
+      {
+        "title": "Second conditional — *were* & Czech traps",
+        "content": "Formal English uses **were** for all persons in the if-clause — and never *would* after *if*.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "If I were you, I would apologise.",
+                "bad": "If I was you, I would apologise.",
+                "why": "formal *were* for all persons — you'll hear *was* in informal speech, but exams and writing expect *were*"
+              },
+              {
+                "good": "If he were here, he would explain.",
+                "why": "*were* even with he/she/it"
+              },
+              {
+                "good": "If I had time, I would help.",
+                "bad": "If I would have time, I would help.",
+                "why": "don't translate *kdybych měl* literally — past simple in the if-clause, never *would*"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "The English past tense after *if* is **not** a real past — it's the unreal-marker. *If I knew* = *Kdybych věděl*, not *Když jsem věděl*."
+          }
+        ],
         "root_ids": [
           "B1.conditionals.second"
         ],
@@ -81,7 +240,69 @@
       },
       {
         "title": "Unreal past — Third conditional",
-        "content": "**If + past perfect, would have + past participle.** For situations in the **past that did not happen** — regrets, counterfactuals, alternative histories.\n\n**Why it matters**: Every time you say *if only*, *I should have*, *what if I'd*… you're reaching for the third conditional. It's the grammar of hindsight, blame, and what-might-have-been. High frequency in storytelling, interviews, and exam writing tasks.\n\n**Contrast**:\n- *If I **had known**, I **would have told** you.* — But I didn't know, so I didn't tell you.\n- *If she **had left** earlier, she **would have caught** the train.* — She didn't leave early; she missed it.\n- *If you **hadn't helped** me, I **would have failed**.* — You did help; I didn't fail.\n\n**Czech-speaker traps**:\n- **Don't use *would have* in the if-clause.** **Wrong**: *If I would have known…* **Right**: *If I **had known**, I would have come.* (The *would-have* belongs only in the main clause.)\n- **Don't mix Third and Second.** **Wrong**: *If I had known, I would tell you.* (Past condition + present result — only works as a Mixed conditional, see next card.) For pure past, both clauses need the past-perfect / would-have structure: *I **would have told** you.*",
+        "content": "**If + past perfect, would have + past participle** — past that **did not happen**: regrets, counterfactuals, alternative histories.\nThe grammar of hindsight, blame and what-might-have-been — high frequency in storytelling, interviews and exam writing tasks.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "items": [
+              {
+                "label": "Pattern",
+                "formula": "If + past perfect → would have + past participle"
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "If I had known, I would have told you.",
+                "why": "but I didn't know, so I didn't tell you"
+              },
+              {
+                "good": "If she had left earlier, she would have caught the train.",
+                "why": "she didn't leave early; she missed it"
+              },
+              {
+                "good": "If you hadn't helped me, I would have failed.",
+                "why": "you did help; I didn't fail"
+              }
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "You're reaching for it every time you say",
+            "items": [
+              "if only",
+              "I should have",
+              "what if I'd…"
+            ]
+          }
+        ],
+        "root_ids": [
+          "B2.conditionals.third"
+        ],
+        "cefr_level": "B2"
+      },
+      {
+        "title": "Third conditional — Czech traps",
+        "content": "*Would have* belongs only in the main clause — and a pure past condition needs the full past structure in **both** clauses.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "If I had known, I would have come.",
+                "bad": "If I would have known, I would have come.",
+                "why": "no *would have* in the if-clause"
+              },
+              {
+                "good": "If I had known, I would have told you.",
+                "bad": "If I had known, I would tell you.",
+                "why": "don't mix Third and Second: past condition + present result only works as a Mixed conditional — pure past needs the past-perfect / would-have structure in both clauses"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B2.conditionals.third"
         ],
@@ -89,7 +310,54 @@
       },
       {
         "title": "Mixed conditionals",
-        "content": "**Mixed conditionals** combine a condition and a result from **different time-frames** — usually a past condition with a present result, or vice versa.\n\n**Why it matters**: Real life isn't always purely past or purely present. The most common mix — *past cause → present consequence* — is essential for talking about how earlier choices shape your current situation. Common in CAE/FCE and in any reflective conversation about life decisions.\n\n**Two main patterns**:\n- **Past condition → present result** (past perfect + would + base): *If I **had studied** harder at school, I **would have** a better job now.* / *If she **hadn't moved** to Prague, we **wouldn't be** together today.*\n- **Present condition → past result** (past simple + would have + past participle): *If I **were** more careful, I **wouldn't have lost** my keys yesterday.* / *If he **weren't** so shy, he **would have asked** her out.*\n\n**Tip**: Look for **time markers** (*now*, *today*, *yesterday*, *at school*) — they often tell you you're dealing with a mix, not a pure third or second.",
+        "content": "**Mixed conditionals** combine a condition and a result from **different time-frames** — usually past condition, present result, or vice versa.\nReal life isn't always purely past or purely present: the most common mix — *past cause → present consequence* — is essential for talking about how earlier choices shape your current situation. Common in CAE/FCE and any reflective conversation about life decisions.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "title": "Two main patterns",
+            "items": [
+              {
+                "label": "Past → present",
+                "formula": "If + past perfect → would + base"
+              },
+              {
+                "label": "Present → past",
+                "formula": "If + past simple → would have + past participle"
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "If I had studied harder at school, I would have a better job now.",
+                "why": "past condition → present result"
+              },
+              {
+                "good": "If she hadn't moved to Prague, we wouldn't be together today.",
+                "why": "past condition → present result"
+              },
+              {
+                "good": "If I were more careful, I wouldn't have lost my keys yesterday.",
+                "why": "present condition → past result"
+              },
+              {
+                "good": "If he weren't so shy, he would have asked her out.",
+                "why": "present condition → past result"
+              }
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "Time markers that often signal a mix",
+            "items": [
+              "now",
+              "today",
+              "yesterday",
+              "at school"
+            ]
+          }
+        ],
         "root_ids": [
           "B2.conditionals.mixed"
         ],
@@ -97,7 +365,40 @@
       },
       {
         "title": "Wishes & if only",
-        "content": "**Wishes** use the same tense-distancing logic as conditionals — past tense for the present, past perfect for the past — to express **regret**, **longing**, or **complaint**.\n\n**Why it matters**: *I wish* and *if only* are how English handles the emotional layer of conditionals — what you want to be true but isn't, or what you'd undo if you could. High frequency in conversation and writing.\n\n**Three patterns**:\n- **Present wish** — *I wish I **had** more time.* / *If only I **knew** the answer.* (Past tense → present hypothetical, same as Second conditional.)\n- **Past wish / regret** — *I wish I **had studied** harder.* / *If only she **hadn't said** that.* (Past perfect → past hypothetical, same as Third conditional.)\n- **Wish about behaviour (annoyance)** — *I wish you **would stop** interrupting.* / *If only it **would rain**.* (*would* + base — used about someone else's behaviour you can't control.)\n\n**Czech-speaker note**: *Kéž by* covers all three; English splits them by tense. And: you can't say *I wish I would…* about yourself — only about other people or impersonal forces.",
+        "content": "**Wishes** use the same tense-distancing logic — past for present, past perfect for past — to express **regret**, **longing** or **complaint**.\n- The emotional layer of conditionals: what you want to be true but isn't, or what you'd undo if you could. High frequency in conversation and writing.\n- Present wish = Second-conditional logic; past wish = Third.\n- *would* + base = about someone else's behaviour you can't control.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Three patterns",
+            "headers": [
+              "Wish about",
+              "Pattern",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**Present**",
+                "wish / if only + past simple",
+                "I wish I **had** more time. / If only I **knew** the answer."
+              ],
+              [
+                "**Past (regret)**",
+                "+ past perfect",
+                "I wish I **had studied** harder. / If only she **hadn't said** that."
+              ],
+              [
+                "**Behaviour (annoyance)**",
+                "+ would + base",
+                "I wish you **would stop** interrupting. / If only it **would rain**."
+              ]
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "*Kéž by* covers all three; English splits them by tense. And: you can't say *I wish I would…* about yourself — only about other people or impersonal forces."
+          }
+        ],
         "root_ids": [
           "B1.conditionals.wishes_present"
         ],
@@ -105,15 +406,128 @@
       },
       {
         "title": "Variants — unless, as long as, provided that…",
-        "content": "*If* isn't the only word that introduces a conditional. Several **alternatives** add shades of meaning — restriction, exception, precondition.\n\n**Why it matters**: These appear constantly in formal writing, contracts, instructions, and CAE-level reading. Knowing them lets you express conditions more precisely than *if* alone.\n\n**The main set**:\n- **unless** = *if not* — *I'll be there at 7 **unless** the train is late.* (= if it isn't late)\n- **as long as / so long as** = on the condition that — *You can borrow it **as long as** you return it tomorrow.*\n- **provided (that) / providing (that)** = only if — formal — *We'll sign **provided that** the terms don't change.*\n- **in case** = as a precaution against — *Take an umbrella **in case** it rains.* (Note: **not** the same as *if*. *Take an umbrella if it rains* = only take it then. *In case it rains* = take it now, just in case.)\n- **supposing / suppose** = imagine if — *Supposing he doesn't come, what will we do?*\n- **otherwise** = if not (linking two sentences) — *Hurry up; **otherwise** we'll be late.*\n\n**Czech-speaker trap**: *unless* is one negative idea, not two. **Wrong**: *unless you don't tell him* (double negative). **Right**: ***unless** you tell him* (= if you don't tell him).",
+        "content": "*If* isn't the only word that introduces a conditional — these alternatives add shades of **restriction**, **exception**, **precondition**.\nThey appear constantly in formal writing, contracts, instructions and CAE-level reading — more precise conditions than *if* alone.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "The main set",
+            "headers": [
+              "Word",
+              "Meaning",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**unless**",
+                "if not",
+                "I'll be there at 7 **unless** the train is late. (= if it isn't late)"
+              ],
+              [
+                "**as long as / so long as**",
+                "on the condition that",
+                "You can borrow it **as long as** you return it tomorrow."
+              ],
+              [
+                "**provided (that) / providing (that)**",
+                "only if (formal)",
+                "We'll sign **provided that** the terms don't change."
+              ],
+              [
+                "**in case**",
+                "as a precaution against — **not** the same as *if*",
+                "Take an umbrella **in case** it rains. (= take it now, just in case; *take it if it rains* = only take it then)"
+              ],
+              [
+                "**supposing / suppose**",
+                "imagine if",
+                "**Supposing** he doesn't come, what will we do?"
+              ],
+              [
+                "**otherwise**",
+                "if not (linking two sentences)",
+                "Hurry up; **otherwise** we'll be late."
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "unless you tell him",
+                "bad": "unless you don't tell him",
+                "why": "Czech-speaker trap: *unless* is one negative idea, not two — it already means *if you don't tell him*"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B2.conditionals.variants"
         ],
         "cefr_level": "B2"
       },
       {
-        "title": "Common Czech-speaker errors — quick reference",
-        "content": "The errors below account for the large majority of conditional mistakes from Czech speakers. Fixing these gives immediate visible progress.\n\n**Why it matters**: Most of these come from word-for-word translation from Czech. Once you see the pattern, you can self-correct in real time.\n\n**The top traps**:\n- **First — no *will* in the if-clause**: Wrong *If I **will see** him, I'll tell him.* → Right *If I **see** him, I'll tell him.*\n- **Second — no *would* in the if-clause**: Wrong *If I **would have** time…* → Right *If I **had** time, I would help.*\n- **Third — no *would have* in the if-clause**: Wrong *If I **would have known**…* → Right *If I **had known**, I would have come.*\n- **Third — both clauses need the past-perfect / would-have structure**: Wrong *If I had known, I **would tell** you.* → Right *I **would have told** you.*\n- **Second — formal *were* not *was***: Wrong *If I **was** you…* → Right (in writing/exams) *If I **were** you…*\n- **unless — no double negative**: Wrong *unless you **don't** tell him* → Right ***unless** you tell him*\n- ***až* ≠ *until***: Czech *až přijde* often means *when he comes*, not *until he comes*. Check the meaning before translating.",
+        "title": "Quick reference — if-clause traps",
+        "content": "Most Czech-speaker conditional errors come from word-for-word translation into the if-clause.\nOnce you see the pattern, you can self-correct in real time.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "title": "The top if-clause traps",
+            "items": [
+              {
+                "good": "If I see him, I'll tell him.",
+                "bad": "If I will see him, I'll tell him.",
+                "why": "First — no *will* in the if-clause"
+              },
+              {
+                "good": "If I had time, I would help.",
+                "bad": "If I would have time, I would help.",
+                "why": "Second — no *would* in the if-clause"
+              },
+              {
+                "good": "If I had known, I would have come.",
+                "bad": "If I would have known, I would have come.",
+                "why": "Third — no *would have* in the if-clause"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "A2.conditionals.zero_first",
+          "B1.conditionals.second",
+          "B2.conditionals.third"
+        ],
+        "cefr_level": "B1"
+      },
+      {
+        "title": "Quick reference — more Czech traps",
+        "content": "The rest of the top traps — these account for the large majority of conditional mistakes, and fixing them gives immediate visible progress.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "If I had known, I would have told you.",
+                "bad": "If I had known, I would tell you.",
+                "why": "Third — both clauses need the past-perfect / would-have structure"
+              },
+              {
+                "good": "If I were you…",
+                "bad": "If I was you…",
+                "why": "Second — formal *were*, not *was*, in writing and exams"
+              },
+              {
+                "good": "unless you tell him",
+                "bad": "unless you don't tell him",
+                "why": "*unless* — no double negative"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "*až* ≠ *until*: Czech *až přijde* often means *when he comes*, not *until he comes*. Check the meaning before translating."
+          }
+        ],
         "root_ids": [
           "A2.conditionals.zero_first",
           "B1.conditionals.second",
