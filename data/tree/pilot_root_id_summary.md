@@ -6,6 +6,8 @@
 
 This document provides a single overview of tagging recommendations across all pilot families. It is the master reference for implementation.
 
+> **Canonical vocabulary:** Every valid `root_id` is enumerated in [`root_ids_canonical.json`](root_ids_canonical.json). That registry is the single source of truth — `test/validate-data.js` (section 8) fails if any `curriculum_*.json` uses a `root_id` not listed there. To introduce a new id, add it to the registry under its family **first**, then tag content with it. This table is guidance; the registry is law.
+
 ## Summary Table
 
 | # | Family                        | Current Topics                              | Current Root(s)              | Primary Root (Tree)     | Secondary Root | Key root_ids (B1/B2 focus)                                      | Tagging Priority | Recommended Action |

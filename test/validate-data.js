@@ -218,6 +218,62 @@ if (!rci || !topicsData) {
   checkIndexSection('pilot_families', rci.pilot_families, '#practice/root_id/');
 }
 
+// ── 8. root_ids tagging integrity (curricula ⊆ canonical registry) ─────────
+//
+// data/tree/root_ids_canonical.json is the single source of truth for valid
+// granular root_ids. Every root_ids value used in any curriculum_*.json must
+// exist there, be well-formed (<CEFR>.<family>.<concept>), and sit under the
+// matching family key. This keeps tags from silently drifting from the canon.
+
+console.log('\n8. root_ids tagging integrity');
+
+const canonPath = path.join(ROOT, 'data', 'tree', 'root_ids_canonical.json');
+const canon = fs.existsSync(canonPath) ? tryLoadJson(canonPath, 'data/tree/root_ids_canonical.json') : null;
+const ROOT_ID_FMT = /^(A1|A2|B1|B2)\.([a-z_]+)\.([a-z0-9_]+)$/;
+
+if (!canon || !canon.families) {
+  fail('Cannot check — data/tree/root_ids_canonical.json missing or has no families');
+} else {
+  // Build the flat valid set, and verify the registry is internally consistent:
+  // every id must be well-formed and live under a family key equal to its middle segment.
+  const validRootIds = new Set();
+  for (const fam of Object.keys(canon.families)) {
+    for (const id of canon.families[fam]) {
+      const m = id.match(ROOT_ID_FMT);
+      if (!m) { fail('registry: "' + id + '" is malformed (expected <CEFR>.<family>.<concept>)'); continue; }
+      if (m[2] !== fam) { fail('registry: "' + id + '" is filed under family "' + fam + '" but its middle segment is "' + m[2] + '"'); continue; }
+      validRootIds.add(id);
+    }
+  }
+  pass('registry has ' + validRootIds.size + ' well-formed canonical root_ids');
+
+  // Collect every root_ids value used across all curriculum_*.json files.
+  function collectRootIds(node, acc) {
+    if (Array.isArray(node)) { node.forEach(n => collectRootIds(n, acc)); return; }
+    if (node && typeof node === 'object') {
+      for (const [k, v] of Object.entries(node)) {
+        if (k === 'root_ids' && Array.isArray(v)) v.forEach(id => acc.add(id));
+        else collectRootIds(v, acc);
+      }
+    }
+  }
+
+  const curriculumFiles = jsonFiles.filter(f => f.startsWith('curriculum') && parsed[f]);
+  for (const file of curriculumFiles) {
+    const used = new Set();
+    collectRootIds(parsed[file], used);
+    for (const id of used) {
+      if (!ROOT_ID_FMT.test(id)) {
+        fail(file + ': root_id "' + id + '" is malformed (expected <CEFR>.<family>.<concept>)');
+      } else if (validRootIds.has(id)) {
+        pass(file + ': root_id "' + id + '" is canonical');
+      } else {
+        fail(file + ': root_id "' + id + '" is not in root_ids_canonical.json (add it to the registry first)');
+      }
+    }
+  }
+}
+
 // ── Summary ────────────────────────────────────────────────────────────────
 
 console.log('\n────────────────────────────────');

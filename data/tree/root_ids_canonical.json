@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "purpose": "Canonical registry of every valid granular root_id. Source of truth for tagging curriculum_*.json content and questions. Validated by test/validate-data.js (section 8) so curriculum tags can never drift from this set.",
+    "convention": "<CEFR>.<family>.<concept>  — CEFR in {A1,A2,B1,B2}; family = the middle grouping key below; concept = lowercase_snake.",
+    "how_to_add": "To introduce a new root_id, add it under its family here FIRST (create the family key if needed), then tag curriculum sections/questions with it. Validation fails if a curriculum uses an id absent here.",
+    "version": "1.0.0",
+    "total": 64
+  },
+  "families": {
+    "articles": [
+      "A1.articles.basic",
+      "B1.articles.extended",
+      "B2.articles.advanced"
+    ],
+    "collocations": [
+      "B2.collocations.dependent_prepositions"
+    ],
+    "comparatives": [
+      "A2.comparatives.form_basic",
+      "A2.comparatives.superlative",
+      "B1.comparatives.as_as",
+      "B2.comparatives.advanced"
+    ],
+    "conditionals": [
+      "A2.conditionals.zero_first",
+      "B1.conditionals.second",
+      "B1.conditionals.wishes_present",
+      "B2.conditionals.mixed",
+      "B2.conditionals.third",
+      "B2.conditionals.variants"
+    ],
+    "future": [
+      "A2.future.going_to",
+      "A2.future.system",
+      "A2.future.will",
+      "B1.future.present_continuous_arrangements",
+      "B1.future.present_simple_timetable"
+    ],
+    "linkers": [
+      "B1.linkers.cause_result",
+      "B1.linkers.contrast",
+      "B1.linkers.coord_subord_basic",
+      "B2.linkers.discourse_markers"
+    ],
+    "modals": [
+      "A2.modals.must_have_to_basic",
+      "A2.modals.should",
+      "B1.modals.past_forms",
+      "B1.modals.speculation_present",
+      "B2.modals.speculation_past"
+    ],
+    "passive": [
+      "B1.passive.form_basic",
+      "B1.passive.tenses",
+      "B2.passive.have_something_done",
+      "B2.passive.modals",
+      "B2.passive.reporting_verbs"
+    ],
+    "past_perfect": [
+      "B1.past_perfect.basic",
+      "B1.past_perfect.continuous",
+      "B2.past_perfect.narrative"
+    ],
+    "phrasal_verbs": [
+      "B1.phrasal_verbs.basic",
+      "B2.phrasal_verbs.extended"
+    ],
+    "prepositions": [
+      "A1.prepositions.place_basic",
+      "A2.prepositions.movement",
+      "A2.prepositions.time_basic",
+      "B1.prepositions.cause_concession",
+      "B2.prepositions.complex"
+    ],
+    "present_perfect": [
+      "A2.present_perfect.basic",
+      "B1.present_perfect.continuous",
+      "B1.present_perfect.since_for"
+    ],
+    "quantifiers": [
+      "A1.quantifiers.some_any",
+      "A2.quantifiers.few_little",
+      "A2.quantifiers.much_many_a_lot",
+      "B1.quantifiers.all_most_none"
+    ],
+    "relative_clauses": [
+      "A2.relative_clauses.basic",
+      "B1.relative_clauses.defining_non_defining",
+      "B2.relative_clauses.advanced"
+    ],
+    "reported_speech": [
+      "B1.reported_speech.statements",
+      "B2.reported_speech.extended"
+    ],
+    "sentence_syntax": [
+      "B2.sentence_syntax.inversion"
+    ],
+    "verb_patterns": [
+      "A2.verb_patterns.basic",
+      "B1.verb_patterns.to_inf_vs_ing",
+      "B2.verb_patterns.meaning_change"
+    ],
+    "verb_phrase": [
+      "A1.verb_phrase.auxiliaries",
+      "A2.verb_phrase.auxiliaries"
+    ],
+    "word_order": [
+      "A1.word_order.svo_basic",
+      "A2.word_order.adverbs",
+      "A2.word_order.questions"
+    ]
+  }
+}
