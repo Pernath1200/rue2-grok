@@ -12,6 +12,194 @@ None.
 
 ## 3. MC list (manual check)
 
+### curriculum_articles.json
+
+- **#0** correct_option: **b** | 'I need _____ umbrella.' Which fits?
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#1** correct_option: **d** | '_____ life is short.' (general) Which fits?
+  - a: A
+  - b: An
+  - c: The
+  - d: No article
+
+- **#2** correct_option: **c** | 'I bought a car. _____ car is red.' Which fits in the second...
+  - a: A
+  - b: An
+  - c: The
+  - d: No article
+
+- **#3** correct_option: **d** | 'She goes to _____ work by bus.' Which fits?
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#4** correct_option: **d** | 'We had _____ breakfast at eight.' Which fits?
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#5** correct_option: **d** | 'She dreams of visiting _____ Africa.' Which fits?
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#6** correct_option: **b** | I need _____ umbrella.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#7** correct_option: **b** | She's _____ engineer.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#8** correct_option: **c** | _____ sun is very bright today.
+  - a: A
+  - b: An
+  - c: The
+  - d: No article
+
+- **#9** correct_option: **d** | We had _____ breakfast at eight.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#10** correct_option: **d** | He goes to _____ work by bus.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#11** correct_option: **b** | I bought _____ new car. _____ car is red.
+  - a: a / A
+  - b: a / The
+  - c: the / The
+  - d: no article / The
+
+- **#12** correct_option: **d** | _____ cats are animals.
+  - a: A
+  - b: An
+  - c: The
+  - d: No article
+
+- **#13** correct_option: **b** | She has _____ hour for lunch.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#14** correct_option: **c** | Close _____ door, please.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#15** correct_option: **c** | They live in _____ USA.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#16** correct_option: **c** | _____ water in the bottle is cold.
+  - a: A
+  - b: An
+  - c: The
+  - d: No article
+
+- **#17** correct_option: **c** | It's _____ best film I've ever seen.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#18** correct_option: **d** | _____ life is full of surprises.
+  - a: A
+  - b: An
+  - c: The
+  - d: No article
+
+- **#19** correct_option: **d** | I'll meet you at _____ home.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#20** correct_option: **d** | She dreams of visiting _____ Africa.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#21** correct_option: **b** | I need _____ umbrella.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#22** correct_option: **b** | She's _____ engineer.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#23** correct_option: **c** | _____ sun is very bright today.
+  - a: A
+  - b: An
+  - c: The
+  - d: No article
+
+- **#24** correct_option: **d** | We had _____ breakfast at eight.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#25** correct_option: **d** | He goes to _____ work by bus.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#26** correct_option: **b** | I bought _____ new car. _____ car is red.
+  - a: a / A
+  - b: a / The
+  - c: the / The
+  - d: no article / The
+
+- **#27** correct_option: **d** | _____ cats are animals.
+  - a: A
+  - b: An
+  - c: The
+  - d: No article
+
+- **#28** correct_option: **b** | She has _____ hour for lunch.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#29** correct_option: **c** | Close _____ door, please.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
+- **#30** correct_option: **c** | They live in _____ USA.
+  - a: a
+  - b: an
+  - c: the
+  - d: no article
+
 ### curriculum_auxiliary_verbs.json
 
 - **#0** correct_option: **c** | Which auxiliary do we use for questions and negatives in the...
@@ -136,66 +324,6 @@ None.
   - c: She is not as tall like her brother.
   - d: She is not as tall as her brother.
 
-- **#5** correct_option: **a** | Which sentence is correct?
-  - a: This exercise is easier than the last one.
-  - b: This exercise is more easier than the last one.
-  - c: This exercise is more easy than the last one.
-  - d: This exercise is easyer than the last one.
-
-- **#6** correct_option: **c** | Choose the correct comparative.
-  - a: more tall than
-  - b: tallest than
-  - c: taller than
-  - d: more taller than
-
-- **#7** correct_option: **a** | Which is the correct form?
-  - a: more interesting than
-  - b: interestinger than
-  - c: interester than
-  - d: more interestinger than
-
-- **#8** correct_option: **c** | Complete the sentence: 'His English is ____ mine.'
-  - a: gooder than
-  - b: more good than
-  - c: better than
-  - d: best than
-
-- **#9** correct_option: **d** | Which negative comparison is correct?
-  - a: She is not so tall like her brother.
-  - b: She is not so taller as her brother.
-  - c: She is not as tall like her brother.
-  - d: She is not as tall as her brother.
-
-- **#10** correct_option: **a** | Which sentence is correct?
-  - a: This exercise is easier than the last one.
-  - b: This exercise is more easier than the last one.
-  - c: This exercise is more easy than the last one.
-  - d: This exercise is easyer than the last one.
-
-- **#11** correct_option: **c** | Choose the correct comparative.
-  - a: more tall than
-  - b: tallest than
-  - c: taller than
-  - d: more taller than
-
-- **#12** correct_option: **a** | Which is the correct form?
-  - a: more interesting than
-  - b: interestinger than
-  - c: interester than
-  - d: more interestinger than
-
-- **#13** correct_option: **c** | Complete the sentence: 'His English is ____ mine.'
-  - a: gooder than
-  - b: more good than
-  - c: better than
-  - d: best than
-
-- **#14** correct_option: **d** | Which negative comparison is correct?
-  - a: She is not so tall like her brother.
-  - b: She is not so taller as her brother.
-  - c: She is not as tall like her brother.
-  - d: She is not as tall as her brother.
-
 ### curriculum_conditionals.json
 
 - **#0** correct_option: **a** | Which type of conditional is: 'If you heat water to 100 degr...
@@ -294,66 +422,6 @@ None.
   - c: would have arrived
   - d: had arrived
 
-- **#16** correct_option: **a** | Which type of conditional is: 'If you heat water to 100 degr...
-  - a: Zero
-  - b: First
-  - c: Second
-  - d: Third
-
-- **#17** correct_option: **c** | Choose the correct first conditional.
-  - a: If it will rain, we will stay at home.
-  - b: If it rained, we would stay at home.
-  - c: If it rains, we will stay at home.
-  - d: If it rains, we would stay at home.
-
-- **#18** correct_option: **d** | 'If I _____ you, I would apologise.' (Second conditional)
-  - a: am
-  - b: was
-  - c: would be
-  - d: were
-
-- **#19** correct_option: **d** | Which is a third conditional?
-  - a: If I know, I will tell you.
-  - b: If I had known, I would tell you.
-  - c: If I knew, I would have told you.
-  - d: If I had known, I would have told you.
-
-- **#20** correct_option: **a** | What is wrong? 'If I would have time, I would help you.'
-  - a: We must use 'had' in the if-clause, not 'would hav...
-  - b: We must use 'will' in the main clause.
-  - c: We must use past perfect in both clauses.
-  - d: Nothing; the sentence is correct.
-
-- **#21** correct_option: **c** | 'If she _____ earlier, she would have caught the train.' (Th...
-  - a: left
-  - b: would leave
-  - c: had left
-  - d: would have left
-
-- **#22** correct_option: **a** | Which type of conditional is: 'If you heat water to 100 degr...
-  - a: Zero
-  - b: First
-  - c: Second
-  - d: Third
-
-- **#23** correct_option: **c** | Choose the correct first conditional.
-  - a: If it will rain, we will stay at home.
-  - b: If it rained, we would stay at home.
-  - c: If it rains, we will stay at home.
-  - d: If it rains, we would stay at home.
-
-- **#24** correct_option: **d** | 'If I _____ you, I would apologise.' (Second conditional)
-  - a: am
-  - b: was
-  - c: would be
-  - d: were
-
-- **#25** correct_option: **d** | Which is a third conditional?
-  - a: If I know, I will tell you.
-  - b: If I had known, I would tell you.
-  - c: If I knew, I would have told you.
-  - d: If I had known, I would have told you.
-
 ### curriculum_conjunctions_linkers.json
 
 - **#0** correct_option: **a** | Which is correct?
@@ -380,77 +448,17 @@ None.
   - c: during
   - d: however
 
-- **#4** correct_option: **b** | Which is correct?
-  - a: She likes tea, whereas he prefers coffee.
-  - b: Both a and c are correct.
-  - c: She likes tea, whereas he prefers coffee. (same)
-  - d: She likes tea, while he prefers coffee.
+- **#4** correct_option: **a** | Which fits? 'She likes tea, _____ he prefers coffee.' (contr...
+  - a: whereas
+  - b: however
+  - c: therefore
+  - d: because
 
 - **#5** correct_option: **d** | Which fits? 'I don't know _____ she agreed.'
   - a: if
   - b: whether
   - c: that
   - d: Both a and b are correct.
-
-- **#6** correct_option: **a** | Which is correct?
-  - a: Because it rained, we stayed at home.
-  - b: Because it rained, so we stayed at home.
-  - c: Because it rained, therefore we stayed.
-  - d: It rained, because we stayed at home.
-
-- **#7** correct_option: **c** | Which is correct?
-  - a: Although he tried, but he failed.
-  - b: Although he tried, however he failed.
-  - c: Although he tried, he failed.
-  - d: Although he tried, and he failed.
-
-- **#8** correct_option: **c** | Which linker fits? 'It was expensive. _____, we bought it.'
-  - a: Therefore
-  - b: Because
-  - c: However
-  - d: Moreover
-
-- **#9** correct_option: **a** | Which fits? 'I'll call you _____ I arrive.'
-  - a: when
-  - b: while
-  - c: during
-  - d: however
-
-- **#10** correct_option: **d** | Which is correct?
-  - a: She likes tea, whereas he prefers coffee.
-  - b: She likes tea, whereas he prefers coffee. (same)
-  - c: She likes tea, while he prefers coffee.
-  - d: Both a and c are correct.
-
-- **#11** correct_option: **c** | Which is correct?
-  - a: Because it rained, so we stayed at home.
-  - b: It rained, because we stayed at home.
-  - c: Because it rained, we stayed at home.
-  - d: Because it rained, therefore we stayed.
-
-- **#12** correct_option: **c** | Which is correct?
-  - a: Although he tried, but he failed.
-  - b: Although he tried, however he failed.
-  - c: Although he tried, he failed.
-  - d: Although he tried, and he failed.
-
-- **#13** correct_option: **d** | Which linker fits? 'It was expensive. _____, we bought it.'
-  - a: Therefore
-  - b: Because
-  - c: Moreover
-  - d: However
-
-- **#14** correct_option: **a** | Which fits? 'I'll call you _____ I arrive.'
-  - a: when
-  - b: while
-  - c: during
-  - d: however
-
-- **#15** correct_option: **d** | Which is correct?
-  - a: She likes tea, whereas he prefers coffee.
-  - b: She likes tea, whereas he prefers coffee. (same)
-  - c: She likes tea, while he prefers coffee.
-  - d: Both a and c are correct.
 
 ### curriculum_countable_uncountable.json
 
@@ -483,66 +491,6 @@ None.
   - b: A news is good.
   - c: The news are good today.
   - d: The news is good.
-
-- **#5** correct_option: **a** | Which is correct?
-  - a: I need some advice.
-  - b: I need some advices.
-  - c: I need an advice.
-  - d: I need many advices.
-
-- **#6** correct_option: **c** | Which is correct?
-  - a: The scissors is on the table.
-  - b: A scissors is on the table.
-  - c: The scissors are on the table.
-  - d: The scissor is on the table.
-
-- **#7** correct_option: **d** | Which is correct?
-  - a: I have many homeworks.
-  - b: I have many homework.
-  - c: I have five homeworks.
-  - d: I have a lot of homework.
-
-- **#8** correct_option: **c** | Which is correct?
-  - a: This trousers is too long.
-  - b: This trouser is too long.
-  - c: These trousers are too long.
-  - d: These trousers is too long.
-
-- **#9** correct_option: **c** | Which is correct?
-  - a: The news are good.
-  - b: A news is good.
-  - c: The news is good.
-  - d: The news are good today.
-
-- **#10** correct_option: **d** | Which is correct?
-  - a: I need some advices.
-  - b: I need an advice.
-  - c: I need many advices.
-  - d: I need some advice.
-
-- **#11** correct_option: **b** | Which is correct?
-  - a: The scissors is on the table.
-  - b: The scissors are on the table.
-  - c: The scissor is on the table.
-  - d: A scissors is on the table.
-
-- **#12** correct_option: **b** | Which is correct?
-  - a: I have many homeworks.
-  - b: I have a lot of homework.
-  - c: I have many homework.
-  - d: I have five homeworks.
-
-- **#13** correct_option: **b** | Which is correct?
-  - a: This trousers is too long.
-  - b: These trousers are too long.
-  - c: This trouser is too long.
-  - d: These trousers is too long.
-
-- **#14** correct_option: **a** | Which is correct?
-  - a: The news is good.
-  - b: The news are good.
-  - c: A news is good.
-  - d: The news are good today.
 
 ### curriculum_fixed_phrases.json
 
@@ -680,85 +628,25 @@ None.
   - c: going
   - d: to going
 
-- **#9** correct_option: **a** | Which is correct?
-  - a: I want to learn English.
-  - b: I want learning English.
-  - c: I want learn English.
-  - d: I want learning English well.
-
-- **#10** correct_option: **d** | Which is correct?
-  - a: She enjoys to read.
-  - b: She enjoys read.
-  - c: She enjoys to reading.
-  - d: She enjoys reading.
-
-- **#11** correct_option: **c** | 'I remember _____ the door.' (I recall doing it.) Which fits...
-  - a: to lock
-  - b: lock
-  - c: locking
-  - d: to locking
-
-- **#12** correct_option: **c** | 'I look forward to _____ you.' Which is correct?
-  - a: see
-  - b: to see
-  - c: seeing
-  - d: to seeing
-
-- **#13** correct_option: **d** | 'She stopped _____.' (She gave up smoking.) Which fits?
-  - a: to smoke
-  - b: smoke
-  - c: to smoking
-  - d: smoking
-
-- **#14** correct_option: **a** | Which is correct?
-  - a: I want to learn English.
-  - b: I want learning English.
-  - c: I want learn English.
-  - d: I want learning English well.
-
-- **#15** correct_option: **d** | Which is correct?
-  - a: She enjoys to read.
-  - b: She enjoys read.
-  - c: She enjoys to reading.
-  - d: She enjoys reading.
-
-- **#16** correct_option: **c** | 'I remember _____ the door.' (I recall doing it.) Which fits...
-  - a: to lock
-  - b: lock
-  - c: locking
-  - d: to locking
-
-- **#17** correct_option: **c** | 'I look forward to _____ you.' Which is correct?
-  - a: see
-  - b: to see
-  - c: seeing
-  - d: to seeing
-
-- **#18** correct_option: **d** | 'She stopped _____.' (She gave up smoking.) Which fits?
-  - a: to smoke
-  - b: smoke
-  - c: to smoking
-  - d: smoking
-
-- **#19** correct_option: **b** | 'Let me _____ you with that.' Which is correct?
+- **#9** correct_option: **b** | 'Let me _____ you with that.' Which is correct?
   - a: to help
   - b: help
   - c: helping
   - d: to helping
 
-- **#20** correct_option: **b** | 'I'd rather _____ at home tonight.' Which fits?
+- **#10** correct_option: **b** | 'I'd rather _____ at home tonight.' Which fits?
   - a: to stay
   - b: stay
   - c: staying
   - d: to staying
 
-- **#21** correct_option: **b** | 'We watched them _____ the match.' Which is correct?
+- **#11** correct_option: **b** | 'We watched them _____ the match.' Which is correct?
   - a: to win
   - b: win
   - c: winning
   - d: to winning
 
-- **#22** correct_option: **a** | 'He agreed _____ early.' Which is correct?
+- **#12** correct_option: **a** | 'He agreed _____ early.' Which is correct?
   - a: to come
   - b: come
   - c: coming
@@ -858,6 +746,74 @@ None.
   - c: seen
   - d: see
 
+### curriculum_it_subject.json
+
+- **#0** correct_option: **a** | Which is correct?
+  - a: It's raining.
+  - b: Is raining.
+  - c: Rains.
+  - d: There is raining.
+
+- **#1** correct_option: **d** | Which is correct?
+  - a: Is three o'clock.
+  - b: There is three o'clock.
+  - c: Three o'clock is.
+  - d: It's three o'clock.
+
+- **#2** correct_option: **b** | Complete the sentence: ____ important to read the instructio...
+  - a: Is
+  - b: It is
+  - c: There is
+  - d: It
+
+- **#3** correct_option: **c** | Which sentence uses it correctly?
+  - a: Clear is that he is tired.
+  - b: That he is tired is clear.
+  - c: It's clear that he is tired.
+  - d: Is clear that he is tired.
+
+- **#4** correct_option: **c** | Which is most natural in English?
+  - a: To get up early is difficult.
+  - b: Difficult is to get up early.
+  - c: It's difficult to get up early.
+  - d: Is difficult to get up early.
+
+- **#5** correct_option: **a** | Which is correct for weather?
+  - a: It's snowing.
+  - b: Is snowing.
+  - c: Snows.
+  - d: There is snowing.
+
+- **#6** correct_option: **c** | Choose the best sentence.
+  - a: Is very cold today.
+  - b: It very cold today.
+  - c: It's very cold today.
+  - d: There is very cold today.
+
+- **#7** correct_option: **b** | Which is correct for distance?
+  - a: Is ten kilometres to the village.
+  - b: It's ten kilometres to the village.
+  - c: There is ten kilometres to the village.
+  - d: Ten kilometres is to the village.
+
+- **#8** correct_option: **d** | Complete: ____ hard to understand this text.
+  - a: Is
+  - b: It
+  - c: There is
+  - d: It is
+
+- **#9** correct_option: **b** | Which is correct?
+  - a: Is obvious that they are angry.
+  - b: It's obvious that they are angry.
+  - c: Obvious is that they are angry.
+  - d: That they are angry it's obvious.
+
+- **#10** correct_option: **c** | Which sentence is best?
+  - a: Seems that they are late.
+  - b: That they are late seems.
+  - c: It seems that they are late.
+  - d: Is seems that they are late.
+
 ### curriculum_modal_verbs.json
 
 - **#0** correct_option: **b** | What is **modality** in grammar?
@@ -895,66 +851,6 @@ None.
   - b: ought to
   - c: be able to
   - d: might
-
-- **#6** correct_option: **b** | What is **modality** in grammar?
-  - a: The time of the action (past, present, future)
-  - b: The way we express possibility, necessity, permiss...
-  - c: The person (I, you, he/she) of the subject
-  - d: The tense of the verb
-
-- **#7** correct_option: **b** | Which sentence uses a **semi-modal**?
-  - a: She can swim.
-  - b: You ought to see a doctor.
-  - c: They must leave.
-  - d: I might go.
-
-- **#8** correct_option: **c** | 'You ____ apologise.' (strong advice, formal) Which fits bes...
-  - a: can
-  - b: might
-  - c: ought to
-  - d: will
-
-- **#9** correct_option: **c** | Which of these uses 'to' before the main verb? (e.g. ___ to ...
-  - a: must
-  - b: should
-  - c: ought to
-  - d: can
-
-- **#10** correct_option: **b** | For external obligation (e.g. a rule or someone else's requi...
-  - a: must only
-  - b: have to
-  - c: can
-  - d: might
-
-- **#11** correct_option: **c** | Which verb do we use for **ability** when we need a form tha...
-  - a: must
-  - b: ought to
-  - c: be able to
-  - d: might
-
-- **#12** correct_option: **b** | What is **modality** in grammar?
-  - a: The time of the action (past, present, future)
-  - b: The way we express possibility, necessity, permiss...
-  - c: The person (I, you, he/she) of the subject
-  - d: The tense of the verb
-
-- **#13** correct_option: **b** | Which sentence uses a **semi-modal**?
-  - a: She can swim.
-  - b: You ought to see a doctor.
-  - c: They must leave.
-  - d: I might go.
-
-- **#14** correct_option: **c** | 'You ____ apologise.' (strong advice, formal) Which fits bes...
-  - a: can
-  - b: might
-  - c: ought to
-  - d: will
-
-- **#15** correct_option: **c** | Which of these uses 'to' before the main verb? (e.g. ___ to ...
-  - a: must
-  - b: should
-  - c: ought to
-  - d: can
 
 ### curriculum_open_cloze.json
 
@@ -1152,73 +1048,7 @@ None.
   - c: are can found
   - d: can found
 
-- **#17** correct_option: **a** | Which sentence is correct?
-  - a: The letter was sent yesterday.
-  - b: The letter was send yesterday.
-  - c: The letter was sented yesterday.
-  - d: The letter is sent yesterday.
-
-- **#18** correct_option: **c** | Choose the correct passive form.
-  - a: English is speak all over the world.
-  - b: English speaks all over the world.
-  - c: English is spoken all over the world.
-  - d: English spoken all over the world.
-
-- **#19** correct_option: **d** | 'The building ____ in 1990.' Which fits?
-  - a: is built
-  - b: built
-  - c: has built
-  - d: was built
-
-- **#20** correct_option: **b** | Which is correct with a modal?
-  - a: The work must done.
-  - b: The work must be done.
-  - c: The work must be do.
-  - d: The work must be done by someone.
-
-- **#21** correct_option: **c** | 'The report ____ yet.' (Present perfect passive)
-  - a: was not finished
-  - b: not has been finished
-  - c: has not been finished
-  - d: is not finished
-
-- **#22** correct_option: **c** | Which sentence is correct?
-  - a: The letter was send yesterday.
-  - b: The letter was sented yesterday.
-  - c: The letter was sent yesterday.
-  - d: The letter is sent yesterday.
-
-- **#23** correct_option: **a** | Choose the correct passive form.
-  - a: English is spoken all over the world.
-  - b: English is speak all over the world.
-  - c: English speaks all over the world.
-  - d: English spoken all over the world.
-
-- **#24** correct_option: **d** | 'The building ____ in 1990.' Which fits?
-  - a: is built
-  - b: built
-  - c: has built
-  - d: was built
-
-- **#25** correct_option: **a** | Which is correct with a modal?
-  - a: The work must be done.
-  - b: The work must done.
-  - c: The work must be do.
-  - d: The work must be done by someone.
-
-- **#26** correct_option: **b** | 'The report ____ yet.' (Present perfect passive)
-  - a: was not finished
-  - b: has not been finished
-  - c: is not finished
-  - d: not has been finished
-
-- **#27** correct_option: **a** | Which sentence is correct? (causative have/get)
-  - a: I had my hair cut.
-  - b: I had my hair to cut.
-  - c: I had my hair cutting.
-  - d: I had my hair cutted.
-
-- **#28** correct_option: **b** | 'He ____ his wallet ____ on the bus.' (something bad happene...
+- **#17** correct_option: **b** | 'He ____ his wallet ____ on the bus.' (something bad happene...
   - a: had / steal
   - b: had / stolen
   - c: got / to steal
@@ -1262,72 +1092,6 @@ None.
   - c: was starting
   - d: had started
 
-- **#6** correct_option: **c** | 'When she arrived, I _____ for an hour.' (Focus on how long ...
-  - a: waited
-  - b: had waited
-  - c: had been waiting
-  - d: was waiting
-
-- **#7** correct_option: **b** | 'When I got there, she _____ home.' (She left before I got t...
-  - a: left
-  - b: had left
-  - c: has left
-  - d: was leaving
-
-- **#8** correct_option: **b** | 'By 9 o'clock he _____ his homework.' Which fits?
-  - a: finished
-  - b: had finished
-  - c: has finished
-  - d: was finishing
-
-- **#9** correct_option: **b** | Which sentence is correct?
-  - a: I had went to London.
-  - b: I had gone to London.
-  - c: I had go to London.
-  - d: I had going to London.
-
-- **#10** correct_option: **a** | 'She was tired because she _____ well.' Which fits?
-  - a: hadn't slept
-  - b: didn't sleep
-  - c: hadn't sleep
-  - d: wasn't sleeping
-
-- **#11** correct_option: **a** | 'When they arrived, the meeting _____.' (The meeting started...
-  - a: had started
-  - b: started
-  - c: has started
-  - d: was starting
-
-- **#12** correct_option: **a** | 'When I got there, she _____ home.' (She left before I got t...
-  - a: had left
-  - b: left
-  - c: has left
-  - d: was leaving
-
-- **#13** correct_option: **c** | 'By 9 o'clock he _____ his homework.' Which fits?
-  - a: finished
-  - b: has finished
-  - c: had finished
-  - d: was finishing
-
-- **#14** correct_option: **c** | Which sentence is correct?
-  - a: I had went to London.
-  - b: I had go to London.
-  - c: I had gone to London.
-  - d: I had going to London.
-
-- **#15** correct_option: **a** | 'She was tired because she _____ well.' Which fits?
-  - a: hadn't slept
-  - b: didn't sleep
-  - c: hadn't sleep
-  - d: wasn't sleeping
-
-- **#16** correct_option: **d** | 'When they arrived, the meeting _____.' (The meeting started...
-  - a: started
-  - b: has started
-  - c: was starting
-  - d: had started
-
 ### curriculum_past_simple_continuous.json
 
 - **#0** correct_option: **a** | 'I _____ TV when the phone rang.' (You were in the middle of...
@@ -1360,66 +1124,6 @@ None.
   - c: were having dinner
   - d: had had dinner
 
-- **#5** correct_option: **a** | 'I _____ TV when the phone rang.' (You were in the middle of...
-  - a: was watching
-  - b: watched
-  - c: have watched
-  - d: am watching
-
-- **#6** correct_option: **c** | 'She _____ to London yesterday.' (Completed trip.) Which fit...
-  - a: was going
-  - b: has gone
-  - c: went
-  - d: were going
-
-- **#7** correct_option: **d** | 'While he _____ dinner, I was reading.' Which fits?
-  - a: cooked
-  - b: cooks
-  - c: has cooked
-  - d: was cooking
-
-- **#8** correct_option: **a** | 'The doorbell _____ while I was having a shower.' Which fits...
-  - a: rang
-  - b: was ringing
-  - c: rings
-  - d: has rung
-
-- **#9** correct_option: **c** | 'At 7 pm last night they _____ .' (They were in the middle o...
-  - a: had dinner
-  - b: have dinner
-  - c: were having dinner
-  - d: had had dinner
-
-- **#10** correct_option: **a** | 'I _____ TV when the phone rang.' (You were in the middle of...
-  - a: was watching
-  - b: watched
-  - c: have watched
-  - d: am watching
-
-- **#11** correct_option: **c** | 'She _____ to London yesterday.' (Completed trip.) Which fit...
-  - a: was going
-  - b: has gone
-  - c: went
-  - d: were going
-
-- **#12** correct_option: **d** | 'While he _____ dinner, I was reading.' Which fits?
-  - a: cooked
-  - b: cooks
-  - c: has cooked
-  - d: was cooking
-
-- **#13** correct_option: **a** | 'The doorbell _____ while I was having a shower.' Which fits...
-  - a: rang
-  - b: was ringing
-  - c: rings
-  - d: has rung
-
-- **#14** correct_option: **c** | 'At 7 pm last night they _____ .' (They were in the middle o...
-  - a: had dinner
-  - b: have dinner
-  - c: were having dinner
-  - d: had had dinner
-
 ### curriculum_past_simple_present_perfect.json
 
 - **#0** correct_option: **a** | Which sentence is correct?
@@ -1446,61 +1150,37 @@ None.
   - c: When have you been leaving?
   - d: When did you leave?
 
-- **#4** correct_option: **a** | Which sentence is correct?
-  - a: I saw him yesterday.
-  - b: I have seen him yesterday.
-  - c: I have seen him when?
-  - d: I saw him ever.
-
-- **#5** correct_option: **c** | We want to ask about life experience (no specific time). Whi...
-  - a: Did you ever go to Paris?
-  - b: Do you ever go to Paris?
-  - c: Have you ever been to Paris?
-  - d: Were you ever in Paris?
-
-- **#6** correct_option: **d** | She moved here in 2020 and still lives here. Which is correc...
-  - a: She lived here since 2020.
-  - b: She lives here since 2020.
-  - c: She has lived here in 2020.
-  - d: She has lived here since 2020.
-
-- **#7** correct_option: **d** | We want to know when something happened. Which is natural?
-  - a: When have you left?
-  - b: When do you leave?
-  - c: When have you been leaving?
-  - d: When did you leave?
-
-- **#8** correct_option: **b** | Which is correct?
+- **#4** correct_option: **b** | Which is correct?
   - a: I have been to the cinema yesterday.
   - b: I went to the cinema yesterday.
   - c: I have gone to the cinema yesterday.
   - d: I go to the cinema yesterday.
 
-- **#9** correct_option: **b** | 'She ____ last month.' (She left and is gone.) Which fits?
+- **#5** correct_option: **b** | 'She ____ last month.' (She left and is gone.) Which fits?
   - a: has left
   - b: left
   - c: has been leaving
   - d: leaves
 
-- **#10** correct_option: **b** | 'I ____ never ____ him.' (life experience) Which fits?
+- **#6** correct_option: **b** | 'I ____ never ____ him.' (life experience) Which fits?
   - a: did / see
   - b: have / seen
   - c: have / saw
   - d: did / seen
 
-- **#11** correct_option: **b** | 'We ____ here for five years.' (We still live here.) Which f...
+- **#7** correct_option: **b** | 'We ____ here for five years.' (We still live here.) Which f...
   - a: lived
   - b: have lived
   - c: live
   - d: were living
 
-- **#12** correct_option: **c** | Which is wrong?
+- **#8** correct_option: **c** | Which is wrong?
   - a: When did you start your job?
   - b: Have you ever been to Japan?
   - c: I have seen him yesterday.
   - d: She has lived here since 2020.
 
-- **#13** correct_option: **b** | 'Just' (recently, result now) usually takes:
+- **#9** correct_option: **b** | 'Just' (recently, result now) usually takes:
   - a: past simple
   - b: present perfect
   - c: past continuous
@@ -1898,79 +1578,7 @@ None.
   - c: It was late we went home.
   - d: It was late: we went home.
 
-- **#7** correct_option: **a** | Which is correct?
-  - a: I think that he is right.
-  - b: I think, that he is right.
-  - c: I think that, he is right.
-  - d: I think, that, he is right.
-
-- **#8** correct_option: **d** | Which is correct?
-  - a: monday and tuesday
-  - b: Monday and Tuesday
-  - c: Monday and tuesday
-  - d: monday and Tuesday
-
-- **#9** correct_option: **c** | Which is correct?
-  - a: She smiled and i waved.
-  - b: She smiled and i Waved.
-  - c: She smiled and I waved.
-  - d: she smiled and I waved.
-
-- **#10** correct_option: **a** | Which is correct? (You have more than one brother; the Londo...
-  - a: My brother, who lives in London, is a doctor.
-  - b: My brother who lives in London is a doctor.
-  - c: My brother, who lives in London is a doctor.
-  - d: My brother who lives in London, is a doctor.
-
-- **#11** correct_option: **c** | Which is correct?
-  - a: We speak english and czech.
-  - b: We speak English and czech.
-  - c: We speak English and Czech.
-  - d: we speak English and Czech.
-
-- **#12** correct_option: **a** | Which is correct?
-  - a: I think that he is right.
-  - b: I think, that he is right.
-  - c: I think that, he is right.
-  - d: I think, that, he is right.
-
-- **#13** correct_option: **c** | Which is correct?
-  - a: monday and tuesday
-  - b: Monday and tuesday
-  - c: Monday and Tuesday
-  - d: monday and Tuesday
-
-- **#14** correct_option: **d** | Which is correct?
-  - a: She smiled and i waved.
-  - b: She smiled and i Waved.
-  - c: she smiled and I waved.
-  - d: She smiled and I waved.
-
-- **#15** correct_option: **a** | Which is correct? (You have more than one brother; the Londo...
-  - a: My brother, who lives in London, is a doctor.
-  - b: My brother who lives in London is a doctor.
-  - c: My brother, who lives in London is a doctor.
-  - d: My brother who lives in London, is a doctor.
-
-- **#16** correct_option: **a** | Which is correct?
-  - a: We speak English and Czech.
-  - b: We speak english and czech.
-  - c: We speak English and czech.
-  - d: we speak English and Czech.
-
-- **#17** correct_option: **b** | Which is correct?
-  - a: We need three things time, money, and help.
-  - b: We need three things: time, money, and help.
-  - c: We need three things; time, money, and help.
-  - d: We need three things, time, money, and help.
-
-- **#18** correct_option: **b** | Which is correct? (Two related sentences.)
-  - a: It was late, we went home.
-  - b: It was late; we went home.
-  - c: It was late we went home.
-  - d: It was late: we went home.
-
-- **#19** correct_option: **b** | Which is correct? (List of places with commas inside.)
+- **#7** correct_option: **b** | Which is correct? (List of places with commas inside.)
   - a: We visited Paris, France, Rome, Italy, and Berlin,...
   - b: We visited Paris, France; Rome, Italy; and Berlin,...
   - c: We visited Paris, France: Rome, Italy: and Berlin,...
@@ -2160,66 +1768,6 @@ None.
   - c: where
   - d: who
 
-- **#15** correct_option: **a** | Which is correct?
-  - a: The book that I read was interesting.
-  - b: The book what I read was interesting.
-  - c: The book what I read it was interesting.
-  - d: The book I read what was interesting.
-
-- **#16** correct_option: **c** | Which is correct?
-  - a: The woman what lives next door is a doctor.
-  - b: The woman what she lives next door is a doctor.
-  - c: The woman who lives next door is a doctor.
-  - d: The woman which lives next door is a doctor.
-
-- **#17** correct_option: **d** | Which is correct?
-  - a: This is the town what I was born.
-  - b: This is the town what I was born in.
-  - c: This is the town who I was born.
-  - d: This is the town where I was born.
-
-- **#18** correct_option: **a** | When is 'what' correct in a relative sense?
-  - a: What I need is more time.
-  - b: The film what we saw was good.
-  - c: The thing what I said was wrong.
-  - d: The person what helped me left.
-
-- **#19** correct_option: **c** | Which is correct?
-  - a: The day what we met was sunny.
-  - b: The day what we met on was sunny.
-  - c: The day when we met was sunny.
-  - d: The day who we met was sunny.
-
-- **#20** correct_option: **a** | Which is correct?
-  - a: The book that I read was interesting.
-  - b: The book what I read was interesting.
-  - c: The book what I read it was interesting.
-  - d: The book I read what was interesting.
-
-- **#21** correct_option: **c** | Which is correct?
-  - a: The woman what lives next door is a doctor.
-  - b: The woman what she lives next door is a doctor.
-  - c: The woman who lives next door is a doctor.
-  - d: The woman which lives next door is a doctor.
-
-- **#22** correct_option: **d** | Which is correct?
-  - a: This is the town what I was born.
-  - b: This is the town what I was born in.
-  - c: This is the town who I was born.
-  - d: This is the town where I was born.
-
-- **#23** correct_option: **a** | When is 'what' correct in a relative sense?
-  - a: What I need is more time.
-  - b: The film what we saw was good.
-  - c: The thing what I said was wrong.
-  - d: The person what helped me left.
-
-- **#24** correct_option: **c** | Which is correct?
-  - a: The day what we met was sunny.
-  - b: The day what we met on was sunny.
-  - c: The day when we met was sunny.
-  - d: The day who we met was sunny.
-
 ### curriculum_reported_speech.json
 
 - **#0** correct_option: **a** | "I am leaving tomorrow." Which reported sentence is correct?
@@ -2317,66 +1865,6 @@ None.
   - b: has
   - c: had
   - d: would have
-
-- **#16** correct_option: **a** | "I am leaving tomorrow." Which reported sentence is correct?
-  - a: She said she was leaving the next day.
-  - b: She said she is leaving tomorrow.
-  - c: She said she was leaving tomorrow.
-  - d: She said she had left the next day.
-
-- **#17** correct_option: **c** | "Where do you live?" → He asked …
-  - a: where do I live
-  - b: where did I live
-  - c: where I lived
-  - d: where I live
-
-- **#18** correct_option: **a** | Which sentence is correct?
-  - a: She told me that she would come.
-  - b: She told that she would come.
-  - c: She said me that she would come.
-  - d: She told to me that she would come.
-
-- **#19** correct_option: **b** | "Close the window." → She …
-  - a: said me to close the window
-  - b: told me to close the window
-  - c: said to close the window
-  - d: told to me close the window
-
-- **#20** correct_option: **a** | "I have finished my work." → He said …
-  - a: he had finished his work
-  - b: he has finished his work
-  - c: he finished his work
-  - d: he have finished his work
-
-- **#21** correct_option: **c** | "Are you coming?" → She asked me …
-  - a: are you coming
-  - b: if you are coming
-  - c: if I was coming
-  - d: was I coming
-
-- **#22** correct_option: **c** | "I am leaving tomorrow." Which reported sentence is correct?
-  - a: She said she is leaving tomorrow.
-  - b: She said she had left the next day.
-  - c: She said she was leaving the next day.
-  - d: She said she was leaving tomorrow.
-
-- **#23** correct_option: **c** | "Where do you live?" → He asked …
-  - a: where do I live
-  - b: where did I live
-  - c: where I lived
-  - d: where I live
-
-- **#24** correct_option: **a** | Which sentence is correct?
-  - a: She told me that she would come.
-  - b: She told that she would come.
-  - c: She said me that she would come.
-  - d: She told to me that she would come.
-
-- **#25** correct_option: **a** | "Close the window." → She …
-  - a: told me to close the window
-  - b: said me to close the window
-  - c: told to me close the window
-  - d: said to close the window
 
 ### curriculum_sentence_transformation.json
 
@@ -2530,66 +2018,6 @@ You _____ ...
   - c: English has no aspect.
   - d: English has no future tense.
 
-- **#8** correct_option: **a** | How do we get the 12 tense forms in English?
-  - a: 3 times + 4 aspects
-  - b: 4 times + 3 aspects
-  - c: 2 times + 6 aspects
-  - d: 6 times + 2 aspects
-
-- **#9** correct_option: **b** | In English, how do we usually form questions and negatives i...
-  - a: By changing the verb ending for each person
-  - b: By using auxiliary verbs (do, does, did, have, wil...
-  - c: By adding a suffix to the main verb
-  - d: By changing the word order only
-
-- **#10** correct_option: **b** | What is **aspect** in English grammar?
-  - a: The person (I, you, he/she) of the subject
-  - b: The way we look at the action in time (e.g. in pro...
-  - c: The time of day when something happens
-  - d: Whether the sentence is positive or negative
-
-- **#11** correct_option: **b** | Which aspect do we use when the action is **in progress** at...
-  - a: Simple
-  - b: Continuous
-  - c: Perfect
-  - d: Perfect continuous
-
-- **#12** correct_option: **d** | 'I have been waiting for an hour.' – Which tense form is thi...
-  - a: Present simple
-  - b: Present continuous
-  - c: Present perfect simple
-  - d: Present perfect continuous
-
-- **#13** correct_option: **c** | 'She had left before I arrived.' – Which tense form is this?
-  - a: Past simple
-  - b: Past continuous
-  - c: Past perfect simple
-  - d: Past perfect continuous
-
-- **#14** correct_option: **c** | Which aspect focuses on **completion** and often on the **re...
-  - a: Simple
-  - b: Continuous
-  - c: Perfect
-  - d: Perfect continuous
-
-- **#15** correct_option: **b** | How does English typically express time and aspect?
-  - a: English uses one word per tense.
-  - b: English often uses auxiliaries + main verb (e.g. I...
-  - c: English has no aspect.
-  - d: English has no future tense.
-
-- **#16** correct_option: **a** | How do we get the 12 tense forms in English?
-  - a: 3 times + 4 aspects
-  - b: 4 times + 3 aspects
-  - c: 2 times + 6 aspects
-  - d: 6 times + 2 aspects
-
-- **#17** correct_option: **b** | Which aspect do we use when the action is **in progress** at...
-  - a: Simple
-  - b: Continuous
-  - c: Perfect
-  - d: Perfect continuous
-
 ### curriculum_verb_subject_agreement.json
 
 - **#0** correct_option: **a** | Which is correct?
@@ -2709,66 +2137,6 @@ You _____ ...
   - d: I carry your bag.
 
 - **#4** correct_option: **c** | You have a general opinion about tomorrow's weather (no clou...
-  - a: I think it's going to rain tomorrow.
-  - b: I think it rains tomorrow.
-  - c: I think it will rain tomorrow.
-  - d: I think it will be raining tomorrow.
-
-- **#5** correct_option: **a** | You already decided yesterday to see a film tonight. Which d...
-  - a: I'm going to see a film tonight.
-  - b: I will see a film tonight.
-  - c: I'm seeing a film tonight.
-  - d: I see a film tonight.
-
-- **#6** correct_option: **c** | The phone rings. You decide at that moment to answer it. Whi...
-  - a: I'm going to get it.
-  - b: I get it.
-  - c: I'll get it.
-  - d: I'm getting it.
-
-- **#7** correct_option: **d** | You can see black clouds. You predict rain. Which is natural...
-  - a: It will rain.
-  - b: It rains.
-  - c: It's raining.
-  - d: It's going to rain.
-
-- **#8** correct_option: **a** | You want to offer to carry someone's bag. Which do you say?
-  - a: I'll carry your bag.
-  - b: I'm going to carry your bag.
-  - c: I'm carrying your bag.
-  - d: I carry your bag.
-
-- **#9** correct_option: **c** | You have a general opinion about tomorrow's weather (no clou...
-  - a: I think it's going to rain tomorrow.
-  - b: I think it rains tomorrow.
-  - c: I think it will rain tomorrow.
-  - d: I think it will be raining tomorrow.
-
-- **#10** correct_option: **a** | You already decided yesterday to see a film tonight. Which d...
-  - a: I'm going to see a film tonight.
-  - b: I will see a film tonight.
-  - c: I'm seeing a film tonight.
-  - d: I see a film tonight.
-
-- **#11** correct_option: **c** | The phone rings. You decide at that moment to answer it. Whi...
-  - a: I'm going to get it.
-  - b: I get it.
-  - c: I'll get it.
-  - d: I'm getting it.
-
-- **#12** correct_option: **d** | You can see black clouds. You predict rain. Which is natural...
-  - a: It will rain.
-  - b: It rains.
-  - c: It's raining.
-  - d: It's going to rain.
-
-- **#13** correct_option: **a** | You want to offer to carry someone's bag. Which do you say?
-  - a: I'll carry your bag.
-  - b: I'm going to carry your bag.
-  - c: I'm carrying your bag.
-  - d: I carry your bag.
-
-- **#14** correct_option: **c** | You have a general opinion about tomorrow's weather (no clou...
   - a: I think it's going to rain tomorrow.
   - b: I think it rains tomorrow.
   - c: I think it will rain tomorrow.
@@ -2995,7 +2363,7 @@ You _____ ...
 - **questions.json** prepositions_dependent/set1 [#25]: 27. They invested ____ property.
 - **questions.json** prepositions_dependent/set1 [#26]: 28. She invited me ____ the party.
 - **questions.json** prepositions_dependent/set1 [#27]: 29. Listen ____ the radio.
-- **questions.json** prepositions_dependent/set1 [#28]: 30. Look ____ the board.
+- **questions.json** prepositions_dependent/set1 [#28]: 30. Look ____ the board. (direct your eyes at it)
 - **questions.json** prepositions_dependent/set1 [#29]: 31. I'm looking ____ my keys.
 - **questions.json** prepositions_dependent/set1 [#30]: 32. He objected ____ the proposal.
 - **questions.json** prepositions_dependent/set1 [#31]: 33. I'll pay ____ the tickets.
@@ -3214,7 +2582,6 @@ You _____ ...
 - **questions.json** comparatives/set1 [#48]: 49. She is ____ (careful) driver I know.
 - **questions.json** quantifiers/set1 [#1]: 2. Do you have _____ sugar? (Fill in the blank.)
 - **questions.json** quantifiers/set1 [#42]: 44. _____ students passed the exam. (whole group)
-- **questions.json** quantifiers/set1 [#43]: 45. We have _____ options. (Fill in the blank.)
 - **questions.json** quantifiers/set1 [#44]: 46. There isn't _____ bread. (Fill in the blank.)
 - **questions.json** quantifiers/set1 [#46]: 48. I need _____ help. (Fill in the blank.)
 - **questions.json** phrasal_verbs/set1 [#0]: 1. Please go _____ with your work. (continue)
@@ -3244,9 +2611,7 @@ You _____ ...
 - **questions.json** phrasal_verbs/set1 [#35]: 36. He took _____ his wallet. (remove)
 - **questions.json** phrasal_verbs/set1 [#36]: 37. Come _____, we're late. (hurry)
 - **questions.json** phrasal_verbs/set1 [#38]: 39. Get _____ the bus. (board)
-- **questions.json** phrasal_verbs/set1 [#39]: 40. Turn _____ the light. (switch on)
 - **questions.json** phrasal_verbs/set1 [#40]: 41. Put _____ your pen. (place down)
-- **questions.json** phrasal_verbs/set1 [#41]: 42. I'm looking _____ my keys. (search for)
 - **questions.json** phrasal_verbs/set1 [#42]: 43. Keep _____ trying. (continue)
 - **questions.json** phrasal_verbs/set1 [#43]: 44. Bring _____ the book. (return)
 - **questions.json** phrasal_verbs/set1 [#45]: 46. The car broke _____. (stopped working)
@@ -3345,20 +2710,20 @@ You _____ ...
 - **questions.json** phrasal_verbs/set1 [#163]: 164. Pass _____ the message. (transmit)
 - **questions.json** phrasal_verbs/set1 [#164]: 165. Plug _____ the laptop. (connect electrical)
 - **questions.json** phrasal_verbs/set1 [#165]: 166. The train pulled _____. (left)
-- **questions.json** phrasal_verbs/set1 [#168]: 169. They ripped us _____. (overcharged)
-- **questions.json** phrasal_verbs/set1 [#170]: 171. The concert sold _____. (sold all tickets)
-- **questions.json** phrasal_verbs/set1 [#172]: 173. Sign _____ for the course. (register)
-- **questions.json** phrasal_verbs/set1 [#173]: 174. Switch _____ the light. (turn on)
-- **questions.json** phrasal_verbs/set1 [#174]: 175. Switch _____ your phone. (turn off)
-- **questions.json** phrasal_verbs/set1 [#176]: 177. I can't tell them _____. (distinguish)
-- **questions.json** phrasal_verbs/set1 [#177]: 178. Tidy _____ your room. (make tidy)
-- **questions.json** phrasal_verbs/set1 [#178]: 179. He tripped _____ the cable. (fell over)
-- **questions.json** phrasal_verbs/set1 [#179]: 180. Turn _____ and go back. (reverse direction)
-- **questions.json** phrasal_verbs/set1 [#180]: 181. Wait _____ me. (stay until I arrive)
-- **questions.json** phrasal_verbs/set1 [#182]: 183. I'll wash _____. (wash dishes)
-- **questions.json** phrasal_verbs/set1 [#183]: 184. Watch _____ for pickpockets. (be careful of)
-- **questions.json** phrasal_verbs/set1 [#184]: 185. Wind _____ after work. (relax)
-- **questions.json** phrasal_verbs/set1 [#186]: 187. Let's wrap _____ the meeting. (conclude)
+- **questions.json** phrasal_verbs/set1 [#167]: 169. They ripped us _____. (overcharged)
+- **questions.json** phrasal_verbs/set1 [#169]: 171. The concert sold _____. (sold all tickets)
+- **questions.json** phrasal_verbs/set1 [#171]: 173. Sign _____ for the course. (register)
+- **questions.json** phrasal_verbs/set1 [#172]: 174. Switch _____ the light. (turn on)
+- **questions.json** phrasal_verbs/set1 [#173]: 175. Switch _____ your phone. (turn off)
+- **questions.json** phrasal_verbs/set1 [#175]: 177. I can't tell them _____. (distinguish)
+- **questions.json** phrasal_verbs/set1 [#176]: 178. Tidy _____ your room. (make tidy)
+- **questions.json** phrasal_verbs/set1 [#177]: 179. He tripped _____ the cable. (fell over)
+- **questions.json** phrasal_verbs/set1 [#178]: 180. Turn _____ and go back. (reverse direction)
+- **questions.json** phrasal_verbs/set1 [#179]: 181. Wait _____ me. (stay until I arrive)
+- **questions.json** phrasal_verbs/set1 [#181]: 183. I'll wash _____. (wash dishes)
+- **questions.json** phrasal_verbs/set1 [#182]: 184. Watch _____ for pickpockets. (be careful of)
+- **questions.json** phrasal_verbs/set1 [#183]: 185. Wind _____ after work. (relax)
+- **questions.json** phrasal_verbs/set1 [#185]: 187. Let's wrap _____ the meeting. (conclude)
 - **questions.json** reported_speech/set1 [#0]: 1. "I am tired." → She said she _____ tired.
 - **questions.json** reported_speech/set1 [#1]: 2. "We will help." → They said they _____ help.
 - **questions.json** reported_speech/set1 [#5]: 6. "I can swim." → He said he _____ swim.
@@ -3435,24 +2800,15 @@ You _____ ...
 - **questions.json** past_simple_present_perfect/set1 [#26] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
   - 27. How long ____ you ____ (have) this phone? Put the verb in the correct tense.
   - Expected answer: have you had
-- **questions.json** past_simple_present_perfect/set1 [#27] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
-  - 28. He ____ (leave) the office at 6 pm. Put the verb in the correct tense.
-  - Expected answer: left
 - **questions.json** past_simple_present_perfect/set1 [#29] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
   - 30. I ____ (go) to the cinema last Saturday. Put the verb in the correct tense.
   - Expected answer: went
 - **questions.json** past_simple_present_perfect/set1 [#35] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
   - 36. He ____ (work) for this company for ten years. Put the verb in the correct tense.
   - Expected answer: has worked
-- **questions.json** past_simple_present_perfect/set1 [#36] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
-  - 37. We ____ (meet) at the conference in Berlin. Put the verb in the correct tense.
-  - Expected answer: met
 - **questions.json** past_simple_present_perfect/set1 [#40] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
   - 41. They ____ (be) together for three years. Put the verb in the correct tense.
   - Expected answer: have been
-- **questions.json** past_simple_present_perfect/set1 [#41] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
-  - 42. The train ____ (leave) at 9 am. Put the verb in the correct tense.
-  - Expected answer: left
 - **questions.json** past_simple_present_perfect/set1 [#44] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
   - 45. How long ____ they ____ (be) married? Put the verb in the correct tense.
   - Expected answer: have they been
@@ -3486,9 +2842,6 @@ You _____ ...
 - **questions.json** will_going_to/set1 [#35] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
   - 21. The weather forecast says it ____ (rain) at the weekend. Put the verb in the correct tense.
   - Expected answer: will rain
-- **questions.json** will_going_to/set1 [#36] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
-  - 22. I ____ (pay) for the coffee. Put the verb in the correct tense.
-  - Expected answer: will pay
 - **questions.json** will_going_to/set1 [#38] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
   - 24. I ____ (try) my best. Put the verb in the correct tense.
   - Expected answer: will try
@@ -3576,9 +2929,6 @@ You _____ ...
 - **questions.json** passives/set1 [#41] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
   - 30. The book _____ (translate) into many languages. Put the verb in the correct tense.
   - Expected answer: has been translated
-- **questions.json** passives/set1 [#47] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
-  - 36. The problem _____ (solve) by the team. Put the verb in the correct tense.
-  - Expected answer: was solved
 - **questions.json** passives/set1 [#48] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
   - 37. The film _____ (direct) by a famous director. Put the verb in the correct tense.
   - Expected answer: was directed
@@ -3660,11 +3010,17 @@ You _____ ...
 - **questions.json** past_perfect/set1 [#48] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
   - 49. By 2019 he _____ (visit) over 50 countries. Put the verb in the correct tense.
   - Expected answer: had visited
+- **questions.json** tenses_general/set1 [#0] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
+  - 1. Put the verb in the correct tense: I _____ (study) English for three hours and I'm exhausted. (duration up to now, on
+  - Expected answer: have been studying
+- **questions.json** tenses_general/set1 [#5] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
+  - 6. Put the verb in the correct tense: Don't disturb her. She _____ (work) on an important report. (in progress now)
+  - Expected answer: is working
 - **questions.json** tenses_general/set1 [#20] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
   - 21. Put the verb in the correct tense: She _____ (study) for her exam at the moment. (in progress now)
   - Expected answer: is studying
 - **questions.json** tenses_general/set1 [#30] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
-  - 31. Put the verb in the correct tense: By 2025 they _____ (complete) the project. (before future time)
+  - 31. Put the verb in the correct tense: By 2030 they _____ (complete) the project. (before future time)
   - Expected answer: will have completed
 - **questions.json** tenses_general/set1 [#32] (ambiguity_tense): Verb tense blank with no time reference (past/present/future unclear).
   - 33. Put the verb in the correct tense: She _____ (teach) here for ten years. (duration up to now)
@@ -3707,5 +3063,5 @@ None.
 
 ## 10. Invalid topic_id values in exam/mixed files
 
-- **exam_word_formation.json**: topic_id "word_formation" not in topics.json
-- **exam_sentence_transformation.json**: topic_id "indefinite_pronouns" not in topics.json
+None.
+

@@ -673,7 +673,7 @@
         },
         {
           "type": "open",
-          "question": "28. He ____ (leave) the office at 6 pm. Put the verb in the correct tense.",
+          "question": "28. He ____ (leave) the office at 6 pm yesterday. Put the verb in the correct tense.",
           "answers": [
             "left"
           ],
@@ -747,7 +747,7 @@
         },
         {
           "type": "open",
-          "question": "37. We ____ (meet) at the conference in Berlin. Put the verb in the correct tense.",
+          "question": "37. We ____ (meet) at the conference in Berlin last year. Put the verb in the correct tense.",
           "answers": [
             "met"
           ],
@@ -789,7 +789,7 @@
         },
         {
           "type": "open",
-          "question": "42. The train ____ (leave) at 9 am. Put the verb in the correct tense.",
+          "question": "42. Yesterday the train ____ (leave) at 9 am. Put the verb in the correct tense.",
           "answers": [
             "left"
           ],
@@ -3238,9 +3238,11 @@
           "question": "13. I ____ (not forget) what you said. Put the verb in the correct tense.",
           "answers": [
             "won't forget",
-            "will not forget"
+            "will not forget",
+            "am not going to forget",
+            "'m not going to forget"
           ],
-          "explanation": "Promise → will."
+          "explanation": "Promise → will. (Both will and going to are acceptable here.)"
         },
         {
           "type": "open",
@@ -3341,9 +3343,11 @@
           "question": "24. I ____ (try) my best. Put the verb in the correct tense.",
           "answers": [
             "will try",
-            "'ll try"
+            "'ll try",
+            "am going to try",
+            "'m going to try"
           ],
-          "explanation": "Promise / intention → will."
+          "explanation": "Promise / intention → will. (Both will and going to are acceptable here.)"
         },
         {
           "type": "open",
@@ -3422,9 +3426,12 @@
           "question": "33. They ____ (not be) late. Put the verb in the correct tense.",
           "answers": [
             "won't be",
-            "will not be"
+            "will not be",
+            "aren't going to be",
+            "are not going to be",
+            "'re not going to be"
           ],
-          "explanation": "Promise / prediction → will."
+          "explanation": "Promise / prediction → will. (Both will and going to are acceptable here.)"
         },
         {
           "type": "open",
@@ -3440,9 +3447,11 @@
           "question": "35. It ____ (take) about an hour. Put the verb in the correct tense.",
           "answers": [
             "will take",
-            "'ll take"
+            "'ll take",
+            "is going to take",
+            "'s going to take"
           ],
-          "explanation": "General prediction → will."
+          "explanation": "General prediction → will. (Both will and going to are acceptable here.)"
         },
         {
           "type": "open",
@@ -3458,9 +3467,11 @@
           "question": "37. I ____ (not tell) her what you said. Put the verb in the correct tense.",
           "answers": [
             "won't tell",
-            "will not tell"
+            "will not tell",
+            "am not going to tell",
+            "'m not going to tell"
           ],
-          "explanation": "Promise → will."
+          "explanation": "Promise → will. (Both will and going to are acceptable here.)"
         },
         {
           "type": "open",
@@ -3485,9 +3496,12 @@
           "question": "40. She ____ (not give) up. Put the verb in the correct tense.",
           "answers": [
             "won't give",
-            "will not give"
+            "will not give",
+            "isn't going to give",
+            "is not going to give",
+            "'s not going to give"
           ],
-          "explanation": "Determination → will."
+          "explanation": "Determination → will. (Both will and going to are acceptable here.)"
         },
         {
           "type": "open",
@@ -3514,9 +3528,11 @@
           "question": "43. We ____ (need) more time. Put the verb in the correct tense.",
           "answers": [
             "will need",
-            "'ll need"
+            "'ll need",
+            "are going to need",
+            "'re going to need"
           ],
-          "explanation": "Prediction → will."
+          "explanation": "Prediction → will. (Both will and going to are acceptable here.)"
         },
         {
           "type": "open",
@@ -3532,9 +3548,11 @@
           "question": "45. I ____ (not do) that again. Put the verb in the correct tense.",
           "answers": [
             "won't do",
-            "will not do"
+            "will not do",
+            "am not going to do",
+            "'m not going to do"
           ],
-          "explanation": "Promise → will."
+          "explanation": "Promise → will. (Both will and going to are acceptable here.)"
         },
         {
           "type": "open",
@@ -7481,7 +7499,9 @@
           "question": "10. The meeting _____ (cancel) because of the storm. Put the verb in the correct tense.",
           "answers": [
             "was cancelled",
-            "was canceled"
+            "was canceled",
+            "has been cancelled",
+            "has been canceled"
           ],
           "explanation": "Past passive: was + cancelled/canceled."
         },
@@ -7545,7 +7565,9 @@
           "type": "open",
           "question": "18. The project _____ (complete) by the end of the year. Put the verb in the correct tense.",
           "answers": [
-            "will be completed"
+            "will be completed",
+            "will have been completed",
+            "is going to be completed"
           ],
           "explanation": "Future passive: will be + completed."
         },
@@ -7597,7 +7619,8 @@
           "type": "open",
           "question": "24. The window _____ (break) by the children. Put the verb in the correct tense.",
           "answers": [
-            "was broken"
+            "was broken",
+            "has been broken"
           ],
           "explanation": "Past passive: was + broken."
         },
@@ -7613,7 +7636,9 @@
           "type": "open",
           "question": "26. The tickets _____ (sell) out. Put the verb in the correct tense.",
           "answers": [
-            "have been sold"
+            "have been sold",
+            "are sold",
+            "were sold"
           ],
           "explanation": "Present perfect passive: have been + sold."
         },
@@ -7646,7 +7671,9 @@
           "type": "open",
           "question": "30. The book _____ (translate) into many languages. Put the verb in the correct tense.",
           "answers": [
-            "has been translated"
+            "has been translated",
+            "was translated",
+            "is translated"
           ],
           "explanation": "Present perfect passive: has been + translated."
         },
@@ -7694,7 +7721,7 @@
         },
         {
           "type": "open",
-          "question": "36. The problem _____ (solve) by the team. Put the verb in the correct tense.",
+          "question": "36. The problem _____ (solve) by the team last week. Put the verb in the correct tense.",
           "answers": [
             "was solved"
           ],
@@ -7704,7 +7731,8 @@
           "type": "open",
           "question": "37. The film _____ (direct) by a famous director. Put the verb in the correct tense.",
           "answers": [
-            "was directed"
+            "was directed",
+            "is directed"
           ],
           "explanation": "Past passive: was + directed."
         },
@@ -7772,7 +7800,9 @@
           "type": "open",
           "question": "45. The story _____ (tell) many times. Put the verb in the correct tense.",
           "answers": [
-            "has been told"
+            "has been told",
+            "was told",
+            "is told"
           ],
           "explanation": "Present perfect passive: has been + told."
         },
@@ -9843,7 +9873,8 @@
           "question": "34. We need _____ more time. (a bit more – one phrase)",
           "answers": [
             "a little",
-            "some"
+            "some",
+            "a bit"
           ],
           "explanation": "Uncountable, positive → a little or some."
         },
@@ -10507,7 +10538,8 @@
           "type": "open",
           "question": "36. She _____ (wear) a red dress at the party. Put the verb in the correct tense.",
           "answers": [
-            "was wearing"
+            "was wearing",
+            "wore"
           ],
           "explanation": "Description of appearance at that time → past continuous."
         },
@@ -10599,7 +10631,9 @@
           "question": "47. We _____ (not expect) to see you there. Put the verb in the correct tense.",
           "answers": [
             "didn't expect",
-            "did not expect"
+            "did not expect",
+            "weren't expecting",
+            "were not expecting"
           ],
           "explanation": "State/attitude at that time → past simple."
         },
@@ -17117,7 +17151,8 @@
           "type": "open",
           "question": "21. After she _____ (finish) her work, she went home. Put the verb in the correct tense.",
           "answers": [
-            "had finished"
+            "had finished",
+            "finished"
           ],
           "explanation": "Finished before going home."
         },
@@ -17126,7 +17161,9 @@
           "question": "22. I _____ (not visit) London before 2019. Put the verb in the correct tense.",
           "answers": [
             "hadn't visited",
-            "had not visited"
+            "had not visited",
+            "didn't visit",
+            "did not visit"
           ],
           "explanation": "Before that past time."
         },
@@ -17224,7 +17261,8 @@
           "type": "open",
           "question": "34. She _____ (sell) her car before she moved abroad. Put the verb in the correct tense.",
           "answers": [
-            "had sold"
+            "had sold",
+            "sold"
           ],
           "explanation": "Sold before moving."
         },
@@ -17249,7 +17287,8 @@
           "type": "open",
           "question": "37. By the end of the week, she _____ (read) three books. Put the verb in the correct tense.",
           "answers": [
-            "had read"
+            "had read",
+            "will have read"
           ],
           "explanation": "By + past time → past perfect."
         },
@@ -17306,7 +17345,8 @@
           "type": "open",
           "question": "44. By lunchtime we _____ (complete) half the work. Put the verb in the correct tense.",
           "answers": [
-            "had completed"
+            "had completed",
+            "will have completed"
           ],
           "explanation": "By + past time → past perfect."
         },
@@ -17339,7 +17379,9 @@
           "question": "48. I _____ (not realise) how late it was until she told me. Put the verb in the correct tense.",
           "answers": [
             "hadn't realised",
-            "had not realised"
+            "had not realised",
+            "didn't realise",
+            "did not realise"
           ],
           "explanation": "Not realising before she told me."
         },
@@ -17613,7 +17655,7 @@
         },
         {
           "type": "open",
-          "question": "31. Put the verb in the correct tense: By 2025 they _____ (complete) the project. (before future time)",
+          "question": "31. Put the verb in the correct tense: By 2030 they _____ (complete) the project. (before future time)",
           "answers": [
             "will have completed"
           ],

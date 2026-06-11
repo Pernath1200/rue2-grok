@@ -2,6 +2,442 @@
   "missing_alternative": [],
   "missing_alternative_fixed": [],
   "mc_manual_check": {
+    "curriculum_articles.json": [
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.check.questions[0]",
+        "index": 0,
+        "check": "mc_manual_check",
+        "correct_option": "b",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "'I need _____ umbrella.' Which fits?"
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.check.questions[1]",
+        "index": 1,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "A",
+          "b": "An",
+          "c": "The",
+          "d": "No article"
+        },
+        "questionSnippet": "'_____ life is short.' (general) Which fits?"
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.check.questions[2]",
+        "index": 2,
+        "check": "mc_manual_check",
+        "correct_option": "c",
+        "options": {
+          "a": "A",
+          "b": "An",
+          "c": "The",
+          "d": "No article"
+        },
+        "questionSnippet": "'I bought a car. _____ car is red.' Which fits in the second..."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.check.questions[3]",
+        "index": 3,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "'She goes to _____ work by bus.' Which fits?"
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.check.questions[4]",
+        "index": 4,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "'We had _____ breakfast at eight.' Which fits?"
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.check.questions[5]",
+        "index": 5,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "'She dreams of visiting _____ Africa.' Which fits?"
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[0]",
+        "index": 0,
+        "check": "mc_manual_check",
+        "correct_option": "b",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "I need _____ umbrella."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[1]",
+        "index": 1,
+        "check": "mc_manual_check",
+        "correct_option": "b",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "She's _____ engineer."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[2]",
+        "index": 2,
+        "check": "mc_manual_check",
+        "correct_option": "c",
+        "options": {
+          "a": "A",
+          "b": "An",
+          "c": "The",
+          "d": "No article"
+        },
+        "questionSnippet": "_____ sun is very bright today."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[3]",
+        "index": 3,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "We had _____ breakfast at eight."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[4]",
+        "index": 4,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "He goes to _____ work by bus."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[5]",
+        "index": 5,
+        "check": "mc_manual_check",
+        "correct_option": "b",
+        "options": {
+          "a": "a / A",
+          "b": "a / The",
+          "c": "the / The",
+          "d": "no article / The"
+        },
+        "questionSnippet": "I bought _____ new car. _____ car is red."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[6]",
+        "index": 6,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "A",
+          "b": "An",
+          "c": "The",
+          "d": "No article"
+        },
+        "questionSnippet": "_____ cats are animals."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[7]",
+        "index": 7,
+        "check": "mc_manual_check",
+        "correct_option": "b",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "She has _____ hour for lunch."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[8]",
+        "index": 8,
+        "check": "mc_manual_check",
+        "correct_option": "c",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "Close _____ door, please."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[9]",
+        "index": 9,
+        "check": "mc_manual_check",
+        "correct_option": "c",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "They live in _____ USA."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[10]",
+        "index": 10,
+        "check": "mc_manual_check",
+        "correct_option": "c",
+        "options": {
+          "a": "A",
+          "b": "An",
+          "c": "The",
+          "d": "No article"
+        },
+        "questionSnippet": "_____ water in the bottle is cold."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[11]",
+        "index": 11,
+        "check": "mc_manual_check",
+        "correct_option": "c",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "It's _____ best film I've ever seen."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[12]",
+        "index": 12,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "A",
+          "b": "An",
+          "c": "The",
+          "d": "No article"
+        },
+        "questionSnippet": "_____ life is full of surprises."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[13]",
+        "index": 13,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "I'll meet you at _____ home."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.gapfill.questions[14]",
+        "index": 14,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "She dreams of visiting _____ Africa."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.mc.questions[0]",
+        "index": 0,
+        "check": "mc_manual_check",
+        "correct_option": "b",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "I need _____ umbrella."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.mc.questions[1]",
+        "index": 1,
+        "check": "mc_manual_check",
+        "correct_option": "b",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "She's _____ engineer."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.mc.questions[2]",
+        "index": 2,
+        "check": "mc_manual_check",
+        "correct_option": "c",
+        "options": {
+          "a": "A",
+          "b": "An",
+          "c": "The",
+          "d": "No article"
+        },
+        "questionSnippet": "_____ sun is very bright today."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.mc.questions[3]",
+        "index": 3,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "We had _____ breakfast at eight."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.mc.questions[4]",
+        "index": 4,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "He goes to _____ work by bus."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.mc.questions[5]",
+        "index": 5,
+        "check": "mc_manual_check",
+        "correct_option": "b",
+        "options": {
+          "a": "a / A",
+          "b": "a / The",
+          "c": "the / The",
+          "d": "no article / The"
+        },
+        "questionSnippet": "I bought _____ new car. _____ car is red."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.mc.questions[6]",
+        "index": 6,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "A",
+          "b": "An",
+          "c": "The",
+          "d": "No article"
+        },
+        "questionSnippet": "_____ cats are animals."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.mc.questions[7]",
+        "index": 7,
+        "check": "mc_manual_check",
+        "correct_option": "b",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "She has _____ hour for lunch."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.mc.questions[8]",
+        "index": 8,
+        "check": "mc_manual_check",
+        "correct_option": "c",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "Close _____ door, please."
+      },
+      {
+        "source": "curriculum_articles.json",
+        "path": "curriculum_articles.json.practice.mc.questions[9]",
+        "index": 9,
+        "check": "mc_manual_check",
+        "correct_option": "c",
+        "options": {
+          "a": "a",
+          "b": "an",
+          "c": "the",
+          "d": "no article"
+        },
+        "questionSnippet": "They live in _____ USA."
+      }
+    ],
     "curriculum_auxiliary_verbs.json": [
       {
         "source": "curriculum_auxiliary_verbs.json",
@@ -284,146 +720,6 @@
           "d": "She is not as tall as her brother."
         },
         "questionSnippet": "Which negative comparison is correct?"
-      },
-      {
-        "source": "curriculum_comparatives.json",
-        "path": "curriculum_comparatives.json.practice.mc.questions[0]",
-        "index": 0,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "This exercise is easier than the last one.",
-          "b": "This exercise is more easier than the last one.",
-          "c": "This exercise is more easy than the last one.",
-          "d": "This exercise is easyer than the last one."
-        },
-        "questionSnippet": "Which sentence is correct?"
-      },
-      {
-        "source": "curriculum_comparatives.json",
-        "path": "curriculum_comparatives.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "more tall than",
-          "b": "tallest than",
-          "c": "taller than",
-          "d": "more taller than"
-        },
-        "questionSnippet": "Choose the correct comparative."
-      },
-      {
-        "source": "curriculum_comparatives.json",
-        "path": "curriculum_comparatives.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "more interesting than",
-          "b": "interestinger than",
-          "c": "interester than",
-          "d": "more interestinger than"
-        },
-        "questionSnippet": "Which is the correct form?"
-      },
-      {
-        "source": "curriculum_comparatives.json",
-        "path": "curriculum_comparatives.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "gooder than",
-          "b": "more good than",
-          "c": "better than",
-          "d": "best than"
-        },
-        "questionSnippet": "Complete the sentence: 'His English is ____ mine.'"
-      },
-      {
-        "source": "curriculum_comparatives.json",
-        "path": "curriculum_comparatives.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "She is not so tall like her brother.",
-          "b": "She is not so taller as her brother.",
-          "c": "She is not as tall like her brother.",
-          "d": "She is not as tall as her brother."
-        },
-        "questionSnippet": "Which negative comparison is correct?"
-      },
-      {
-        "source": "curriculum_comparatives.json",
-        "path": "curriculum_comparatives.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "This exercise is easier than the last one.",
-          "b": "This exercise is more easier than the last one.",
-          "c": "This exercise is more easy than the last one.",
-          "d": "This exercise is easyer than the last one."
-        },
-        "questionSnippet": "Which sentence is correct?"
-      },
-      {
-        "source": "curriculum_comparatives.json",
-        "path": "curriculum_comparatives.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "more tall than",
-          "b": "tallest than",
-          "c": "taller than",
-          "d": "more taller than"
-        },
-        "questionSnippet": "Choose the correct comparative."
-      },
-      {
-        "source": "curriculum_comparatives.json",
-        "path": "curriculum_comparatives.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "more interesting than",
-          "b": "interestinger than",
-          "c": "interester than",
-          "d": "more interestinger than"
-        },
-        "questionSnippet": "Which is the correct form?"
-      },
-      {
-        "source": "curriculum_comparatives.json",
-        "path": "curriculum_comparatives.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "gooder than",
-          "b": "more good than",
-          "c": "better than",
-          "d": "best than"
-        },
-        "questionSnippet": "Complete the sentence: 'His English is ____ mine.'"
-      },
-      {
-        "source": "curriculum_comparatives.json",
-        "path": "curriculum_comparatives.json.practice.mc.questions[9]",
-        "index": 9,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "She is not so tall like her brother.",
-          "b": "She is not so taller as her brother.",
-          "c": "She is not as tall like her brother.",
-          "d": "She is not as tall as her brother."
-        },
-        "questionSnippet": "Which negative comparison is correct?"
       }
     ],
     "curriculum_conditionals.json": [
@@ -650,146 +946,6 @@
           "d": "had arrived"
         },
         "questionSnippet": "Third: If they hadn't missed the flight, they _____ on time."
-      },
-      {
-        "source": "curriculum_conditionals.json",
-        "path": "curriculum_conditionals.json.practice.mc.questions[0]",
-        "index": 0,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "Zero",
-          "b": "First",
-          "c": "Second",
-          "d": "Third"
-        },
-        "questionSnippet": "Which type of conditional is: 'If you heat water to 100 degr..."
-      },
-      {
-        "source": "curriculum_conditionals.json",
-        "path": "curriculum_conditionals.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "If it will rain, we will stay at home.",
-          "b": "If it rained, we would stay at home.",
-          "c": "If it rains, we will stay at home.",
-          "d": "If it rains, we would stay at home."
-        },
-        "questionSnippet": "Choose the correct first conditional."
-      },
-      {
-        "source": "curriculum_conditionals.json",
-        "path": "curriculum_conditionals.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "am",
-          "b": "was",
-          "c": "would be",
-          "d": "were"
-        },
-        "questionSnippet": "'If I _____ you, I would apologise.' (Second conditional)"
-      },
-      {
-        "source": "curriculum_conditionals.json",
-        "path": "curriculum_conditionals.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "If I know, I will tell you.",
-          "b": "If I had known, I would tell you.",
-          "c": "If I knew, I would have told you.",
-          "d": "If I had known, I would have told you."
-        },
-        "questionSnippet": "Which is a third conditional?"
-      },
-      {
-        "source": "curriculum_conditionals.json",
-        "path": "curriculum_conditionals.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "We must use 'had' in the if-clause, not 'would have'.",
-          "b": "We must use 'will' in the main clause.",
-          "c": "We must use past perfect in both clauses.",
-          "d": "Nothing; the sentence is correct."
-        },
-        "questionSnippet": "What is wrong? 'If I would have time, I would help you.'"
-      },
-      {
-        "source": "curriculum_conditionals.json",
-        "path": "curriculum_conditionals.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "left",
-          "b": "would leave",
-          "c": "had left",
-          "d": "would have left"
-        },
-        "questionSnippet": "'If she _____ earlier, she would have caught the train.' (Th..."
-      },
-      {
-        "source": "curriculum_conditionals.json",
-        "path": "curriculum_conditionals.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "Zero",
-          "b": "First",
-          "c": "Second",
-          "d": "Third"
-        },
-        "questionSnippet": "Which type of conditional is: 'If you heat water to 100 degr..."
-      },
-      {
-        "source": "curriculum_conditionals.json",
-        "path": "curriculum_conditionals.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "If it will rain, we will stay at home.",
-          "b": "If it rained, we would stay at home.",
-          "c": "If it rains, we will stay at home.",
-          "d": "If it rains, we would stay at home."
-        },
-        "questionSnippet": "Choose the correct first conditional."
-      },
-      {
-        "source": "curriculum_conditionals.json",
-        "path": "curriculum_conditionals.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "am",
-          "b": "was",
-          "c": "would be",
-          "d": "were"
-        },
-        "questionSnippet": "'If I _____ you, I would apologise.' (Second conditional)"
-      },
-      {
-        "source": "curriculum_conditionals.json",
-        "path": "curriculum_conditionals.json.practice.mc.questions[9]",
-        "index": 9,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "If I know, I will tell you.",
-          "b": "If I had known, I would tell you.",
-          "c": "If I knew, I would have told you.",
-          "d": "If I had known, I would have told you."
-        },
-        "questionSnippet": "Which is a third conditional?"
       }
     ],
     "curriculum_conjunctions_linkers.json": [
@@ -854,14 +1010,14 @@
         "path": "curriculum_conjunctions_linkers.json.check.questions[4]",
         "index": 4,
         "check": "mc_manual_check",
-        "correct_option": "b",
+        "correct_option": "a",
         "options": {
-          "a": "She likes tea, whereas he prefers coffee.",
-          "b": "Both a and c are correct.",
-          "c": "She likes tea, whereas he prefers coffee. (same)",
-          "d": "She likes tea, while he prefers coffee."
+          "a": "whereas",
+          "b": "however",
+          "c": "therefore",
+          "d": "because"
         },
-        "questionSnippet": "Which is correct?"
+        "questionSnippet": "Which fits? 'She likes tea, _____ he prefers coffee.' (contr..."
       },
       {
         "source": "curriculum_conjunctions_linkers.json",
@@ -876,146 +1032,6 @@
           "d": "Both a and b are correct."
         },
         "questionSnippet": "Which fits? 'I don't know _____ she agreed.'"
-      },
-      {
-        "source": "curriculum_conjunctions_linkers.json",
-        "path": "curriculum_conjunctions_linkers.json.practice.mc.questions[0]",
-        "index": 0,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "Because it rained, we stayed at home.",
-          "b": "Because it rained, so we stayed at home.",
-          "c": "Because it rained, therefore we stayed.",
-          "d": "It rained, because we stayed at home."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_conjunctions_linkers.json",
-        "path": "curriculum_conjunctions_linkers.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "Although he tried, but he failed.",
-          "b": "Although he tried, however he failed.",
-          "c": "Although he tried, he failed.",
-          "d": "Although he tried, and he failed."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_conjunctions_linkers.json",
-        "path": "curriculum_conjunctions_linkers.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "Therefore",
-          "b": "Because",
-          "c": "However",
-          "d": "Moreover"
-        },
-        "questionSnippet": "Which linker fits? 'It was expensive. _____, we bought it.'"
-      },
-      {
-        "source": "curriculum_conjunctions_linkers.json",
-        "path": "curriculum_conjunctions_linkers.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "when",
-          "b": "while",
-          "c": "during",
-          "d": "however"
-        },
-        "questionSnippet": "Which fits? 'I'll call you _____ I arrive.'"
-      },
-      {
-        "source": "curriculum_conjunctions_linkers.json",
-        "path": "curriculum_conjunctions_linkers.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "She likes tea, whereas he prefers coffee.",
-          "b": "She likes tea, whereas he prefers coffee. (same)",
-          "c": "She likes tea, while he prefers coffee.",
-          "d": "Both a and c are correct."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_conjunctions_linkers.json",
-        "path": "curriculum_conjunctions_linkers.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "Because it rained, so we stayed at home.",
-          "b": "It rained, because we stayed at home.",
-          "c": "Because it rained, we stayed at home.",
-          "d": "Because it rained, therefore we stayed."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_conjunctions_linkers.json",
-        "path": "curriculum_conjunctions_linkers.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "Although he tried, but he failed.",
-          "b": "Although he tried, however he failed.",
-          "c": "Although he tried, he failed.",
-          "d": "Although he tried, and he failed."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_conjunctions_linkers.json",
-        "path": "curriculum_conjunctions_linkers.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "Therefore",
-          "b": "Because",
-          "c": "Moreover",
-          "d": "However"
-        },
-        "questionSnippet": "Which linker fits? 'It was expensive. _____, we bought it.'"
-      },
-      {
-        "source": "curriculum_conjunctions_linkers.json",
-        "path": "curriculum_conjunctions_linkers.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "when",
-          "b": "while",
-          "c": "during",
-          "d": "however"
-        },
-        "questionSnippet": "Which fits? 'I'll call you _____ I arrive.'"
-      },
-      {
-        "source": "curriculum_conjunctions_linkers.json",
-        "path": "curriculum_conjunctions_linkers.json.practice.mc.questions[9]",
-        "index": 9,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "She likes tea, whereas he prefers coffee.",
-          "b": "She likes tea, whereas he prefers coffee. (same)",
-          "c": "She likes tea, while he prefers coffee.",
-          "d": "Both a and c are correct."
-        },
-        "questionSnippet": "Which is correct?"
       }
     ],
     "curriculum_countable_uncountable.json": [
@@ -1086,146 +1102,6 @@
           "b": "A news is good.",
           "c": "The news are good today.",
           "d": "The news is good."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_countable_uncountable.json",
-        "path": "curriculum_countable_uncountable.json.practice.mc.questions[0]",
-        "index": 0,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "I need some advice.",
-          "b": "I need some advices.",
-          "c": "I need an advice.",
-          "d": "I need many advices."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_countable_uncountable.json",
-        "path": "curriculum_countable_uncountable.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "The scissors is on the table.",
-          "b": "A scissors is on the table.",
-          "c": "The scissors are on the table.",
-          "d": "The scissor is on the table."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_countable_uncountable.json",
-        "path": "curriculum_countable_uncountable.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "I have many homeworks.",
-          "b": "I have many homework.",
-          "c": "I have five homeworks.",
-          "d": "I have a lot of homework."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_countable_uncountable.json",
-        "path": "curriculum_countable_uncountable.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "This trousers is too long.",
-          "b": "This trouser is too long.",
-          "c": "These trousers are too long.",
-          "d": "These trousers is too long."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_countable_uncountable.json",
-        "path": "curriculum_countable_uncountable.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "The news are good.",
-          "b": "A news is good.",
-          "c": "The news is good.",
-          "d": "The news are good today."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_countable_uncountable.json",
-        "path": "curriculum_countable_uncountable.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "I need some advices.",
-          "b": "I need an advice.",
-          "c": "I need many advices.",
-          "d": "I need some advice."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_countable_uncountable.json",
-        "path": "curriculum_countable_uncountable.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "The scissors is on the table.",
-          "b": "The scissors are on the table.",
-          "c": "The scissor is on the table.",
-          "d": "A scissors is on the table."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_countable_uncountable.json",
-        "path": "curriculum_countable_uncountable.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "I have many homeworks.",
-          "b": "I have a lot of homework.",
-          "c": "I have many homework.",
-          "d": "I have five homeworks."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_countable_uncountable.json",
-        "path": "curriculum_countable_uncountable.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "This trousers is too long.",
-          "b": "These trousers are too long.",
-          "c": "This trouser is too long.",
-          "d": "These trousers is too long."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_countable_uncountable.json",
-        "path": "curriculum_countable_uncountable.json.practice.mc.questions[9]",
-        "index": 9,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "The news is good.",
-          "b": "The news are good.",
-          "c": "A news is good.",
-          "d": "The news are good today."
         },
         "questionSnippet": "Which is correct?"
       }
@@ -1546,146 +1422,6 @@
         "path": "curriculum_infinitive_ing.json.practice.mc.questions[0]",
         "index": 0,
         "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "I want to learn English.",
-          "b": "I want learning English.",
-          "c": "I want learn English.",
-          "d": "I want learning English well."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_infinitive_ing.json",
-        "path": "curriculum_infinitive_ing.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "She enjoys to read.",
-          "b": "She enjoys read.",
-          "c": "She enjoys to reading.",
-          "d": "She enjoys reading."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_infinitive_ing.json",
-        "path": "curriculum_infinitive_ing.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "to lock",
-          "b": "lock",
-          "c": "locking",
-          "d": "to locking"
-        },
-        "questionSnippet": "'I remember _____ the door.' (I recall doing it.) Which fits..."
-      },
-      {
-        "source": "curriculum_infinitive_ing.json",
-        "path": "curriculum_infinitive_ing.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "see",
-          "b": "to see",
-          "c": "seeing",
-          "d": "to seeing"
-        },
-        "questionSnippet": "'I look forward to _____ you.' Which is correct?"
-      },
-      {
-        "source": "curriculum_infinitive_ing.json",
-        "path": "curriculum_infinitive_ing.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "to smoke",
-          "b": "smoke",
-          "c": "to smoking",
-          "d": "smoking"
-        },
-        "questionSnippet": "'She stopped _____.' (She gave up smoking.) Which fits?"
-      },
-      {
-        "source": "curriculum_infinitive_ing.json",
-        "path": "curriculum_infinitive_ing.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "I want to learn English.",
-          "b": "I want learning English.",
-          "c": "I want learn English.",
-          "d": "I want learning English well."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_infinitive_ing.json",
-        "path": "curriculum_infinitive_ing.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "She enjoys to read.",
-          "b": "She enjoys read.",
-          "c": "She enjoys to reading.",
-          "d": "She enjoys reading."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_infinitive_ing.json",
-        "path": "curriculum_infinitive_ing.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "to lock",
-          "b": "lock",
-          "c": "locking",
-          "d": "to locking"
-        },
-        "questionSnippet": "'I remember _____ the door.' (I recall doing it.) Which fits..."
-      },
-      {
-        "source": "curriculum_infinitive_ing.json",
-        "path": "curriculum_infinitive_ing.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "see",
-          "b": "to see",
-          "c": "seeing",
-          "d": "to seeing"
-        },
-        "questionSnippet": "'I look forward to _____ you.' Which is correct?"
-      },
-      {
-        "source": "curriculum_infinitive_ing.json",
-        "path": "curriculum_infinitive_ing.json.practice.mc.questions[9]",
-        "index": 9,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "to smoke",
-          "b": "smoke",
-          "c": "to smoking",
-          "d": "smoking"
-        },
-        "questionSnippet": "'She stopped _____.' (She gave up smoking.) Which fits?"
-      },
-      {
-        "source": "curriculum_infinitive_ing.json",
-        "path": "curriculum_infinitive_ing.json.practice.mc.questions[10]",
-        "index": 10,
-        "check": "mc_manual_check",
         "correct_option": "b",
         "options": {
           "a": "to help",
@@ -1697,8 +1433,8 @@
       },
       {
         "source": "curriculum_infinitive_ing.json",
-        "path": "curriculum_infinitive_ing.json.practice.mc.questions[11]",
-        "index": 11,
+        "path": "curriculum_infinitive_ing.json.practice.mc.questions[1]",
+        "index": 1,
         "check": "mc_manual_check",
         "correct_option": "b",
         "options": {
@@ -1711,8 +1447,8 @@
       },
       {
         "source": "curriculum_infinitive_ing.json",
-        "path": "curriculum_infinitive_ing.json.practice.mc.questions[12]",
-        "index": 12,
+        "path": "curriculum_infinitive_ing.json.practice.mc.questions[2]",
+        "index": 2,
         "check": "mc_manual_check",
         "correct_option": "b",
         "options": {
@@ -1725,8 +1461,8 @@
       },
       {
         "source": "curriculum_infinitive_ing.json",
-        "path": "curriculum_infinitive_ing.json.practice.mc.questions[13]",
-        "index": 13,
+        "path": "curriculum_infinitive_ing.json.practice.mc.questions[3]",
+        "index": 3,
         "check": "mc_manual_check",
         "correct_option": "a",
         "options": {
@@ -1952,6 +1688,162 @@
         "questionSnippet": "We _____ him at the party. (see – past)"
       }
     ],
+    "curriculum_it_subject.json": [
+      {
+        "source": "curriculum_it_subject.json",
+        "path": "curriculum_it_subject.json.check.questions[0]",
+        "index": 0,
+        "check": "mc_manual_check",
+        "correct_option": "a",
+        "options": {
+          "a": "It's raining.",
+          "b": "Is raining.",
+          "c": "Rains.",
+          "d": "There is raining."
+        },
+        "questionSnippet": "Which is correct?"
+      },
+      {
+        "source": "curriculum_it_subject.json",
+        "path": "curriculum_it_subject.json.check.questions[1]",
+        "index": 1,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "Is three o'clock.",
+          "b": "There is three o'clock.",
+          "c": "Three o'clock is.",
+          "d": "It's three o'clock."
+        },
+        "questionSnippet": "Which is correct?"
+      },
+      {
+        "source": "curriculum_it_subject.json",
+        "path": "curriculum_it_subject.json.check.questions[2]",
+        "index": 2,
+        "check": "mc_manual_check",
+        "correct_option": "b",
+        "options": {
+          "a": "Is",
+          "b": "It is",
+          "c": "There is",
+          "d": "It"
+        },
+        "questionSnippet": "Complete the sentence: ____ important to read the instructio..."
+      },
+      {
+        "source": "curriculum_it_subject.json",
+        "path": "curriculum_it_subject.json.check.questions[3]",
+        "index": 3,
+        "check": "mc_manual_check",
+        "correct_option": "c",
+        "options": {
+          "a": "Clear is that he is tired.",
+          "b": "That he is tired is clear.",
+          "c": "It's clear that he is tired.",
+          "d": "Is clear that he is tired."
+        },
+        "questionSnippet": "Which sentence uses it correctly?"
+      },
+      {
+        "source": "curriculum_it_subject.json",
+        "path": "curriculum_it_subject.json.check.questions[4]",
+        "index": 4,
+        "check": "mc_manual_check",
+        "correct_option": "c",
+        "options": {
+          "a": "To get up early is difficult.",
+          "b": "Difficult is to get up early.",
+          "c": "It's difficult to get up early.",
+          "d": "Is difficult to get up early."
+        },
+        "questionSnippet": "Which is most natural in English?"
+      },
+      {
+        "source": "curriculum_it_subject.json",
+        "path": "curriculum_it_subject.json.practice.mc.questions[0]",
+        "index": 0,
+        "check": "mc_manual_check",
+        "correct_option": "a",
+        "options": {
+          "a": "It's snowing.",
+          "b": "Is snowing.",
+          "c": "Snows.",
+          "d": "There is snowing."
+        },
+        "questionSnippet": "Which is correct for weather?"
+      },
+      {
+        "source": "curriculum_it_subject.json",
+        "path": "curriculum_it_subject.json.practice.mc.questions[1]",
+        "index": 1,
+        "check": "mc_manual_check",
+        "correct_option": "c",
+        "options": {
+          "a": "Is very cold today.",
+          "b": "It very cold today.",
+          "c": "It's very cold today.",
+          "d": "There is very cold today."
+        },
+        "questionSnippet": "Choose the best sentence."
+      },
+      {
+        "source": "curriculum_it_subject.json",
+        "path": "curriculum_it_subject.json.practice.mc.questions[2]",
+        "index": 2,
+        "check": "mc_manual_check",
+        "correct_option": "b",
+        "options": {
+          "a": "Is ten kilometres to the village.",
+          "b": "It's ten kilometres to the village.",
+          "c": "There is ten kilometres to the village.",
+          "d": "Ten kilometres is to the village."
+        },
+        "questionSnippet": "Which is correct for distance?"
+      },
+      {
+        "source": "curriculum_it_subject.json",
+        "path": "curriculum_it_subject.json.practice.mc.questions[3]",
+        "index": 3,
+        "check": "mc_manual_check",
+        "correct_option": "d",
+        "options": {
+          "a": "Is",
+          "b": "It",
+          "c": "There is",
+          "d": "It is"
+        },
+        "questionSnippet": "Complete: ____ hard to understand this text."
+      },
+      {
+        "source": "curriculum_it_subject.json",
+        "path": "curriculum_it_subject.json.practice.mc.questions[4]",
+        "index": 4,
+        "check": "mc_manual_check",
+        "correct_option": "b",
+        "options": {
+          "a": "Is obvious that they are angry.",
+          "b": "It's obvious that they are angry.",
+          "c": "Obvious is that they are angry.",
+          "d": "That they are angry it's obvious."
+        },
+        "questionSnippet": "Which is correct?"
+      },
+      {
+        "source": "curriculum_it_subject.json",
+        "path": "curriculum_it_subject.json.practice.mc.questions[5]",
+        "index": 5,
+        "check": "mc_manual_check",
+        "correct_option": "c",
+        "options": {
+          "a": "Seems that they are late.",
+          "b": "That they are late seems.",
+          "c": "It seems that they are late.",
+          "d": "Is seems that they are late."
+        },
+        "questionSnippet": "Which sentence is best?"
+      }
+    ],
     "curriculum_modal_verbs.json": [
       {
         "source": "curriculum_modal_verbs.json",
@@ -2036,146 +1928,6 @@
           "d": "might"
         },
         "questionSnippet": "Which verb do we use for **ability** when we need a form tha..."
-      },
-      {
-        "source": "curriculum_modal_verbs.json",
-        "path": "curriculum_modal_verbs.json.practice.mc.questions[0]",
-        "index": 0,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "The time of the action (past, present, future)",
-          "b": "The way we express possibility, necessity, permission, advice, etc.",
-          "c": "The person (I, you, he/she) of the subject",
-          "d": "The tense of the verb"
-        },
-        "questionSnippet": "What is **modality** in grammar?"
-      },
-      {
-        "source": "curriculum_modal_verbs.json",
-        "path": "curriculum_modal_verbs.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "She can swim.",
-          "b": "You ought to see a doctor.",
-          "c": "They must leave.",
-          "d": "I might go."
-        },
-        "questionSnippet": "Which sentence uses a **semi-modal**?"
-      },
-      {
-        "source": "curriculum_modal_verbs.json",
-        "path": "curriculum_modal_verbs.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "can",
-          "b": "might",
-          "c": "ought to",
-          "d": "will"
-        },
-        "questionSnippet": "'You ____ apologise.' (strong advice, formal) Which fits bes..."
-      },
-      {
-        "source": "curriculum_modal_verbs.json",
-        "path": "curriculum_modal_verbs.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "must",
-          "b": "should",
-          "c": "ought to",
-          "d": "can"
-        },
-        "questionSnippet": "Which of these uses 'to' before the main verb? (e.g. ___ to ..."
-      },
-      {
-        "source": "curriculum_modal_verbs.json",
-        "path": "curriculum_modal_verbs.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "must only",
-          "b": "have to",
-          "c": "can",
-          "d": "might"
-        },
-        "questionSnippet": "For external obligation (e.g. a rule or someone else's requi..."
-      },
-      {
-        "source": "curriculum_modal_verbs.json",
-        "path": "curriculum_modal_verbs.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "must",
-          "b": "ought to",
-          "c": "be able to",
-          "d": "might"
-        },
-        "questionSnippet": "Which verb do we use for **ability** when we need a form tha..."
-      },
-      {
-        "source": "curriculum_modal_verbs.json",
-        "path": "curriculum_modal_verbs.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "The time of the action (past, present, future)",
-          "b": "The way we express possibility, necessity, permission, advice, etc.",
-          "c": "The person (I, you, he/she) of the subject",
-          "d": "The tense of the verb"
-        },
-        "questionSnippet": "What is **modality** in grammar?"
-      },
-      {
-        "source": "curriculum_modal_verbs.json",
-        "path": "curriculum_modal_verbs.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "She can swim.",
-          "b": "You ought to see a doctor.",
-          "c": "They must leave.",
-          "d": "I might go."
-        },
-        "questionSnippet": "Which sentence uses a **semi-modal**?"
-      },
-      {
-        "source": "curriculum_modal_verbs.json",
-        "path": "curriculum_modal_verbs.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "can",
-          "b": "might",
-          "c": "ought to",
-          "d": "will"
-        },
-        "questionSnippet": "'You ____ apologise.' (strong advice, formal) Which fits bes..."
-      },
-      {
-        "source": "curriculum_modal_verbs.json",
-        "path": "curriculum_modal_verbs.json.practice.mc.questions[9]",
-        "index": 9,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "must",
-          "b": "should",
-          "c": "ought to",
-          "d": "can"
-        },
-        "questionSnippet": "Which of these uses 'to' before the main verb? (e.g. ___ to ..."
       }
     ],
     "curriculum_open_cloze.json": [
@@ -2634,160 +2386,6 @@
         "path": "curriculum_passives.json.practice.mc.questions[0]",
         "index": 0,
         "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "The letter was sent yesterday.",
-          "b": "The letter was send yesterday.",
-          "c": "The letter was sented yesterday.",
-          "d": "The letter is sent yesterday."
-        },
-        "questionSnippet": "Which sentence is correct?"
-      },
-      {
-        "source": "curriculum_passives.json",
-        "path": "curriculum_passives.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "English is speak all over the world.",
-          "b": "English speaks all over the world.",
-          "c": "English is spoken all over the world.",
-          "d": "English spoken all over the world."
-        },
-        "questionSnippet": "Choose the correct passive form."
-      },
-      {
-        "source": "curriculum_passives.json",
-        "path": "curriculum_passives.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "is built",
-          "b": "built",
-          "c": "has built",
-          "d": "was built"
-        },
-        "questionSnippet": "'The building ____ in 1990.' Which fits?"
-      },
-      {
-        "source": "curriculum_passives.json",
-        "path": "curriculum_passives.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "The work must done.",
-          "b": "The work must be done.",
-          "c": "The work must be do.",
-          "d": "The work must be done by someone."
-        },
-        "questionSnippet": "Which is correct with a modal?"
-      },
-      {
-        "source": "curriculum_passives.json",
-        "path": "curriculum_passives.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "was not finished",
-          "b": "not has been finished",
-          "c": "has not been finished",
-          "d": "is not finished"
-        },
-        "questionSnippet": "'The report ____ yet.' (Present perfect passive)"
-      },
-      {
-        "source": "curriculum_passives.json",
-        "path": "curriculum_passives.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "The letter was send yesterday.",
-          "b": "The letter was sented yesterday.",
-          "c": "The letter was sent yesterday.",
-          "d": "The letter is sent yesterday."
-        },
-        "questionSnippet": "Which sentence is correct?"
-      },
-      {
-        "source": "curriculum_passives.json",
-        "path": "curriculum_passives.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "English is spoken all over the world.",
-          "b": "English is speak all over the world.",
-          "c": "English speaks all over the world.",
-          "d": "English spoken all over the world."
-        },
-        "questionSnippet": "Choose the correct passive form."
-      },
-      {
-        "source": "curriculum_passives.json",
-        "path": "curriculum_passives.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "is built",
-          "b": "built",
-          "c": "has built",
-          "d": "was built"
-        },
-        "questionSnippet": "'The building ____ in 1990.' Which fits?"
-      },
-      {
-        "source": "curriculum_passives.json",
-        "path": "curriculum_passives.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "The work must be done.",
-          "b": "The work must done.",
-          "c": "The work must be do.",
-          "d": "The work must be done by someone."
-        },
-        "questionSnippet": "Which is correct with a modal?"
-      },
-      {
-        "source": "curriculum_passives.json",
-        "path": "curriculum_passives.json.practice.mc.questions[9]",
-        "index": 9,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "was not finished",
-          "b": "has not been finished",
-          "c": "is not finished",
-          "d": "not has been finished"
-        },
-        "questionSnippet": "'The report ____ yet.' (Present perfect passive)"
-      },
-      {
-        "source": "curriculum_passives.json",
-        "path": "curriculum_passives.json.practice.mc.questions[10]",
-        "index": 10,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "I had my hair cut.",
-          "b": "I had my hair to cut.",
-          "c": "I had my hair cutting.",
-          "d": "I had my hair cutted."
-        },
-        "questionSnippet": "Which sentence is correct? (causative have/get)"
-      },
-      {
-        "source": "curriculum_passives.json",
-        "path": "curriculum_passives.json.practice.mc.questions[11]",
-        "index": 11,
-        "check": "mc_manual_check",
         "correct_option": "b",
         "options": {
           "a": "had / steal",
@@ -2882,160 +2480,6 @@
           "d": "had started"
         },
         "questionSnippet": "'When they arrived, the meeting _____.' (The meeting started..."
-      },
-      {
-        "source": "curriculum_past_perfect.json",
-        "path": "curriculum_past_perfect.json.practice.mc.questions[0]",
-        "index": 0,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "waited",
-          "b": "had waited",
-          "c": "had been waiting",
-          "d": "was waiting"
-        },
-        "questionSnippet": "'When she arrived, I _____ for an hour.' (Focus on how long ..."
-      },
-      {
-        "source": "curriculum_past_perfect.json",
-        "path": "curriculum_past_perfect.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "left",
-          "b": "had left",
-          "c": "has left",
-          "d": "was leaving"
-        },
-        "questionSnippet": "'When I got there, she _____ home.' (She left before I got t..."
-      },
-      {
-        "source": "curriculum_past_perfect.json",
-        "path": "curriculum_past_perfect.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "finished",
-          "b": "had finished",
-          "c": "has finished",
-          "d": "was finishing"
-        },
-        "questionSnippet": "'By 9 o'clock he _____ his homework.' Which fits?"
-      },
-      {
-        "source": "curriculum_past_perfect.json",
-        "path": "curriculum_past_perfect.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "I had went to London.",
-          "b": "I had gone to London.",
-          "c": "I had go to London.",
-          "d": "I had going to London."
-        },
-        "questionSnippet": "Which sentence is correct?"
-      },
-      {
-        "source": "curriculum_past_perfect.json",
-        "path": "curriculum_past_perfect.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "hadn't slept",
-          "b": "didn't sleep",
-          "c": "hadn't sleep",
-          "d": "wasn't sleeping"
-        },
-        "questionSnippet": "'She was tired because she _____ well.' Which fits?"
-      },
-      {
-        "source": "curriculum_past_perfect.json",
-        "path": "curriculum_past_perfect.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "had started",
-          "b": "started",
-          "c": "has started",
-          "d": "was starting"
-        },
-        "questionSnippet": "'When they arrived, the meeting _____.' (The meeting started..."
-      },
-      {
-        "source": "curriculum_past_perfect.json",
-        "path": "curriculum_past_perfect.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "had left",
-          "b": "left",
-          "c": "has left",
-          "d": "was leaving"
-        },
-        "questionSnippet": "'When I got there, she _____ home.' (She left before I got t..."
-      },
-      {
-        "source": "curriculum_past_perfect.json",
-        "path": "curriculum_past_perfect.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "finished",
-          "b": "has finished",
-          "c": "had finished",
-          "d": "was finishing"
-        },
-        "questionSnippet": "'By 9 o'clock he _____ his homework.' Which fits?"
-      },
-      {
-        "source": "curriculum_past_perfect.json",
-        "path": "curriculum_past_perfect.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "I had went to London.",
-          "b": "I had go to London.",
-          "c": "I had gone to London.",
-          "d": "I had going to London."
-        },
-        "questionSnippet": "Which sentence is correct?"
-      },
-      {
-        "source": "curriculum_past_perfect.json",
-        "path": "curriculum_past_perfect.json.practice.mc.questions[9]",
-        "index": 9,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "hadn't slept",
-          "b": "didn't sleep",
-          "c": "hadn't sleep",
-          "d": "wasn't sleeping"
-        },
-        "questionSnippet": "'She was tired because she _____ well.' Which fits?"
-      },
-      {
-        "source": "curriculum_past_perfect.json",
-        "path": "curriculum_past_perfect.json.practice.mc.questions[10]",
-        "index": 10,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "started",
-          "b": "has started",
-          "c": "was starting",
-          "d": "had started"
-        },
-        "questionSnippet": "'When they arrived, the meeting _____.' (The meeting started..."
       }
     ],
     "curriculum_past_simple_continuous.json": [
@@ -3099,146 +2543,6 @@
         "source": "curriculum_past_simple_continuous.json",
         "path": "curriculum_past_simple_continuous.json.check.questions[4]",
         "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "had dinner",
-          "b": "have dinner",
-          "c": "were having dinner",
-          "d": "had had dinner"
-        },
-        "questionSnippet": "'At 7 pm last night they _____ .' (They were in the middle o..."
-      },
-      {
-        "source": "curriculum_past_simple_continuous.json",
-        "path": "curriculum_past_simple_continuous.json.practice.mc.questions[0]",
-        "index": 0,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "was watching",
-          "b": "watched",
-          "c": "have watched",
-          "d": "am watching"
-        },
-        "questionSnippet": "'I _____ TV when the phone rang.' (You were in the middle of..."
-      },
-      {
-        "source": "curriculum_past_simple_continuous.json",
-        "path": "curriculum_past_simple_continuous.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "was going",
-          "b": "has gone",
-          "c": "went",
-          "d": "were going"
-        },
-        "questionSnippet": "'She _____ to London yesterday.' (Completed trip.) Which fit..."
-      },
-      {
-        "source": "curriculum_past_simple_continuous.json",
-        "path": "curriculum_past_simple_continuous.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "cooked",
-          "b": "cooks",
-          "c": "has cooked",
-          "d": "was cooking"
-        },
-        "questionSnippet": "'While he _____ dinner, I was reading.' Which fits?"
-      },
-      {
-        "source": "curriculum_past_simple_continuous.json",
-        "path": "curriculum_past_simple_continuous.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "rang",
-          "b": "was ringing",
-          "c": "rings",
-          "d": "has rung"
-        },
-        "questionSnippet": "'The doorbell _____ while I was having a shower.' Which fits..."
-      },
-      {
-        "source": "curriculum_past_simple_continuous.json",
-        "path": "curriculum_past_simple_continuous.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "had dinner",
-          "b": "have dinner",
-          "c": "were having dinner",
-          "d": "had had dinner"
-        },
-        "questionSnippet": "'At 7 pm last night they _____ .' (They were in the middle o..."
-      },
-      {
-        "source": "curriculum_past_simple_continuous.json",
-        "path": "curriculum_past_simple_continuous.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "was watching",
-          "b": "watched",
-          "c": "have watched",
-          "d": "am watching"
-        },
-        "questionSnippet": "'I _____ TV when the phone rang.' (You were in the middle of..."
-      },
-      {
-        "source": "curriculum_past_simple_continuous.json",
-        "path": "curriculum_past_simple_continuous.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "was going",
-          "b": "has gone",
-          "c": "went",
-          "d": "were going"
-        },
-        "questionSnippet": "'She _____ to London yesterday.' (Completed trip.) Which fit..."
-      },
-      {
-        "source": "curriculum_past_simple_continuous.json",
-        "path": "curriculum_past_simple_continuous.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "cooked",
-          "b": "cooks",
-          "c": "has cooked",
-          "d": "was cooking"
-        },
-        "questionSnippet": "'While he _____ dinner, I was reading.' Which fits?"
-      },
-      {
-        "source": "curriculum_past_simple_continuous.json",
-        "path": "curriculum_past_simple_continuous.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "rang",
-          "b": "was ringing",
-          "c": "rings",
-          "d": "has rung"
-        },
-        "questionSnippet": "'The doorbell _____ while I was having a shower.' Which fits..."
-      },
-      {
-        "source": "curriculum_past_simple_continuous.json",
-        "path": "curriculum_past_simple_continuous.json.practice.mc.questions[9]",
-        "index": 9,
         "check": "mc_manual_check",
         "correct_option": "c",
         "options": {
@@ -3312,62 +2616,6 @@
         "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[0]",
         "index": 0,
         "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "I saw him yesterday.",
-          "b": "I have seen him yesterday.",
-          "c": "I have seen him when?",
-          "d": "I saw him ever."
-        },
-        "questionSnippet": "Which sentence is correct?"
-      },
-      {
-        "source": "curriculum_past_simple_present_perfect.json",
-        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "Did you ever go to Paris?",
-          "b": "Do you ever go to Paris?",
-          "c": "Have you ever been to Paris?",
-          "d": "Were you ever in Paris?"
-        },
-        "questionSnippet": "We want to ask about life experience (no specific time). Whi..."
-      },
-      {
-        "source": "curriculum_past_simple_present_perfect.json",
-        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "She lived here since 2020.",
-          "b": "She lives here since 2020.",
-          "c": "She has lived here in 2020.",
-          "d": "She has lived here since 2020."
-        },
-        "questionSnippet": "She moved here in 2020 and still lives here. Which is correc..."
-      },
-      {
-        "source": "curriculum_past_simple_present_perfect.json",
-        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "When have you left?",
-          "b": "When do you leave?",
-          "c": "When have you been leaving?",
-          "d": "When did you leave?"
-        },
-        "questionSnippet": "We want to know when something happened. Which is natural?"
-      },
-      {
-        "source": "curriculum_past_simple_present_perfect.json",
-        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
         "correct_option": "b",
         "options": {
           "a": "I have been to the cinema yesterday.",
@@ -3379,8 +2627,8 @@
       },
       {
         "source": "curriculum_past_simple_present_perfect.json",
-        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[5]",
-        "index": 5,
+        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[1]",
+        "index": 1,
         "check": "mc_manual_check",
         "correct_option": "b",
         "options": {
@@ -3393,8 +2641,8 @@
       },
       {
         "source": "curriculum_past_simple_present_perfect.json",
-        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[6]",
-        "index": 6,
+        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[2]",
+        "index": 2,
         "check": "mc_manual_check",
         "correct_option": "b",
         "options": {
@@ -3407,8 +2655,8 @@
       },
       {
         "source": "curriculum_past_simple_present_perfect.json",
-        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[7]",
-        "index": 7,
+        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[3]",
+        "index": 3,
         "check": "mc_manual_check",
         "correct_option": "b",
         "options": {
@@ -3421,8 +2669,8 @@
       },
       {
         "source": "curriculum_past_simple_present_perfect.json",
-        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[8]",
-        "index": 8,
+        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[4]",
+        "index": 4,
         "check": "mc_manual_check",
         "correct_option": "c",
         "options": {
@@ -3435,8 +2683,8 @@
       },
       {
         "source": "curriculum_past_simple_present_perfect.json",
-        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[9]",
-        "index": 9,
+        "path": "curriculum_past_simple_present_perfect.json.practice.mc.questions[5]",
+        "index": 5,
         "check": "mc_manual_check",
         "correct_option": "b",
         "options": {
@@ -4356,174 +3604,6 @@
         "path": "curriculum_punctuation.json.practice.mc.questions[0]",
         "index": 0,
         "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "I think that he is right.",
-          "b": "I think, that he is right.",
-          "c": "I think that, he is right.",
-          "d": "I think, that, he is right."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_punctuation.json",
-        "path": "curriculum_punctuation.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "monday and tuesday",
-          "b": "Monday and Tuesday",
-          "c": "Monday and tuesday",
-          "d": "monday and Tuesday"
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_punctuation.json",
-        "path": "curriculum_punctuation.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "She smiled and i waved.",
-          "b": "She smiled and i Waved.",
-          "c": "She smiled and I waved.",
-          "d": "she smiled and I waved."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_punctuation.json",
-        "path": "curriculum_punctuation.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "My brother, who lives in London, is a doctor.",
-          "b": "My brother who lives in London is a doctor.",
-          "c": "My brother, who lives in London is a doctor.",
-          "d": "My brother who lives in London, is a doctor."
-        },
-        "questionSnippet": "Which is correct? (You have more than one brother; the Londo..."
-      },
-      {
-        "source": "curriculum_punctuation.json",
-        "path": "curriculum_punctuation.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "We speak english and czech.",
-          "b": "We speak English and czech.",
-          "c": "We speak English and Czech.",
-          "d": "we speak English and Czech."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_punctuation.json",
-        "path": "curriculum_punctuation.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "I think that he is right.",
-          "b": "I think, that he is right.",
-          "c": "I think that, he is right.",
-          "d": "I think, that, he is right."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_punctuation.json",
-        "path": "curriculum_punctuation.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "monday and tuesday",
-          "b": "Monday and tuesday",
-          "c": "Monday and Tuesday",
-          "d": "monday and Tuesday"
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_punctuation.json",
-        "path": "curriculum_punctuation.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "She smiled and i waved.",
-          "b": "She smiled and i Waved.",
-          "c": "she smiled and I waved.",
-          "d": "She smiled and I waved."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_punctuation.json",
-        "path": "curriculum_punctuation.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "My brother, who lives in London, is a doctor.",
-          "b": "My brother who lives in London is a doctor.",
-          "c": "My brother, who lives in London is a doctor.",
-          "d": "My brother who lives in London, is a doctor."
-        },
-        "questionSnippet": "Which is correct? (You have more than one brother; the Londo..."
-      },
-      {
-        "source": "curriculum_punctuation.json",
-        "path": "curriculum_punctuation.json.practice.mc.questions[9]",
-        "index": 9,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "We speak English and Czech.",
-          "b": "We speak english and czech.",
-          "c": "We speak English and czech.",
-          "d": "we speak English and Czech."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_punctuation.json",
-        "path": "curriculum_punctuation.json.practice.mc.questions[10]",
-        "index": 10,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "We need three things time, money, and help.",
-          "b": "We need three things: time, money, and help.",
-          "c": "We need three things; time, money, and help.",
-          "d": "We need three things, time, money, and help."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_punctuation.json",
-        "path": "curriculum_punctuation.json.practice.mc.questions[11]",
-        "index": 11,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "It was late, we went home.",
-          "b": "It was late; we went home.",
-          "c": "It was late we went home.",
-          "d": "It was late: we went home."
-        },
-        "questionSnippet": "Which is correct? (Two related sentences.)"
-      },
-      {
-        "source": "curriculum_punctuation.json",
-        "path": "curriculum_punctuation.json.practice.mc.questions[12]",
-        "index": 12,
-        "check": "mc_manual_check",
         "correct_option": "b",
         "options": {
           "a": "We visited Paris, France, Rome, Italy, and Berlin, Germany.",
@@ -4956,146 +4036,6 @@
           "d": "who"
         },
         "questionSnippet": "The reason ____ I'm late is the traffic."
-      },
-      {
-        "source": "curriculum_relative_pronouns.json",
-        "path": "curriculum_relative_pronouns.json.practice.mc.questions[0]",
-        "index": 0,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "The book that I read was interesting.",
-          "b": "The book what I read was interesting.",
-          "c": "The book what I read it was interesting.",
-          "d": "The book I read what was interesting."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_relative_pronouns.json",
-        "path": "curriculum_relative_pronouns.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "The woman what lives next door is a doctor.",
-          "b": "The woman what she lives next door is a doctor.",
-          "c": "The woman who lives next door is a doctor.",
-          "d": "The woman which lives next door is a doctor."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_relative_pronouns.json",
-        "path": "curriculum_relative_pronouns.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "This is the town what I was born.",
-          "b": "This is the town what I was born in.",
-          "c": "This is the town who I was born.",
-          "d": "This is the town where I was born."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_relative_pronouns.json",
-        "path": "curriculum_relative_pronouns.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "What I need is more time.",
-          "b": "The film what we saw was good.",
-          "c": "The thing what I said was wrong.",
-          "d": "The person what helped me left."
-        },
-        "questionSnippet": "When is 'what' correct in a relative sense?"
-      },
-      {
-        "source": "curriculum_relative_pronouns.json",
-        "path": "curriculum_relative_pronouns.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "The day what we met was sunny.",
-          "b": "The day what we met on was sunny.",
-          "c": "The day when we met was sunny.",
-          "d": "The day who we met was sunny."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_relative_pronouns.json",
-        "path": "curriculum_relative_pronouns.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "The book that I read was interesting.",
-          "b": "The book what I read was interesting.",
-          "c": "The book what I read it was interesting.",
-          "d": "The book I read what was interesting."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_relative_pronouns.json",
-        "path": "curriculum_relative_pronouns.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "The woman what lives next door is a doctor.",
-          "b": "The woman what she lives next door is a doctor.",
-          "c": "The woman who lives next door is a doctor.",
-          "d": "The woman which lives next door is a doctor."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_relative_pronouns.json",
-        "path": "curriculum_relative_pronouns.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "This is the town what I was born.",
-          "b": "This is the town what I was born in.",
-          "c": "This is the town who I was born.",
-          "d": "This is the town where I was born."
-        },
-        "questionSnippet": "Which is correct?"
-      },
-      {
-        "source": "curriculum_relative_pronouns.json",
-        "path": "curriculum_relative_pronouns.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "What I need is more time.",
-          "b": "The film what we saw was good.",
-          "c": "The thing what I said was wrong.",
-          "d": "The person what helped me left."
-        },
-        "questionSnippet": "When is 'what' correct in a relative sense?"
-      },
-      {
-        "source": "curriculum_relative_pronouns.json",
-        "path": "curriculum_relative_pronouns.json.practice.mc.questions[9]",
-        "index": 9,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "The day what we met was sunny.",
-          "b": "The day what we met on was sunny.",
-          "c": "The day when we met was sunny.",
-          "d": "The day who we met was sunny."
-        },
-        "questionSnippet": "Which is correct?"
       }
     ],
     "curriculum_reported_speech.json": [
@@ -5322,146 +4262,6 @@
           "d": "would have"
         },
         "questionSnippet": "\"I must go now.\" → She said she _____ to go then."
-      },
-      {
-        "source": "curriculum_reported_speech.json",
-        "path": "curriculum_reported_speech.json.practice.mc.questions[0]",
-        "index": 0,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "She said she was leaving the next day.",
-          "b": "She said she is leaving tomorrow.",
-          "c": "She said she was leaving tomorrow.",
-          "d": "She said she had left the next day."
-        },
-        "questionSnippet": "\"I am leaving tomorrow.\" Which reported sentence is correct?"
-      },
-      {
-        "source": "curriculum_reported_speech.json",
-        "path": "curriculum_reported_speech.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "where do I live",
-          "b": "where did I live",
-          "c": "where I lived",
-          "d": "where I live"
-        },
-        "questionSnippet": "\"Where do you live?\" → He asked …"
-      },
-      {
-        "source": "curriculum_reported_speech.json",
-        "path": "curriculum_reported_speech.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "She told me that she would come.",
-          "b": "She told that she would come.",
-          "c": "She said me that she would come.",
-          "d": "She told to me that she would come."
-        },
-        "questionSnippet": "Which sentence is correct?"
-      },
-      {
-        "source": "curriculum_reported_speech.json",
-        "path": "curriculum_reported_speech.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "said me to close the window",
-          "b": "told me to close the window",
-          "c": "said to close the window",
-          "d": "told to me close the window"
-        },
-        "questionSnippet": "\"Close the window.\" → She …"
-      },
-      {
-        "source": "curriculum_reported_speech.json",
-        "path": "curriculum_reported_speech.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "he had finished his work",
-          "b": "he has finished his work",
-          "c": "he finished his work",
-          "d": "he have finished his work"
-        },
-        "questionSnippet": "\"I have finished my work.\" → He said …"
-      },
-      {
-        "source": "curriculum_reported_speech.json",
-        "path": "curriculum_reported_speech.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "are you coming",
-          "b": "if you are coming",
-          "c": "if I was coming",
-          "d": "was I coming"
-        },
-        "questionSnippet": "\"Are you coming?\" → She asked me …"
-      },
-      {
-        "source": "curriculum_reported_speech.json",
-        "path": "curriculum_reported_speech.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "She said she is leaving tomorrow.",
-          "b": "She said she had left the next day.",
-          "c": "She said she was leaving the next day.",
-          "d": "She said she was leaving tomorrow."
-        },
-        "questionSnippet": "\"I am leaving tomorrow.\" Which reported sentence is correct?"
-      },
-      {
-        "source": "curriculum_reported_speech.json",
-        "path": "curriculum_reported_speech.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "where do I live",
-          "b": "where did I live",
-          "c": "where I lived",
-          "d": "where I live"
-        },
-        "questionSnippet": "\"Where do you live?\" → He asked …"
-      },
-      {
-        "source": "curriculum_reported_speech.json",
-        "path": "curriculum_reported_speech.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "She told me that she would come.",
-          "b": "She told that she would come.",
-          "c": "She said me that she would come.",
-          "d": "She told to me that she would come."
-        },
-        "questionSnippet": "Which sentence is correct?"
-      },
-      {
-        "source": "curriculum_reported_speech.json",
-        "path": "curriculum_reported_speech.json.practice.mc.questions[9]",
-        "index": 9,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "told me to close the window",
-          "b": "said me to close the window",
-          "c": "told to me close the window",
-          "d": "said to close the window"
-        },
-        "questionSnippet": "\"Close the window.\" → She …"
       }
     ],
     "curriculum_sentence_transformation.json": [
@@ -5788,146 +4588,6 @@
           "d": "English has no future tense."
         },
         "questionSnippet": "How does English typically express time and aspect?"
-      },
-      {
-        "source": "curriculum_tenses_general.json",
-        "path": "curriculum_tenses_general.json.practice.mc.questions[0]",
-        "index": 0,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "3 times + 4 aspects",
-          "b": "4 times + 3 aspects",
-          "c": "2 times + 6 aspects",
-          "d": "6 times + 2 aspects"
-        },
-        "questionSnippet": "How do we get the 12 tense forms in English?"
-      },
-      {
-        "source": "curriculum_tenses_general.json",
-        "path": "curriculum_tenses_general.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "By changing the verb ending for each person",
-          "b": "By using auxiliary verbs (do, does, did, have, will, be, etc.)",
-          "c": "By adding a suffix to the main verb",
-          "d": "By changing the word order only"
-        },
-        "questionSnippet": "In English, how do we usually form questions and negatives i..."
-      },
-      {
-        "source": "curriculum_tenses_general.json",
-        "path": "curriculum_tenses_general.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "The person (I, you, he/she) of the subject",
-          "b": "The way we look at the action in time (e.g. in progress, completed)",
-          "c": "The time of day when something happens",
-          "d": "Whether the sentence is positive or negative"
-        },
-        "questionSnippet": "What is **aspect** in English grammar?"
-      },
-      {
-        "source": "curriculum_tenses_general.json",
-        "path": "curriculum_tenses_general.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "Simple",
-          "b": "Continuous",
-          "c": "Perfect",
-          "d": "Perfect continuous"
-        },
-        "questionSnippet": "Which aspect do we use when the action is **in progress** at..."
-      },
-      {
-        "source": "curriculum_tenses_general.json",
-        "path": "curriculum_tenses_general.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "Present simple",
-          "b": "Present continuous",
-          "c": "Present perfect simple",
-          "d": "Present perfect continuous"
-        },
-        "questionSnippet": "'I have been waiting for an hour.' – Which tense form is thi..."
-      },
-      {
-        "source": "curriculum_tenses_general.json",
-        "path": "curriculum_tenses_general.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "Past simple",
-          "b": "Past continuous",
-          "c": "Past perfect simple",
-          "d": "Past perfect continuous"
-        },
-        "questionSnippet": "'She had left before I arrived.' – Which tense form is this?"
-      },
-      {
-        "source": "curriculum_tenses_general.json",
-        "path": "curriculum_tenses_general.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "Simple",
-          "b": "Continuous",
-          "c": "Perfect",
-          "d": "Perfect continuous"
-        },
-        "questionSnippet": "Which aspect focuses on **completion** and often on the **re..."
-      },
-      {
-        "source": "curriculum_tenses_general.json",
-        "path": "curriculum_tenses_general.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "English uses one word per tense.",
-          "b": "English often uses auxiliaries + main verb (e.g. I have been waiting); time and aspect are shown by structure.",
-          "c": "English has no aspect.",
-          "d": "English has no future tense."
-        },
-        "questionSnippet": "How does English typically express time and aspect?"
-      },
-      {
-        "source": "curriculum_tenses_general.json",
-        "path": "curriculum_tenses_general.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "3 times + 4 aspects",
-          "b": "4 times + 3 aspects",
-          "c": "2 times + 6 aspects",
-          "d": "6 times + 2 aspects"
-        },
-        "questionSnippet": "How do we get the 12 tense forms in English?"
-      },
-      {
-        "source": "curriculum_tenses_general.json",
-        "path": "curriculum_tenses_general.json.practice.mc.questions[9]",
-        "index": 9,
-        "check": "mc_manual_check",
-        "correct_option": "b",
-        "options": {
-          "a": "Simple",
-          "b": "Continuous",
-          "c": "Perfect",
-          "d": "Perfect continuous"
-        },
-        "questionSnippet": "Which aspect do we use when the action is **in progress** at..."
       }
     ],
     "curriculum_verb_subject_agreement.json": [
@@ -6203,146 +4863,6 @@
         "source": "curriculum_will_going_to.json",
         "path": "curriculum_will_going_to.json.check.questions[4]",
         "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "I think it's going to rain tomorrow.",
-          "b": "I think it rains tomorrow.",
-          "c": "I think it will rain tomorrow.",
-          "d": "I think it will be raining tomorrow."
-        },
-        "questionSnippet": "You have a general opinion about tomorrow's weather (no clou..."
-      },
-      {
-        "source": "curriculum_will_going_to.json",
-        "path": "curriculum_will_going_to.json.practice.mc.questions[0]",
-        "index": 0,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "I'm going to see a film tonight.",
-          "b": "I will see a film tonight.",
-          "c": "I'm seeing a film tonight.",
-          "d": "I see a film tonight."
-        },
-        "questionSnippet": "You already decided yesterday to see a film tonight. Which d..."
-      },
-      {
-        "source": "curriculum_will_going_to.json",
-        "path": "curriculum_will_going_to.json.practice.mc.questions[1]",
-        "index": 1,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "I'm going to get it.",
-          "b": "I get it.",
-          "c": "I'll get it.",
-          "d": "I'm getting it."
-        },
-        "questionSnippet": "The phone rings. You decide at that moment to answer it. Whi..."
-      },
-      {
-        "source": "curriculum_will_going_to.json",
-        "path": "curriculum_will_going_to.json.practice.mc.questions[2]",
-        "index": 2,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "It will rain.",
-          "b": "It rains.",
-          "c": "It's raining.",
-          "d": "It's going to rain."
-        },
-        "questionSnippet": "You can see black clouds. You predict rain. Which is natural..."
-      },
-      {
-        "source": "curriculum_will_going_to.json",
-        "path": "curriculum_will_going_to.json.practice.mc.questions[3]",
-        "index": 3,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "I'll carry your bag.",
-          "b": "I'm going to carry your bag.",
-          "c": "I'm carrying your bag.",
-          "d": "I carry your bag."
-        },
-        "questionSnippet": "You want to offer to carry someone's bag. Which do you say?"
-      },
-      {
-        "source": "curriculum_will_going_to.json",
-        "path": "curriculum_will_going_to.json.practice.mc.questions[4]",
-        "index": 4,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "I think it's going to rain tomorrow.",
-          "b": "I think it rains tomorrow.",
-          "c": "I think it will rain tomorrow.",
-          "d": "I think it will be raining tomorrow."
-        },
-        "questionSnippet": "You have a general opinion about tomorrow's weather (no clou..."
-      },
-      {
-        "source": "curriculum_will_going_to.json",
-        "path": "curriculum_will_going_to.json.practice.mc.questions[5]",
-        "index": 5,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "I'm going to see a film tonight.",
-          "b": "I will see a film tonight.",
-          "c": "I'm seeing a film tonight.",
-          "d": "I see a film tonight."
-        },
-        "questionSnippet": "You already decided yesterday to see a film tonight. Which d..."
-      },
-      {
-        "source": "curriculum_will_going_to.json",
-        "path": "curriculum_will_going_to.json.practice.mc.questions[6]",
-        "index": 6,
-        "check": "mc_manual_check",
-        "correct_option": "c",
-        "options": {
-          "a": "I'm going to get it.",
-          "b": "I get it.",
-          "c": "I'll get it.",
-          "d": "I'm getting it."
-        },
-        "questionSnippet": "The phone rings. You decide at that moment to answer it. Whi..."
-      },
-      {
-        "source": "curriculum_will_going_to.json",
-        "path": "curriculum_will_going_to.json.practice.mc.questions[7]",
-        "index": 7,
-        "check": "mc_manual_check",
-        "correct_option": "d",
-        "options": {
-          "a": "It will rain.",
-          "b": "It rains.",
-          "c": "It's raining.",
-          "d": "It's going to rain."
-        },
-        "questionSnippet": "You can see black clouds. You predict rain. Which is natural..."
-      },
-      {
-        "source": "curriculum_will_going_to.json",
-        "path": "curriculum_will_going_to.json.practice.mc.questions[8]",
-        "index": 8,
-        "check": "mc_manual_check",
-        "correct_option": "a",
-        "options": {
-          "a": "I'll carry your bag.",
-          "b": "I'm going to carry your bag.",
-          "c": "I'm carrying your bag.",
-          "d": "I carry your bag."
-        },
-        "questionSnippet": "You want to offer to carry someone's bag. Which do you say?"
-      },
-      {
-        "source": "curriculum_will_going_to.json",
-        "path": "curriculum_will_going_to.json.practice.mc.questions[9]",
-        "index": 9,
         "check": "mc_manual_check",
         "correct_option": "c",
         "options": {
@@ -7024,7 +5544,7 @@
       "setId": "set1",
       "questionIndex": 28,
       "check": "short_or_context_free",
-      "questionSnippet": "30. Look ____ the board."
+      "questionSnippet": "30. Look ____ the board. (direct your eyes at it)"
     },
     {
       "source": "questions.json",
@@ -8774,14 +7294,6 @@
       "source": "questions.json",
       "topicOrSet": "quantifiers",
       "setId": "set1",
-      "questionIndex": 43,
-      "check": "short_or_context_free",
-      "questionSnippet": "45. We have _____ options. (Fill in the blank.)"
-    },
-    {
-      "source": "questions.json",
-      "topicOrSet": "quantifiers",
-      "setId": "set1",
       "questionIndex": 44,
       "check": "short_or_context_free",
       "questionSnippet": "46. There isn't _____ bread. (Fill in the blank.)"
@@ -9014,25 +7526,9 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 39,
-      "check": "short_or_context_free",
-      "questionSnippet": "40. Turn _____ the light. (switch on)"
-    },
-    {
-      "source": "questions.json",
-      "topicOrSet": "phrasal_verbs",
-      "setId": "set1",
       "questionIndex": 40,
       "check": "short_or_context_free",
       "questionSnippet": "41. Put _____ your pen. (place down)"
-    },
-    {
-      "source": "questions.json",
-      "topicOrSet": "phrasal_verbs",
-      "setId": "set1",
-      "questionIndex": 41,
-      "check": "short_or_context_free",
-      "questionSnippet": "42. I'm looking _____ my keys. (search for)"
     },
     {
       "source": "questions.json",
@@ -9822,7 +8318,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 168,
+      "questionIndex": 167,
       "check": "short_or_context_free",
       "questionSnippet": "169. They ripped us _____. (overcharged)"
     },
@@ -9830,7 +8326,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 170,
+      "questionIndex": 169,
       "check": "short_or_context_free",
       "questionSnippet": "171. The concert sold _____. (sold all tickets)"
     },
@@ -9838,7 +8334,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 172,
+      "questionIndex": 171,
       "check": "short_or_context_free",
       "questionSnippet": "173. Sign _____ for the course. (register)"
     },
@@ -9846,7 +8342,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 173,
+      "questionIndex": 172,
       "check": "short_or_context_free",
       "questionSnippet": "174. Switch _____ the light. (turn on)"
     },
@@ -9854,7 +8350,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 174,
+      "questionIndex": 173,
       "check": "short_or_context_free",
       "questionSnippet": "175. Switch _____ your phone. (turn off)"
     },
@@ -9862,7 +8358,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 176,
+      "questionIndex": 175,
       "check": "short_or_context_free",
       "questionSnippet": "177. I can't tell them _____. (distinguish)"
     },
@@ -9870,7 +8366,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 177,
+      "questionIndex": 176,
       "check": "short_or_context_free",
       "questionSnippet": "178. Tidy _____ your room. (make tidy)"
     },
@@ -9878,7 +8374,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 178,
+      "questionIndex": 177,
       "check": "short_or_context_free",
       "questionSnippet": "179. He tripped _____ the cable. (fell over)"
     },
@@ -9886,7 +8382,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 179,
+      "questionIndex": 178,
       "check": "short_or_context_free",
       "questionSnippet": "180. Turn _____ and go back. (reverse direction)"
     },
@@ -9894,7 +8390,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 180,
+      "questionIndex": 179,
       "check": "short_or_context_free",
       "questionSnippet": "181. Wait _____ me. (stay until I arrive)"
     },
@@ -9902,7 +8398,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 182,
+      "questionIndex": 181,
       "check": "short_or_context_free",
       "questionSnippet": "183. I'll wash _____. (wash dishes)"
     },
@@ -9910,7 +8406,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 183,
+      "questionIndex": 182,
       "check": "short_or_context_free",
       "questionSnippet": "184. Watch _____ for pickpockets. (be careful of)"
     },
@@ -9918,7 +8414,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 184,
+      "questionIndex": 183,
       "check": "short_or_context_free",
       "questionSnippet": "185. Wind _____ after work. (relax)"
     },
@@ -9926,7 +8422,7 @@
       "source": "questions.json",
       "topicOrSet": "phrasal_verbs",
       "setId": "set1",
-      "questionIndex": 186,
+      "questionIndex": 185,
       "check": "short_or_context_free",
       "questionSnippet": "187. Let's wrap _____ the meeting. (conclude)"
     },
@@ -10338,16 +8834,6 @@
       "source": "questions.json",
       "topicOrSet": "past_simple_present_perfect",
       "setId": "set1",
-      "questionIndex": 27,
-      "check": "ambiguity_tense",
-      "reason": "Verb tense blank with no time reference (past/present/future unclear).",
-      "questionSnippet": "28. He ____ (leave) the office at 6 pm. Put the verb in the correct tense.",
-      "answer": "left"
-    },
-    {
-      "source": "questions.json",
-      "topicOrSet": "past_simple_present_perfect",
-      "setId": "set1",
       "questionIndex": 29,
       "check": "ambiguity_tense",
       "reason": "Verb tense blank with no time reference (past/present/future unclear).",
@@ -10368,31 +8854,11 @@
       "source": "questions.json",
       "topicOrSet": "past_simple_present_perfect",
       "setId": "set1",
-      "questionIndex": 36,
-      "check": "ambiguity_tense",
-      "reason": "Verb tense blank with no time reference (past/present/future unclear).",
-      "questionSnippet": "37. We ____ (meet) at the conference in Berlin. Put the verb in the correct tense.",
-      "answer": "met"
-    },
-    {
-      "source": "questions.json",
-      "topicOrSet": "past_simple_present_perfect",
-      "setId": "set1",
       "questionIndex": 40,
       "check": "ambiguity_tense",
       "reason": "Verb tense blank with no time reference (past/present/future unclear).",
       "questionSnippet": "41. They ____ (be) together for three years. Put the verb in the correct tense.",
       "answer": "have been"
-    },
-    {
-      "source": "questions.json",
-      "topicOrSet": "past_simple_present_perfect",
-      "setId": "set1",
-      "questionIndex": 41,
-      "check": "ambiguity_tense",
-      "reason": "Verb tense blank with no time reference (past/present/future unclear).",
-      "questionSnippet": "42. The train ____ (leave) at 9 am. Put the verb in the correct tense.",
-      "answer": "left"
     },
     {
       "source": "questions.json",
@@ -10503,16 +8969,6 @@
       "reason": "Verb tense blank with no time reference (past/present/future unclear).",
       "questionSnippet": "21. The weather forecast says it ____ (rain) at the weekend. Put the verb in the correct tense.",
       "answer": "will rain"
-    },
-    {
-      "source": "questions.json",
-      "topicOrSet": "will_going_to",
-      "setId": "set1",
-      "questionIndex": 36,
-      "check": "ambiguity_tense",
-      "reason": "Verb tense blank with no time reference (past/present/future unclear).",
-      "questionSnippet": "22. I ____ (pay) for the coffee. Put the verb in the correct tense.",
-      "answer": "will pay"
     },
     {
       "source": "questions.json",
@@ -10808,16 +9264,6 @@
       "source": "questions.json",
       "topicOrSet": "passives",
       "setId": "set1",
-      "questionIndex": 47,
-      "check": "ambiguity_tense",
-      "reason": "Verb tense blank with no time reference (past/present/future unclear).",
-      "questionSnippet": "36. The problem _____ (solve) by the team. Put the verb in the correct tense.",
-      "answer": "was solved"
-    },
-    {
-      "source": "questions.json",
-      "topicOrSet": "passives",
-      "setId": "set1",
       "questionIndex": 48,
       "check": "ambiguity_tense",
       "reason": "Verb tense blank with no time reference (past/present/future unclear).",
@@ -11088,6 +9534,26 @@
       "source": "questions.json",
       "topicOrSet": "tenses_general",
       "setId": "set1",
+      "questionIndex": 0,
+      "check": "ambiguity_tense",
+      "reason": "Verb tense blank with no time reference (past/present/future unclear).",
+      "questionSnippet": "1. Put the verb in the correct tense: I _____ (study) English for three hours and I'm exhausted. (duration up to now, on",
+      "answer": "have been studying"
+    },
+    {
+      "source": "questions.json",
+      "topicOrSet": "tenses_general",
+      "setId": "set1",
+      "questionIndex": 5,
+      "check": "ambiguity_tense",
+      "reason": "Verb tense blank with no time reference (past/present/future unclear).",
+      "questionSnippet": "6. Put the verb in the correct tense: Don't disturb her. She _____ (work) on an important report. (in progress now)",
+      "answer": "is working"
+    },
+    {
+      "source": "questions.json",
+      "topicOrSet": "tenses_general",
+      "setId": "set1",
       "questionIndex": 20,
       "check": "ambiguity_tense",
       "reason": "Verb tense blank with no time reference (past/present/future unclear).",
@@ -11101,7 +9567,7 @@
       "questionIndex": 30,
       "check": "ambiguity_tense",
       "reason": "Verb tense blank with no time reference (past/present/future unclear).",
-      "questionSnippet": "31. Put the verb in the correct tense: By 2025 they _____ (complete) the project. (before future time)",
+      "questionSnippet": "31. Put the verb in the correct tense: By 2030 they _____ (complete) the project. (before future time)",
       "answer": "will have completed"
     },
     {
@@ -11169,14 +9635,5 @@
   "missing_curriculum": [],
   "empty_sets": [],
   "duplicate_questions": [],
-  "invalid_topic_ids": [
-    {
-      "file": "exam_word_formation.json",
-      "topic_id": "word_formation"
-    },
-    {
-      "file": "exam_sentence_transformation.json",
-      "topic_id": "indefinite_pronouns"
-    }
-  ]
+  "invalid_topic_ids": []
 }
