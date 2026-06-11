@@ -236,10 +236,20 @@ function collectMC(report) {
 /** Heuristic: short or context-free open prompts */
 function checkShortOrContextFree(report, data) {
   const hintWords = /past|yesterday|tomorrow|quantity|uncountable|countable|one word|e\.g\.|example|present|future|first|second|zero|conditional|much|many|some|few/i;
+  // Topics whose items are inherently short but pinned by their cue, per the
+  // 2026-06 triage of all 423 flags: prepositions/fixed_phrases (original),
+  // prepositions_dependent (148 flags, fault rate of the targeted kind 1.4% —
+  // its real faults were reference-list alternative gaps, not shortness),
+  // phrasal_verbs (140 flags, 88% false positive — every item carries a
+  // trailing "(gloss)" cue; real faults were variant-particle gaps), and
+  // infinitive_ing/comparatives (the "(verb)"/"(adjective)" cue pins the
+  // transformation). Deliberately NOT skipped despite their cues:
+  // modal_verbs (7/15 genuine), quantifiers (4/4), irregular_verbs (9/12,
+  // the verb cue does not pin the tense), relative_pronouns, reported_speech.
+  const SKIP_TOPICS = new Set(['prepositions', 'fixed_phrases', 'prepositions_dependent', 'phrasal_verbs', 'infinitive_ing', 'comparatives']);
   for (const { source, topicOrSet, setId, questionIndex, q } of iterQuestionsJson(data)) {
     if (q.type === 'mc') continue;
-    // Skip prepositions and fixed_phrases – these are often short but unambiguous
-    if (topicOrSet === 'prepositions' || topicOrSet === 'fixed_phrases') continue;
+    if (SKIP_TOPICS.has(topicOrSet)) continue;
     const questionText = (q.question || q.prompt || '').trim();
     if (questionText.length < 50 && questionText.includes('____') && !hintWords.test(questionText)) {
       report.short_or_context_free.push({

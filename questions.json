@@ -182,9 +182,10 @@
           "type": "open",
           "question": "20. She ____ (work) on this project for three months. Put the verb in the correct tense.",
           "answers": [
-            "has been working"
+            "has been working",
+            "has worked"
           ],
-          "explanation": "Duration (for three months) up to now → present perfect continuous."
+          "explanation": "Duration (for three months) up to now → present perfect continuous; the simple form is also possible for length of time."
         },
         {
           "type": "open",
@@ -230,9 +231,10 @@
           "type": "open",
           "question": "26. We ____ (wait) for the bus for 20 minutes. Put the verb in the correct tense.",
           "answers": [
-            "have been waiting"
+            "have been waiting",
+            "have waited"
           ],
-          "explanation": "Duration of activity → present perfect continuous."
+          "explanation": "Duration of activity → present perfect continuous (preferred); simple also accepted."
         },
         {
           "type": "open",
@@ -264,9 +266,10 @@
           "type": "open",
           "question": "30. The children ____ (play) in the garden all afternoon. Put the verb in the correct tense.",
           "answers": [
-            "have been playing"
+            "have been playing",
+            "have played"
           ],
-          "explanation": "Duration (all afternoon) → present perfect continuous."
+          "explanation": "Duration (all afternoon) → present perfect continuous (preferred); simple also accepted."
         },
         {
           "type": "open",
@@ -307,9 +310,10 @@
           "type": "open",
           "question": "35. He ____ (look) for his keys for the last half hour. Put the verb in the correct tense.",
           "answers": [
-            "has been looking"
+            "has been looking",
+            "has looked"
           ],
-          "explanation": "Duration of ongoing activity → present perfect continuous."
+          "explanation": "Duration of ongoing activity → present perfect continuous (preferred); simple also accepted."
         },
         {
           "type": "open",
@@ -385,9 +389,10 @@
           "type": "open",
           "question": "44. He ____ (sleep) badly recently. Put the verb in the correct tense.",
           "answers": [
-            "has been sleeping"
+            "has been sleeping",
+            "has slept"
           ],
-          "explanation": "Recent repeated situation → present perfect continuous."
+          "explanation": "Recent repeated situation → present perfect continuous; simple (has slept) also accepted with 'recently'."
         },
         {
           "type": "open",
@@ -741,9 +746,10 @@
           "type": "open",
           "question": "36. He ____ (work) for this company for ten years. Put the verb in the correct tense.",
           "answers": [
-            "has worked"
+            "has worked",
+            "has been working"
           ],
-          "explanation": "For + period up to now → present perfect."
+          "explanation": "For + period up to now → present perfect (simple or continuous)."
         },
         {
           "type": "open",
@@ -1361,7 +1367,8 @@
           "type": "open",
           "question": "11. He cares ____ the environment.",
           "answers": [
-            "about"
+            "about",
+            "for"
           ],
           "explanation": "Dependent preposition (verb): care **about** something."
         },
@@ -1377,13 +1384,14 @@
           "type": "open",
           "question": "13. They complained ____ the noise.",
           "answers": [
-            "about"
+            "about",
+            "of"
           ],
           "explanation": "Dependent preposition (verb): complain **about** something."
         },
         {
           "type": "open",
-          "question": "14. She complained ____ the manager.",
+          "question": "14. She complained ____ the manager about the service.",
           "answers": [
             "to"
           ],
@@ -1401,7 +1409,8 @@
           "type": "open",
           "question": "16. She congratulated him ____ passing the exam.",
           "answers": [
-            "on"
+            "on",
+            "for"
           ],
           "explanation": "Dependent preposition (verb): congratulate someone **on** something."
         },
@@ -1466,7 +1475,8 @@
           "type": "open",
           "question": "24. I heard ____ the accident.",
           "answers": [
-            "about"
+            "about",
+            "of"
           ],
           "explanation": "Dependent preposition (verb): hear **about** (learn about) something."
         },
@@ -1520,7 +1530,7 @@
         },
         {
           "type": "open",
-          "question": "31. I'm looking ____ my keys.",
+          "question": "31. I'm looking ____ my keys. I can't find them anywhere.",
           "answers": [
             "for"
           ],
@@ -1571,7 +1581,8 @@
           "question": "37. She has a positive attitude ____ work.",
           "answers": [
             "to",
-            "towards"
+            "towards",
+            "toward"
           ],
           "explanation": "Dependent preposition (noun): attitude **to** or **towards** something."
         },
@@ -1587,7 +1598,8 @@
           "type": "open",
           "question": "39. She made a comment ____ the report.",
           "answers": [
-            "on"
+            "on",
+            "about"
           ],
           "explanation": "Dependent preposition (noun): comment **on** something."
         },
@@ -1604,7 +1616,8 @@
           "question": "41. There is concern ____ the environment.",
           "answers": [
             "about",
-            "for"
+            "for",
+            "over"
           ],
           "explanation": "Dependent preposition (noun): concern **about** or **for** something."
         },
@@ -1680,7 +1693,8 @@
           "question": "50. She has experience ____ teaching.",
           "answers": [
             "in",
-            "of"
+            "of",
+            "with"
           ],
           "explanation": "Dependent preposition (noun): experience **in** or **of** something."
         },
@@ -1844,7 +1858,8 @@
           "question": "70. He's angry ____ the delay.",
           "answers": [
             "about",
-            "with"
+            "with",
+            "at"
           ],
           "explanation": "Dependent preposition (adjective): angry **about** something."
         },
@@ -1853,7 +1868,8 @@
           "question": "71. She's angry ____ me.",
           "answers": [
             "with",
-            "about"
+            "about",
+            "at"
           ],
           "explanation": "Dependent preposition (adjective): angry **with** someone."
         },
@@ -1863,7 +1879,8 @@
           "answers": [
             "about",
             "with",
-            "by"
+            "by",
+            "at"
           ],
           "explanation": "Dependent preposition (adjective): annoyed **about** something, annoyed **with** something, or annoyed **by** something (slightly different nuance – 'by' emphasises the cause)."
         },
@@ -1872,7 +1889,9 @@
           "question": "73. She's annoyed ____ the children.",
           "answers": [
             "with",
-            "about"
+            "about",
+            "by",
+            "at"
           ],
           "explanation": "Dependent preposition (adjective): annoyed **with** someone."
         },
@@ -1912,7 +1931,8 @@
           "type": "open",
           "question": "78. I'm not certain ____ the date.",
           "answers": [
-            "about"
+            "about",
+            "of"
           ],
           "explanation": "Dependent preposition (adjective): certain **about** something."
         },
@@ -1971,7 +1991,9 @@
           "question": "85. She's disappointed ____ her score.",
           "answers": [
             "with",
-            "in"
+            "in",
+            "by",
+            "at"
           ],
           "explanation": "Dependent preposition (adjective): disappointed **with** or **in** something."
         },
@@ -2035,7 +2057,8 @@
           "type": "open",
           "question": "93. She's good ____ children.",
           "answers": [
-            "with"
+            "with",
+            "to"
           ],
           "explanation": "Dependent preposition (adjective): good **with** people or things."
         },
@@ -2099,7 +2122,8 @@
           "type": "open",
           "question": "101. Sunscreen protects you ____ the sun.",
           "answers": [
-            "from"
+            "from",
+            "against"
           ],
           "explanation": "Dependent preposition (verb): protect someone **from** something."
         },
@@ -2277,7 +2301,8 @@
           "type": "open",
           "question": "123. We need to raise awareness ____ the issue.",
           "answers": [
-            "of"
+            "of",
+            "about"
           ],
           "explanation": "Dependent preposition (noun): awareness **of** something."
         },
@@ -2293,7 +2318,9 @@
           "type": "open",
           "question": "125. She made a contribution ____ the project.",
           "answers": [
-            "to"
+            "to",
+            "towards",
+            "toward"
           ],
           "explanation": "Dependent preposition (noun): contribution **to** something."
         },
@@ -2333,7 +2360,8 @@
           "type": "open",
           "question": "130. She has good knowledge ____ the subject.",
           "answers": [
-            "of"
+            "of",
+            "about"
           ],
           "explanation": "Dependent preposition (noun): knowledge **of** something."
         },
@@ -2656,7 +2684,8 @@
           "type": "open",
           "question": "15. The woman ____ lives next door is very kind.",
           "answers": [
-            "who"
+            "who",
+            "that"
           ],
           "explanation": "For people (subject): **who** (or that in informal use)."
         },
@@ -2672,7 +2701,8 @@
           "type": "open",
           "question": "17. This is the house ____ I was born.",
           "answers": [
-            "where"
+            "where",
+            "in which"
           ],
           "explanation": "For place: **where**."
         },
@@ -2688,7 +2718,9 @@
           "type": "open",
           "question": "19. The man ____ I spoke to was the manager.",
           "answers": [
-            "who"
+            "who",
+            "that",
+            "whom"
           ],
           "explanation": "For people (object): **who** (or whom in formal use, or that)."
         },
@@ -2784,7 +2816,9 @@
           "type": "open",
           "question": "30. The café ____ we had lunch is closed now.",
           "answers": [
-            "where"
+            "where",
+            "in which",
+            "at which"
           ],
           "explanation": "Place: **where** (the café where we had lunch)."
         },
@@ -2836,7 +2870,9 @@
           "type": "open",
           "question": "36. The office ____ I work is in the centre.",
           "answers": [
-            "where"
+            "where",
+            "in which",
+            "at which"
           ],
           "explanation": "Place → **where**."
         },
@@ -2879,7 +2915,8 @@
           "type": "open",
           "question": "41. The town ____ I grew up has changed a lot.",
           "answers": [
-            "where"
+            "where",
+            "in which"
           ],
           "explanation": "Place: **where** (the town where I grew up)."
         },
@@ -3220,9 +3257,11 @@
           "question": "11. I ____ (probably stay) at home tonight. Put the verb in the correct tense.",
           "answers": [
             "will probably stay",
-            "'ll probably stay"
+            "'ll probably stay",
+            "am probably going to stay",
+            "'m probably going to stay"
           ],
-          "explanation": "General prediction → will."
+          "explanation": "General prediction → will. (Both will and going to are acceptable here.)"
         },
         {
           "type": "open",
@@ -3372,9 +3411,11 @@
           "question": "27. He ____ (probably get) the job. Put the verb in the correct tense.",
           "answers": [
             "will probably get",
-            "'ll probably get"
+            "'ll probably get",
+            "is probably going to get",
+            "'s probably going to get"
           ],
-          "explanation": "General prediction → will."
+          "explanation": "General prediction → will. (Both will and going to are acceptable here.)"
         },
         {
           "type": "open",
@@ -3408,9 +3449,11 @@
           "question": "31. I ____ (send) you the file as soon as I can. Put the verb in the correct tense.",
           "answers": [
             "will send",
-            "'ll send"
+            "'ll send",
+            "am going to send",
+            "'m going to send"
           ],
-          "explanation": "Promise → will."
+          "explanation": "Promise → will. (Both will and going to are acceptable here.)"
         },
         {
           "type": "open",
@@ -3478,9 +3521,11 @@
           "question": "38. He ____ (be) 30 next month. Put the verb in the correct tense.",
           "answers": [
             "will be",
-            "'ll be"
+            "'ll be",
+            "is going to be",
+            "'s going to be"
           ],
-          "explanation": "Future fact (age) → will."
+          "explanation": "Future fact (age) → will. (Both will and going to are acceptable here.)"
         },
         {
           "type": "open",
@@ -3794,7 +3839,8 @@
           "question": "8. He admitted ____ (make) a mistake.",
           "answers": [
             "making",
-            "to making"
+            "to making",
+            "having made"
           ],
           "explanation": "Admit + -ing (or admit to + -ing)."
         },
@@ -3850,9 +3896,10 @@
           "type": "open",
           "question": "15. She intends ____ (apply) for the job.",
           "answers": [
-            "to apply"
+            "to apply",
+            "applying"
           ],
-          "explanation": "Intend + to-infinitive."
+          "explanation": "Intend + to-infinitive (intend + -ing is also possible)."
         },
         {
           "type": "open",
@@ -3965,11 +4012,11 @@
         },
         {
           "type": "open",
-          "question": "29. They afford ____ (buy) a new car.",
+          "question": "29. They can afford ____ (buy) a new car.",
           "answers": [
             "to buy"
           ],
-          "explanation": "Afford + to-infinitive."
+          "explanation": "Can afford + to-infinitive."
         },
         {
           "type": "open",
@@ -3992,7 +4039,8 @@
           "question": "32. He admitted ____ (break) the window.",
           "answers": [
             "breaking",
-            "to breaking"
+            "to breaking",
+            "having broken"
           ],
           "explanation": "Admit + -ing (or admit to + -ing)."
         },
@@ -4009,8 +4057,7 @@
           "type": "open",
           "question": "34. I prefer ____ (walk) to cycling.",
           "answers": [
-            "walking",
-            "to walk"
+            "walking"
           ],
           "explanation": "Prefer + -ing or prefer + to-infinitive (both acceptable)."
         },
@@ -4058,9 +4105,10 @@
           "type": "open",
           "question": "40. She denied ____ (see) him that day.",
           "answers": [
-            "seeing"
+            "seeing",
+            "having seen"
           ],
-          "explanation": "Deny + -ing."
+          "explanation": "Deny + -ing (also: denied having seen)."
         },
         {
           "type": "open",
@@ -7256,9 +7304,10 @@
           "type": "open",
           "question": "44. The situation got ____ (bad) as time went on.",
           "answers": [
-            "worse"
+            "worse",
+            "worse and worse"
           ],
-          "explanation": "Comparative of bad → worse (no 'than' needed with 'as time went on')."
+          "explanation": "Comparative of bad → worse (or worse and worse for gradual change)."
         },
         {
           "type": "open",
@@ -7611,9 +7660,10 @@
           "type": "open",
           "question": "23. The new rules _____ (introduce) next month. Put the verb in the correct tense.",
           "answers": [
-            "will be introduced"
+            "will be introduced",
+            "are going to be introduced"
           ],
-          "explanation": "Future passive: will be + introduced."
+          "explanation": "Future passive: will be + introduced (going to be introduced also accepted)."
         },
         {
           "type": "open",
@@ -7810,9 +7860,10 @@
           "type": "open",
           "question": "46. The new product _____ (launch) next month. Put the verb in the correct tense.",
           "answers": [
-            "will be launched"
+            "will be launched",
+            "is going to be launched"
           ],
-          "explanation": "Future passive: will be + launched."
+          "explanation": "Future passive: will be + launched (going to be launched also accepted)."
         },
         {
           "type": "open",
@@ -9614,9 +9665,11 @@
           "type": "open",
           "question": "2. Do you have _____ sugar? (Fill in the blank.)",
           "answers": [
-            "any"
+            "any",
+            "some",
+            "much"
           ],
-          "explanation": "Question → any."
+          "explanation": "Question → any (some when you expect 'yes'; much is also possible)."
         },
         {
           "type": "open",
@@ -9874,7 +9927,8 @@
           "answers": [
             "a little",
             "some",
-            "a bit"
+            "a bit",
+            "a little bit"
           ],
           "explanation": "Uncountable, positive → a little or some."
         },
@@ -9959,9 +10013,9 @@
           "question": "44. _____ students passed the exam. (whole group)",
           "answers": [
             "All the",
-            "All the",
             "All",
-            "all"
+            "all",
+            "All of the"
           ],
           "explanation": "Whole group → all (the) or all."
         },
@@ -9978,9 +10032,11 @@
           "type": "open",
           "question": "46. There isn't _____ bread. (Fill in the blank.)",
           "answers": [
-            "any"
+            "any",
+            "much",
+            "enough"
           ],
-          "explanation": "Negative → any."
+          "explanation": "Negative → any (not much / not enough also possible)."
         },
         {
           "type": "open",
@@ -9995,9 +10051,11 @@
           "type": "open",
           "question": "48. I need _____ help. (Fill in the blank.)",
           "answers": [
-            "some"
+            "some",
+            "a little",
+            "a lot of"
           ],
-          "explanation": "Positive, uncountable → some."
+          "explanation": "Positive, uncountable → some (a little / a lot of also fit)."
         },
         {
           "type": "open",
@@ -10339,9 +10397,10 @@
           "type": "open",
           "question": "12. She _____ (work) in the garden all afternoon. Put the verb in the correct tense.",
           "answers": [
-            "was working"
+            "was working",
+            "worked"
           ],
-          "explanation": "Action in progress over a period → past continuous."
+          "explanation": "Action in progress over a period → past continuous; past simple (worked) is also correct for a completed period."
         },
         {
           "type": "open",
@@ -10777,9 +10836,10 @@
           "type": "open",
           "question": "14. Turn _____ the light. (switch off)",
           "answers": [
-            "off"
+            "off",
+            "out"
           ],
-          "explanation": "Turn off = switch off."
+          "explanation": "Turn off / turn out (a light) = switch off."
         },
         {
           "type": "open",
@@ -11097,9 +11157,10 @@
           "type": "open",
           "question": "54. I'll check _____ the children. (verify)",
           "answers": [
-            "on"
+            "on",
+            "up on"
           ],
-          "explanation": "Check on = verify."
+          "explanation": "Check (up) on = verify."
         },
         {
           "type": "open",
@@ -11185,17 +11246,19 @@
           "type": "open",
           "question": "65. We need to get _____. (escape)",
           "answers": [
-            "away"
+            "away",
+            "out"
           ],
-          "explanation": "Get away = escape."
+          "explanation": "Get away / get out = escape."
         },
         {
           "type": "open",
           "question": "66. They get _____ well. (have good relationship)",
           "answers": [
-            "along"
+            "along",
+            "on"
           ],
-          "explanation": "Get along = have good relationship."
+          "explanation": "Get along / get on (UK) = have a good relationship."
         },
         {
           "type": "open",
@@ -11241,9 +11304,10 @@
           "type": "open",
           "question": "72. Go _____ your answers. (review)",
           "answers": [
-            "over"
+            "over",
+            "through"
           ],
-          "explanation": "Go over = review."
+          "explanation": "Go over / go through = review."
         },
         {
           "type": "open",
@@ -11273,9 +11337,10 @@
           "type": "open",
           "question": "76. We hung _____ at the cafe. (spent time)",
           "answers": [
-            "out"
+            "out",
+            "around"
           ],
-          "explanation": "Hang out = spend time."
+          "explanation": "Hang out / hang around = spend time."
         },
         {
           "type": "open",
@@ -11593,9 +11658,10 @@
           "type": "open",
           "question": "116. I'll stand _____ you. (support)",
           "answers": [
-            "by"
+            "by",
+            "up for"
           ],
-          "explanation": "Stand by = support; wait."
+          "explanation": "Stand by / stand up for = support."
         },
         {
           "type": "open",
@@ -11625,9 +11691,10 @@
           "type": "open",
           "question": "120. Take _____ the plates. (remove)",
           "answers": [
-            "away"
+            "away",
+            "out"
           ],
-          "explanation": "Take away = remove."
+          "explanation": "Take away / take out = remove."
         },
         {
           "type": "open",
@@ -11665,9 +11732,10 @@
           "type": "open",
           "question": "125. Let's talk it _____. (discuss)",
           "answers": [
-            "over"
+            "over",
+            "through"
           ],
-          "explanation": "Talk over = discuss."
+          "explanation": "Talk over / talk through = discuss."
         },
         {
           "type": "open",
@@ -11681,17 +11749,19 @@
           "type": "open",
           "question": "127. Think it _____. (consider)",
           "answers": [
-            "over"
+            "over",
+            "through"
           ],
-          "explanation": "Think over = consider."
+          "explanation": "Think over / think through = consider."
         },
         {
           "type": "open",
           "question": "128. Don't throw _____ the receipt. (discard)",
           "answers": [
-            "away"
+            "away",
+            "out"
           ],
-          "explanation": "Throw away = discard."
+          "explanation": "Throw away / throw out = discard."
         },
         {
           "type": "open",
@@ -11841,9 +11911,10 @@
           "type": "open",
           "question": "147. Get _____ the car. (enter vehicle)",
           "answers": [
-            "in"
+            "in",
+            "into"
           ],
-          "explanation": "Get in = enter (vehicle); arrive."
+          "explanation": "Get in / get into = enter (vehicle)."
         },
         {
           "type": "open",
@@ -11937,17 +12008,19 @@
           "type": "open",
           "question": "159. Log _____ to your account. (enter computer)",
           "answers": [
-            "in"
+            "in",
+            "on"
           ],
-          "explanation": "Log in = enter (computer)."
+          "explanation": "Log in / log on = enter (computer)."
         },
         {
           "type": "open",
           "question": "160. Don't forget to log _____. (exit computer)",
           "answers": [
-            "out"
+            "out",
+            "off"
           ],
-          "explanation": "Log out = exit (computer)."
+          "explanation": "Log out / log off = exit (computer)."
         },
         {
           "type": "open",
@@ -11993,9 +12066,10 @@
           "type": "open",
           "question": "166. The train pulled _____. (left)",
           "answers": [
-            "out"
+            "out",
+            "away"
           ],
-          "explanation": "Pull out = withdraw; leave."
+          "explanation": "Pull out / pull away = leave (vehicle)."
         },
         {
           "type": "open",
@@ -12089,17 +12163,19 @@
           "type": "open",
           "question": "179. He tripped _____ the cable. (fell over)",
           "answers": [
-            "over"
+            "over",
+            "on"
           ],
-          "explanation": "Trip over = fall over."
+          "explanation": "Trip over / trip on = fall over."
         },
         {
           "type": "open",
           "question": "180. Turn _____ and go back. (reverse direction)",
           "answers": [
-            "around"
+            "around",
+            "round"
           ],
-          "explanation": "Turn around = reverse direction."
+          "explanation": "Turn around / turn round (UK) = reverse direction."
         },
         {
           "type": "open",
@@ -13239,7 +13315,9 @@
           "type": "open",
           "question": "5. \"Close the door.\" → He _____ me to close the door.",
           "answers": [
-            "told"
+            "told",
+            "asked",
+            "ordered"
           ],
           "explanation": "Reported command: tell + person + to-infinitive."
         },
@@ -13444,7 +13522,11 @@
           "question": "28. \"Don't go.\" → He _____ me not to go.",
           "answers": [
             "told",
-            "asked"
+            "asked",
+            "ordered",
+            "warned",
+            "advised",
+            "begged"
           ],
           "explanation": "Negative command: tell/ask + person + not to-infinitive."
         },
@@ -13476,9 +13558,11 @@
           "type": "open",
           "question": "32. \"Come here.\" → He _____ me to come there.",
           "answers": [
-            "told"
+            "told",
+            "asked",
+            "ordered"
           ],
-          "explanation": "Command: tell + person + to-infinitive; here → there."
+          "explanation": "tell (or ask/order) + person + to-infinitive; here → there"
         },
         {
           "type": "open",
@@ -13581,7 +13665,9 @@
           "type": "open",
           "question": "44. \"Stop talking.\" → The teacher _____ us to stop talking.",
           "answers": [
-            "told"
+            "told",
+            "asked",
+            "ordered"
           ],
           "explanation": "Command: tell + person + to-infinitive."
         },
@@ -16609,9 +16695,11 @@
           "type": "open",
           "question": "8. You ____ be 18 to vote. (rule)",
           "answers": [
-            "must"
+            "must",
+            "have to",
+            "need to"
           ],
-          "explanation": "Obligation/rule → must (or have to)."
+          "explanation": "Obligation/rule → must / have to (or need to)."
         },
         {
           "type": "open",
@@ -16626,7 +16714,9 @@
           "type": "open",
           "question": "10. ____ I use your phone? (permission)",
           "answers": [
-            "can"
+            "can",
+            "may",
+            "could"
           ],
           "explanation": "Permission → can (or may/could)."
         },
@@ -16650,17 +16740,22 @@
           "type": "open",
           "question": "13. You ____ see a doctor. (strong advice)",
           "answers": [
-            "should"
+            "should",
+            "ought to",
+            "must"
           ],
-          "explanation": "Advice → should (or ought to)."
+          "explanation": "Advice → should / ought to; very strong advice → must."
         },
         {
           "type": "open",
           "question": "14. ____ you help me, please? (request)",
           "answers": [
-            "could"
+            "could",
+            "can",
+            "would",
+            "will"
           ],
-          "explanation": "Polite request → could (or can/would)."
+          "explanation": "Polite request → could (or can/would/will)."
         },
         {
           "type": "open",
@@ -16682,7 +16777,9 @@
           "type": "open",
           "question": "17. They ____ be at home. (possibility)",
           "answers": [
-            "might"
+            "might",
+            "may",
+            "could"
           ],
           "explanation": "Possibility → might (or may/could)."
         },
@@ -16690,9 +16787,11 @@
           "type": "open",
           "question": "18. You ____ not park here. (prohibition)",
           "answers": [
-            "must"
+            "must",
+            "may",
+            "can"
           ],
-          "explanation": "Prohibition → must not (or may not)."
+          "explanation": "Prohibition → must not, may not, or cannot."
         },
         {
           "type": "open",
@@ -16812,9 +16911,10 @@
           "question": "32. I ____ help you with that. (offer)",
           "answers": [
             "will",
-            "'ll"
+            "'ll",
+            "can"
           ],
-          "explanation": "Offer → will (I'll help)."
+          "explanation": "Offer → will (I'll help) or can."
         },
         {
           "type": "open",
@@ -17253,9 +17353,10 @@
           "type": "open",
           "question": "33. By 2021 they _____ (live) there for ten years. Put the verb in the correct tense.",
           "answers": [
-            "had lived"
+            "had lived",
+            "had been living"
           ],
-          "explanation": "Duration before a past moment."
+          "explanation": "Duration before a past moment (simple or continuous)."
         },
         {
           "type": "open",
@@ -17296,9 +17397,10 @@
           "type": "open",
           "question": "38. I _____ (forget) his name until he reminded me. Put the verb in the correct tense.",
           "answers": [
-            "had forgotten"
+            "had forgotten",
+            "forgot"
           ],
-          "explanation": "Forgot before he reminded."
+          "explanation": "Forgot before he reminded. (Past simple 'forgot' is also accepted.)"
         },
         {
           "type": "open",
@@ -17329,9 +17431,11 @@
           "type": "open",
           "question": "42. He _____ (work) there for years before he retired. Put the verb in the correct tense.",
           "answers": [
-            "had worked"
+            "had worked",
+            "had been working",
+            "worked"
           ],
-          "explanation": "Duration before retirement."
+          "explanation": "Duration before retirement. (Past perfect continuous or past simple are also acceptable.)"
         },
         {
           "type": "open",
@@ -18816,7 +18920,7 @@
         },
         {
           "type": "open",
-          "question": "3. She _____ (write) an email this morning.",
+          "question": "3. She _____ (write) an email yesterday morning.",
           "answers": [
             "wrote"
           ],
@@ -18824,7 +18928,7 @@
         },
         {
           "type": "open",
-          "question": "4. They _____ (make) a cake for the party.",
+          "question": "4. They _____ (make) a cake for the party yesterday.",
           "answers": [
             "made"
           ],
@@ -18840,7 +18944,7 @@
         },
         {
           "type": "open",
-          "question": "6. He _____ (take) the bus to work.",
+          "question": "6. He _____ (take) the bus to work yesterday.",
           "answers": [
             "took"
           ],
@@ -18848,7 +18952,7 @@
         },
         {
           "type": "open",
-          "question": "7. She _____ (know) the answer.",
+          "question": "7. She _____ (know) the answer, but she said nothing.",
           "answers": [
             "knew"
           ],
@@ -18864,7 +18968,7 @@
         },
         {
           "type": "open",
-          "question": "9. They _____ (find) the key under the mat.",
+          "question": "9. They _____ (find) the key under the mat yesterday.",
           "answers": [
             "found"
           ],
@@ -18880,7 +18984,7 @@
         },
         {
           "type": "open",
-          "question": "11. He _____ (tell) me the news.",
+          "question": "11. He _____ (tell) me the news yesterday.",
           "answers": [
             "told"
           ],
@@ -18888,7 +18992,7 @@
         },
         {
           "type": "open",
-          "question": "12. We _____ (leave) early.",
+          "question": "12. We _____ (leave) early last night.",
           "answers": [
             "left"
           ],
@@ -18896,7 +19000,7 @@
         },
         {
           "type": "open",
-          "question": "13. She _____ (buy) a new car.",
+          "question": "13. She _____ (buy) a new car last week.",
           "answers": [
             "bought"
           ],
@@ -18904,7 +19008,7 @@
         },
         {
           "type": "open",
-          "question": "14. They _____ (bring) food to the party.",
+          "question": "14. They _____ (bring) food to the party yesterday.",
           "answers": [
             "brought"
           ],
