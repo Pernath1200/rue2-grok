@@ -1,7 +1,7 @@
 /**
  * Bump CACHE_VERSION whenever this file changes so stale caches are dropped on activate.
  */
-var CACHE_VERSION = 'v56';  // v56 - topics.json single source: category filter in app.js, fallback list removed
+var CACHE_VERSION = 'v57';  // v57 - honest tree progress: real 0..1 mastery, % tooltips, no fake baselines
 var CACHE_NAME = 'rue2-' + CACHE_VERSION;
 
 var PRECACHE_URLS = [

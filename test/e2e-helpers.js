@@ -55,6 +55,58 @@ async function answerThroughQuiz(page, maxQuestions = 60) {
 }
 
 /**
+ * Answer questions CORRECTLY using questions.json as the answer key.
+ * Matches the displayed prompt against the topic's question pool, then clicks
+ * the correct MC option or types the first accepted answer.
+ * Returns 'result' or 'sectionComplete'.
+ */
+async function answerThroughQuizCorrectly(page, questionsKey, maxQuestions = 60) {
+  const sets = require('../questions.json')[questionsKey] || {};
+  const pool = Object.values(sets).flatMap(s => s.questions || []);
+  const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+  for (let i = 0; i < maxQuestions; i++) {
+    if (await page.locator('#resultScreen').isVisible()) return 'result';
+    if (await page.locator('#sectionCompleteScreen').isVisible()) return 'sectionComplete';
+
+    const shown = norm(await page.locator('#questionText').textContent());
+    const q = pool.find(p => {
+      const core = norm((p.question || p.prompt || '').replace(/^\d+\.\s*/, '')).slice(0, 40);
+      return core.length > 10 && shown.includes(core);
+    });
+    if (!q) throw new Error('No answer-key match for displayed question: ' + shown.slice(0, 80));
+
+    if (q.type === 'mc') {
+      await page.locator(`#mcBlock .option[data-option="${q.correct_option}"]`).click();
+    } else {
+      await page.fill('#openInput', (q.answers && q.answers[0]) || '');
+      await page.click('#submitBtn');
+    }
+    await expect(page.locator('#feedbackBlock')).toBeVisible();
+    await page.click('#nextBtn');
+  }
+  throw new Error('Quiz did not finish within ' + maxQuestions + ' questions');
+}
+
+/**
+ * Read a family node's circle radius and tooltip text from the tree SVG,
+ * identified by the family name inside its <title>.
+ */
+async function getFamilyNode(page, familyName) {
+  await page.click('#showTreeBtn');
+  await expect(page.locator('#treeRootsVisual svg')).toBeVisible();
+  const node = await page.evaluate((name) => {
+    const titles = Array.from(document.querySelectorAll('#treeRootsVisual svg g title'));
+    const t = titles.find(el => el.textContent.includes(name));
+    if (!t) return null;
+    const circle = t.parentElement.querySelector('circle');
+    return { r: parseFloat(circle.getAttribute('r')), title: t.textContent };
+  }, familyName);
+  await page.click('#treeOverviewBackBtn');
+  if (!node) throw new Error('Family node not found in tree: ' + familyName);
+  return node;
+}
+
+/**
  * Open the Grammar Tree panel and measure the central tap-root line length.
  * Thickness/length are driven by real progress, so this grows after a quiz.
  */
@@ -68,4 +120,4 @@ async function getTapRootLength(page) {
   return y2 - y1;
 }
 
-module.exports = { trackErrors, selectTopic, answerThroughQuiz, getTapRootLength };
+module.exports = { trackErrors, selectTopic, answerThroughQuiz, answerThroughQuizCorrectly, getFamilyNode, getTapRootLength };

@@ -991,67 +991,48 @@ function renderSimpleTreeOverview() {
     if (familiesByRoot[fam.primary_root]) familiesByRoot[fam.primary_root].push(fam);
   });
 
-  // Real progress computation (defensive). Uses scores + completion + memory bank activity for tap_root lift.
+  // === Honest progress semantics (all values are real 0..1, no decorative baselines) ===
+  //
+  // - Topic strength   = best quiz score ratio for that topic (0 if never attempted;
+  //                      0.6 if the topic was completed but has no recorded score).
+  // - Family progress  = mean strength across the family's topics. 1.0 = "done":
+  //                      a best score of 100% on every topic in the family.
+  // - Lateral root     = mean strength across ALL menu topics whose `root` is that
+  //                      root (not just pilot families), so every topic counts.
+  // - Tap root         = practice volume, saturating: 1 - e^(-answered/40). The trunk
+  //                      thickens with how much you practise; branches with how well.
+  // - On error the tree renders at its resting size (zero progress) — never invented numbers.
+  //
+  // The SVG adds a small visual floor so a zero-progress tree still looks like a tree;
+  // the floor is cosmetic and the tooltips report the real percentages.
   let rootProgress = {};
   let familyProgress = {};
   try {
     const bank = loadMemoryBank();
     const completionMap = getTopicCompletionMap();
-    const stats = getProgressStats();
 
-    grammarTree.roots.forEach(r => { rootProgress[r.id] = 0.26; });
+    const topicStrength = (topicId) => {
+      const lastBest = getLastBest(topicId);
+      if (lastBest.best && lastBest.best[1] > 0) return lastBest.best[0] / lastBest.best[1];
+      if (completionMap[topicId]) return 0.6;
+      return 0;
+    };
+    const mean = (arr) => arr.length ? arr.reduce((s, x) => s + x, 0) / arr.length : 0;
 
-    (pilotMapping.pilot_families || []).forEach(fam => {
-      const rootId = fam.primary_root;
-      if (!rootProgress[rootId]) return;
-
-      let strength = 0.26;
-      let counted = 0;
-
-      (fam.current_topics || []).forEach(t => {
-        const topicId = t.id;
-        const lastBest = getLastBest(topicId);
-        if (lastBest.best && lastBest.best[1] > 0) {
-          strength += (lastBest.best[0] / lastBest.best[1]);
-          counted++;
-        } else if (completionMap[topicId]) {
-          strength += 0.52;
-          counted++;
-        }
-      });
-
-      if (counted > 0) strength = strength / (counted + 1);
-      const blended = Math.max(0.24, Math.min(0.91, strength));
-      rootProgress[rootId] = Math.max(rootProgress[rootId], blended);
-      familyProgress[fam.id] = blended;
+    grammarTree.roots.forEach(r => {
+      const topics = (state.topics || []).filter(t => t.root === r.id);
+      rootProgress[r.id] = mean(topics.map(t => topicStrength(t.id)));
     });
 
-    // Stronger tap_root boost: memory bank activity + history volume + completion for pleasant real-data feel
-    const hasAnyHistory = (loadScores().history || []).length > 0;
+    (pilotMapping.pilot_families || []).forEach(fam => {
+      familyProgress[fam.id] = mean((fam.current_topics || []).map(t => topicStrength(t.id)));
+    });
+
     const bankSize = Object.keys(bank || {}).length;
-    const bankLift = Math.min(0.19, bankSize * 0.012);
-    if (hasAnyHistory || bankSize > 0) {
-      let tapBase = 0.59;
-      if (bankSize >= 5 || stats.total >= 4) tapBase = 0.67;
-      rootProgress.tap_root = Math.max(rootProgress.tap_root || 0.32, tapBase + bankLift);
-    }
-    // Mild overall lift when user has solid bank activity (helps non-pilot roots feel alive too)
-    if (bankSize > 7) {
-      Object.keys(rootProgress).forEach(k => {
-        if (k !== 'tap_root') rootProgress[k] = Math.min(0.89, rootProgress[k] + 0.05);
-      });
-    }
+    rootProgress.tap_root = 1 - Math.exp(-bankSize / 40);
   } catch (e) {
-    console.warn('Tree progress calculation failed, using safe defaults:', e);
-    rootProgress = {
-      tap_root: 0.74,
-      verb_phrase: 0.66,
-      noun_phrase: 0.51,
-      sentence_syntax: 0.40,
-      clause_linking: 0.59,
-      verb_complementation: 0.47,
-      prepositions_particles: 0.55
-    };
+    console.warn('Tree progress calculation failed, rendering resting tree:', e);
+    rootProgress = {};
     familyProgress = {};
   }
 
@@ -1079,15 +1060,17 @@ function renderSimpleTreeOverview() {
   const cyanDark = "#3d7aa3";
   const cyanLight = "#7fb8e8";
 
-  // Central tap root (strong vertical, thickness based on progress)
-  const tapProgress = rootProgress.tap_root || 0.8;
-  const tapThickness = 4 + tapProgress * 6; // 4px → 10px
+  // Central tap root (strong vertical, thickness based on practice volume).
+  // 0.18 visual floor: a fresh tree still shows a trunk; growth beyond it is real.
+  const tapProgress = rootProgress.tap_root || 0;
+  const tapVisual = 0.18 + tapProgress * 0.82;
+  const tapThickness = 4 + tapVisual * 6; // 4px → 10px
 
   const tapRoot = document.createElementNS(svgNS, "line");
   tapRoot.setAttribute("x1", centerX);
   tapRoot.setAttribute("y1", baseY);
   tapRoot.setAttribute("x2", centerX);
-  tapRoot.setAttribute("y2", baseY + maxRootLength * tapProgress);
+  tapRoot.setAttribute("y2", baseY + maxRootLength * tapVisual);
   tapRoot.setAttribute("stroke", cyan);
   tapRoot.setAttribute("stroke-width", tapThickness);
   tapRoot.setAttribute("stroke-linecap", "round");
@@ -1133,7 +1116,9 @@ function renderSimpleTreeOverview() {
   }
 
   lateralRoots.forEach(def => {
-    const prog = rootProgress[def.rootId] || 0.5;
+    // Real mastery 0..1; the geometry below has its own resting size at 0
+    // (0.6 × baseLength, 2.5px stroke), so zero progress still draws a root.
+    const prog = rootProgress[def.rootId] || 0;
     const length = def.baseLength * (0.6 + prog * 0.55); // growth in depth
     const thickness = 2.5 + prog * 5.5;                   // growth in thickness
 
@@ -1187,7 +1172,7 @@ function renderSimpleTreeOverview() {
       group.style.cursor = 'pointer';
 
       // Node: visually distinct by real progress (larger + brighter stroke for high-progress families)
-      const fProg = familyProgress[fam.id] || prog || 0.48;
+      const fProg = familyProgress[fam.id] || 0;
       const nodeR = (6.8 + fProg * 4.2).toFixed(1);
       const nStrokeW = (1.4 + fProg * 2.1).toFixed(1);
       const node = document.createElementNS(svgNS, "circle");
@@ -1220,9 +1205,10 @@ function renderSimpleTreeOverview() {
       appendMultilineLabel(label, fam.name);
       group.appendChild(label);
 
-      // Accessibility + discoverability
+      // Accessibility + discoverability — report the real number behind the visual
+      const fPct = Math.round(fProg * 100);
       const title = document.createElementNS(svgNS, "title");
-      title.textContent = `Practise: ${fam.name} (click to go to Topics)`;
+      title.textContent = `${fam.name} — mastery ${fPct}% (your best scores). Click to practise.`;
       group.appendChild(title);
 
       // Click / keyboard activation + perfect focus highlight for SVG groups
@@ -1245,7 +1231,7 @@ function renderSimpleTreeOverview() {
       });
       group.setAttribute('tabindex', '0');
       group.setAttribute('role', 'button');
-      group.setAttribute('aria-label', `Go to ${fam.name} topics`);
+      group.setAttribute('aria-label', `${fam.name}, mastery ${fPct} percent. Go to topics.`);
 
       svg.appendChild(group);
     });

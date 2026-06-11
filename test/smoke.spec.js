@@ -6,7 +6,7 @@
  * always start from a brand-new student profile.
  */
 const { test, expect } = require('@playwright/test');
-const { trackErrors, selectTopic, answerThroughQuiz, getTapRootLength } = require('./e2e-helpers');
+const { trackErrors, selectTopic, answerThroughQuiz, answerThroughQuizCorrectly, getFamilyNode, getTapRootLength } = require('./e2e-helpers');
 
 // ── Quick checks ────────────────────────────────────────────────────────────
 
@@ -159,6 +159,33 @@ test('journey: tree reflects progress after a completed quiz', async ({ page }) 
   // The tap root grows once the student has real history
   const after = await getTapRootLength(page);
   expect(after).toBeGreaterThan(before + 50);
+
+  expect(errors).toEqual([]);
+});
+
+test('journey: tree mastery is honest — 0% when fresh, 100% after a perfect quiz', async ({ page }) => {
+  const errors = trackErrors(page);
+  await page.goto('/', { waitUntil: 'networkidle' });
+
+  // Fresh profile: the tree must claim no mastery
+  const before = await getFamilyNode(page, 'Modal Verbs');
+  expect(before.title).toContain('mastery 0%');
+
+  // Perfect 10-question quiz on Modal Verbs (answers from questions.json)
+  await selectTopic(page, 'Modal Verbs');
+  await page.click('#openPracticeSetupBtn');
+  await page.selectOption('#numQuestionsSelect', '10');
+  await page.click('#startBtn');
+  await expect(page.locator('#quizScreen')).toBeVisible({ timeout: 10000 });
+  const ending = await answerThroughQuizCorrectly(page, 'modal_verbs');
+  expect(ending).toBe('result');
+  await expect(page.locator('#resultScore')).toContainText('Score: 10 / 10');
+  await page.click('#backToMenuBtn');
+
+  // The family node now reports full mastery, and grew visibly
+  const after = await getFamilyNode(page, 'Modal Verbs');
+  expect(after.title).toContain('mastery 100%');
+  expect(after.r).toBeGreaterThan(before.r + 3);
 
   expect(errors).toEqual([]);
 });
