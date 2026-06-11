@@ -554,10 +554,19 @@
 
         <div class="memory-bank" id="memoryBankSummary" hidden style="margin-top: 1rem;"></div>
 
+        <!-- Progress portability: move your progress between devices as a file -->
+        <div style="margin-top: 0.75rem; text-align: center;">
+          <a href="#" id="exportProgressLink" style="font-size: 0.75rem; color: var(--muted); text-decoration: underline;">Export progress</a>
+          <span style="color: var(--muted); font-size: 0.75rem;">&middot;</span>
+          <a href="#" id="importProgressLink" style="font-size: 0.75rem; color: var(--muted); text-decoration: underline;">Import progress</a>
+          <input type="file" id="importProgressInput" accept="application/json,.json" hidden>
+          <div id="progressPortabilityNote" hidden style="margin-top: 0.35rem; font-size: 0.75rem; color: var(--accent);"></div>
+        </div>
+
         <!-- Subtle dev helper for SW cache issues (can be removed later) -->
         <div style="margin-top: 0.5rem; text-align: center;">
           <a href="#" id="forceUpdateLink" style="font-size: 0.7rem; color: #888; text-decoration: underline;">Force reload latest version</a>
-          <span style="margin-left: 8px; font-size: 0.65rem; color: #f59e0b; background:#222; padding:1px 4px; border-radius:2px;">v58</span>
+          <span style="margin-left: 8px; font-size: 0.65rem; color: #f59e0b; background:#222; padding:1px 4px; border-radius:2px;">v61</span>
         </div>
       </div>
 

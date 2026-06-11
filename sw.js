@@ -1,7 +1,7 @@
 /**
  * Bump CACHE_VERSION whenever this file changes so stale caches are dropped on activate.
  */
-var CACHE_VERSION = 'v60';  // v60 - spaced repetition: Leitner review scheduling + Today's review button
+var CACHE_VERSION = 'v61';  // v61 - progress portability: export/import progress as a JSON file
 var CACHE_NAME = 'rue2-' + CACHE_VERSION;
 
 var PRECACHE_URLS = [

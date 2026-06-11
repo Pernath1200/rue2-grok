@@ -1,5 +1,5 @@
 import state from './state.js';
-import { STORAGE_KEY, MEMORY_KEY, REPORTED_QUESTIONS_KEY, migrateStorageKeys, loadScores, loadMemoryBank, saveMemoryBankEntry, saveScore, getLastBest, getProgressStats, getTopicCompletionMap, getReportedQuestions, questionHash, getDueReviews } from './storage.js';
+import { STORAGE_KEY, MEMORY_KEY, REPORTED_QUESTIONS_KEY, migrateStorageKeys, loadScores, loadMemoryBank, saveMemoryBankEntry, saveScore, getLastBest, getProgressStats, getTopicCompletionMap, getReportedQuestions, questionHash, getDueReviews, exportProgress, importProgress } from './storage.js';
 import { DATA_VERSION, SCREEN_IDS, MENU_PANEL_IDS, showScreen, showMenuPanel, openOverlay, closeOverlay, escapeAndBold, normalize, toTitleCase, shuffleArray, getBaseUrl, fetchJSON, renderScoreChart } from './ui.js';
 import { registerCallbacks as registerCurrCallbacks, renderDiagram, showIntroSection, showWritingTipsIntroSection, startWritingTipsQuiz, startCourseSection, advanceCourseToNext, startPart1, startPart2, startDiagnostic, startMixedPractice, getCourseIntroSections } from './curriculum.js';
 import { registerCallbacks as registerQuizCallbacks, startQuiz, startWeakSpotsQuiz, startReviewQuiz, hasValidTopicSelected, syncCurrentTopicFromDropdown, getTopicTitle, getTopicLabelForDisplay, addReportedQuestion, addReportedIntroCard, getReportedReasonLabel, renderReportedQuestionsList, escapeHtml, cleanQuestionDisplay, showQuestion, submitAnswer, nextQuestion, finishQuiz, retryWrong } from './quiz.js';
@@ -227,6 +227,8 @@ function renderMenu() {
     var memLine = memParts.length > 0 ? '<br>Memory bank: ' + memParts.join(' &middot; ') : '';
     memEl.innerHTML = '<h3>Your progress</h3><p>' + parts.join(' &middot; ') + memLine + '</p>';
   }
+  // The block ships hidden in the markup; show it once there is anything to say
+  memEl.hidden = !(stats.total > 0 || bankKeys.length > 0);
 
   showScreen('menuScreen');
   showMenuPanel('menuMain');
@@ -1338,6 +1340,48 @@ document.getElementById('continueLastBtn')?.addEventListener('click', () => {
 
 document.getElementById('reviewDueBtn')?.addEventListener('click', () => {
   startReviewQuiz();
+});
+
+// === Progress portability: export downloads a JSON snapshot; import merges one in ===
+document.getElementById('exportProgressLink')?.addEventListener('click', (e) => {
+  e.preventDefault();
+  const blob = new Blob([JSON.stringify(exportProgress(), null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'rue2-progress-' + new Date().toISOString().slice(0, 10) + '.json';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(a.href);
+});
+
+document.getElementById('importProgressLink')?.addEventListener('click', (e) => {
+  e.preventDefault();
+  document.getElementById('importProgressInput')?.click();
+});
+
+document.getElementById('importProgressInput')?.addEventListener('change', async (e) => {
+  const file = e.target.files && e.target.files[0];
+  e.target.value = '';   // allow picking the same file again later
+  if (!file) return;
+  const noteEl = document.getElementById('progressPortabilityNote');
+  try {
+    const text = await file.text();
+    let parsed;
+    try { parsed = JSON.parse(text); } catch (err) { throw new Error('that file is not valid JSON.'); }
+    const summary = importProgress(parsed);
+    renderMenu();
+    refreshReviewButton();
+    if (noteEl) {
+      const nothingNew = summary.addedScores === 0 && summary.updatedEntries === 0;
+      noteEl.textContent = 'Imported: ' + summary.totalScores + ' quiz result' + (summary.totalScores === 1 ? '' : 's')
+        + ', ' + summary.totalTracked + ' tracked question' + (summary.totalTracked === 1 ? '' : 's')
+        + (nothingNew ? ' (everything was already on this device).' : '.');
+    }
+  } catch (err) {
+    if (noteEl) noteEl.textContent = 'Import failed: ' + (err && err.message ? err.message : 'not a valid progress file.');
+  }
+  if (noteEl) noteEl.hidden = false;
 });
 
 document.getElementById('practiceWeakBtn')?.addEventListener('click', () => {

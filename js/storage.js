@@ -181,6 +181,91 @@ export function getReportedQuestions() {
   try { return JSON.parse(localStorage.getItem(REPORTED_QUESTIONS_KEY) || '[]'); } catch (e) { return []; }
 }
 
+// === Progress portability (export / import as a JSON file) ===
+//
+// A student's whole state is four localStorage keys: quiz history, the memory
+// bank (incl. the spaced-repetition schedule), flagged questions and the theme.
+// Import MERGES rather than replaces — the realistic case is a student who
+// already practised a little on both devices. All merge rules are idempotent:
+// importing the same file twice changes nothing.
+export const THEME_KEY = 'rue2_theme';
+export const PROGRESS_EXPORT_FORMAT = 'rue2-progress';
+
+export function exportProgress() {
+  const data = {};
+  data[STORAGE_KEY] = loadScores();
+  data[MEMORY_KEY] = loadMemoryBank();
+  data[REPORTED_QUESTIONS_KEY] = getReportedQuestions();
+  data[THEME_KEY] = localStorage.getItem(THEME_KEY) || null;
+  return { format: PROGRESS_EXPORT_FORMAT, version: 1, exported: new Date().toISOString(), data };
+}
+
+export function importProgress(envelope) {
+  if (!envelope || envelope.format !== PROGRESS_EXPORT_FORMAT || !envelope.data || typeof envelope.data !== 'object') {
+    throw new Error('this is not a RUE2 progress file.');
+  }
+  const d = envelope.data;
+
+  // Quiz history: union, deduplicated exactly by (set_id, date), date-sorted —
+  // shared history can never double-count streaks or averages.
+  const scores = loadScores();
+  const imported = (d[STORAGE_KEY] && Array.isArray(d[STORAGE_KEY].history)) ? d[STORAGE_KEY].history : [];
+  const seen = new Set(scores.history.map(e => e.set_id + '|' + e.date));
+  let addedScores = 0;
+  imported.forEach(e => {
+    if (!e || !e.set_id || !e.date) return;
+    const k = e.set_id + '|' + e.date;
+    if (seen.has(k)) return;
+    seen.add(k);
+    scores.history.push(e);
+    addedScores++;
+  });
+  scores.history.sort((a, b) => new Date(a.date) - new Date(b.date));
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(scores));
+
+  // Memory bank: per question, keep the richer entry — more total answers,
+  // ties broken by later activity. No summing, so no double-counting.
+  const richness = e => (e.right || 0) + (e.wrong || 0);
+  const lastTouch = e => Math.max(Date.parse(e.last || '') || 0, Date.parse(e.lastWrong || '') || 0, Date.parse(e.due || '') || 0);
+  const bank = loadMemoryBank();
+  const importedBank = (d[MEMORY_KEY] && typeof d[MEMORY_KEY] === 'object') ? d[MEMORY_KEY] : {};
+  let updatedEntries = 0;
+  Object.keys(importedBank).forEach(k => {
+    const imp = importedBank[k];
+    if (!imp || typeof imp !== 'object') return;
+    const loc = bank[k];
+    if (!loc || richness(imp) > richness(loc) ||
+        (richness(imp) === richness(loc) && lastTouch(imp) > lastTouch(loc))) {
+      bank[k] = imp;
+      updatedEntries++;
+    }
+  });
+  localStorage.setItem(MEMORY_KEY, JSON.stringify(bank));
+
+  // Flagged questions: union, deduplicated by content.
+  const reported = getReportedQuestions();
+  const reportedSeen = new Set(reported.map(r => JSON.stringify(r)));
+  (Array.isArray(d[REPORTED_QUESTIONS_KEY]) ? d[REPORTED_QUESTIONS_KEY] : []).forEach(r => {
+    const k = JSON.stringify(r);
+    if (reportedSeen.has(k)) return;
+    reportedSeen.add(k);
+    reported.push(r);
+  });
+  localStorage.setItem(REPORTED_QUESTIONS_KEY, JSON.stringify(reported));
+
+  // Theme: the local choice wins if one was ever made.
+  if (!localStorage.getItem(THEME_KEY) && typeof d[THEME_KEY] === 'string' && d[THEME_KEY]) {
+    localStorage.setItem(THEME_KEY, d[THEME_KEY]);
+  }
+
+  return {
+    addedScores,
+    updatedEntries,
+    totalScores: scores.history.length,
+    totalTracked: Object.keys(bank).length
+  };
+}
+
 export function questionHash(q) {
   const s = (q.question || q.prompt || '').trim();
   let h = 0;
