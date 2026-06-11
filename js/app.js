@@ -975,14 +975,21 @@ function renderSimpleTreeOverview() {
   visualContainer.innerHTML = '';
 
   if (!grammarTree || !grammarTree.roots || !pilotMapping) {
-    visualContainer.innerHTML = `
-      <div style="padding: 1rem; background: #3a2f00; border: 1px solid #f57f17; border-radius: 6px; color: #ffeb3b; height: 100%;">
-        <strong>Tree data or mapping not loaded yet.</strong><br>
-        Try a hard refresh (Ctrl+Shift+R) with DevTools → Network → "Disable cache" checked.
-      </div>
-    `;
+    // Tree data may still be fetching (slow connections): show a quiet loading
+    // state and retry while the panel is open, instead of a dead-end warning.
+    renderSimpleTreeOverview._waits = (renderSimpleTreeOverview._waits || 0) + 1;
+    if (renderSimpleTreeOverview._waits <= 40) {
+      visualContainer.innerHTML = '<div style="padding: 1.2rem; color: #5A5346; font-style: italic; font-family: Georgia, serif;">Growing your tree…</div>';
+      setTimeout(() => {
+        const panel = document.getElementById('menuTreeOverview');
+        if (panel && !panel.classList.contains('hidden')) renderSimpleTreeOverview();
+      }, 300);
+    } else {
+      visualContainer.innerHTML = '<div style="padding: 1.2rem; color: #6B2737;"><strong>The tree could not load its data.</strong> Check your connection, then reload this page.</div>';
+    }
     return;
   }
+  renderSimpleTreeOverview._waits = 0;
 
   // Group families by primary root
   const familiesByRoot = {};
