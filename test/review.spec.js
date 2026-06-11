@@ -82,9 +82,12 @@ test('legacy never-wrong entries migrate to the long track, staggered into the f
   await seedBank(page, { [k]: { wrong: 0, right: 4, lastWrong: null } });
   await page.goto('/');
   await expect(page.locator('#menuMain')).toBeVisible();
+  // The migration happens during async startup (first getDueReviews call), so
+  // poll for it rather than racing it — the button is hidden in the markup
+  // from the start, so its state alone proves nothing about readiness.
+  await expect.poll(async () => (await readBank(page))[k]?.box).toBe(4);  // 21-day track
   await expect(page.locator('#reviewDueBtn')).toBeHidden();       // staggered due is in the future
   const bank = await readBank(page);
-  expect(bank[k].box).toBe(4);                                    // 21-day track
   const dueIn = new Date(bank[k].due).getTime() - Date.now();
   expect(dueIn).toBeGreaterThan(0);
   expect(dueIn).toBeLessThanOrEqual(21 * DAY_MS + 1000);          // within the 3-week stagger window
