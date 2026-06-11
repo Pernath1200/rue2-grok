@@ -69,9 +69,14 @@ async function answerThroughQuizCorrectly(page, questionsKey, maxQuestions = 60)
     if (await page.locator('#sectionCompleteScreen').isVisible()) return 'sectionComplete';
 
     const shown = norm(await page.locator('#questionText').textContent());
+    // Error-correction items display a transformed fragment (e.g. "Wrong: <sentence>"),
+    // so match in both directions: pool-core within shown, or shown-core within pool text.
+    const shownCore = shown.replace(/^wrong/, '');
     const q = pool.find(p => {
-      const core = norm((p.question || p.prompt || '').replace(/^\d+\.\s*/, '')).slice(0, 40);
-      return core.length > 10 && shown.includes(core);
+      const full = norm(p.question || p.prompt || '');
+      const core = full.replace(/^\d+/, '').slice(0, 40);
+      return (core.length > 10 && shown.includes(core)) ||
+             (shownCore.length > 8 && full.includes(shownCore));
     });
     if (!q) throw new Error('No answer-key match for displayed question: ' + shown.slice(0, 80));
 

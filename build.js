@@ -47,5 +47,25 @@ COPY_PATTERNS.concat(JSON_GLOB).forEach(file => {
   copied++;
 });
 
+// Data directories the app fetches at runtime (tree model powers the Grammar
+// Tree view and #practice/... deep links) + the standalone exam bundle.
+const COPY_DIRS = [path.join('data', 'tree'), '_exam_app'];
+COPY_DIRS.forEach(dir => {
+  var srcDir = path.join(SRC, dir);
+  if (!fs.existsSync(srcDir)) return;
+  fs.mkdirSync(path.join(DIST, dir), { recursive: true });
+  fs.readdirSync(srcDir).forEach(file => {
+    var src = path.join(srcDir, file);
+    if (!fs.statSync(src).isFile()) return;
+    if (!/\.(json|html|js|css|svg)$/.test(file)) return; // skip docs/notes
+    var content = fs.readFileSync(src, 'utf8');
+    if (file.endsWith('.json')) {
+      try { content = JSON.stringify(JSON.parse(content)); } catch (e) {}
+    }
+    fs.writeFileSync(path.join(DIST, dir, file), content);
+    copied++;
+  });
+});
+
 console.log('Copied ' + copied + ' files to dist/');
 console.log('Done. Serve with: cd dist && node server.js');
