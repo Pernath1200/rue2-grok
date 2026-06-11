@@ -29,6 +29,7 @@
   "homepage": "https://github.com/Pernath1200/rue2-grok#readme",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
+    "@resvg/resvg-js": "^2.6.2",
     "ajv": "^8.18.0",
     "esbuild": "^0.27.4"
   }
