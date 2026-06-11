@@ -81,6 +81,31 @@ test('live hashchange routes without a reload, and in-app Back returns home', as
   expect(errors).toEqual([]);
 });
 
+test('tree nodes emit shareable deep links', async ({ page }) => {
+  const errors = trackErrors(page);
+  await page.goto('/', { waitUntil: 'networkidle' });
+  await page.click('#showTreeBtn');
+  await expect(page.locator('#treeRootsVisual svg')).toBeVisible();
+
+  // Family knot → #practice/root_id/<family> (dispatchEvent: thin SVG shapes
+  // have bounding-box centres outside their fill, so pixel-clicks are flaky)
+  await page.locator('#treeRootsVisual g[data-family="modal_verbs"]').dispatchEvent('click');
+  await expect(page.locator('#menuRootPractice')).toBeVisible();
+  await expect(page.locator('#rootPracticeTitle')).toHaveText('Modal Verbs');
+  expect(await page.evaluate(() => location.hash)).toBe('#practice/root_id/modal_verbs');
+
+  // In-app Back returns to the tree
+  await page.click('#rootPracticeBackBtn');
+  await expect(page.locator('#menuTreeOverview')).toBeVisible();
+
+  // Root ribbon → #practice/root/<root>
+  await page.locator('#treeRootsVisual path[data-root-id="verb_phrase"]').dispatchEvent('click');
+  await expect(page.locator('#rootPracticeTitle')).toHaveText('Verb Phrase');
+  expect(await page.evaluate(() => location.hash)).toBe('#practice/root/verb_phrase');
+
+  expect(errors).toEqual([]);
+});
+
 test('app degrades gracefully when root_content_index.json fails to load', async ({ page }) => {
   await page.route('**/root_content_index.json*', r => r.abort());
   await page.goto('/#practice/root/verb_phrase', { waitUntil: 'networkidle' });

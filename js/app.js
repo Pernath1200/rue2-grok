@@ -1036,258 +1036,208 @@ function renderSimpleTreeOverview() {
     familyProgress = {};
   }
 
-  const width = 920;
-  const height = 620;
-  const centerX = width / 2;
-  const baseY = 38;
-  const maxRootLength = 410;
+// === Botanical renderer (ported from tree_model_c2_oak.html, below-ground only) ===
+  // Grammar = the root system. Cream/earth palette from the Tree Model house style;
+  // geometry is deterministic; sizes are driven by the real progress numbers above.
+  const W = 1280, H = 1000;
+  const C = {
+    cream: '#FAF7F0', earth: '#ECE2CD', earthLn: '#CBB98D',
+    wood: '#B98C5A', woodLn: '#7A5733', root: '#A97F50', rootLn: '#6E4E2C',
+    ink: '#1F1F1F', ox: '#6B2737', hair: '#A99E86', ochre: '#C8893B',
+    ochreDk: '#A6691F', muted: '#5A5346'
+  };
+  const cx = 640, yG = 150;              // ground line
+  const Rx = 640, Ry = yG + 24;          // root fan origin
+  const rrx = 470, rry = 620;            // root spread ellipse (full mastery reach)
 
-  const svgNS = "http://www.w3.org/2000/svg";
-  let svg;
-  try {
-    svg = document.createElementNS(svgNS, "svg");
-    svg.setAttribute("width", "100%");
-    svg.setAttribute("height", "100%");
-    svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
-    svg.style.display = "block";
-  } catch (e) {
-    console.warn('SVG creation failed', e);
-    visualContainer.innerHTML = '<div style="color:#888; padding:1rem;">Tree visual unavailable right now.</div>';
-    return;
+  const rad = d => d * Math.PI / 180;
+  const f = n => (Math.round(n * 10) / 10);
+  const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+  // Tapered ribbon along a quadratic Bézier (the mockup's limb())
+  function limb(p0, p1, p2, w0, w1, steps = 26) {
+    const L = [], R = [];
+    for (let i = 0; i <= steps; i++) {
+      const t = i / steps, mt = 1 - t;
+      const x = mt * mt * p0.x + 2 * mt * t * p1.x + t * t * p2.x;
+      const y = mt * mt * p0.y + 2 * mt * t * p1.y + t * t * p2.y;
+      const tx = 2 * mt * (p1.x - p0.x) + 2 * t * (p2.x - p1.x);
+      const ty = 2 * mt * (p1.y - p0.y) + 2 * t * (p2.y - p1.y);
+      const len = Math.hypot(tx, ty) || 1;
+      const nx = -ty / len, ny = tx / len;
+      const w = (w0 + (w1 - w0) * t) / 2;
+      L.push([x + nx * w, y + ny * w]);
+      R.push([x - nx * w, y - ny * w]);
+    }
+    let d = `M${f(L[0][0])} ${f(L[0][1])}`;
+    for (let i = 1; i < L.length; i++) d += `L${f(L[i][0])} ${f(L[i][1])}`;
+    d += `L${f(R[R.length - 1][0])} ${f(R[R.length - 1][1])}`;
+    for (let i = R.length - 2; i >= 0; i--) d += `L${f(R[i][0])} ${f(R[i][1])}`;
+    return d + 'Z';
   }
+  const qpoint = (p0, p1, p2, t) => {
+    const mt = 1 - t;
+    return {
+      x: mt * mt * p0.x + 2 * mt * t * p1.x + t * t * p2.x,
+      y: mt * mt * p0.y + 2 * mt * t * p1.y + t * t * p2.y
+    };
+  };
 
-  const cyan = "#569cd6";
-  const cyanDark = "#3d7aa3";
-  const cyanLight = "#7fb8e8";
-
-  // Central tap root (strong vertical, thickness based on practice volume).
-  // 0.18 visual floor: a fresh tree still shows a trunk; growth beyond it is real.
-  const tapProgress = rootProgress.tap_root || 0;
-  const tapVisual = 0.18 + tapProgress * 0.82;
-  const tapThickness = 4 + tapVisual * 6; // 4px → 10px
-
-  const tapRoot = document.createElementNS(svgNS, "line");
-  tapRoot.setAttribute("x1", centerX);
-  tapRoot.setAttribute("y1", baseY);
-  tapRoot.setAttribute("x2", centerX);
-  tapRoot.setAttribute("y2", baseY + maxRootLength * tapVisual);
-  tapRoot.setAttribute("stroke", cyan);
-  tapRoot.setAttribute("stroke-width", tapThickness);
-  tapRoot.setAttribute("stroke-linecap", "round");
-  svg.appendChild(tapRoot);
-
-  // Define geometric lateral roots with controlled angles (larger canvas + scaled lengths for breathing room)
-  const lateralRoots = [
-    { rootId: "verb_phrase",         angle: -38, baseLength: 260, side: "left" },
-    { rootId: "noun_phrase",         angle:  38, baseLength: 242, side: "right" },
-    { rootId: "clause_linking",      angle: -22, baseLength: 295, side: "left" },
-    { rootId: "prepositions_particles", angle:  22, baseLength: 278, side: "right" },
-    { rootId: "verb_complementation", angle: -52, baseLength: 207, side: "left" },
-    { rootId: "sentence_syntax",     angle:  52, baseLength: 195, side: "right" },
+  // Root fan: angles + two-line display names from the mockup
+  const ROOT_DEFS = [
+    { id: 'verb_phrase',            lines: ['Verb phrase'],             ang: 200 },
+    { id: 'noun_phrase',            lines: ['Noun phrase'],             ang: 222 },
+    { id: 'sentence_syntax',        lines: ['Sentence', 'syntax'],      ang: 244 },
+    { id: 'clause_linking',         lines: ['Clause', 'linking'],       ang: 296 },
+    { id: 'verb_complementation',   lines: ['Verb', 'complementation'], ang: 318 },
+    { id: 'prepositions_particles', lines: ['Prepositions', '& particles'], ang: 340 },
   ];
 
-  // Small helper for clear multi-line labels on long family names (prevents overlap, keeps pleasant spacing)
-  function appendMultilineLabel(labelEl, fullName) {
-    labelEl.textContent = '';
-    const maxLen = 17;
-    let line1 = fullName;
-    let line2 = '';
-    if (fullName.length > maxLen) {
-      const breakAt = fullName.lastIndexOf(' ', maxLen);
-      if (breakAt > 6) {
-        line1 = fullName.slice(0, breakAt);
-        line2 = fullName.slice(breakAt + 1);
-      } else if (fullName.includes(' & ')) {
-        const parts = fullName.split(' & ');
-        line1 = parts[0];
-        line2 = '& ' + parts[1];
-      }
-    }
-    const t1 = document.createElementNS(svgNS, 'tspan');
-    t1.textContent = line1;
-    labelEl.appendChild(t1);
-    if (line2) {
-      const t2 = document.createElementNS(svgNS, 'tspan');
-      t2.textContent = line2;
-      t2.setAttribute('x', labelEl.getAttribute('x') || '0');
-      t2.setAttribute('dy', '1.15em');
-      labelEl.appendChild(t2);
-    }
+  const parts = [];
+  parts.push(`<rect x="0" y="0" width="${W}" height="${H}" fill="${C.cream}"/>`);
+
+  // Soil + ground line + deterministic speckle
+  let soil = `<rect x="0" y="${yG}" width="${W}" height="${H - yG}" fill="${C.earth}"/>`;
+  soil += `<line x1="0" y1="${yG}" x2="${W}" y2="${yG}" stroke="${C.earthLn}" stroke-width="2"/>`;
+  for (let i = 0; i < 60; i++) {
+    const sx = ((i * 97 + 31) % W);
+    const sy = yG + 24 + ((i * 53 + 17) % (H - yG - 40));
+    soil += `<circle cx="${sx}" cy="${sy}" r="1.6" fill="${C.earthLn}" opacity="0.35"/>`;
   }
+  parts.push(soil);
 
-  lateralRoots.forEach(def => {
-    // Real mastery 0..1; the geometry below has its own resting size at 0
-    // (0.6 × baseLength, 2.5px stroke), so zero progress still draws a root.
-    const prog = rootProgress[def.rootId] || 0;
-    const length = def.baseLength * (0.6 + prog * 0.55); // growth in depth
-    const thickness = 2.5 + prog * 5.5;                   // growth in thickness
+  // Trunk stub above ground (the crown lives off-canvas — this app is the roots)
+  parts.push(`<path d="${limb({ x: cx, y: yG + 6 }, { x: cx - 5, y: 70 }, { x: cx - 4, y: 2 }, 152, 92)}" fill="${C.wood}" stroke="${C.woodLn}" stroke-width="0.8"/>`);
 
-    const rad = (def.angle * Math.PI) / 180;
-    const endX = centerX + Math.sin(rad) * length;
-    const endY = baseY + Math.cos(rad) * length * 0.92;
+  // Hint line, above ground
+  parts.push(`<text x="26" y="44" font-size="15" font-style="italic" font-family="Georgia, 'Source Serif 4', serif" fill="${C.muted}">The roots of your grammar — they grow with your best scores.</text>`
+    + `<text x="26" y="66" font-size="15" font-style="italic" font-family="Georgia, 'Source Serif 4', serif" fill="${C.muted}">Click any root or knot to practise it.</text>`);
 
-    // Main lateral root
-    const main = document.createElementNS(svgNS, "line");
-    main.setAttribute("x1", centerX);
-    main.setAttribute("y1", baseY + 50);
-    main.setAttribute("x2", endX);
-    main.setAttribute("y2", endY);
-    main.setAttribute("stroke", cyan);
-    main.setAttribute("stroke-width", thickness);
-    main.setAttribute("stroke-linecap", "round");
-    main.setAttribute("opacity", 0.95);
-    svg.appendChild(main);
+  // Tap root — practice volume (thickens + deepens as you practise)
+  const tapProgress = rootProgress.tap_root || 0;
+  const tapPct = Math.round(tapProgress * 100);
+  const tapTipY = yG + 60 + (H - yG - 240) * (0.7 + 0.3 * tapProgress);
+  const tapW = 30 + 14 * tapProgress;
+  parts.push(`<path data-deeplink="practice/root/tap_root" data-tap-progress="${f(tapProgress * 100) / 100}" `
+    + `aria-label="Tap root, practice volume ${tapPct} percent. Go to foundation practice." `
+    + `d="${limb({ x: cx, y: yG + 10 }, { x: cx - 9, y: (yG + tapTipY) / 2 }, { x: cx + 1, y: tapTipY }, tapW, 6.5)}" `
+    + `fill="${C.root}" stroke="${C.rootLn}" stroke-width="0.8">`
+    + `<title>Tap root — practice volume ${tapPct}% (grows with every question you answer)</title></path>`);
+  // TAP ROOT callout under the tip
+  parts.push(`<text x="${cx}" y="${f(tapTipY + 34)}" text-anchor="middle">`
+    + `<tspan x="${cx}" font-size="19" font-weight="600" letter-spacing=".14em" fill="${C.ox}">TAP ROOT</tspan>`
+    + `<tspan x="${cx}" dy="22" font-size="13" font-style="italic" fill="${C.muted}">foundation — thickens as you practise</tspan></text>`);
 
-    // Small geometric sub-branches (more appear with higher progress) — scaled for large canvas
-    const subCount = Math.floor(prog * 3);
-    for (let i = 0; i < subCount; i++) {
-      const t = 0.35 + i * 0.22;
-      const sx = centerX + (endX - centerX) * t;
-      const sy = (baseY + 50) + (endY - (baseY + 50)) * t;
+  // Lateral roots + family knots + labels
+  let knots = '', labels = '';
+  ROOT_DEFS.forEach(def => {
+    const m = rootProgress[def.id] || 0;
+    const pct = Math.round(m * 100);
+    // 0.78 reach floor is cosmetic (a resting tree should still fill the soil);
+    // mastery adds the final stretch, plus width and rootlet density below.
+    const reach = 0.78 + 0.22 * m;
+    const r = rad(def.ang);
+    const tipX = Rx + rrx * reach * Math.cos(r);
+    const tipY = Ry - rry * reach * Math.sin(r);
+    const p0 = { x: cx + 16 * Math.cos(r), y: Ry };
+    const mX = (p0.x + tipX) / 2, mY = (p0.y + tipY) / 2;
+    const ctrl = { x: mX * 0.62 + tipX * 0.38, y: mY + 64 * reach };
+    const p2 = { x: tipX, y: tipY };
+    const baseW = 18 + 10 * m;
+    const title = `${def.lines.join(' ')} — mastery ${pct}% (average best scores). Click to practise.`;
+    parts.push(`<path data-deeplink="practice/root/${def.id}" data-root-id="${def.id}" data-mastery="${f(m * 100) / 100}" `
+      + `aria-label="${esc(def.lines.join(' '))} root, mastery ${pct} percent. Go to practice." `
+      + `d="${limb(p0, ctrl, p2, baseW, 3.6)}" fill="${C.root}" stroke="${C.rootLn}" stroke-width="0.8">`
+      + `<title>${esc(title)}</title></path>`);
 
-      const subAngle = def.angle + (def.side === "left" ? -28 : 28) * (i % 2 === 0 ? 1 : -1);
-      const subLen = 42 + prog * 27;
-      const srad = (subAngle * Math.PI) / 180;
-
-      const sub = document.createElementNS(svgNS, "line");
-      sub.setAttribute("x1", sx);
-      sub.setAttribute("y1", sy);
-      sub.setAttribute("x2", sx + Math.sin(srad) * subLen);
-      sub.setAttribute("y2", sy + Math.cos(srad) * subLen * 0.85);
-      sub.setAttribute("stroke", cyanLight);
-      sub.setAttribute("stroke-width", 1.5 + prog * 1.2);
-      sub.setAttribute("stroke-linecap", "round");
-      sub.setAttribute("opacity", 0.75);
-      svg.appendChild(sub);
+    // Fine rootlets — more with mastery (deterministic)
+    const rootletCount = 1 + Math.floor(m * 2.9);
+    for (let i = 0; i < rootletCount; i++) {
+      const t = 0.5 + i * 0.18;
+      const pA = qpoint(p0, ctrl, p2, t);
+      const side = (i % 2 === 0 ? 1 : -1);
+      const sAng = def.ang + side * 26;
+      const sr = rad(sAng);
+      const sLen = (34 + 30 * m) * (1 - i * 0.18);
+      const pB = { x: pA.x + sLen * Math.cos(sr), y: pA.y - sLen * Math.sin(sr) };
+      parts.push(`<path d="${limb(pA, { x: (pA.x + pB.x) / 2, y: (pA.y + pB.y) / 2 + 10 }, pB, 5, 1.6, 12)}" fill="${C.root}" opacity="0.8"/>`);
     }
 
-    // Place families along this root (interactive nodes + labels)
-    const families = familiesByRoot[def.rootId] || [];
+    // Root name label beyond the tip (leader line + oxblood dot, mockup style)
+    const off = 62;
+    const lx = Rx + (rrx * reach + off) * Math.cos(r);
+    const ly = Ry - (rry * reach + off) * Math.sin(r);
+    const anchor = Math.cos(r) < -0.2 ? 'end' : 'start';
+    labels += `<line x1="${f(tipX)}" y1="${f(tipY)}" x2="${f(lx + (anchor === 'end' ? 6 : -6))}" y2="${f(ly - 4)}" stroke="${C.hair}" stroke-width="1"/>`;
+    labels += `<rect x="${f(lx + (anchor === 'end' ? 4 : -10))}" y="${f(ly - 8)}" width="6" height="6" fill="${C.ox}"/>`;
+    const tx = lx + (anchor === 'end' ? -4 : 4);
+    const startY = ly - (def.lines.length - 1) * (16 * 1.12) / 2;
+    labels += `<text x="${f(tx)}" y="${f(startY)}" text-anchor="${anchor}" font-size="16" font-weight="500" fill="${C.ink}">`;
+    def.lines.forEach((ln, i) => { labels += `<tspan x="${f(tx)}" dy="${i === 0 ? 0 : f(16 * 1.12)}">${esc(ln)}</tspan>`; });
+    labels += `</text>`;
+
+    // Family knots along this root
+    const families = familiesByRoot[def.id] || [];
     families.forEach((fam, idx) => {
-      const t = 0.55 + idx * 0.18;
-      const fx = centerX + (endX - centerX) * t;
-      const fy = (baseY + 50) + (endY - (baseY + 50)) * t;
-
-      const group = document.createElementNS(svgNS, "g");
-      group.style.cursor = 'pointer';
-
-      // Node: visually distinct by real progress (larger + brighter stroke for high-progress families)
       const fProg = familyProgress[fam.id] || 0;
-      const nodeR = (6.8 + fProg * 4.2).toFixed(1);
-      const nStrokeW = (1.4 + fProg * 2.1).toFixed(1);
-      const node = document.createElementNS(svgNS, "circle");
-      node.setAttribute("cx", fx);
-      node.setAttribute("cy", fy);
-      node.setAttribute("r", nodeR);
-      let nodeFill = cyan;
-      let nodeStroke = "#0d0d0d";
-      if (fProg > 0.71) {
-        nodeFill = cyanLight;
-        nodeStroke = cyanDark;
-      } else if (fProg < 0.32) {
-        node.setAttribute("opacity", "0.82");
-      }
-      node.setAttribute("fill", nodeFill);
-      node.setAttribute("stroke", nodeStroke);
-      node.setAttribute("stroke-width", nStrokeW);
-      group.appendChild(node);
-
-      // Label: stronger side-specific offset + stagger to guarantee zero overlap; <tspan> for long names
-      const labelOffsetX = def.side === "left" ? -46 : 38;
-      const labelStagger = idx * 17;
-      const label = document.createElementNS(svgNS, "text");
-      label.setAttribute("x", fx + labelOffsetX);
-      label.setAttribute("y", fy + 3.5 + labelStagger);
-      label.setAttribute("fill", "#e0f0ff");
-      label.setAttribute("font-size", "14");
-      label.setAttribute("font-family", "system-ui, sans-serif");
-      label.setAttribute("text-anchor", def.side === "left" ? "end" : "start");
-      appendMultilineLabel(label, fam.name);
-      group.appendChild(label);
-
-      // Accessibility + discoverability — report the real number behind the visual
       const fPct = Math.round(fProg * 100);
-      const title = document.createElementNS(svgNS, "title");
-      title.textContent = `${fam.name} — mastery ${fPct}% (your best scores). Click to practise.`;
-      group.appendChild(title);
-
-      // Click / keyboard activation + perfect focus highlight for SVG groups
-      const activate = () => {
-        navigateToFamilyTopics(fam);
-      };
-      group.addEventListener('click', activate);
-      group.addEventListener('keydown', (ev) => {
-        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); activate(); }
-      });
-      const origStroke = node.getAttribute('stroke');
-      const origStrokeW = node.getAttribute('stroke-width');
-      group.addEventListener('focus', () => {
-        node.setAttribute('stroke', cyanLight);
-        node.setAttribute('stroke-width', '3');
-      });
-      group.addEventListener('blur', () => {
-        node.setAttribute('stroke', origStroke);
-        node.setAttribute('stroke-width', origStrokeW);
-      });
-      group.setAttribute('tabindex', '0');
-      group.setAttribute('role', 'button');
-      group.setAttribute('aria-label', `${fam.name}, mastery ${fPct} percent. Go to topics.`);
-
-      svg.appendChild(group);
+      const t = 0.52 + idx * 0.17;
+      const k = qpoint(p0, ctrl, p2, t);
+      const kr = 7.5 + 4.5 * fProg;
+      const ripe = fProg >= 0.7;
+      const fill = ripe ? C.ochre : C.root;
+      const stroke = ripe ? C.ochreDk : C.rootLn;
+      // Steep roots get below-knot labels (side labels would cross neighbouring ribbons)
+      const cosr = Math.cos(r);
+      let lxF, lyF, anchorF, leader;
+      if (Math.abs(cosr) < 0.5) {
+        anchorF = 'middle';
+        lxF = k.x + (cosr < 0 ? -10 : 10);
+        lyF = k.y + kr + 20 + (idx % 2 === 0 ? 0 : 6);
+        leader = `<line x1="${f(k.x)}" y1="${f(k.y + kr)}" x2="${f(lxF)}" y2="${f(lyF - 12)}" stroke="${C.hair}" stroke-width="1"/>`;
+      } else {
+        const side = cosr < 0 ? -1 : 1;
+        anchorF = side < 0 ? 'end' : 'start';
+        lxF = k.x + side * (kr + 14);
+        lyF = k.y + 5 + (idx % 2 === 0 ? -12 : 16);
+        leader = `<line x1="${f(k.x + side * kr)}" y1="${f(k.y)}" x2="${f(lxF - side * 4)}" y2="${f(lyF - 4)}" stroke="${C.hair}" stroke-width="1"/>`;
+      }
+      knots += `<g data-deeplink="practice/root_id/${esc(fam.id)}" data-family="${esc(fam.id)}" data-mastery="${f(fProg * 100) / 100}" `
+        + `aria-label="${esc(fam.name)}, mastery ${fPct} percent. Go to practice.">`
+        + `<title>${esc(fam.name)} — mastery ${fPct}% (your best scores). Click to practise.</title>`
+        + `<circle cx="${f(k.x)}" cy="${f(k.y)}" r="${f(kr)}" fill="${fill}" stroke="${stroke}" stroke-width="2"/>`
+        + leader
+        + `<text x="${f(lxF)}" y="${f(lyF)}" text-anchor="${anchorF}" font-size="15" font-weight="500" fill="${C.ink}">${esc(fam.name)}</text>`
+        + `</g>`;
     });
   });
+  parts.push(labels);
+  parts.push(knots);
 
-  // Minimal legend (honest, low-clutter) + tiny discoverability hint
-  const legend = document.createElementNS(svgNS, "g");
-  legend.setAttribute("transform", `translate(20, ${height - 46})`);
-  const legLine = document.createElementNS(svgNS, "line");
-  legLine.setAttribute("x1", 0); legLine.setAttribute("y1", 0);
-  legLine.setAttribute("x2", 42); legLine.setAttribute("y2", 0);
-  legLine.setAttribute("stroke", cyan); legLine.setAttribute("stroke-width", 6); legLine.setAttribute("stroke-linecap", "round");
-  legend.appendChild(legLine);
-  const legText = document.createElementNS(svgNS, "text");
-  legText.setAttribute("x", 50); legText.setAttribute("y", 4);
-  legText.setAttribute("fill", "#a0b8d8"); legText.setAttribute("font-size", "9");
-  legText.textContent = "thicker = stronger (your real practice data)";
-  legend.appendChild(legText);
-  const hintText = document.createElementNS(svgNS, "text");
-  hintText.setAttribute("x", 50); hintText.setAttribute("y", 14);
-  hintText.setAttribute("fill", "#6a7c94"); hintText.setAttribute("font-size", "8");
-  hintText.textContent = "click nodes to explore families";
-  legend.appendChild(hintText);
-  svg.appendChild(legend);
+  visualContainer.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" style="display:block; width:100%; height:auto;" role="group" aria-label="Grammar root system">${parts.join('')}</svg>`;
 
-  // Tiny non-clutter top-right hint (reinforces without crowding roots/labels)
-  const topHint = document.createElementNS(svgNS, "text");
-  topHint.setAttribute("x", width - 168);
-  topHint.setAttribute("y", 16);
-  topHint.setAttribute("fill", "#5c6a80");
-  topHint.setAttribute("font-size", "8.5");
-  topHint.setAttribute("text-anchor", "end");
-  topHint.textContent = "click any family";
-  svg.appendChild(topHint);
+  // Wire deep links: every interactive element navigates via the shareable hash,
+  // so the tree, router and teacher links all use one mechanism.
+  visualContainer.querySelectorAll('[data-deeplink]').forEach(el => {
+    el.setAttribute('tabindex', '0');
+    el.setAttribute('role', 'button');
+    el.style.cursor = 'pointer';
+    const target = el.tagName === 'g' || el.tagName === 'G' ? el.querySelector('circle') : el;
+    const go = () => {
+      const dl = el.getAttribute('data-deeplink');
+      if (window.location.hash === '#' + dl) routeHash();   // same link twice → still navigate
+      else window.location.hash = dl;
+    };
+    el.addEventListener('click', go);
+    el.addEventListener('keydown', ev => {
+      if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); go(); }
+    });
+    const origStroke = target.getAttribute('stroke');
+    const origW = target.getAttribute('stroke-width');
+    el.addEventListener('focus', () => { target.setAttribute('stroke', C.ochre); target.setAttribute('stroke-width', '3'); });
+    el.addEventListener('blur', () => { target.setAttribute('stroke', origStroke); target.setAttribute('stroke-width', origW); });
+  });
 
-  visualContainer.appendChild(svg);
-}
-
-// Helper: from tree click, go to Topics and pre-select a relevant topic from the family
-function navigateToFamilyTopics(fam) {
-  if (!fam || !fam.current_topics || !fam.current_topics.length) {
-    NAV.navigate('menuTopicSelect', { context: fam?.name || 'Topics' });
-    return;
-  }
-  const firstTopic = fam.current_topics[0];
-  const idx = (state.topics || []).findIndex(t => t.id === firstTopic.id);
-  if (idx >= 0) {
-    state.currentTopic = state.topics[idx];
-    applyTopic();
-  }
-  NAV.navigate('menuTopicSelect', { context: fam.name || 'Topics' });
-  // After the panel renders, focus the first action button for immediate keyboard use
-  setTimeout(() => {
-    const firstBtn = document.getElementById('startPart1Btn');
-    if (firstBtn) firstBtn.focus();
-  }, 60);
 }
 
 // Quick placeholders for the new buttons (we can flesh these out)

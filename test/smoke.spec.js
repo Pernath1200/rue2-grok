@@ -6,7 +6,7 @@
  * always start from a brand-new student profile.
  */
 const { test, expect } = require('@playwright/test');
-const { trackErrors, selectTopic, answerThroughQuiz, answerThroughQuizCorrectly, getFamilyNode, getTapRootLength } = require('./e2e-helpers');
+const { trackErrors, selectTopic, answerThroughQuiz, answerThroughQuizCorrectly, getFamilyNode, getTapProgress } = require('./e2e-helpers');
 
 // ── Quick checks ────────────────────────────────────────────────────────────
 
@@ -143,8 +143,9 @@ test('journey: tree reflects progress after a completed quiz', async ({ page }) 
   const errors = trackErrors(page);
   await page.goto('/', { waitUntil: 'networkidle' });
 
-  // Baseline: fresh profile, tap root at its resting length
-  const before = await getTapRootLength(page);
+  // Baseline: fresh profile, zero practice volume
+  const before = await getTapProgress(page);
+  expect(before).toBe(0);
 
   // Complete a 10-question quiz (saves a score + memory bank entries)
   await selectTopic(page, 'Modal Verbs');
@@ -156,9 +157,9 @@ test('journey: tree reflects progress after a completed quiz', async ({ page }) 
   await page.click('#backToMenuBtn');
   await expect(page.locator('#menuMain')).toBeVisible();
 
-  // The tap root grows once the student has real history
-  const after = await getTapRootLength(page);
-  expect(after).toBeGreaterThan(before + 50);
+  // The tap root grows once the student has real history (10 answers → ~0.22)
+  const after = await getTapProgress(page);
+  expect(after).toBeGreaterThan(before + 0.15);
 
   expect(errors).toEqual([]);
 });

@@ -112,17 +112,15 @@ async function getFamilyNode(page, familyName) {
 }
 
 /**
- * Open the Grammar Tree panel and measure the central tap-root line length.
- * Thickness/length are driven by real progress, so this grows after a quiz.
+ * Open the Grammar Tree panel and read the tap root's real progress (0..1).
+ * The renderer exposes it as data-tap-progress; it grows with practice volume.
  */
-async function getTapRootLength(page) {
+async function getTapProgress(page) {
   await page.click('#showTreeBtn');
   await expect(page.locator('#treeRootsVisual svg')).toBeVisible();
-  const line = page.locator('#treeRootsVisual svg line').first();
-  const y1 = parseFloat(await line.getAttribute('y1'));
-  const y2 = parseFloat(await line.getAttribute('y2'));
+  const v = await page.locator('#treeRootsVisual [data-tap-progress]').getAttribute('data-tap-progress');
   await page.click('#treeOverviewBackBtn');
-  return y2 - y1;
+  return parseFloat(v);
 }
 
-module.exports = { trackErrors, selectTopic, answerThroughQuiz, answerThroughQuizCorrectly, getFamilyNode, getTapRootLength };
+module.exports = { trackErrors, selectTopic, answerThroughQuiz, answerThroughQuizCorrectly, getFamilyNode, getTapProgress };
