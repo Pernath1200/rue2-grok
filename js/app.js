@@ -1061,27 +1061,33 @@ function renderSimpleTreeOverview() {
   const f = n => (Math.round(n * 10) / 10);
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-  // Tapered ribbon along a quadratic Bézier (the mockup's limb())
-  function limb(p0, p1, p2, w0, w1, steps = 26) {
+  // Tapered ribbon along a chain of quadratic Béziers, emitted as ONE closed
+  // path. Segments that share an endpoint and a width at the joint produce a
+  // seam-free silhouette by construction.
+  function limbChain(segs, steps = 26) {
     const L = [], R = [];
-    for (let i = 0; i <= steps; i++) {
-      const t = i / steps, mt = 1 - t;
-      const x = mt * mt * p0.x + 2 * mt * t * p1.x + t * t * p2.x;
-      const y = mt * mt * p0.y + 2 * mt * t * p1.y + t * t * p2.y;
-      const tx = 2 * mt * (p1.x - p0.x) + 2 * t * (p2.x - p1.x);
-      const ty = 2 * mt * (p1.y - p0.y) + 2 * t * (p2.y - p1.y);
-      const len = Math.hypot(tx, ty) || 1;
-      const nx = -ty / len, ny = tx / len;
-      const w = (w0 + (w1 - w0) * t) / 2;
-      L.push([x + nx * w, y + ny * w]);
-      R.push([x - nx * w, y - ny * w]);
-    }
+    segs.forEach((s, si) => {
+      for (let i = (si === 0 ? 0 : 1); i <= steps; i++) {
+        const t = i / steps, mt = 1 - t;
+        const x = mt * mt * s.p0.x + 2 * mt * t * s.p1.x + t * t * s.p2.x;
+        const y = mt * mt * s.p0.y + 2 * mt * t * s.p1.y + t * t * s.p2.y;
+        const tx = 2 * mt * (s.p1.x - s.p0.x) + 2 * t * (s.p2.x - s.p1.x);
+        const ty = 2 * mt * (s.p1.y - s.p0.y) + 2 * t * (s.p2.y - s.p1.y);
+        const len = Math.hypot(tx, ty) || 1;
+        const nx = -ty / len, ny = tx / len;
+        const w = (s.w0 + (s.w1 - s.w0) * t) / 2;
+        L.push([x + nx * w, y + ny * w]);
+        R.push([x - nx * w, y - ny * w]);
+      }
+    });
     let d = `M${f(L[0][0])} ${f(L[0][1])}`;
     for (let i = 1; i < L.length; i++) d += `L${f(L[i][0])} ${f(L[i][1])}`;
     d += `L${f(R[R.length - 1][0])} ${f(R[R.length - 1][1])}`;
     for (let i = R.length - 2; i >= 0; i--) d += `L${f(R[i][0])} ${f(R[i][1])}`;
     return d + 'Z';
   }
+  // Tapered ribbon along a single quadratic Bézier (the mockup's limb())
+  const limb = (p0, p1, p2, w0, w1, steps = 26) => limbChain([{ p0, p1, p2, w0, w1 }], steps);
   const qpoint = (p0, p1, p2, t) => {
     const mt = 1 - t;
     return {
@@ -1090,14 +1096,18 @@ function renderSimpleTreeOverview() {
     };
   };
 
-  // Root fan: angles + two-line display names from the mockup
+  // Root fan: angles + two-line display names from the mockup. `dep` is the
+  // depth below the ground line where each lateral peels off the root collar —
+  // staggered (shallow for near-horizontal roots, deep for steep ones) so the
+  // trunk's width visibly divides into the seven roots instead of fanning from
+  // one pinched point.
   const ROOT_DEFS = [
-    { id: 'verb_phrase',            lines: ['Verb phrase'],             ang: 200 },
-    { id: 'noun_phrase',            lines: ['Noun phrase'],             ang: 222 },
-    { id: 'sentence_syntax',        lines: ['Sentence', 'syntax'],      ang: 244 },
-    { id: 'clause_linking',         lines: ['Clause', 'linking'],       ang: 296 },
-    { id: 'verb_complementation',   lines: ['Verb', 'complementation'], ang: 318 },
-    { id: 'prepositions_particles', lines: ['Prepositions', '& particles'], ang: 340 },
+    { id: 'verb_phrase',            lines: ['Verb phrase'],             ang: 200, dep: 34 },
+    { id: 'noun_phrase',            lines: ['Noun phrase'],             ang: 222, dep: 72 },
+    { id: 'sentence_syntax',        lines: ['Sentence', 'syntax'],      ang: 244, dep: 112 },
+    { id: 'clause_linking',         lines: ['Clause', 'linking'],       ang: 296, dep: 126 },
+    { id: 'verb_complementation',   lines: ['Verb', 'complementation'], ang: 318, dep: 84 },
+    { id: 'prepositions_particles', lines: ['Prepositions', '& particles'], ang: 340, dep: 44 },
   ];
 
   const parts = [];
@@ -1113,29 +1123,38 @@ function renderSimpleTreeOverview() {
   }
   parts.push(soil);
 
-  // Trunk stub above ground (the crown lives off-canvas — this app is the roots)
-  parts.push(`<path d="${limb({ x: cx, y: yG + 6 }, { x: cx - 5, y: 70 }, { x: cx - 4, y: 2 }, 152, 92)}" fill="${C.wood}" stroke="${C.woodLn}" stroke-width="0.8"/>`);
+  // Practice volume drives the whole collar-and-tap: trunk base, root collar
+  // and tap root are one organism that thickens together as you practise.
+  const tapProgress = rootProgress.tap_root || 0;
+  const tapPct = Math.round(tapProgress * 100);
+  const tapTipY = yG + 60 + (H - yG - 240) * (0.7 + 0.3 * tapProgress);
+  const collarW = 140 + 20 * tapProgress;   // trunk width at the ground line
+  const tapTopW = 0.6 * collarW;            // tap root continues at ~60% of the base
+  const collarDepth = 170;                  // collar tapers to tapTopW by this depth
+  const J = { x: cx - 2, y: yG + collarDepth };
+
+  // Trunk above ground (the crown lives off-canvas — this app is the roots).
+  // Its base sits exactly on the ground line, where the tap root continues it.
+  parts.push(`<path d="${limb({ x: cx, y: yG }, { x: cx - 5, y: 70 }, { x: cx - 4, y: 2 }, collarW, 92)}" fill="${C.wood}" stroke="${C.woodLn}" stroke-width="0.8"/>`);
 
   // Hint line, above ground
   parts.push(`<text x="26" y="44" font-size="15" font-style="italic" font-family="Georgia, 'Source Serif 4', serif" fill="${C.muted}">The roots of your grammar — they grow with your best scores.</text>`
     + `<text x="26" y="66" font-size="15" font-style="italic" font-family="Georgia, 'Source Serif 4', serif" fill="${C.muted}">Click any root or knot to practise it.</text>`);
 
-  // Tap root — practice volume (thickens + deepens as you practise)
-  const tapProgress = rootProgress.tap_root || 0;
-  const tapPct = Math.round(tapProgress * 100);
-  const tapTipY = yG + 60 + (H - yG - 240) * (0.7 + 0.3 * tapProgress);
-  const tapW = 30 + 14 * tapProgress;
-  parts.push(`<path data-deeplink="practice/root/tap_root" data-tap-progress="${f(tapProgress * 100) / 100}" `
-    + `aria-label="Tap root, practice volume ${tapPct} percent. Go to foundation practice." `
-    + `d="${limb({ x: cx, y: yG + 10 }, { x: cx - 9, y: (yG + tapTipY) / 2 }, { x: cx + 1, y: tapTipY }, tapW, 6.5)}" `
-    + `fill="${C.root}" stroke="${C.rootLn}" stroke-width="0.8">`
-    + `<title>Tap root — practice volume ${tapPct}% (grows with every question you answer)</title></path>`);
-  // TAP ROOT callout under the tip
-  parts.push(`<text x="${cx}" y="${f(tapTipY + 34)}" text-anchor="middle">`
-    + `<tspan x="${cx}" font-size="19" font-weight="600" letter-spacing=".14em" fill="${C.ox}">TAP ROOT</tspan>`
-    + `<tspan x="${cx}" dy="22" font-size="13" font-style="italic" fill="${C.muted}">foundation — thickens as you practise</tspan></text>`);
+  // Tap root geometry — the trunk's continuation below ground. One unbroken
+  // silhouette: the collar segment starts at the trunk's full base width with
+  // a mirrored ground tangent (continuous across the ground line), and the tap
+  // segment's control point is collinear through the joint (no kink, no width
+  // step). The ribbon itself is painted AFTER the laterals (below) so the
+  // collar covers their bases — laterals read as peeling off behind it.
+  const collarP1 = { x: cx + 5, y: yG + 80 };
+  const kT = ((J.y + tapTipY) / 2 - J.y) / (J.y - collarP1.y);
+  const tapP1 = { x: J.x + kT * (J.x - collarP1.x), y: J.y + kT * (J.y - collarP1.y) };
 
-  // Lateral roots + family knots + labels
+  // Lateral roots + family knots + labels. Each lateral's base is buried in
+  // the collar's flank at its staggered depth, so it reads as peeling off the
+  // collar rather than sprouting from a point.
+  const collarWAt = d => collarW + (tapTopW - collarW) * Math.min(d / collarDepth, 1);
   let knots = '', labels = '';
   ROOT_DEFS.forEach(def => {
     const m = rootProgress[def.id] || 0;
@@ -1146,11 +1165,12 @@ function renderSimpleTreeOverview() {
     const r = rad(def.ang);
     const tipX = Rx + rrx * reach * Math.cos(r);
     const tipY = Ry - rry * reach * Math.sin(r);
-    const p0 = { x: cx + 16 * Math.cos(r), y: Ry };
+    const side = Math.cos(r) < 0 ? -1 : 1;
+    const p0 = { x: cx + side * 0.3 * (collarWAt(def.dep) / 2), y: yG + def.dep };
     const mX = (p0.x + tipX) / 2, mY = (p0.y + tipY) / 2;
     const ctrl = { x: mX * 0.62 + tipX * 0.38, y: mY + 64 * reach };
     const p2 = { x: tipX, y: tipY };
-    const baseW = 18 + 10 * m;
+    const baseW = 24 + 12 * m;
     const title = `${def.lines.join(' ')} — mastery ${pct}% (average best scores). Click to practise.`;
     parts.push(`<path data-deeplink="practice/root/${def.id}" data-root-id="${def.id}" data-mastery="${f(m * 100) / 100}" `
       + `aria-label="${esc(def.lines.join(' '))} root, mastery ${pct} percent. Go to practice." `
@@ -1218,6 +1238,20 @@ function renderSimpleTreeOverview() {
         + `</g>`;
     });
   });
+  // Tap root ribbon on top of the lateral bases (see geometry above)
+  parts.push(`<path data-deeplink="practice/root/tap_root" data-tap-progress="${f(tapProgress * 100) / 100}" `
+    + `aria-label="Tap root, practice volume ${tapPct} percent. Go to foundation practice." `
+    + `d="${limbChain([
+      { p0: { x: cx, y: yG }, p1: collarP1, p2: J, w0: collarW, w1: tapTopW },
+      { p0: J, p1: tapP1, p2: { x: cx + 1, y: tapTipY }, w0: tapTopW, w1: 6.5 }
+    ])}" `
+    + `fill="${C.root}" stroke="${C.rootLn}" stroke-width="0.8">`
+    + `<title>Tap root — practice volume ${tapPct}% (grows with every question you answer)</title></path>`);
+  // TAP ROOT callout under the tip
+  parts.push(`<text x="${cx}" y="${f(tapTipY + 34)}" text-anchor="middle">`
+    + `<tspan x="${cx}" font-size="19" font-weight="600" letter-spacing=".14em" fill="${C.ox}">TAP ROOT</tspan>`
+    + `<tspan x="${cx}" dy="22" font-size="13" font-style="italic" fill="${C.muted}">foundation — thickens as you practise</tspan></text>`);
+
   parts.push(labels);
   parts.push(knots);
 
