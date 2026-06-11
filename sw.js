@@ -1,7 +1,7 @@
 /**
  * Bump CACHE_VERSION whenever this file changes so stale caches are dropped on activate.
  */
-var CACHE_VERSION = 'v58';  // v58 - botanical root-system tree (oak mockup port) + tree nodes emit deep links
+var CACHE_VERSION = 'v59';  // v59 - tree correction pass: root collar junction + dark/cyan reskin
 var CACHE_NAME = 'rue2-' + CACHE_VERSION;
 
 var PRECACHE_URLS = [

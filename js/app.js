@@ -979,13 +979,13 @@ function renderSimpleTreeOverview() {
     // state and retry while the panel is open, instead of a dead-end warning.
     renderSimpleTreeOverview._waits = (renderSimpleTreeOverview._waits || 0) + 1;
     if (renderSimpleTreeOverview._waits <= 40) {
-      visualContainer.innerHTML = '<div style="padding: 1.2rem; color: #5A5346; font-style: italic; font-family: Georgia, serif;">Growing your tree…</div>';
+      visualContainer.innerHTML = '<div style="padding: 1.2rem; color: #8fa8c0; font-style: italic; font-family: Georgia, serif;">Growing your tree…</div>';
       setTimeout(() => {
         const panel = document.getElementById('menuTreeOverview');
         if (panel && !panel.classList.contains('hidden')) renderSimpleTreeOverview();
       }, 300);
     } else {
-      visualContainer.innerHTML = '<div style="padding: 1.2rem; color: #6B2737;"><strong>The tree could not load its data.</strong> Check your connection, then reload this page.</div>';
+      visualContainer.innerHTML = '<div style="padding: 1.2rem; color: #e8899b;"><strong>The tree could not load its data.</strong> Check your connection, then reload this page.</div>';
     }
     return;
   }
@@ -1043,15 +1043,22 @@ function renderSimpleTreeOverview() {
     familyProgress = {};
   }
 
-// === Botanical renderer (ported from tree_model_c2_oak.html, below-ground only) ===
-  // Grammar = the root system. Cream/earth palette from the Tree Model house style;
-  // geometry is deterministic; sizes are driven by the real progress numbers above.
+// === Botanical renderer (geometry ported from tree_model_c2_oak.html, below-ground only) ===
+  // Grammar = the root system. The geometry keeps the mockup's organic tapered
+  // shapes, but the skin is the app's own: a symbolic cyan tree on the dark
+  // ground, deliberately monochrome and emblematic. Geometry is deterministic;
+  // sizes are driven by the real progress numbers above.
   const W = 1280, H = 1000;
   const C = {
-    cream: '#FAF7F0', earth: '#ECE2CD', earthLn: '#CBB98D',
-    wood: '#B98C5A', woodLn: '#7A5733', root: '#A97F50', rootLn: '#6E4E2C',
-    ink: '#1F1F1F', ox: '#6B2737', hair: '#A99E86', ochre: '#C8893B',
-    ochreDk: '#A6691F', muted: '#5A5346'
+    bg: '#0f0d1a',                            // stage (dark in every app theme)
+    soil: '#131126', star: '#569cd6',         // below-ground shade + dot speckle
+    ground: '#7fb8e8', groundGlow: '#569cd6', // crisp ground line + its glow
+    limb: '#569cd6', limbDeep: '#3d7aa3',     // ribbon base → deeper tips
+    ridge: '#7fb8e8',                         // centerline highlight on ribbons
+    ink: '#e0f0ff', accent: '#7fb8e8',        // labels; TAP ROOT heading + squares
+    hair: '#46587a',                          // slate leader lines
+    ripe: '#d9f2ff', ripeRim: '#9fd4f5',      // cyan-white mastered knots + halo
+    muted: '#8fa8c0', focus: '#cfeaff'
   };
   const cx = 640, yG = 150;              // ground line
   const Rx = 640, Ry = yG + 24;          // root fan origin
@@ -1111,15 +1118,17 @@ function renderSimpleTreeOverview() {
   ];
 
   const parts = [];
-  parts.push(`<rect x="0" y="0" width="${W}" height="${H}" fill="${C.cream}"/>`);
+  const defs = [`<filter id="treeGlow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="4"/></filter>`];
+  parts.push(`<rect x="0" y="0" width="${W}" height="${H}" fill="${C.bg}"/>`);
 
-  // Soil + ground line + deterministic speckle
-  let soil = `<rect x="0" y="${yG}" width="${W}" height="${H - yG}" fill="${C.earth}"/>`;
-  soil += `<line x1="0" y1="${yG}" x2="${W}" y2="${yG}" stroke="${C.earthLn}" stroke-width="2"/>`;
+  // Underground: a subtle shade shift below the ground line plus a faint
+  // deterministic dot speckle — more constellation than soil. The glowing
+  // ground line itself is painted later, on top of the ribbons.
+  let soil = `<rect x="0" y="${yG}" width="${W}" height="${H - yG}" fill="${C.soil}"/>`;
   for (let i = 0; i < 60; i++) {
     const sx = ((i * 97 + 31) % W);
     const sy = yG + 24 + ((i * 53 + 17) % (H - yG - 40));
-    soil += `<circle cx="${sx}" cy="${sy}" r="1.6" fill="${C.earthLn}" opacity="0.35"/>`;
+    soil += `<circle cx="${sx}" cy="${sy}" r="${1 + (i % 3) * 0.4}" fill="${C.star}" opacity="${0.12 + (i % 4) * 0.05}"/>`;
   }
   parts.push(soil);
 
@@ -1135,7 +1144,9 @@ function renderSimpleTreeOverview() {
 
   // Trunk above ground (the crown lives off-canvas — this app is the roots).
   // Its base sits exactly on the ground line, where the tap root continues it.
-  parts.push(`<path d="${limb({ x: cx, y: yG }, { x: cx - 5, y: 70 }, { x: cx - 4, y: 2 }, collarW, 92)}" fill="${C.wood}" stroke="${C.woodLn}" stroke-width="0.8"/>`);
+  defs.push(`<linearGradient id="lgTrunk" gradientUnits="userSpaceOnUse" x1="${cx}" y1="${yG}" x2="${cx}" y2="2">`
+    + `<stop offset="0" stop-color="${C.limb}"/><stop offset="1" stop-color="${C.limbDeep}"/></linearGradient>`);
+  parts.push(`<path d="${limb({ x: cx, y: yG }, { x: cx - 5, y: 70 }, { x: cx - 4, y: 2 }, collarW, 92)}" fill="url(#lgTrunk)" stroke="${C.limbDeep}" stroke-width="0.8"/>`);
 
   // Hint line, above ground
   parts.push(`<text x="26" y="44" font-size="15" font-style="italic" font-family="Georgia, 'Source Serif 4', serif" fill="${C.muted}">The roots of your grammar — they grow with your best scores.</text>`
@@ -1155,7 +1166,7 @@ function renderSimpleTreeOverview() {
   // the collar's flank at its staggered depth, so it reads as peeling off the
   // collar rather than sprouting from a point.
   const collarWAt = d => collarW + (tapTopW - collarW) * Math.min(d / collarDepth, 1);
-  let knots = '', labels = '';
+  let knots = '', labels = '', halos = '';
   ROOT_DEFS.forEach(def => {
     const m = rootProgress[def.id] || 0;
     const pct = Math.round(m * 100);
@@ -1172,10 +1183,15 @@ function renderSimpleTreeOverview() {
     const p2 = { x: tipX, y: tipY };
     const baseW = 24 + 12 * m;
     const title = `${def.lines.join(' ')} — mastery ${pct}% (average best scores). Click to practise.`;
+    defs.push(`<linearGradient id="lg-${def.id}" gradientUnits="userSpaceOnUse" x1="${f(p0.x)}" y1="${f(p0.y)}" x2="${f(p2.x)}" y2="${f(p2.y)}">`
+      + `<stop offset="0" stop-color="${C.limb}"/><stop offset="1" stop-color="${C.limbDeep}"/></linearGradient>`);
     parts.push(`<path data-deeplink="practice/root/${def.id}" data-root-id="${def.id}" data-mastery="${f(m * 100) / 100}" `
       + `aria-label="${esc(def.lines.join(' '))} root, mastery ${pct} percent. Go to practice." `
-      + `d="${limb(p0, ctrl, p2, baseW, 3.6)}" fill="${C.root}" stroke="${C.rootLn}" stroke-width="0.8">`
+      + `d="${limb(p0, ctrl, p2, baseW, 3.6)}" fill="url(#lg-${def.id})" stroke="${C.limbDeep}" stroke-width="0.8">`
       + `<title>${esc(title)}</title></path>`);
+    // Centerline ridge highlight (non-interactive)
+    parts.push(`<path d="M${f(p0.x)} ${f(p0.y)}Q${f(ctrl.x)} ${f(ctrl.y)} ${f(p2.x)} ${f(p2.y)}" `
+      + `fill="none" stroke="${C.ridge}" stroke-width="2.5" opacity="0.45" stroke-linecap="round" pointer-events="none"/>`);
 
     // Fine rootlets — more with mastery (deterministic)
     const rootletCount = 1 + Math.floor(m * 2.9);
@@ -1187,7 +1203,7 @@ function renderSimpleTreeOverview() {
       const sr = rad(sAng);
       const sLen = (34 + 30 * m) * (1 - i * 0.18);
       const pB = { x: pA.x + sLen * Math.cos(sr), y: pA.y - sLen * Math.sin(sr) };
-      parts.push(`<path d="${limb(pA, { x: (pA.x + pB.x) / 2, y: (pA.y + pB.y) / 2 + 10 }, pB, 5, 1.6, 12)}" fill="${C.root}" opacity="0.8"/>`);
+      parts.push(`<path d="${limb(pA, { x: (pA.x + pB.x) / 2, y: (pA.y + pB.y) / 2 + 10 }, pB, 5, 1.6, 12)}" fill="${C.limbDeep}" opacity="0.8"/>`);
     }
 
     // Root name label beyond the tip (leader line + oxblood dot, mockup style)
@@ -1196,7 +1212,7 @@ function renderSimpleTreeOverview() {
     const ly = Ry - (rry * reach + off) * Math.sin(r);
     const anchor = Math.cos(r) < -0.2 ? 'end' : 'start';
     labels += `<line x1="${f(tipX)}" y1="${f(tipY)}" x2="${f(lx + (anchor === 'end' ? 6 : -6))}" y2="${f(ly - 4)}" stroke="${C.hair}" stroke-width="1"/>`;
-    labels += `<rect x="${f(lx + (anchor === 'end' ? 4 : -10))}" y="${f(ly - 8)}" width="6" height="6" fill="${C.ox}"/>`;
+    labels += `<rect x="${f(lx + (anchor === 'end' ? 4 : -10))}" y="${f(ly - 8)}" width="6" height="6" fill="${C.accent}"/>`;
     const tx = lx + (anchor === 'end' ? -4 : 4);
     const startY = ly - (def.lines.length - 1) * (16 * 1.12) / 2;
     labels += `<text x="${f(tx)}" y="${f(startY)}" text-anchor="${anchor}" font-size="16" font-weight="500" fill="${C.ink}">`;
@@ -1212,8 +1228,13 @@ function renderSimpleTreeOverview() {
       const k = qpoint(p0, ctrl, p2, t);
       const kr = 7.5 + 4.5 * fProg;
       const ripe = fProg >= 0.7;
-      const fill = ripe ? C.ochre : C.root;
-      const stroke = ripe ? C.ochreDk : C.rootLn;
+      const fill = ripe ? C.ripe : C.limbDeep;
+      const stroke = ripe ? C.ripeRim : C.limb;
+      // Mastered knots glow cyan-white: a soft blurred halo painted beneath the
+      // knot, OUTSIDE its <g> (tests and focus wiring grab the g's first circle).
+      if (ripe) {
+        halos += `<circle cx="${f(k.x)}" cy="${f(k.y)}" r="${f(kr + 5)}" fill="${C.ripeRim}" opacity="0.45" filter="url(#treeGlow)" pointer-events="none"/>`;
+      }
       // Steep roots get below-knot labels (side labels would cross neighbouring ribbons)
       const cosr = Math.cos(r);
       let lxF, lyF, anchorF, leader;
@@ -1239,23 +1260,34 @@ function renderSimpleTreeOverview() {
     });
   });
   // Tap root ribbon on top of the lateral bases (see geometry above)
+  defs.push(`<linearGradient id="lgTap" gradientUnits="userSpaceOnUse" x1="${cx}" y1="${yG}" x2="${cx}" y2="${f(tapTipY)}">`
+    + `<stop offset="0" stop-color="${C.limb}"/><stop offset="1" stop-color="${C.limbDeep}"/></linearGradient>`);
   parts.push(`<path data-deeplink="practice/root/tap_root" data-tap-progress="${f(tapProgress * 100) / 100}" `
     + `aria-label="Tap root, practice volume ${tapPct} percent. Go to foundation practice." `
     + `d="${limbChain([
       { p0: { x: cx, y: yG }, p1: collarP1, p2: J, w0: collarW, w1: tapTopW },
       { p0: J, p1: tapP1, p2: { x: cx + 1, y: tapTipY }, w0: tapTopW, w1: 6.5 }
     ])}" `
-    + `fill="${C.root}" stroke="${C.rootLn}" stroke-width="0.8">`
+    + `fill="url(#lgTap)" stroke="${C.limbDeep}" stroke-width="0.8">`
     + `<title>Tap root — practice volume ${tapPct}% (grows with every question you answer)</title></path>`);
+  // Centerline ridge from trunk top through the collar to the tap tip — one
+  // continuous highlight that makes the whole organism read as a single limb.
+  parts.push(`<path d="M${f(cx - 4)} 2Q${f(cx - 5)} 70 ${cx} ${yG}Q${f(collarP1.x)} ${f(collarP1.y)} ${f(J.x)} ${f(J.y)}Q${f(tapP1.x)} ${f(tapP1.y)} ${f(cx + 1)} ${f(tapTipY)}" `
+    + `fill="none" stroke="${C.ridge}" stroke-width="2.5" opacity="0.45" stroke-linecap="round" pointer-events="none"/>`);
+  // Ground line, painted over the ribbons: a thin, faintly glowing cyan line
+  // (it also masks the trunk/tap joint exactly on it).
+  parts.push(`<rect x="0" y="${yG - 3}" width="${W}" height="6" fill="${C.groundGlow}" opacity="0.3" filter="url(#treeGlow)"/>`
+    + `<line x1="0" y1="${yG}" x2="${W}" y2="${yG}" stroke="${C.ground}" stroke-width="1.5" opacity="0.9"/>`);
   // TAP ROOT callout under the tip
   parts.push(`<text x="${cx}" y="${f(tapTipY + 34)}" text-anchor="middle">`
-    + `<tspan x="${cx}" font-size="19" font-weight="600" letter-spacing=".14em" fill="${C.ox}">TAP ROOT</tspan>`
+    + `<tspan x="${cx}" font-size="19" font-weight="600" letter-spacing=".14em" fill="${C.accent}">TAP ROOT</tspan>`
     + `<tspan x="${cx}" dy="22" font-size="13" font-style="italic" fill="${C.muted}">foundation — thickens as you practise</tspan></text>`);
 
   parts.push(labels);
+  parts.push(halos);
   parts.push(knots);
 
-  visualContainer.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" style="display:block; width:100%; height:auto;" role="group" aria-label="Grammar root system">${parts.join('')}</svg>`;
+  visualContainer.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" style="display:block; width:100%; height:auto;" role="group" aria-label="Grammar root system"><defs>${defs.join('')}</defs>${parts.join('')}</svg>`;
 
   // Wire deep links: every interactive element navigates via the shareable hash,
   // so the tree, router and teacher links all use one mechanism.
@@ -1275,7 +1307,7 @@ function renderSimpleTreeOverview() {
     });
     const origStroke = target.getAttribute('stroke');
     const origW = target.getAttribute('stroke-width');
-    el.addEventListener('focus', () => { target.setAttribute('stroke', C.ochre); target.setAttribute('stroke-width', '3'); });
+    el.addEventListener('focus', () => { target.setAttribute('stroke', C.focus); target.setAttribute('stroke-width', '3'); });
     el.addEventListener('blur', () => { target.setAttribute('stroke', origStroke); target.setAttribute('stroke-width', origW); });
   });
 
