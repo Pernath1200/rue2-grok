@@ -56,7 +56,9 @@ function ensureReviewSchedule(entry, key) {
   if (entry.box != null && entry.due) return false;
   if ((entry.wrong || 0) > 0) {
     entry.box = 0;
-    entry.due = new Date().toISOString();
+    // Backdated a minute so "due immediately" can never lose a same-instant
+    // comparison against a now captured a few ms earlier by the caller.
+    entry.due = new Date(Date.now() - 60 * 1000).toISOString();
   } else {
     entry.box = MIGRATED_RIGHT_BOX;
     entry.due = new Date(Date.now() + hashStaggerDays(key, 21) * DAY_MS).toISOString();
