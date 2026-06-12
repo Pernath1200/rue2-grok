@@ -3,40 +3,157 @@
     "title": "Verbs: Irregular Past Forms",
     "sections": [
       {
-        "title": "Regular vs irregular",
-        "content": "**Regular verbs** form the past simple and past participle by adding **-ed**: *work → worked, play → played, want → wanted.* **Irregular verbs** do not follow this pattern — each has its own forms: *go → went → gone; speak → spoke → spoken; write → wrote → written.*",
+        "title": "Irregular verbs — three forms to learn",
+        "content": "**Regular verbs** form the past with **-ed** (*work → worked*). **Irregular verbs** don't — each has its own forms: base → past simple → past participle. There is no rule to predict them: you must **learn each one**.\n- Czech speakers often default to *-ed* for unfamiliar verbs — which is always wrong for irregular ones.\n- The 50 most common cover almost everything you need at B2. Full list: **Reference → Irregular verbs**.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Base → Past simple → Past participle",
+            "headers": [
+              "Base",
+              "Past simple",
+              "Past participle"
+            ],
+            "rows": [
+              [
+                "go",
+                "went",
+                "gone"
+              ],
+              [
+                "speak",
+                "spoke",
+                "spoken"
+              ],
+              [
+                "write",
+                "wrote",
+                "written"
+              ],
+              [
+                "see",
+                "saw",
+                "seen"
+              ],
+              [
+                "make",
+                "made",
+                "made"
+              ],
+              [
+                "take",
+                "took",
+                "taken"
+              ],
+              [
+                "know",
+                "knew",
+                "known"
+              ],
+              [
+                "think",
+                "thought",
+                "thought"
+              ],
+              [
+                "find",
+                "found",
+                "found"
+              ],
+              [
+                "give",
+                "gave",
+                "given"
+              ]
+            ]
+          }
+        ],
         "root_ids": [
           "A1.irregular_verbs.basic"
         ],
         "cefr_level": "A1"
       },
       {
-        "title": "Why irregular forms matter",
-        "content": "There is no rule to predict irregular forms — you must **learn each verb**. Common mistakes occur when learners add -ed to irregular verbs: *he speaked* (wrong) → he **spoke**; *I goed* (wrong) → I **went**.",
+        "title": "When you need each form",
+        "content": "The **past simple** uses column 2; **perfect tenses** and **passives** use column 3 (past participle):",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Which column, which structure",
+            "headers": [
+              "Form",
+              "Used in",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**past simple** (col 2)",
+                "Past simple",
+                "I *saw* him yesterday."
+              ],
+              [
+                "**past participle** (col 3)",
+                "Present perfect",
+                "I *have seen* him."
+              ],
+              [
+                "**past participle** (col 3)",
+                "Past perfect",
+                "She *had written* it."
+              ],
+              [
+                "**past participle** (col 3)",
+                "Passive",
+                "The letter *was written*."
+              ],
+              [
+                "**past participle** (col 3)",
+                "Third conditional",
+                "If I *had known*, I would have told you."
+              ]
+            ]
+          }
+        ],
         "root_ids": [
           "A1.irregular_verbs.basic"
         ],
         "cefr_level": "A1"
       },
       {
-        "title": "When you need irregular forms",
-        "content": "**Past simple:** *I saw him yesterday.* **Present/past perfect:** *I have seen him. She had written it.* **Passive:** *The letter was written. English is spoken here.* **Conditionals:** *If I had known, I would have told you.*",
-        "root_ids": [
-          "A1.irregular_verbs.basic"
+        "title": "Common errors",
+        "content": "These are the mistakes that appear most in student writing — all caused by treating an irregular verb as regular:",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "He speaked to her.",
+                "good": "He spoke to her.",
+                "why": "speak → spoke (not speaked)"
+              },
+              {
+                "bad": "I goed to the shop.",
+                "good": "I went to the shop.",
+                "why": "go → went (not goed)"
+              },
+              {
+                "bad": "She writed a letter.",
+                "good": "She wrote a letter.",
+                "why": "write → wrote (not writed)"
+              },
+              {
+                "bad": "They maked a mistake.",
+                "good": "They made a mistake.",
+                "why": "make → made (not maked)"
+              },
+              {
+                "bad": "We taked the bus.",
+                "good": "We took the bus.",
+                "why": "take → took (not taked)"
+              }
+            ]
+          }
         ],
-        "cefr_level": "A1"
-      },
-      {
-        "title": "Common learner errors",
-        "content": "*he speaked* → he **spoke**; *I goed* → I **went**; *she writed* → she **wrote**; *they maked* → they **made**; *we taked* → we **took**. Learn the 50 most common irregular verbs — a full list is in Reference → Irregular verbs.",
-        "root_ids": [
-          "A1.irregular_verbs.basic"
-        ],
-        "cefr_level": "A1"
-      },
-      {
-        "title": "Reference",
-        "content": "For a full list of irregular verb forms, see the Irregular Verbs section under Reference.",
         "root_ids": [
           "A1.irregular_verbs.basic"
         ],

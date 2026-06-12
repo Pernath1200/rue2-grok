@@ -16,76 +16,87 @@
         "root_ids": [
           "A1.word_order.svo_basic"
         ],
-        "cefr_level": "A1"
+        "cefr_level": "A1",
+        "diagrams": [
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech: Honza vidí Petra / Petra vidí Honza — cases mark who does what. English has no cases: only POSITION tells you. Reverse the order and you reverse the meaning."
+          }
+        ]
       },
       {
         "title": "Place & time — end of the sentence (or sometimes start)",
         "content": "Typical English order: **S + V + O + Place + Time**.\n\n**Why it matters**: This is the single most common Czech-speaker error in English word order. Czech freely drops adverbials between verb and object; English **forbids it**.\n\n**Contrast examples**:\n- I (S) **ate** (V) **lunch** (O) **at home** (place) **yesterday** (time). ✓\n- Time CAN move to the front for emphasis: **Yesterday** I ate lunch at home. ✓\n- ~~I ate yesterday lunch at home.~~ ✗ (adverbial between V and O)\n- ~~Yesterday went I to the shop.~~ ✗ (verb-subject inversion; Czech pattern, not English)\n\n**Czech-speaker note**: in Czech *Včera jsem šel do obchodu* works fine. In English the subject must come BEFORE the verb even when time is fronted: *Yesterday I went to the shop*.",
-        "diagram": {
-          "type": "formula",
-          "title": "Standard order with adverbials",
-          "items": [
-            {
-              "label": "Default:",
-              "formula": "Subject + Verb + Object + **Place** + **Time**"
-            },
-            {
-              "label": "Example:",
-              "formula": "I ate lunch **at home** **yesterday**."
-            },
-            {
-              "label": "Time fronted (emphasis):",
-              "formula": "**Time** + Subject + Verb + Object + Place"
-            },
-            {
-              "label": "Example:",
-              "formula": "**Yesterday** I ate lunch at home."
-            }
-          ]
-        },
         "root_ids": [
           "A2.word_order.adverbs"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "formula",
+            "title": "Standard order with adverbials",
+            "items": [
+              {
+                "label": "Default:",
+                "formula": "Subject + Verb + Object + **Place** + **Time**"
+              },
+              {
+                "label": "Example:",
+                "formula": "I ate lunch **at home** **yesterday**."
+              },
+              {
+                "label": "Time fronted (emphasis):",
+                "formula": "**Time** + Subject + Verb + Object + Place"
+              },
+              {
+                "label": "Example:",
+                "formula": "**Yesterday** I ate lunch at home."
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Adverbs of frequency & manner — typical positions",
         "content": "**Frequency adverbs** (*always, usually, often, sometimes, never*) and **manner adverbs** (*carefully, quickly, well*) have fixed slots.\n\n**Why it matters**: Wrong placement is one of the most common Czech-speaker errors. Czech puts adverbs flexibly; English does not.\n\n**Frequency — three rules**:\n- Before the **main verb**: She **always works** hard.\n- After the verb **be**: She **is always** late.\n- After the **first auxiliary**: She **has always worked** hard. / She **is always working**.\n- Wrong: ~~I drink often coffee.~~ → Right: I **often drink** coffee.\n\n**Manner**: usually **after the object** (or after the verb if there is no object).\n- She drove **carefully**. (no object)\n- She drove the car **carefully**. (after object)\n- Wrong: ~~She drove carefully the car.~~ (NEVER between verb and object)",
-        "diagram": {
-          "type": "table",
-          "title": "Frequency adverb position",
-          "headers": [
-            "Verb type",
-            "Position",
-            "Example"
-          ],
-          "rows": [
-            [
-              "Main verb",
-              "before the verb",
-              "I **often go** to the gym."
-            ],
-            [
-              "Verb *be*",
-              "after *be*",
-              "She **is always** late."
-            ],
-            [
-              "Auxiliary + verb",
-              "after the auxiliary",
-              "She **has always worked** hard."
-            ],
-            [
-              "Negative (do/does/did)",
-              "after the auxiliary",
-              "She doesn't **often** eat out."
-            ]
-          ]
-        },
         "root_ids": [
           "A2.word_order.adverbs"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Frequency adverb position",
+            "headers": [
+              "Verb type",
+              "Position",
+              "Example"
+            ],
+            "rows": [
+              [
+                "Main verb",
+                "before the verb",
+                "I **often go** to the gym."
+              ],
+              [
+                "Verb *be*",
+                "after *be*",
+                "She **is always** late."
+              ],
+              [
+                "Auxiliary + verb",
+                "after the auxiliary",
+                "She **has always worked** hard."
+              ],
+              [
+                "Negative (do/does/did)",
+                "after the auxiliary",
+                "She doesn't **often** eat out."
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "Question word order — auxiliary first",
@@ -93,7 +104,36 @@
         "root_ids": [
           "A2.word_order.questions"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "Do you like coffee?",
+                "why": "yes/no: auxiliary + subject + verb"
+              },
+              {
+                "good": "Where do you live?",
+                "why": "Wh-: wh-word + auxiliary + subject + verb"
+              },
+              {
+                "bad": "Where you live?",
+                "good": "Where do you live?",
+                "why": "missing auxiliary"
+              },
+              {
+                "good": "I asked where you lived.",
+                "why": "embedded question → statement order (no do/did, no inversion)"
+              },
+              {
+                "bad": "I asked where did you live.",
+                "good": "I asked where you lived.",
+                "why": "embedded questions revert to statement word order"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Indirect objects — two patterns",
@@ -119,7 +159,40 @@
           "A2.word_order.adverbs",
           "A2.word_order.questions"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "examples",
+            "title": "High-frequency Czech-speaker errors",
+            "items": [
+              {
+                "bad": "Yesterday went I to the shop.",
+                "good": "Yesterday I went to the shop.",
+                "why": "fronted time ≠ inversion; subject still comes before verb"
+              },
+              {
+                "bad": "I drink often coffee.",
+                "good": "I often drink coffee.",
+                "why": "frequency adverb before main verb"
+              },
+              {
+                "bad": "She drove carefully the car.",
+                "good": "She drove the car carefully.",
+                "why": "adverb of manner after object, never between verb and object"
+              },
+              {
+                "bad": "She always is late.",
+                "good": "She is always late.",
+                "why": "frequency adverb after 'be'"
+              },
+              {
+                "bad": "I gave to her the book.",
+                "good": "I gave her the book.",
+                "why": "V + IO + DO — no 'to' in Pattern A"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

@@ -5,85 +5,197 @@
       {
         "title": "What passives do (core logic)",
         "content": "Passives switch the focus of a sentence from the **doer** to the **receiver** of the action.\n\n**Active**: *The chef cooked the meal.* (focus = chef)\n**Passive**: *The meal was cooked (by the chef).* (focus = meal)\n\nThe object of the active sentence becomes the subject of the passive. The doer (the **agent**) becomes optional — introduced by **by** if mentioned at all.\n\n**Why it matters (roots-first)**: Passive is one of the three big dimensions of the Verb Phrase (root #2 in the Tree Model) — alongside **tense** and **aspect**, English verbs also carry **voice** (active vs passive). Choosing voice is choosing what the sentence is *about*. Passives are everywhere in news writing, science writing, formal English, exam transformations, and polite distancing — and Czech uses passive less, so Czech learners systematically under-use it.",
-        "root_ids": ["B1.passive.form_basic"],
+        "root_ids": [
+          "B1.passive.form_basic"
+        ],
         "cefr_level": "B1"
       },
       {
         "title": "The form — be + past participle",
         "content": "Every passive in English follows the same pattern:\n\n**Subject + form of BE + past participle (+ by + agent)**\n\nThe tense lives on **be**, not on the participle. The participle never changes — only **be** moves through tense, aspect, and modality.\n\n**Why it matters**: Once you see the **be + past participle** skeleton, every passive in English — present, past, perfect, modal, continuous — works the same way. The only thing that changes is the form of **be**.\n\n**Contrast examples**:\n- *The room **is** cleaned.* (present)\n- *The room **was** cleaned.* (past)\n- *The room **will be** cleaned.* (future)\n- *The room **has been** cleaned.* (present perfect)\n- *The room **is being** cleaned.* (present continuous)",
-        "diagram": {
-          "type": "table",
-          "title": "Active vs passive across tenses",
-          "headers": [
-            "Tense",
-            "Active",
-            "Passive (be + past participle)"
-          ],
-          "rows": [
-            [
-              "Present simple",
-              "They clean the room.",
-              "The room **is** cleaned."
+        "root_ids": [
+          "B1.passive.form_basic",
+          "B1.passive.tenses"
+        ],
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Active vs passive across tenses",
+            "headers": [
+              "Tense",
+              "Active",
+              "Passive (be + past participle)"
             ],
-            [
-              "Past simple",
-              "They cleaned the room.",
-              "The room **was** cleaned."
-            ],
-            [
-              "Future (will)",
-              "They will clean the room.",
-              "The room **will be** cleaned."
-            ],
-            [
-              "Present perfect",
-              "They have cleaned the room.",
-              "The room **has been** cleaned."
-            ],
-            [
-              "Present continuous",
-              "They are cleaning the room.",
-              "The room **is being** cleaned."
-            ],
-            [
-              "Past continuous",
-              "They were cleaning the room.",
-              "The room **was being** cleaned."
+            "rows": [
+              [
+                "Present simple",
+                "They clean the room.",
+                "The room **is** cleaned."
+              ],
+              [
+                "Past simple",
+                "They cleaned the room.",
+                "The room **was** cleaned."
+              ],
+              [
+                "Future (will)",
+                "They will clean the room.",
+                "The room **will be** cleaned."
+              ],
+              [
+                "Present perfect",
+                "They have cleaned the room.",
+                "The room **has been** cleaned."
+              ],
+              [
+                "Present continuous",
+                "They are cleaning the room.",
+                "The room **is being** cleaned."
+              ],
+              [
+                "Past continuous",
+                "They were cleaning the room.",
+                "The room **was being** cleaned."
+              ]
             ]
-          ]
-        },
-        "root_ids": ["B1.passive.form_basic", "B1.passive.tenses"],
-        "cefr_level": "B1"
+          }
+        ]
       },
       {
         "title": "When to use the passive",
         "content": "Five typical reasons to choose passive over active:\n\n- **Doer unknown**: *My bike **was stolen** last week.* (we don't know who)\n- **Doer obvious or unimportant**: *English **is spoken** here.* (obviously by people)\n- **Receiver is the focus**: *Romeo and Juliet **was written** by Shakespeare.* (sentence is about the play)\n- **Formal / scientific tone**: *The samples **were heated** to 100°C.* (standard in lab reports)\n- **Polite distancing**: *A mistake **has been made**.* (avoids naming who)\n\n**Why it matters**: The **by + agent** phrase is **optional** and in most real passives it's omitted. Passive isn't a longer way of saying active — it's a different choice about what the sentence is about. News, academic writing, instructions, and politeness all depend on it.\n\n**Czech-speaker note**: Czech often uses reflexive forms (*to se říká*) or impersonal active where English prefers passive. Watch for this in formal writing.",
-        "root_ids": ["B1.passive.form_basic"],
-        "cefr_level": "B1"
+        "root_ids": [
+          "B1.passive.form_basic"
+        ],
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "Doer unknown",
+                "items": [
+                  "My bike was stolen."
+                ]
+              },
+              {
+                "label": "Doer obvious",
+                "items": [
+                  "English is spoken here."
+                ]
+              },
+              {
+                "label": "Receiver is focus",
+                "items": [
+                  "Romeo and Juliet was written by Shakespeare."
+                ]
+              },
+              {
+                "label": "Formal / scientific",
+                "items": [
+                  "The samples were heated to 100°C."
+                ]
+              },
+              {
+                "label": "Polite distancing",
+                "items": [
+                  "A mistake has been made."
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Passive with modals",
         "content": "Modals follow exactly the same logic — they sit on **be**.\n\n**Pattern**: *modal + **be** + past participle*\n\n**Why it matters**: Modal passives are the default voice for rules, instructions, advice, and warnings in English — the texture of signs, manuals, contracts, and exam rubrics.\n\n**Contrast examples**:\n- *The form **must be** completed in black ink.* (obligation)\n- *Reports **should be** sent by Friday.* (advice / expectation)\n- *This tool **can be** used for both tasks.* (possibility / ability)\n- *The mistake **could have been** avoided.* (past modal: *modal + have been + past participle*)\n- *Visitors **may not be** admitted after 6 pm.* (permission)\n\nFor past modals, the pattern is **modal + have been + past participle**: *should have been done, must have been broken, could have been prevented*.",
-        "root_ids": ["B2.passive.modals"],
+        "root_ids": [
+          "B2.passive.modals"
+        ],
         "cefr_level": "B2"
       },
       {
         "title": "Have / get something done — the causative passive",
         "content": "A special passive structure for **arranging for someone else to do something** (or for something unpleasant happening to you).\n\n**Pattern**: *have / get + object + past participle*\n\n**Why it matters**: This construction has **no direct Czech equivalent** — Czech speakers default to active (*I cut my hair* when they mean *I had my hair cut*). Without this structure, you can't naturally describe services, repairs, deliveries, or things done *to* you. It's high-frequency in everyday life.\n\n**Contrast examples**:\n- *I cut my hair.* (I did it myself)\n- *I **had my hair cut**.* (a hairdresser did it for me)\n- *She **had her car repaired** last week.* (mechanic did it)\n- *We **got the document translated**.* (we arranged a translator)\n- *He **had his wallet stolen** on the bus.* (something bad happened to him)\n\n**Have vs get**: **have** is neutral / more formal; **get** is informal and suggests more effort or arrangement (*I got my bike fixed*). Same structure for both.",
-        "root_ids": ["B2.passive.have_something_done"],
-        "cefr_level": "B2"
+        "root_ids": [
+          "B2.passive.have_something_done"
+        ],
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I had my hair cut.",
+                "why": "causative — hairdresser did it"
+              },
+              {
+                "good": "I cut my hair.",
+                "why": "I did it myself — completely different meaning"
+              },
+              {
+                "good": "She had her car repaired last week."
+              },
+              {
+                "bad": "I had my hair to cut.",
+                "good": "I had my hair cut.",
+                "why": "causative takes past participle, not to-infinitive"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Reporting verbs in passive",
         "content": "A formal pattern used in news, academic writing, and reports to **distance the speaker from a claim** — \"people say X, but I'm not committing to it.\"\n\n**Two patterns**:\n- **Pattern A**: *It is said / believed / reported / thought that + clause.*\n  *It is said that he is very rich.*\n  *It has been reported that the building was damaged.*\n- **Pattern B**: *Subject + is said / believed / reported / thought + to + infinitive.*\n  *He is said to be very rich.*\n  *The building is believed to have been damaged.*\n\n**Why it matters**: This is the default voice of journalism (*It is understood that...*), academic hedging (*X is widely believed to...*), and politics (*It has been alleged that...*). High-frequency in B2/C1 reading and Cambridge transformations.\n\nCommon verbs in this pattern: *say, believe, think, report, claim, allege, expect, know, understand, consider*.",
-        "root_ids": ["B2.passive.reporting_verbs"],
+        "root_ids": [
+          "B2.passive.reporting_verbs"
+        ],
         "cefr_level": "B2"
       },
       {
         "title": "Common Czech-speaker errors",
         "content": "**High-frequency mistakes** (often L1 interference):\n\n- *The letter **was send**.* → *The letter **was sent**.* (need past participle, not infinitive)\n- *The building **is built** in 1990.* → *The building **was built** in 1990.* (past time → past passive)\n- *English **speaks** everywhere.* → *English **is spoken** everywhere.* (English doesn't do the action — people speak it)\n- *The letter written yesterday.* → *The letter **was** written yesterday.* (missing **be**)\n- *I had my hair **to cut**.* → *I had my hair **cut**.* (causative takes past participle, not infinitive)\n- *It itself says that...* (literal from *to se říká*) → *It **is said** that...* (use passive, not reflexive)\n\n**Why it matters**: These errors are everywhere in B1/B2 writing and speaking. They mark non-native English instantly. Most of them are one-step fixes once the **be + past participle** skeleton is clear.\n\n**Next steps**: See the practice sections below for guided MC, gap-fill, and error correction.",
-        "root_ids": ["B1.passive.form_basic", "B1.passive.tenses", "B2.passive.have_something_done"],
-        "cefr_level": "B2"
+        "root_ids": [
+          "B1.passive.form_basic",
+          "B1.passive.tenses",
+          "B2.passive.have_something_done"
+        ],
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "examples",
+            "title": "High-frequency Czech-speaker errors",
+            "items": [
+              {
+                "bad": "The letter was send.",
+                "good": "The letter was sent.",
+                "why": "need past participle, not infinitive"
+              },
+              {
+                "bad": "The building is built in 1990.",
+                "good": "The building was built in 1990.",
+                "why": "past time → past passive"
+              },
+              {
+                "bad": "English speaks everywhere.",
+                "good": "English is spoken everywhere.",
+                "why": "English doesn't do the action"
+              },
+              {
+                "bad": "The letter written yesterday.",
+                "good": "The letter was written yesterday.",
+                "why": "missing 'be'"
+              },
+              {
+                "bad": "It itself says that…",
+                "good": "It is said that…",
+                "why": "use passive reporting verb, not reflexive calque"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

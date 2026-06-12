@@ -13,71 +13,73 @@
       {
         "title": "The backshift rule (statements)",
         "content": "When the reporting verb is in the **past** (*said*, *told*, *asked*), the tense inside the reported clause usually **shifts one step back in time**.\n\n**The standard shifts**:\n- present simple → past simple (*am/is/are* → *was/were*)\n- present continuous → past continuous\n- present perfect → past perfect\n- past simple → past perfect (in careful/formal use)\n- **will** → **would**\n- **can** → **could**\n- **may** → **might**\n- **must** → **had to**\n\n**Why it matters**: This is the single highest-impact rule in the topic and the one Czech speakers most often skip. Getting it right makes you sound like a competent reporter; missing it sounds like a literal translation. It's tested in every B1/B2 sentence-transformation exercise.\n\n**Contrast examples**:\n- \"I **like** coffee.\" → She said she **liked** coffee.\n- \"I **am working**.\" → He said he **was working**.\n- \"I **have seen** it.\" → She said she **had seen** it.\n- \"I **will help**.\" → He said he **would help**.\n- \"I **must go**.\" → She said she **had to** go.",
-        "diagram": {
-          "type": "table",
-          "title": "Tense backshift in reported speech",
-          "headers": [
-            "Direct speech",
-            "→",
-            "Reported speech",
-            "Example"
-          ],
-          "rows": [
-            [
-              "present simple (*like*)",
-              "→",
-              "past simple (*liked*)",
-              "He said he **liked** it."
-            ],
-            [
-              "present continuous (*am leaving*)",
-              "→",
-              "past continuous (*was leaving*)",
-              "She said she **was leaving**."
-            ],
-            [
-              "present perfect (*have finished*)",
-              "→",
-              "past perfect (*had finished*)",
-              "He said he **had finished**."
-            ],
-            [
-              "past simple (*saw*)",
-              "→",
-              "past perfect (*had seen*)",
-              "She said she **had seen** him."
-            ],
-            [
-              "**will** (*will help*)",
-              "→",
-              "**would** (*would help*)",
-              "He said he **would help**."
-            ],
-            [
-              "**can** (*can swim*)",
-              "→",
-              "**could** (*could swim*)",
-              "She said she **could swim**."
-            ],
-            [
-              "**may** (*may be*)",
-              "→",
-              "**might** (*might be*)",
-              "He said he **might be** late."
-            ],
-            [
-              "**must** (*must go*)",
-              "→",
-              "**had to** (*had to go*)",
-              "She said she **had to** go."
-            ]
-          ]
-        },
         "root_ids": [
           "B1.reported_speech.statements",
           "B2.reported_speech.extended"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Tense backshift in reported speech",
+            "headers": [
+              "Direct speech",
+              "→",
+              "Reported speech",
+              "Example"
+            ],
+            "rows": [
+              [
+                "present simple (*like*)",
+                "→",
+                "past simple (*liked*)",
+                "He said he **liked** it."
+              ],
+              [
+                "present continuous (*am leaving*)",
+                "→",
+                "past continuous (*was leaving*)",
+                "She said she **was leaving**."
+              ],
+              [
+                "present perfect (*have finished*)",
+                "→",
+                "past perfect (*had finished*)",
+                "He said he **had finished**."
+              ],
+              [
+                "past simple (*saw*)",
+                "→",
+                "past perfect (*had seen*)",
+                "She said she **had seen** him."
+              ],
+              [
+                "**will** (*will help*)",
+                "→",
+                "**would** (*would help*)",
+                "He said he **would help**."
+              ],
+              [
+                "**can** (*can swim*)",
+                "→",
+                "**could** (*could swim*)",
+                "She said she **could swim**."
+              ],
+              [
+                "**may** (*may be*)",
+                "→",
+                "**might** (*might be*)",
+                "He said he **might be** late."
+              ],
+              [
+                "**must** (*must go*)",
+                "→",
+                "**had to** (*had to go*)",
+                "She said she **had to** go."
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "When NOT to backshift",
@@ -86,7 +88,13 @@
           "B1.reported_speech.statements",
           "B2.reported_speech.extended"
         ],
-        "cefr_level": "B2"
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Don't over-apply backshift. Universal truths stay in present: 'The teacher said water boils at 100°C.' If the situation hasn't changed: 'He just said he wants to come.'"
+          }
+        ]
       },
       {
         "title": "Said vs told (and other reporting verbs)",
@@ -94,7 +102,24 @@
         "root_ids": [
           "B1.reported_speech.statements"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "He said me he was tired.",
+                "good": "He said (that) he was tired. / He told me (that) he was tired.",
+                "why": "say does NOT take a person object directly"
+              },
+              {
+                "bad": "She told that she was busy.",
+                "good": "She told me that she was busy.",
+                "why": "tell REQUIRES a person object"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Reported questions",
@@ -102,7 +127,27 @@
         "root_ids": [
           "B2.reported_speech.extended"
         ],
-        "cefr_level": "B2"
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "She asked if / whether I was busy.",
+                "why": "yes/no question → if/whether + statement order"
+              },
+              {
+                "good": "He asked where I lived.",
+                "why": "wh-question → wh-word + statement order (no do/did, no inversion)"
+              },
+              {
+                "bad": "He asked where did I live.",
+                "good": "He asked where I lived.",
+                "why": "reported questions use statement word order"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Reported commands and requests",
@@ -115,82 +160,84 @@
       {
         "title": "Pronoun, time and place shifts",
         "content": "Backshift is only one layer. When the speaker, time and place change, the referring words change too.\n\n**Pronouns** shift to match the new speaker:\n- *I* → *he / she*, *my* → *his / her*, *we* → *they*, *you* → *I / me / he / she*\n- \"**I** lost **my** keys.\" → She said **she** had lost **her** keys.\n\n**Time words** shift to match the new time:\n- *now* → *then*, *today* → *that day*, *tonight* → *that night*\n- *yesterday* → *the day before / the previous day*\n- *tomorrow* → *the next day / the following day*\n- *last week* → *the week before*, *next week* → *the following week*\n- *ago* → *before*\n\n**Place / demonstratives** shift to match the new place:\n- *here* → *there*\n- *this* → *that*, *these* → *those*\n\n**Why it matters**: Forgetting these makes the report incoherent: *He said he saw her yesterday* means HE saw her yesterday from your point of view today — but if he said it last week, you need *the day before*. Time/place shifts are also high-yield in exam transformations.\n\n**Example combining all three**:\n- Direct: \"**I** met **your** brother **here yesterday**.\"\n- Reported (told to you, much later): She said **she** had met **my** brother **there the day before**.",
-        "diagram": {
-          "type": "table",
-          "title": "Pronoun, time and place shifts",
-          "headers": [
-            "Direct",
-            "→",
-            "Reported",
-            "Type"
-          ],
-          "rows": [
-            [
-              "I / we",
-              "→",
-              "he, she / they",
-              "pronoun"
-            ],
-            [
-              "my / our",
-              "→",
-              "his, her / their",
-              "pronoun"
-            ],
-            [
-              "now",
-              "→",
-              "then",
-              "time"
-            ],
-            [
-              "today",
-              "→",
-              "that day",
-              "time"
-            ],
-            [
-              "yesterday",
-              "→",
-              "the day before",
-              "time"
-            ],
-            [
-              "tomorrow",
-              "→",
-              "the next day",
-              "time"
-            ],
-            [
-              "last week",
-              "→",
-              "the week before",
-              "time"
-            ],
-            [
-              "ago",
-              "→",
-              "before",
-              "time"
-            ],
-            [
-              "here",
-              "→",
-              "there",
-              "place"
-            ],
-            [
-              "this / these",
-              "→",
-              "that / those",
-              "place"
-            ]
-          ]
-        },
         "root_ids": [
           "B1.reported_speech.statements"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Pronoun, time and place shifts",
+            "headers": [
+              "Direct",
+              "→",
+              "Reported",
+              "Type"
+            ],
+            "rows": [
+              [
+                "I / we",
+                "→",
+                "he, she / they",
+                "pronoun"
+              ],
+              [
+                "my / our",
+                "→",
+                "his, her / their",
+                "pronoun"
+              ],
+              [
+                "now",
+                "→",
+                "then",
+                "time"
+              ],
+              [
+                "today",
+                "→",
+                "that day",
+                "time"
+              ],
+              [
+                "yesterday",
+                "→",
+                "the day before",
+                "time"
+              ],
+              [
+                "tomorrow",
+                "→",
+                "the next day",
+                "time"
+              ],
+              [
+                "last week",
+                "→",
+                "the week before",
+                "time"
+              ],
+              [
+                "ago",
+                "→",
+                "before",
+                "time"
+              ],
+              [
+                "here",
+                "→",
+                "there",
+                "place"
+              ],
+              [
+                "this / these",
+                "→",
+                "that / those",
+                "place"
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "Common Czech-speaker errors + roadmap",

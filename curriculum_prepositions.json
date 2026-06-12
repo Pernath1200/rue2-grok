@@ -8,75 +8,86 @@
         "root_ids": [
           "A1.prepositions.place_basic"
         ],
-        "cefr_level": "A1"
+        "cefr_level": "A1",
+        "diagrams": [
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech prepositions rarely map one-to-one onto English ones. Learn the English distinctions directly — don't translate from Czech."
+          }
+        ]
       },
       {
         "title": "Time: at / on / in",
         "content": "**The big three for time** — one of the highest-impact distinctions in English.\n\n**Why it matters**: Scheduling, stories, and exams all turn on this. \"Meet at 5\" vs \"on Monday\" vs \"in July\" tells the listener exactly when — or confuses them completely.\n\n**Contrast examples**:\n- I wake up **at** 7 o'clock. (exact clock time / night / weekend)\n- The lesson is **on** Monday 15 March. (specific day or date)\n- She was born **in** 2020 / **in** the morning / **in** summer. (longer periods, months, years, parts of day)\n\n**Rule of thumb**: at = point in time; on = day surface; in = container/period.",
-        "diagram": {
-          "type": "table",
-          "title": "at / on / in for time",
-          "headers": [
-            "Preposition",
-            "Used with",
-            "Example"
-          ],
-          "rows": [
-            [
-              "**at**",
-              "Clock time, night, weekend",
-              "at 5 o'clock, at noon, at night, at the weekend"
-            ],
-            [
-              "**on**",
-              "Days, dates",
-              "on Monday, on 15th March, on my birthday"
-            ],
-            [
-              "**in**",
-              "Months, years, longer periods",
-              "in August, in 2025, in the morning, in winter"
-            ]
-          ]
-        },
         "root_ids": [
           "A2.prepositions.time_basic"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "at / on / in for time",
+            "headers": [
+              "Preposition",
+              "Used with",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**at**",
+                "Clock time, night, weekend",
+                "at 5 o'clock, at noon, at night, at the weekend"
+              ],
+              [
+                "**on**",
+                "Days, dates",
+                "on Monday, on 15th March, on my birthday"
+              ],
+              [
+                "**in**",
+                "Months, years, longer periods",
+                "in August, in 2025, in the morning, in winter"
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "Place: at / on / in",
         "content": "**The big three for place** — the same three prepositions, completely different logic from time.\n\n**Why it matters**: Location errors are among the most common and noticeable. \"The keys are in the car\" (inside) is not the same as \"on the car\" (surface).\n\n**Contrast examples**:\n- The book is **in** the box / **in** London / **in** the room. (enclosed space or area)\n- The picture is **on** the wall / **on** the table. (surface or line)\n- Meet me **at** the door / **at** the bus stop / **at** home. (specific point or location)\n\n**Cities & countries**: usually **in**. Specific points/addresses: often **at**.",
-        "diagram": {
-          "type": "table",
-          "title": "at / on / in for place",
-          "headers": [
-            "Preposition",
-            "Meaning",
-            "Example"
-          ],
-          "rows": [
-            [
-              "**in**",
-              "Inside / enclosed",
-              "in the box, in London, in the room"
-            ],
-            [
-              "**on**",
-              "On a surface or line",
-              "on the table, on the wall, on the street"
-            ],
-            [
-              "**at**",
-              "At a specific point or place",
-              "at the door, at the bus stop, at home"
-            ]
-          ]
-        },
         "root_ids": [
           "A1.prepositions.place_basic"
         ],
-        "cefr_level": "A1"
+        "cefr_level": "A1",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "at / on / in for place",
+            "headers": [
+              "Preposition",
+              "Meaning",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**in**",
+                "Inside / enclosed",
+                "in the box, in London, in the room"
+              ],
+              [
+                "**on**",
+                "On a surface or line",
+                "on the table, on the wall, on the street"
+              ],
+              [
+                "**at**",
+                "At a specific point or place",
+                "at the door, at the bus stop, at home"
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "Movement and direction",
@@ -84,7 +95,30 @@
         "root_ids": [
           "A2.prepositions.movement"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I walked to the park.",
+                "why": "movement toward destination → to"
+              },
+              {
+                "good": "I walked in the park.",
+                "why": "already inside, moving around → in"
+              },
+              {
+                "good": "She walked across the bridge.",
+                "why": "crossing a surface → across"
+              },
+              {
+                "good": "He drove through the tunnel.",
+                "why": "crossing an enclosed space → through"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Duration, deadlines & periods",
@@ -92,7 +126,30 @@
         "root_ids": [
           "A2.prepositions.time_basic"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I've worked here for six months.",
+                "why": "duration → for"
+              },
+              {
+                "good": "I've worked here since January.",
+                "why": "starting point → since"
+              },
+              {
+                "good": "The report must be done by Friday.",
+                "why": "deadline → by"
+              },
+              {
+                "good": "We waited until midnight.",
+                "why": "continues up to that point → until"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Common errors & traps",
@@ -101,7 +158,37 @@
           "A2.prepositions.time_basic",
           "A1.prepositions.place_basic"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "examples",
+            "title": "High-frequency errors",
+            "items": [
+              {
+                "bad": "interested on music",
+                "good": "interested in music"
+              },
+              {
+                "bad": "It depends from you.",
+                "good": "It depends on you."
+              },
+              {
+                "bad": "She arrived to Prague.",
+                "good": "She arrived in Prague.",
+                "why": "arrive in a city; arrive at a point (station, airport)"
+              },
+              {
+                "bad": "I go to home.",
+                "good": "I go home.",
+                "why": "no preposition with home/school/work in this pattern"
+              },
+              {
+                "bad": "good in maths",
+                "good": "good at maths"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Other high-frequency uses + roadmap",

@@ -8,7 +8,13 @@
         "root_ids": [
           "B1.fixed_phrases.basic"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Fixed phrases behave like single vocabulary items. You cannot swap one word for a synonym: in search OF (not for/to), of course (not for course), no longer (not not longer)."
+          }
+        ]
       },
       {
         "title": "Types of fixed phrases",
@@ -16,7 +22,59 @@
         "root_ids": [
           "B1.fixed_phrases.basic"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "Prep phrases",
+                "items": [
+                  "in search of",
+                  "in spite of",
+                  "in addition to",
+                  "in charge of",
+                  "in favour of",
+                  "in terms of",
+                  "on behalf of",
+                  "on account of",
+                  "as a result of",
+                  "for the sake of"
+                ]
+              },
+              {
+                "label": "Adverbials",
+                "items": [
+                  "in fact",
+                  "of course",
+                  "at least",
+                  "at first",
+                  "at once",
+                  "no longer",
+                  "as well",
+                  "as long as",
+                  "as soon as",
+                  "so far",
+                  "once again"
+                ]
+              },
+              {
+                "label": "Other",
+                "items": [
+                  "one of the",
+                  "the first time",
+                  "the same as",
+                  "such as",
+                  "as if",
+                  "as though",
+                  "would rather",
+                  "had better",
+                  "not only … but also"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "How to learn them",
@@ -24,7 +82,13 @@
         "root_ids": [
           "B1.fixed_phrases.basic"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Read the whole sentence and the sentences around it — the phrase may span a clause (e.g. not only … but also). Learn phrases in context, not in isolation."
+          }
+        ]
       },
       {
         "title": "Reference",
@@ -32,7 +96,13 @@
         "root_ids": [
           "B1.fixed_phrases.basic"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Full reference list: Reference → Fixed Phrases. Full coverage in FCE/CAE Use of English open cloze and sentence transformation."
+          }
+        ]
       }
     ]
   },

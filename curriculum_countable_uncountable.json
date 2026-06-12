@@ -3,86 +3,187 @@
     "title": "Uncountable Nouns and Plural-only Nouns",
     "sections": [
       {
-        "title": "What this section covers",
-        "content": "**Countable** nouns can be singular or plural: *a book, two books.* **Uncountable** nouns have no plural with -s: *water, information, advice.* **Plural-only** nouns always take a plural verb: *scissors, trousers.* This topic covers common mistakes with all three.",
+        "title": "Countable vs uncountable — the core split",
+        "content": "Every English noun falls into one of three groups. Getting this right fixes a large class of Czech-speaker errors (*an advice*, *many informations*, *the scissors is*).",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "title": "Countable vs uncountable",
+            "left": {
+              "title": "Countable",
+              "points": [
+                "a book, two books",
+                "Use a / an",
+                "Plural with -s",
+                "many, few, a few",
+                "How many books?"
+              ]
+            },
+            "right": {
+              "title": "Uncountable",
+              "points": [
+                "water, advice, information",
+                "No a / an",
+                "No plural -s",
+                "much, little, a little",
+                "How much water?"
+              ]
+            }
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech nouns are nearly always countable. English has a large uncountable class — advice, information, furniture, homework, news, progress — that Czech speakers habitually pluralise or use with a/an."
+          }
+        ],
         "root_ids": [
           "A2.countability.basic"
         ],
         "cefr_level": "A2"
       },
       {
-        "title": "Countable nouns",
-        "content": "You can count them. Use **a/an** and plural **-s**: *a book, two books; an apple, three apples.* Use **many**, **few**, **a few**: *How many books?*",
+        "title": "Common uncountable nouns — learn this list",
+        "content": "These nouns are **always uncountable** in English (no *-s*, no *a/an*). To count them, use **a piece of / a bit of**:",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "Abstract",
+                "items": [
+                  "advice",
+                  "information",
+                  "news",
+                  "progress",
+                  "research"
+                ]
+              },
+              {
+                "label": "Things / substances",
+                "items": [
+                  "furniture",
+                  "luggage",
+                  "baggage",
+                  "hair",
+                  "weather"
+                ]
+              },
+              {
+                "label": "School / work",
+                "items": [
+                  "homework",
+                  "work",
+                  "money",
+                  "traffic"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "She gave me an advice.",
+                "good": "She gave me some advice / a piece of advice."
+              },
+              {
+                "bad": "I need more informations.",
+                "good": "I need more information."
+              },
+              {
+                "bad": "The news are good.",
+                "good": "The news is good.",
+                "why": "news takes a singular verb"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.countability.basic"
         ],
         "cefr_level": "A2"
       },
       {
-        "title": "Uncountable nouns",
-        "content": "Treated as one mass. No **a/an**, no plural -s: *water, information, advice, rice, money, furniture.* Use **much**, **little**, **a little**: *How much water?* To count them, use a phrase: *a piece of advice, a bottle of water.*",
-        "root_ids": [
-          "A2.countability.basic"
+        "title": "Plural-only nouns — always plural",
+        "content": "Some nouns exist **only in the plural** and take a **plural verb**. For one item, say **a pair of**:",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "Clothing",
+                "items": [
+                  "trousers",
+                  "jeans",
+                  "shorts",
+                  "pyjamas",
+                  "tights"
+                ]
+              },
+              {
+                "label": "Tools / objects",
+                "items": [
+                  "scissors",
+                  "glasses",
+                  "binoculars",
+                  "pliers"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "The scissors is on the table.",
+                "good": "The scissors are on the table."
+              },
+              {
+                "bad": "This trousers is too long.",
+                "good": "These trousers are too long."
+              },
+              {
+                "good": "a pair of scissors / a pair of jeans",
+                "why": "use 'a pair of' to express one item"
+              }
+            ]
+          }
         ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Common uncountable nouns (1)",
-        "content": "These are **uncountable** in English — no plural -s, no *a/an*:\n**advice** — *Give me some advice.* **information** — *I need more information.* **news** (singular verb) — *The news is good.* **furniture** — *We need new furniture.* **homework** — *I have a lot of homework.*",
-        "root_ids": [
-          "A2.countability.basic"
-        ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Common uncountable nouns (2)",
-        "content": "**research** — *She does research.* **luggage / baggage** — *How much luggage?* **weather** — *The weather is nice.* **progress** — *We're making progress.* **hair** (uncountable for all hair on head) — *She has long hair.* But: *three hairs on the jacket* (countable for individual hairs).",
-        "root_ids": [
-          "A2.countability.basic"
-        ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Plural-only nouns",
-        "content": "Some nouns have **only a plural form** and take a **plural verb**: **scissors** — *The scissors are on the table.* **trousers / pants** — *These trousers are too long.* **jeans, shorts, pyjamas** — *My jeans are blue.* **glasses** (spectacles) — *Where are my glasses?* For one item, say **a pair of**: *a pair of scissors, a pair of trousers.*",
         "root_ids": [
           "A2.countability.plural_only"
         ],
         "cefr_level": "A2"
       },
       {
-        "title": "Countable vs uncountable",
-        "content": "",
-        "diagram": {
-          "type": "comparison",
-          "title": "Countable vs uncountable nouns",
-          "left": {
-            "title": "Countable",
-            "points": [
-              "a book, two books",
-              "a/an + singular",
-              "many, few, a few",
-              "How **many** books?"
-            ]
-          },
-          "right": {
-            "title": "Uncountable",
-            "points": [
-              "water, advice, information",
-              "No a/an, no plural -s",
-              "much, little, a little",
-              "How **much** water?"
+        "title": "Quantifiers at a glance",
+        "content": "The quantifier you use signals whether you treat a noun as countable or uncountable:",
+        "diagrams": [
+          {
+            "type": "table",
+            "headers": [
+              "Quantifier",
+              "Use with",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**many / few / a few**",
+                "countable plural",
+                "many books, a few ideas"
+              ],
+              [
+                "**much / little / a little**",
+                "uncountable",
+                "much luggage, a little advice"
+              ],
+              [
+                "**a lot of / lots of / some / any**",
+                "both",
+                "a lot of books / a lot of information"
+              ]
             ]
           }
-        },
-        "root_ids": [
-          "A2.countability.basic"
         ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Reference",
-        "content": "For more on quantifiers with countable and uncountable nouns, see the Quantifiers topic under Choose Grammar Topic.",
         "root_ids": [
           "A2.countability.basic"
         ],

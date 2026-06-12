@@ -3,16 +3,82 @@
     "title": "Will and going to",
     "sections": [
       {
-        "title": "English has more than one future (core logic)",
-        "content": "English has **no single future tense**. Instead, it picks a form based on **how the speaker sees the situation**: was it decided before, or just now? Is there evidence in front of us? Is the time fixed by a timetable, or arranged with another person?\n\n**Why it matters (roots-first)**: This is the Verb Phrase root (#2 in the Tree Model) at work. The future is a **system of choices**, not a single tense. Czech encodes the future mainly with one form (perfective present or *budu* + infinitive), so Czech speakers often default to **will** for everything and miss the distinctions English speakers actually hear.\n\n**The four main forms** used for future situations:\n- **will** — decisions made now, predictions without evidence, offers, promises\n- **going to** — plans already decided, predictions with visible evidence\n- **present continuous** — fixed personal arrangements (time + place + people)\n- **present simple** — public timetables and schedules\n\nThe rest of this topic walks through each one and the contrasts between them.",
+        "title": "English future — a system of four choices",
+        "content": "English has **no single future tense**. Instead it picks a form based on **how the speaker sees the situation**: was it decided before you spoke, or just now? Is there evidence in front of you? Is it a fixed schedule?\n\n**Why it matters (roots-first)**: The future is a **system of choices** in the Verb Phrase root (#2 in the Tree Model). Czech encodes the future mainly with one form (*budu* + infinitive or perfective present), so Czech speakers often default to **will** for everything — and miss distinctions English speakers actually hear.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "The four futures — when to use each",
+            "headers": [
+              "Form",
+              "Use it for",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**will**",
+                "Decision now, prediction (no evidence), offer, promise",
+                "I'll get it. It'll probably rain. I'll help you."
+              ],
+              [
+                "**going to**",
+                "Plan already decided; prediction from visible evidence",
+                "I'm going to study medicine. Look — it's going to rain."
+              ],
+              [
+                "**present continuous**",
+                "Fixed personal arrangement (time + people + place)",
+                "I'm meeting Tom at 6 tomorrow."
+              ],
+              [
+                "**present simple**",
+                "Public timetable, schedule, programme",
+                "The train leaves at 6 a.m."
+              ]
+            ]
+          }
+        ],
         "root_ids": [
           "A2.future.system"
         ],
         "cefr_level": "A2"
       },
       {
-        "title": "will — decisions now, predictions, offers, promises",
-        "content": "Use **will** when the future feeling comes *at the moment of speaking* or is a general prediction with no evidence in front of you.\n\n**Main uses**:\n- **Decision at the moment**: The phone's ringing. — *I'll get it.*\n- **General prediction** (a guess, no present evidence): *I think it'll rain tomorrow. She'll probably be late.*\n- **Offer**: That bag looks heavy — *I'll carry it for you.*\n- **Promise / refusal**: *I'll be there at 5. I won't tell anyone.*\n\n**Often signalled by**: *I think, I hope, probably, maybe, I'm sure, I bet*.\n\n**Contrast — same situation, decided when?**\n- *I'll have the soup, please.* (deciding now, looking at the menu)\n- *I'm going to have the soup.* (decided earlier — odd if the waiter just arrived)\n\n**Czech-speaker note**: Don't default to **will** for plans you already made. *I will meet John tomorrow* sounds like you decided this second. If it's arranged, use **going to** or the present continuous.",
+        "title": "will — decision now, prediction, offer, promise",
+        "content": "Use **will** when the future feeling comes *at the moment of speaking* — you hadn't decided before, or you're making a general guess with no present evidence.\n\n**Often signalled by**: *I think, I hope, probably, maybe, I'm sure, I bet*.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "The phone's ringing — I'll get it.",
+                "why": "deciding now"
+              },
+              {
+                "good": "I think it'll rain tomorrow.",
+                "why": "general prediction, no visible evidence"
+              },
+              {
+                "good": "That bag looks heavy — I'll carry it for you.",
+                "why": "offer"
+              },
+              {
+                "good": "I'll be there at 5. I won't tell anyone.",
+                "why": "promise / refusal"
+              },
+              {
+                "bad": "Look at those clouds — it will rain.",
+                "good": "Look at those clouds — it's going to rain.",
+                "why": "visible evidence → going to"
+              },
+              {
+                "bad": "I will meet John tomorrow (already arranged).",
+                "good": "I'm meeting John tomorrow.",
+                "why": "arrangement already exists → present continuous"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.future.will"
         ],
@@ -20,66 +86,86 @@
       },
       {
         "title": "going to — plans and visible evidence",
-        "content": "Use **going to** when the intention exists *before* you speak, or when the prediction is based on something you can see right now.\n\n**Main uses**:\n- **Plan / intention already decided**: *I'm going to study medicine. We're going to buy a new car next year.*\n- **Prediction from present evidence**: *Look at those clouds — it's going to rain. He's running for the bus but it's leaving — he's going to miss it.*\n\n**Contrast pair — will vs going to**:\n- *I'll rain tomorrow* — wrong; with a guess about tomorrow, no evidence → *It'll rain tomorrow.*\n- *Look at the sky — it will rain* — wrong; evidence is visible → *It's going to rain.*\n- *The phone's ringing — I'm going to get it* — wrong; deciding now → *I'll get it.*\n\n**Rule of thumb**: *going to* points backwards (plan decided before) or to something visible (evidence now). *will* points to the moment of speaking.",
+        "content": "Use **going to** when the **intention existed before** you speak, or when the prediction is based on something **visible right now**.\n\n**Rule of thumb**: *going to* points backwards (decided before) or to evidence in front of you. *will* points to the moment of speaking.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I'm going to study medicine.",
+                "why": "plan already decided"
+              },
+              {
+                "good": "We're going to buy a new car next year.",
+                "why": "intention formed before speaking"
+              },
+              {
+                "good": "Look at those clouds — it's going to rain.",
+                "why": "prediction from visible evidence"
+              },
+              {
+                "good": "He's running for the bus but it's leaving — he's going to miss it.",
+                "why": "conclusion from what we can see"
+              },
+              {
+                "bad": "The phone's ringing — I'm going to get it.",
+                "good": "I'll get it.",
+                "why": "deciding this second → will"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.future.going_to"
         ],
         "cefr_level": "A2"
       },
       {
-        "title": "present continuous — fixed arrangements",
-        "content": "Use the **present continuous** (*am/is/are + -ing*) for future **arrangements** — plans already locked in with another person, a specific time, or a specific place.\n\n**The key word is arrangement**: someone else is involved or the slot is booked.\n\n**Examples**:\n- *I'm meeting Tom at 6 tomorrow.* (we agreed; the time is set)\n- *She's flying to London on Friday.* (ticket bought)\n- *We're having dinner with my parents on Sunday.* (planned with them)\n\n**Contrast — going to vs present continuous**:\n- *I'm going to learn Italian.* (intention; no specific arrangement yet)\n- *I'm starting an Italian course on Monday.* (signed up — fixed arrangement)\n\nBoth are often interchangeable for personal plans; the present continuous is more natural when the arrangement is concrete.\n\n**Czech-speaker note**: Czech speakers often reach for **will** here (*I will meet Tom tomorrow*). Native speakers would normally say *I'm meeting Tom tomorrow* — the arrangement already exists, so it feels almost present, not future.",
-        "root_ids": [
-          "B1.future.present_continuous_arrangements"
-        ],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "present simple — timetables and schedules",
-        "content": "Use the **present simple** for future events run by a **timetable, schedule, or programme** — things outside your personal control.\n\n**Examples**:\n- *The train leaves at 6 a.m. tomorrow.*\n- *The film starts at 8.*\n- *The shops close at 7 on Sunday.*\n- *Our flight arrives at 22:40.*\n\n**Key test**: Could you read this off a board, screen, or printed schedule? Then use the present simple.\n\n**Contrast — present simple vs present continuous**:\n- *The train leaves at 6.* (public timetable)\n- *I'm leaving at 6.* (your personal arrangement)\n\n**Czech-speaker note**: Czech speakers sometimes extend the present simple to personal plans — *I go to Paris tomorrow* sounds wrong in English. For personal plans use **going to** or the **present continuous**: *I'm going to Paris tomorrow.* Save the present simple for public timetables.",
-        "root_ids": [
-          "B1.future.present_simple_timetable"
-        ],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "The four futures side by side",
-        "content": "One scenario — *meeting a friend tomorrow at 6* — across all four forms. Same situation, four different speaker meanings.\n\n**Why it matters**: The point of this topic is the **choice**, not the forms in isolation. Once you can feel why a native speaker picks one over the others, the rest is practice.\n\n**The same scenario, four readings**:\n- *I'll meet you at 6.* — deciding now (or making a promise / offer)\n- *I'm going to meet a friend at 6.* — the plan existed before; no specific arrangement mentioned\n- *I'm meeting a friend at 6.* — fixed arrangement (we agreed)\n- *I meet my friend at 6.* — only natural for a recurring schedule (e.g. *Every Tuesday I meet my friend at 6*); for a one-off, English uses the present continuous or *going to*\n\nThe table below summarises the typical use of each form.",
-        "diagram": {
-          "type": "table",
-          "title": "The four futures — when to use each",
-          "headers": [
-            "Form",
-            "Use it for",
-            "Example"
-          ],
-          "rows": [
-            [
-              "**will**",
-              "Decision now, prediction (no evidence), offer, promise",
-              "I'll get it. I think it'll rain. I'll help you."
-            ],
-            [
-              "**going to**",
-              "Plan already decided; prediction from visible evidence",
-              "I'm going to study medicine. Look — it's going to rain."
-            ],
-            [
-              "**present continuous**",
-              "Fixed personal arrangement (time + people + place)",
-              "I'm meeting Tom at 6 tomorrow."
-            ],
-            [
-              "**present simple**",
-              "Public timetable, schedule, programme",
-              "The train leaves at 6 a.m."
+        "title": "Present continuous (arrangements) and present simple (timetables)",
+        "content": "**Present continuous** — for **personal arrangements**: time + people + place are already locked in with someone else.\n**Present simple** — for **public timetables**: you could read it off a board, screen, or printed schedule.",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "title": "Arrangements vs timetables",
+            "left": {
+              "title": "Present continuous — arrangement",
+              "points": [
+                "I'm meeting Tom at 6 tomorrow.",
+                "She's flying to London on Friday.",
+                "We're having dinner with my parents on Sunday.",
+                "Someone else is involved; the slot is booked."
+              ]
+            },
+            "right": {
+              "title": "Present simple — timetable",
+              "points": [
+                "The train leaves at 6 a.m.",
+                "The film starts at 8.",
+                "Our flight arrives at 22:40.",
+                "Fixed by a programme, not by you."
+              ]
+            }
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "I go to Paris tomorrow.",
+                "good": "I'm going to Paris tomorrow.",
+                "why": "personal plan — present continuous, not present simple"
+              },
+              {
+                "good": "I'm going to learn Italian.",
+                "why": "intention, no specific arrangement yet"
+              },
+              {
+                "good": "I'm starting an Italian course on Monday.",
+                "why": "signed up — fixed arrangement → present continuous is more natural"
+              }
             ]
-          ]
-        },
+          }
+        ],
         "root_ids": [
-          "A2.future.system",
-          "A2.future.will",
-          "A2.future.going_to",
           "B1.future.present_continuous_arrangements",
           "B1.future.present_simple_timetable"
         ],
@@ -87,7 +173,29 @@
       },
       {
         "title": "Common Czech-speaker errors",
-        "content": "Three recurring mistakes — fixing them gives immediate, audible progress.\n\n**1. Defaulting to *will* for arranged plans**\n- Wrong: *I will meet John tomorrow at 5.* (already arranged)\n- Right: *I'm meeting John tomorrow at 5.* / *I'm going to meet John tomorrow at 5.*\n\n**2. Present simple for personal plans**\n- Wrong: *I go to Paris tomorrow.*\n- Right: *I'm going to Paris tomorrow.* / *I'm going to go to Paris tomorrow.*\n- The present simple is reserved for **public timetables** (*The train leaves at 6*), not your own plans.\n\n**3. *will* with visible evidence**\n- Wrong: *Look at the sky — it will rain.*\n- Right: *Look at the sky — it's going to rain.*\n- If the cause is in front of you, use **going to**.\n\n**Why it matters**: These three errors mark a speaker as B1-stuck. Fixing them is a clean step up — the grammar is simple, the choice is the work.\n\n**Next steps**: practise the contrasts in the Check and Practice sections below. The future continuous and future perfect (*I'll be working / I'll have finished*) are separate topics — covered under Tenses: General.",
+        "content": "Three recurring mistakes — fixing them gives immediate, audible progress. The grammar is simple; **the choice is the work**.\n\n**Next steps**: future continuous and future perfect (*I'll be working / I'll have finished*) are covered in [[topic:tenses_general|Tenses: General]].",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "I will meet John tomorrow at 5. (already arranged)",
+                "good": "I'm meeting John tomorrow at 5.",
+                "why": "arrangement exists → present continuous"
+              },
+              {
+                "bad": "I go to Paris tomorrow.",
+                "good": "I'm going to Paris tomorrow.",
+                "why": "personal plan → present continuous or going to"
+              },
+              {
+                "bad": "Look at the sky — it will rain.",
+                "good": "Look at the sky — it's going to rain.",
+                "why": "visible evidence → going to"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.future.system",
           "B1.future.present_continuous_arrangements",

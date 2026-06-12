@@ -13,71 +13,75 @@
       {
         "title": "The relative pronouns — who / which / that / whose",
         "content": "**The core four** — most relative clauses use one of these.\n\n**Why it matters**: pick the wrong one and the sentence is instantly marked as L1-interference (e.g. *the man **which** lives there*). The choice depends on **what kind of noun** you're adding to, and (for *that*) **whether the clause is defining**.\n\n**Contrast examples**:\n- *The teacher **who** taught us French has retired.* (person)\n- *The car **which** I bought is red.* (thing)\n- *Anything **that** moves attracts the cat.* (people OR things — but only in defining clauses)\n- *That's the writer **whose** books I love.* (possession — people or things)",
-        "diagram": {
-          "type": "table",
-          "title": "who / which / that / whose at a glance",
-          "headers": [
-            "Pronoun",
-            "Refers to",
-            "Notes"
-          ],
-          "rows": [
-            [
-              "**who**",
-              "People",
-              "Subject or object; works in both defining and non-defining clauses"
-            ],
-            [
-              "**which**",
-              "Things, animals, ideas",
-              "Works in both defining and non-defining clauses"
-            ],
-            [
-              "**that**",
-              "People or things",
-              "**Defining clauses only** — never after a comma"
-            ],
-            [
-              "**whose**",
-              "Possession (people and things)",
-              "Replaces *his / her / its / their*"
-            ]
-          ]
-        },
         "root_ids": [
           "A2.relative_clauses.basic"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "who / which / that / whose at a glance",
+            "headers": [
+              "Pronoun",
+              "Refers to",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "**who**",
+                "People",
+                "Subject or object; works in both defining and non-defining clauses"
+              ],
+              [
+                "**which**",
+                "Things, animals, ideas",
+                "Works in both defining and non-defining clauses"
+              ],
+              [
+                "**that**",
+                "People or things",
+                "**Defining clauses only** — never after a comma"
+              ],
+              [
+                "**whose**",
+                "Possession (people and things)",
+                "Replaces *his / her / its / their*"
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "Defining vs non-defining (the comma rule)",
         "content": "**The single highest-impact distinction in B2 writing.** Commas are not decoration — they change the meaning.\n\n- **Defining** = essential info; tells you *which one*. **No commas.** *that* is allowed.\n- **Non-defining** = extra info; the sentence still identifies the noun without it. **Commas around the clause.** *that* is **not** allowed.\n\n**Why it matters**: in exams and emails, the comma signals whether the information is critical or parenthetical. *My brother who lives in Brno* (defining — I have several brothers, this one) is a different claim from *My brother, who lives in Brno,* (non-defining — I have one brother, and by the way he lives in Brno).\n\n**Contrast examples**:",
-        "diagram": {
-          "type": "table",
-          "title": "Defining vs non-defining side-by-side",
-          "headers": [
-            "Defining (no commas)",
-            "Non-defining (commas)"
-          ],
-          "rows": [
-            [
-              "*The book **that I bought** is good.* (which book? the one I bought)",
-              "*This book, **which I bought yesterday**, is good.* (just one book — extra info added)"
-            ],
-            [
-              "*The man **who lives next door** is a doctor.* (which man?)",
-              "*My brother, **who lives in Brno**, is a doctor.* (one brother — location is extra)"
-            ],
-            [
-              "*Cities **that have metros** are easier to get around.* (only some cities)",
-              "*Prague, **which is the capital**, has a metro.* (one Prague — capital is extra)"
-            ]
-          ]
-        },
         "root_ids": [
           "B1.relative_clauses.defining_non_defining"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Defining vs non-defining side-by-side",
+            "headers": [
+              "Defining (no commas)",
+              "Non-defining (commas)"
+            ],
+            "rows": [
+              [
+                "*The book **that I bought** is good.* (which book? the one I bought)",
+                "*This book, **which I bought yesterday**, is good.* (just one book — extra info added)"
+              ],
+              [
+                "*The man **who lives next door** is a doctor.* (which man?)",
+                "*My brother, **who lives in Brno**, is a doctor.* (one brother — location is extra)"
+              ],
+              [
+                "*Cities **that have metros** are easier to get around.* (only some cities)",
+                "*Prague, **which is the capital**, has a metro.* (one Prague — capital is extra)"
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "Contact clauses — when you can drop the pronoun",
@@ -86,7 +90,13 @@
           "A2.relative_clauses.basic",
           "B1.relative_clauses.defining_non_defining"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Quick test for dropping the pronoun: if the next word after the gap is a VERB, the pronoun is the subject — keep it. If the next words are a new subject + verb, it's the object — drop it freely."
+          }
+        ]
       },
       {
         "title": "Whose, where, when, why",
@@ -103,7 +113,14 @@
         "root_ids": [
           "B2.relative_clauses.advanced"
         ],
-        "cefr_level": "B2"
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech keeps the preposition with the relative pronoun (ke kterému). English's default is to STRAND the preposition at the end: 'the person I spoke to'. Fronting (to whom I spoke) is formal-register only — embrace stranding for everyday English."
+          }
+        ]
       },
       {
         "title": "Advanced features (B2)",
@@ -120,7 +137,40 @@
           "A2.relative_clauses.basic",
           "B1.relative_clauses.defining_non_defining"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "examples",
+            "title": "High-frequency Czech-speaker errors",
+            "items": [
+              {
+                "bad": "the man what lives there",
+                "good": "the man who / that lives there",
+                "why": "what never follows a noun"
+              },
+              {
+                "bad": "the woman which lives next door",
+                "good": "the woman who / that lives next door",
+                "why": "which is not for people"
+              },
+              {
+                "bad": "Prague, that is the capital",
+                "good": "Prague, which is the capital",
+                "why": "that is forbidden after a comma"
+              },
+              {
+                "bad": "Everything what he said",
+                "good": "Everything that he said",
+                "why": "after everything/something/nothing → that"
+              },
+              {
+                "bad": "My father who is a doctor lives in Brno.",
+                "good": "My father, who is a doctor, lives in Brno.",
+                "why": "non-defining clause needs commas — without them it implies several fathers!"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

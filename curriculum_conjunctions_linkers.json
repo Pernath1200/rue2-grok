@@ -3,123 +3,276 @@
     "title": "Conjunctions and linkers",
     "sections": [
       {
-        "title": "What conjunctions & linkers do (core logic)",
-        "content": "Conjunctions and linkers are the **explicit machinery** that joins ideas. They do two jobs:\n\n- **Conjunctions** link words, phrases or clauses **inside** a sentence (*and, but, because, although*).\n- **Discourse linkers** link **ideas across** sentences and paragraphs (*however, therefore, in addition*).\n\n**Why it matters (roots-first)**: This is the Clause Linking root (#4 in the Tree Model) made visible. Without linkers, writing reads as a list of disconnected statements — and at B2 in essays, emails or exam Writing tasks, the examiner is reading specifically for these connectives. In speech, they signal where your thought is going next.\n\n**Key principle**: Choose by **function** (contrast? cause? addition?) and then by **grammar slot** (clause-internal conjunction, sentence-initial linker, or fronted dependent clause). Mixing the slots produces the classic double-linking error.",
-        "root_ids": ["B1.linkers.coord_subord_basic"],
+        "title": "Two jobs — conjunctions vs linkers",
+        "content": "Conjunctions and linkers are the **explicit machinery** that joins ideas. They do two distinct jobs:\n- **Conjunctions** link words, phrases, or clauses **inside** a sentence: *and, but, because, although*.\n- **Discourse linkers** connect **ideas across** sentences and paragraphs: *however, therefore, in addition*.\n\n**The critical rule**: each word fits a specific **grammar slot**. Putting a sentence-linker (*however*) where a conjunction (*but*) belongs — or doubling them (*although … but*) — is the single most visible learner error at B1–B2.",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "Coordinating conj.",
+                "items": [
+                  "and",
+                  "but",
+                  "or",
+                  "so",
+                  "yet",
+                  "for",
+                  "nor"
+                ]
+              },
+              {
+                "label": "Subordinating conj.",
+                "items": [
+                  "because",
+                  "although",
+                  "while",
+                  "if",
+                  "when",
+                  "since",
+                  "unless",
+                  "until"
+                ]
+              },
+              {
+                "label": "Sentence linkers",
+                "items": [
+                  "however",
+                  "therefore",
+                  "furthermore",
+                  "nevertheless",
+                  "consequently",
+                  "in addition"
+                ]
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B1.linkers.coord_subord_basic"
+        ],
         "cefr_level": "B1"
       },
       {
         "title": "Coordinating conjunctions — FANBOYS",
-        "content": "**Coordinating conjunctions** link **equal-rank** elements: word + word, phrase + phrase, or clause + clause. There are seven — the **FANBOYS** family: **for, and, nor, but, or, yet, so**.\n\n**Why it matters**: These are the workhorses of every sentence. Punctuation matters: when joining two independent clauses, put a **comma before the conjunction**. No comma when just joining two words or short phrases.\n\n**Contrast examples**:\n- I was tired**,** but I kept working. (two clauses → comma)\n- I bought bread and cheese. (two nouns → no comma)\n- It was late**,** so we went home.\n- Hurry up**,** or you'll miss the train.\n\n**Czech-speaker note**: Czech doesn't always require the comma before *but / so / or* in this pattern — in English written work, leave it in.",
-        "root_ids": ["B1.linkers.coord_subord_basic"],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "Subordinating conjunctions",
-        "content": "**Subordinating conjunctions** introduce a **dependent clause** — a clause that cannot stand alone. Common ones: **because, although, while, if, when, until, before, after, since, as, unless**.\n\n**Why it matters**: Subordination is how English packs background, condition, and timing into one sentence. Word-order flexibility is real but punctuation depends on it.\n\n**Two orders, two punctuation rules**:\n- **Dependent clause first → comma**: *Although it rained, we went out.*\n- **Main clause first → no comma**: *We went out although it rained.*\n\n**Watch for**:\n- A subordinating clause is **not a sentence on its own**. *Although it rained.* is a fragment.\n- *Because of* + noun, but *because* + clause: *because of the rain / because it rained*.",
-        "root_ids": ["B1.linkers.coord_subord_basic"],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "Contrast linkers — but / although / however / despite",
-        "content": "Four ways to mark contrast, **four different grammar slots**. Getting the slot wrong is the #1 source of comma errors at B1-B2.\n\n**Why it matters**: Contrast is the most-tested linking function in FCE/CAE Sentence Transformation and Open Cloze. Each word needs a different structure around it.\n\n**Contrast examples** (same idea, four structures):\n- I was tired**, but** I kept working. (coordinating conjunction, mid-sentence)\n- **Although** I was tired, I kept working. (subordinating + clause, comma)\n- I was tired**. However,** I kept working. (sentence linker, new sentence + comma)\n- **Despite** being tired / **Despite** my tiredness, I kept working. (preposition + *-ing* or noun, no clause)",
-        "diagram": {
-          "type": "table",
-          "title": "Contrast linkers — structure side by side",
-          "headers": [
-            "Word",
-            "Type",
-            "What follows",
-            "Example"
-          ],
-          "rows": [
-            [
-              "**but**",
-              "Coordinating conjunction",
-              "+ clause (mid-sentence)",
-              "I was tired, but I kept going."
-            ],
-            [
-              "**although / though**",
-              "Subordinating conjunction",
-              "+ clause (start or end)",
-              "Although I was tired, I kept going."
-            ],
-            [
-              "**however / nevertheless**",
-              "Sentence linker",
-              "New sentence + comma",
-              "I was tired. However, I kept going."
-            ],
-            [
-              "**despite / in spite of**",
-              "Preposition",
-              "+ noun or *-ing* (NOT clause)",
-              "Despite being tired, I kept going."
+        "content": "The seven coordinating conjunctions (**for, and, nor, but, or, yet, so**) join **equal-rank** elements. When joining two independent clauses, put a **comma before the conjunction**; no comma for two words or short phrases.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I was tired, but I kept working.",
+                "why": "two full clauses → comma before but"
+              },
+              {
+                "good": "I bought bread and cheese.",
+                "why": "two nouns only → no comma"
+              },
+              {
+                "good": "Hurry up, or you'll miss the train."
+              },
+              {
+                "good": "It was late, so we went home."
+              }
             ]
-          ]
-        },
-        "root_ids": ["B1.linkers.contrast"],
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech doesn't always require a comma before but / so / or in this pattern. In English written work, keep the comma when joining two clauses."
+          }
+        ],
+        "root_ids": [
+          "B1.linkers.coord_subord_basic"
+        ],
+        "cefr_level": "B1"
+      },
+      {
+        "title": "Subordinating conjunctions — dependent clauses",
+        "content": "Subordinating conjunctions introduce a **dependent clause** — one that cannot stand alone. Word order decides the comma:",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Dependent clause position → comma",
+            "headers": [
+              "Order",
+              "Comma?",
+              "Example"
+            ],
+            "rows": [
+              [
+                "Dependent clause **first**",
+                "✓ comma after",
+                "Although it rained, we went out."
+              ],
+              [
+                "Main clause **first**",
+                "✗ no comma",
+                "We went out although it rained."
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "Although it rained.",
+                "good": "Although it rained, we went out.",
+                "why": "subordinate clause is not a sentence on its own"
+              },
+              {
+                "bad": "Because of it rained.",
+                "good": "Because it rained. / Because of the rain.",
+                "why": "'because of' takes a noun, 'because' takes a clause"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B1.linkers.coord_subord_basic"
+        ],
+        "cefr_level": "B1"
+      },
+      {
+        "title": "Contrast — but / although / however / despite",
+        "content": "Four ways to mark contrast, **four different grammar slots**. Slot errors here are the #1 source of comma mistakes at B1–B2 — and a staple of FCE/CAE Sentence Transformation.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Contrast linkers — structure side by side",
+            "headers": [
+              "Word",
+              "Type",
+              "What follows",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**but**",
+                "Coordinating conjunction",
+                "+ clause (mid-sentence)",
+                "I was tired, but I kept going."
+              ],
+              [
+                "**although / though**",
+                "Subordinating conjunction",
+                "+ clause (start or end)",
+                "Although I was tired, I kept going."
+              ],
+              [
+                "**however / nevertheless**",
+                "Sentence linker",
+                "New sentence + comma",
+                "I was tired. However, I kept going."
+              ],
+              [
+                "**despite / in spite of**",
+                "Preposition",
+                "+ noun or *-ing* (NOT clause)",
+                "Despite being tired, I kept going."
+              ]
+            ]
+          }
+        ],
+        "root_ids": [
+          "B1.linkers.contrast"
+        ],
         "cefr_level": "B1"
       },
       {
         "title": "Cause & result — because / so / therefore / due to",
-        "content": "Two families: **cause** (the reason) and **result** (the consequence). Same logical relationship, different sentence positions.\n\n**Why it matters**: Essays and exam tasks constantly require these. Mixing them up (or doubling them — *because... so...*) is one of the most visible learner errors.\n\n**Cause linkers** (introduce the reason):\n- **because** + clause: *We stayed in **because** it rained.*\n- **since / as** + clause (more formal): ***Since** the trains were cancelled, we drove.*\n- **because of / due to / owing to** + noun: ***Due to** the rain, we stayed in.*\n\n**Result linkers** (introduce the consequence):\n- **so** + clause (informal, mid-sentence): *It rained, **so** we stayed in.*\n- **therefore / consequently / as a result** (formal, new sentence + comma): *It rained. **Therefore,** we stayed in.*",
-        "diagram": {
-          "type": "table",
-          "title": "Cause vs result — choose by slot and register",
-          "headers": [
-            "Function",
-            "Word",
-            "What follows",
-            "Register"
-          ],
-          "rows": [
-            [
-              "Cause",
-              "**because / since / as**",
-              "+ clause",
-              "Neutral"
+        "content": "**Cause** (the reason) and **result** (the consequence) use different words in different positions. Never use a cause word and a result word together in the same sentence.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Cause vs result — slot and register",
+            "headers": [
+              "Function",
+              "Word",
+              "What follows",
+              "Register"
             ],
-            [
-              "Cause",
-              "**because of / due to / owing to**",
-              "+ noun",
-              "Neutral to formal"
-            ],
-            [
-              "Result",
-              "**so**",
-              "+ clause (mid-sentence)",
-              "Informal / spoken"
-            ],
-            [
-              "Result",
-              "**therefore / consequently / as a result**",
-              "New sentence + comma",
-              "Formal / written"
+            "rows": [
+              [
+                "Cause",
+                "**because / since / as**",
+                "+ clause",
+                "Neutral"
+              ],
+              [
+                "Cause",
+                "**because of / due to / owing to**",
+                "+ noun",
+                "Neutral to formal"
+              ],
+              [
+                "Result",
+                "**so**",
+                "+ clause (mid-sentence)",
+                "Informal / spoken"
+              ],
+              [
+                "Result",
+                "**therefore / consequently / as a result**",
+                "New sentence + comma",
+                "Formal / written"
+              ]
             ]
-          ]
-        },
-        "root_ids": ["B1.linkers.cause_result"],
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "Because it rained, so we stayed in.",
+                "good": "Because it rained, we stayed in. / It rained, so we stayed in.",
+                "why": "never pair because … so"
+              },
+              {
+                "bad": "Because of it rained.",
+                "good": "Because it rained. / Because of the rain.",
+                "why": "because of + noun only"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B1.linkers.cause_result"
+        ],
         "cefr_level": "B1"
       },
       {
-        "title": "Addition & sequence — also / furthermore / first / finally",
-        "content": "**Addition linkers** add a second idea; **sequence linkers** organise paragraphs in order. Register is the lever.\n\n**Why it matters**: At B2 your essays need to **flow**, not list. Choosing *furthermore* over *also* (or vice versa) signals to the reader — and to the examiner — that you're controlling register, not just stringing facts together.\n\n**Addition** — from informal to formal:\n- **also** (mid-sentence): *He's a teacher. He **also** writes novels.*\n- **in addition / additionally** (sentence start + comma): *He's a teacher. **In addition,** he writes novels.*\n- **furthermore / moreover** (formal, written): *The plan is cheap. **Furthermore,** it's quick to implement.*\n- **not only ... but also**: ***Not only** is it cheap, **but** it's **also** fast.*\n\n**Sequence** — for organising:\n- **first / first of all / to begin with** — opening point\n- **second / next / then / after that** — middle points\n- **finally / lastly / to conclude** — closing point\n\n**Note**: *At last* means \"after a long wait\" — don't use it to mean *finally* in a list.",
-        "root_ids": ["B2.linkers.discourse_markers"],
-        "cefr_level": "B2"
-      },
-      {
-        "title": "Discourse markers (B2) — formal emphasis, contrast, restatement",
-        "content": "Discourse markers are sentence-level signals that don't fit neatly into the cause / contrast / addition boxes. They guide the reader through the **shape** of the argument.\n\n**Why it matters**: These are the B2-to-C1 differentiators in writing and in spoken fluency. They carry no new information — they tell the listener what kind of move you're making next.\n\n**Key markers by function**:\n- **Emphasis / reality check**: *in fact, indeed, actually* — *The meeting was short. **In fact,** it lasted ten minutes.*\n- **Contrast / comparison**: *on the other hand, in contrast, conversely* — *Cars are fast. **On the other hand,** they pollute.*\n- **Restatement / clarification**: *in other words, that is to say, i.e.* — *He's risk-averse — **in other words,** cautious.*\n- **Digression**: *by the way, incidentally* — *I saw Tom yesterday. **By the way,** he's moving to Brno.*\n- **Concession / conceding a point**: *admittedly, of course, granted* — ***Admittedly,** it's expensive, but it lasts.*\n\n**Czech-speaker note**: Many of these don't translate one-to-one from Czech. *In fact* is **not** *v faktu*. Learn them as ready-made chunks.",
-        "root_ids": ["B2.linkers.discourse_markers"],
-        "cefr_level": "B2"
-      },
-      {
-        "title": "Common Czech-speaker errors",
-        "content": "**High-frequency mistakes** at B1-B2 — most are slot errors, not vocabulary errors:\n\n- **Double linking** (the biggest one): ~~Although I was tired, but I kept working.~~ → **Although** I was tired, I kept working. **Or**: I was tired, **but** I kept working. Same for ~~because ... so ...~~ and ~~despite ... but ...~~.\n- **Comma splice**: ~~I was tired, I kept working.~~ → Use a conjunction (*but*), a full stop, or a semicolon. A comma alone cannot join two clauses.\n- **Despite of**: ~~Despite of the rain~~ → ***Despite** the rain* OR ***In spite of** the rain*. Never *despite of*.\n- **Because of + clause**: ~~Because of it rained~~ → **Because** it rained (clause) OR **Because of** the rain (noun).\n- **However mid-sentence with comma**: ~~It was cold, however we went out.~~ → It was cold. **However,** we went out. (*However* needs a new sentence, or at minimum a semicolon.)\n- **Over-use of *so* in writing**: spoken English uses *so* freely; written/formal English prefers *therefore, as a result, consequently*.\n\n**Why it matters**: All five appear in Use of English Open Cloze and Sentence Transformation, and they're the first things a reader notices in a CV cover letter or business email. Fixing them gives an immediate visible jump in apparent level.",
-        "root_ids": ["B1.linkers.contrast", "B1.linkers.cause_result"],
+        "title": "Addition, sequence & discourse markers (B2)",
+        "content": "**Addition** — choose register:\n- **also** (mid-sentence): *He also writes novels.*\n- **in addition / furthermore / moreover** (sentence start + comma): formal written\n- **not only … but also**: *Not only is it cheap, but it's also fast.*\n\n**Sequence** — for ordering paragraphs: *first / first of all → second / next / then → finally / lastly*. Note: *at last* means \"after a long wait\" — don't use it for listing.\n\n**Discourse markers** — shape the argument without adding facts:\n- Emphasis: *in fact, indeed, actually*\n- Contrast: *on the other hand, in contrast*\n- Restatement: *in other words, that is to say*\n- Concession: *admittedly, granted, of course*",
+        "diagrams": [
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Many English discourse markers don't translate one-to-one from Czech. *In fact* is not *v faktu*. Learn them as ready-made chunks, not word-for-word translations."
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "Although he tried, but he failed.",
+                "good": "Although he tried, he failed. / He tried but he failed.",
+                "why": "never double-link: although … but"
+              },
+              {
+                "bad": "Despite of the rain.",
+                "good": "Despite the rain. / In spite of the rain.",
+                "why": "never 'despite of'"
+              },
+              {
+                "bad": "It was cold, however we went out.",
+                "good": "It was cold. However, we went out.",
+                "why": "however needs a new sentence (or semicolon), not just a comma"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B2.linkers.discourse_markers"
+        ],
         "cefr_level": "B2"
       }
     ]
