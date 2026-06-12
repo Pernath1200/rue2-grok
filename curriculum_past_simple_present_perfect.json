@@ -5,94 +5,98 @@
       {
         "title": "The big contrast — finished vs connected to now",
         "content": "Two tenses, one of the highest-stakes choices in English. The question is never \"which event happened?\" but \"how does the speaker frame it?\"\n\n- **Past simple** = action in a **finished time** — over, separate from now: *I lived in Prague in 2020.*\n- **Present perfect** = action **connected to now** — the experience or its result still matters: *I have lived in Prague* (and the experience is part of who I am today).\n\n**Why it matters (roots-first)**: This is the heart of the Verb Phrase root (#2 in the Tree Model). The perfect aspect is English's main grammatical marker of **result and present relevance** — and Czech has no direct equivalent. Czech *byl jsem v Praze* covers both *I was in Prague* (finished) and *I have been to Prague* (experience). English forces the speaker to choose. Getting this contrast right is the single biggest tense-confusion fix for Czech learners — and it shapes how you sound in job interviews, exams, CVs and everyday speech.\n\n**Same words, different frames**:\n- *I worked at Skanska for three years.* (finished — I don't work there now)\n- *I have worked at Skanska for three years.* (still working there now)",
-        "diagram": {
-          "type": "table",
-          "title": "Past simple vs present perfect — at a glance",
-          "headers": [
-            "",
-            "Past simple",
-            "Present perfect"
-          ],
-          "rows": [
-            [
-              "**Time frame**",
-              "Finished, separate from now",
-              "Connected to now (experience or result)"
-            ],
-            [
-              "**Form**",
-              "*I went, she finished, they saw*",
-              "*I have gone, she has finished, they have seen*"
-            ],
-            [
-              "**Typical signal**",
-              "yesterday, last week, in 2019, ago",
-              "ever, never, just, already, yet, since, for"
-            ],
-            [
-              "**Question word**",
-              "**When** did you...?",
-              "**Have** you ever...? / **How long** have you...?"
-            ],
-            [
-              "**Example**",
-              "*I saw him yesterday.*",
-              "*I have seen him* (at some point — relevant now).*"
-            ]
-          ]
-        },
         "root_ids": [
           "A2.present_perfect.basic",
           "B1.present_perfect.since_for"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Past simple vs present perfect — at a glance",
+            "headers": [
+              "",
+              "Past simple",
+              "Present perfect"
+            ],
+            "rows": [
+              [
+                "**Time frame**",
+                "Finished, separate from now",
+                "Connected to now (experience or result)"
+              ],
+              [
+                "**Form**",
+                "*I went, she finished, they saw*",
+                "*I have gone, she has finished, they have seen*"
+              ],
+              [
+                "**Typical signal**",
+                "yesterday, last week, in 2019, ago",
+                "ever, never, just, already, yet, since, for"
+              ],
+              [
+                "**Question word**",
+                "**When** did you...?",
+                "**Have** you ever...? / **How long** have you...?"
+              ],
+              [
+                "**Example**",
+                "*I saw him yesterday.*",
+                "*I have seen him* (at some point — relevant now).*"
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "Time markers — the decisive clue",
         "content": "In about 90% of exam gap-fills (and most real speech), the **time marker** tells you which tense to use. Learn the two lists side by side and you have most of the topic solved.\n\n**Why it matters**: A single time word locks the tense. *Yesterday* forbids present perfect; *since 2020* forbids past simple. This is the fastest, most reliable rule you'll meet in English grammar.",
-        "diagram": {
-          "type": "table",
-          "title": "Time markers — past simple vs present perfect",
-          "headers": [
-            "Past simple markers (finished time)",
-            "Present perfect markers (connected to now)"
-          ],
-          "rows": [
-            [
-              "**yesterday**",
-              "**already** (the action has happened)"
-            ],
-            [
-              "**ago** (two days ago, a year ago)",
-              "**yet** (in questions/negatives)"
-            ],
-            [
-              "**last** week / month / year / Friday",
-              "**just** (very recently, result now)"
-            ],
-            [
-              "**in** 2020 / **in** July",
-              "**ever / never** (life experience)"
-            ],
-            [
-              "**when** I was a child",
-              "**since** 2020 / **since** Monday"
-            ],
-            [
-              "**at** 5 o'clock (a specific past time)",
-              "**for** + duration (still ongoing): for three years"
-            ],
-            [
-              "(any explicit finished-time phrase)",
-              "**so far, up to now, recently, lately**"
-            ]
-          ]
-        },
         "root_ids": [
           "A2.present_perfect.basic",
           "B1.present_perfect.since_for"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Time markers — past simple vs present perfect",
+            "headers": [
+              "Past simple markers (finished time)",
+              "Present perfect markers (connected to now)"
+            ],
+            "rows": [
+              [
+                "**yesterday**",
+                "**already** (the action has happened)"
+              ],
+              [
+                "**ago** (two days ago, a year ago)",
+                "**yet** (in questions/negatives)"
+              ],
+              [
+                "**last** week / month / year / Friday",
+                "**just** (very recently, result now)"
+              ],
+              [
+                "**in** 2020 / **in** July",
+                "**ever / never** (life experience)"
+              ],
+              [
+                "**when** I was a child",
+                "**since** 2020 / **since** Monday"
+              ],
+              [
+                "**at** 5 o'clock (a specific past time)",
+                "**for** + duration (still ongoing): for three years"
+              ],
+              [
+                "(any explicit finished-time phrase)",
+                "**so far, up to now, recently, lately**"
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "News and recent results — the conversation shift",
@@ -100,7 +104,22 @@
         "root_ids": [
           "A2.present_perfect.basic"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I've broken my leg! (PP — news / result now)",
+                "why": "present perfect announces"
+              },
+              {
+                "good": "How did it happen? I fell off my bike yesterday.",
+                "why": "past simple gives details + finished time"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Life experience vs specific past — the classic trap",
@@ -116,7 +135,13 @@
         "root_ids": [
           "B1.present_perfect.since_for"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "since + a starting point; for + a length of time. Both require present perfect, not present simple. Czech: 'bydlím tady od 2020' → 'I have lived here since 2020.'"
+          }
+        ]
       },
       {
         "title": "Quick note — simple vs continuous",
@@ -133,7 +158,40 @@
           "A2.present_perfect.basic",
           "B1.present_perfect.since_for"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "examples",
+            "title": "High-frequency Czech-speaker errors",
+            "items": [
+              {
+                "bad": "I have been in Prague yesterday.",
+                "good": "I was in Prague yesterday.",
+                "why": "yesterday = finished time → past simple"
+              },
+              {
+                "bad": "When have you arrived?",
+                "good": "When did you arrive?",
+                "why": "When? asks for a specific past point → past simple"
+              },
+              {
+                "bad": "I live here since 2020.",
+                "good": "I have lived here since 2020.",
+                "why": "started in past + still true → present perfect"
+              },
+              {
+                "bad": "Did you ever try sushi?",
+                "good": "Have you ever tried sushi?",
+                "why": "life experience + ever → present perfect"
+              },
+              {
+                "bad": "I lost my keys. (said right now to explain why you can't get in)",
+                "good": "I've lost my keys.",
+                "why": "result still relevant now → present perfect"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

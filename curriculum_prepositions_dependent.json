@@ -3,58 +3,207 @@
     "title": "Prepositions: Dependent",
     "sections": [
       {
-        "title": "What are dependent prepositions?",
-        "content": "**Dependent prepositions** are fixed prepositions that belong to a particular verb, noun or adjective.\n\nYou cannot change them without sounding wrong.\n\nExample: interested **in** (not *interested on* or *interested at*).",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
+        "title": "What dependent prepositions are",
+        "content": "A **dependent preposition** is a fixed preposition that belongs to a specific verb, noun, or adjective — you cannot change it without sounding wrong. There is no general rule: you must **learn each combination as a chunk**.\n\nThey are very common in exams (gap-fill and open cloze), emails, and formal writing. Often the noun follows the same preposition as the verb/adjective it comes from: *interested **in** → interest **in***; *complain **about** → complaint **about***.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "I'm interested on history.",
+                "good": "I'm interested in history."
+              },
+              {
+                "bad": "It depends from the weather.",
+                "good": "It depends on the weather."
+              },
+              {
+                "bad": "a solution for the problem",
+                "good": "a solution to the problem"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B2.collocations.dependent_prepositions"
+        ],
         "cefr_level": "B2"
       },
       {
-        "title": "Examples",
-        "content": "• I'm interested **in** history.\n• It depends **on** the weather.\n• She's good **at** maths.\n• We complained **about** the noise.\n\nChanging the preposition usually makes the sentence wrong.",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
+        "title": "The three families — verbs, nouns, adjectives",
+        "content": "Group dependent prepositions by the word class they attach to — this is the most useful mental filing system.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Verbs + preposition",
+            "headers": [
+              "Verb",
+              "Prep",
+              "Example"
+            ],
+            "rows": [
+              [
+                "depend",
+                "**on**",
+                "It depends on the weather."
+              ],
+              [
+                "listen",
+                "**to**",
+                "Listen to the music."
+              ],
+              [
+                "wait",
+                "**for**",
+                "Wait for me."
+              ],
+              [
+                "apply",
+                "**for**",
+                "Apply for the job."
+              ],
+              [
+                "complain",
+                "**about**",
+                "Complain about the noise."
+              ],
+              [
+                "suffer",
+                "**from**",
+                "Suffer from headaches."
+              ],
+              [
+                "consist",
+                "**of**",
+                "Consist of three parts."
+              ],
+              [
+                "succeed",
+                "**in**",
+                "Succeed in the exam."
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "title": "Nouns + preposition",
+            "headers": [
+              "Noun",
+              "Prep",
+              "Example"
+            ],
+            "rows": [
+              [
+                "reason",
+                "**for**",
+                "the reason for the delay"
+              ],
+              [
+                "solution",
+                "**to**",
+                "a solution to the problem"
+              ],
+              [
+                "answer",
+                "**to**",
+                "the answer to the question"
+              ],
+              [
+                "increase",
+                "**in**",
+                "an increase in prices"
+              ],
+              [
+                "interest",
+                "**in**",
+                "an interest in art"
+              ],
+              [
+                "relationship",
+                "**with**",
+                "a relationship with colleagues"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "title": "Adjectives + preposition",
+            "headers": [
+              "Adjective",
+              "Prep",
+              "Example"
+            ],
+            "rows": [
+              [
+                "interested",
+                "**in**",
+                "interested in history"
+              ],
+              [
+                "good",
+                "**at**",
+                "good at maths"
+              ],
+              [
+                "afraid",
+                "**of**",
+                "afraid of spiders"
+              ],
+              [
+                "proud",
+                "**of**",
+                "proud of her work"
+              ],
+              [
+                "tired",
+                "**of**",
+                "tired of waiting"
+              ],
+              [
+                "responsible",
+                "**for**",
+                "responsible for the project"
+              ],
+              [
+                "worried",
+                "**about**",
+                "worried about the exam"
+              ],
+              [
+                "similar",
+                "**to**",
+                "similar to mine"
+              ]
+            ]
+          }
+        ],
+        "root_ids": [
+          "B2.collocations.dependent_prepositions"
+        ],
         "cefr_level": "B2"
       },
       {
-        "title": "Why they matter",
-        "content": "Dependent prepositions are very common in exams (especially gap-fill and open cloze).\n\nThere is no single rule — you have to learn each pair as a chunk (e.g. depend **on**, interested **in**).",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
-        "cefr_level": "B2"
-      },
-      {
-        "title": "Verbs + preposition",
-        "content": "Common examples:\n• depend **on**\n• listen **to**\n• wait **for**\n• apply **for**\n• complain **about**\n• suffer **from**",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
-        "cefr_level": "B2"
-      },
-      {
-        "title": "Nouns + preposition",
-        "content": "Common examples:\n• reason **for**\n• solution **to**\n• answer **to**\n• increase **in**\n• interest **in**\n• relationship **with**",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
-        "cefr_level": "B2"
-      },
-      {
-        "title": "Adjectives + preposition",
-        "content": "Common examples:\n• interested **in**\n• good **at**\n• afraid **of**\n• proud **of**\n• tired **of**\n• responsible **for**\n• worried **about**",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
-        "cefr_level": "B2"
-      },
-      {
-        "title": "Useful pattern",
-        "content": "Often the noun follows the same preposition as the verb/adjective:\n\ninterested **in** → interest **in**\ncomplain **about** → complaint **about**",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
-        "cefr_level": "B2"
-      },
-      {
-        "title": "How to learn them",
-        "content": "There is no single rule — you have to learn each combination as a **chunk**. Try these strategies:\n\n• Write the preposition together with the word: *depend **on***, not just *depend*.\n• When you meet a new one, add it to a list under Verb / Noun / Adjective.\n• Full reference lists are in the **Dependent Prepositions** section under Reference.",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
+        "title": "How to learn them + reference",
+        "content": "Write the preposition together with the word (*depend **on***, not just *depend*). When you meet a new one, file it under Verb / Noun / Adjective. Full reference lists: **Reference → Dependent Prepositions**.",
+        "diagrams": [
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech prepositions rarely map onto English ones one-to-one. Dobře v matematice → good AT maths. Závisí na… → depends ON. Learn the English chunk, not the translation."
+          }
+        ],
+        "root_ids": [
+          "B2.collocations.dependent_prepositions"
+        ],
         "cefr_level": "B2"
       }
     ]
   },
   "check": {
     "title": "Test your understanding",
-    "root_ids": ["B2.collocations.dependent_prepositions"],
+    "root_ids": [
+      "B2.collocations.dependent_prepositions"
+    ],
     "cefr_level": "B2",
     "questions": [
       {
@@ -127,7 +276,9 @@
   "practice": {
     "guided_mc": {
       "title": "Guided practice: Dependent prepositions (10 MC)",
-      "root_ids": ["B2.collocations.dependent_prepositions"],
+      "root_ids": [
+        "B2.collocations.dependent_prepositions"
+      ],
       "cefr_level": "B2",
       "questions": [
         {
@@ -254,7 +405,9 @@
     },
     "gapfill_simple": {
       "title": "Guided practice: Common dependent prepositions",
-      "root_ids": ["B2.collocations.dependent_prepositions"],
+      "root_ids": [
+        "B2.collocations.dependent_prepositions"
+      ],
       "cefr_level": "B2",
       "questions": [
         {
@@ -341,7 +494,9 @@
     },
     "gapfill_common": {
       "title": "Further practice: Verbs, nouns, and adjectives + preposition",
-      "root_ids": ["B2.collocations.dependent_prepositions"],
+      "root_ids": [
+        "B2.collocations.dependent_prepositions"
+      ],
       "cefr_level": "B2",
       "questions": [
         {

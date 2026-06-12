@@ -8,7 +8,66 @@
         "root_ids": [
           "B1.verb_patterns.to_inf_vs_ing"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "to-infinitive",
+                "items": [
+                  "want",
+                  "hope",
+                  "plan",
+                  "decide",
+                  "agree",
+                  "refuse",
+                  "promise",
+                  "offer",
+                  "manage",
+                  "expect",
+                  "learn",
+                  "need",
+                  "fail",
+                  "pretend",
+                  "seem"
+                ]
+              },
+              {
+                "label": "-ing (gerund)",
+                "items": [
+                  "enjoy",
+                  "finish",
+                  "avoid",
+                  "mind",
+                  "suggest",
+                  "recommend",
+                  "deny",
+                  "admit",
+                  "consider",
+                  "imagine",
+                  "miss",
+                  "practise",
+                  "postpone",
+                  "keep"
+                ]
+              },
+              {
+                "label": "bare infinitive",
+                "items": [
+                  "can / could",
+                  "will / would",
+                  "shall / should",
+                  "may / might",
+                  "must",
+                  "make + obj",
+                  "let + obj",
+                  "have + obj"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Verbs + to-infinitive",
@@ -16,7 +75,13 @@
         "root_ids": [
           "B1.verb_patterns.to_inf_vs_ing"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Also to-infinitive: after adjectives (happy to help), after too/enough (too tired to work), and to express purpose (I came to see you)."
+          }
+        ]
       },
       {
         "title": "Verbs + -ing (gerund)",
@@ -24,7 +89,13 @@
         "root_ids": [
           "B1.verb_patterns.to_inf_vs_ing"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Also -ing after ANY preposition: interested in learning, tired of waiting, look forward to seeing (here 'to' is a preposition — it needs -ing, not to-infinitive!)."
+          }
+        ]
       },
       {
         "title": "Verbs that take EITHER — no meaning change",
@@ -32,46 +103,54 @@
         "root_ids": [
           "B1.verb_patterns.to_inf_vs_ing"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "like/love/hate/prefer/start/begin/continue — both patterns, no real difference in meaning. Don't overthink: -ing is slightly more natural for habits; to-infinitive is slightly more formal."
+          }
+        ]
       },
       {
         "title": "Verbs that take EITHER — with meaning change (B2 trap)",
         "content": "**The big four** — same verb, two patterns, **different meanings**. These show up in every B2 exam (FCE, CAE) as open cloze or sentence transformation.\n\n**Why it matters**: Get the pattern wrong and you say the opposite of what you mean. \"I stopped smoking\" (= I quit) vs \"I stopped to smoke\" (= I paused in order to have a cigarette) — two completely different lives.\n\n**Examples in pairs**:\n- I **remembered to lock** the door. (= I didn't forget — looking forward)\n- I **remember locking** the door. (= I recall doing it — looking back)\n- She **forgot to call** him. (= she didn't do it)\n- She'll never **forget meeting** him. (= she remembers the experience)\n\n**Plus regret + to / -ing** (B2/C1): *I **regret to inform** you...* (formal, sorry to say) vs *I **regret telling** her* (sorry about the past action).",
-        "diagram": {
-          "type": "table",
-          "title": "Meaning-change verbs: to-infinitive vs -ing",
-          "headers": [
-            "Verb",
-            "+ to-infinitive",
-            "+ -ing"
-          ],
-          "rows": [
-            [
-              "**remember**",
-              "don't forget to do (future) — *Remember to post the letter.*",
-              "recall doing (past) — *I remember posting it.*"
-            ],
-            [
-              "**forget**",
-              "fail to do — *I forgot to call.*",
-              "have no memory of — *I'll never forget seeing it.*"
-            ],
-            [
-              "**stop**",
-              "pause in order to do — *He stopped to smoke.*",
-              "cease the activity — *He stopped smoking last year.*"
-            ],
-            [
-              "**try**",
-              "attempt (effort) — *Try to open the window.*",
-              "experiment as a strategy — *Try opening the window.*"
-            ]
-          ]
-        },
         "root_ids": [
           "B2.verb_patterns.meaning_change"
         ],
-        "cefr_level": "B2"
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Meaning-change verbs: to-infinitive vs -ing",
+            "headers": [
+              "Verb",
+              "+ to-infinitive",
+              "+ -ing"
+            ],
+            "rows": [
+              [
+                "**remember**",
+                "don't forget to do (future) — *Remember to post the letter.*",
+                "recall doing (past) — *I remember posting it.*"
+              ],
+              [
+                "**forget**",
+                "fail to do — *I forgot to call.*",
+                "have no memory of — *I'll never forget seeing it.*"
+              ],
+              [
+                "**stop**",
+                "pause in order to do — *He stopped to smoke.*",
+                "cease the activity — *He stopped smoking last year.*"
+              ],
+              [
+                "**try**",
+                "attempt (effort) — *Try to open the window.*",
+                "experiment as a strategy — *Try opening the window.*"
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "Bare infinitive — special cases",
@@ -80,7 +159,13 @@
           "A2.verb_patterns.basic",
           "B1.verb_patterns.to_inf_vs_ing"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Never use 'to' with modals: I can swim (not can to swim). Never use 'to' with make/let/have/see/hear + object: She made me wait (not made me to wait)."
+          }
+        ]
       },
       {
         "title": "Common Czech-speaker errors + roadmap",
@@ -89,7 +174,45 @@
           "B1.verb_patterns.to_inf_vs_ing",
           "B2.verb_patterns.meaning_change"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "examples",
+            "title": "High-frequency Czech-speaker errors",
+            "items": [
+              {
+                "bad": "I want learning English.",
+                "good": "I want to learn English.",
+                "why": "want + to-infinitive"
+              },
+              {
+                "bad": "She enjoys to read.",
+                "good": "She enjoys reading.",
+                "why": "enjoy + -ing"
+              },
+              {
+                "bad": "I look forward to see you.",
+                "good": "I look forward to seeing you.",
+                "why": "to here is a preposition → -ing"
+              },
+              {
+                "bad": "She made him to laugh.",
+                "good": "She made him laugh.",
+                "why": "make + bare infinitive"
+              },
+              {
+                "bad": "I can to swim.",
+                "good": "I can swim.",
+                "why": "modals + bare infinitive"
+              },
+              {
+                "bad": "He suggested to go early.",
+                "good": "He suggested going early.",
+                "why": "suggest + -ing"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

@@ -5,38 +5,169 @@
       {
         "title": "Abstract nouns – generic vs specific",
         "content": "Abstract uncountables (love, time, music, knowledge, history) take **no article** when used generally, but take **the** when made specific by context:\n\n• ∅ **Love** is essential. (general)\n• **The love** she has for her children is incredible. (specific)\n• ∅ **History** repeats itself.\n• **The history** of the Czech Republic is fascinating.\n• ∅ **Music** helps me concentrate.\n• **The music** in the café was too loud.",
-        "root_ids": ["B2.articles.advanced"],
-        "cefr_level": "B2"
+        "root_ids": [
+          "B2.articles.advanced"
+        ],
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "∅ Love is essential.",
+                "why": "abstract uncountable — general sense"
+              },
+              {
+                "good": "The love she has for her children is incredible.",
+                "why": "made specific by context → the"
+              },
+              {
+                "good": "∅ History repeats itself."
+              },
+              {
+                "good": "The history of the Czech Republic is fascinating."
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "The + adjective for groups",
         "content": "Use **the + adjective** to refer to a whole group of people:\n\n• **the rich**, **the poor**, **the elderly**, **the homeless**, **the unemployed**\n• **the French**, **the British**, **the Chinese**, **the Japanese** (nationalities ending in -ch / -sh / -ese)\n\n*The rich should help the poor. The elderly deserve our respect.*",
-        "root_ids": ["B2.articles.advanced"],
-        "cefr_level": "B2"
+        "root_ids": [
+          "B2.articles.advanced"
+        ],
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "the + adj (whole group)",
+                "items": [
+                  "the rich",
+                  "the poor",
+                  "the elderly",
+                  "the homeless",
+                  "the unemployed"
+                ]
+              },
+              {
+                "label": "the + nationality (-ch/-sh/-ese)",
+                "items": [
+                  "the French",
+                  "the British",
+                  "the Chinese",
+                  "the Japanese"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Subjects of study and job titles",
         "content": "**Subjects of study** take no article: study ∅ **history**, ∅ **economics**, ∅ **mathematics**, ∅ **chemistry**.\n\n**Title + name** takes no article: ∅ **Doctor Smith**, ∅ **Professor Novák**, ∅ **President Obama**.\n\n**Unique role in context** takes the: **the** President, **the** Prime Minister, **the** Queen.\n\nCompare: *She's **a** doctor* (profession, one of many) vs *∅ **Doctor Smith** is on holiday* (title + name) vs ***The** doctor will see you now* (specific one).",
-        "root_ids": ["B2.articles.advanced"],
-        "cefr_level": "B2"
+        "root_ids": [
+          "B2.articles.advanced"
+        ],
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "She's a doctor.",
+                "why": "profession, one of many → a"
+              },
+              {
+                "good": "Doctor Smith is on holiday.",
+                "why": "title + name → no article"
+              },
+              {
+                "good": "The doctor will see you now.",
+                "why": "specific one in context → the"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Geographic names – the full picture",
         "content": "**No article** (∅): most countries (France, Japan), continents (Europe, Asia), cities (Prague, London), most streets (Oxford Street), individual peaks with 'Mount' (Mount Everest, Mount Snowdon), lakes with 'Lake' (Lake Geneva).\n\n**With 'the'**: plural-form countries (**the** Netherlands, **the** Philippines), country-with-common-noun (**the** UK, **the** USA, **the** Czech Republic), regions (**the** Middle East, **the** Caribbean), mountain ranges (**the** Alps, **the** Himalayas), bare-name peaks (**the** Matterhorn), rivers (**the** Thames, **the** Vltava), seas and oceans (**the** Pacific, **the** Mediterranean), canals (**the** Suez Canal), deserts (**the** Sahara), a few cities (**the** Hague, **the** Bronx).",
-        "root_ids": ["B2.articles.advanced"],
-        "cefr_level": "B2"
+        "root_ids": [
+          "B2.articles.advanced"
+        ],
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "title": "Geographic names: ∅ vs the",
+            "left": {
+              "title": "No article (∅)",
+              "points": [
+                "Countries: France, Japan",
+                "Continents: Europe, Asia",
+                "Cities: Prague, London",
+                "Most streets: Oxford Street",
+                "'Lake Geneva', 'Mount Everest'"
+              ]
+            },
+            "right": {
+              "title": "With 'the'",
+              "points": [
+                "Plural-form countries: the Netherlands",
+                "Country + noun: the UK, the Czech Republic",
+                "Regions: the Middle East",
+                "Mountain ranges: the Alps",
+                "Rivers: the Thames, the Vltava",
+                "Seas & oceans: the Pacific"
+              ]
+            }
+          }
+        ]
       },
       {
         "title": "Proper nouns and names",
         "content": "**With 'the'**: newspapers (**the** Times, **the** Guardian), most hotels (**the** Hilton, **the** Ritz), descriptive-name buildings (**the** White House, **the** Empire State Building), ships (**the** Titanic), letter-acronym organisations (**the** BBC, **the** EU, **the** UN), 'the University of X'.\n\n**No article** (∅): company names (Microsoft, Google), palaces named after a person (Buckingham Palace, Windsor Castle), shops named after their founder (Harrods, Tesco), 'X University' (Cambridge University, Oxford University), word-acronym organisations (NATO, UNESCO, NASA).",
-        "root_ids": ["B2.articles.advanced"],
-        "cefr_level": "B2"
+        "root_ids": [
+          "B2.articles.advanced"
+        ],
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "title": "Proper nouns: ∅ vs the",
+            "left": {
+              "title": "With 'the'",
+              "points": [
+                "the Times, the Guardian",
+                "the Hilton, the Ritz",
+                "the White House",
+                "the BBC, the EU, the UN",
+                "'the University of X'"
+              ]
+            },
+            "right": {
+              "title": "No article (∅)",
+              "points": [
+                "Microsoft, Google",
+                "Buckingham Palace",
+                "Harrods, Tesco",
+                "Cambridge University",
+                "NATO, UNESCO, NASA"
+              ]
+            }
+          }
+        ]
       }
     ]
   },
   "check": {
     "title": "Test your understanding",
-    "root_ids": ["B2.articles.advanced"],
+    "root_ids": [
+      "B2.articles.advanced"
+    ],
     "cefr_level": "B2",
     "questions": []
   },

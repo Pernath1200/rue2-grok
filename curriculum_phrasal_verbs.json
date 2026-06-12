@@ -16,7 +16,24 @@
         "root_ids": [
           "B1.phrasal_verbs.basic"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "TAKE + particle",
+                "items": [
+                  "take off (leave/remove)",
+                  "take after (resemble)",
+                  "take on (accept)",
+                  "take in (understand/deceive)",
+                  "take over (control)"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Transitive vs intransitive",
@@ -24,41 +41,59 @@
         "root_ids": [
           "B1.phrasal_verbs.basic"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "The plane took off at 6. (intransitive — no object)"
+              },
+              {
+                "good": "She made up a story. (transitive — needs object)"
+              },
+              {
+                "good": "She turned up late. (intransitive) / She turned up the volume. (transitive — different meaning)"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Separable vs inseparable — the position rule",
         "content": "For **transitive** phrasal verbs, where does the object go? This is the highest-value mechanical rule.\n\n**Separable** (most common): the object can go **before OR after** the particle.\n- *Turn **on** the light.* / *Turn the light **on**.* — both fine.\n\n**BUT** if the object is a **pronoun** (it, him, her, them...), it **MUST** go between the verb and the particle.\n- *Turn **it** on.* ✓\n- *Turn on **it**.* ✗\n\n**Inseparable** (a smaller set): the verb + particle stay glued together. The object always comes after.\n- *Look **after** the children.* ✓\n- *Look the children **after**.* ✗\n- *Look **after** them.* ✓ (pronoun also after the particle)\n\n**Why it matters**: pronoun word order is the #1 error pattern. Native speakers immediately hear *turn on it* as wrong. There's no reliable rule for which verbs are separable vs inseparable — learn each one as you meet it.",
-        "diagram": {
-          "type": "table",
-          "title": "Separable vs inseparable — object position",
-          "headers": [
-            "Type",
-            "Noun object",
-            "Pronoun object"
-          ],
-          "rows": [
-            [
-              "**Separable** (e.g. *turn on*)",
-              "Turn on the light / Turn the light on",
-              "Turn **it** on (NOT *turn on it*)"
-            ],
-            [
-              "**Inseparable** (e.g. *look after*)",
-              "Look after the children",
-              "Look after **them** (NOT *look them after*)"
-            ],
-            [
-              "**Intransitive** (e.g. *take off*)",
-              "no object — The plane took off",
-              "—"
-            ]
-          ]
-        },
         "root_ids": [
           "B1.phrasal_verbs.basic"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Separable vs inseparable — object position",
+            "headers": [
+              "Type",
+              "Noun object",
+              "Pronoun object"
+            ],
+            "rows": [
+              [
+                "**Separable** (e.g. *turn on*)",
+                "Turn on the light / Turn the light on",
+                "Turn **it** on (NOT *turn on it*)"
+              ],
+              [
+                "**Inseparable** (e.g. *look after*)",
+                "Look after the children",
+                "Look after **them** (NOT *look them after*)"
+              ],
+              [
+                "**Intransitive** (e.g. *take off*)",
+                "no object — The plane took off",
+                "—"
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "Three-part phrasal verbs",
@@ -66,57 +101,65 @@
         "root_ids": [
           "B2.phrasal_verbs.extended"
         ],
-        "cefr_level": "B2"
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Gerund trap: when 'to' is the preposition (not the infinitive marker), the next verb takes -ing. 'I look forward to SEEING you.' 'She objects to PAYING extra.' 'He's used to WORKING late.'"
+          }
+        ]
       },
       {
         "title": "High-frequency families",
         "content": "A handful of very common verbs produce dozens of phrasal verbs. Learning these families gives you a huge return for the effort.\n\n**Why it matters**: these are the phrasal verbs you'll hear in every conversation, film, and podcast. Building familiarity with the families is faster than learning isolated items — the verb stays the same, only the particle (and meaning) changes.",
-        "diagram": {
-          "type": "table",
-          "title": "High-frequency phrasal verb families",
-          "headers": [
-            "Verb",
-            "Phrasal verb",
-            "Meaning"
-          ],
-          "rows": [
-            [
-              "**GO**",
-              "go on / go off / go through / go over",
-              "continue / explode or stop working / experience or examine / review"
-            ],
-            [
-              "**GET**",
-              "get up / get on / get over / get away",
-              "rise / board (a bus) or progress / recover / escape"
-            ],
-            [
-              "**TAKE**",
-              "take off / take after / take in / take over",
-              "leave (plane) / resemble / understand or deceive / assume control"
-            ],
-            [
-              "**MAKE**",
-              "make up / make out / make for",
-              "invent or reconcile / understand with difficulty / head towards"
-            ],
-            [
-              "**TURN**",
-              "turn on / turn off / turn up / turn down / turn into",
-              "switch on / switch off / arrive or increase / refuse or lower / become"
-            ],
-            [
-              "**PUT**",
-              "put on / put off / put up with / put away",
-              "wear / postpone / tolerate / store"
-            ]
-          ]
-        },
         "root_ids": [
           "B1.phrasal_verbs.basic",
           "B2.phrasal_verbs.extended"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "High-frequency phrasal verb families",
+            "headers": [
+              "Verb",
+              "Phrasal verb",
+              "Meaning"
+            ],
+            "rows": [
+              [
+                "**GO**",
+                "go on / go off / go through / go over",
+                "continue / explode or stop working / experience or examine / review"
+              ],
+              [
+                "**GET**",
+                "get up / get on / get over / get away",
+                "rise / board (a bus) or progress / recover / escape"
+              ],
+              [
+                "**TAKE**",
+                "take off / take after / take in / take over",
+                "leave (plane) / resemble / understand or deceive / assume control"
+              ],
+              [
+                "**MAKE**",
+                "make up / make out / make for",
+                "invent or reconcile / understand with difficulty / head towards"
+              ],
+              [
+                "**TURN**",
+                "turn on / turn off / turn up / turn down / turn into",
+                "switch on / switch off / arrive or increase / refuse or lower / become"
+              ],
+              [
+                "**PUT**",
+                "put on / put off / put up with / put away",
+                "wear / postpone / tolerate / store"
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "Common Czech-speaker errors & strategies",
@@ -125,7 +168,30 @@
           "B1.phrasal_verbs.basic",
           "B2.phrasal_verbs.extended"
         ],
-        "cefr_level": "B2"
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "examples",
+            "title": "Common errors",
+            "items": [
+              {
+                "bad": "Look the children after.",
+                "good": "Look after the children.",
+                "why": "inseparable — particle cannot be split"
+              },
+              {
+                "bad": "Turn on it.",
+                "good": "Turn it on.",
+                "why": "pronoun MUST go between verb and particle"
+              },
+              {
+                "bad": "She came up a solution.",
+                "good": "She came up with a solution.",
+                "why": "three-part verbs — never drop the third word"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

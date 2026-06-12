@@ -8,7 +8,13 @@
         "root_ids": [
           "A2.spelling.basic"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Each question gives a sentence with one spelling mistake — find it and correct it. The explanation tells you the rule to remember."
+          }
+        ]
       },
       {
         "title": "How to improve your spelling",
@@ -16,7 +22,54 @@
         "root_ids": [
           "A2.spelling.basic"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "Double letters",
+                "items": [
+                  "accommodation (cc+mm)",
+                  "necessary (1c+ss)",
+                  "occurred",
+                  "beginning",
+                  "committee"
+                ]
+              },
+              {
+                "label": "-ance / -ence endings",
+                "items": [
+                  "difference",
+                  "appearance",
+                  "independence",
+                  "performance",
+                  "existence"
+                ]
+              },
+              {
+                "label": "Silent letters",
+                "items": [
+                  "knowledge",
+                  "foreign",
+                  "government",
+                  "environment",
+                  "parliament"
+                ]
+              },
+              {
+                "label": "Common traps",
+                "items": [
+                  "definitely (not -ately)",
+                  "separate (not -per-)",
+                  "receive (i before e after c)",
+                  "achieve",
+                  "weird"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },

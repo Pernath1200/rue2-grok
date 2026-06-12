@@ -13,91 +13,95 @@
       {
         "title": "The form rules — short vs long adjectives",
         "content": "**The big split** — the single most important rule in this topic.\n\n**Short adjectives** (1 syllable, or 2 ending in *-y*): add **-er / -est**.\n- *tall → taller → the tallest*\n- *big → bigger → the biggest* (double the consonant)\n- *happy → happier → the happiest* (-y → -i)\n- *nice → nicer → the nicest* (drop final -e)\n\n**Long adjectives** (2+ syllables, usually): use **more / most**.\n- *expensive → more expensive → the most expensive*\n- *interesting → more interesting → the most interesting*\n\n**Why it matters**: Mixing the two camps is the #1 error (*more taller*, *interestinger*). Get the split right and the rest follows.",
-        "diagram": {
-          "type": "table",
-          "title": "Comparative & superlative forms",
-          "headers": [
-            "Adjective type",
-            "Comparative",
-            "Superlative",
-            "Example"
-          ],
-          "rows": [
-            [
-              "Short (1 syll.)",
-              "+ **-er**",
-              "the + **-est**",
-              "tall → taller → the tallest"
-            ],
-            [
-              "Short ending in consonant + y",
-              "+ **-ier**",
-              "the + **-iest**",
-              "happy → happier → the happiest"
-            ],
-            [
-              "Short ending in vowel + consonant",
-              "double + **-er**",
-              "double + **-est**",
-              "big → bigger → the biggest"
-            ],
-            [
-              "Long (2+ syll.)",
-              "**more** + adj",
-              "**the most** + adj",
-              "expensive → more expensive → the most expensive"
-            ]
-          ]
-        },
         "root_ids": [
           "A2.comparatives.form_basic",
           "A2.comparatives.superlative"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Comparative & superlative forms",
+            "headers": [
+              "Adjective type",
+              "Comparative",
+              "Superlative",
+              "Example"
+            ],
+            "rows": [
+              [
+                "Short (1 syll.)",
+                "+ **-er**",
+                "the + **-est**",
+                "tall → taller → the tallest"
+              ],
+              [
+                "Short ending in consonant + y",
+                "+ **-ier**",
+                "the + **-iest**",
+                "happy → happier → the happiest"
+              ],
+              [
+                "Short ending in vowel + consonant",
+                "double + **-er**",
+                "double + **-est**",
+                "big → bigger → the biggest"
+              ],
+              [
+                "Long (2+ syll.)",
+                "**more** + adj",
+                "**the most** + adj",
+                "expensive → more expensive → the most expensive"
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "Irregular forms — the must-know list",
         "content": "A small group of high-frequency adjectives ignore the rules. Learn them as a set.\n\n**Why it matters**: These are some of the most-used words in English — you cannot avoid them. *Good*, *bad*, and *much/many* alone account for a huge slice of everyday comparison.",
-        "diagram": {
-          "type": "table",
-          "title": "Irregular comparatives & superlatives",
-          "headers": [
-            "Adjective",
-            "Comparative",
-            "Superlative"
-          ],
-          "rows": [
-            [
-              "**good**",
-              "better",
-              "the best"
-            ],
-            [
-              "**bad**",
-              "worse",
-              "the worst"
-            ],
-            [
-              "**far**",
-              "farther / further",
-              "the farthest / furthest"
-            ],
-            [
-              "**little**",
-              "less",
-              "the least"
-            ],
-            [
-              "**much / many**",
-              "more",
-              "the most"
-            ]
-          ]
-        },
         "root_ids": [
           "A2.comparatives.form_basic"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Irregular comparatives & superlatives",
+            "headers": [
+              "Adjective",
+              "Comparative",
+              "Superlative"
+            ],
+            "rows": [
+              [
+                "**good**",
+                "better",
+                "the best"
+              ],
+              [
+                "**bad**",
+                "worse",
+                "the worst"
+              ],
+              [
+                "**far**",
+                "farther / further",
+                "the farthest / furthest"
+              ],
+              [
+                "**little**",
+                "less",
+                "the least"
+              ],
+              [
+                "**much / many**",
+                "more",
+                "the most"
+              ]
+            ]
+          }
+        ]
       },
       {
         "title": "than after comparatives",
@@ -105,7 +109,14 @@
         "root_ids": [
           "A2.comparatives.form_basic"
         ],
-        "cefr_level": "A2"
+        "cefr_level": "A2",
+        "diagrams": [
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech 'než' maps cleanly onto 'than' — but don't drop it. 'She is taller me' is one of the most common written errors. 'Than' is obligatory."
+          }
+        ]
       },
       {
         "title": "(not) as … as — equality and softer comparison",
@@ -113,7 +124,27 @@
         "root_ids": [
           "B1.comparatives.as_as"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "She's as tall as her sister.",
+                "why": "equal comparison"
+              },
+              {
+                "good": "She's not as tall as her brother.",
+                "why": "softer than 'shorter than'"
+              },
+              {
+                "bad": "not so tall like her brother",
+                "good": "not as tall as her brother",
+                "why": "pattern is always 'as … as', never 'like'"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "less / least — the opposite direction",
@@ -130,7 +161,30 @@
         "root_ids": [
           "B2.comparatives.advanced"
         ],
-        "cefr_level": "B2"
+        "cefr_level": "B2",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "The older he gets, the wiser he becomes.",
+                "why": "the … the … (parallel change)"
+              },
+              {
+                "good": "It's getting bigger and bigger.",
+                "why": "repeated comparative — increasing change"
+              },
+              {
+                "good": "This is far more expensive than that.",
+                "why": "big difference modifier: far / much / a lot"
+              },
+              {
+                "good": "She's a bit taller than me.",
+                "why": "small difference: a bit / slightly / a little"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "Common Czech-speaker errors + roadmap",
@@ -140,7 +194,50 @@
           "A2.comparatives.superlative",
           "B1.comparatives.as_as"
         ],
-        "cefr_level": "B1"
+        "cefr_level": "B1",
+        "diagrams": [
+          {
+            "type": "examples",
+            "title": "High-frequency Czech-speaker errors",
+            "items": [
+              {
+                "bad": "more taller",
+                "good": "taller",
+                "why": "never double comparative"
+              },
+              {
+                "bad": "the most happiest",
+                "good": "the happiest",
+                "why": "never double superlative"
+              },
+              {
+                "bad": "interestinger",
+                "good": "more interesting",
+                "why": "long adjective → more"
+              },
+              {
+                "bad": "more tall than",
+                "good": "taller than",
+                "why": "short adjective → -er"
+              },
+              {
+                "bad": "She is taller me",
+                "good": "She is taller than me",
+                "why": "never drop 'than'"
+              },
+              {
+                "bad": "not so tall like her",
+                "good": "not as tall as her",
+                "why": "pattern: as … as"
+              },
+              {
+                "bad": "worser / more better",
+                "good": "worse / better",
+                "why": "irregular forms — no extra ending"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
