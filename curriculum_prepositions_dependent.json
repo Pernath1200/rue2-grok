@@ -4,57 +4,153 @@
     "sections": [
       {
         "title": "What are dependent prepositions?",
-        "content": "**Dependent prepositions** are fixed prepositions that belong to a particular verb, noun or adjective.\n\nYou cannot change them without sounding wrong.\n\nExample: interested **in** (not *interested on* or *interested at*).",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
+        "content": "**Dependent prepositions** are fixed prepositions that belong to a particular verb, noun or adjective.\n- You cannot change them without sounding wrong.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "interested **in**",
+                "bad": "interested on / interested at",
+                "why": "the preposition is fixed"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B2.collocations.dependent_prepositions"
+        ],
         "cefr_level": "B2"
       },
       {
         "title": "Examples",
-        "content": "• I'm interested **in** history.\n• It depends **on** the weather.\n• She's good **at** maths.\n• We complained **about** the noise.\n\nChanging the preposition usually makes the sentence wrong.",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
+        "content": "Changing the preposition usually makes the sentence wrong.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I'm interested **in** history."
+              },
+              {
+                "good": "It depends **on** the weather."
+              },
+              {
+                "good": "She's good **at** maths."
+              },
+              {
+                "good": "We complained **about** the noise."
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B2.collocations.dependent_prepositions"
+        ],
         "cefr_level": "B2"
       },
       {
         "title": "Why they matter",
-        "content": "Dependent prepositions are very common in exams (especially gap-fill and open cloze).\n\nThere is no single rule — you have to learn each pair as a chunk (e.g. depend **on**, interested **in**).",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
+        "content": "Dependent prepositions are very common in exams — especially gap-fill and open cloze.",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "There is no single rule — you have to learn each pair as a **chunk** (e.g. depend **on**, interested **in**)."
+          }
+        ],
+        "root_ids": [
+          "B2.collocations.dependent_prepositions"
+        ],
         "cefr_level": "B2"
       },
       {
-        "title": "Verbs + preposition",
-        "content": "Common examples:\n• depend **on**\n• listen **to**\n• wait **for**\n• apply **for**\n• complain **about**\n• suffer **from**",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
-        "cefr_level": "B2"
-      },
-      {
-        "title": "Nouns + preposition",
-        "content": "Common examples:\n• reason **for**\n• solution **to**\n• answer **to**\n• increase **in**\n• interest **in**\n• relationship **with**",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
-        "cefr_level": "B2"
-      },
-      {
-        "title": "Adjectives + preposition",
-        "content": "Common examples:\n• interested **in**\n• good **at**\n• afraid **of**\n• proud **of**\n• tired **of**\n• responsible **for**\n• worried **about**",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
+        "title": "Verb / noun / adjective + preposition",
+        "content": "Common examples, grouped by the word the preposition belongs to.",
+        "diagrams": [
+          {
+            "type": "chips",
+            "title": "Common chunks",
+            "groups": [
+              {
+                "label": "verb +",
+                "items": [
+                  "depend on",
+                  "listen to",
+                  "wait for",
+                  "apply for",
+                  "complain about",
+                  "suffer from"
+                ]
+              },
+              {
+                "label": "noun +",
+                "items": [
+                  "reason for",
+                  "solution to",
+                  "answer to",
+                  "increase in",
+                  "interest in",
+                  "relationship with"
+                ]
+              },
+              {
+                "label": "adjective +",
+                "items": [
+                  "interested in",
+                  "good at",
+                  "afraid of",
+                  "proud of",
+                  "tired of",
+                  "responsible for",
+                  "worried about"
+                ]
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B2.collocations.dependent_prepositions"
+        ],
         "cefr_level": "B2"
       },
       {
         "title": "Useful pattern",
-        "content": "Often the noun follows the same preposition as the verb/adjective:\n\ninterested **in** → interest **in**\ncomplain **about** → complaint **about**",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
+        "content": "Often the noun follows the same preposition as the verb/adjective.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "items": [
+              {
+                "label": "adjective → noun",
+                "formula": "interested **in** → interest **in**"
+              },
+              {
+                "label": "verb → noun",
+                "formula": "complain **about** → complaint **about**"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B2.collocations.dependent_prepositions"
+        ],
         "cefr_level": "B2"
       },
       {
         "title": "How to learn them",
-        "content": "There is no single rule — you have to learn each combination as a **chunk**. Try these strategies:\n\n• Write the preposition together with the word: *depend **on***, not just *depend*.\n• When you meet a new one, add it to a list under Verb / Noun / Adjective.\n• Full reference lists are in the **Dependent Prepositions** section under Reference.",
-        "root_ids": ["B2.collocations.dependent_prepositions"],
+        "content": "There is no single rule — you have to learn each combination as a **chunk**. Try these strategies:\n- Write the preposition together with the word: *depend **on***, not just *depend*.\n- When you meet a new one, add it to a list under Verb / Noun / Adjective.\n- Full reference lists are in the **Dependent Prepositions** section under Reference.",
+        "root_ids": [
+          "B2.collocations.dependent_prepositions"
+        ],
         "cefr_level": "B2"
       }
     ]
   },
   "check": {
     "title": "Test your understanding",
-    "root_ids": ["B2.collocations.dependent_prepositions"],
+    "root_ids": [
+      "B2.collocations.dependent_prepositions"
+    ],
     "cefr_level": "B2",
     "questions": [
       {
@@ -127,7 +223,9 @@
   "practice": {
     "guided_mc": {
       "title": "Guided practice: Dependent prepositions (10 MC)",
-      "root_ids": ["B2.collocations.dependent_prepositions"],
+      "root_ids": [
+        "B2.collocations.dependent_prepositions"
+      ],
       "cefr_level": "B2",
       "questions": [
         {
@@ -254,7 +352,9 @@
     },
     "gapfill_simple": {
       "title": "Guided practice: Common dependent prepositions",
-      "root_ids": ["B2.collocations.dependent_prepositions"],
+      "root_ids": [
+        "B2.collocations.dependent_prepositions"
+      ],
       "cefr_level": "B2",
       "questions": [
         {
@@ -341,7 +441,9 @@
     },
     "gapfill_common": {
       "title": "Further practice: Verbs, nouns, and adjectives + preposition",
-      "root_ids": ["B2.collocations.dependent_prepositions"],
+      "root_ids": [
+        "B2.collocations.dependent_prepositions"
+      ],
       "cefr_level": "B2",
       "questions": [
         {

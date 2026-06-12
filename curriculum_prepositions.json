@@ -4,7 +4,35 @@
     "sections": [
       {
         "title": "What prepositions do (core logic)",
-        "content": "Prepositions link nouns to the rest of the sentence. They express **relationships** in time, place, movement, manner, or cause.\n\n**Why it matters (roots-first)**: These tiny words are part of the Prepositions & Particles root (#6 in the Tree Model). They are rule-face logic (spatial/temporal relations) + lexical-face chunks. Wrong preposition = wrong meaning or unnatural English. English prepositions rarely translate word-for-word from Czech or other L1s — learn the distinctions, not lists.\n\n**Key principle**: Start with the big systematic contrasts (at/on/in for time & place, movement pairs). Then add fixed uses.",
+        "content": "Prepositions link nouns to the rest of the sentence — **relationships** in time, place, movement, manner or cause.\n- Part of the Prepositions & Particles root (#6 in the Tree Model): rule-face logic (spatial/temporal relations) + lexical-face chunks.\n- Wrong preposition = wrong meaning or unnatural English.\n- **Key principle**: start with the big systematic contrasts, then add fixed uses.",
+        "diagrams": [
+          {
+            "type": "chips",
+            "title": "The big systematic contrasts",
+            "groups": [
+              {
+                "label": "time & place",
+                "items": [
+                  "at",
+                  "on",
+                  "in"
+                ]
+              },
+              {
+                "label": "movement pairs",
+                "items": [
+                  "to / into",
+                  "from / out of"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "English prepositions rarely translate word-for-word from Czech or other L1s — learn the distinctions, not lists."
+          }
+        ],
         "root_ids": [
           "A1.prepositions.place_basic"
         ],
@@ -12,33 +40,69 @@
       },
       {
         "title": "Time: at / on / in",
-        "content": "**The big three for time** — one of the highest-impact distinctions in English.\n\n**Why it matters**: Scheduling, stories, and exams all turn on this. \"Meet at 5\" vs \"on Monday\" vs \"in July\" tells the listener exactly when — or confuses them completely.\n\n**Contrast examples**:\n- I wake up **at** 7 o'clock. (exact clock time / night / weekend)\n- The lesson is **on** Monday 15 March. (specific day or date)\n- She was born **in** 2020 / **in** the morning / **in** summer. (longer periods, months, years, parts of day)\n\n**Rule of thumb**: at = point in time; on = day surface; in = container/period.",
-        "diagram": {
-          "type": "table",
-          "title": "at / on / in for time",
-          "headers": [
-            "Preposition",
-            "Used with",
-            "Example"
-          ],
-          "rows": [
-            [
-              "**at**",
-              "Clock time, night, weekend",
-              "at 5 o'clock, at noon, at night, at the weekend"
-            ],
-            [
-              "**on**",
-              "Days, dates",
-              "on Monday, on 15th March, on my birthday"
-            ],
-            [
-              "**in**",
-              "Months, years, longer periods",
-              "in August, in 2025, in the morning, in winter"
+        "content": "The big three for time — one of the highest-impact distinctions in English.\n\nScheduling, stories and exams all turn on this: *meet at 5* vs *on Monday* vs *in July* tells the listener exactly when — or confuses them completely. **Rule of thumb**: at = point in time; on = day surface; in = container/period.",
+        "diagrams": [
+          {
+            "type": "decision",
+            "title": "Which one for time?",
+            "steps": [
+              {
+                "q": "Exact clock time, night or the weekend?",
+                "yes": "at"
+              },
+              {
+                "q": "A specific day or date?",
+                "yes": "on"
+              },
+              {
+                "end": "in — months, years, longer periods, parts of day"
+              }
             ]
-          ]
-        },
+          },
+          {
+            "type": "table",
+            "title": "at / on / in for time",
+            "headers": [
+              "Preposition",
+              "Used with",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**at**",
+                "Clock time, night, weekend",
+                "at 5 o'clock, at noon, at night, at the weekend"
+              ],
+              [
+                "**on**",
+                "Days, dates",
+                "on Monday, on 15th March, on my birthday"
+              ],
+              [
+                "**in**",
+                "Months, years, longer periods",
+                "in August, in 2025, in the morning, in winter"
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I wake up **at** 7 o'clock.",
+                "why": "exact clock time / night / weekend"
+              },
+              {
+                "good": "The lesson is **on** Monday 15 March.",
+                "why": "specific day or date"
+              },
+              {
+                "good": "She was born **in** 2020 / **in** the morning / **in** summer.",
+                "why": "longer periods, months, years, parts of day"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.prepositions.time_basic"
         ],
@@ -46,33 +110,69 @@
       },
       {
         "title": "Place: at / on / in",
-        "content": "**The big three for place** — the same three prepositions, completely different logic from time.\n\n**Why it matters**: Location errors are among the most common and noticeable. \"The keys are in the car\" (inside) is not the same as \"on the car\" (surface).\n\n**Contrast examples**:\n- The book is **in** the box / **in** London / **in** the room. (enclosed space or area)\n- The picture is **on** the wall / **on** the table. (surface or line)\n- Meet me **at** the door / **at** the bus stop / **at** home. (specific point or location)\n\n**Cities & countries**: usually **in**. Specific points/addresses: often **at**.",
-        "diagram": {
-          "type": "table",
-          "title": "at / on / in for place",
-          "headers": [
-            "Preposition",
-            "Meaning",
-            "Example"
-          ],
-          "rows": [
-            [
-              "**in**",
-              "Inside / enclosed",
-              "in the box, in London, in the room"
-            ],
-            [
-              "**on**",
-              "On a surface or line",
-              "on the table, on the wall, on the street"
-            ],
-            [
-              "**at**",
-              "At a specific point or place",
-              "at the door, at the bus stop, at home"
+        "content": "The big three for place — the same three prepositions, completely different logic from time.\n\nLocation errors are common and noticeable: *the keys are in the car* (inside) is not the same as *on the car* (surface). **Cities & countries**: usually **in**. Specific points/addresses: often **at**.",
+        "diagrams": [
+          {
+            "type": "decision",
+            "title": "Which one for place?",
+            "steps": [
+              {
+                "q": "Inside an enclosed space or area?",
+                "yes": "in"
+              },
+              {
+                "q": "On a surface or line?",
+                "yes": "on"
+              },
+              {
+                "end": "at — a specific point or place"
+              }
             ]
-          ]
-        },
+          },
+          {
+            "type": "table",
+            "title": "at / on / in for place",
+            "headers": [
+              "Preposition",
+              "Meaning",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**in**",
+                "Inside / enclosed",
+                "in the box, in London, in the room"
+              ],
+              [
+                "**on**",
+                "On a surface or line",
+                "on the table, on the wall, on the street"
+              ],
+              [
+                "**at**",
+                "At a specific point or place",
+                "at the door, at the bus stop, at home"
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "The book is **in** the box / **in** London / **in** the room.",
+                "why": "enclosed space or area"
+              },
+              {
+                "good": "The picture is **on** the wall / **on** the table.",
+                "why": "surface or line"
+              },
+              {
+                "good": "Meet me **at** the door / **at** the bus stop / **at** home.",
+                "why": "specific point or location"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A1.prepositions.place_basic"
         ],
@@ -80,7 +180,75 @@
       },
       {
         "title": "Movement and direction",
-        "content": "Movement prepositions describe **change of position** (vs static place).\n\n**Core families & contrasts**:\n- **to / into** = direction toward or inside a goal (go to school, get into the car)\n- **from / out of** = origin or leaving (from London, get out of the car)\n- **through** = crossing an enclosed space side-to-side (through the tunnel / park)\n- **across** = crossing a surface side-to-side (across the road / bridge)\n- **along** = following the length of something (along the river)\n\n**Why it matters**: \"I walked **to** the park\" (I arrived) vs \"I walked **in** the park\" (I was already inside). Direction vs location is fundamental.\n\n**Practice contrast**: across the bridge (surface) vs through the forest (inside area).",
+        "content": "Movement prepositions describe **change of position** (vs static place).\n\nDirection vs location is fundamental.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Core families & contrasts",
+            "headers": [
+              "Preposition",
+              "Meaning",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**to / into**",
+                "direction toward or inside a goal",
+                "go to school, get into the car"
+              ],
+              [
+                "**from / out of**",
+                "origin or leaving",
+                "from London, get out of the car"
+              ],
+              [
+                "**through**",
+                "crossing an enclosed space side-to-side",
+                "through the tunnel / park"
+              ],
+              [
+                "**across**",
+                "crossing a surface side-to-side",
+                "across the road / bridge"
+              ],
+              [
+                "**along**",
+                "following the length of something",
+                "along the river"
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I walked **to** the park.",
+                "why": "direction — I arrived"
+              },
+              {
+                "good": "I walked **in** the park.",
+                "why": "location — I was already inside"
+              }
+            ]
+          },
+          {
+            "type": "comparison",
+            "left": {
+              "title": "across",
+              "points": [
+                "surface, side-to-side",
+                "across the bridge"
+              ]
+            },
+            "right": {
+              "title": "through",
+              "points": [
+                "inside an enclosed area",
+                "through the forest"
+              ]
+            }
+          }
+        ],
         "root_ids": [
           "A2.prepositions.movement"
         ],
@@ -88,7 +256,62 @@
       },
       {
         "title": "Duration, deadlines & periods",
-        "content": "Time expressions that answer \"How long?\" or \"By when?\"\n\n**Key contrasts**:\n- **for** + duration (how long something lasts): for two hours, for a week\n- **since** + starting point (still continuing): since 2020, since Monday\n- **by** = no later than (deadline): by Friday, by 5 pm\n- **until** = continues up to that point: until midnight, wait until tomorrow\n- **during** = at some point within a known period: during the meeting, during the film\n\n**Why it matters**: \"I've studied English **for** six months\" (length) tells a different story from \"**since** January\" (when it began). These are high-frequency in real life and gap-fills.\n\n**Bonus pair**: **before** / **after** (earlier/later than a point).",
+        "content": "Time expressions that answer \"How long?\" or \"By when?\" — high-frequency in real life and gap-fills.\n\n**Bonus pair**: **before** / **after** (earlier/later than a point).",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Key contrasts",
+            "headers": [
+              "Preposition",
+              "Meaning",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**for**",
+                "duration — how long something lasts",
+                "for two hours, for a week"
+              ],
+              [
+                "**since**",
+                "starting point, still continuing",
+                "since 2020, since Monday"
+              ],
+              [
+                "**by**",
+                "no later than (deadline)",
+                "by Friday, by 5 pm"
+              ],
+              [
+                "**until**",
+                "continues up to that point",
+                "until midnight, wait until tomorrow"
+              ],
+              [
+                "**during**",
+                "at some point within a known period",
+                "during the meeting, during the film"
+              ]
+            ]
+          },
+          {
+            "type": "comparison",
+            "left": {
+              "title": "for + duration",
+              "points": [
+                "length of time",
+                "I've studied English **for** six months."
+              ]
+            },
+            "right": {
+              "title": "since + starting point",
+              "points": [
+                "when it began",
+                "I've studied English **since** January."
+              ]
+            }
+          }
+        ],
         "root_ids": [
           "A2.prepositions.time_basic"
         ],
@@ -96,7 +319,36 @@
       },
       {
         "title": "Common errors & traps",
-        "content": "**High-frequency mistakes** (often L1 interference):\n\n- interested **on** music → **interested in**\n- It depends **from** you → **depends on**\n- She arrived **to** Prague → **arrived in** Prague (cities) / **at** the station (points)\n- I go **to** home every day → **I go home** (no preposition with home, school, work in this sense)\n- good **in** maths → **good at** maths\n\n**Why it matters**: These appear constantly in speaking, writing, and every exam gap-fill / open cloze. Fixing them gives immediate visible progress.\n\nMany more are fixed \"dependent\" combinations — see the separate Dependent Prepositions topic.",
+        "content": "High-frequency mistakes (often L1 interference) — fixing them gives immediate visible progress.\n\nThese appear constantly in speaking, writing, and every exam gap-fill / open cloze. Many more are fixed \"dependent\" combinations — see the separate Dependent Prepositions topic.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "interested **in** music",
+                "bad": "interested on music"
+              },
+              {
+                "good": "It depends **on** you.",
+                "bad": "It depends from you."
+              },
+              {
+                "good": "She arrived **in** Prague / **at** the station.",
+                "bad": "She arrived to Prague.",
+                "why": "*in* + cities, *at* + points"
+              },
+              {
+                "good": "I go **home** every day.",
+                "bad": "I go to home every day.",
+                "why": "no preposition with *home, school, work* in this sense"
+              },
+              {
+                "good": "good **at** maths",
+                "bad": "good in maths"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.prepositions.time_basic",
           "A1.prepositions.place_basic"
@@ -104,8 +356,55 @@
         "cefr_level": "A2"
       },
       {
-        "title": "Other high-frequency uses + roadmap",
-        "content": "**Useful everyday prepositions** (beyond the big groups):\n\n- **by** = means of transport or author (by train, written by...)\n- **with / without** = together or using / lacking (with a friend, cut with a knife, without help)\n- **of** = belonging, material, or part (the capital of France, made of wood, cup of tea)\n- **as** = role or function (work as a teacher, use as a tool)\n- **like** = similarity (looks like, sounds like)\n\n**Why it matters**: These are in almost every paragraph you read or write.\n\n**Direct practice in this curriculum** (start here after the cards):\n- Guided MC (core at/on/in + time/place)\n- Gap fill – Simple (time & place basics)\n- Gap fill – Advanced & Tricky (movement, deadlines, idioms)\n- Gap fill – Top 40 (all common prepositions in context)\n\n**Next steps**: [[topic:prepositions_dependent|Dependent Prepositions]] (B2 fixed verb/noun/adjective + prep chunks — critical for exams). Full reference list: [[preplist|Prepositions list]].",
+        "title": "Other high-frequency uses",
+        "content": "Useful everyday prepositions beyond the big groups — they're in almost every paragraph you read or write.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Everyday prepositions",
+            "headers": [
+              "Preposition",
+              "Use",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**by**",
+                "means of transport or author",
+                "by train, written by..."
+              ],
+              [
+                "**with / without**",
+                "together or using / lacking",
+                "with a friend, cut with a knife, without help"
+              ],
+              [
+                "**of**",
+                "belonging, material, or part",
+                "the capital of France, made of wood, cup of tea"
+              ],
+              [
+                "**as**",
+                "role or function",
+                "work as a teacher, use as a tool"
+              ],
+              [
+                "**like**",
+                "similarity",
+                "looks like, sounds like"
+              ]
+            ]
+          }
+        ],
+        "root_ids": [
+          "A1.prepositions.place_basic",
+          "A2.prepositions.time_basic"
+        ],
+        "cefr_level": "A2"
+      },
+      {
+        "title": "Practice roadmap",
+        "content": "Direct practice in this curriculum — start here after the cards.\n- **Guided MC** — core at/on/in + time/place\n- **Gap fill – Simple** — time & place basics\n- **Gap fill – Advanced & Tricky** — movement, deadlines, idioms\n- **Gap fill – Top 40** — all common prepositions in context\n\n**Next steps**: [[topic:prepositions_dependent|Dependent Prepositions]] (B2 fixed verb/noun/adjective + prep chunks — critical for exams). Full reference list: [[preplist|Prepositions list]].",
         "root_ids": [
           "A1.prepositions.place_basic",
           "A2.prepositions.time_basic"

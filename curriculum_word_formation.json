@@ -3,56 +3,60 @@
     "title": "Word Formation (Part 3)",
     "sections": [
       {
-        "title": "In the exam (1)",
-        "content": "In FCE and CAE, Word Formation is **Part 3**. You see a text with eight gaps; each line has a word in **capitals**. You form a new word from that word for each gap."
+        "title": "In the exam: Part 3",
+        "content": "In FCE and CAE, Word Formation is **Part 3**: a text with **eight gaps**. At the end of each line you see a word in **capitals** (the stem).\n- You must **make a new word** from this stem for the gap.\n- This task tests **prefixes**, **suffixes**, and **word families** (noun, verb, adjective, adverb).",
+        "diagrams": [
+          {
+            "type": "formula",
+            "title": "One stem, many words",
+            "items": [
+              {
+                "label": "HOPE",
+                "formula": "HOPE → hopeful / hopefully / hopeless — it depends on the sentence"
+              }
+            ]
+          }
+        ]
       },
       {
-        "title": "In the exam (2)",
-        "content": "**Tip:** Read the whole sentence first. The meaning tells you whether you need a noun, adjective, adverb or negative form."
+        "title": "What to do",
+        "content": "Four steps for every gap:\n1. Read the **whole sentence** (and the sentences around it) first. The meaning tells you whether you need a noun, adjective, adverb or negative form.\n2. Look at the **stem word** in capitals.\n3. Think: do you need a **noun**? An **adjective**? An **adverb**? A **negative** form?\n4. **Spell** the word correctly.",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "One wrong letter can make the answer wrong."
+          }
+        ]
       },
       {
-        "title": "What is Word Formation? (1)",
-        "content": "You read a short text with **eight gaps**. At the end of each line you see a word in **capitals** (the stem). You must **make a new word** from this stem for the gap."
+        "title": "Common patterns",
+        "content": "Common prefix and suffix patterns:",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Prefixes and suffixes",
+            "headers": ["Pattern", "Examples"],
+            "rows": [
+              ["**-ful / -less**", "hope → hopeful, hopeless; care → careful, careless"],
+              ["**-ly** (adverb)", "quick → quickly; happy → happily"],
+              ["**-tion / -sion / -ment** (noun)", "decide → decision; develop → development"],
+              ["**-ive / -able** (adjective)", "effect → effective; rely → reliable"],
+              ["**un- / in- / im- / dis-** (negative)", "able → unable; correct → incorrect"],
+              ["**-ence / -ance** (noun)", "different → difference; appear → appearance"]
+            ]
+          }
+        ]
       },
       {
-        "title": "What is Word Formation? (2)",
-        "content": "For example: **HOPE** → *hopeful*, *hopefully*, or *hopeless* – it depends on the sentence."
-      },
-      {
-        "title": "What is Word Formation? (3)",
-        "content": "This task tests **prefixes**, **suffixes**, and **word families** (noun, verb, adjective, adverb)."
-      },
-      {
-        "title": "What to do (1)",
-        "content": "• Read the **whole sentence** (and the sentences around it). Understand the meaning.\n• Look at the **stem word** in capitals.\n• Think: do you need a **noun**? An **adjective**? An **adverb**? A **negative** form?\n• **Spell** the word correctly."
-      },
-      {
-        "title": "What to do (2)",
-        "content": "One wrong letter can make the answer wrong."
-      },
-      {
-        "title": "Common patterns (1)",
-        "content": "• **-ful / -less**: hope → hopeful, hopeless; care → careful, careless\n• **-ly** (adverb): quick → quickly; happy → happily\n• **-tion / -sion / -ment** (noun): decide → decision; develop → development\n• **-ive / -able** (adjective): effect → effectiv"
-      },
-      {
-        "title": "Common patterns (2)",
-        "content": "e; rely → reliable"
-      },
-      {
-        "title": "Common patterns (2)",
-        "content": "• **un- / in- / im- / dis-** (negative): able → unable; correct → incorrect\n• **-ence / -ance** (noun): different → difference; appear → appearance"
-      },
-      {
-        "title": "Reference: Prefixes and suffixes (1)",
-        "content": "A **reference list** shows the **30 most common prefixes** and **30 most common suffixes** with examples. Use it to learn word families before or during practice."
-      },
-      {
-        "title": "Reference: Prefixes and suffixes (2)",
-        "content": "**Where to find it:** Open **Reference** (at the bottom of any menu), then choose **Word Formation: Prefixes & Suffixes**."
-      },
-      {
-        "title": "Reference",
-        "content": "[[ref|Reference lists]]"
+        "title": "Reference: Prefixes and suffixes",
+        "content": "A **reference list** shows the **30 most common prefixes** and **30 most common suffixes** with examples.\n- Use it to learn word families before or during practice.\n\n[[ref|Reference lists]]",
+        "diagrams": [
+          {
+            "type": "callout",
+            "label": "Where to find it",
+            "text": "Open **Reference** (at the bottom of any menu), then choose **Word Formation: Prefixes & Suffixes**."
+          }
+        ]
       }
     ]
   },

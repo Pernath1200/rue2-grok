@@ -4,7 +4,37 @@
     "sections": [
       {
         "title": "What phrasal verbs are (core logic)",
-        "content": "A **phrasal verb** is a verb + small word (a **particle** — usually a preposition or adverb) that together create a **NEW meaning**, often very different from the literal parts. *Look up* (look + up) doesn't mean look upwards — it means **search for information**.\n\n**Why it matters (roots-first)**: Phrasal verbs sit in the Prepositions & Particles root (#6 in the Tree Model) — their primary home since the 2026 reorganisation, with a secondary link to Verb Complementation. The particle is what changes the meaning: same verb, different particle, different verb entirely (*give up* / *give in* / *give back* / *give out*). For Czech speakers, phrasal verbs are the **spoken/informal heart** of English — avoiding them makes you sound stiff and textbook-formal; using them well is what natural English actually sounds like.\n\n**Key principle**: learn the whole phrase + meaning + an example sentence. Don't translate word-for-word.",
+        "content": "A **phrasal verb** is a verb + small word (a **particle**) that together create a **NEW meaning**, often very different from the literal parts.\n- The particle is what changes the meaning: same verb, different particle, different verb entirely.\n- Home: the Prepositions & Particles root (#6 in the Tree Model) — primary since the 2026 reorganisation, with a secondary link to Verb Complementation.\n- **Key principle**: learn the whole phrase + meaning + an example sentence. Don't translate word-for-word.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "items": [
+              {
+                "label": "pattern",
+                "formula": "verb + particle (preposition or adverb) → new meaning"
+              },
+              {
+                "label": "example",
+                "formula": "look + up = **look up** → search for information (not look upwards)"
+              }
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "Same verb, different particle — different verb",
+            "items": [
+              "give up",
+              "give in",
+              "give back",
+              "give out"
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "For Czech speakers, phrasal verbs are the **spoken/informal heart** of English — avoiding them makes you sound stiff and textbook-formal; using them well is what natural English actually sounds like."
+          }
+        ],
         "root_ids": [
           "B1.phrasal_verbs.basic"
         ],
@@ -12,7 +42,58 @@
       },
       {
         "title": "Literal vs idiomatic meaning",
-        "content": "Some phrasal verbs are **literal** — the meaning is roughly the verb + the particle's normal sense. Most are **idiomatic** — the meaning is unpredictable and must be learned as a chunk.\n\n**Why it matters**: this is where word-for-word translation fails hardest. *Bring up* is not about bringing anything upwards — it means raise (children) or mention (a topic). Same verb + different particles can produce five totally different verbs.\n\n**Contrast examples (literal vs idiomatic)**:\n- *She walked **across** the road.* (literal — actual movement across)\n- *She **brought up** the issue at the meeting.* (idiomatic — mentioned)\n- *The plane **took off** at 6.* (idiomatic — left the ground)\n- *He **took off** his coat.* (semi-literal — removed)\n\n**One verb, many meanings — TAKE + particle**:\n- *take off* = leave (plane) / remove (clothes)\n- *take after* = resemble (a parent)\n- *take on* = accept (a job/challenge)\n- *take in* = understand / deceive / make smaller\n- *take over* = assume control\n\nSame verb. Five different verbs. The particle does all the work.",
+        "content": "Some phrasal verbs are **literal**; most are **idiomatic** — unpredictable, learned as a chunk. This is where word-for-word translation fails hardest.\n\nSame verb. Five different verbs. The particle does all the work.",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "left": {
+              "title": "Literal",
+              "points": [
+                "meaning ≈ verb + the particle's normal sense",
+                "She walked **across** the road. (actual movement across)",
+                "He **took off** his coat. (semi-literal — removed)"
+              ]
+            },
+            "right": {
+              "title": "Idiomatic",
+              "points": [
+                "meaning is unpredictable — learn it as a chunk",
+                "She **brought up** the issue. (mentioned — nothing moves upwards; *bring up* = raise children or mention a topic)",
+                "The plane **took off** at 6. (left the ground)"
+              ]
+            }
+          },
+          {
+            "type": "table",
+            "title": "One verb, many meanings — TAKE + particle",
+            "headers": [
+              "Phrasal verb",
+              "Meaning"
+            ],
+            "rows": [
+              [
+                "**take off**",
+                "leave (plane) / remove (clothes)"
+              ],
+              [
+                "**take after**",
+                "resemble (a parent)"
+              ],
+              [
+                "**take on**",
+                "accept (a job/challenge)"
+              ],
+              [
+                "**take in**",
+                "understand / deceive / make smaller"
+              ],
+              [
+                "**take over**",
+                "assume control"
+              ]
+            ]
+          }
+        ],
         "root_ids": [
           "B1.phrasal_verbs.basic"
         ],
@@ -20,7 +101,50 @@
       },
       {
         "title": "Transitive vs intransitive",
-        "content": "Like all verbs, phrasal verbs are either **intransitive** (no object) or **transitive** (need an object). Many work both ways — with different meanings.\n\n**Why it matters**: knowing whether a phrasal verb takes an object is the first step before worrying about word order. Get this wrong and the sentence breaks.\n\n**Intransitive (no object)**:\n- *The plane **took off**.* (left the ground)\n- *Please **sit down**.*\n- *They **broke up** last year.* (ended their relationship)\n\n**Transitive (needs an object)**:\n- *She **made up** a story.* (invented)\n- *They **called off** the match.* (cancelled)\n- *I **looked up** the word.* (searched for)\n\n**Both — with different meanings**:\n- *She **turned up** late.* (arrived — intransitive)\n- *She **turned up** the volume.* (increased — transitive)\n- *He **gave up**.* (stopped trying — intransitive)\n- *He **gave up** smoking.* (quit — transitive)",
+        "content": "Like all verbs, phrasal verbs are either **intransitive** (no object) or **transitive** (need an object). Many work both ways — with different meanings.\n\nKnowing whether a phrasal verb takes an object is the first step before worrying about word order. Get this wrong and the sentence breaks.",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "left": {
+              "title": "Intransitive (no object)",
+              "points": [
+                "The plane **took off**. (left the ground)",
+                "Please **sit down**.",
+                "They **broke up** last year. (ended their relationship)"
+              ]
+            },
+            "right": {
+              "title": "Transitive (needs an object)",
+              "points": [
+                "She **made up** a story. (invented)",
+                "They **called off** the match. (cancelled)",
+                "I **looked up** the word. (searched for)"
+              ]
+            }
+          },
+          {
+            "type": "examples",
+            "title": "Both — with different meanings",
+            "items": [
+              {
+                "good": "She **turned up** late.",
+                "why": "arrived — intransitive"
+              },
+              {
+                "good": "She **turned up** the volume.",
+                "why": "increased — transitive"
+              },
+              {
+                "good": "He **gave up**.",
+                "why": "stopped trying — intransitive"
+              },
+              {
+                "good": "He **gave up** smoking.",
+                "why": "quit — transitive"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B1.phrasal_verbs.basic"
         ],
@@ -28,33 +152,67 @@
       },
       {
         "title": "Separable vs inseparable — the position rule",
-        "content": "For **transitive** phrasal verbs, where does the object go? This is the highest-value mechanical rule.\n\n**Separable** (most common): the object can go **before OR after** the particle.\n- *Turn **on** the light.* / *Turn the light **on**.* — both fine.\n\n**BUT** if the object is a **pronoun** (it, him, her, them...), it **MUST** go between the verb and the particle.\n- *Turn **it** on.* ✓\n- *Turn on **it**.* ✗\n\n**Inseparable** (a smaller set): the verb + particle stay glued together. The object always comes after.\n- *Look **after** the children.* ✓\n- *Look the children **after**.* ✗\n- *Look **after** them.* ✓ (pronoun also after the particle)\n\n**Why it matters**: pronoun word order is the #1 error pattern. Native speakers immediately hear *turn on it* as wrong. There's no reliable rule for which verbs are separable vs inseparable — learn each one as you meet it.",
-        "diagram": {
-          "type": "table",
-          "title": "Separable vs inseparable — object position",
-          "headers": [
-            "Type",
-            "Noun object",
-            "Pronoun object"
-          ],
-          "rows": [
-            [
-              "**Separable** (e.g. *turn on*)",
-              "Turn on the light / Turn the light on",
-              "Turn **it** on (NOT *turn on it*)"
-            ],
-            [
-              "**Inseparable** (e.g. *look after*)",
-              "Look after the children",
-              "Look after **them** (NOT *look them after*)"
-            ],
-            [
-              "**Intransitive** (e.g. *take off*)",
-              "no object — The plane took off",
-              "—"
+        "content": "For **transitive** phrasal verbs, where does the object go? This is the highest-value mechanical rule.\n\nPronoun word order is the #1 error pattern — native speakers immediately hear ~~turn on it~~ as wrong. There's no reliable rule for which verbs are separable vs inseparable: learn each one as you meet it.",
+        "diagrams": [
+          {
+            "type": "decision",
+            "title": "Where does the object go?",
+            "steps": [
+              {
+                "q": "Is the phrasal verb inseparable (e.g. *look after*)?",
+                "yes": "object always after the particle — Look after the children / Look after them"
+              },
+              {
+                "q": "Is the object a pronoun (it, him, her, them...)?",
+                "yes": "MUST go between verb and particle — Turn it on"
+              },
+              {
+                "end": "before OR after the particle — Turn on the light / Turn the light on"
+              }
             ]
-          ]
-        },
+          },
+          {
+            "type": "table",
+            "title": "Separable vs inseparable — object position",
+            "headers": [
+              "Type",
+              "Noun object",
+              "Pronoun object"
+            ],
+            "rows": [
+              [
+                "**Separable** (e.g. *turn on*)",
+                "Turn on the light / Turn the light on",
+                "Turn **it** on (NOT *turn on it*)"
+              ],
+              [
+                "**Inseparable** (e.g. *look after*)",
+                "Look after the children",
+                "Look after **them** (NOT *look them after*)"
+              ],
+              [
+                "**Intransitive** (e.g. *take off*)",
+                "no object — The plane took off",
+                "—"
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "Turn **it** on.",
+                "bad": "Turn on it.",
+                "why": "separable + pronoun → pronoun goes in the middle"
+              },
+              {
+                "good": "Look **after** them.",
+                "bad": "Look the children after.",
+                "why": "inseparable → verb + particle stay glued together"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B1.phrasal_verbs.basic"
         ],
@@ -62,7 +220,73 @@
       },
       {
         "title": "Three-part phrasal verbs",
-        "content": "Some phrasal verbs are **three words**: verb + adverb + preposition. They're **always inseparable** — the three parts stay together, and the object comes after.\n\n**Common examples**:\n- *look forward to* (anticipate with pleasure)\n- *put up with* (tolerate)\n- *get away with* (escape consequences)\n- *come up with* (think of, invent)\n- *run out of* (use up)\n- *get on with* (have a good relationship with)\n- *catch up with* (reach the same level as)\n\n**Why it matters**: these are extremely common in spoken English and exam open-cloze. They're also a frequent trap: students often drop the third word (*She came up a solution* instead of *came up with a solution*).\n\n**Gerund trap after *to***: when *to* is the preposition (not the infinitive marker), the next verb takes **-ing**:\n- *I look forward **to seeing** you.* ✓ (NOT *to see*)\n- *He's used **to working** late.* ✓\n- *She objects **to paying** extra.* ✓\n\nThis catches almost every learner. *To* here is a preposition — it needs a noun or gerund, not an infinitive.",
+        "content": "Some phrasal verbs are **three words**: verb + adverb + preposition. They're **always inseparable** — the three parts stay together, and the object comes after.\n\nExtremely common in spoken English and exam open-cloze — and a frequent trap: students often drop the third word.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Common three-part verbs",
+            "headers": [
+              "Phrasal verb",
+              "Meaning"
+            ],
+            "rows": [
+              [
+                "**look forward to**",
+                "anticipate with pleasure"
+              ],
+              [
+                "**put up with**",
+                "tolerate"
+              ],
+              [
+                "**get away with**",
+                "escape consequences"
+              ],
+              [
+                "**come up with**",
+                "think of, invent"
+              ],
+              [
+                "**run out of**",
+                "use up"
+              ],
+              [
+                "**get on with**",
+                "have a good relationship with"
+              ],
+              [
+                "**catch up with**",
+                "reach the same level as"
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "title": "The two traps",
+            "items": [
+              {
+                "good": "She **came up with** a solution.",
+                "bad": "She came up a solution.",
+                "why": "don't drop the third word"
+              },
+              {
+                "good": "I look forward **to seeing** you.",
+                "bad": "I look forward to see you.",
+                "why": "gerund trap: *to* is a preposition here, not the infinitive marker — it needs a noun or gerund"
+              },
+              {
+                "good": "He's used **to working** late."
+              },
+              {
+                "good": "She objects **to paying** extra."
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "The gerund trap after *to* catches almost every learner: when *to* is the preposition, the next verb takes **-ing**."
+          }
+        ],
         "root_ids": [
           "B2.phrasal_verbs.extended"
         ],
@@ -70,48 +294,50 @@
       },
       {
         "title": "High-frequency families",
-        "content": "A handful of very common verbs produce dozens of phrasal verbs. Learning these families gives you a huge return for the effort.\n\n**Why it matters**: these are the phrasal verbs you'll hear in every conversation, film, and podcast. Building familiarity with the families is faster than learning isolated items — the verb stays the same, only the particle (and meaning) changes.",
-        "diagram": {
-          "type": "table",
-          "title": "High-frequency phrasal verb families",
-          "headers": [
-            "Verb",
-            "Phrasal verb",
-            "Meaning"
-          ],
-          "rows": [
-            [
-              "**GO**",
-              "go on / go off / go through / go over",
-              "continue / explode or stop working / experience or examine / review"
+        "content": "A handful of very common verbs produce dozens of phrasal verbs. Learning these families gives you a huge return for the effort.\n\nYou'll hear these in every conversation, film, and podcast. Families are faster than isolated items — the verb stays the same; only the particle (and meaning) changes.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "High-frequency phrasal verb families",
+            "headers": [
+              "Verb",
+              "Phrasal verb",
+              "Meaning"
             ],
-            [
-              "**GET**",
-              "get up / get on / get over / get away",
-              "rise / board (a bus) or progress / recover / escape"
-            ],
-            [
-              "**TAKE**",
-              "take off / take after / take in / take over",
-              "leave (plane) / resemble / understand or deceive / assume control"
-            ],
-            [
-              "**MAKE**",
-              "make up / make out / make for",
-              "invent or reconcile / understand with difficulty / head towards"
-            ],
-            [
-              "**TURN**",
-              "turn on / turn off / turn up / turn down / turn into",
-              "switch on / switch off / arrive or increase / refuse or lower / become"
-            ],
-            [
-              "**PUT**",
-              "put on / put off / put up with / put away",
-              "wear / postpone / tolerate / store"
+            "rows": [
+              [
+                "**GO**",
+                "go on / go off / go through / go over",
+                "continue / explode or stop working / experience or examine / review"
+              ],
+              [
+                "**GET**",
+                "get up / get on / get over / get away",
+                "rise / board (a bus) or progress / recover / escape"
+              ],
+              [
+                "**TAKE**",
+                "take off / take after / take in / take over",
+                "leave (plane) / resemble / understand or deceive / assume control"
+              ],
+              [
+                "**MAKE**",
+                "make up / make out / make for",
+                "invent or reconcile / understand with difficulty / head towards"
+              ],
+              [
+                "**TURN**",
+                "turn on / turn off / turn up / turn down / turn into",
+                "switch on / switch off / arrive or increase / refuse or lower / become"
+              ],
+              [
+                "**PUT**",
+                "put on / put off / put up with / put away",
+                "wear / postpone / tolerate / store"
+              ]
             ]
-          ]
-        },
+          }
+        ],
         "root_ids": [
           "B1.phrasal_verbs.basic",
           "B2.phrasal_verbs.extended"
@@ -119,8 +345,71 @@
         "cefr_level": "B1"
       },
       {
-        "title": "Common Czech-speaker errors & strategies",
-        "content": "**High-frequency mistakes** (often L1 interference or avoidance):\n\n- **Literal translation** — calquing the Czech preposition or particle word-for-word instead of learning the English chunk.\n- **Separating an inseparable verb** — *Look the children after* → **Look after the children.**\n- **Noun-in-middle when pronoun is required** — *Turn on it* → **Turn it on.**\n- **Dropping the third word** — *She came up a solution* → **She came up with a solution.**\n- **Over-using the formal one-word alternative** — *postpone* over *put off*, *establish* over *set up*, *discover* over *find out*. Correct, but sounds stiff and bookish in everyday speech.\n- **Wrong particle, similar verb** — *put on* (wear) vs *put off* (postpone); *look up* (search) vs *look after* (care for) vs *look for* (search for).\n\n**Strategy — learn in context, not lists**:\n\n1. Learn each phrasal verb as a **whole chunk in a sentence**, not as an isolated word with a definition.\n2. Note the **pattern** (separable / inseparable / three-part) the first time you meet it.\n3. Practise in **speaking and watching** (TV series, films, podcasts) — phrasal verbs are spoken-register, so input must match.\n4. **Don't avoid them** — using a one-word formal verb every time is the textbook-trap. Phrasal verbs are how natural English sounds.\n\n**Why it matters**: phrasal verbs are tested heavily in B2 / C1 exams (open cloze, key-word transformations) and they're the difference between sounding fluent and sounding like a phrasebook.",
+        "title": "Common Czech-speaker errors",
+        "content": "High-frequency mistakes — often L1 interference or avoidance. Phrasal verbs are tested heavily in B2 / C1 exams (open cloze, key-word transformations).\n\n- **Over-using the formal one-word alternative** — *postpone* over *put off*, *establish* over *set up*, *discover* over *find out*. Correct, but sounds stiff and bookish in everyday speech.",
+        "diagrams": [
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "**Literal translation** — calquing the Czech preposition or particle word-for-word instead of learning the English chunk."
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "**Look after** the children.",
+                "bad": "Look the children after.",
+                "why": "separating an inseparable verb"
+              },
+              {
+                "good": "Turn **it** on.",
+                "bad": "Turn on it.",
+                "why": "noun-in-middle rule: a pronoun must go between verb and particle"
+              },
+              {
+                "good": "She **came up with** a solution.",
+                "bad": "She came up a solution.",
+                "why": "dropping the third word"
+              }
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "Wrong particle, similar verb",
+            "groups": [
+              {
+                "label": "put",
+                "items": [
+                  "put on = wear",
+                  "put off = postpone"
+                ]
+              },
+              {
+                "label": "look",
+                "items": [
+                  "look up = search",
+                  "look after = care for",
+                  "look for = search for"
+                ]
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B1.phrasal_verbs.basic",
+          "B2.phrasal_verbs.extended"
+        ],
+        "cefr_level": "B2"
+      },
+      {
+        "title": "Strategy — learn in context, not lists",
+        "content": "Four habits that work:\n- Learn each phrasal verb as a **whole chunk in a sentence**, not as an isolated word with a definition.\n- Note the **pattern** (separable / inseparable / three-part) the first time you meet it.\n- Practise in **speaking and watching** (TV series, films, podcasts) — phrasal verbs are spoken-register, so input must match.\n- **Don't avoid them** — using a one-word formal verb every time is the textbook-trap. Phrasal verbs are how natural English sounds.",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Phrasal verbs are the difference between sounding fluent and sounding like a phrasebook."
+          }
+        ],
         "root_ids": [
           "B1.phrasal_verbs.basic",
           "B2.phrasal_verbs.extended"

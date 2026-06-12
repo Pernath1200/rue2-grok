@@ -3,16 +3,43 @@
     "title": "Tenses: General",
     "sections": [
       {
-        "title": "What are tenses? (1)",
-        "content": "In English, **tense** tells us **when** something happens. We combine **three times** (past, present, future) with **four aspects** (simple, continuous, perfect, perfect continuous) to get **12** tense forms.",
-        "root_ids": [
-          "A1.tenses.system"
+        "title": "What are tenses?",
+        "content": "In English, **tense** tells us **when** something happens: **three times × four aspects = 12** tense forms.\nEnglish doesn't change verb endings for each person (except 3rd person present: *he works*) — it builds the forms with auxiliary verbs.",
+        "diagrams": [
+          {
+            "type": "chips",
+            "title": "Three times × four aspects",
+            "groups": [
+              {
+                "label": "times",
+                "items": [
+                  "past",
+                  "present",
+                  "future"
+                ]
+              },
+              {
+                "label": "aspects",
+                "items": [
+                  "simple",
+                  "continuous",
+                  "perfect",
+                  "perfect continuous"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "The auxiliary verbs that build them",
+            "items": [
+              "do",
+              "have",
+              "be",
+              "will"
+            ]
+          }
         ],
-        "cefr_level": "A1"
-      },
-      {
-        "title": "What are tenses? (2)",
-        "content": "English uses **auxiliary verbs** (*do*, *have*, *be*, *will*) to build these forms — it doesn't change verb endings for each person (except 3rd person present: *he works*).",
         "root_ids": [
           "A1.tenses.system"
         ],
@@ -21,144 +48,292 @@
       {
         "title": "The 12 English tenses",
         "content": "",
-        "diagram": {
-          "type": "table",
-          "title": "The 12 English tenses (3 times × 4 aspects)",
-          "headers": [
-            "",
-            "Simple",
-            "Continuous",
-            "Perfect",
-            "Perfect Continuous"
-          ],
-          "rows": [
-            [
-              "**Past**",
-              "I worked",
-              "I was working",
-              "I had worked",
-              "I had been working"
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "The 12 English tenses (3 times × 4 aspects)",
+            "headers": [
+              "",
+              "Simple",
+              "Continuous",
+              "Perfect",
+              "Perfect Continuous"
             ],
-            [
-              "**Present**",
-              "I work",
-              "I am working",
-              "I have worked",
-              "I have been working"
-            ],
-            [
-              "**Future**",
-              "I will work",
-              "I will be working",
-              "I will have worked",
-              "I will have been working"
+            "rows": [
+              [
+                "**Past**",
+                "I worked",
+                "I was working",
+                "I had worked",
+                "I had been working"
+              ],
+              [
+                "**Present**",
+                "I work",
+                "I am working",
+                "I have worked",
+                "I have been working"
+              ],
+              [
+                "**Future**",
+                "I will work",
+                "I will be working",
+                "I will have worked",
+                "I will have been working"
+              ]
             ]
-          ]
-        },
+          }
+        ],
         "root_ids": [
           "A1.tenses.system"
         ],
         "cefr_level": "A1"
       },
       {
-        "title": "Simple aspect (1)",
-        "content": "**Simple aspect** — Fact, habit, or single completed event — no focus on duration or completion. **Present simple:** *I work every day. She likes coffee.* **Past simple:** *I worked yesterday. She left at 5.*",
+        "title": "Simple aspect",
+        "content": "**Simple aspect** = fact, habit, or single completed event — no focus on duration or completion.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Simple — structure & examples",
+            "headers": [
+              "Tense",
+              "Structure",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**Present simple**",
+                "base verb",
+                "*I work every day. She likes coffee.*"
+              ],
+              [
+                "**Past simple**",
+                "*-ed* or irregular",
+                "*I worked yesterday. She left at 5.*"
+              ],
+              [
+                "**Future simple**",
+                "*will* + base",
+                "*I will help you. She is going to study medicine.*"
+              ]
+            ]
+          }
+        ],
         "root_ids": [
           "A2.tenses.simple_continuous"
         ],
         "cefr_level": "A2"
       },
       {
-        "title": "Simple aspect (2)",
-        "content": "**Future simple:** *I will help you. She is going to study medicine.* **Structure:** base verb (present), *-ed* or irregular (past), *will* + base (future).",
+        "title": "Continuous aspect",
+        "content": "**Continuous aspect** = action in progress at a given time.\nAlso used for temporary situations and background actions.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "items": [
+              {
+                "label": "Structure",
+                "formula": "be + -ing → I am working"
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "title": "Continuous — examples",
+            "headers": [
+              "Tense",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**Present continuous**",
+                "*I am working right now.*"
+              ],
+              [
+                "**Past continuous**",
+                "*I was working when she called.*"
+              ],
+              [
+                "**Future continuous**",
+                "*I will be working at 5 tomorrow.*"
+              ]
+            ]
+          }
+        ],
         "root_ids": [
           "A2.tenses.simple_continuous"
         ],
         "cefr_level": "A2"
       },
       {
-        "title": "Continuous aspect (1)",
-        "content": "**Continuous aspect** — Action in progress at a given time. **Structure:** *be* + *-ing*. **Present continuous:** *I am working right now.* **Past continuous:** *I was working when she called.*",
-        "root_ids": [
-          "A2.tenses.simple_continuous"
+        "title": "Perfect aspect",
+        "content": "**Perfect aspect** = completed action with a result or relevance at a later time.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "items": [
+              {
+                "label": "Structure",
+                "formula": "have/has/had + past participle → I have finished"
+              }
+            ]
+          },
+          {
+            "type": "timeline",
+            "events": [
+              {
+                "label": "action completed",
+                "style": "past"
+              },
+              {
+                "label": "later time",
+                "detail": "result or relevance here",
+                "style": "now"
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "title": "Perfect — examples",
+            "headers": [
+              "Tense",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**Present perfect**",
+                "*I have finished. She has been to Japan.*"
+              ],
+              [
+                "**Past perfect**",
+                "*I had finished when she arrived.*"
+              ],
+              [
+                "**Future perfect**",
+                "*I will have finished by 5.*"
+              ]
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "Often used with",
+            "items": [
+              "for",
+              "since",
+              "by",
+              "already",
+              "yet",
+              "ever",
+              "never"
+            ]
+          }
         ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Continuous aspect (2)",
-        "content": "**Future continuous:** *I will be working at 5 tomorrow.* Also used for temporary situations and background actions.",
-        "root_ids": [
-          "A2.tenses.simple_continuous"
-        ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Perfect aspect (1)",
-        "content": "**Perfect aspect** — Completed action with result or relevance at a later time. **Structure:** *have/has/had* + past participle. **Present perfect:** *I have finished. She has been to Japan.* **Past perfect:** *I had finished when she arrived.*",
         "root_ids": [
           "B1.tenses.perfect"
         ],
         "cefr_level": "B1"
       },
       {
-        "title": "Perfect aspect (2)",
-        "content": "**Future perfect:** *I will have finished by 5.* Often used with *for*, *since*, *by*, *already*, *yet*, *ever*, *never*.",
+        "title": "Perfect continuous aspect",
+        "content": "**Perfect continuous aspect** = action lasting over a period, often with a visible result. Focus on **duration**.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "items": [
+              {
+                "label": "Structure",
+                "formula": "have/has/had been + -ing → I have been waiting"
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "title": "Perfect continuous — examples",
+            "headers": [
+              "Tense",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**Present perfect continuous**",
+                "*I have been waiting for an hour.*"
+              ],
+              [
+                "**Past perfect continuous**",
+                "*I had been waiting for an hour when she came.*"
+              ],
+              [
+                "**Future perfect continuous**",
+                "*By next month I will have been working here for ten years.*"
+              ]
+            ]
+          }
+        ],
         "root_ids": [
           "B1.tenses.perfect"
         ],
         "cefr_level": "B1"
       },
       {
-        "title": "Perfect continuous aspect (1)",
-        "content": "**Perfect continuous aspect** — Action lasting over a period, often with visible result. **Structure:** *have/has/had been* + *-ing*.",
-        "root_ids": [
-          "B1.tenses.perfect"
+        "title": "How to choose the right tense",
+        "content": "Ask two questions:\n- **When?** (past, present, future) → this gives you the **time**.\n- **How do I view the action?** → this gives you the **aspect**.",
+        "diagrams": [
+          {
+            "type": "decision",
+            "title": "Which aspect?",
+            "steps": [
+              {
+                "q": "Fact or habit?",
+                "yes": "simple"
+              },
+              {
+                "q": "In progress right now?",
+                "yes": "continuous"
+              },
+              {
+                "q": "Completed with a result?",
+                "yes": "perfect"
+              },
+              {
+                "end": "lasting over a period with a result → perfect continuous"
+              }
+            ]
+          }
         ],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "Perfect continuous aspect (2)",
-        "content": "**Present perfect continuous:** *I have been waiting for an hour.* **Past perfect continuous:** *I had been waiting for an hour when she came.*",
-        "root_ids": [
-          "B1.tenses.perfect"
-        ],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "Perfect continuous aspect (3)",
-        "content": "**Future perfect continuous:** *By next month I will have been working here for ten years.* Focus on **duration**.",
-        "root_ids": [
-          "B1.tenses.perfect"
-        ],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "How to choose the right tense (1)",
-        "content": "Ask two questions: **When?** (past, present, future) → this gives you the time. **How do I view the action?** → this gives you the aspect.",
         "root_ids": [
           "A1.tenses.system"
         ],
         "cefr_level": "A1"
       },
       {
-        "title": "How to choose the right tense (2)",
-        "content": "Fact or habit = **simple**. In progress right now = **continuous**. Completed with a result = **perfect**. Lasting over a period with a result = **perfect continuous**.",
-        "root_ids": [
-          "A1.tenses.system"
+        "title": "Typical errors",
+        "content": "The four classic mix-ups with the tense system.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "**I work** every day. / **I am working** now.",
+                "bad": "I am work every day.",
+                "why": "simple for the habit, continuous for right now"
+              },
+              {
+                "good": "She **has** finished.",
+                "bad": "She have finished."
+              },
+              {
+                "good": "**I went** yesterday.",
+                "bad": "I did went yesterday."
+              },
+              {
+                "good": "**I have been waiting** for an hour.",
+                "bad": "I am waiting for an hour.",
+                "why": "duration → perfect continuous"
+              }
+            ]
+          }
         ],
-        "cefr_level": "A1"
-      },
-      {
-        "title": "Typical errors (1)",
-        "content": "**Wrong:** *I am work every day.* **Right:** **I work** every day (simple) or **I am working** now (continuous). **Wrong:** *She have finished.* **Right:** **She has** finished. **Wrong:** *I did went* yesterday. **Right:** **I went** yesterday.",
-        "root_ids": [
-          "A1.tenses.system"
-        ],
-        "cefr_level": "A1"
-      },
-      {
-        "title": "Typical errors (2)",
-        "content": "**Wrong:** *I am waiting* for an hour. **Right:** **I have been waiting** for an hour (duration → perfect continuous).",
         "root_ids": [
           "A1.tenses.system"
         ],

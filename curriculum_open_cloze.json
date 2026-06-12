@@ -3,48 +3,83 @@
     "title": "Open Cloze",
     "sections": [
       {
-        "title": "In the exam (1)",
-        "content": "In FCE and CAE, Open Cloze is **Part 2**. You have a short text with eight gaps and write **one word** in each. You do not get a list of words to choose from."
-      },
-      {
-        "title": "In the exam (2)",
-        "content": "**Tip:** Read the whole text first before you fill any gap. The context often makes the answer clear."
-      },
-      {
-        "title": "What is Open Cloze? (1)",
-        "content": "You read a short text with **eight gaps**. You write **one word** in each gap. The word must be right for grammar and meaning. You do not get options – you think of the word."
-      },
-      {
-        "title": "What is Open Cloze? (2)",
-        "content": "This task tests grammar and words: articles (a, the), verbs like do/have, prepositions, linkers, pronouns and so on."
+        "title": "In the exam: Part 2",
+        "content": "In FCE and CAE, Open Cloze is **Part 2**: a short text with **eight gaps** — you write **one word** in each.\n- You do not get options or a list of words to choose from — you think of the word.\n- The word must be right for **grammar** and **meaning**.",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Read the whole text first before you fill any gap. The context often makes the answer clear."
+          }
+        ]
       },
       {
         "title": "One word only",
-        "content": "Write **only one word** in each gap. Short forms like *don't* or *it's* count as **one word**. Spell the word correctly.\n\nDo not write two words when you need one. Do not leave the gap empty."
+        "content": "Write **only one word** in each gap.\n- Do not write two words when you need one.\n- Do not leave the gap empty.\n- Spell the word correctly.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "*don't* / *it's*",
+                "why": "short forms count as **one word**"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "What is often in the gaps? (1)",
-        "content": "Often you need:"
+        "content": "This task tests grammar and words. Often you need a small grammar word:",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "articles",
+                "items": ["a", "an", "the", "no article"]
+              },
+              {
+                "label": "verbs",
+                "items": ["do", "does", "did", "have", "has", "will", "would", "can", "could"]
+              },
+              {
+                "label": "prepositions",
+                "items": ["in", "on", "at", "for", "with", "by", "from", "to"]
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "What is often in the gaps? (2)",
-        "content": "• **Articles**: a, an, the, or no article\n• **Verbs**: do, does, did, have, has, will, would, can, could\n• **Prepositions**: in, on, at, for, with, by, from, to\n• **Linkers**: although, however, because, so that, while\n• **Pronouns**: who, which, tha"
+        "content": "Linkers, pronouns and fixed phrases fill gaps too:",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "linkers",
+                "items": ["although", "however", "because", "so that", "while"]
+              },
+              {
+                "label": "pronouns",
+                "items": ["who", "which", "that", "what", "where", "when"]
+              },
+              {
+                "label": "other",
+                "items": ["some", "any", "much", "many", "all", "each", "every"]
+              },
+              {
+                "label": "fixed phrases",
+                "items": ["such as", "as well as", "in order to"]
+              }
+            ]
+          }
+        ]
       },
       {
-        "title": "What is often in the gaps? (3)",
-        "content": "t, what, where, when\n• **Other**: some, any, much, many, all, each, every\n• **Fixed phrases**: such as, as well as, in order to"
-      },
-      {
-        "title": "What to do (1)",
-        "content": "1. Read the whole sentence. Read the sentences before and after too.\n2. Think: what **type** of word is missing? (article? verb? preposition?)\n3. Think of the word that fits the **grammar** and the **meaning**.\n4."
-      },
-      {
-        "title": "What to do (2)",
-        "content": "Check: one word only, and correct spelling."
-      },
-      {
-        "title": "Reference",
-        "content": "[[ref|Reference lists]]"
+        "title": "What to do",
+        "content": "Four steps for every gap:\n1. Read the whole sentence. Read the sentences before and after too.\n2. Think: what **type** of word is missing? (article? verb? preposition?)\n3. Think of the word that fits the **grammar** and the **meaning**.\n4. Check: one word only, and correct spelling.\n\n[[ref|Reference lists]]"
       }
     ]
   },

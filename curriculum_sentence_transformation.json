@@ -3,44 +3,55 @@
     "title": "Sentence Transformation (Part 4)",
     "sections": [
       {
-        "title": "In the exam (1)",
-        "content": "In FCE this is **Part 4**. You get two sentences; the second has a gap and a **key word** in capitals. You must complete the second sentence so it means the same as the first, using the key word. You usually write **between two and five words**."
+        "title": "In the exam: Part 4",
+        "content": "In FCE this is **Part 4**: two sentences — the second has a **gap** and a **key word** in capitals.\n- The first sentence is complete. Finish the second so it **means the same** as the first.\n- You must use the key word, and you **cannot change** it (e.g. **SO**, **SINCE**, **MIGHT**).\n- You usually write **two to five words** in the gap (including the key word).\n- This task tests grammar and vocabulary."
       },
       {
-        "title": "In the exam (2)",
-        "content": "**Tip:** The key word often tells you which grammar to use (e.g. SINCE → present perfect, SO → result)."
+        "title": "What to do",
+        "content": "Four steps:\n1. Read the **first sentence**. Understand what it means.\n2. Look at the **key word**. It often shows you which grammar to use.\n3. Finish the **second sentence** so it has the **same meaning** as the first.\n4. Use **two to five words**. Do not change the key word.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "title": "The key word tells you the grammar",
+            "items": [
+              {
+                "label": "SINCE",
+                "formula": "SINCE → present perfect"
+              },
+              {
+                "label": "SO",
+                "formula": "SO → result"
+              }
+            ]
+          }
+        ]
       },
       {
-        "title": "What is it? (1)",
-        "content": "You get **two sentences**. The first sentence is complete. The second has a **gap** and a **key word** in capitals. You must finish the second sentence so it **means the same** as the first. You must use the key word."
-      },
-      {
-        "title": "What is it? (2)",
-        "content": "You **cannot change** the key word (e.g. **SO**, **SINCE**, **MIGHT**)."
-      },
-      {
-        "title": "What is it? (2)",
-        "content": "You usually write **two to five words** in the gap (including the key word). This task tests grammar and vocabulary."
-      },
-      {
-        "title": "What to do (1)",
-        "content": "• Read the **first sentence**. Understand what it means.\n• Look at the **key word**. It often shows you which grammar to use (e.g."
-      },
-      {
-        "title": "What to do (2)",
-        "content": "SINCE → present perfect; SO → result).\n• Finish the **second sentence** so it has the **same meaning** as the first.\n• Use **two to five words**. Do not change the key word."
-      },
-      {
-        "title": "Examples (1)",
-        "content": "• **SINCE**: I last saw him in May → I haven't **seen** him since May.\n• **MIGHT**: It's possible she forgot → She **might have** forgotten.\n• **WISH**: I regret not studying → I **wish I had studied**.\n• **Passive**: They built the house in 1990 → T"
-      },
-      {
-        "title": "Examples (2)",
-        "content": "he house **was built** in 1990."
-      },
-      {
-        "title": "Reference",
-        "content": "[[ref|Reference lists]]"
+        "title": "Examples",
+        "content": "Typical transformations:\n\n[[ref|Reference lists]]",
+        "diagrams": [
+          {
+            "type": "formula",
+            "items": [
+              {
+                "label": "SINCE",
+                "formula": "I last saw him in May → I haven't **seen** him since May."
+              },
+              {
+                "label": "MIGHT",
+                "formula": "It's possible she forgot → She **might have** forgotten."
+              },
+              {
+                "label": "WISH",
+                "formula": "I regret not studying → I **wish I had studied**."
+              },
+              {
+                "label": "Passive",
+                "formula": "They built the house in 1990 → The house **was built** in 1990."
+              }
+            ]
+          }
+        ]
       }
     ]
   },
