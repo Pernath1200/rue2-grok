@@ -4,7 +4,7 @@
     "convention": "<CEFR>.<family>.<concept>  — CEFR in {A1,A2,B1,B2}; family = the middle grouping key below; concept = lowercase_snake.",
     "how_to_add": "To introduce a new root_id, add it under its family here FIRST (create the family key if needed), then tag curriculum sections/questions with it. Validation fails if a curriculum uses an id absent here.",
     "version": "1.0.0",
-    "total": 81
+    "total": 85
   },
   "families": {
     "agreement": [
@@ -63,6 +63,9 @@
       "B1.modals.past_forms",
       "B1.modals.speculation_present",
       "B2.modals.speculation_past"
+    ],
+    "open_cloze": [
+      "B1.open_cloze.basic"
     ],
     "passive": [
       "B1.passive.form_basic",
@@ -128,6 +131,9 @@
       "A2.tenses.simple_continuous",
       "B1.tenses.perfect"
     ],
+    "transformations": [
+      "B2.transformations.basic"
+    ],
     "verb_patterns": [
       "A2.verb_patterns.basic",
       "B1.verb_patterns.to_inf_vs_ing",
@@ -136,6 +142,10 @@
     "verb_phrase": [
       "A1.verb_phrase.auxiliaries",
       "A2.verb_phrase.auxiliaries"
+    ],
+    "word_formation": [
+      "B1.word_formation.basic",
+      "B2.word_formation.prefixes_suffixes"
     ],
     "word_order": [
       "A1.word_order.svo_basic",

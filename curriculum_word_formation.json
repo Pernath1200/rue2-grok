@@ -3,56 +3,119 @@
     "title": "Word Formation (Part 3)",
     "sections": [
       {
-        "title": "In the exam (1)",
-        "content": "In FCE and CAE, Word Formation is **Part 3**. You see a text with eight gaps; each line has a word in **capitals**. You form a new word from that word for each gap."
+        "title": "Word Formation — build the word that fits",
+        "content": "In FCE and CAE, Word Formation is **Part 3**: a text with **eight gaps**, and at the end of each line a stem word in **CAPITALS**. You form a new word from the stem to fit the gap.\n- The same stem gives different words: **HOPE** → *hopeful*, *hopefully*, *hopeless* — the sentence decides.\n- The task tests **prefixes**, **suffixes**, and **word families** (noun, verb, adjective, adverb).",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Read the whole sentence first. The meaning tells you whether you need a noun, adjective, adverb — or a negative form."
+          }
+        ],
+        "root_ids": [
+          "B1.word_formation.basic"
+        ],
+        "cefr_level": "B1"
       },
       {
-        "title": "In the exam (2)",
-        "content": "**Tip:** Read the whole sentence first. The meaning tells you whether you need a noun, adjective, adverb or negative form."
+        "title": "Common suffixes — changing word class",
+        "content": "Suffixes turn one word class into another. These patterns cover most exam answers:",
+        "diagrams": [
+          {
+            "type": "table",
+            "headers": [
+              "Suffix",
+              "Makes",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**-tion / -sion / -ment**",
+                "noun",
+                "decide → decision; develop → development"
+              ],
+              [
+                "**-ence / -ance**",
+                "noun",
+                "different → difference; appear → appearance"
+              ],
+              [
+                "**-ful / -less**",
+                "adjective",
+                "hope → hopeful; care → careless"
+              ],
+              [
+                "**-ive / -able**",
+                "adjective",
+                "effect → effective; rely → reliable"
+              ],
+              [
+                "**-ly**",
+                "adverb",
+                "quick → quickly; happy → happily"
+              ]
+            ]
+          }
+        ],
+        "root_ids": [
+          "B1.word_formation.basic"
+        ],
+        "cefr_level": "B1"
       },
       {
-        "title": "What is Word Formation? (1)",
-        "content": "You read a short text with **eight gaps**. At the end of each line you see a word in **capitals** (the stem). You must **make a new word** from this stem for the gap."
+        "title": "Negative prefixes & spelling",
+        "content": "Negative forms are made with prefixes — and the exam loves them:",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "un-",
+                "items": [
+                  "able → unable",
+                  "happy → unhappy"
+                ]
+              },
+              {
+                "label": "in-",
+                "items": [
+                  "correct → incorrect",
+                  "formal → informal"
+                ]
+              },
+              {
+                "label": "im-",
+                "items": [
+                  "possible → impossible",
+                  "patient → impatient"
+                ]
+              },
+              {
+                "label": "dis-",
+                "items": [
+                  "agree → disagree",
+                  "honest → dishonest"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "label": "Spelling",
+            "text": "One wrong letter makes the whole answer wrong. Double-check the spelling of every word you form."
+          }
+        ],
+        "root_ids": [
+          "B2.word_formation.prefixes_suffixes"
+        ],
+        "cefr_level": "B2"
       },
       {
-        "title": "What is Word Formation? (2)",
-        "content": "For example: **HOPE** → *hopeful*, *hopefully*, or *hopeless* – it depends on the sentence."
-      },
-      {
-        "title": "What is Word Formation? (3)",
-        "content": "This task tests **prefixes**, **suffixes**, and **word families** (noun, verb, adjective, adverb)."
-      },
-      {
-        "title": "What to do (1)",
-        "content": "• Read the **whole sentence** (and the sentences around it). Understand the meaning.\n• Look at the **stem word** in capitals.\n• Think: do you need a **noun**? An **adjective**? An **adverb**? A **negative** form?\n• **Spell** the word correctly."
-      },
-      {
-        "title": "What to do (2)",
-        "content": "One wrong letter can make the answer wrong."
-      },
-      {
-        "title": "Common patterns (1)",
-        "content": "• **-ful / -less**: hope → hopeful, hopeless; care → careful, careless\n• **-ly** (adverb): quick → quickly; happy → happily\n• **-tion / -sion / -ment** (noun): decide → decision; develop → development\n• **-ive / -able** (adjective): effect → effectiv"
-      },
-      {
-        "title": "Common patterns (2)",
-        "content": "e; rely → reliable"
-      },
-      {
-        "title": "Common patterns (2)",
-        "content": "• **un- / in- / im- / dis-** (negative): able → unable; correct → incorrect\n• **-ence / -ance** (noun): different → difference; appear → appearance"
-      },
-      {
-        "title": "Reference: Prefixes and suffixes (1)",
-        "content": "A **reference list** shows the **30 most common prefixes** and **30 most common suffixes** with examples. Use it to learn word families before or during practice."
-      },
-      {
-        "title": "Reference: Prefixes and suffixes (2)",
-        "content": "**Where to find it:** Open **Reference** (at the bottom of any menu), then choose **Word Formation: Prefixes & Suffixes**."
-      },
-      {
-        "title": "Reference",
-        "content": "[[ref|Reference lists]]"
+        "title": "Method & reference",
+        "content": "1. Read the **whole sentence** (and the sentences around it). Understand the meaning.\n2. Look at the **stem word** in capitals.\n3. Decide: noun? adjective? adverb? **negative**?\n4. Form the word and **check the spelling**.\n\nA reference list with the **30 most common prefixes and suffixes** lives in **Reference → Word Formation: Prefixes & Suffixes**.\n\n[[ref|Reference lists]]",
+        "root_ids": [
+          "B1.word_formation.basic"
+        ],
+        "cefr_level": "B1"
       }
     ]
   },

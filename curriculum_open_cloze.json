@@ -3,48 +3,123 @@
     "title": "Open Cloze",
     "sections": [
       {
-        "title": "In the exam (1)",
-        "content": "In FCE and CAE, Open Cloze is **Part 2**. You have a short text with eight gaps and write **one word** in each. You do not get a list of words to choose from."
+        "title": "Open Cloze — one word per gap",
+        "content": "In FCE and CAE, Open Cloze is **Part 2**: a short text with **eight gaps**, and you write **one word** in each. There are no options — you think of the word yourself.\n- The word must fit both **grammar** and **meaning**.\n- Short forms like *don't* or *it's* count as **one word**.\n- Never leave a gap empty — a guess costs nothing.",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "Read the whole text first, before you fill any gap. The context often makes the answer clear."
+          }
+        ],
+        "root_ids": [
+          "B1.open_cloze.basic"
+        ],
+        "cefr_level": "B1"
       },
       {
-        "title": "In the exam (2)",
-        "content": "**Tip:** Read the whole text first before you fill any gap. The context often makes the answer clear."
+        "title": "What's usually in the gaps",
+        "content": "Gaps almost always hide **small grammar words**, not difficult vocabulary. These closed sets cover most answers:",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "Articles",
+                "items": [
+                  "a",
+                  "an",
+                  "the"
+                ]
+              },
+              {
+                "label": "Auxiliaries & modals",
+                "items": [
+                  "do",
+                  "did",
+                  "have",
+                  "has",
+                  "will",
+                  "would",
+                  "can",
+                  "could"
+                ]
+              },
+              {
+                "label": "Prepositions",
+                "items": [
+                  "in",
+                  "on",
+                  "at",
+                  "for",
+                  "with",
+                  "by",
+                  "from",
+                  "to"
+                ]
+              },
+              {
+                "label": "Linkers",
+                "items": [
+                  "although",
+                  "however",
+                  "because",
+                  "so that",
+                  "while"
+                ]
+              },
+              {
+                "label": "Pronouns",
+                "items": [
+                  "who",
+                  "which",
+                  "that",
+                  "what",
+                  "where",
+                  "when"
+                ]
+              },
+              {
+                "label": "Quantifiers",
+                "items": [
+                  "some",
+                  "any",
+                  "much",
+                  "many",
+                  "all",
+                  "each",
+                  "every"
+                ]
+              },
+              {
+                "label": "Fixed phrases",
+                "items": [
+                  "such as",
+                  "as well as",
+                  "in order to"
+                ]
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B1.open_cloze.basic"
+        ],
+        "cefr_level": "B1"
       },
       {
-        "title": "What is Open Cloze? (1)",
-        "content": "You read a short text with **eight gaps**. You write **one word** in each gap. The word must be right for grammar and meaning. You do not get options – you think of the word."
-      },
-      {
-        "title": "What is Open Cloze? (2)",
-        "content": "This task tests grammar and words: articles (a, the), verbs like do/have, prepositions, linkers, pronouns and so on."
-      },
-      {
-        "title": "One word only",
-        "content": "Write **only one word** in each gap. Short forms like *don't* or *it's* count as **one word**. Spell the word correctly.\n\nDo not write two words when you need one. Do not leave the gap empty."
-      },
-      {
-        "title": "What is often in the gaps? (1)",
-        "content": "Often you need:"
-      },
-      {
-        "title": "What is often in the gaps? (2)",
-        "content": "• **Articles**: a, an, the, or no article\n• **Verbs**: do, does, did, have, has, will, would, can, could\n• **Prepositions**: in, on, at, for, with, by, from, to\n• **Linkers**: although, however, because, so that, while\n• **Pronouns**: who, which, tha"
-      },
-      {
-        "title": "What is often in the gaps? (3)",
-        "content": "t, what, where, when\n• **Other**: some, any, much, many, all, each, every\n• **Fixed phrases**: such as, as well as, in order to"
-      },
-      {
-        "title": "What to do (1)",
-        "content": "1. Read the whole sentence. Read the sentences before and after too.\n2. Think: what **type** of word is missing? (article? verb? preposition?)\n3. Think of the word that fits the **grammar** and the **meaning**.\n4."
-      },
-      {
-        "title": "What to do (2)",
-        "content": "Check: one word only, and correct spelling."
-      },
-      {
-        "title": "Reference",
-        "content": "[[ref|Reference lists]]"
+        "title": "Method",
+        "content": "1. Read the **whole sentence** — and the sentences before and after it.\n2. Decide what **type** of word is missing (article? auxiliary? preposition?).\n3. Think of the word that fits the **grammar** and the **meaning**.\n4. Check: **one word only**, spelled correctly.\n\n[[ref|Reference lists]]",
+        "diagrams": [
+          {
+            "type": "callout",
+            "label": "One word only",
+            "text": "Two words = wrong. An empty gap = wrong. A contraction like *don't* counts as one word."
+          }
+        ],
+        "root_ids": [
+          "B1.open_cloze.basic"
+        ],
+        "cefr_level": "B1"
       }
     ]
   },

@@ -3,44 +3,57 @@
     "title": "Sentence Transformation (Part 4)",
     "sections": [
       {
-        "title": "In the exam (1)",
-        "content": "In FCE this is **Part 4**. You get two sentences; the second has a gap and a **key word** in capitals. You must complete the second sentence so it means the same as the first, using the key word. You usually write **between two and five words**."
+        "title": "Sentence Transformation — same meaning, new structure",
+        "content": "In FCE this is **Part 4**: two sentences, where the second has a **gap** and a **key word** in CAPITALS. Complete the second sentence so it **means the same** as the first.\n- Write **two to five words**, including the key word.\n- You **cannot change** the key word in any way (**SO**, **SINCE**, **MIGHT**...).\n- The task tests grammar **and** vocabulary at the same time.",
+        "diagrams": [
+          {
+            "type": "callout",
+            "text": "The key word is a clue: it usually points to one specific grammar structure."
+          }
+        ],
+        "root_ids": [
+          "B2.transformations.basic"
+        ],
+        "cefr_level": "B2"
       },
       {
-        "title": "In the exam (2)",
-        "content": "**Tip:** The key word often tells you which grammar to use (e.g. SINCE → present perfect, SO → result)."
+        "title": "The key word tells you the grammar",
+        "content": "Learn the common key-word → structure pairs:",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I haven't seen him since May.",
+                "why": "SINCE → present perfect (from: I last saw him in May)"
+              },
+              {
+                "good": "She might have forgotten.",
+                "why": "MIGHT → speculation about the past (from: It's possible she forgot)"
+              },
+              {
+                "good": "I wish I had studied.",
+                "why": "WISH → past regret (from: I regret not studying)"
+              },
+              {
+                "good": "The house was built in 1990.",
+                "why": "Passive — the doer disappears (from: They built the house in 1990)"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B2.transformations.basic"
+        ],
+        "cefr_level": "B2"
       },
       {
-        "title": "What is it? (1)",
-        "content": "You get **two sentences**. The first sentence is complete. The second has a **gap** and a **key word** in capitals. You must finish the second sentence so it **means the same** as the first. You must use the key word."
-      },
-      {
-        "title": "What is it? (2)",
-        "content": "You **cannot change** the key word (e.g. **SO**, **SINCE**, **MIGHT**)."
-      },
-      {
-        "title": "What is it? (2)",
-        "content": "You usually write **two to five words** in the gap (including the key word). This task tests grammar and vocabulary."
-      },
-      {
-        "title": "What to do (1)",
-        "content": "• Read the **first sentence**. Understand what it means.\n• Look at the **key word**. It often shows you which grammar to use (e.g."
-      },
-      {
-        "title": "What to do (2)",
-        "content": "SINCE → present perfect; SO → result).\n• Finish the **second sentence** so it has the **same meaning** as the first.\n• Use **two to five words**. Do not change the key word."
-      },
-      {
-        "title": "Examples (1)",
-        "content": "• **SINCE**: I last saw him in May → I haven't **seen** him since May.\n• **MIGHT**: It's possible she forgot → She **might have** forgotten.\n• **WISH**: I regret not studying → I **wish I had studied**.\n• **Passive**: They built the house in 1990 → T"
-      },
-      {
-        "title": "Examples (2)",
-        "content": "he house **was built** in 1990."
-      },
-      {
-        "title": "Reference",
-        "content": "[[ref|Reference lists]]"
+        "title": "Method",
+        "content": "1. Read the **first sentence** — understand exactly what it means.\n2. Look at the **key word**: which structure does it signal?\n3. Complete the second sentence with the **same meaning**.\n4. Count: **two to five words**, key word unchanged.\n\n[[ref|Reference lists]]",
+        "root_ids": [
+          "B2.transformations.basic"
+        ],
+        "cefr_level": "B2"
       }
     ]
   },
