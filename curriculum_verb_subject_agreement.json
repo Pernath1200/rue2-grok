@@ -3,16 +3,53 @@
     "title": "Verb–subject agreement",
     "sections": [
       {
-        "title": "What is verb–subject agreement?",
-        "content": "The **verb** must match the **subject** in number:\n**Singular subject** → singular verb: *The cat is here. He works every day.*\n**Plural subject** → plural verb: *The cats are here. They work every day.*\nWrong: *The cat are here.* *They works.* Right: *The cat is; They work.*",
-        "root_ids": [
-          "A2.agreement.basic"
+        "title": "The rule — verb matches subject",
+        "content": "The **verb** must match the **subject** in number. The danger zone is the **present simple third person singular** (he / she / it / one person or thing): it takes **-s**.\nFor more on *do/does* and *have/has* themselves, see [[topic:auxiliary_verbs|Auxiliary Verbs]].",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Who gets the -s",
+            "headers": [
+              "Subject",
+              "Verb",
+              "Example"
+            ],
+            "rows": [
+              [
+                "he / she / it",
+                "singular: **-s / -es**",
+                "She **works**. He **goes**. It **does**."
+              ],
+              [
+                "I / you / we / they",
+                "no -s",
+                "They **work**. We **go**. You **do**."
+              ],
+              [
+                "irregular pairs",
+                "have → **has**, be → **is**",
+                "He **has** been. It **is** late."
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "He have been ill.",
+                "good": "He has been ill."
+              },
+              {
+                "bad": "She don't know.",
+                "good": "She doesn't know."
+              },
+              {
+                "bad": "It go wrong.",
+                "good": "It goes wrong."
+              }
+            ]
+          }
         ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Third person singular: the -s",
-        "content": "In the **present simple**, when the subject is **third person singular** (he, she, it, or one person/thing), add **-s** or **-es** to the verb:\n*I/you/we/they have → he/she/it has. I/you/we/they go → he/she/it goes. I/you/we/they do → he/she/it does. I/you/we/they are → he/she/it is.*\nWrong: *He have been. She don't know. It go wrong.* Right: *He has been. She doesn't know. It goes wrong.*",
         "root_ids": [
           "A2.agreement.basic"
         ],
@@ -20,7 +57,28 @@
       },
       {
         "title": "Don't be fooled by words in between",
-        "content": "The verb agrees with the **subject**, not with a noun that comes between them:\n*The list of items is on the table.* (subject = list, singular)\n*One of the students was late.* (subject = one)\n*The people in the room are waiting.* (subject = people, plural)\nWrong: *The list of items are on the table.* Right: *The list is.*",
+        "content": "The verb agrees with the **subject**, not with a noun that happens to sit next to the verb. Find the real subject first — phrases like *of the items* or *in the room* are not it.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "The list of items are on the table.",
+                "good": "The list of items is on the table.",
+                "why": "subject = list (singular), not items"
+              },
+              {
+                "bad": "One of the students were late.",
+                "good": "One of the students was late.",
+                "why": "subject = one, not students"
+              },
+              {
+                "good": "The people in the room are waiting.",
+                "why": "subject = people (plural)"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B1.agreement.tricky"
         ],
@@ -28,63 +86,39 @@
       },
       {
         "title": "Compound subjects",
-        "content": "**A and B** (joined by *and*) → usually **plural**: *Tom and Anna are friends.*\n**A or B / Neither A nor B** → verb agrees with the **nearest** subject: *Neither the teacher nor the students were there.* (nearest = students, plural)\n**Each / Every** → singular: *Each of us has a copy. Every student takes the test.*",
-        "root_ids": [
-          "B1.agreement.tricky"
-        ],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "Agreement rules",
-        "content": "",
-        "diagram": {
-          "type": "table",
-          "title": "Agreement rules",
-          "headers": [
-            "Subject pattern",
-            "Verb",
-            "Example"
-          ],
-          "rows": [
-            [
-              "he / she / it",
-              "singular (**-s**)",
-              "She **works**. He **has**."
+        "content": "When the subject has more than one part, the joining word decides the verb:",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Agreement with compound subjects",
+            "headers": [
+              "Subject pattern",
+              "Verb",
+              "Example"
             ],
-            [
-              "I / you / we / they",
-              "plural (no -s)",
-              "They **work**. We **have**."
-            ],
-            [
-              "A and B",
-              "plural",
-              "Tom and Anna **are** friends."
-            ],
-            [
-              "A or B / Neither … nor",
-              "agree with nearest",
-              "Neither he nor they **were** …"
-            ],
-            [
-              "Each / Every",
-              "singular",
-              "Each of us **has** a copy."
+            "rows": [
+              [
+                "A **and** B",
+                "plural",
+                "Tom and Anna **are** friends."
+              ],
+              [
+                "A **or** B / **Neither … nor**",
+                "agrees with the **nearest**",
+                "Neither the teacher nor the students **were** there."
+              ],
+              [
+                "**Each / Every**",
+                "singular",
+                "Each of us **has** a copy. Every student **takes** the test."
+              ]
             ]
-          ]
-        },
+          }
+        ],
         "root_ids": [
           "B1.agreement.tricky"
         ],
         "cefr_level": "B1"
-      },
-      {
-        "title": "Reference",
-        "content": "For more on third person forms, see the Auxiliary Verbs topic under Choose Grammar Topic.",
-        "root_ids": [
-          "A2.agreement.basic"
-        ],
-        "cefr_level": "A2"
       }
     ]
   },
