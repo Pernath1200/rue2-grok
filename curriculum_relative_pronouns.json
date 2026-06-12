@@ -4,7 +4,41 @@
     "sections": [
       {
         "title": "What relative clauses do (core logic)",
-        "content": "A **relative clause** adds information about a noun without starting a new sentence. The relative pronoun links the two ideas together.\n\n- *The man **who lives next door** is a doctor.* = *The man is a doctor.* + *He lives next door.*\n- *The book **that I'm reading** is excellent.* = *The book is excellent.* + *I'm reading it.*\n\n**Why it matters (roots-first)**: This is the Clause Linking root (#4 in the Tree Model) — how English **embeds** extra information inside a noun phrase instead of breaking it into short choppy sentences. Czech often uses *který/která/které*; English distributes the same job across **who, which, that, whose, where, when, why**, with rules that decide which fits. Getting this right is what makes B1/B2 writing sound like adult prose instead of beginner sentences.\n\n**Key principle**: the relative pronoun replaces the noun *inside* the second clause — so it sits at the start of the relative clause, not in its original position.",
+        "content": "A **relative clause** adds information about a noun without starting a new sentence — the relative pronoun links the two ideas together.\n- The Clause Linking root (#4 in the Tree Model): English **embeds** extra information inside a noun phrase instead of breaking it into short choppy sentences — what makes B1/B2 writing sound like adult prose instead of beginner sentences.\n- Key principle: the relative pronoun replaces the noun *inside* the second clause — so it sits at the start of the relative clause, not in its original position.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "title": "Two sentences → one",
+            "items": [
+              {
+                "label": "person",
+                "formula": "The man is a doctor. + He lives next door. → The man **who lives next door** is a doctor."
+              },
+              {
+                "label": "thing",
+                "formula": "The book is excellent. + I'm reading it. → The book **that I'm reading** is excellent."
+              }
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "The relatives",
+            "items": [
+              "who",
+              "which",
+              "that",
+              "whose",
+              "where",
+              "when",
+              "why"
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech often uses *který/která/které* for all of these; English distributes the same job across **who, which, that, whose, where, when, why**, with rules that decide which fits."
+          }
+        ],
         "root_ids": [
           "A2.relative_clauses.basic"
         ],
@@ -12,38 +46,83 @@
       },
       {
         "title": "The relative pronouns — who / which / that / whose",
-        "content": "**The core four** — most relative clauses use one of these.\n\n**Why it matters**: pick the wrong one and the sentence is instantly marked as L1-interference (e.g. *the man **which** lives there*). The choice depends on **what kind of noun** you're adding to, and (for *that*) **whether the clause is defining**.\n\n**Contrast examples**:\n- *The teacher **who** taught us French has retired.* (person)\n- *The car **which** I bought is red.* (thing)\n- *Anything **that** moves attracts the cat.* (people OR things — but only in defining clauses)\n- *That's the writer **whose** books I love.* (possession — people or things)",
-        "diagram": {
-          "type": "table",
-          "title": "who / which / that / whose at a glance",
-          "headers": [
-            "Pronoun",
-            "Refers to",
-            "Notes"
-          ],
-          "rows": [
-            [
-              "**who**",
-              "People",
-              "Subject or object; works in both defining and non-defining clauses"
-            ],
-            [
-              "**which**",
-              "Things, animals, ideas",
-              "Works in both defining and non-defining clauses"
-            ],
-            [
-              "**that**",
-              "People or things",
-              "**Defining clauses only** — never after a comma"
-            ],
-            [
-              "**whose**",
-              "Possession (people and things)",
-              "Replaces *his / her / its / their*"
+        "content": "**The core four** — most relative clauses use one of these. The choice depends on **what kind of noun** you're adding to, and (for *that*) **whether the clause is defining**.",
+        "diagrams": [
+          {
+            "type": "decision",
+            "title": "Which pronoun?",
+            "steps": [
+              {
+                "q": "Possession (replacing his / her / its / their)?",
+                "yes": "whose"
+              },
+              {
+                "q": "A person?",
+                "yes": "who (or that — defining clauses only)"
+              },
+              {
+                "end": "which (or that — defining clauses only)"
+              }
             ]
-          ]
-        },
+          },
+          {
+            "type": "table",
+            "title": "who / which / that / whose at a glance",
+            "headers": [
+              "Pronoun",
+              "Refers to",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "**who**",
+                "People",
+                "Subject or object; works in both defining and non-defining clauses"
+              ],
+              [
+                "**which**",
+                "Things, animals, ideas",
+                "Works in both defining and non-defining clauses"
+              ],
+              [
+                "**that**",
+                "People or things",
+                "**Defining clauses only** — never after a comma"
+              ],
+              [
+                "**whose**",
+                "Possession (people and things)",
+                "Replaces *his / her / its / their*"
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "The teacher **who** taught us French has retired.",
+                "why": "person"
+              },
+              {
+                "good": "The car **which** I bought is red.",
+                "why": "thing"
+              },
+              {
+                "good": "Anything **that** moves attracts the cat.",
+                "why": "people OR things — but only in defining clauses"
+              },
+              {
+                "good": "That's the writer **whose** books I love.",
+                "why": "possession — people or things"
+              },
+              {
+                "good": "the man **who** lives there",
+                "bad": "the man which lives there",
+                "why": "pick the wrong one and the sentence is instantly marked as L1-interference"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.relative_clauses.basic"
         ],
@@ -51,29 +130,52 @@
       },
       {
         "title": "Defining vs non-defining (the comma rule)",
-        "content": "**The single highest-impact distinction in B2 writing.** Commas are not decoration — they change the meaning.\n\n- **Defining** = essential info; tells you *which one*. **No commas.** *that* is allowed.\n- **Non-defining** = extra info; the sentence still identifies the noun without it. **Commas around the clause.** *that* is **not** allowed.\n\n**Why it matters**: in exams and emails, the comma signals whether the information is critical or parenthetical. *My brother who lives in Brno* (defining — I have several brothers, this one) is a different claim from *My brother, who lives in Brno,* (non-defining — I have one brother, and by the way he lives in Brno).\n\n**Contrast examples**:",
-        "diagram": {
-          "type": "table",
-          "title": "Defining vs non-defining side-by-side",
-          "headers": [
-            "Defining (no commas)",
-            "Non-defining (commas)"
-          ],
-          "rows": [
-            [
-              "*The book **that I bought** is good.* (which book? the one I bought)",
-              "*This book, **which I bought yesterday**, is good.* (just one book — extra info added)"
+        "content": "**The single highest-impact distinction in B2 writing.** Commas are not decoration — they change the meaning.\nIn exams and emails, the comma signals whether the information is critical or parenthetical.",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "left": {
+              "title": "Defining — no commas",
+              "points": [
+                "Essential info: tells you *which one*",
+                "*that* is allowed"
+              ]
+            },
+            "right": {
+              "title": "Non-defining — commas",
+              "points": [
+                "Extra info: the sentence still identifies the noun without it",
+                "*that* is **not** allowed"
+              ]
+            }
+          },
+          {
+            "type": "table",
+            "title": "Defining vs non-defining side-by-side",
+            "headers": [
+              "Defining (no commas)",
+              "Non-defining (commas)"
             ],
-            [
-              "*The man **who lives next door** is a doctor.* (which man?)",
-              "*My brother, **who lives in Brno**, is a doctor.* (one brother — location is extra)"
-            ],
-            [
-              "*Cities **that have metros** are easier to get around.* (only some cities)",
-              "*Prague, **which is the capital**, has a metro.* (one Prague — capital is extra)"
+            "rows": [
+              [
+                "*The book **that I bought** is good.* (which book? the one I bought)",
+                "*This book, **which I bought yesterday**, is good.* (just one book — extra info added)"
+              ],
+              [
+                "*The man **who lives next door** is a doctor.* (which man?)",
+                "*My brother, **who lives in Brno**, is a doctor.* (one brother — location is extra)"
+              ],
+              [
+                "*Cities **that have metros** are easier to get around.* (only some cities)",
+                "*Prague, **which is the capital**, has a metro.* (one Prague — capital is extra)"
+              ]
             ]
-          ]
-        },
+          },
+          {
+            "type": "callout",
+            "text": "*My brother who lives in Brno* (defining — I have several brothers, this one) is a different claim from *My brother, who lives in Brno,* (non-defining — I have one brother, and by the way he lives in Brno)."
+          }
+        ],
         "root_ids": [
           "B1.relative_clauses.defining_non_defining"
         ],
@@ -81,7 +183,47 @@
       },
       {
         "title": "Contact clauses — when you can drop the pronoun",
-        "content": "In **defining clauses** only, you can omit the relative pronoun **if it's the object** of the relative clause. This is called a **contact clause** and is extremely common in natural English.\n\n**Why it matters**: dropping the pronoun where you can makes speech and writing sound fluent rather than over-formal. Keeping it where you can't is the marker of careful English.\n\n**The rule**: ask whether the relative pronoun is the **subject** or **object** of its own clause.\n\n**Contrast examples**:\n- *The book **(that) I bought** is good.* — *that* is the **object** of *I bought __* → can drop.\n- *The man **(who) I met** yesterday called me.* — *who* is the object of *I met __* → can drop.\n- *The man **who lives** next door is a doctor.* — *who* is the **subject** of *__ lives* → **must keep**.\n- *The book **that fell** off the shelf is mine.* — *that* is the subject → **must keep**.\n\n**Quick test**: if the next word after the gap is a verb, the pronoun is the subject — keep it. If the next words are a new subject + verb, it's the object — drop it freely.",
+        "content": "In **defining clauses** only, you can omit the relative pronoun **if it's the object** of the relative clause — a **contact clause**, extremely common in natural English.\nDropping the pronoun where you can sounds fluent rather than over-formal; keeping it where you can't is the marker of careful English.",
+        "diagrams": [
+          {
+            "type": "decision",
+            "title": "Can I drop the pronoun?",
+            "steps": [
+              {
+                "q": "Non-defining clause (commas)?",
+                "yes": "keep the pronoun"
+              },
+              {
+                "q": "Is the next word after the gap a verb? (pronoun = subject)",
+                "yes": "keep the pronoun"
+              },
+              {
+                "end": "new subject + verb follows → it's the object — drop it freely"
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "The book **(that) I bought** is good.",
+                "why": "*that* is the object of *I bought __* → can drop"
+              },
+              {
+                "good": "The man **(who) I met** yesterday called me.",
+                "why": "*who* is the object of *I met __* → can drop"
+              },
+              {
+                "good": "The man **who lives** next door is a doctor.",
+                "why": "*who* is the subject of *__ lives* → must keep"
+              },
+              {
+                "good": "The book **that fell** off the shelf is mine.",
+                "why": "*that* is the subject → must keep"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.relative_clauses.basic",
           "B1.relative_clauses.defining_non_defining"
@@ -90,7 +232,54 @@
       },
       {
         "title": "Whose, where, when, why",
-        "content": "Beyond *who/which/that*, four more relatives cover **possession, place, time, and reason**. Each replaces a longer *preposition + which* construction.\n\n**Why it matters**: these are what let you build single tight sentences out of two — exactly the move CAE/FCE Use of English transformations test, and what good writing actually does.\n\n**The four**:\n- **whose** = possession (people *and* things): *The student **whose essay** won the prize is here.* / *A building **whose roof** is leaking.*\n- **where** = place: *The town **where I grew up** is small.* = *the town **in which** I grew up*\n- **when** = time: *The year **when I was born** was 1982.* = *the year **in which** I was born*\n- **why** = reason (only after *the reason*): *The reason **why he left** is unclear.* = *the reason **for which** he left*\n\n**Contrast examples**:\n- *The hotel **where we stayed** was excellent.* (natural) vs *The hotel **at which we stayed** was excellent.* (formal — both correct)\n- *I remember the day **when we met**.* vs *I remember the day **(that) we met**.* (both fine; *when* is slightly more natural here)",
+        "content": "Beyond *who/which/that*, four more relatives cover **possession, place, time and reason** — each replaces a longer *preposition + which* construction.\nThese let you build single tight sentences out of two — exactly the move CAE/FCE Use of English transformations test, and what good writing actually does.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "The four",
+            "headers": [
+              "Relative",
+              "Meaning",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**whose**",
+                "possession (people *and* things)",
+                "The student **whose essay** won the prize is here. / A building **whose roof** is leaking."
+              ],
+              [
+                "**where**",
+                "place",
+                "The town **where I grew up** is small. (= the town **in which** I grew up)"
+              ],
+              [
+                "**when**",
+                "time",
+                "The year **when I was born** was 1982. (= the year **in which** I was born)"
+              ],
+              [
+                "**why**",
+                "reason (only after *the reason*)",
+                "The reason **why he left** is unclear. (= the reason **for which** he left)"
+              ]
+            ]
+          },
+          {
+            "type": "formula",
+            "title": "Natural vs formal — both correct",
+            "items": [
+              {
+                "label": "where / at which",
+                "formula": "The hotel **where we stayed** was excellent. (natural) / The hotel **at which we stayed** was excellent. (formal)"
+              },
+              {
+                "label": "when / (that)",
+                "formula": "I remember the day **when we met**. / I remember the day **(that) we met**. (both fine; *when* is slightly more natural here)"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.relative_clauses.basic",
           "B1.relative_clauses.defining_non_defining"
@@ -99,7 +288,45 @@
       },
       {
         "title": "Preposition + which / whom (formal)",
-        "content": "When the relative pronoun is the **object of a preposition**, English gives you two options:\n\n- **Natural**: leave the preposition at the **end** of the clause. *The person **(who) I spoke to**.*\n- **Formal**: move the preposition to the **front** with **whom** (for people) or **which** (for things). *The person **to whom I spoke**.*\n\n**Why it matters**: this is the single most visible register marker in English relatives. Job applications, academic essays, and contracts use the *preposition + whom/which* form; everyday speech and email don't. Choosing wrongly makes you sound either stiff or careless for the context.\n\n**Czech-speaker note**: Czech keeps the preposition with the relative pronoun (*ke kterému, na kterém*). English's habit of **stranding the preposition** at the end (*the person I spoke **to***) feels strange at first but is the **default natural English** — embrace it. Use *whom/which* with a fronted preposition only when the register actually calls for it.\n\n**Contrast examples**:\n- *The colleague **(who) I work with**.* (natural) / *The colleague **with whom I work**.* (formal)\n- *The report **(that) I'm referring to**.* (natural) / *The report **to which I am referring**.* (formal)\n- *The house **(that) I live in**.* (natural) / *The house **in which I live**.* (formal)\n\nNote: **never** strand a preposition with *that* and a fronted construction (✗ *the report to that I'm referring* — must be *which* or *whom*).",
+        "content": "When the relative pronoun is the **object of a preposition**, English gives you two options — the single most visible register marker in English relatives.\nJob applications, academic essays and contracts use *preposition + whom/which*; everyday speech and email don't. Choosing wrongly makes you sound either stiff or careless for the context.",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "left": {
+              "title": "Natural — preposition at the end",
+              "points": [
+                "The person **(who) I spoke to**.",
+                "The colleague **(who) I work with**.",
+                "The report **(that) I'm referring to**.",
+                "The house **(that) I live in**."
+              ]
+            },
+            "right": {
+              "title": "Formal — preposition + whom (people) / which (things)",
+              "points": [
+                "The person **to whom I spoke**.",
+                "The colleague **with whom I work**.",
+                "The report **to which I am referring**.",
+                "The house **in which I live**."
+              ]
+            }
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech keeps the preposition with the relative pronoun (*ke kterému, na kterém*). English's habit of **stranding the preposition** at the end (*the person I spoke **to***) feels strange at first but is the **default natural English** — embrace it. Use *whom/which* with a fronted preposition only when the register actually calls for it."
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "the report **to which** I'm referring",
+                "bad": "the report to that I'm referring",
+                "why": "never front a preposition with *that* — must be *which* or *whom*"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B2.relative_clauses.advanced"
         ],
@@ -107,7 +334,62 @@
       },
       {
         "title": "Advanced features (B2)",
-        "content": "Three constructions that mark B2-level relative clauses.\n\n**Why it matters**: these appear in FCE/CAE reading and Use of English, and in any serious writing. They let you compress information further still.\n\n**1. Quantifier + of whom / of which** — for non-defining clauses with a portion of a group:\n- *I have three sisters, **all of whom** live abroad.*\n- *He gave me ten books, **some of which** I had already read.*\n- *The candidates, **many of whom** were nervous, did well.*\n\n**2. *what* as a relative** — meaning *the thing(s) that*. Starts its own clause with **no noun before it**:\n- *I didn't understand **what you said**.* (= *the thing that you said*)\n- ***What surprises me** is his calm.* (= *the thing that surprises me*)\n- **Wrong**: ✗ *the book **what** I read* — after a noun, use *that/which*.\n\n**3. Reduced relative clauses** — drop *who/which + be* when the clause describes a state or action:\n- *The man **sitting** there* = *the man **who is sitting** there*\n- *The book **written** by Kafka* = *the book **which was written** by Kafka*\n- *Anyone **interested** in the job should apply* = *anyone **who is interested**...*\n\nThese reductions are how natural English keeps noun phrases short — recognise them when reading, deploy them when writing.",
+        "content": "Three constructions that mark B2-level relative clauses — they appear in FCE/CAE reading and Use of English, and in any serious writing. They let you compress information further still.\nReduced relatives are how natural English keeps noun phrases short — recognise them when reading, deploy them when writing.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "title": "1. Quantifier + of whom / of which — non-defining, a portion of a group",
+            "items": [
+              {
+                "label": "all of whom",
+                "formula": "I have three sisters, **all of whom** live abroad."
+              },
+              {
+                "label": "some of which",
+                "formula": "He gave me ten books, **some of which** I had already read."
+              },
+              {
+                "label": "many of whom",
+                "formula": "The candidates, **many of whom** were nervous, did well."
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "title": "2. what as a relative — = the thing(s) that; starts its own clause with no noun before it",
+            "items": [
+              {
+                "good": "I didn't understand **what you said**. (= the thing that you said)"
+              },
+              {
+                "good": "**What surprises me** is his calm. (= the thing that surprises me)"
+              },
+              {
+                "good": "the book **that/which** I read",
+                "bad": "the book what I read",
+                "why": "after a noun, use *that/which*"
+              }
+            ]
+          },
+          {
+            "type": "formula",
+            "title": "3. Reduced relative clauses — drop who/which + be (state or action)",
+            "items": [
+              {
+                "label": "-ing",
+                "formula": "the man **sitting** there = the man **who is sitting** there"
+              },
+              {
+                "label": "participle",
+                "formula": "the book **written** by Kafka = the book **which was written** by Kafka"
+              },
+              {
+                "label": "adjective",
+                "formula": "anyone **interested** in the job should apply = anyone **who is interested**…"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B2.relative_clauses.advanced"
         ],
@@ -115,7 +397,48 @@
       },
       {
         "title": "Common Czech-speaker errors",
-        "content": "**High-frequency mistakes** (mostly L1 interference from *který/co*):\n\n- ✗ *the man **what** lives there* → ✓ *the man **who/that** lives there* (*what* never follows a noun)\n- ✗ *the woman **which** lives next door* → ✓ *the woman **who/that** lives next door* (*which* is not for people)\n- ✗ *Prague, **that** is the capital* → ✓ *Prague, **which** is the capital* (*that* is forbidden after a comma)\n- ✗ *Everything **what** he said* → ✓ *Everything **that** he said* (after *everything/something/anything/nothing* → *that*)\n- ✗ *who's* / *whose* mix-up: **whose** = possession (*the man **whose** car*); **who's** = *who is/has* (*the man **who's** coming*)\n- ✗ *the book **what** I read* → ✓ *the book **(that) I read*** or simply ✓ *the book **I read*** (contact clause)\n- ✗ missing comma in non-defining: *My father who is a doctor lives in Brno* (reads as one of several fathers!) → ✓ *My father, who is a doctor, lives in Brno.*\n\n**Why it matters**: these five or six errors account for the vast majority of relative-clause mistakes in Czech-speaker writing. Fixing them is one of the highest-leverage moves at B1→B2.\n\n**Reference**: for more on commas with non-defining clauses, see the **Punctuation** topic.",
+        "content": "**High-frequency mistakes** — mostly L1 interference from *který/co*. These five or six errors account for the vast majority of relative-clause mistakes in Czech-speaker writing; fixing them is one of the highest-leverage moves at B1→B2.\nFor more on commas with non-defining clauses, see the **Punctuation** topic.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "the man **who/that** lives there",
+                "bad": "the man what lives there",
+                "why": "*what* never follows a noun"
+              },
+              {
+                "good": "the woman **who/that** lives next door",
+                "bad": "the woman which lives next door",
+                "why": "*which* is not for people"
+              },
+              {
+                "good": "Prague, **which** is the capital",
+                "bad": "Prague, that is the capital",
+                "why": "*that* is forbidden after a comma"
+              },
+              {
+                "good": "Everything **that** he said",
+                "bad": "Everything what he said",
+                "why": "after *everything/something/anything/nothing* → *that*"
+              },
+              {
+                "good": "the man **whose** car / the man **who's** coming",
+                "why": "whose = possession; who's = who is/has — don't mix them up"
+              },
+              {
+                "good": "the book **(that) I read** — or simply: the book **I read**",
+                "bad": "the book what I read",
+                "why": "contact clause"
+              },
+              {
+                "good": "My father, who is a doctor, lives in Brno.",
+                "bad": "My father who is a doctor lives in Brno.",
+                "why": "missing commas in non-defining — reads as one of several fathers!"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.relative_clauses.basic",
           "B1.relative_clauses.defining_non_defining"

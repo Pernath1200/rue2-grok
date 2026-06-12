@@ -4,7 +4,43 @@
     "sections": [
       {
         "title": "What quantifiers do (core logic)",
-        "content": "Quantifiers are words that answer **how much?** or **how many?** before a noun. They sit in the same slot as articles (a / the) — you choose ONE determiner per noun phrase.\n\n**Why it matters (roots-first)**: Quantifiers are determiners inside the Noun Phrase root (#3 in the Tree Model). Every time you talk about an amount — food, time, people, money — you need one. The biggest split is **countable vs uncountable**: most quantifiers prefer one or the other. Mix them up and the sentence is just wrong (e.g. *much books* is broken English, not a small mistake).\n\n**Key principle**: First ask — is the noun countable (*book, friend, idea*) or uncountable (*water, time, advice*)? Then choose the quantifier that fits.",
+        "content": "Quantifiers answer **how much?** or **how many?** before a noun — they sit in the same slot as articles (a / the): ONE determiner per noun phrase.\n- Determiners inside the Noun Phrase root (#3 in the Tree Model) — every time you talk about an amount (food, time, people, money) you need one.\n- The biggest split is **countable vs uncountable**: most quantifiers prefer one or the other. Mix them up and the sentence is just wrong — ~~much books~~ is broken English, not a small mistake.",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "countable",
+                "items": [
+                  "book",
+                  "friend",
+                  "idea"
+                ]
+              },
+              {
+                "label": "uncountable",
+                "items": [
+                  "water",
+                  "time",
+                  "advice"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "decision",
+            "title": "Key principle — ask first, then choose",
+            "steps": [
+              {
+                "q": "Is the noun countable (*book, friend, idea*)?",
+                "yes": "choose a countable quantifier"
+              },
+              {
+                "end": "uncountable (*water, time, advice*) — choose an uncountable quantifier"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A1.quantifiers.some_any"
         ],
@@ -12,7 +48,53 @@
       },
       {
         "title": "some / any",
-        "content": "**The default pair** — both mean an unspecified amount or number. They work with **both** countable and uncountable nouns.\n\n- **some** — positive statements, plus offers and requests: *I have **some** milk. Would you like **some** tea? Can I have **some** water?*\n- **any** — negatives and questions: *I don't have **any** money. Do you have **any** time?*\n\n**Why it matters**: Czech speakers often drop these (*Mám mléko* → *I have milk*). English usually needs *some* or *any* with plural or uncountable nouns. Missing them sounds like a beginner; using the wrong one (e.g. *I have any milk*) sounds broken.\n\n**Contrast examples**:\n- I bought **some** bread. (positive)\n- I didn't buy **any** bread. (negative)\n- Did you buy **any** bread? (genuine question)\n- Would you like **some** bread? (offer — expecting yes)",
+        "content": "The **default pair** — an unspecified amount or number. Both work with countable AND uncountable nouns.",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "left": {
+              "title": "some — positive, offers, requests",
+              "points": [
+                "I have **some** milk.",
+                "Would you like **some** tea?",
+                "Can I have **some** water?"
+              ]
+            },
+            "right": {
+              "title": "any — negatives, questions",
+              "points": [
+                "I don't have **any** money.",
+                "Do you have **any** time?"
+              ]
+            }
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I bought **some** bread.",
+                "why": "positive"
+              },
+              {
+                "good": "I didn't buy **any** bread.",
+                "why": "negative"
+              },
+              {
+                "good": "Did you buy **any** bread?",
+                "why": "genuine question"
+              },
+              {
+                "good": "Would you like **some** bread?",
+                "why": "offer — expecting yes"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech speakers often drop these (*Mám mléko* → *I have milk*). English usually needs *some* or *any* with plural or uncountable nouns — missing them sounds like a beginner; the wrong one (*I have any milk*) sounds broken."
+          }
+        ],
         "root_ids": [
           "A1.quantifiers.some_any"
         ],
@@ -20,37 +102,63 @@
       },
       {
         "title": "much / many / a lot of",
-        "content": "**The big three for large amounts.** This is where countable vs uncountable matters most.\n\n- **much** — uncountable, mostly negatives and questions: *I don't have **much** time. How **much** sugar?*\n- **many** — countable plurals, positives or negatives: ***Many** people agree. There aren't **many** seats.*\n- **a lot of / lots of** — works with **both**; the natural choice in positive statements: *I have **a lot of** friends. There's **a lot of** traffic.*\n\n**Why it matters**: *much* in positive statements sounds formal or unnatural (*I have much time* — wrong). Use **a lot of** instead. Real conversations and exam writing both turn on this.\n\n**Czech-speaker trap**: *I have much friends* — double error (much + countable). Fix → *I have **a lot of** friends.*",
-        "diagram": {
-          "type": "table",
-          "title": "much / many / a lot of",
-          "headers": [
-            "Quantifier",
-            "Use with",
-            "Typical context",
-            "Example"
-          ],
-          "rows": [
-            [
-              "**much**",
-              "Uncountable",
-              "Negatives, questions",
-              "not much time, how much money?"
+        "content": "The big three for large amounts — this is where countable vs uncountable matters most.\nReal conversations and exam writing both turn on this.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "much / many / a lot of",
+            "headers": [
+              "Quantifier",
+              "Use with",
+              "Typical context",
+              "Example"
             ],
-            [
-              "**many**",
-              "Countable plural",
-              "Positives, negatives, questions",
-              "many books, not many people, how many?"
-            ],
-            [
-              "**a lot of / lots of**",
-              "Both",
-              "Positives (most natural)",
-              "a lot of friends, lots of water"
+            "rows": [
+              [
+                "**much**",
+                "Uncountable",
+                "Negatives, questions",
+                "not much time, how much money?"
+              ],
+              [
+                "**many**",
+                "Countable plural",
+                "Positives, negatives, questions",
+                "many books, not many people, how many?"
+              ],
+              [
+                "**a lot of / lots of**",
+                "Both",
+                "Positives (most natural)",
+                "a lot of friends, lots of water"
+              ]
             ]
-          ]
-        },
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I don't have **much** time. How **much** sugar?"
+              },
+              {
+                "good": "**Many** people agree. There aren't **many** seats."
+              },
+              {
+                "good": "I have **a lot of** friends. There's **a lot of** traffic."
+              },
+              {
+                "good": "I have **a lot of** time.",
+                "bad": "I have much time.",
+                "why": "*much* in positive statements sounds formal or unnatural — use **a lot of**"
+              },
+              {
+                "good": "I have **a lot of** friends.",
+                "bad": "I have much friends.",
+                "why": "Czech-speaker trap — double error: *much* + countable"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.quantifiers.much_many_a_lot"
         ],
@@ -58,7 +166,63 @@
       },
       {
         "title": "(a) few / (a) little",
-        "content": "**The small-amount pair** — and the attitude shift that comes with the article.\n\n- **a few** + countable = **some** (positive feeling): *I have **a few** friends here.* (enough — happy)\n- **few** + countable = almost none (negative feeling): *He has **few** friends.* (sad — lonely)\n- **a little** + uncountable = **some** (positive): *I need **a little** help.* (a small amount — OK)\n- **little** + uncountable = almost none (negative): *There's **little** hope.* (almost no hope — bleak)\n\n**Why it matters**: One small word (*a*) flips the meaning from positive to negative. Czech speakers often miss this — *I have few time* is both grammatically wrong (countable/uncountable) and conveys hopelessness when you just meant 'a small amount'.\n\n**Quick test**: If you mean *some, enough* → use **a**. If you mean *not enough, almost none* → drop **a**.",
+        "content": "The small-amount pair — and one small word (**a**) flips the meaning from positive to negative.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "The attitude shift",
+            "headers": [
+              "Form",
+              "With",
+              "Meaning",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**a few**",
+                "countable",
+                "= some (positive feeling)",
+                "I have **a few** friends here. (enough — happy)"
+              ],
+              [
+                "**few**",
+                "countable",
+                "almost none (negative)",
+                "He has **few** friends. (sad — lonely)"
+              ],
+              [
+                "**a little**",
+                "uncountable",
+                "= some (positive)",
+                "I need **a little** help. (a small amount — OK)"
+              ],
+              [
+                "**little**",
+                "uncountable",
+                "almost none (negative)",
+                "There's **little** hope. (almost no hope — bleak)"
+              ]
+            ]
+          },
+          {
+            "type": "decision",
+            "title": "Quick test",
+            "steps": [
+              {
+                "q": "Do you mean *some, enough*?",
+                "yes": "use **a** — a few / a little"
+              },
+              {
+                "end": "not enough, almost none → drop **a** — few / little"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech speakers often miss the *a* — *I have few time* is both grammatically wrong (countable/uncountable) and conveys hopelessness when you just meant 'a small amount'."
+          }
+        ],
         "root_ids": [
           "A2.quantifiers.few_little"
         ],
@@ -66,7 +230,55 @@
       },
       {
         "title": "all / most / no / none",
-        "content": "**The degree scale** — from 100% down to 0%.\n\n- **all** = 100% (the whole amount/group): ***All** students passed. **All** the water is gone.*\n- **most** = the majority: ***Most** people agree. **Most** of the time it works.*\n- **some** = an unspecified part (see card 2)\n- **no** + noun = zero: *I have **no** time. There are **no** seats.*\n- **none** (no noun after, or *none of*): ***None** of them came. How many left? **None**.*\n\n**Why it matters**: *no* and *none* mean the same thing but work differently in the sentence. *No* needs a noun after it; *none* stands alone or takes *of the*. Mix them up and the grammar breaks.\n\n**Czech-speaker trap**: *None students came* — wrong. → ***No** students came* OR ***None of the** students came.*",
+        "content": "The degree scale — from 100% down to 0%.\n*no* and *none* mean the same thing but work differently in the sentence — mix them up and the grammar breaks.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "The degree scale",
+            "headers": [
+              "Quantifier",
+              "Meaning",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**all**",
+                "100% — the whole amount/group",
+                "**All** students passed. **All** the water is gone."
+              ],
+              [
+                "**most**",
+                "the majority",
+                "**Most** people agree. **Most** of the time it works."
+              ],
+              [
+                "**some**",
+                "an unspecified part",
+                "see the some / any card"
+              ],
+              [
+                "**no** + noun",
+                "zero — needs a noun after it",
+                "I have **no** time. There are **no** seats."
+              ],
+              [
+                "**none**",
+                "zero — stands alone, or *none of*",
+                "**None** of them came. How many left? **None**."
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "**No** students came. / **None of the** students came.",
+                "bad": "None students came.",
+                "why": "*no* + noun; *none* alone or + *of the*"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B1.quantifiers.all_most_none"
         ],
@@ -74,15 +286,98 @@
       },
       {
         "title": "both / either / neither (exactly two)",
-        "content": "**For exactly TWO things** — a separate small system. Use these when the group is two, not three or more.\n\n- **both** = the two together: ***Both** answers are correct. I like **both** of them.*\n- **either** = one or the other: *You can sit on **either** side. Take **either** one.*\n- **neither** = not one and not the other: ***Neither** answer is right. I like **neither** of them.*\n\n**Why it matters**: With three or more, switch to *all / any / none*. Using *both* for three things is a giveaway error.\n\n**Verb agreement note**: *Both* takes plural (*Both are correct*); *neither* + singular noun takes singular (*Neither answer **is** right*).",
+        "content": "A separate small system for exactly TWO things. With three or more, switch to *all / any / none* — using *both* for three things is a giveaway error.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Exactly two",
+            "headers": [
+              "Word",
+              "Meaning",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**both**",
+                "the two together",
+                "**Both** answers are correct. I like **both** of them."
+              ],
+              [
+                "**either**",
+                "one or the other",
+                "You can sit on **either** side. Take **either** one."
+              ],
+              [
+                "**neither**",
+                "not one and not the other",
+                "**Neither** answer is right. I like **neither** of them."
+              ]
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "Verb agreement: *both* takes plural (*Both are correct*); *neither* + singular noun takes singular (*Neither answer **is** right*)."
+          }
+        ],
         "root_ids": [
           "B1.quantifiers.all_most_none"
         ],
         "cefr_level": "B1"
       },
       {
-        "title": "Common Czech-speaker errors + roadmap",
-        "content": "**High-frequency mistakes** to watch for:\n\n- *much friends* → ***a lot of** friends* (countable, positive)\n- *many water* → ***much / a lot of** water* (uncountable)\n- *I have few time* → *I have **a little** time* (uncountable + positive)\n- *I have any money* → *I have **some** money* (positive)\n- *I have **money*** (no quantifier) → often needs ***some** money* in English\n- *None students came* → ***No** students came* / ***None of the** students came*\n- *less people* → ***fewer** people* (countable → fewer; uncountable → less)\n\n**Why it matters**: These appear in every speaking exam, every email, every conversation about quantities. Fixing them gives immediate visible progress.\n\n**Direct practice in this curriculum** (start here after the cards):\n- Guided MC (some/any, much/many, few/little)\n- Gap fill (mixed quantifiers in context)\n- Error correction (the typical traps)\n\n**Next steps**: For the noun side of this — when a noun is *countable* vs *uncountable* in the first place — see [[topic:countable_uncountable|Countable & Uncountable Nouns]]. For the other half of determiners, see [[topic:articles|Articles (a/an/the)]].",
+        "title": "Common Czech-speaker errors",
+        "content": "High-frequency mistakes — they appear in every speaking exam, every email, every conversation about quantities.\nFixing them gives immediate visible progress.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "**a lot of** friends",
+                "bad": "much friends",
+                "why": "countable, positive"
+              },
+              {
+                "good": "**much / a lot of** water",
+                "bad": "many water",
+                "why": "uncountable"
+              },
+              {
+                "good": "I have **a little** time.",
+                "bad": "I have few time.",
+                "why": "uncountable + positive"
+              },
+              {
+                "good": "I have **some** money.",
+                "bad": "I have any money.",
+                "why": "positive statement"
+              },
+              {
+                "good": "I have **some** money.",
+                "why": "bare *I have money* (no quantifier) often needs *some* in English"
+              },
+              {
+                "good": "**No** students came. / **None of the** students came.",
+                "bad": "None students came."
+              },
+              {
+                "good": "**fewer** people",
+                "bad": "less people",
+                "why": "countable → *fewer*; uncountable → *less*"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "A1.quantifiers.some_any",
+          "A2.quantifiers.much_many_a_lot",
+          "A2.quantifiers.few_little",
+          "B1.quantifiers.all_most_none"
+        ],
+        "cefr_level": "A2"
+      },
+      {
+        "title": "Practice roadmap & next steps",
+        "content": "Direct practice in this curriculum — start here after the cards:\n- Guided MC (some/any, much/many, few/little)\n- Gap fill (mixed quantifiers in context)\n- Error correction (the typical traps)\n\nFor the noun side of this — when a noun is *countable* vs *uncountable* in the first place — see [[topic:countable_uncountable|Countable & Uncountable Nouns]]. For the other half of determiners, see [[topic:articles|Articles (a/an/the)]].",
         "root_ids": [
           "A1.quantifiers.some_any",
           "A2.quantifiers.much_many_a_lot",

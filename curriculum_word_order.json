@@ -4,7 +4,24 @@
     "sections": [
       {
         "title": "What word order does in English (core logic)",
-        "content": "English uses **fixed word order** to show who does what. The position of a word carries grammatical meaning — switch the order, switch the meaning.\n\n**Why it matters (roots-first)**: Word order is the canonical topic for the **Tap Root** (#1 in the Tree Model) — the FOUNDATION of the whole grammar tree. English is **strict SVO** (Subject + Verb + Object); Czech is free word order because cases mark who does what. For Czech speakers, this is the single most important shift in English grammatical thinking. Without SVO mastery, every higher root (verb phrase, clauses, prepositions) breaks down.\n\n**Key principle**: position = meaning. The doer goes BEFORE the verb; the receiver goes AFTER. Adverbials (place, time, frequency) have fixed slots — they do NOT float freely the way they do in Czech.",
+        "content": "English shows **who does what** by position alone — fixed word order. Switch the order, switch the meaning.\n- Strict **SVO** — the **Tap Root** (#1 in the Tree Model), the FOUNDATION of the whole grammar tree.\n- Doer BEFORE the verb; receiver AFTER. Adverbials (place, time, frequency) have fixed slots — they do not float.\n- Without SVO mastery, every higher root (verb phrase, clauses, prepositions) breaks down.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "title": "Position = meaning",
+            "items": [
+              {
+                "label": "Core pattern",
+                "formula": "Subject + Verb + Object"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech is free word order because **cases** mark who does what. English has no such marking — for Czech speakers this is the single most important shift in English grammatical thinking."
+          }
+        ],
         "root_ids": [
           "A1.word_order.svo_basic"
         ],
@@ -12,7 +29,28 @@
       },
       {
         "title": "Subject + Verb + Object — the basic pattern",
-        "content": "The bedrock pattern: **Subject + Verb + Object**.\n\n**Why it matters**: English has almost no case-marking, so position is the only signal. Reverse the order and you reverse the meaning.\n\n**Contrast examples**:\n- **The cat** (S) **chased** (V) **the mouse** (O). → cat is doing the chasing.\n- **The mouse** (S) **chased** (V) **the cat** (O). → opposite meaning.\n\n**Czech contrast**: *Honza vidí Petra* and *Petra vidí Honza* can both mean \"Honza sees Petr\" because **-a** marks Petr as the object. English has no such marker — only position.\n\n**Rule of thumb**: doer first, action next, receiver after. If you mix this up, the listener hears the opposite of what you mean.",
+        "content": "The bedrock pattern: **doer first, action next, receiver after**. English has almost no case-marking, so position is the only signal.\nMix the order up and the listener hears the opposite of what you mean.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "title": "Reverse the order, reverse the meaning",
+            "items": [
+              {
+                "label": "S + V + O",
+                "formula": "**The cat** chased **the mouse**. → the cat is doing the chasing"
+              },
+              {
+                "label": "Reversed",
+                "formula": "**The mouse** chased **the cat**. → opposite meaning"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "*Honza vidí Petra* and *Petra vidí Honza* can both mean \"Honza sees Petr\" because **-a** marks Petr as the object. English has no such marker — only position."
+          }
+        ],
         "root_ids": [
           "A1.word_order.svo_basic"
         ],
@@ -20,29 +58,51 @@
       },
       {
         "title": "Place & time — end of the sentence (or sometimes start)",
-        "content": "Typical English order: **S + V + O + Place + Time**.\n\n**Why it matters**: This is the single most common Czech-speaker error in English word order. Czech freely drops adverbials between verb and object; English **forbids it**.\n\n**Contrast examples**:\n- I (S) **ate** (V) **lunch** (O) **at home** (place) **yesterday** (time). ✓\n- Time CAN move to the front for emphasis: **Yesterday** I ate lunch at home. ✓\n- ~~I ate yesterday lunch at home.~~ ✗ (adverbial between V and O)\n- ~~Yesterday went I to the shop.~~ ✗ (verb-subject inversion; Czech pattern, not English)\n\n**Czech-speaker note**: in Czech *Včera jsem šel do obchodu* works fine. In English the subject must come BEFORE the verb even when time is fronted: *Yesterday I went to the shop*.",
-        "diagram": {
-          "type": "formula",
-          "title": "Standard order with adverbials",
-          "items": [
-            {
-              "label": "Default:",
-              "formula": "Subject + Verb + Object + **Place** + **Time**"
-            },
-            {
-              "label": "Example:",
-              "formula": "I ate lunch **at home** **yesterday**."
-            },
-            {
-              "label": "Time fronted (emphasis):",
-              "formula": "**Time** + Subject + Verb + Object + Place"
-            },
-            {
-              "label": "Example:",
-              "formula": "**Yesterday** I ate lunch at home."
-            }
-          ]
-        },
+        "content": "Typical English order: **S + V + O + Place + Time** — the single most common Czech-speaker word-order trap.\nCzech freely drops adverbials between verb and object; English **forbids it**.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "title": "Standard order with adverbials",
+            "items": [
+              {
+                "label": "Default:",
+                "formula": "Subject + Verb + Object + **Place** + **Time**"
+              },
+              {
+                "label": "Example:",
+                "formula": "I ate lunch **at home** **yesterday**."
+              },
+              {
+                "label": "Time fronted (emphasis):",
+                "formula": "**Time** + Subject + Verb + Object + Place"
+              },
+              {
+                "label": "Example:",
+                "formula": "**Yesterday** I ate lunch at home."
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I ate lunch at home yesterday.",
+                "bad": "I ate yesterday lunch at home.",
+                "why": "no adverbial between verb and object"
+              },
+              {
+                "good": "**Yesterday** I ate lunch at home.",
+                "bad": "Yesterday went I to the shop.",
+                "why": "time can move to the front, but never verb before subject — that is the Czech pattern, not English"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "*Včera jsem šel do obchodu* works fine in Czech. In English the subject must come BEFORE the verb even when time is fronted: *Yesterday I went to the shop*."
+          }
+        ],
         "root_ids": [
           "A2.word_order.adverbs"
         ],
@@ -50,38 +110,82 @@
       },
       {
         "title": "Adverbs of frequency & manner — typical positions",
-        "content": "**Frequency adverbs** (*always, usually, often, sometimes, never*) and **manner adverbs** (*carefully, quickly, well*) have fixed slots.\n\n**Why it matters**: Wrong placement is one of the most common Czech-speaker errors. Czech puts adverbs flexibly; English does not.\n\n**Frequency — three rules**:\n- Before the **main verb**: She **always works** hard.\n- After the verb **be**: She **is always** late.\n- After the **first auxiliary**: She **has always worked** hard. / She **is always working**.\n- Wrong: ~~I drink often coffee.~~ → Right: I **often drink** coffee.\n\n**Manner**: usually **after the object** (or after the verb if there is no object).\n- She drove **carefully**. (no object)\n- She drove the car **carefully**. (after object)\n- Wrong: ~~She drove carefully the car.~~ (NEVER between verb and object)",
-        "diagram": {
-          "type": "table",
-          "title": "Frequency adverb position",
-          "headers": [
-            "Verb type",
-            "Position",
-            "Example"
-          ],
-          "rows": [
-            [
-              "Main verb",
-              "before the verb",
-              "I **often go** to the gym."
-            ],
-            [
-              "Verb *be*",
-              "after *be*",
-              "She **is always** late."
-            ],
-            [
-              "Auxiliary + verb",
-              "after the auxiliary",
-              "She **has always worked** hard."
-            ],
-            [
-              "Negative (do/does/did)",
-              "after the auxiliary",
-              "She doesn't **often** eat out."
+        "content": "Frequency and manner adverbs have **fixed slots**. Czech places adverbs flexibly; English does not — wrong placement is one of the most common Czech-speaker errors.",
+        "diagrams": [
+          {
+            "type": "chips",
+            "groups": [
+              {
+                "label": "frequency",
+                "items": [
+                  "always",
+                  "usually",
+                  "often",
+                  "sometimes",
+                  "never"
+                ]
+              },
+              {
+                "label": "manner",
+                "items": [
+                  "carefully",
+                  "quickly",
+                  "well"
+                ]
+              }
             ]
-          ]
-        },
+          },
+          {
+            "type": "table",
+            "title": "Frequency adverb position",
+            "headers": [
+              "Verb type",
+              "Position",
+              "Example"
+            ],
+            "rows": [
+              [
+                "Main verb",
+                "before the verb",
+                "I **often go** to the gym."
+              ],
+              [
+                "Verb *be*",
+                "after *be*",
+                "She **is always** late."
+              ],
+              [
+                "Auxiliary + verb",
+                "after the auxiliary",
+                "She **has always worked** hard."
+              ],
+              [
+                "Negative (do/does/did)",
+                "after the auxiliary",
+                "She doesn't **often** eat out."
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I **often drink** coffee.",
+                "bad": "I drink often coffee.",
+                "why": "frequency adverb before the main verb"
+              },
+              {
+                "good": "She drove the car **carefully**.",
+                "bad": "She drove carefully the car.",
+                "why": "manner adverb after the object — NEVER between verb and object"
+              },
+              {
+                "good": "She drove **carefully**.",
+                "why": "no object → manner adverb after the verb"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.word_order.adverbs"
         ],
@@ -89,7 +193,63 @@
       },
       {
         "title": "Question word order — auxiliary first",
-        "content": "English questions require an **auxiliary verb** before the subject — even when the statement uses no auxiliary.\n\n**Why it matters**: Czech makes questions by intonation alone (*Bydlíš v Praze?*). English requires **do/does/did** insertion in the present and past simple — an unfamiliar move for Czech speakers, and the source of constant errors.\n\n**Yes/no questions**: **Auxiliary + Subject + Main verb**\n- **Do you** like coffee?\n- **Have you** finished?\n- **Are they** coming?\n\n**Wh-questions**: **Wh-word + Auxiliary + Subject + Main verb**\n- **Where do you** live?\n- **When have you** been there?\n- **What is** she doing?\n\n**Common error**: ~~Where you live?~~ → **Where do you live?** (missing auxiliary)\n\n**Embedded questions** (reported in a bigger sentence) revert to **statement** order — no inversion, no *do/does/did*:\n- I asked **where you lived** (NOT ~~where did you live~~).\n- I don't know **what the answer is** (NOT ~~what is the answer~~).\n- Full coverage in the [[topic:reported_speech|Reported Speech]] topic.",
+        "content": "English questions put an **auxiliary verb** before the subject — even when the statement uses no auxiliary (*do/does/did* insertion in the present and past simple).",
+        "diagrams": [
+          {
+            "type": "formula",
+            "title": "Question patterns",
+            "items": [
+              {
+                "label": "Yes/no",
+                "formula": "Auxiliary + Subject + Main verb → **Do you** like coffee? / **Have you** finished? / **Are they** coming?"
+              },
+              {
+                "label": "Wh-question",
+                "formula": "Wh-word + Auxiliary + Subject + Main verb → **Where do you** live? / **When have you** been there? / **What is** she doing?"
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "**Where do you** live?",
+                "bad": "Where you live?",
+                "why": "the auxiliary is required"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech makes questions by intonation alone (*Bydlíš v Praze?*). The English **do/does/did** insertion is an unfamiliar move for Czech speakers — and the source of constant errors."
+          }
+        ],
+        "root_ids": [
+          "A2.word_order.questions"
+        ],
+        "cefr_level": "A2"
+      },
+      {
+        "title": "Embedded questions — back to statement order",
+        "content": "A question reported inside a bigger sentence reverts to **statement** order — no inversion, no *do/does/did*.\nFull coverage in the [[topic:reported_speech|Reported Speech]] topic.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I asked **where you lived**.",
+                "bad": "I asked where did you live.",
+                "why": "no did inside an embedded question"
+              },
+              {
+                "good": "I don't know **what the answer is**.",
+                "bad": "I don't know what is the answer.",
+                "why": "subject + verb — statement order"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.word_order.questions"
         ],
@@ -97,7 +257,47 @@
       },
       {
         "title": "Indirect objects — two patterns",
-        "content": "Verbs like **give, send, show, tell, bring, lend, offer, write** can take TWO objects: a **direct object** (DO — the thing) and an **indirect object** (IO — the receiver).\n\n**Why it matters**: Both patterns are common in real English; choosing the wrong slot order is a frequent intermediate-level mistake.\n\n**Pattern A — V + IO + DO** (no preposition):\n- I gave **her** **the book**.\n- She sent **me** **a message**.\n\n**Pattern B — V + DO + to/for + IO**:\n- I gave **the book** **to her**.\n- She sent **a message** **to me**.\n\n**Rule of thumb**: Pattern A is more concise and very common in spoken English. Pattern B is preferred when the direct object is short and the indirect object is long, or when you want to emphasise the receiver.\n\n**Czech-speaker trap**: don't add *to* in Pattern A — ~~I gave to her the book~~ is wrong.",
+        "content": "Some verbs take TWO objects: a **direct object** (DO — the thing) and an **indirect object** (IO — the receiver). Both patterns are common; the wrong slot order is a frequent intermediate-level mistake.\n- Pattern A is more concise and very common in spoken English.\n- Pattern B is preferred when the direct object is short and the indirect object is long, or to emphasise the receiver.",
+        "diagrams": [
+          {
+            "type": "chips",
+            "title": "Two-object verbs",
+            "items": [
+              "give",
+              "send",
+              "show",
+              "tell",
+              "bring",
+              "lend",
+              "offer",
+              "write"
+            ]
+          },
+          {
+            "type": "formula",
+            "title": "The two patterns",
+            "items": [
+              {
+                "label": "A — V + IO + DO (no preposition)",
+                "formula": "I gave **her** **the book**. / She sent **me** **a message**."
+              },
+              {
+                "label": "B — V + DO + to/for + IO",
+                "formula": "I gave **the book** **to her**. / She sent **a message** **to me**."
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "I gave **her** the book.",
+                "bad": "I gave to her the book.",
+                "why": "Czech-speaker trap — no *to* in Pattern A"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.word_order.adverbs"
         ],
@@ -105,7 +305,23 @@
       },
       {
         "title": "Inversion for emphasis (B2 — extension)",
-        "content": "At B2+, English allows **inversion** (auxiliary before subject — like a question) for emphasis after certain expressions at the start of a sentence.\n\n**Why it matters**: A high-register pattern that appears in formal writing, exam essays, and literary English. Recognising it is more important than producing it at this stage.\n\n**Negative adverbials trigger inversion**:\n- **Never have I** seen such beauty.\n- **Rarely does he** visit.\n- **No sooner had I** arrived than the phone rang.\n\n**Conditional inversion** (instead of *if*):\n- **Had I known**, I would have come. (= If I had known…)\n- **Should you need** help, call me. (= If you should need…)\n\nThis is a brief pointer. Full coverage in the dedicated [[topic:inversion|Inversion]] topic.",
+        "content": "At B2+, certain expressions at the start of a sentence trigger **inversion** (auxiliary before subject — like a question) for emphasis.\nA high-register pattern of formal writing, exam essays and literary English — recognising it matters more than producing it at this stage. Full coverage in the dedicated [[topic:inversion|Inversion]] topic.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "title": "Two triggers",
+            "items": [
+              {
+                "label": "Negative adverbial",
+                "formula": "**Never have I** seen such beauty. / **Rarely does he** visit. / **No sooner had I** arrived than the phone rang."
+              },
+              {
+                "label": "Conditional inversion (instead of *if*)",
+                "formula": "**Had I known**, I would have come. (= If I had known…) / **Should you need** help, call me. (= If you should need…)"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B2.sentence_syntax.inversion"
         ],
@@ -113,7 +329,44 @@
       },
       {
         "title": "Common Czech-speaker errors + roadmap",
-        "content": "**High-frequency mistakes** from L1 (Czech) interference:\n\n- **Fronting time/place where English doesn't want it**: ~~Yesterday went I to the shop~~ → **Yesterday I went to the shop**.\n- **Putting adverbs between verb and object**: ~~I drink often coffee~~ → **I often drink coffee**.\n- **Missing the auxiliary in questions**: ~~Where you live?~~ → **Where do you live?**.\n- **Question word order inside reported speech**: ~~I asked where did you live~~ → **I asked where you lived**.\n- **Literal Czech word order**: ~~To Prague I went~~ → **I went to Prague**.\n- **Adverb in front of *be***: ~~She always is late~~ → **She is always late**.\n\n**Why it matters**: These appear constantly in speaking, writing, and every exam task. Fixing them gives immediate visible progress and unlocks fluency at every higher level.\n\n**Direct practice in this curriculum** (start here after the cards):\n- MC (embedded questions, frequency adverbs, *also*)\n- Gap fill (embedded question word order)\n- Error correction (fix the wrong sentence)\n\n**Next steps**: [[topic:reported_speech|Reported Speech]] (embedded questions in depth), [[topic:inversion|Inversion]] (B2 fronting for emphasis), [[topic:prepositions|Prepositions]] (place/time slot fillers).",
+        "content": "The high-frequency mistakes from L1 (Czech) interference — they appear constantly in speaking, writing and every exam task. Fixing them gives immediate visible progress and unlocks fluency at every higher level.\n- Direct practice here (start after the cards): MC (embedded questions, frequency adverbs, *also*), gap fill (embedded question word order), error correction (fix the wrong sentence).\n- Next steps: [[topic:reported_speech|Reported Speech]] (embedded questions in depth), [[topic:inversion|Inversion]] (B2 fronting for emphasis), [[topic:prepositions|Prepositions]] (place/time slot fillers).",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "**Yesterday I went** to the shop.",
+                "bad": "Yesterday went I to the shop.",
+                "why": "fronting time/place where English doesn't want inversion"
+              },
+              {
+                "good": "I **often drink** coffee.",
+                "bad": "I drink often coffee.",
+                "why": "adverb between verb and object"
+              },
+              {
+                "good": "**Where do you** live?",
+                "bad": "Where you live?",
+                "why": "missing the auxiliary in questions"
+              },
+              {
+                "good": "I asked **where you lived**.",
+                "bad": "I asked where did you live.",
+                "why": "question word order inside reported speech"
+              },
+              {
+                "good": "I went **to Prague**.",
+                "bad": "To Prague I went.",
+                "why": "literal Czech word order"
+              },
+              {
+                "good": "She **is always** late.",
+                "bad": "She always is late.",
+                "why": "adverb in front of *be*"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A1.word_order.svo_basic",
           "A2.word_order.adverbs",

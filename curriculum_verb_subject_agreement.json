@@ -4,7 +4,26 @@
     "sections": [
       {
         "title": "What is verb–subject agreement?",
-        "content": "The **verb** must match the **subject** in number:\n**Singular subject** → singular verb: *The cat is here. He works every day.*\n**Plural subject** → plural verb: *The cats are here. They work every day.*\nWrong: *The cat are here.* *They works.* Right: *The cat is; They work.*",
+        "content": "The **verb** must match the **subject** in number: singular subject → singular verb, plural subject → plural verb.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "The cat is here. He works every day.",
+                "why": "singular subject → singular verb"
+              },
+              {
+                "good": "The cats are here. They work every day.",
+                "why": "plural subject → plural verb"
+              },
+              {
+                "good": "The cat is here. / They work.",
+                "bad": "The cat are here. / They works."
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.agreement.basic"
         ],
@@ -12,7 +31,47 @@
       },
       {
         "title": "Third person singular: the -s",
-        "content": "In the **present simple**, when the subject is **third person singular** (he, she, it, or one person/thing), add **-s** or **-es** to the verb:\n*I/you/we/they have → he/she/it has. I/you/we/they go → he/she/it goes. I/you/we/they do → he/she/it does. I/you/we/they are → he/she/it is.*\nWrong: *He have been. She don't know. It go wrong.* Right: *He has been. She doesn't know. It goes wrong.*",
+        "content": "In the **present simple**, a **third person singular** subject (he, she, it, or one person/thing) adds **-s** or **-es** to the verb.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "items": [
+              {
+                "label": "have",
+                "formula": "I/you/we/they have → he/she/it has"
+              },
+              {
+                "label": "go",
+                "formula": "I/you/we/they go → he/she/it goes"
+              },
+              {
+                "label": "do",
+                "formula": "I/you/we/they do → he/she/it does"
+              },
+              {
+                "label": "be",
+                "formula": "I/you/we/they are → he/she/it is"
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "He has been.",
+                "bad": "He have been."
+              },
+              {
+                "good": "She doesn't know.",
+                "bad": "She don't know."
+              },
+              {
+                "good": "It goes wrong.",
+                "bad": "It go wrong."
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "A2.agreement.basic"
         ],
@@ -20,7 +79,27 @@
       },
       {
         "title": "Don't be fooled by words in between",
-        "content": "The verb agrees with the **subject**, not with a noun that comes between them:\n*The list of items is on the table.* (subject = list, singular)\n*One of the students was late.* (subject = one)\n*The people in the room are waiting.* (subject = people, plural)\nWrong: *The list of items are on the table.* Right: *The list is.*",
+        "content": "The verb agrees with the **subject**, not with a noun that comes between them.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "The list of items is on the table.",
+                "bad": "The list of items are on the table.",
+                "why": "subject = *list*, singular"
+              },
+              {
+                "good": "One of the students was late.",
+                "why": "subject = *one*"
+              },
+              {
+                "good": "The people in the room are waiting.",
+                "why": "subject = *people*, plural"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B1.agreement.tricky"
         ],
@@ -28,7 +107,35 @@
       },
       {
         "title": "Compound subjects",
-        "content": "**A and B** (joined by *and*) → usually **plural**: *Tom and Anna are friends.*\n**A or B / Neither A nor B** → verb agrees with the **nearest** subject: *Neither the teacher nor the students were there.* (nearest = students, plural)\n**Each / Every** → singular: *Each of us has a copy. Every student takes the test.*",
+        "content": "Joined subjects follow three rules.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Compound subjects",
+            "headers": [
+              "Pattern",
+              "Verb",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**A and B**",
+                "usually **plural**",
+                "Tom and Anna **are** friends."
+              ],
+              [
+                "**A or B / Neither A nor B**",
+                "agrees with the **nearest** subject",
+                "Neither the teacher nor the students **were** there. (nearest = students, plural)"
+              ],
+              [
+                "**Each / Every**",
+                "singular",
+                "Each of us **has** a copy. Every student **takes** the test."
+              ]
+            ]
+          }
+        ],
         "root_ids": [
           "B1.agreement.tricky"
         ],
@@ -36,43 +143,45 @@
       },
       {
         "title": "Agreement rules",
-        "content": "",
-        "diagram": {
-          "type": "table",
-          "title": "Agreement rules",
-          "headers": [
-            "Subject pattern",
-            "Verb",
-            "Example"
-          ],
-          "rows": [
-            [
-              "he / she / it",
-              "singular (**-s**)",
-              "She **works**. He **has**."
+        "content": "All the rules on one card.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Agreement rules",
+            "headers": [
+              "Subject pattern",
+              "Verb",
+              "Example"
             ],
-            [
-              "I / you / we / they",
-              "plural (no -s)",
-              "They **work**. We **have**."
-            ],
-            [
-              "A and B",
-              "plural",
-              "Tom and Anna **are** friends."
-            ],
-            [
-              "A or B / Neither … nor",
-              "agree with nearest",
-              "Neither he nor they **were** …"
-            ],
-            [
-              "Each / Every",
-              "singular",
-              "Each of us **has** a copy."
+            "rows": [
+              [
+                "he / she / it",
+                "singular (**-s**)",
+                "She **works**. He **has**."
+              ],
+              [
+                "I / you / we / they",
+                "plural (no -s)",
+                "They **work**. We **have**."
+              ],
+              [
+                "A and B",
+                "plural",
+                "Tom and Anna **are** friends."
+              ],
+              [
+                "A or B / Neither … nor",
+                "agree with nearest",
+                "Neither he nor they **were** …"
+              ],
+              [
+                "Each / Every",
+                "singular",
+                "Each of us **has** a copy."
+              ]
             ]
-          ]
-        },
+          }
+        ],
         "root_ids": [
           "B1.agreement.tricky"
         ],

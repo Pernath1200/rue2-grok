@@ -4,15 +4,28 @@
     "sections": [
       {
         "title": "Regular vs irregular",
-        "content": "**Regular verbs** form the past simple and past participle by adding **-ed**: *work → worked, play → played, want → wanted.* **Irregular verbs** do not follow this pattern — each has its own forms: *go → went → gone; speak → spoke → spoken; write → wrote → written.*",
-        "root_ids": [
-          "A1.irregular_verbs.basic"
+        "content": "**Regular verbs** add **-ed** for the past simple and past participle; **irregular verbs** do not — each has its own forms.\nNo rule predicts irregular forms — you must **learn each verb**.",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "left": {
+              "title": "Regular: + -ed",
+              "points": [
+                "work → worked",
+                "play → played",
+                "want → wanted"
+              ]
+            },
+            "right": {
+              "title": "Irregular: own forms",
+              "points": [
+                "go → went → gone",
+                "speak → spoke → spoken",
+                "write → wrote → written"
+              ]
+            }
+          }
         ],
-        "cefr_level": "A1"
-      },
-      {
-        "title": "Why irregular forms matter",
-        "content": "There is no rule to predict irregular forms — you must **learn each verb**. Common mistakes occur when learners add -ed to irregular verbs: *he speaked* (wrong) → he **spoke**; *I goed* (wrong) → I **went**.",
         "root_ids": [
           "A1.irregular_verbs.basic"
         ],
@@ -20,7 +33,35 @@
       },
       {
         "title": "When you need irregular forms",
-        "content": "**Past simple:** *I saw him yesterday.* **Present/past perfect:** *I have seen him. She had written it.* **Passive:** *The letter was written. English is spoken here.* **Conditionals:** *If I had known, I would have told you.*",
+        "content": "Irregular forms appear everywhere past forms and participles are needed.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Where irregular forms appear",
+            "headers": [
+              "Structure",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**Past simple**",
+                "I **saw** him yesterday."
+              ],
+              [
+                "**Present/past perfect**",
+                "I have **seen** him. She had **written** it."
+              ],
+              [
+                "**Passive**",
+                "The letter was **written**. English is **spoken** here."
+              ],
+              [
+                "**Conditionals**",
+                "If I had **known**, I would have told you."
+              ]
+            ]
+          }
+        ],
         "root_ids": [
           "A1.irregular_verbs.basic"
         ],
@@ -28,15 +69,34 @@
       },
       {
         "title": "Common learner errors",
-        "content": "*he speaked* → he **spoke**; *I goed* → I **went**; *she writed* → she **wrote**; *they maked* → they **made**; *we taked* → we **took**. Learn the 50 most common irregular verbs — a full list is in Reference → Irregular verbs.",
-        "root_ids": [
-          "A1.irregular_verbs.basic"
+        "content": "The classic mistake: adding **-ed** to an irregular verb.\nLearn the 50 most common irregular verbs — a full list of forms is in Reference → Irregular verbs.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "he **spoke**",
+                "bad": "he speaked"
+              },
+              {
+                "good": "I **went**",
+                "bad": "I goed"
+              },
+              {
+                "good": "she **wrote**",
+                "bad": "she writed"
+              },
+              {
+                "good": "they **made**",
+                "bad": "they maked"
+              },
+              {
+                "good": "we **took**",
+                "bad": "we taked"
+              }
+            ]
+          }
         ],
-        "cefr_level": "A1"
-      },
-      {
-        "title": "Reference",
-        "content": "For a full list of irregular verb forms, see the Irregular Verbs section under Reference.",
         "root_ids": [
           "A1.irregular_verbs.basic"
         ],

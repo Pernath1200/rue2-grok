@@ -4,7 +4,27 @@
     "sections": [
       {
         "title": "What reported speech does (core logic)",
-        "content": "Reported speech (or **indirect speech**) is how we **repeat what someone said** without quoting them word-for-word. We embed their words inside our own sentence, and adjust the tense, pronouns and time references to match our new point of view.\n\n**Direct**: \"I'm tired,\" he said.\n**Reported**: He said (that) he was tired.\n\nThe word **that** is optional. The reporting verb (*said*, *told*, *asked*) sits in the main clause; the reported words sit in an embedded clause.\n\n**Why it matters (roots-first)**: Reported speech sits in the Clause Linking root (#4 in the Tree Model) — the reported part is **embedded as a subordinate clause**, the same engineering as relative clauses and conditionals. The Verb Phrase root (#2) is secondary because the embedding triggers a **tense shift** (backshift). It's everywhere: telling someone what your boss said, writing news or stories, reporting conversations in exams (B2 sentence transformation), formal emails (*She mentioned that…*).\n\n**Czech-speaker note**: Czech does NOT backshift tenses the same way English does. Direct translation gives *He said he is tired* — a common B1/B2 error. The English engine is different: when the reporting verb goes past, the reported tense usually goes back one step too.",
+        "content": "Reported (**indirect**) speech repeats what someone said inside your own sentence — tense, pronouns and time words adjust to your viewpoint.\n- **that** is optional; the reporting verb (*said*, *told*, *asked*) sits in the main clause, the reported words in an embedded clause.\n- Clause Linking root (#4): the report is an **embedded subordinate clause** — the same engineering as relative clauses and conditionals. The Verb Phrase root (#2) is secondary: embedding triggers a **tense shift** (backshift).\n- Everywhere: telling someone what your boss said, news and stories, exam reports (B2 sentence transformation), formal emails (*She mentioned that…*).",
+        "diagrams": [
+          {
+            "type": "formula",
+            "items": [
+              {
+                "label": "Direct",
+                "formula": "\"I'm tired,\" he said."
+              },
+              {
+                "label": "Reported",
+                "formula": "He said (that) he was tired."
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech does NOT backshift tenses the same way — direct translation gives *He said he is tired*, a common B1/B2 error. When the reporting verb goes past, the reported tense usually goes back one step too."
+          }
+        ],
         "root_ids": [
           "B1.reported_speech.statements"
         ],
@@ -12,67 +32,89 @@
       },
       {
         "title": "The backshift rule (statements)",
-        "content": "When the reporting verb is in the **past** (*said*, *told*, *asked*), the tense inside the reported clause usually **shifts one step back in time**.\n\n**The standard shifts**:\n- present simple → past simple (*am/is/are* → *was/were*)\n- present continuous → past continuous\n- present perfect → past perfect\n- past simple → past perfect (in careful/formal use)\n- **will** → **would**\n- **can** → **could**\n- **may** → **might**\n- **must** → **had to**\n\n**Why it matters**: This is the single highest-impact rule in the topic and the one Czech speakers most often skip. Getting it right makes you sound like a competent reporter; missing it sounds like a literal translation. It's tested in every B1/B2 sentence-transformation exercise.\n\n**Contrast examples**:\n- \"I **like** coffee.\" → She said she **liked** coffee.\n- \"I **am working**.\" → He said he **was working**.\n- \"I **have seen** it.\" → She said she **had seen** it.\n- \"I **will help**.\" → He said he **would help**.\n- \"I **must go**.\" → She said she **had to** go.",
-        "diagram": {
-          "type": "table",
-          "title": "Tense backshift in reported speech",
-          "headers": [
-            "Direct speech",
-            "→",
-            "Reported speech",
-            "Example"
-          ],
-          "rows": [
-            [
-              "present simple (*like*)",
+        "content": "Reporting verb in the **past** (*said, told, asked*) → the tense inside the reported clause usually shifts **one step back in time**.\n- *past simple → past perfect* applies in careful/formal use.\n- The single highest-impact rule in the topic and the one Czech speakers most often skip — tested in every B1/B2 sentence-transformation exercise.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Tense backshift in reported speech",
+            "headers": [
+              "Direct speech",
               "→",
-              "past simple (*liked*)",
-              "He said he **liked** it."
+              "Reported speech",
+              "Example"
             ],
-            [
-              "present continuous (*am leaving*)",
-              "→",
-              "past continuous (*was leaving*)",
-              "She said she **was leaving**."
-            ],
-            [
-              "present perfect (*have finished*)",
-              "→",
-              "past perfect (*had finished*)",
-              "He said he **had finished**."
-            ],
-            [
-              "past simple (*saw*)",
-              "→",
-              "past perfect (*had seen*)",
-              "She said she **had seen** him."
-            ],
-            [
-              "**will** (*will help*)",
-              "→",
-              "**would** (*would help*)",
-              "He said he **would help**."
-            ],
-            [
-              "**can** (*can swim*)",
-              "→",
-              "**could** (*could swim*)",
-              "She said she **could swim**."
-            ],
-            [
-              "**may** (*may be*)",
-              "→",
-              "**might** (*might be*)",
-              "He said he **might be** late."
-            ],
-            [
-              "**must** (*must go*)",
-              "→",
-              "**had to** (*had to go*)",
-              "She said she **had to** go."
+            "rows": [
+              [
+                "present simple (*like*)",
+                "→",
+                "past simple (*liked*)",
+                "He said he **liked** it."
+              ],
+              [
+                "present continuous (*am leaving*)",
+                "→",
+                "past continuous (*was leaving*)",
+                "She said she **was leaving**."
+              ],
+              [
+                "present perfect (*have finished*)",
+                "→",
+                "past perfect (*had finished*)",
+                "He said he **had finished**."
+              ],
+              [
+                "past simple (*saw*)",
+                "→",
+                "past perfect (*had seen*)",
+                "She said she **had seen** him."
+              ],
+              [
+                "**will** (*will help*)",
+                "→",
+                "**would** (*would help*)",
+                "He said he **would help**."
+              ],
+              [
+                "**can** (*can swim*)",
+                "→",
+                "**could** (*could swim*)",
+                "She said she **could swim**."
+              ],
+              [
+                "**may** (*may be*)",
+                "→",
+                "**might** (*might be*)",
+                "He said he **might be** late."
+              ],
+              [
+                "**must** (*must go*)",
+                "→",
+                "**had to** (*had to go*)",
+                "She said she **had to** go."
+              ]
             ]
-          ]
-        },
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "\"I **like** coffee.\" → She said she **liked** coffee."
+              },
+              {
+                "good": "\"I **am working**.\" → He said he **was working**."
+              },
+              {
+                "good": "\"I **have seen** it.\" → She said she **had seen** it."
+              },
+              {
+                "good": "\"I **will help**.\" → He said he **would help**."
+              },
+              {
+                "good": "\"I **must go**.\" → She said she **had to** go."
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B1.reported_speech.statements",
           "B2.reported_speech.extended"
@@ -81,7 +123,59 @@
       },
       {
         "title": "When NOT to backshift",
-        "content": "Backshift is the default, but not automatic. **Don't** backshift when:\n\n- The reported statement is a **universal truth** or still true now.\n  - *She said the Earth **orbits** the sun.* (not *orbited* — still true)\n  - *He told me he **lives** in Prague.* (and he still does)\n- The **reporting verb is present**: *says*, *tells*, *is saying* — no shift needed.\n  - *She **says** she **is** busy.* (no backshift; reporting verb is present)\n- You're reporting something **just said**, where the situation hasn't changed.\n  - *He just said he **wants** to come.* (still wants it now)\n\n**Why it matters**: This is the **overshoot trap** for Czech speakers. Once the backshift rule is learned, the temptation is to apply it everywhere — even to universal truths or situations that haven't changed. Both extremes (no shift at all / shift everything) sound wrong.\n\n**Contrast**:\n- \"Water boils at 100°C.\" → The teacher said water **boils** at 100°C. (truth — no shift)\n- \"I'm a doctor.\" → He said he **was** a doctor. (default backshift) **OR** He said he **is** a doctor. (if still true and you want to emphasise that)",
+        "content": "Backshift is the default, but not automatic — some reports keep the original tense.\nThe **overshoot trap** for Czech speakers: once the rule is learned, the temptation is to backshift everything, even universal truths. Both extremes (no shift at all / shift everything) sound wrong.",
+        "diagrams": [
+          {
+            "type": "decision",
+            "title": "Backshift or not?",
+            "steps": [
+              {
+                "q": "Is the reporting verb present (*says*, *tells*, *is saying*)?",
+                "yes": "no shift needed"
+              },
+              {
+                "q": "Universal truth, or still true now?",
+                "yes": "no shift — keep the tense"
+              },
+              {
+                "q": "Just said, and the situation hasn't changed?",
+                "yes": "no shift"
+              },
+              {
+                "end": "backshift one step"
+              }
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "She said the Earth **orbits** the sun.",
+                "why": "still true — not *orbited*"
+              },
+              {
+                "good": "He told me he **lives** in Prague.",
+                "why": "and he still does"
+              },
+              {
+                "good": "She **says** she **is** busy.",
+                "why": "reporting verb is present — no backshift"
+              },
+              {
+                "good": "He just said he **wants** to come.",
+                "why": "still wants it now"
+              },
+              {
+                "good": "The teacher said water **boils** at 100°C.",
+                "why": "truth — no shift"
+              },
+              {
+                "good": "He said he **was** a doctor. / He said he **is** a doctor.",
+                "why": "default backshift / keep present if still true and you want to emphasise that"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B1.reported_speech.statements",
           "B2.reported_speech.extended"
@@ -90,7 +184,91 @@
       },
       {
         "title": "Said vs told (and other reporting verbs)",
-        "content": "The two most common reporting verbs split on **who comes next**:\n\n- **say** does NOT take a person object directly. Either no person (*She said that…*) or with **to** (*She said to me that…*).\n- **tell** REQUIRES a person object. *She told me that…* (never *She told that…*)\n\n**Quick test**: *tell me*, *tell him*, *tell us* — yes. *say me*, *say him* — no.\n\n**Other useful reporting verbs**:\n- **asked** — for questions and requests\n- **replied** — answered\n- **mentioned** — said briefly\n- **explained** — said with reasoning\n- **promised** — committed\n- **warned** — alerted to danger\n- **admitted** — confessed\n- **suggested** — proposed\n\n**Why it matters**: *say* vs *tell* is one of the most common Czech-speaker mistakes (*\"He said me…\"* is a high-frequency B1 error). Variety in reporting verbs is a B2 writing-and-speaking marker — using only *said* the whole time flattens your English.\n\n**Contrast**:\n- He **said** (that) he was tired. ✓\n- He **told me** (that) he was tired. ✓\n- He **told** (that) he was tired. ✗ (no person)\n- He **said me** (that) he was tired. ✗ (no person object with *say*)",
+        "content": "The two most common reporting verbs split on **who comes next**.\n*He said me…* is a high-frequency Czech B1 error. Variety in reporting verbs is a B2 writing-and-speaking marker — using only *said* the whole time flattens your English.",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "left": {
+              "title": "say — no person object",
+              "points": [
+                "no person: *She said that…*",
+                "or with **to**: *She said to me that…*",
+                "quick test: *say me*, *say him* — no"
+              ]
+            },
+            "right": {
+              "title": "tell — person required",
+              "points": [
+                "*She told me that…*",
+                "never *She told that…*",
+                "quick test: *tell me*, *tell him*, *tell us* — yes"
+              ]
+            }
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "He **said** (that) he was tired."
+              },
+              {
+                "good": "He **told me** (that) he was tired."
+              },
+              {
+                "good": "He **told me** that he was tired.",
+                "bad": "He told that he was tired.",
+                "why": "no person after *tell*"
+              },
+              {
+                "good": "He **said** that he was tired.",
+                "bad": "He said me that he was tired.",
+                "why": "no person object with *say*"
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "title": "Other useful reporting verbs",
+            "headers": [
+              "Verb",
+              "Meaning"
+            ],
+            "rows": [
+              [
+                "**asked**",
+                "for questions and requests"
+              ],
+              [
+                "**replied**",
+                "answered"
+              ],
+              [
+                "**mentioned**",
+                "said briefly"
+              ],
+              [
+                "**explained**",
+                "said with reasoning"
+              ],
+              [
+                "**promised**",
+                "committed"
+              ],
+              [
+                "**warned**",
+                "alerted to danger"
+              ],
+              [
+                "**admitted**",
+                "confessed"
+              ],
+              [
+                "**suggested**",
+                "proposed"
+              ]
+            ]
+          }
+        ],
         "root_ids": [
           "B1.reported_speech.statements"
         ],
@@ -98,7 +276,56 @@
       },
       {
         "title": "Reported questions",
-        "content": "When we report a question, three things change:\n\n1. **No question mark** at the end (the whole sentence is now a statement).\n2. **No *do/does/did*** — drop the auxiliary used to form the question.\n3. **Word order goes back to statement order**: SUBJECT + VERB (not VERB + SUBJECT).\n\n**Yes/No questions**: introduce with **if** or **whether**.\n- \"Are you busy?\" → She asked **if/whether** I **was** busy.\n- \"Do you like coffee?\" → He asked **if** I **liked** coffee.\n\n**Wh- questions**: keep the wh-word (*where, when, what, why, who, how*), then statement order.\n- \"Where do you live?\" → He asked **where** I **lived**. (not *where do I live*)\n- \"What time is it?\" → She asked **what time it was**. (not *what time is it*)\n\n**Why it matters**: This is the second classic Czech-speaker trap (after backshift). Czech keeps question word order in indirect questions; English doesn't. Getting *He asked where I lived* (not *where do I live*) is a clear B1/B2 marker, and it's tested constantly.\n\n**Contrast**:\n- \"Where are you going?\" → He asked **where I was going**. ✓ (not *where was I going*)\n- \"Can you swim?\" → She asked **if I could swim**. ✓ (not *if could I swim*)",
+        "content": "Reporting a question turns it back into a statement: no **question mark**, no **do/does/did**, and SUBJECT + VERB order.\nCzech keeps question word order in indirect questions; English doesn't — *He asked where I lived* is a clear B1/B2 marker, tested constantly. The second classic trap after backshift.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "items": [
+              {
+                "label": "Yes/No question",
+                "formula": "asked + if/whether + subject + verb → \"Are you busy?\" → She asked if/whether I was busy."
+              },
+              {
+                "label": "Wh- question",
+                "formula": "asked + wh-word + subject + verb → \"Where do you live?\" → He asked where I lived."
+              }
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "Wh-words stay",
+            "items": [
+              "where",
+              "when",
+              "what",
+              "why",
+              "who",
+              "how"
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "He asked **if** I **liked** coffee.",
+                "why": "\"Do you like coffee?\" — drop *do*"
+              },
+              {
+                "good": "She asked **what time it was**.",
+                "bad": "She asked what time is it.",
+                "why": "statement order"
+              },
+              {
+                "good": "He asked **where I was going**.",
+                "bad": "He asked where was I going."
+              },
+              {
+                "good": "She asked **if I could swim**.",
+                "bad": "She asked if could I swim."
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B2.reported_speech.extended"
         ],
@@ -106,7 +333,64 @@
       },
       {
         "title": "Reported commands and requests",
-        "content": "Commands and requests use a completely different pattern from statements — no *that*-clause, no backshift. The structure is:\n\n**tell / ask + PERSON + (not) to-infinitive**\n\n- \"Close the door.\" → She **told me to close** the door.\n- \"Please wait.\" → He **asked me to wait**.\n- \"Don't worry.\" → She **told him not to worry**. (negative: *not* before *to*)\n\n**tell** vs **ask** signals tone:\n- **tell** = instruction or order (*She told me to leave.*)\n- **ask** = request, more polite (*She asked me to leave.*)\n\nOther verbs in the same pattern: *order, warn, advise, invite, remind, beg*.\n- *The police **ordered** them **to stop**.*\n- *He **warned** me **not to go**.*\n- *She **reminded** me **to call**.*\n\n**Why it matters**: Commands appear all the time in real reporting — instructions at work, parental rules, exam scenarios. Czech speakers often try *He said me to close the door* (wrong on two counts: *said me* and the said+to-inf pattern). The fix: *tell* or *ask* + person + to-infinitive.\n\n**Contrast**:\n- \"Sit down.\" → He **told me to sit** down. ✓\n- \"Sit down.\" → He **said to me sit** down. ✗\n- \"Don't be late.\" → She **told me not to be** late. ✓ (negative pattern)",
+        "content": "Commands and requests use a completely different pattern from statements — no *that*-clause, no backshift.\n- **tell** = instruction or order (*She told me to leave.*); **ask** = request, more polite (*She asked me to leave.*)\n- Czech speakers often try *He said me to close the door* — wrong on two counts: *said me* and the said + to-infinitive pattern. Commands appear all the time in real reporting: instructions at work, parental rules, exam scenarios.",
+        "diagrams": [
+          {
+            "type": "formula",
+            "items": [
+              {
+                "label": "Pattern",
+                "formula": "tell / ask + PERSON + (not) to-infinitive"
+              },
+              {
+                "label": "Command",
+                "formula": "\"Close the door.\" → She told me to close the door."
+              },
+              {
+                "label": "Request",
+                "formula": "\"Please wait.\" → He asked me to wait."
+              },
+              {
+                "label": "Negative",
+                "formula": "\"Don't worry.\" → She told him not to worry. (not before to)"
+              }
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "Same pattern",
+            "items": [
+              "order",
+              "warn",
+              "advise",
+              "invite",
+              "remind",
+              "beg"
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "The police **ordered** them **to stop**."
+              },
+              {
+                "good": "He **warned** me **not to go**."
+              },
+              {
+                "good": "She **reminded** me **to call**."
+              },
+              {
+                "good": "He **told me to sit** down.",
+                "bad": "He said to me sit down."
+              },
+              {
+                "good": "She **told me not to be** late.",
+                "why": "negative pattern"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B2.reported_speech.extended"
         ],
@@ -114,87 +398,148 @@
       },
       {
         "title": "Pronoun, time and place shifts",
-        "content": "Backshift is only one layer. When the speaker, time and place change, the referring words change too.\n\n**Pronouns** shift to match the new speaker:\n- *I* → *he / she*, *my* → *his / her*, *we* → *they*, *you* → *I / me / he / she*\n- \"**I** lost **my** keys.\" → She said **she** had lost **her** keys.\n\n**Time words** shift to match the new time:\n- *now* → *then*, *today* → *that day*, *tonight* → *that night*\n- *yesterday* → *the day before / the previous day*\n- *tomorrow* → *the next day / the following day*\n- *last week* → *the week before*, *next week* → *the following week*\n- *ago* → *before*\n\n**Place / demonstratives** shift to match the new place:\n- *here* → *there*\n- *this* → *that*, *these* → *those*\n\n**Why it matters**: Forgetting these makes the report incoherent: *He said he saw her yesterday* means HE saw her yesterday from your point of view today — but if he said it last week, you need *the day before*. Time/place shifts are also high-yield in exam transformations.\n\n**Example combining all three**:\n- Direct: \"**I** met **your** brother **here yesterday**.\"\n- Reported (told to you, much later): She said **she** had met **my** brother **there the day before**.",
-        "diagram": {
-          "type": "table",
-          "title": "Pronoun, time and place shifts",
-          "headers": [
-            "Direct",
-            "→",
-            "Reported",
-            "Type"
-          ],
-          "rows": [
-            [
-              "I / we",
+        "content": "Backshift is only one layer — pronouns, time words and place words shift to match the new speaker, time and place too.\n- Also: *you* → *I/me/he/she*, *tonight* → *that night*, *next week* → *the following week*; *yesterday/tomorrow* can also be *the previous day / the following day*.\n- Forgetting these breaks the report: *He said he saw her yesterday* means yesterday from YOUR point of view today — if he said it last week, you need *the day before*. High-yield in exam transformations.",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Pronoun, time and place shifts",
+            "headers": [
+              "Direct",
               "→",
-              "he, she / they",
-              "pronoun"
+              "Reported",
+              "Type"
             ],
-            [
-              "my / our",
-              "→",
-              "his, her / their",
-              "pronoun"
-            ],
-            [
-              "now",
-              "→",
-              "then",
-              "time"
-            ],
-            [
-              "today",
-              "→",
-              "that day",
-              "time"
-            ],
-            [
-              "yesterday",
-              "→",
-              "the day before",
-              "time"
-            ],
-            [
-              "tomorrow",
-              "→",
-              "the next day",
-              "time"
-            ],
-            [
-              "last week",
-              "→",
-              "the week before",
-              "time"
-            ],
-            [
-              "ago",
-              "→",
-              "before",
-              "time"
-            ],
-            [
-              "here",
-              "→",
-              "there",
-              "place"
-            ],
-            [
-              "this / these",
-              "→",
-              "that / those",
-              "place"
+            "rows": [
+              [
+                "I / we",
+                "→",
+                "he, she / they",
+                "pronoun"
+              ],
+              [
+                "my / our",
+                "→",
+                "his, her / their",
+                "pronoun"
+              ],
+              [
+                "now",
+                "→",
+                "then",
+                "time"
+              ],
+              [
+                "today",
+                "→",
+                "that day",
+                "time"
+              ],
+              [
+                "yesterday",
+                "→",
+                "the day before",
+                "time"
+              ],
+              [
+                "tomorrow",
+                "→",
+                "the next day",
+                "time"
+              ],
+              [
+                "last week",
+                "→",
+                "the week before",
+                "time"
+              ],
+              [
+                "ago",
+                "→",
+                "before",
+                "time"
+              ],
+              [
+                "here",
+                "→",
+                "there",
+                "place"
+              ],
+              [
+                "this / these",
+                "→",
+                "that / those",
+                "place"
+              ]
             ]
-          ]
-        },
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "\"**I** lost **my** keys.\" → She said **she** had lost **her** keys.",
+                "why": "pronouns follow the new speaker"
+              },
+              {
+                "good": "\"**I** met **your** brother **here yesterday**.\" → She said **she** had met **my** brother **there the day before**.",
+                "why": "pronoun + place + time in one"
+              }
+            ]
+          }
+        ],
         "root_ids": [
           "B1.reported_speech.statements"
         ],
         "cefr_level": "B1"
       },
       {
-        "title": "Common Czech-speaker errors + roadmap",
-        "content": "**High-frequency mistakes** to watch for:\n\n- **No backshift**: *He said he **is** tired.* → *He said he **was** tired.*\n- **Over-backshift on truths**: *She said water **boiled** at 100°C.* → *She said water **boils** at 100°C.* (universal truth — no shift)\n- **Question word order in reported questions**: *He asked where **do I live**.* → *He asked where **I lived**.*\n- **Tell without a person**: *She **told that** she would come.* → *She **told me** that…* OR *She **said** that…*\n- **Say with a person object**: *He **said me** he was busy.* → *He **told me** he was busy.* OR *He **said to me** he was busy.*\n- **Said + to-infinitive for commands**: *He **said me to close** the door.* → *He **told me to close** the door.*\n\n**Why it matters**: These six errors cover roughly 90% of mistakes Czech B1/B2 learners make in reported speech. Spotting and fixing them gives a visible jump in accuracy.\n\n**Direct practice in this curriculum** (start here after the cards):\n- Guided MC (backshift, *say/tell*, question order)\n- Gap fill (transformations from direct to reported)\n- Error correction (fix the Czech-speaker trap sentences)\n\n**Next steps**: For the underlying tense forms (past simple, past perfect, past continuous), see the [[topic:tenses_general|Tenses: General]] topic. Reported speech sits next to [[topic:conditionals|Conditionals]] and [[topic:relative_pronouns|Relative Pronouns]] in the Clause Linking root — same embedding logic, different shape.",
+        "title": "The six Czech-speaker traps",
+        "content": "These six errors cover roughly 90% of mistakes Czech B1/B2 learners make in reported speech.\nSpotting and fixing them gives a visible jump in accuracy.",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "good": "He said he **was** tired.",
+                "bad": "He said he is tired.",
+                "why": "no backshift"
+              },
+              {
+                "good": "She said water **boils** at 100°C.",
+                "bad": "She said water boiled at 100°C.",
+                "why": "over-backshift on a universal truth"
+              },
+              {
+                "good": "He asked where **I lived**.",
+                "bad": "He asked where do I live.",
+                "why": "question word order in reported questions"
+              },
+              {
+                "good": "She **told me** that she would come. / She **said** that she would come.",
+                "bad": "She told that she would come.",
+                "why": "*tell* without a person"
+              },
+              {
+                "good": "He **told me** he was busy. / He **said to me** he was busy.",
+                "bad": "He said me he was busy.",
+                "why": "*say* with a person object"
+              },
+              {
+                "good": "He **told me to close** the door.",
+                "bad": "He said me to close the door.",
+                "why": "*said* + to-infinitive for commands"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B1.reported_speech.statements",
+          "B2.reported_speech.extended"
+        ],
+        "cefr_level": "B1"
+      },
+      {
+        "title": "Practice roadmap & next steps",
+        "content": "Direct practice in this curriculum — start here after the cards:\n- Guided MC (backshift, *say/tell*, question order)\n- Gap fill (transformations from direct to reported)\n- Error correction (fix the Czech-speaker trap sentences)\n\nFor the underlying tense forms (past simple, past perfect, past continuous), see [[topic:tenses_general|Tenses: General]]. Reported speech sits next to [[topic:conditionals|Conditionals]] and [[topic:relative_pronouns|Relative Pronouns]] in the Clause Linking root — same embedding logic, different shape.",
         "root_ids": [
           "B1.reported_speech.statements",
           "B2.reported_speech.extended"
