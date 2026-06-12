@@ -3,152 +3,253 @@
     "title": "Punctuation and capitalisation",
     "sections": [
       {
-        "title": "What this section covers",
-        "content": "This topic covers **punctuation** (especially commas) and **capitalisation** in English, focusing on common mistakes.",
-        "root_ids": [
-          "B1.punctuation.commas"
-        ],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "Commas: when to use them (1)",
-        "content": "**In lists:** *apples, oranges, and bananas* (last comma optional in British English).\n**After introductory words or phrases:** *However, we agreed. After the meeting, he left.*",
-        "root_ids": [
-          "B1.punctuation.commas"
-        ],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "Commas: when to use them (2)",
-        "content": "**Before** *but*, *and*, *or*, *so*, *yet* when joining two full sentences: *I called, but she was busy.*\n**Around extra (non-defining) information:** *My brother, who lives in London, is a doctor.*",
-        "root_ids": [
-          "B1.punctuation.commas"
-        ],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "Commas: when to use them (3)",
-        "content": "Do **not** use a comma when information is essential (defining): *The man who called yesterday left a message.*",
-        "root_ids": [
-          "B1.punctuation.commas"
-        ],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "Commas: common mistakes",
-        "content": "**Before *that*:** usually **no** comma in English. *I think that he is right* (no comma before *that*).\n**Before *and*/*but*:** comma only when joining two **full sentences**. *She smiled, and I waved.* But no comma for: *She smiled and waved.*",
-        "root_ids": [
-          "B1.punctuation.commas"
-        ],
-        "cefr_level": "B1"
-      },
-      {
-        "title": "Capitalisation: the rules (1)",
-        "content": "In English, capitalise:\n\n**I** (always): *He and I went.*\n**First word** of a sentence.\n**Proper nouns:** *London, Jan, the European Union.*\n**Days and months:** *Monday, March.*",
-        "root_ids": [
-          "A2.punctuation.capitalisation"
-        ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Capitalisation: the rules (2)",
-        "content": "**Nationalities and languages:** *English, French, German.*\n**Titles of books/films** (main words): *The Lord of the Rings.*\nDo **not** capitalise general nouns unless part of a name: *university* vs *Oxford University*.",
-        "root_ids": [
-          "A2.punctuation.capitalisation"
-        ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Capitalisation: common mistakes",
-        "content": "**Days and months** — always capitalise in English: *Monday, January.*\n**I** — always a capital letter.\n**Nationalities and languages** — always capitalise: *English, German, French.*",
-        "root_ids": [
-          "A2.punctuation.capitalisation"
-        ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Colons",
-        "content": "**Colon (:)** — used to introduce a list, explanation, or example. *We need three things: time, money, and help. There was one problem: the door was locked.* Also used for time: *12:30.*",
-        "root_ids": [
-          "B2.punctuation.advanced"
-        ],
-        "cefr_level": "B2"
-      },
-      {
-        "title": "Semicolons (1)",
-        "content": "**Semicolon (;)** — joins two closely related full sentences (instead of comma + *and*): *It was late; we went home.*",
-        "root_ids": [
-          "B2.punctuation.advanced"
-        ],
-        "cefr_level": "B2"
-      },
-      {
-        "title": "Semicolons (2)",
-        "content": "Also separates list items that already contain commas: *We visited Paris, France; Rome, Italy; and Berlin, Germany.*\nDo **not** use a semicolon before a dependent clause (before *because* or *although*) — use a comma instead.",
-        "root_ids": [
-          "B2.punctuation.advanced"
-        ],
-        "cefr_level": "B2"
-      },
-      {
-        "title": "Summary table",
-        "content": "",
-        "diagram": {
-          "type": "table",
-          "title": "Key punctuation and capitalisation rules",
-          "headers": [
-            "Rule",
-            "English",
-            "Example"
-          ],
-          "rows": [
-            [
-              "Comma before 'that'",
-              "Usually **no**",
-              "I think that he is right."
+        "title": "Capitalisation — what English always capitalises",
+        "content": "Czech capitalises far fewer words than English. These rules catch the most common mistakes:",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Always capitalise",
+            "headers": [
+              "What",
+              "Example"
             ],
-            [
-              "Comma + but/and",
-              "Yes, joining **two sentences**",
-              "I called, but she was busy."
-            ],
-            [
-              "Days and months",
-              "**Capitalise**",
-              "Monday, January"
-            ],
-            [
-              "Pronoun I",
-              "Always **capital**",
-              "He and I went."
-            ],
-            [
-              "Nationalities",
-              "**Capitalise**",
-              "English, French, German"
-            ],
-            [
-              "Colon",
-              "Before list, explanation, example",
-              "We need two things: time and money."
-            ],
-            [
-              "Semicolon",
-              "Between two related sentences; or in lists with commas",
-              "It was late; we left."
+            "rows": [
+              [
+                "**I** (the pronoun, always)",
+                "He and **I** went."
+              ],
+              [
+                "First word of a sentence",
+                "**The** film was good."
+              ],
+              [
+                "Proper nouns (names, places)",
+                "**London**, **Jan**, **the European Union**"
+              ],
+              [
+                "Days and months",
+                "**Monday**, **March**"
+              ],
+              [
+                "Nationalities and languages",
+                "**English**, **French**, **German**"
+              ],
+              [
+                "Titles (main words only)",
+                "***The Lord of the Rings***"
+              ]
             ]
-          ]
-        },
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "i went on monday in january.",
+                "good": "I went on Monday in January."
+              },
+              {
+                "bad": "She speaks english and german.",
+                "good": "She speaks English and German."
+              },
+              {
+                "bad": "oxford university is different from the university down the road.",
+                "good": "Oxford University is different from the university down the road.",
+                "why": "proper name capitalised; generic noun lower case"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "A2.punctuation.capitalisation"
+        ],
+        "cefr_level": "A2"
+      },
+      {
+        "title": "Commas — the five places they go",
+        "content": "Commas are the most over- and under-used mark in student writing. Five reliable rules:",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "When to use a comma",
+            "headers": [
+              "Rule",
+              "Example"
+            ],
+            "rows": [
+              [
+                "In lists (Oxford comma optional)",
+                "apples, oranges, and bananas"
+              ],
+              [
+                "After introductory word / phrase",
+                "However, we agreed. After the meeting, he left."
+              ],
+              [
+                "Before FANBOYS joining two full clauses",
+                "I called, but she was busy. It was late, so we left."
+              ],
+              [
+                "Around non-defining (extra) information",
+                "My brother, who lives in London, is a doctor."
+              ],
+              [
+                "After dependent clause at the start",
+                "Although it rained, we went out."
+              ]
+            ]
+          }
+        ],
         "root_ids": [
           "B1.punctuation.commas"
         ],
         "cefr_level": "B1"
       },
       {
-        "title": "Reference",
-        "content": "For more on comma use with relative clauses, see the Relative Pronouns topic under Choose Grammar Topic.",
+        "title": "Commas — the three places they don't go",
+        "content": "These comma errors appear constantly in Czech-speaker writing, because Czech uses commas differently:",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "I think, that he is right.",
+                "good": "I think that he is right.",
+                "why": "never a comma before 'that' in English"
+              },
+              {
+                "bad": "She smiled, and waved.",
+                "good": "She smiled and waved.",
+                "why": "comma before 'and/but' only when joining TWO FULL CLAUSES"
+              },
+              {
+                "bad": "The man, who called yesterday, left a message.",
+                "good": "The man who called yesterday left a message.",
+                "why": "defining relative clause — no commas (removing it changes the meaning)"
+              },
+              {
+                "bad": "It was cold, however we went out.",
+                "good": "It was cold. However, we went out.",
+                "why": "sentence linker 'however' needs a new sentence, not just a comma"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "style": "cz",
+            "text": "Czech puts a comma before every subordinate clause. English comma use is governed by function, not clause boundaries — these rules are different and need to be learned separately."
+          }
+        ],
         "root_ids": [
           "B1.punctuation.commas"
+        ],
+        "cefr_level": "B1"
+      },
+      {
+        "title": "Colon and semicolon",
+        "content": "Two marks that Czech writers rarely use — but that immediately lift written English to B2+:",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Colon vs semicolon",
+            "headers": [
+              "Mark",
+              "Use it for",
+              "Example"
+            ],
+            "rows": [
+              [
+                "**Colon (:)**",
+                "Introduce a list",
+                "We need three things: time, money, and help."
+              ],
+              [
+                "**Colon (:)**",
+                "Introduce an explanation or example",
+                "There was one problem: the door was locked."
+              ],
+              [
+                "**Semicolon (;)**",
+                "Join two closely related full sentences",
+                "It was late; we went home."
+              ],
+              [
+                "**Semicolon (;)**",
+                "Separate list items that already contain commas",
+                "We visited Paris, France; Rome, Italy; and Berlin, Germany."
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "Do not use a semicolon before a dependent clause: it was cold; although we went out.",
+                "good": "It was cold, although we went out.",
+                "why": "semicolon cannot precede 'although/because' — use a comma"
+              }
+            ]
+          }
+        ],
+        "root_ids": [
+          "B2.punctuation.advanced"
+        ],
+        "cefr_level": "B2"
+      },
+      {
+        "title": "Quick-reference summary",
+        "content": "For more on comma use with relative clauses, see [[topic:relative_pronouns|Relative Pronouns]].",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Key rules at a glance",
+            "headers": [
+              "Rule",
+              "Do / Don't",
+              "Example"
+            ],
+            "rows": [
+              [
+                "Comma before 'that'",
+                "Don't",
+                "I think that he is right."
+              ],
+              [
+                "Comma + but/and",
+                "Only joining two full clauses",
+                "I called, but she was busy."
+              ],
+              [
+                "Days and months",
+                "Capitalise",
+                "Monday, January"
+              ],
+              [
+                "Pronoun I",
+                "Always capital",
+                "He and I went."
+              ],
+              [
+                "Nationalities / languages",
+                "Capitalise",
+                "English, French, German"
+              ],
+              [
+                "Colon",
+                "Before list, explanation",
+                "We need two things: time and money."
+              ],
+              [
+                "Semicolon",
+                "Between related sentences",
+                "It was late; we left."
+              ]
+            ]
+          }
+        ],
+        "root_ids": [
+          "B1.punctuation.commas",
+          "A2.punctuation.capitalisation",
+          "B2.punctuation.advanced"
         ],
         "cefr_level": "B1"
       }

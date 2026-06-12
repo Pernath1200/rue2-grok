@@ -3,128 +3,142 @@
     "title": "Past Simple and Past Continuous",
     "sections": [
       {
-        "title": "Past simple vs past continuous (1)",
-        "content": "**Past simple** (*I went*, *she did*) describes **completed** actions at a specific time in the past. **Past continuous** (*I was going*, *she was doing*) describes an action **in progress** at a moment in the past.",
+        "title": "Past simple vs past continuous — the core split",
+        "content": "One question decides everything: **was the action completed, or in progress at that moment?**",
+        "diagrams": [
+          {
+            "type": "comparison",
+            "title": "Past simple vs past continuous",
+            "left": {
+              "title": "Past Simple — completed",
+              "points": [
+                "Completed action: I finished the report.",
+                "Specific past time: I saw him yesterday.",
+                "Sequence of events: I got up, had breakfast, went to work.",
+                "Short / interrupting action: The phone rang.",
+                "Form: did / went / saw (regular: -ed)"
+              ]
+            },
+            "right": {
+              "title": "Past Continuous — in progress",
+              "points": [
+                "Action at a past moment: At 8 pm I was watching TV.",
+                "Background to another event: I was walking home when I met a friend.",
+                "Two parallel actions: She was cooking while he was setting the table.",
+                "Temporary situation: Last year she was working in London.",
+                "Form: was / were + -ing"
+              ]
+            }
+          }
+        ],
         "root_ids": [
+          "A1.past_tense.simple",
           "A2.past_tense.continuous"
         ],
         "cefr_level": "A2"
       },
       {
-        "title": "Past simple vs past continuous (2)",
-        "content": "**Past simple:** did / went / saw (completed). **Past continuous:** was/were + *-ing* (in progress).",
-        "root_ids": [
-          "A2.past_tense.continuous"
-        ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Past simple: when to use (1)",
-        "content": "**Completed action:** *I finished the report. She left at five.*\n**Specific time** (yesterday, last week, at 3 o'clock): *I saw him yesterday.*\n**Sequence of events:** *I got up, had breakfast, and went to work.*",
-        "root_ids": [
-          "A1.past_tense.simple"
-        ],
-        "cefr_level": "A1"
-      },
-      {
-        "title": "Past simple: when to use (2)",
-        "content": "**Short action** that interrupts a longer one: *The phone rang while I was cooking.*\n**Form:** regular verbs + *-ed*; irregular: *went*, *saw*, *wrote*.",
-        "root_ids": [
-          "A1.past_tense.simple"
-        ],
-        "cefr_level": "A1"
-      },
-      {
-        "title": "Past continuous: when to use (1)",
-        "content": "**Action in progress** at a past moment: *At 8 pm I was watching TV.*\n**Background/longer action** when something else happened: *I was walking home when I met a friend.*",
-        "root_ids": [
-          "A2.past_tense.continuous"
-        ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Past continuous: when to use (2)",
-        "content": "**Two parallel actions:** *She was cooking while he was setting the table.*\n**Temporary situation:** *Last year she was working in London.*\n**Form:** was/were + verb + *-ing*.",
-        "root_ids": [
-          "A2.past_tense.continuous"
-        ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Interrupted actions: when and while (1)",
-        "content": "When one action **interrupts** another: the **longer** action (in progress) → past continuous. The **shorter/interrupting** action → past simple. *I was reading when the phone rang.*",
-        "root_ids": [
-          "A2.past_tense.continuous"
-        ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Interrupted actions: when and while (2)",
-        "content": "With **while:** *While she was working, the phone rang.* *While I was cooking, she was setting the table* (both in progress). **When** can be followed by either tense: *When I arrived, they were having dinner.*",
-        "root_ids": [
-          "A2.past_tense.continuous"
-        ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Comparison diagram",
-        "content": "",
-        "diagram": {
-          "type": "comparison",
-          "title": "Past simple vs past continuous",
-          "left": {
-            "title": "Past Simple",
-            "points": [
-              "Completed action",
-              "Specific past time",
-              "Sequence of events",
-              "Short / interrupting action",
-              "Form: did / went / saw"
-            ]
-          },
-          "right": {
-            "title": "Past Continuous",
-            "points": [
-              "Action in progress",
-              "Background action",
-              "Two parallel actions",
-              "Longer action (interrupted)",
-              "Form: was/were + -ing"
+        "title": "Interrupted actions — when and while",
+        "content": "The classic pattern: one action was **in progress** (past continuous) when a second **shorter event** interrupted it (past simple).",
+        "diagrams": [
+          {
+            "type": "table",
+            "title": "Which tense for which action?",
+            "headers": [
+              "Action",
+              "Tense",
+              "Example"
+            ],
+            "rows": [
+              [
+                "Longer / background (in progress)",
+                "Past continuous",
+                "I **was reading** when the phone rang."
+              ],
+              [
+                "Shorter / interrupting",
+                "Past simple",
+                "I was reading when the phone **rang**."
+              ],
+              [
+                "Two things in progress at the same time",
+                "Both continuous",
+                "**While** she **was cooking**, he **was setting** the table."
+              ],
+              [
+                "**When** + completed event",
+                "Past simple follows",
+                "**When** I **arrived**, they were having dinner."
+              ]
             ]
           }
-        },
+        ],
         "root_ids": [
           "A2.past_tense.continuous"
         ],
         "cefr_level": "A2"
       },
       {
-        "title": "Typical errors (1)",
-        "content": "**Wrong:** *I read when the phone rang.* (in the middle of reading) **Right:** **I was reading when the phone rang.**\n**Wrong:** *The phone was ringing when I was reading.* (if it rang once) **Right:** **The phone rang when I was reading.**",
+        "title": "Typical errors",
+        "content": "All the common mistakes come from swapping the two tenses in the wrong slot:",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "I read when the phone rang.",
+                "good": "I was reading when the phone rang.",
+                "why": "mid-action (in progress) → past continuous"
+              },
+              {
+                "bad": "The phone was ringing when I was reading.",
+                "good": "The phone rang when I was reading.",
+                "why": "single ring (completed event) → past simple"
+              },
+              {
+                "bad": "I was going to the cinema yesterday.",
+                "good": "I went to the cinema yesterday.",
+                "why": "completed trip → past simple"
+              },
+              {
+                "bad": "I read when she called.",
+                "good": "I was reading when she called.",
+                "why": "in the middle of reading → past continuous"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "text": "Quick test: In progress at a moment = past continuous. Completed event = past simple."
+          }
+        ],
         "root_ids": [
           "A2.past_tense.continuous"
         ],
         "cefr_level": "A2"
       },
       {
-        "title": "Typical errors (2)",
-        "content": "**Wrong:** *I was going to the cinema yesterday.* (completed trip) **Right:** **I went to the cinema yesterday.**\n**Wrong:** *I read when she called.* (unclear — were you mid-reading?) **Right:** **I was reading when she called.**",
-        "root_ids": [
-          "A2.past_tense.continuous"
+        "title": "Stative verbs — no continuous form",
+        "content": "Some verbs describe **states** (not actions) and cannot take the continuous form — in any tense, past or present:\n**know, believe, understand, like, love, hate, want, need, own, belong, seem, appear**.\n\nFor the complete list and the exceptions (e.g. *I'm loving it* as a deliberate stylistic use), see [[topic:past_simple_present_perfect|Past Simple vs Present Perfect]] and [[topic:tenses_general|Tenses: General]].",
+        "diagrams": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "bad": "She was knowing the answer.",
+                "good": "She knew the answer."
+              },
+              {
+                "bad": "I was wanting to go.",
+                "good": "I wanted to go."
+              },
+              {
+                "bad": "He was belonging to the club.",
+                "good": "He belonged to the club."
+              }
+            ]
+          }
         ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Typical errors (3)",
-        "content": "**Tip:** In progress at a moment = past continuous. Completed event = past simple.",
-        "root_ids": [
-          "A2.past_tense.continuous"
-        ],
-        "cefr_level": "A2"
-      },
-      {
-        "title": "Reference",
-        "content": "For more on past tenses, see the Past Perfect and Past Simple vs Present Perfect topics under Choose Grammar Topic.",
         "root_ids": [
           "A2.past_tense.continuous"
         ],
