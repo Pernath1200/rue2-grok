@@ -4,7 +4,7 @@
     "sections": [
       {
         "title": "What comparatives & superlatives do (core logic)",
-        "content": "**Comparatives** compare **two** things (*taller than her brother*); **superlatives** pick the extreme in a group of 3+ (*the tallest in the class*).\n- Comparison is how English **grades adjectives** — part of the Noun Phrase root (#3 in the Tree Model), because the adjective is modifying a noun.\n- Every opinion, description, recommendation and exam writing task leans on it: *better*, *worse*, *cheaper*, *the most useful*. Without comparatives you can describe one thing; with them you can rank, choose, and argue.",
+        "content": "**Comparatives** compare **two** things; **superlatives** pick out the extreme in a group of three or more.\n- Comparison is how English **grades adjectives** — part of the Noun Phrase root (#3 in the Tree Model), because the adjective is modifying a noun.\n- Every opinion, description, recommendation and exam writing task leans on it: *better*, *worse*, *cheaper*, *the most useful* — without them you can describe one thing; with them you can rank, choose, and argue.",
         "diagrams": [
           {
             "type": "formula",
@@ -12,7 +12,7 @@
             "items": [
               {
                 "label": "Short adjectives",
-                "formula": "-er / -est → taller, the tallest"
+                "formula": "-er / -est → taller than her brother, the tallest in the class"
               },
               {
                 "label": "Long adjectives",
@@ -247,7 +247,7 @@
       },
       {
         "title": "Advanced patterns (B2)",
-        "content": "Higher-level moves that turn basic comparison into natural, exam-grade English — these structures separate B1 from B2 in speaking and writing; examiners listen for them.\nDegree modifiers go **before** the comparative, never with the bare adjective.",
+        "content": "Higher-level moves that turn basic comparison into natural, exam-grade English.\n- These structures separate B1 from B2 in speaking and writing — examiners listen for them.\n- Degree modifiers go **before** the comparative, never with the bare adjective.",
         "diagrams": [
           {
             "type": "chips",

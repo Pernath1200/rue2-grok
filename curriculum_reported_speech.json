@@ -4,7 +4,7 @@
     "sections": [
       {
         "title": "What reported speech does (core logic)",
-        "content": "Reported (**indirect**) speech repeats what someone said inside your own sentence — tense, pronouns and time words adjust to your viewpoint.\n- **that** is optional; the reporting verb (*said*, *told*, *asked*) sits in the main clause, the reported words in an embedded clause.\n- Clause Linking root (#4): the report is an **embedded subordinate clause** — the same engineering as relative clauses and conditionals. The Verb Phrase root (#2) is secondary: embedding triggers a **tense shift** (backshift).\n- Everywhere: telling someone what your boss said, news and stories, exam reports (B2 sentence transformation), formal emails (*She mentioned that…*).",
+        "content": "Reported (**indirect**) speech repeats what someone said inside your own sentence — tense, pronouns and time words adjust to your viewpoint.\n- Clause Linking root (#4): the report is an **embedded subordinate clause** — same engineering as relative clauses and conditionals; embedding triggers the **backshift** tense shift (Verb Phrase root #2 is secondary).\n- Everywhere: your boss's words, news and stories, B2 sentence transformation, formal emails (*She mentioned that…*).",
         "diagrams": [
           {
             "type": "formula",
@@ -16,6 +16,10 @@
               {
                 "label": "Reported",
                 "formula": "He said (that) he was tired."
+              },
+              {
+                "label": "Structure",
+                "formula": "reporting verb (said, told, asked) in the main clause + (that) + embedded clause — that is optional"
               }
             ]
           },
@@ -539,7 +543,7 @@
       },
       {
         "title": "Practice roadmap & next steps",
-        "content": "Direct practice in this curriculum — start here after the cards:\n- Guided MC (backshift, *say/tell*, question order)\n- Gap fill (transformations from direct to reported)\n- Error correction (fix the Czech-speaker trap sentences)\n\nFor the underlying tense forms (past simple, past perfect, past continuous), see [[topic:tenses_general|Tenses: General]]. Reported speech sits next to [[topic:conditionals|Conditionals]] and [[topic:relative_pronouns|Relative Pronouns]] in the Clause Linking root — same embedding logic, different shape.",
+        "content": "Start here after the cards:\n- Guided MC (backshift, *say/tell*, question order)\n- Gap fill (transformations from direct to reported)\n- Error correction (fix the Czech-speaker trap sentences)\n\nFor the underlying tense forms (past simple, past perfect, past continuous), see [[topic:tenses_general|Tenses: General]]. Reported speech sits next to [[topic:conditionals|Conditionals]] and [[topic:relative_pronouns|Relative Pronouns]] in the Clause Linking root — same embedding logic, different shape.",
         "root_ids": [
           "B1.reported_speech.statements",
           "B2.reported_speech.extended"

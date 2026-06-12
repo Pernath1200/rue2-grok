@@ -4,7 +4,7 @@
     "sections": [
       {
         "title": "What quantifiers do (core logic)",
-        "content": "Quantifiers answer **how much?** or **how many?** before a noun — they sit in the same slot as articles (a / the): ONE determiner per noun phrase.\n- Determiners inside the Noun Phrase root (#3 in the Tree Model) — every time you talk about an amount (food, time, people, money) you need one.\n- The biggest split is **countable vs uncountable**: most quantifiers prefer one or the other. Mix them up and the sentence is just wrong — ~~much books~~ is broken English, not a small mistake.",
+        "content": "Quantifiers answer **how much?** / **how many?** before a noun — same slot as articles (a / the): ONE determiner per noun phrase.\n- Determiners inside the Noun Phrase root (#3 in the Tree Model) — every time you talk about an amount (food, time, people, money) you need one.\n- The biggest split is **countable vs uncountable**: most quantifiers prefer one or the other. Mix them up and the sentence is just wrong — ~~much books~~ is broken English, not a small mistake.",
         "diagrams": [
           {
             "type": "chips",
@@ -286,7 +286,7 @@
       },
       {
         "title": "both / either / neither (exactly two)",
-        "content": "A separate small system for exactly TWO things. With three or more, switch to *all / any / none* — using *both* for three things is a giveaway error.",
+        "content": "A separate small system for exactly TWO things.\nWith three or more, switch to *all / any / none* — using *both* for three things is a giveaway error.",
         "diagrams": [
           {
             "type": "table",
