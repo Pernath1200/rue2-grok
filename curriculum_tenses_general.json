@@ -204,7 +204,8 @@
           "d": "6 times + 2 aspects"
         },
         "correct_option": "a",
-        "explanation": "We combine **3 times** (present, past, future) with **4 aspects** (simple, continuous, perfect, perfect continuous) to get 12 forms."
+        "explanation": "We combine **3 times** (present, past, future) with **4 aspects** (simple, continuous, perfect, perfect continuous) to get 12 forms.",
+        "intro_ref": "what-are-tenses-1"
       },
       {
         "type": "mc",
@@ -216,7 +217,8 @@
           "d": "By changing the word order only"
         },
         "correct_option": "b",
-        "explanation": "English uses **auxiliary verbs** (do, does, did, have, has, had, will, am/is/are, was/were) to form questions, negatives, and many positive forms."
+        "explanation": "English uses **auxiliary verbs** (do, does, did, have, has, had, will, am/is/are, was/were) to form questions, negatives, and many positive forms.",
+        "intro_ref": "what-are-tenses-2"
       },
       {
         "type": "mc",
@@ -228,7 +230,8 @@
           "d": "Whether the sentence is positive or negative"
         },
         "correct_option": "b",
-        "explanation": "**Aspect** is how we view the action in time: e.g. a single event, in progress, completed (with a result), or lasting over a period."
+        "explanation": "**Aspect** is how we view the action in time: e.g. a single event, in progress, completed (with a result), or lasting over a period.",
+        "intro_ref": "what-are-tenses-1"
       },
       {
         "type": "mc",
@@ -240,7 +243,8 @@
           "d": "Perfect continuous"
         },
         "correct_option": "b",
-        "explanation": "**Continuous (progressive)** – the action is in progress. We use **be + -ing** (e.g. I am working, she was leaving)."
+        "explanation": "**Continuous (progressive)** – the action is in progress. We use **be + -ing** (e.g. I am working, she was leaving).",
+        "intro_ref": "continuous-aspect-1"
       },
       {
         "type": "mc",
@@ -252,7 +256,8 @@
           "d": "Present perfect continuous"
         },
         "correct_option": "d",
-        "explanation": "**Present perfect continuous**: have/has been + -ing. We focus on how long something has been going on (duration)."
+        "explanation": "**Present perfect continuous**: have/has been + -ing. We focus on how long something has been going on (duration).",
+        "intro_ref": "perfect-continuous-aspect-2"
       },
       {
         "type": "mc",
@@ -264,7 +269,8 @@
           "d": "Past perfect continuous"
         },
         "correct_option": "c",
-        "explanation": "**Past perfect simple**: had + past participle. Something completed **before** another time or action in the past."
+        "explanation": "**Past perfect simple**: had + past participle. Something completed **before** another time or action in the past.",
+        "intro_ref": "perfect-aspect-1"
       },
       {
         "type": "mc",
@@ -276,7 +282,8 @@
           "d": "Perfect continuous"
         },
         "correct_option": "c",
-        "explanation": "**Perfect** – we focus on completion and result/relevance. We use have/has/had + past participle (e.g. I have finished, she had left)."
+        "explanation": "**Perfect** – we focus on completion and result/relevance. We use have/has/had + past participle (e.g. I have finished, she had left).",
+        "intro_ref": "perfect-aspect-1"
       },
       {
         "type": "mc",
@@ -288,7 +295,8 @@
           "d": "English has no future tense."
         },
         "correct_option": "b",
-        "explanation": "**English** uses auxiliaries and often two or more words (e.g. I have been waiting). Time and aspect are shown by the verb structure, not by a single conjugated form."
+        "explanation": "**English** uses auxiliaries and often two or more words (e.g. I have been waiting). Time and aspect are shown by the verb structure, not by a single conjugated form.",
+        "intro_ref": "what-are-tenses-2"
       }
     ],
     "root_ids": [
