@@ -1,7 +1,7 @@
 /**
  * Bump CACHE_VERSION whenever this file changes so stale caches are dropped on activate.
  */
-var CACHE_VERSION = 'v64';  // v64 - per-question "Review the lesson" links: stable intro section ids + in-quiz lesson modal
+var CACHE_VERSION = 'v65';  // v65 - lesson link on every answer (all flows): topic-aware modal, loads any topic's lesson on demand
 var CACHE_NAME = 'rue2-' + CACHE_VERSION;
 
 var PRECACHE_URLS = [
