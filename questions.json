@@ -17519,7 +17519,8 @@
           "answers": [
             "have been studying"
           ],
-          "explanation": "Duration up to now with ongoing activity → present perfect continuous (have/has been + -ing)."
+          "explanation": "Duration up to now with ongoing activity → present perfect continuous (have/has been + -ing).",
+          "intro_ref": "perfect-continuous-aspect-2"
         },
         {
           "type": "open",
@@ -17527,7 +17528,8 @@
           "answers": [
             "had already left"
           ],
-          "explanation": "Action completed before a past time → past perfect (had + past participle)."
+          "explanation": "Action completed before a past time → past perfect (had + past participle).",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17535,7 +17537,8 @@
           "answers": [
             "works"
           ],
-          "explanation": "Habit → present simple."
+          "explanation": "Habit → present simple.",
+          "intro_ref": "simple-aspect-1"
         },
         {
           "type": "open",
@@ -17543,7 +17546,8 @@
           "answers": [
             "was waiting"
           ],
-          "explanation": "In progress when something happened → past continuous."
+          "explanation": "In progress when something happened → past continuous.",
+          "intro_ref": "continuous-aspect-1"
         },
         {
           "type": "open",
@@ -17551,7 +17555,8 @@
           "answers": [
             "had finished"
           ],
-          "explanation": "Before past time → past perfect."
+          "explanation": "Before past time → past perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17559,7 +17564,8 @@
           "answers": [
             "is working"
           ],
-          "explanation": "In progress now → present continuous (be + -ing)."
+          "explanation": "In progress now → present continuous (be + -ing).",
+          "intro_ref": "continuous-aspect-1"
         },
         {
           "type": "open",
@@ -17567,7 +17573,8 @@
           "answers": [
             "have lived"
           ],
-          "explanation": "Since + duration → present perfect."
+          "explanation": "Since + duration → present perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17575,7 +17582,8 @@
           "answers": [
             "went"
           ],
-          "explanation": "Finished past → past simple."
+          "explanation": "Finished past → past simple.",
+          "intro_ref": "simple-aspect-1"
         },
         {
           "type": "open",
@@ -17583,7 +17591,8 @@
           "answers": [
             "drinks"
           ],
-          "explanation": "Habit/routine → present simple."
+          "explanation": "Habit/routine → present simple.",
+          "intro_ref": "simple-aspect-1"
         },
         {
           "type": "open",
@@ -17591,7 +17600,8 @@
           "answers": [
             "was studying"
           ],
-          "explanation": "In progress when I arrived → past continuous."
+          "explanation": "In progress when I arrived → past continuous.",
+          "intro_ref": "continuous-aspect-1"
         },
         {
           "type": "open",
@@ -17599,7 +17609,8 @@
           "answers": [
             "will have finished"
           ],
-          "explanation": "Before future → future perfect."
+          "explanation": "Before future → future perfect.",
+          "intro_ref": "perfect-aspect-2"
         },
         {
           "type": "open",
@@ -17607,7 +17618,8 @@
           "answers": [
             "will be lying"
           ],
-          "explanation": "In progress at a future time → future continuous (will be + -ing)."
+          "explanation": "In progress at a future time → future continuous (will be + -ing).",
+          "intro_ref": "continuous-aspect-2"
         },
         {
           "type": "open",
@@ -17616,7 +17628,8 @@
             "haven't seen",
             "have not seen"
           ],
-          "explanation": "Duration up to now → present perfect."
+          "explanation": "Duration up to now → present perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17624,7 +17637,8 @@
           "answers": [
             "leaves"
           ],
-          "explanation": "Timetable → present simple."
+          "explanation": "Timetable → present simple.",
+          "intro_ref": "simple-aspect-1"
         },
         {
           "type": "open",
@@ -17632,7 +17646,8 @@
           "answers": [
             "had worked"
           ],
-          "explanation": "Duration before past event → past perfect."
+          "explanation": "Duration before past event → past perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17640,7 +17655,8 @@
           "answers": [
             "had been teaching"
           ],
-          "explanation": "Long duration up to a past moment → past perfect continuous (had been + -ing)."
+          "explanation": "Long duration up to a past moment → past perfect continuous (had been + -ing).",
+          "intro_ref": "perfect-continuous-aspect-2"
         },
         {
           "type": "open",
@@ -17648,7 +17664,8 @@
           "answers": [
             "was reading"
           ],
-          "explanation": "In progress when something happened."
+          "explanation": "In progress when something happened.",
+          "intro_ref": "continuous-aspect-1"
         },
         {
           "type": "open",
@@ -17656,7 +17673,8 @@
           "answers": [
             "have never been"
           ],
-          "explanation": "Experience → present perfect."
+          "explanation": "Experience → present perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17664,7 +17682,8 @@
           "answers": [
             "built"
           ],
-          "explanation": "Finished past with specific time."
+          "explanation": "Finished past with specific time.",
+          "intro_ref": "simple-aspect-1"
         },
         {
           "type": "open",
@@ -17672,7 +17691,8 @@
           "answers": [
             "will have left"
           ],
-          "explanation": "Before future time → future perfect."
+          "explanation": "Before future time → future perfect.",
+          "intro_ref": "perfect-aspect-2"
         },
         {
           "type": "open",
@@ -17680,7 +17700,8 @@
           "answers": [
             "is studying"
           ],
-          "explanation": "Right now → present continuous."
+          "explanation": "Right now → present continuous.",
+          "intro_ref": "continuous-aspect-1"
         },
         {
           "type": "open",
@@ -17688,7 +17709,8 @@
           "answers": [
             "met"
           ],
-          "explanation": "Finished past with specific time → past simple."
+          "explanation": "Finished past with specific time → past simple.",
+          "intro_ref": "simple-aspect-1"
         },
         {
           "type": "open",
@@ -17697,7 +17719,8 @@
             "have lived",
             "have been living"
           ],
-          "explanation": "Since + duration → present perfect."
+          "explanation": "Since + duration → present perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17706,7 +17729,8 @@
             "Have you seen",
             "Have you seen"
           ],
-          "explanation": "Experience with yet → present perfect."
+          "explanation": "Experience with yet → present perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17714,7 +17738,8 @@
           "answers": [
             "will be flying"
           ],
-          "explanation": "In progress at future time → future continuous."
+          "explanation": "In progress at future time → future continuous.",
+          "intro_ref": "continuous-aspect-2"
         },
         {
           "type": "open",
@@ -17722,7 +17747,8 @@
           "answers": [
             "was working"
           ],
-          "explanation": "In progress when something happened → past continuous."
+          "explanation": "In progress when something happened → past continuous.",
+          "intro_ref": "continuous-aspect-1"
         },
         {
           "type": "open",
@@ -17730,7 +17756,8 @@
           "answers": [
             "opens"
           ],
-          "explanation": "Schedule → present simple."
+          "explanation": "Schedule → present simple.",
+          "intro_ref": "simple-aspect-1"
         },
         {
           "type": "open",
@@ -17738,7 +17765,8 @@
           "answers": [
             "had been waiting"
           ],
-          "explanation": "Duration before past → past perfect continuous."
+          "explanation": "Duration before past → past perfect continuous.",
+          "intro_ref": "perfect-continuous-aspect-2"
         },
         {
           "type": "open",
@@ -17747,7 +17775,8 @@
             "hasn't finished",
             "has not finished"
           ],
-          "explanation": "Yet = unfinished → present perfect."
+          "explanation": "Yet = unfinished → present perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17755,7 +17784,8 @@
           "answers": [
             "go"
           ],
-          "explanation": "Habit → present simple."
+          "explanation": "Habit → present simple.",
+          "intro_ref": "simple-aspect-1"
         },
         {
           "type": "open",
@@ -17763,7 +17793,8 @@
           "answers": [
             "will have completed"
           ],
-          "explanation": "Before future → future perfect."
+          "explanation": "Before future → future perfect.",
+          "intro_ref": "perfect-aspect-2"
         },
         {
           "type": "open",
@@ -17771,7 +17802,8 @@
           "answers": [
             "was thinking"
           ],
-          "explanation": "In progress when you called → past continuous."
+          "explanation": "In progress when you called → past continuous.",
+          "intro_ref": "continuous-aspect-1"
         },
         {
           "type": "open",
@@ -17780,7 +17812,8 @@
             "has taught",
             "has been teaching"
           ],
-          "explanation": "Duration up to now → present perfect."
+          "explanation": "Duration up to now → present perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17788,7 +17821,8 @@
           "answers": [
             "is snowing"
           ],
-          "explanation": "Happening now → present continuous."
+          "explanation": "Happening now → present continuous.",
+          "intro_ref": "continuous-aspect-1"
         },
         {
           "type": "open",
@@ -17796,7 +17830,8 @@
           "answers": [
             "built"
           ],
-          "explanation": "Finished past with year → past simple."
+          "explanation": "Finished past with year → past simple.",
+          "intro_ref": "simple-aspect-1"
         },
         {
           "type": "open",
@@ -17804,7 +17839,8 @@
           "answers": [
             "have never visited"
           ],
-          "explanation": "Experience → present perfect."
+          "explanation": "Experience → present perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17812,7 +17848,8 @@
           "answers": [
             "will be relaxing"
           ],
-          "explanation": "Future continuous."
+          "explanation": "Future continuous.",
+          "intro_ref": "continuous-aspect-2"
         },
         {
           "type": "open",
@@ -17820,7 +17857,8 @@
           "answers": [
             "has been writing"
           ],
-          "explanation": "Activity with duration/recent effect → present perfect continuous."
+          "explanation": "Activity with duration/recent effect → present perfect continuous.",
+          "intro_ref": "perfect-continuous-aspect-2"
         },
         {
           "type": "open",
@@ -17828,7 +17866,8 @@
           "answers": [
             "had left"
           ],
-          "explanation": "Before past event → past perfect."
+          "explanation": "Before past event → past perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17836,7 +17875,8 @@
           "answers": [
             "boils"
           ],
-          "explanation": "General truth → present simple."
+          "explanation": "General truth → present simple.",
+          "intro_ref": "simple-aspect-1"
         },
         {
           "type": "open",
@@ -17845,7 +17885,8 @@
             "haven't seen",
             "have not seen"
           ],
-          "explanation": "Since = from past to now → present perfect."
+          "explanation": "Since = from past to now → present perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17853,7 +17894,8 @@
           "answers": [
             "were watching"
           ],
-          "explanation": "In progress when I arrived → past continuous."
+          "explanation": "In progress when I arrived → past continuous.",
+          "intro_ref": "continuous-aspect-1"
         },
         {
           "type": "open",
@@ -17861,7 +17903,8 @@
           "answers": [
             "starts"
           ],
-          "explanation": "Scheduled event → present simple."
+          "explanation": "Scheduled event → present simple.",
+          "intro_ref": "simple-aspect-1"
         },
         {
           "type": "open",
@@ -17869,7 +17912,8 @@
           "answers": [
             "will have been working"
           ],
-          "explanation": "Duration before future → future perfect continuous."
+          "explanation": "Duration before future → future perfect continuous.",
+          "intro_ref": "perfect-continuous-aspect-3"
         },
         {
           "type": "open",
@@ -17877,7 +17921,8 @@
           "answers": [
             "have known"
           ],
-          "explanation": "State with since → present perfect (stative verb)."
+          "explanation": "State with since → present perfect (stative verb).",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17885,7 +17930,8 @@
           "answers": [
             "was sleeping"
           ],
-          "explanation": "In progress when alarm went off → past continuous."
+          "explanation": "In progress when alarm went off → past continuous.",
+          "intro_ref": "continuous-aspect-1"
         },
         {
           "type": "open",
@@ -17893,7 +17939,8 @@
           "answers": [
             "has just finished"
           ],
-          "explanation": "Just = very recent → present perfect."
+          "explanation": "Just = very recent → present perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17902,7 +17949,8 @@
             "haven't heard",
             "have not heard"
           ],
-          "explanation": "Duration with for → present perfect."
+          "explanation": "Duration with for → present perfect.",
+          "intro_ref": "perfect-aspect-1"
         },
         {
           "type": "open",
@@ -17910,7 +17958,8 @@
           "answers": [
             "takes off"
           ],
-          "explanation": "Scheduled future → present simple."
+          "explanation": "Scheduled future → present simple.",
+          "intro_ref": "simple-aspect-1"
         },
         {
           "type": "open",
@@ -17918,7 +17967,8 @@
           "answers": [
             "had been waiting"
           ],
-          "explanation": "Duration before past moment → past perfect continuous."
+          "explanation": "Duration before past moment → past perfect continuous.",
+          "intro_ref": "perfect-continuous-aspect-2"
         }
       ]
     }

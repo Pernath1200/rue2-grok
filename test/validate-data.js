@@ -301,6 +301,7 @@ console.log('\n9. intro_ref → intro section id integrity');
   }
 
   const curriculumFiles = jsonFiles.filter(f => f.startsWith('curriculum') && parsed[f]);
+  const idsByFile = {};
   for (const file of curriculumFiles) {
     const sections = introSectionsOf(parsed[file]);
     const ids = new Set();
@@ -310,6 +311,7 @@ console.log('\n9. intro_ref → intro section id integrity');
       if (ids.has(s.id)) { fail(file + ': duplicate intro section id "' + s.id + '"'); idsOk = false; }
       ids.add(s.id);
     }
+    idsByFile[file] = ids;
     if (idsOk && sections.length) pass(file + ': ' + sections.length + ' intro section id(s) present and unique');
 
     let refCount = 0;
@@ -322,6 +324,31 @@ console.log('\n9. intro_ref → intro section id integrity');
       }
     }
     if (refCount) pass(file + ': ' + refCount + ' intro_ref link(s) resolve to a section');
+  }
+
+  // questions.json intro_refs resolve against the topic's curriculum (the lesson
+  // the link opens at runtime), mapped via topics.json questions_key → curriculum.
+  const topicsList = (parsed['topics.json'] && parsed['topics.json'].topics) || [];
+  const curriculumByKey = {};
+  for (const t of topicsList) {
+    const key = t.questions_key || t.id;
+    if (key && t.curriculum) curriculumByKey[key] = t.curriculum;
+  }
+  const qbank = parsed['questions.json'] || {};
+  for (const [topicKey, sets] of Object.entries(qbank)) {
+    let refCount = 0, bad = 0;
+    for (const set of Object.values(sets || {})) {
+      for (const q of (set && set.questions) || []) {
+        if (q && q.intro_ref != null) {
+          refCount++;
+          const file = curriculumByKey[topicKey];
+          const ids = file && idsByFile[file];
+          if (!ids) { fail('questions.json[' + topicKey + ']: intro_ref set but no curriculum found for the topic'); bad++; }
+          else if (!ids.has(q.intro_ref)) { fail('questions.json[' + topicKey + ']: intro_ref "' + q.intro_ref + '" not in ' + file); bad++; }
+        }
+      }
+    }
+    if (refCount && !bad) pass('questions.json[' + topicKey + ']: ' + refCount + ' intro_ref link(s) resolve to its curriculum');
   }
 }
 
