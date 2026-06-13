@@ -252,8 +252,14 @@ function updateQuizProgress() {
   // Harmonious util-bar context (A): topic + truthful progress on the consistent nav bar
   const ctx = document.getElementById('quizContext');
   if (ctx) {
-    const topic = state.currentTopic ? (state.currentTopic.title || state.currentTopic.id || 'Practice') : 'Session';
-    ctx.innerHTML = `<strong>${topic}</strong> · ${current}/${total}`;
+    // Mixed-topic sessions (review, weak spots) tag each question with its own
+    // topic; prefer that over state.currentTopic, which is just the last topic
+    // browsed and would mislabel every review item with a single topic.
+    const q = state.currentQuestions && state.currentQuestions[state.currentIndex];
+    const perQuestionTopic = q && (q.topicTitle || (q.topic ? getTopicLabelForDisplay(q.topic) : ''));
+    const topic = perQuestionTopic
+      || (state.currentTopic ? (state.currentTopic.title || state.currentTopic.id || 'Practice') : 'Session');
+    ctx.innerHTML = `<strong>${escapeHtml(topic)}</strong> · ${current}/${total}`;
   }
 }
 
