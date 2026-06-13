@@ -1,5 +1,5 @@
 import state, { PART2_ORDER } from './state.js';
-import { showScreen, showMenuPanel, fetchJSON, escapeAndBold, renderIntroContentHtml } from './ui.js';
+import { showScreen, showMenuPanel, fetchJSON, escapeAndBold, renderIntroContentHtml, openOverlay } from './ui.js';
 import { switchToReference } from './reference.js';
 import { saveLastActivity } from './storage.js';
 
@@ -171,6 +171,30 @@ export function getCourseIntroSections() {
   if (Array.isArray(intro)) return intro;
   const raw = intro.sections;
   return Array.isArray(raw) ? raw : [];
+}
+
+/** Find a loaded intro section by its stable `id` (the `intro_ref` target). */
+export function getIntroSectionById(id) {
+  if (!id) return null;
+  return getCourseIntroSections().find(s => s && s.id === id) || null;
+}
+
+// Pops the relevant intro card over the quiz (a question's `intro_ref` link →
+// "Review the lesson"). Renders the same content/diagrams as the intro screen,
+// but in an overlay so the quiz state underneath is untouched — closing returns
+// the learner to exactly where they were.
+export function openIntroRefModal(sectionId) {
+  const section = getIntroSectionById(sectionId);
+  if (!section) return;
+  const titleEl = document.getElementById('introRefTitle');
+  const bodyEl = document.getElementById('introRefBody');
+  if (titleEl) titleEl.textContent = section.title || 'Lesson';
+  if (bodyEl) {
+    const introHtml = renderIntroContentHtml(section.content || '');
+    const diagramHtml = [].concat(section.diagrams || section.diagram || []).map(renderDiagram).join('');
+    bodyEl.innerHTML = '<div class="intro-section">' + introHtml + '</div>' + diagramHtml;
+  }
+  openOverlay('introRefOverlay');
 }
 
 export function showIntroSection(index) {

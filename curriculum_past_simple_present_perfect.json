@@ -3,6 +3,7 @@
     "title": "Past Simple vs Present Perfect",
     "sections": [
       {
+        "id": "the-big-contrast-finished-vs-connected-to-now",
         "title": "The big contrast — finished vs connected to now",
         "content": "Two tenses, one of the highest-stakes choices in English. The question is never \"which event happened?\" but \"how does the speaker frame it?\"\n\n- **Past simple** = action in a **finished time** — over, separate from now: *I lived in Prague in 2020.*\n- **Present perfect** = action **connected to now** — the experience or its result still matters: *I have lived in Prague* (and the experience is part of who I am today).\n\n**Why it matters (roots-first)**: This is the heart of the Verb Phrase root (#2 in the Tree Model). The perfect aspect is English's main grammatical marker of **result and present relevance** — and Czech has no direct equivalent. Czech *byl jsem v Praze* covers both *I was in Prague* (finished) and *I have been to Prague* (experience). English forces the speaker to choose. Getting this contrast right is the single biggest tense-confusion fix for Czech learners — and it shapes how you sound in job interviews, exams, CVs and everyday speech.\n\n**Same words, different frames**:\n- *I worked at Skanska for three years.* (finished — I don't work there now)\n- *I have worked at Skanska for three years.* (still working there now)",
         "diagram": {
@@ -48,6 +49,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "time-markers-the-decisive-clue",
         "title": "Time markers — the decisive clue",
         "content": "In about 90% of exam gap-fills (and most real speech), the **time marker** tells you which tense to use. Learn the two lists side by side and you have most of the topic solved.\n\n**Why it matters**: A single time word locks the tense. *Yesterday* forbids present perfect; *since 2020* forbids past simple. This is the fastest, most reliable rule you'll meet in English grammar.",
         "diagram": {
@@ -95,6 +97,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "news-and-recent-results-the-conversation-shift",
         "title": "News and recent results — the conversation shift",
         "content": "**Present perfect breaks news.** **Past simple gives details.** Listen for the switch — it happens constantly in real conversation.\n\nA typical exchange:\n- A: *I've broken my leg!* (present perfect — the news, the result is now)\n- B: *Oh no — how did it happen?* (past simple — now we're asking about the finished moment)\n- A: *I fell off my bike yesterday.* (past simple — finished time stated)\n\n**Why it matters**: This pattern is everywhere — work updates, accidents, achievements, gossip. The first sentence announces (*She's got the job! / The boss has just left / I've finished the report*); follow-up questions and details slide straight into past simple. Mixing them up sounds odd and slows the listener down.\n\n**More contrast pairs**:\n- *I've lost my wallet.* (now — I don't have it) → *I lost it on the metro this morning.* (details, finished time)\n- *She has won the contract!* (news, result now) → *She signed it yesterday.* (specific past moment)",
         "root_ids": [
@@ -103,6 +106,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "life-experience-vs-specific-past-the-classic-trap",
         "title": "Life experience vs specific past — the classic trap",
         "content": "When you ask about someone's **life so far**, with no specific time in mind, English uses **present perfect**. As soon as you mention **a particular time**, switch to **past simple**.\n\n**Side-by-side**:\n- *Have you ever been to London?* (any time in your life? — experience)\n- *Did you go to London last summer?* (specific finished time — fact)\n\n- *I've met three British people.* (in my life, so far)\n- *I met three British people at the conference.* (at that finished event)\n\n- *She has read a lot of Russian novels.* (life experience, ongoing relevance)\n- *She read War and Peace last winter.* (finished, time stated)\n\n**Why it matters**: This is the #1 trap in speaking exams and job interviews. *Have you ever taught children?* — *Yes, I have. I taught at a primary school in 2018.* The interviewer expects the present perfect for the experience question and the past simple for the example. Czech translates both with the same past — English needs the switch.",
         "root_ids": [
@@ -111,6 +115,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "since-for-present-perfect-s-exclusive-territory",
         "title": "Since & for — present perfect's exclusive territory",
         "content": "For a state or action that **started in the past and is still going on now**, English uses **present perfect** — never present simple. This is one of the strongest Czech-interference points.\n\n- **since** + a starting point: *since 2020, since Monday, since I was a child*\n- **for** + a duration: *for three years, for ages, for a long time*\n\n**Czech reflex vs English rule**:\n- Wrong: **I am living* here for three years.* (Czech literal: *bydlím tady tři roky*)\n- Wrong: **I live* here since 2020.*\n- Right: *I **have lived** here for three years.* / *I **have lived** here since 2020.*\n- Right (continuous, often more natural for actions): *I **have been living** here since 2020.*\n\n**Why it matters**: This appears in every interview, every CV, every \"tell me about yourself\". *I've worked at TAXVIA for four years. I've been studying English since 2019.* Getting *since* and *for* into present perfect is the single most professional-sounding fix for a Czech intermediate speaker.\n\n**Quick rule**: *since* + point in time; *for* + length of time. Both demand present perfect (simple or continuous).",
         "root_ids": [
@@ -119,6 +124,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "quick-note-simple-vs-continuous",
         "title": "Quick note — simple vs continuous",
         "content": "Present perfect itself splits into **simple** and **continuous** — a fine distinction, treated fully in its own topic.\n\n- **Present perfect simple** (*I have worked*) — emphasises **result, completion, or quantity**: *I've written three reports today.*\n- **Present perfect continuous** (*I have been working*) — emphasises **duration or ongoing activity**: *I've been writing reports all morning.*\n\n**Quick contrast**:\n- *I've read that book.* (finished it — the result)\n- *I've been reading that book.* (in progress — still going)\n\n**Why it matters**: For past-simple-vs-present-perfect choices, either form usually works — the simple/continuous split is a second-level decision. Get the **tense** right first; refine to continuous when you want to highlight duration or ongoing process.\n\n**Full treatment**: see the separate **Present Perfect (Simple vs Continuous)** topic.",
         "root_ids": [
@@ -127,6 +133,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "common-czech-speaker-errors",
         "title": "Common Czech-speaker errors",
         "content": "The high-frequency mistakes — all driven by Czech having one past tense where English has two.\n\n**1. Present perfect with a finished-time marker**\n- Wrong: *I have been in Prague yesterday.*\n- Right: *I was in Prague yesterday.*\n- Rule: *yesterday* = finished time → past simple, never present perfect.\n\n**2. \"When?\" with present perfect**\n- Wrong: *When have you arrived?*\n- Right: *When did you arrive?*\n- Rule: *When?* asks for a specific point in time → past simple.\n\n**3. Present simple with *since* / *for* (Czech literal translation)**\n- Wrong: *I live here since 2020.* (Czech: *bydlím tady od 2020*)\n- Right: *I have lived here since 2020.*\n- Rule: started in past + still true now → present perfect.\n\n**4. Past simple where present perfect's needed (experience)**\n- Wrong: *Did you ever try sushi?* (asking about life experience)\n- Right: *Have you ever tried sushi?*\n- Rule: *ever / never* about life experience → present perfect.\n\n**5. Past simple where the result matters now**\n- Wrong: *I lost my keys.* (said when explaining why you can't get in right now)\n- Right: *I've lost my keys.*\n- Rule: result still relevant → present perfect.\n\n**Why it matters**: These five errors account for the vast majority of tense mistakes Czech speakers make at B1–B2. Fix them and your English immediately sounds more native — especially in job interviews, where you're constantly moving between life experience (*I have worked, I have studied*) and specific past events (*I started there in 2020, I finished my degree last year*).",
         "root_ids": [

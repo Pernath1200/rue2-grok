@@ -3,6 +3,7 @@
     "title": "Past Simple and Past Continuous",
     "sections": [
       {
+        "id": "past-simple-vs-past-continuous-1",
         "title": "Past simple vs past continuous (1)",
         "content": "**Past simple** (*I went*, *she did*) describes **completed** actions at a specific time in the past. **Past continuous** (*I was going*, *she was doing*) describes an action **in progress** at a moment in the past.",
         "root_ids": [
@@ -11,6 +12,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "past-simple-vs-past-continuous-2",
         "title": "Past simple vs past continuous (2)",
         "content": "**Past simple:** did / went / saw (completed). **Past continuous:** was/were + *-ing* (in progress).",
         "root_ids": [
@@ -19,6 +21,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "past-simple-when-to-use-1",
         "title": "Past simple: when to use (1)",
         "content": "**Completed action:** *I finished the report. She left at five.*\n**Specific time** (yesterday, last week, at 3 o'clock): *I saw him yesterday.*\n**Sequence of events:** *I got up, had breakfast, and went to work.*",
         "root_ids": [
@@ -27,6 +30,7 @@
         "cefr_level": "A1"
       },
       {
+        "id": "past-simple-when-to-use-2",
         "title": "Past simple: when to use (2)",
         "content": "**Short action** that interrupts a longer one: *The phone rang while I was cooking.*\n**Form:** regular verbs + *-ed*; irregular: *went*, *saw*, *wrote*.",
         "root_ids": [
@@ -35,6 +39,7 @@
         "cefr_level": "A1"
       },
       {
+        "id": "past-continuous-when-to-use-1",
         "title": "Past continuous: when to use (1)",
         "content": "**Action in progress** at a past moment: *At 8 pm I was watching TV.*\n**Background/longer action** when something else happened: *I was walking home when I met a friend.*",
         "root_ids": [
@@ -43,6 +48,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "past-continuous-when-to-use-2",
         "title": "Past continuous: when to use (2)",
         "content": "**Two parallel actions:** *She was cooking while he was setting the table.*\n**Temporary situation:** *Last year she was working in London.*\n**Form:** was/were + verb + *-ing*.",
         "root_ids": [
@@ -51,6 +57,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "interrupted-actions-when-and-while-1",
         "title": "Interrupted actions: when and while (1)",
         "content": "When one action **interrupts** another: the **longer** action (in progress) → past continuous. The **shorter/interrupting** action → past simple. *I was reading when the phone rang.*",
         "root_ids": [
@@ -59,6 +66,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "interrupted-actions-when-and-while-2",
         "title": "Interrupted actions: when and while (2)",
         "content": "With **while:** *While she was working, the phone rang.* *While I was cooking, she was setting the table* (both in progress). **When** can be followed by either tense: *When I arrived, they were having dinner.*",
         "root_ids": [
@@ -67,6 +75,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "comparison-diagram",
         "title": "Comparison diagram",
         "content": "",
         "diagram": {
@@ -99,6 +108,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "typical-errors-1",
         "title": "Typical errors (1)",
         "content": "**Wrong:** *I read when the phone rang.* (in the middle of reading) **Right:** **I was reading when the phone rang.**\n**Wrong:** *The phone was ringing when I was reading.* (if it rang once) **Right:** **The phone rang when I was reading.**",
         "root_ids": [
@@ -107,6 +117,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "typical-errors-2",
         "title": "Typical errors (2)",
         "content": "**Wrong:** *I was going to the cinema yesterday.* (completed trip) **Right:** **I went to the cinema yesterday.**\n**Wrong:** *I read when she called.* (unclear — were you mid-reading?) **Right:** **I was reading when she called.**",
         "root_ids": [
@@ -115,6 +126,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "typical-errors-3",
         "title": "Typical errors (3)",
         "content": "**Tip:** In progress at a moment = past continuous. Completed event = past simple.",
         "root_ids": [
@@ -123,6 +135,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "reference",
         "title": "Reference",
         "content": "For more on past tenses, see the Past Perfect and Past Simple vs Present Perfect topics under Choose Grammar Topic.",
         "root_ids": [

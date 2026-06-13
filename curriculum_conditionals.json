@@ -3,6 +3,7 @@
     "title": "Conditionals (zero, first, second, third)",
     "sections": [
       {
+        "id": "what-conditionals-do-core-logic",
         "title": "What conditionals do (core logic)",
         "content": "Conditionals link two clauses — **if X, then Y** — and the tense pair around *if* tells the listener how **real** or **unreal** it is.\n- The most powerful clause-linker English has — heart of the **Clause Linking** root (#4 in the Tree Model), pulling in the **Verb Phrase** root: each type uses a specific tense combination.\n- Master the four tense-pairings and you can speculate, hypothesise, regret, warn, promise and negotiate — the high-stakes moves in conversation and writing.",
         "diagrams": [
@@ -36,6 +37,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "the-four-types-at-a-glance",
         "title": "The four types at a glance",
         "content": "Learn the **four tense-pairings** and the **use** that goes with each — everything else is detail.\nThe tense pair alone signals the speaker's stance toward reality: wrong tense pair = wrong **meaning**, not just wrong grammar.",
         "diagrams": [
@@ -89,6 +91,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "which-conditional-do-i-need",
         "title": "Which conditional do I need?",
         "content": "Ask the questions in order — the first *yes* gives your type.\n*If I see him, I'll tell him* = First (one-off future event); *if you press this button, the light comes on* = Zero (general law of behaviour).",
         "diagrams": [
@@ -126,6 +129,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "real-conditionals-zero-first",
         "title": "Real conditionals — Zero & First",
         "content": "The **real** conditionals treat the situation as actually possible or factually true — everyday cause-and-effect, plans, warnings, instructions.\nThey are the foundation — get these solid before moving to the unreal types.",
         "diagrams": [
@@ -163,6 +167,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "unreal-present-second-conditional",
         "title": "Unreal present — Second conditional",
         "content": "**If + past simple, would + base.** The past doesn't mean past time — it signals **distance from reality**: imaginary or contrary to fact now.\nWorkhorse phrases: *If I were you…*, *If I had a million crowns…*, *If we lived in Italy…* Exam tasks (sentence transformation, CAE/FCE Use of English) lean on it heavily.",
         "diagrams": [
@@ -205,6 +210,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "second-conditional-were-czech-traps",
         "title": "Second conditional — *were* & Czech traps",
         "content": "Formal English uses **were** for all persons in the if-clause — and never *would* after *if*.",
         "diagrams": [
@@ -239,6 +245,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "unreal-past-third-conditional",
         "title": "Unreal past — Third conditional",
         "content": "**If + past perfect, would have + past participle** — past that **did not happen**: regrets, counterfactuals, alternative histories.\nThe grammar of hindsight, blame and what-might-have-been — high frequency in storytelling, interviews and exam writing tasks.",
         "diagrams": [
@@ -284,6 +291,7 @@
         "cefr_level": "B2"
       },
       {
+        "id": "third-conditional-czech-traps",
         "title": "Third conditional — Czech traps",
         "content": "*Would have* belongs only in the main clause — and a pure past condition needs the full past structure in **both** clauses.",
         "diagrams": [
@@ -309,6 +317,7 @@
         "cefr_level": "B2"
       },
       {
+        "id": "mixed-conditionals",
         "title": "Mixed conditionals",
         "content": "**Mixed conditionals** combine a condition and a result from **different time-frames** — usually past condition, present result, or vice versa.\nReal life isn't always purely past or purely present: the most common mix — *past cause → present consequence* — is essential for talking about how earlier choices shape your current situation. Common in CAE/FCE and any reflective conversation about life decisions.",
         "diagrams": [
@@ -364,6 +373,7 @@
         "cefr_level": "B2"
       },
       {
+        "id": "wishes-if-only",
         "title": "Wishes & if only",
         "content": "**Wishes** use the same tense-distancing logic — past for present, past perfect for past — to express **regret**, **longing** or **complaint**.\n- The emotional layer of conditionals: what you want to be true but isn't, or what you'd undo if you could. High frequency in conversation and writing.\n- Present wish = Second-conditional logic; past wish = Third.\n- *would* + base = about someone else's behaviour you can't control.",
         "diagrams": [
@@ -405,6 +415,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "variants-unless-as-long-as-provided-that",
         "title": "Variants — unless, as long as, provided that…",
         "content": "*If* isn't the only word that introduces a conditional — these alternatives add shades of **restriction**, **exception**, **precondition**.\nThey appear constantly in formal writing, contracts, instructions and CAE-level reading — more precise conditions than *if* alone.",
         "diagrams": [
@@ -466,6 +477,7 @@
         "cefr_level": "B2"
       },
       {
+        "id": "quick-reference-if-clause-traps",
         "title": "Quick reference — if-clause traps",
         "content": "Most Czech-speaker conditional errors come from word-for-word translation into the if-clause.\nOnce you see the pattern, you can self-correct in real time.",
         "diagrams": [
@@ -499,6 +511,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "quick-reference-more-czech-traps",
         "title": "Quick reference — more Czech traps",
         "content": "The rest of the top traps — these account for the large majority of conditional mistakes, and fixing them gives immediate visible progress.",
         "diagrams": [

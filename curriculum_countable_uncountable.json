@@ -3,6 +3,7 @@
     "title": "Uncountable Nouns and Plural-only Nouns",
     "sections": [
       {
+        "id": "what-this-section-covers",
         "title": "What this section covers",
         "content": "**Countable** nouns can be singular or plural: *a book, two books.* **Uncountable** nouns have no plural with -s: *water, information, advice.* **Plural-only** nouns always take a plural verb: *scissors, trousers.* This topic covers common mistakes with all three.",
         "root_ids": [
@@ -11,6 +12,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "countable-nouns",
         "title": "Countable nouns",
         "content": "You can count them. Use **a/an** and plural **-s**: *a book, two books; an apple, three apples.* Use **many**, **few**, **a few**: *How many books?*",
         "root_ids": [
@@ -19,6 +21,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "uncountable-nouns",
         "title": "Uncountable nouns",
         "content": "Treated as one mass. No **a/an**, no plural -s: *water, information, advice, rice, money, furniture.* Use **much**, **little**, **a little**: *How much water?* To count them, use a phrase: *a piece of advice, a bottle of water.*",
         "root_ids": [
@@ -27,6 +30,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "common-uncountable-nouns-1",
         "title": "Common uncountable nouns (1)",
         "content": "These are **uncountable** in English — no plural -s, no *a/an*:\n**advice** — *Give me some advice.* **information** — *I need more information.* **news** (singular verb) — *The news is good.* **furniture** — *We need new furniture.* **homework** — *I have a lot of homework.*",
         "root_ids": [
@@ -35,6 +39,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "common-uncountable-nouns-2",
         "title": "Common uncountable nouns (2)",
         "content": "**research** — *She does research.* **luggage / baggage** — *How much luggage?* **weather** — *The weather is nice.* **progress** — *We're making progress.* **hair** (uncountable for all hair on head) — *She has long hair.* But: *three hairs on the jacket* (countable for individual hairs).",
         "root_ids": [
@@ -43,6 +48,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "plural-only-nouns",
         "title": "Plural-only nouns",
         "content": "Some nouns have **only a plural form** and take a **plural verb**: **scissors** — *The scissors are on the table.* **trousers / pants** — *These trousers are too long.* **jeans, shorts, pyjamas** — *My jeans are blue.* **glasses** (spectacles) — *Where are my glasses?* For one item, say **a pair of**: *a pair of scissors, a pair of trousers.*",
         "root_ids": [
@@ -51,6 +57,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "countable-vs-uncountable",
         "title": "Countable vs uncountable",
         "content": "",
         "diagram": {
@@ -81,6 +88,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "reference",
         "title": "Reference",
         "content": "For more on quantifiers with countable and uncountable nouns, see the Quantifiers topic under Choose Grammar Topic.",
         "root_ids": [

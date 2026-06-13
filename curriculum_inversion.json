@@ -3,26 +3,31 @@
     "title": "Inversion for emphasis",
     "sections": [
       {
+        "id": "what-this-section-covers",
         "title": "What this section covers",
         "content": "Sometimes in English we **change the normal word order** (subject + verb) for **emphasis**, especially in formal writing. This section covers **inversion** with: *Not only ... but (also)*, *Never / Rarely / Seldom*, *Only then / only later / only when*, and *Under no circumstances*.",
         "root_ids": ["B2.sentence_syntax.inversion"],
         "cefr_level": "B2"
       },
       {
+        "id": "what-is-inversion",
         "title": "What is inversion?",
         "content": "**Inversion** means the **auxiliary verb comes before the subject**, like in questions.\nNormal: *I have never seen such a film.* Inversion: *Never have I seen such a film.*\nNormal: *We did not only visit London.* Inversion: *Not only did we visit London.*\nWe usually use these patterns in written English for **stronger emphasis**.",
         "root_ids": ["B2.sentence_syntax.inversion"],
         "cefr_level": "B2"
       },
       {
+        "id": "patterns-to-learn-1",
         "title": "Patterns to learn (1)",
         "content": "After certain negative or limiting expressions at the beginning of the sentence, we invert (**auxiliary + subject + main verb**):\n**Not only** + did/do/does/have/will + subject: *Not only did we visit London, but we also went to Oxford.*\n**Never / Rarely / Seldom** + have/has/do/does/did/will + subject: *Never have I felt so nervous.*"
       },
       {
+        "id": "patterns-to-learn-2",
         "title": "Patterns to learn (2)",
         "content": "**Only then / only later / only when / only after** + did/do/does/will + subject: *Only then did I realise my mistake.*\n**Under no circumstances** + must/should/can/may/will + subject: *Under no circumstances should you tell anyone.*\nRemember: we always need an **auxiliary verb** (do/does/did, have/has, will, can, should, etc.)."
       },
       {
+        "id": "reference",
         "title": "Reference",
         "content": "For more on formal writing structures, see the Conjunctions and Linkers topic under Choose Grammar Topic."
       }

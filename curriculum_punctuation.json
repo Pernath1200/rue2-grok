@@ -3,6 +3,7 @@
     "title": "Punctuation and capitalisation",
     "sections": [
       {
+        "id": "what-this-section-covers",
         "title": "What this section covers",
         "content": "This topic covers **punctuation** (especially commas) and **capitalisation** in English, focusing on common mistakes.",
         "root_ids": [
@@ -11,6 +12,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "commas-when-to-use-them-1",
         "title": "Commas: when to use them (1)",
         "content": "**In lists:** *apples, oranges, and bananas* (last comma optional in British English).\n**After introductory words or phrases:** *However, we agreed. After the meeting, he left.*",
         "root_ids": [
@@ -19,6 +21,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "commas-when-to-use-them-2",
         "title": "Commas: when to use them (2)",
         "content": "**Before** *but*, *and*, *or*, *so*, *yet* when joining two full sentences: *I called, but she was busy.*\n**Around extra (non-defining) information:** *My brother, who lives in London, is a doctor.*",
         "root_ids": [
@@ -27,6 +30,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "commas-when-to-use-them-3",
         "title": "Commas: when to use them (3)",
         "content": "Do **not** use a comma when information is essential (defining): *The man who called yesterday left a message.*",
         "root_ids": [
@@ -35,6 +39,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "commas-common-mistakes",
         "title": "Commas: common mistakes",
         "content": "**Before *that*:** usually **no** comma in English. *I think that he is right* (no comma before *that*).\n**Before *and*/*but*:** comma only when joining two **full sentences**. *She smiled, and I waved.* But no comma for: *She smiled and waved.*",
         "root_ids": [
@@ -43,6 +48,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "capitalisation-the-rules-1",
         "title": "Capitalisation: the rules (1)",
         "content": "In English, capitalise:\n\n**I** (always): *He and I went.*\n**First word** of a sentence.\n**Proper nouns:** *London, Jan, the European Union.*\n**Days and months:** *Monday, March.*",
         "root_ids": [
@@ -51,6 +57,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "capitalisation-the-rules-2",
         "title": "Capitalisation: the rules (2)",
         "content": "**Nationalities and languages:** *English, French, German.*\n**Titles of books/films** (main words): *The Lord of the Rings.*\nDo **not** capitalise general nouns unless part of a name: *university* vs *Oxford University*.",
         "root_ids": [
@@ -59,6 +66,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "capitalisation-common-mistakes",
         "title": "Capitalisation: common mistakes",
         "content": "**Days and months** — always capitalise in English: *Monday, January.*\n**I** — always a capital letter.\n**Nationalities and languages** — always capitalise: *English, German, French.*",
         "root_ids": [
@@ -67,6 +75,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "colons",
         "title": "Colons",
         "content": "**Colon (:)** — used to introduce a list, explanation, or example. *We need three things: time, money, and help. There was one problem: the door was locked.* Also used for time: *12:30.*",
         "root_ids": [
@@ -75,6 +84,7 @@
         "cefr_level": "B2"
       },
       {
+        "id": "semicolons-1",
         "title": "Semicolons (1)",
         "content": "**Semicolon (;)** — joins two closely related full sentences (instead of comma + *and*): *It was late; we went home.*",
         "root_ids": [
@@ -83,6 +93,7 @@
         "cefr_level": "B2"
       },
       {
+        "id": "semicolons-2",
         "title": "Semicolons (2)",
         "content": "Also separates list items that already contain commas: *We visited Paris, France; Rome, Italy; and Berlin, Germany.*\nDo **not** use a semicolon before a dependent clause (before *because* or *although*) — use a comma instead.",
         "root_ids": [
@@ -91,6 +102,7 @@
         "cefr_level": "B2"
       },
       {
+        "id": "summary-table",
         "title": "Summary table",
         "content": "",
         "diagram": {
@@ -145,6 +157,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "reference",
         "title": "Reference",
         "content": "For more on comma use with relative clauses, see the Relative Pronouns topic under Choose Grammar Topic.",
         "root_ids": [

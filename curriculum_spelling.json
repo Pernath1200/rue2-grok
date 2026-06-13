@@ -3,6 +3,7 @@
     "title": "Spelling",
     "sections": [
       {
+        "id": "what-this-section-covers",
         "title": "What this section covers",
         "content": "This section practises words that students often misspell. Each question gives you a sentence with one spelling mistake — find it and correct it.",
         "root_ids": [
@@ -11,6 +12,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "how-to-improve-your-spelling",
         "title": "How to improve your spelling",
         "content": "There are very few reliable spelling rules in English. The best way to improve is to notice which words you get wrong and learn them. Pay special attention to **double letters**, **-ance / -ence endings**, and **silent letters** — these cause the most mistakes.",
         "root_ids": [

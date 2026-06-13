@@ -3,6 +3,7 @@
     "title": "Word order in sentences",
     "sections": [
       {
+        "id": "what-word-order-does-in-english-core-logic",
         "title": "What word order does in English (core logic)",
         "content": "English uses **fixed word order** to show who does what. The position of a word carries grammatical meaning — switch the order, switch the meaning.\n\n**Why it matters (roots-first)**: Word order is the canonical topic for the **Tap Root** (#1 in the Tree Model) — the FOUNDATION of the whole grammar tree. English is **strict SVO** (Subject + Verb + Object); Czech is free word order because cases mark who does what. For Czech speakers, this is the single most important shift in English grammatical thinking. Without SVO mastery, every higher root (verb phrase, clauses, prepositions) breaks down.\n\n**Key principle**: position = meaning. The doer goes BEFORE the verb; the receiver goes AFTER. Adverbials (place, time, frequency) have fixed slots — they do NOT float freely the way they do in Czech.",
         "root_ids": [
@@ -11,6 +12,7 @@
         "cefr_level": "A1"
       },
       {
+        "id": "subject-verb-object-the-basic-pattern",
         "title": "Subject + Verb + Object — the basic pattern",
         "content": "The bedrock pattern: **Subject + Verb + Object**.\n\n**Why it matters**: English has almost no case-marking, so position is the only signal. Reverse the order and you reverse the meaning.\n\n**Contrast examples**:\n- **The cat** (S) **chased** (V) **the mouse** (O). → cat is doing the chasing.\n- **The mouse** (S) **chased** (V) **the cat** (O). → opposite meaning.\n\n**Czech contrast**: *Honza vidí Petra* and *Petra vidí Honza* can both mean \"Honza sees Petr\" because **-a** marks Petr as the object. English has no such marker — only position.\n\n**Rule of thumb**: doer first, action next, receiver after. If you mix this up, the listener hears the opposite of what you mean.",
         "root_ids": [
@@ -19,6 +21,7 @@
         "cefr_level": "A1"
       },
       {
+        "id": "place-time-end-of-the-sentence-or-sometimes-start",
         "title": "Place & time — end of the sentence (or sometimes start)",
         "content": "Typical English order: **S + V + O + Place + Time**.\n\n**Why it matters**: This is the single most common Czech-speaker error in English word order. Czech freely drops adverbials between verb and object; English **forbids it**.\n\n**Contrast examples**:\n- I (S) **ate** (V) **lunch** (O) **at home** (place) **yesterday** (time). ✓\n- Time CAN move to the front for emphasis: **Yesterday** I ate lunch at home. ✓\n- ~~I ate yesterday lunch at home.~~ ✗ (adverbial between V and O)\n- ~~Yesterday went I to the shop.~~ ✗ (verb-subject inversion; Czech pattern, not English)\n\n**Czech-speaker note**: in Czech *Včera jsem šel do obchodu* works fine. In English the subject must come BEFORE the verb even when time is fronted: *Yesterday I went to the shop*.",
         "diagram": {
@@ -49,6 +52,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "adverbs-of-frequency-manner-typical-positions",
         "title": "Adverbs of frequency & manner — typical positions",
         "content": "**Frequency adverbs** (*always, usually, often, sometimes, never*) and **manner adverbs** (*carefully, quickly, well*) have fixed slots.\n\n**Why it matters**: Wrong placement is one of the most common Czech-speaker errors. Czech puts adverbs flexibly; English does not.\n\n**Frequency — three rules**:\n- Before the **main verb**: She **always works** hard.\n- After the verb **be**: She **is always** late.\n- After the **first auxiliary**: She **has always worked** hard. / She **is always working**.\n- Wrong: ~~I drink often coffee.~~ → Right: I **often drink** coffee.\n\n**Manner**: usually **after the object** (or after the verb if there is no object).\n- She drove **carefully**. (no object)\n- She drove the car **carefully**. (after object)\n- Wrong: ~~She drove carefully the car.~~ (NEVER between verb and object)",
         "diagram": {
@@ -88,6 +92,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "question-word-order-auxiliary-first",
         "title": "Question word order — auxiliary first",
         "content": "English questions require an **auxiliary verb** before the subject — even when the statement uses no auxiliary.\n\n**Why it matters**: Czech makes questions by intonation alone (*Bydlíš v Praze?*). English requires **do/does/did** insertion in the present and past simple — an unfamiliar move for Czech speakers, and the source of constant errors.\n\n**Yes/no questions**: **Auxiliary + Subject + Main verb**\n- **Do you** like coffee?\n- **Have you** finished?\n- **Are they** coming?\n\n**Wh-questions**: **Wh-word + Auxiliary + Subject + Main verb**\n- **Where do you** live?\n- **When have you** been there?\n- **What is** she doing?\n\n**Common error**: ~~Where you live?~~ → **Where do you live?** (missing auxiliary)\n\n**Embedded questions** (reported in a bigger sentence) revert to **statement** order — no inversion, no *do/does/did*:\n- I asked **where you lived** (NOT ~~where did you live~~).\n- I don't know **what the answer is** (NOT ~~what is the answer~~).\n- Full coverage in the [[topic:reported_speech|Reported Speech]] topic.",
         "root_ids": [
@@ -96,6 +101,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "indirect-objects-two-patterns",
         "title": "Indirect objects — two patterns",
         "content": "Verbs like **give, send, show, tell, bring, lend, offer, write** can take TWO objects: a **direct object** (DO — the thing) and an **indirect object** (IO — the receiver).\n\n**Why it matters**: Both patterns are common in real English; choosing the wrong slot order is a frequent intermediate-level mistake.\n\n**Pattern A — V + IO + DO** (no preposition):\n- I gave **her** **the book**.\n- She sent **me** **a message**.\n\n**Pattern B — V + DO + to/for + IO**:\n- I gave **the book** **to her**.\n- She sent **a message** **to me**.\n\n**Rule of thumb**: Pattern A is more concise and very common in spoken English. Pattern B is preferred when the direct object is short and the indirect object is long, or when you want to emphasise the receiver.\n\n**Czech-speaker trap**: don't add *to* in Pattern A — ~~I gave to her the book~~ is wrong.",
         "root_ids": [
@@ -104,6 +110,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "inversion-for-emphasis-b2-extension",
         "title": "Inversion for emphasis (B2 — extension)",
         "content": "At B2+, English allows **inversion** (auxiliary before subject — like a question) for emphasis after certain expressions at the start of a sentence.\n\n**Why it matters**: A high-register pattern that appears in formal writing, exam essays, and literary English. Recognising it is more important than producing it at this stage.\n\n**Negative adverbials trigger inversion**:\n- **Never have I** seen such beauty.\n- **Rarely does he** visit.\n- **No sooner had I** arrived than the phone rang.\n\n**Conditional inversion** (instead of *if*):\n- **Had I known**, I would have come. (= If I had known…)\n- **Should you need** help, call me. (= If you should need…)\n\nThis is a brief pointer. Full coverage in the dedicated [[topic:inversion|Inversion]] topic.",
         "root_ids": [
@@ -112,6 +119,7 @@
         "cefr_level": "B2"
       },
       {
+        "id": "common-czech-speaker-errors-roadmap",
         "title": "Common Czech-speaker errors + roadmap",
         "content": "**High-frequency mistakes** from L1 (Czech) interference:\n\n- **Fronting time/place where English doesn't want it**: ~~Yesterday went I to the shop~~ → **Yesterday I went to the shop**.\n- **Putting adverbs between verb and object**: ~~I drink often coffee~~ → **I often drink coffee**.\n- **Missing the auxiliary in questions**: ~~Where you live?~~ → **Where do you live?**.\n- **Question word order inside reported speech**: ~~I asked where did you live~~ → **I asked where you lived**.\n- **Literal Czech word order**: ~~To Prague I went~~ → **I went to Prague**.\n- **Adverb in front of *be***: ~~She always is late~~ → **She is always late**.\n\n**Why it matters**: These appear constantly in speaking, writing, and every exam task. Fixing them gives immediate visible progress and unlocks fluency at every higher level.\n\n**Direct practice in this curriculum** (start here after the cards):\n- MC (embedded questions, frequency adverbs, *also*)\n- Gap fill (embedded question word order)\n- Error correction (fix the wrong sentence)\n\n**Next steps**: [[topic:reported_speech|Reported Speech]] (embedded questions in depth), [[topic:inversion|Inversion]] (B2 fronting for emphasis), [[topic:prepositions|Prepositions]] (place/time slot fillers).",
         "root_ids": [
@@ -136,7 +144,8 @@
           "d": "I don't know what does the answer."
         },
         "correct_option": "a",
-        "explanation": "Embedded question: use statement word order (subject + verb). What the answer is."
+        "explanation": "Embedded question: use statement word order (subject + verb). What the answer is.",
+        "intro_ref": "question-word-order-auxiliary-first"
       },
       {
         "type": "mc",
@@ -148,7 +157,8 @@
           "d": "where does the station"
         },
         "correct_option": "c",
-        "explanation": "Embedded: where the station is (statement order)."
+        "explanation": "Embedded: where the station is (statement order).",
+        "intro_ref": "question-word-order-auxiliary-first"
       },
       {
         "type": "mc",
@@ -160,7 +170,8 @@
           "d": "when he did leave"
         },
         "correct_option": "a",
-        "explanation": "Embedded: when he left (statement order; no auxiliary 'did')."
+        "explanation": "Embedded: when he left (statement order; no auxiliary 'did').",
+        "intro_ref": "question-word-order-auxiliary-first"
       },
       {
         "type": "mc",
@@ -172,7 +183,8 @@
           "d": "She is late always."
         },
         "correct_option": "b",
-        "explanation": "With the verb **be**, the frequency adverb goes **after** be: is always."
+        "explanation": "With the verb **be**, the frequency adverb goes **after** be: is always.",
+        "intro_ref": "adverbs-of-frequency-manner-typical-positions"
       },
       {
         "type": "mc",
@@ -184,7 +196,8 @@
           "d": "Often I go to the gym."
         },
         "correct_option": "b",
-        "explanation": "Frequency adverb in mid-position: before the main verb (I often go)."
+        "explanation": "Frequency adverb in mid-position: before the main verb (I often go).",
+        "intro_ref": "adverbs-of-frequency-manner-typical-positions"
       },
       {
         "type": "mc",
@@ -196,7 +209,8 @@
           "d": "I want coffee also."
         },
         "correct_option": "c",
-        "explanation": "**Also** usually goes in mid-position: before the main verb (I also want)."
+        "explanation": "**Also** usually goes in mid-position: before the main verb (I also want).",
+        "intro_ref": "adverbs-of-frequency-manner-typical-positions"
       }
     ]
   },
@@ -219,7 +233,8 @@
             "d": "I don't know what does the answer."
           },
           "correct_option": "b",
-          "explanation": "Embedded: what the answer is (statement order)."
+          "explanation": "Embedded: what the answer is (statement order).",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "mc",
@@ -231,7 +246,8 @@
             "d": "Can you tell me where does the station?"
           },
           "correct_option": "c",
-          "explanation": "Embedded: where the station is."
+          "explanation": "Embedded: where the station is.",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "mc",
@@ -243,7 +259,8 @@
             "d": "She is busy always."
           },
           "correct_option": "b",
-          "explanation": "With be: adverb after is (is always)."
+          "explanation": "With be: adverb after is (is always).",
+          "intro_ref": "adverbs-of-frequency-manner-typical-positions"
         },
         {
           "type": "mc",
@@ -255,7 +272,8 @@
             "d": "Often he goes there."
           },
           "correct_option": "a",
-          "explanation": "Frequency adverb before main verb: often goes."
+          "explanation": "Frequency adverb before main verb: often goes.",
+          "intro_ref": "adverbs-of-frequency-manner-typical-positions"
         },
         {
           "type": "mc",
@@ -267,7 +285,8 @@
             "d": "I need help also."
           },
           "correct_option": "c",
-          "explanation": "Also in mid-position: I also need."
+          "explanation": "Also in mid-position: I also need.",
+          "intro_ref": "adverbs-of-frequency-manner-typical-positions"
         },
         {
           "type": "mc",
@@ -279,7 +298,8 @@
             "d": "I wonder when he did leave."
           },
           "correct_option": "c",
-          "explanation": "Embedded: when he left (no did)."
+          "explanation": "Embedded: when he left (no did).",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "mc",
@@ -291,7 +311,8 @@
             "d": "They are at home usually."
           },
           "correct_option": "b",
-          "explanation": "With be: are usually (adverb after auxiliary)."
+          "explanation": "With be: are usually (adverb after auxiliary).",
+          "intro_ref": "adverbs-of-frequency-manner-typical-positions"
         },
         {
           "type": "mc",
@@ -303,7 +324,8 @@
             "d": "Do you know what does his name?"
           },
           "correct_option": "c",
-          "explanation": "Embedded: what his name is."
+          "explanation": "Embedded: what his name is.",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "mc",
@@ -315,7 +337,8 @@
             "d": "I am tired sometimes."
           },
           "correct_option": "b",
-          "explanation": "With be: am sometimes (adverb after be)."
+          "explanation": "With be: am sometimes (adverb after be).",
+          "intro_ref": "adverbs-of-frequency-manner-typical-positions"
         },
         {
           "type": "mc",
@@ -327,7 +350,8 @@
             "d": "She has finished also."
           },
           "correct_option": "a",
-          "explanation": "Also after first auxiliary: has also finished. (Or: She has finished too.)"
+          "explanation": "Also after first auxiliary: has also finished. (Or: She has finished too.)",
+          "intro_ref": "adverbs-of-frequency-manner-typical-positions"
         }
       ]
     },
@@ -340,7 +364,8 @@
           "answers": [
             "the answer is"
           ],
-          "explanation": "Embedded: what the answer is (subject + verb)."
+          "explanation": "Embedded: what the answer is (subject + verb).",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
@@ -348,7 +373,8 @@
           "answers": [
             "the station is"
           ],
-          "explanation": "Embedded: where the station is."
+          "explanation": "Embedded: where the station is.",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
@@ -356,15 +382,17 @@
           "answers": [
             "his name is"
           ],
-          "explanation": "Embedded: what his name is."
+          "explanation": "Embedded: what his name is.",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
-          "question": "I wonder when _____ (he / leave). Use statement order.",
+          "question": "I wonder when _____ (he / leave). Use statement order; past tense.",
           "answers": [
             "he left"
           ],
-          "explanation": "Embedded: when he left (no 'did')."
+          "explanation": "Embedded: when he left (no 'did').",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
@@ -372,7 +400,8 @@
           "answers": [
             "it costs"
           ],
-          "explanation": "Embedded: how much it costs."
+          "explanation": "Embedded: how much it costs.",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
@@ -380,7 +409,8 @@
           "answers": [
             "the problem is"
           ],
-          "explanation": "Embedded: what the problem is."
+          "explanation": "Embedded: what the problem is.",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
@@ -388,7 +418,8 @@
           "answers": [
             "she lives"
           ],
-          "explanation": "Embedded: where she lives."
+          "explanation": "Embedded: where she lives.",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
@@ -397,7 +428,8 @@
             "she is",
             "she's"
           ],
-          "explanation": "Yes/No embedded: if she is coming."
+          "explanation": "Yes/No embedded: if she is coming.",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
@@ -406,15 +438,17 @@
             "it is",
             "it's"
           ],
-          "explanation": "Embedded: what time it is."
+          "explanation": "Embedded: what time it is.",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
-          "question": "I wonder why _____ (he / leave). Use statement order.",
+          "question": "I wonder why _____ (he / leave). Use statement order; past tense.",
           "answers": [
             "he left"
           ],
-          "explanation": "Embedded: why he left."
+          "explanation": "Embedded: why he left.",
+          "intro_ref": "question-word-order-auxiliary-first"
         }
       ]
     },
@@ -430,7 +464,8 @@
             "I don't know what the answer is",
             "I do not know what the answer is"
           ],
-          "explanation": "Embedded question: statement order (what the answer is)."
+          "explanation": "Embedded question: statement order (what the answer is).",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
@@ -439,7 +474,8 @@
             "Can you tell me where the station is?",
             "Can you tell me where the station is"
           ],
-          "explanation": "Embedded: where the station is."
+          "explanation": "Embedded: where the station is.",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
@@ -448,7 +484,8 @@
             "I wonder when he left.",
             "I wonder when he left"
           ],
-          "explanation": "Embedded: when he left (no 'did')."
+          "explanation": "Embedded: when he left (no 'did').",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
@@ -459,7 +496,8 @@
             "She is always late",
             "She's always late"
           ],
-          "explanation": "With be: adverb after be (is always)."
+          "explanation": "With be: adverb after be (is always).",
+          "intro_ref": "adverbs-of-frequency-manner-typical-positions"
         },
         {
           "type": "open",
@@ -468,7 +506,8 @@
             "I often go to the gym.",
             "I often go to the gym"
           ],
-          "explanation": "Frequency adverb before main verb: often go."
+          "explanation": "Frequency adverb before main verb: often go.",
+          "intro_ref": "adverbs-of-frequency-manner-typical-positions"
         },
         {
           "type": "open",
@@ -477,7 +516,8 @@
             "I also want coffee.",
             "I also want coffee"
           ],
-          "explanation": "Also in mid-position: I also want."
+          "explanation": "Also in mid-position: I also want.",
+          "intro_ref": "adverbs-of-frequency-manner-typical-positions"
         },
         {
           "type": "open",
@@ -486,7 +526,8 @@
             "Do you know what his name is?",
             "Do you know what his name is"
           ],
-          "explanation": "Embedded: what his name is."
+          "explanation": "Embedded: what his name is.",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
@@ -495,7 +536,8 @@
             "Tell me how much it costs.",
             "Tell me how much it costs"
           ],
-          "explanation": "Embedded: how much it costs."
+          "explanation": "Embedded: how much it costs.",
+          "intro_ref": "question-word-order-auxiliary-first"
         },
         {
           "type": "open",
@@ -506,7 +548,8 @@
             "They are usually at home",
             "They're usually at home"
           ],
-          "explanation": "With be: are usually."
+          "explanation": "With be: are usually.",
+          "intro_ref": "adverbs-of-frequency-manner-typical-positions"
         },
         {
           "type": "open",
@@ -521,7 +564,8 @@
             "Do you know if she's coming",
             "I don't know if she's coming"
           ],
-          "explanation": "Yes/No embedded: if she is coming."
+          "explanation": "Yes/No embedded: if she is coming.",
+          "intro_ref": "question-word-order-auxiliary-first"
         }
       ]
     }

@@ -92,7 +92,16 @@ export function getDueReviews(limit = REVIEW_DAILY_CAP) {
   const due = [];
   const seen = new Set();
   let migrated = false;
-  Object.values(state.allQuestionsData || {}).forEach(topicSets => {
+  // Map each top-level questions_key to its topic. Raw questions.json entries
+  // carry no topic/topicTitle, so without this every review item inherits the
+  // stale state.currentTopic label (the default first topic) instead of its own.
+  const topicByKey = {};
+  (state.topics || []).forEach(t => {
+    const key = t.questions_key || t.id;
+    if (key && !(key in topicByKey)) topicByKey[key] = t;
+  });
+  Object.entries(state.allQuestionsData || {}).forEach(([qKey, topicSets]) => {
+    const topic = topicByKey[qKey];
     Object.values(topicSets || {}).forEach(s => {
       (s.questions || []).forEach(q => {
         const key = questionHash(q);
@@ -101,7 +110,12 @@ export function getDueReviews(limit = REVIEW_DAILY_CAP) {
         if (!entry) return;
         seen.add(key);
         if (ensureReviewSchedule(entry, key)) migrated = true;
-        if (new Date(entry.due).getTime() <= now) due.push({ q, entry });
+        if (new Date(entry.due).getTime() <= now) {
+          const tagged = topic
+            ? Object.assign({}, q, { topic: topic.id, topicTitle: topic.title || topic.id })
+            : q;
+          due.push({ q: tagged, entry });
+        }
       });
     });
   });
