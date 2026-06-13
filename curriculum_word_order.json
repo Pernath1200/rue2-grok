@@ -360,7 +360,7 @@
         },
         {
           "type": "open",
-          "question": "I wonder when _____ (he / leave). Use statement order.",
+          "question": "I wonder when _____ (he / leave). Use statement order; past tense.",
           "answers": [
             "he left"
           ],
@@ -410,7 +410,7 @@
         },
         {
           "type": "open",
-          "question": "I wonder why _____ (he / leave). Use statement order.",
+          "question": "I wonder why _____ (he / leave). Use statement order; past tense.",
           "answers": [
             "he left"
           ],
