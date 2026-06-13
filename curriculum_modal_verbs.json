@@ -3,6 +3,7 @@
     "title": "Modal verbs",
     "sections": [
       {
+        "id": "what-modals-do-core-logic",
         "title": "What modals do (core logic)",
         "content": "Modal verbs add a layer of **speaker stance** to the main verb — necessity, ability, possibility, advice, permission.\n- They tell the listener how the speaker sees the action.\n- Tenses locate events in time; modals colour them with the speaker's attitude — the modality dimension of the Verb Phrase root (#2 in the Tree Model).\n- Every workplace email, polite request, exam essay and real conversation runs on them — without them English sounds robotic.",
         "diagrams": [
@@ -29,6 +30,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "form-the-three-rules-that-never-change",
         "title": "Form: the three rules that never change",
         "content": "Three form rules that never change, whatever the modal.",
         "diagrams": [
@@ -64,6 +66,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "ability-permission-can-could-be-able-to",
         "title": "Ability & permission: can / could / be able to",
         "content": "**Ability** = what someone is capable of. **Permission** = what someone is allowed to do.\n- *Can I?* / *Could I?* / *May I?* is a gradient from casual to formal — asking politely is one of the most visible markers of fluent English; students who only have *can* sound abrupt in work and exam contexts.\n- *can* covers present only — the moment you need future, perfect or *-ing*, you must use **be able to**.",
         "diagrams": [
@@ -124,6 +127,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "necessity-obligation-must-have-to-mustn-t-don-t-have-to",
         "title": "Necessity & obligation: must / have to / mustn't / don't have to",
         "content": "The highest-error area for Czech speakers: four forms, four distinct meanings.\n\n*mustn't* and *don't have to* look like opposites of the same thing but mean completely different things — in a workplace email, \"You mustn't reply\" ≠ \"you don't have to reply\".",
         "diagrams": [
@@ -187,6 +191,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "form-have-to-vs-true-modals",
         "title": "Form: have to vs true modals",
         "content": "**have to** behaves like a normal verb — it takes *do/does/did* in questions and negatives, unlike true modals.",
         "diagrams": [
@@ -220,6 +225,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "advice-should-ought-to-had-better",
         "title": "Advice: should / ought to / had better",
         "content": "Giving advice is everywhere — three forms on a gradient of **urgency**. The wrong level sounds either bossy or weak.\n\n**had better** is much stronger than students realise — it implies a threat or warning, not gentle advice.",
         "diagrams": [
@@ -276,6 +282,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "speculation-deduction-present-must-might-could-can-t",
         "title": "Speculation & deduction — present: must / might / could / can't",
         "content": "Modals also express how **certain** the speaker is about something now — guessing, deducing, hedging. One of the most useful skills at B1+.\n- All take the **base form**: *must be, might rain, could work, can't know*.\n- The heart of natural conversation: \"He **must** be tired,\" \"That **might** work,\" \"She **can't** be serious.\" FCE/CAE speaking rewards hedging with *might/could* over flat assertions.",
         "diagrams": [
@@ -335,6 +342,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "speculation-deduction-past-must-have-might-have-can-t-have",
         "title": "Speculation & deduction — past: must have / might have / can't have",
         "content": "Same logic as present deduction, but about something that already happened: **modal + have + past participle**.\n\nThis structure separates B1 from B2 speakers — native English uses it constantly to reason about past events, and FCE/CAE key word transformations test it heavily.",
         "diagrams": [
@@ -372,6 +380,7 @@
         "cefr_level": "B2"
       },
       {
+        "id": "past-forms-what-replaces-each-modal",
         "title": "Past forms: what replaces each modal",
         "content": "Most modals have **no past form** — you switch to a different verb or structure.",
         "diagrams": [
@@ -419,6 +428,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "top-errors-czech-speakers-make",
         "title": "Top errors Czech speakers make",
         "content": "These patterns cover the vast majority of modal errors in marked work — and they're all checked in every Use of English paper.\n\nFixing them gives an immediate, visible level-up in writing and speaking. For full modal reference, see **Reference** → **Modal Verbs**.",
         "diagrams": [

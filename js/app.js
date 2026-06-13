@@ -1,7 +1,7 @@
 import state from './state.js';
 import { STORAGE_KEY, MEMORY_KEY, REPORTED_QUESTIONS_KEY, migrateStorageKeys, loadScores, loadMemoryBank, saveMemoryBankEntry, saveScore, getLastBest, getProgressStats, getTopicCompletionMap, getReportedQuestions, questionHash, getDueReviews, exportProgress, importProgress, getLastActivity, saveLastActivity } from './storage.js';
 import { DATA_VERSION, SCREEN_IDS, MENU_PANEL_IDS, showScreen, showMenuPanel, openOverlay, closeOverlay, escapeAndBold, normalize, toTitleCase, shuffleArray, getBaseUrl, fetchJSON, renderScoreChart } from './ui.js';
-import { registerCallbacks as registerCurrCallbacks, renderDiagram, showIntroSection, showWritingTipsIntroSection, startWritingTipsQuiz, startCourseSection, advanceCourseToNext, startLessonAfterIntro, startPart1, startDiagnostic, startMixedPractice, getCourseIntroSections } from './curriculum.js';
+import { registerCallbacks as registerCurrCallbacks, renderDiagram, showIntroSection, showWritingTipsIntroSection, startWritingTipsQuiz, startCourseSection, advanceCourseToNext, startLessonAfterIntro, startPart1, startDiagnostic, startMixedPractice, getCourseIntroSections, openIntroRefModal } from './curriculum.js';
 import { registerCallbacks as registerQuizCallbacks, startQuiz, startWeakSpotsQuiz, startReviewQuiz, hasValidTopicSelected, syncCurrentTopicFromDropdown, getTopicTitle, getTopicLabelForDisplay, addReportedQuestion, addReportedIntroCard, getReportedReasonLabel, renderReportedQuestionsList, escapeHtml, cleanQuestionDisplay, showQuestion, submitAnswer, nextQuestion, finishQuiz, retryWrong } from './quiz.js';
 import { registerCallbacks as registerRefCallbacks, renderPrepositionsListContent, prepositionsListAsText, showPrepositionsList, hidePrepositionsList, renderPhrasalVerbsDictionaryContent, phrasalVerbsDictionaryAsText, showPhrasalVerbsDictionary, hidePhrasalVerbsDictionary, renderReferenceIndex, showReferenceIndexFromIntro, renderReferencePrepositionsContent, showReferencePrepositions, renderReferenceOpenClozeContent, showReferenceOpenCloze, showOpenClozeRefFromIntro, showFixedPhrasesRefFromIntro, showReportedSpeechRefFromIntro, showInfinitiveIngRefFromIntro, showConjunctionsLinkersRefFromIntro, renderReferenceWordFormationContent, showReferenceWordFormation, renderReferenceConjunctionsLinkersContent, showReferenceConjunctionsLinkers, renderReferenceReportedSpeechContent, showReferenceReportedSpeech, renderReferenceIrregularVerbsContent, showReferenceIrregularVerbs, renderReferenceFixedPhrasesContent, showReferenceFixedPhrases, renderReferenceDependentSection, showReferenceDependentSection, dependentPrepositionsSectionAsText, renderReferenceCountableUncountableContent, showReferenceCountableUncountable, countableUncountableAsText, renderReferencePhrasalVerbsContent, showReferencePhrasalVerbs, renderReferenceInfinitiveIngContent, referenceAsText, showReference, showReferenceInfinitiveIng, renderReferenceModalVerbsContent, showReferenceModalVerbs, hideReference, onReferenceBackClick } from './reference.js';
 
@@ -686,6 +686,12 @@ document.getElementById('exitQuizBtn').addEventListener('click', () => {
 });
 document.getElementById('quizMainMenuBtn').addEventListener('click', () => NAV.navigate('menuMain'));
 document.getElementById('quizScreen').addEventListener('click', function(e) {
+  const lessonLink = e.target && e.target.closest && e.target.closest('.intro-ref-link');
+  if (lessonLink) {
+    e.preventDefault();
+    openIntroRefModal(lessonLink.getAttribute('data-section-id'));
+    return;
+  }
   const link = e.target && e.target.closest && e.target.closest('.diagnostic-topic-link');
   if (!link) return;
   e.preventDefault();
@@ -769,6 +775,12 @@ document.getElementById('viewReportedQuestionsBtnSection').addEventListener('cli
 });
 document.getElementById('reportedQuestionsCloseBtn').addEventListener('click', function() {
   closeOverlay('reportedQuestionsOverlay');
+});
+document.getElementById('introRefCloseBtn').addEventListener('click', function() {
+  closeOverlay('introRefOverlay');
+});
+document.getElementById('introRefOverlay').addEventListener('click', function(e) {
+  if (e.target === this) closeOverlay('introRefOverlay');
 });
 document.getElementById('reportedQuestionsCopyBtn').addEventListener('click', function() {
   const list = getReportedQuestions();
@@ -877,6 +889,8 @@ document.addEventListener('keydown', function(e) {
     if (flagOverlay && !flagOverlay.classList.contains('hidden')) { closeOverlay('flagReasonOverlay'); return; }
     var reportedOverlay = document.getElementById('reportedQuestionsOverlay');
     if (reportedOverlay && !reportedOverlay.classList.contains('hidden')) { closeOverlay('reportedQuestionsOverlay'); return; }
+    var introRefOverlay = document.getElementById('introRefOverlay');
+    if (introRefOverlay && !introRefOverlay.classList.contains('hidden')) { closeOverlay('introRefOverlay'); return; }
 
     // Use real navigation history when possible
     if (NAV.history.length > 0) {

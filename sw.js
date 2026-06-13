@@ -1,7 +1,7 @@
 /**
  * Bump CACHE_VERSION whenever this file changes so stale caches are dropped on activate.
  */
-var CACHE_VERSION = 'v63';  // v63 - visual-first intros: decision/examples/callout/chips diagrams, bullet lists, showcase conversions
+var CACHE_VERSION = 'v64';  // v64 - per-question "Review the lesson" links: stable intro section ids + in-quiz lesson modal
 var CACHE_NAME = 'rue2-' + CACHE_VERSION;
 
 var PRECACHE_URLS = [

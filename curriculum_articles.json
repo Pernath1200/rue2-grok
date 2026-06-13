@@ -3,6 +3,7 @@
     "title": "Articles: a, an, the and no article",
     "sections": [
       {
+        "id": "what-articles-do-core-logic",
         "title": "What articles do (core logic)",
         "content": "Before almost every noun: a three-way choice — **a / an**, **the**, or **∅** (no article). The signal: *is this identifiable to you?*\n- Articles sit in the Noun Phrase root (#3 in the Tree Model) — the **most frequent grammatical decision in English**: several times per sentence, almost every time you open your mouth.\n- B2 exceptions and edge cases (abstract nouns generic vs specific, *the rich / the poor*, rivers and mountains, newspaper and hotel names): [[topic:articles_advanced|Articles — extension]]. Master the core first.",
         "diagrams": [
@@ -61,6 +62,7 @@
         "cefr_level": "A1"
       },
       {
+        "id": "a-an-first-mention-indefinite-one-of-many",
         "title": "a / an — first mention, indefinite, \"one of many\"",
         "content": "Use **a / an** with a **singular countable noun** the listener can't yet identify — there are many possibilities, and you're picking one.\n**a or an? Listen to the SOUND, not the letter.** This is rule one of every spoken exchange — get it right and you sound natural from sentence one; get it wrong and every listener notices.",
         "diagrams": [
@@ -119,6 +121,7 @@
         "cefr_level": "A1"
       },
       {
+        "id": "the-definite-identifiable-we-both-know-which-one",
         "title": "the — definite, identifiable, \"we both know which one\"",
         "content": "Use **the** when both speaker and listener can identify **which one** — three main triggers.\nPronunciation: **\"thee\"** before a vowel sound (*thee apple, thee hour*), **\"thuh\"** before a consonant sound (*thuh book, thuh university*).",
         "diagrams": [
@@ -177,6 +180,7 @@
         "cefr_level": "A1"
       },
       {
+        "id": "no-article-general-abstract-plural-uncountable",
         "title": "No article (∅) — general, abstract, plural, uncountable",
         "content": "Use **no article** (∅) when you're talking about something in **general**, not a specific instance — five categories.",
         "diagrams": [
@@ -252,6 +256,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "general-vs-the-specific-the-key-contrast",
         "title": "∅ general vs the specific — the key contrast",
         "content": "**But beware:** the moment the noun becomes specific — defined by context or a following phrase — English switches to **the**.\nGeneral → ∅, specific → *the*: the most important pair in this topic.",
         "diagrams": [
@@ -281,6 +286,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "a-an-the-the-storytelling-rule",
         "title": "a/an → the (the storytelling rule)",
         "content": "**The most fundamental discourse pattern in English**: **a/an** at first mention, then **the** every time after — now we both know which one.\n- *I saw **a** dog in the park. **The** dog was chasing **a** squirrel. **The** squirrel ran up **a** tree. **The** tree was huge.*\nThis single pattern is behind a huge proportion of *a* vs *the* decisions — every story, news article, email and conversation is knitted together this way. If you only remember **one rule** about articles, remember this one.",
         "diagrams": [
@@ -327,6 +333,7 @@
         "cefr_level": "A1"
       },
       {
+        "id": "articles-with-names-the-default",
         "title": "Articles with names — the ∅ default",
         "content": "Most **names** take **no article** — ∅ is the default.",
         "diagrams": [
@@ -400,6 +407,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "names-that-take-the-learnable-categories",
         "title": "Names that take the — learnable categories",
         "content": "A small, learnable set of names takes **the**.\n*(Newspapers, hotels, ships, institutions, and the full geography list are in [[topic:articles_advanced|Articles — extension]].)*",
         "diagrams": [
@@ -464,6 +472,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "common-czech-speaker-errors-1-3",
         "title": "Common Czech-speaker errors (1–3)",
         "content": "Because Czech has no articles, five mistakes appear constantly. Fix these and your English improves visibly within a week.",
         "diagrams": [
@@ -518,6 +527,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "czech-speaker-errors-4-5-and-roadmap",
         "title": "Czech-speaker errors (4–5) and roadmap",
         "content": "Two more constant errors — then the roadmap.\n**Next steps**: when the core feels automatic, move to [[topic:articles_advanced|Articles — extension]] (B2: abstract nouns generic vs specific, *the rich/the poor*, full geography list, newspaper/hotel/ship names, subjects of study, title vs role).",
         "diagrams": [

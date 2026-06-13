@@ -3,6 +3,7 @@
     "title": "It – subject in English",
     "sections": [
       {
+        "id": "what-this-section-covers",
         "title": "What this section covers",
         "content": "In English we often need **it** as a **subject**, even when it does not refer to anything (no person or thing). Grammar books sometimes call this a **dummy / empty it**.\n\nThis section looks at:\n\n• **Weather and temperature** – *It's raining. It's cold.*\n• **Time and days** – *It's three o'clock. It's Monday.*\n• **Distance** – *It's five kilometres to the town.*\n• **It + adjective + to‑infinitive** – *It's important to read the question.*\n• **It + adjective / noun + that‑clause** – *It's clear that he's tired. It's a good idea that you came early.*\n• **It + seem / appear / look** – *It seems that they're late.*",
         "root_ids": [
@@ -11,6 +12,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "it-for-weather-time-and-distance",
         "title": "It for weather, time and distance",
         "content": "In English we **must use a subject**. With weather, time and distance we normally use **it**.\n\n**Weather**\n• It's raining.\n• It's snowing.\n• It's cold / It's very hot today.\n\n**Time and days**\n• It's three o'clock.\n• It's late.\n• It's Monday today.\n\n**Distance**\n• It's five kilometres to the town.\n• It's ten minutes to the station.\n\nIn many other languages (including Czech) you can say just \"Raining\" or \"Is three o'clock\". In English you normally need **It + be**.",
         "root_ids": [
@@ -19,6 +21,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "it-adjective-to-infinitive",
         "title": "It + adjective + to‑infinitive",
         "content": "We often move the real subject to the end of the sentence and use **it** at the beginning. This makes the sentence more natural and easier to start.\n\nPattern: **It + be + adjective + to‑infinitive**\n\n• It's important to read the instructions.\n• It's hard to wake up early.\n• It's easy to get lost in this city.\n• It's not necessary to answer all the questions.\n\nCompare:\n• To read the instructions is important. (possible, but not common)\n• **It's important to read the instructions.** (natural)",
         "root_ids": [
@@ -27,6 +30,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "it-adjective-noun-that-clause",
         "title": "It + adjective / noun + that‑clause",
         "content": "We can also use **it** when the real subject is a **that‑clause** (a clause starting with *that*):\n\nPattern: **It + be + adjective / noun + that‑clause**\n\n• It's clear that he is tired.\n• It's obvious that they don't agree.\n• It's a pity that she can't come.\n• It's a good idea that you called before the exam.\n\nAgain, English prefers **It + be** at the start instead of beginning with the big clause.",
         "root_ids": [
@@ -35,6 +39,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "it-with-seem-appear-look",
         "title": "It with seem / appear / look",
         "content": "We also use **it** with verbs like **seem, appear, look** when the real idea comes later:\n\n• It seems that they're late.\n• It appears that there is a problem.\n• It looks as if it's going to rain.\n\nIn conversation we sometimes drop *that*: *It seems they're late.*",
         "root_ids": [
@@ -43,6 +48,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "quick-summary",
         "title": "Quick summary",
         "content": "• English usually needs a **subject** – we cannot leave the subject empty.\n• For **weather, time and distance**, we normally use **It + be**: It's raining. It's three o'clock. It's ten kilometres to Prague.\n• For long subjects (to‑infinitive or that‑clause), we often use **It** at the start: It's important to practise. It's clear that he is tired.\n• Remember: sentences like *Is raining* or *Important is to read the text* are wrong in English – we need **It**.",
         "root_ids": [

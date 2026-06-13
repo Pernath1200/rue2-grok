@@ -3,30 +3,35 @@
     "title": "Auxiliary Verbs",
     "sections": [
       {
+        "id": "what-are-auxiliary-verbs",
         "title": "What are auxiliary verbs?",
         "content": "**Auxiliary verbs** (helping verbs) are used with a main verb to form questions, negatives, emphasis, and compound tenses. **Primary auxiliaries** in English are **be** (*am, is, are, was, were, been*), **have** (*have, has, had*), and **do** (*do, does, did*). In English we **cannot** say *I not know* or *She likes not* — we need an auxiliary: *I do not know. She does not like it.*",
         "root_ids": ["A1.verb_phrase.auxiliaries"],
         "cefr_level": "A1"
       },
       {
+        "id": "do-does-did",
         "title": "Do, does, did",
         "content": "**Do / does / did** form questions and negatives in the **present simple** and **past simple**:\nPresent: *Do you know? She doesn't like it.* (Third person: **does / doesn't**.)\nPast: *Did they come? I didn't see him.*\nAfter **do**, **does**, or **did**, always use the **base form** of the main verb (*go, know, like*), not the past or -s form.",
         "root_ids": ["A1.verb_phrase.auxiliaries"],
         "cefr_level": "A1"
       },
       {
+        "id": "be-and-have",
         "title": "Be and have",
         "content": "**Be** is used for continuous tenses (*be + -ing*): *I am working. She was leaving.* Also for passives (*be + past participle*): *The letter was sent.*\n**Have** is used for perfect tenses (*have + past participle*): *I have finished. She had left.*\nModals (*will, can, must*, etc.) are a separate group — see the Modal Verbs topic.",
         "root_ids": ["A2.verb_phrase.auxiliaries"],
         "cefr_level": "A2"
       },
       {
+        "id": "common-mistakes",
         "title": "Common mistakes",
         "content": "**Frequent errors with do/does/did** (consolidated):\n\n- Omitting the auxiliary: Wrong *I not understand* → Right *I do not understand* / *I don't understand*\n- Third-person form: Wrong *He don't know* → Right *He doesn't know*\n- Base form after did/does: Wrong *Did he went?* / *She doesn't knows* → Right *Did he go?* / *She doesn't know*\n- Have = possess in questions: Wrong *Have you a car?* → Right *Do you have a car?* (or *Have you got...?* in BrE)\n- Word order: Wrong *Why you did go?* → Right *Why did you go?*\n\n**Why it matters**: These are core A1–A2 verb phrase errors. Fixing them improves questions, negatives, and all simple tenses immediately.",
         "root_ids": ["A1.verb_phrase.auxiliaries"],
         "cefr_level": "A1"
       },
       {
+        "id": "reference-next-steps",
         "title": "Reference & next steps",
         "content": "Modals are a separate group (see Modal Verbs topic).\n\nFor more on do/does/did in questions/negatives and agreement, see the Verb–Subject Agreement topic.",
         "root_ids": ["A1.verb_phrase.auxiliaries"],

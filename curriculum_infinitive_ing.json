@@ -3,6 +3,7 @@
     "title": "Verb Patterns: to-infinitive, -ing & bare infinitive",
     "sections": [
       {
+        "id": "what-verb-patterns-are-core-logic",
         "title": "What verb patterns are (core logic)",
         "content": "When one verb is followed by another verb, English picks **one of three main patterns**: **to-infinitive** (\"I want **to leave**\"), **-ing form** (\"I enjoy **reading**\"), or **bare infinitive** — no *to* (\"I can **swim**\", \"She made me **wait**\").\n\n**Why it matters (roots-first)**: This is the Verb Complementation root (#5 in the Tree Model) — the topic name *is* the root. There aren't strong rules; there are **families of verbs** that take each pattern, and a few verbs whose **meaning changes** depending on the choice. Wrong pattern = unnatural English, even when grammar is otherwise correct. This is the #1 collocation challenge for Czech and other learners (Czech mostly uses one infinitive form, so the split feels arbitrary).\n\n**Key principle**: Learn each verb with its pattern, the way you learn a noun with its gender. Start with the families; then nail the meaning-change pairs (the B2 trap).",
         "root_ids": [
@@ -11,6 +12,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "verbs-to-infinitive",
         "title": "Verbs + to-infinitive",
         "content": "**The to-infinitive family** — verbs that look forward to an action: a wish, plan, decision, or refusal.\n\n**Common verbs**: **want, would like, hope, plan, decide, agree, refuse, promise, offer, manage, expect, learn, need, afford, fail, pretend, seem**.\n\n**Why it matters**: These are the workhorses of intention and planning — every meeting, every conversation about the future uses them.\n\n**Examples**:\n- I **want to leave** early. (wish)\n- She **decided to study** medicine. (decision)\n- They **agreed to help** us. (commitment)\n- He **refused to answer**. (refusal)\n- We **hope to see** you soon. (future expectation)\n\n**Also to-infinitive**: after adjectives (*happy to help, easy to use, difficult to explain*); after **too / enough** (*too tired to work, old enough to drive*); to express **purpose** (*I came to see you*).",
         "root_ids": [
@@ -19,6 +21,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "verbs-ing-gerund",
         "title": "Verbs + -ing (gerund)",
         "content": "**The -ing family** — verbs about an ongoing experience, an activity treated as a thing, or something already in progress.\n\n**Common verbs**: **enjoy, finish, avoid, mind, suggest, recommend, deny, admit, consider, imagine, miss, practise, postpone, delay, risk, keep**.\n\n**Why it matters**: Czech speakers' single most common error here is putting *to* + infinitive after these (~~She enjoys to read~~). Fixing this gives an immediate jump in naturalness.\n\n**Examples**:\n- I **enjoy reading** before bed. (activity-as-experience)\n- She **finished writing** the report. (completed activity)\n- They **avoided answering** the question.\n- He **suggested going** to the cinema.\n- Do you **mind waiting** a moment?\n\n**Also -ing**: after **any preposition** — *interested **in** learning, good **at** swimming, tired **of** waiting, look forward **to** seeing* (here *to* is a preposition, not the infinitive marker); after fixed expressions: *it's no use, it's worth, can't help, can't stand* + -ing.",
         "root_ids": [
@@ -27,6 +30,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "verbs-that-take-either-no-meaning-change",
         "title": "Verbs that take EITHER — no meaning change",
         "content": "**A small group** takes both patterns with **no real difference in meaning** — only a slight stylistic feel.\n\n**Verbs**: **like, love, hate, prefer, start, begin, continue**.\n\n**Why it matters**: Useful to know so learners don't agonise over a fake choice. Slight tendency: **-ing** for general / habitual, **to-infinitive** for specific / one occasion. In practice, both are fine.\n\n**Examples (interchangeable)**:\n- I **like swimming** / I **like to swim**.\n- She **started crying** / She **started to cry**.\n- They **continued working** / They **continued to work**.\n- We **hate waiting** / We **hate to wait**.\n\n**Rule of thumb**: in British English, *-ing* sounds slightly more natural for general statements; *to-infinitive* leans formal or specific. Don't overthink it.",
         "root_ids": [
@@ -35,6 +39,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "verbs-that-take-either-with-meaning-change-b2-trap",
         "title": "Verbs that take EITHER — with meaning change (B2 trap)",
         "content": "**The big four** — same verb, two patterns, **different meanings**. These show up in every B2 exam (FCE, CAE) as open cloze or sentence transformation.\n\n**Why it matters**: Get the pattern wrong and you say the opposite of what you mean. \"I stopped smoking\" (= I quit) vs \"I stopped to smoke\" (= I paused in order to have a cigarette) — two completely different lives.\n\n**Examples in pairs**:\n- I **remembered to lock** the door. (= I didn't forget — looking forward)\n- I **remember locking** the door. (= I recall doing it — looking back)\n- She **forgot to call** him. (= she didn't do it)\n- She'll never **forget meeting** him. (= she remembers the experience)\n\n**Plus regret + to / -ing** (B2/C1): *I **regret to inform** you...* (formal, sorry to say) vs *I **regret telling** her* (sorry about the past action).",
         "diagram": {
@@ -74,6 +79,7 @@
         "cefr_level": "B2"
       },
       {
+        "id": "bare-infinitive-special-cases",
         "title": "Bare infinitive — special cases",
         "content": "**Bare infinitive** = infinitive **without *to***. Used in three clear situations.\n\n**Why it matters**: Czech learners often over-use *to* here (*~~I can to swim~~*, *~~She made him to wait~~*). Removing *to* in these cases is one of the highest-leverage fixes for sounding natural.\n\n**1. After modal verbs** (can, could, will, would, shall, should, may, might, must):\n- I **can swim**. / She **must leave** now. / We **should go**.\n\n**2. After *let, make, have* + object** (causative):\n- She **made me wait** an hour. (not ~~made me to wait~~)\n- **Let him go**. / They **had us sign** a form.\n\n**3. After *see, hear, feel, watch* + object** — when the action is **complete**:\n- I **saw her arrive**. (whole action, start to finish)\n- We **heard him shout**.\n- Use **-ing** instead when the action is **ongoing**: *I saw her **arriving*** (in progress, mid-action).\n\n**Also bare**: after *had better* (*you'd better go*) and *would rather* (*I'd rather stay*). **Help** takes either: *Help me **carry*** / *Help me **to carry***.",
         "root_ids": [
@@ -83,6 +89,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "common-czech-speaker-errors-roadmap",
         "title": "Common Czech-speaker errors + roadmap",
         "content": "**High-frequency mistakes** (L1 interference + over-generalisation):\n\n- I want **learning** English → I want **to learn** English. (*want* + to-inf)\n- She enjoys **to read** → She enjoys **reading**. (*enjoy* + -ing)\n- I look forward **to see** you → I look forward **to seeing** you. (*to* is a preposition here)\n- She made him **to laugh** → She **made him laugh**. (*make* + bare infinitive)\n- I can **to swim** → I can **swim**. (modals + bare infinitive)\n- He suggested **to go** early → He suggested **going** early. (*suggest* + -ing)\n\n**Why it matters**: These appear constantly in speaking, writing, and FCE/CAE open cloze + sentence transformation. Each fix is small but immediately visible.\n\n**Direct practice in this curriculum**:\n- Gap fill (verb patterns in context)\n- Correct the sentence (error correction)\n- MC (key patterns + bare infinitive cases)\n\n**Next steps**: For complete verb lists by pattern, see **Reference → Infinitive and -ing form**. Related: [[topic:phrasal_verbs|Phrasal Verbs]] (verb + particle — another verb-complementation pattern).",
         "root_ids": [

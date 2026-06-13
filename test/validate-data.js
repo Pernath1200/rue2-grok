@@ -274,6 +274,57 @@ if (!canon || !canon.families) {
   }
 }
 
+// ── 9. intro_ref integrity (per-question "Review the lesson" links) ──────────
+// Every question `intro_ref` must resolve to a section `id` in the same
+// curriculum file, and section ids must be present and unique — otherwise the
+// in-quiz lesson link would dangle.
+
+console.log('\n9. intro_ref → intro section id integrity');
+
+{
+  function introSectionsOf(curriculum) {
+    const intro = curriculum && curriculum.intro;
+    if (Array.isArray(intro)) return intro;
+    if (intro && Array.isArray(intro.sections)) return intro.sections;
+    return [];
+  }
+  function questionsOf(curriculum) {
+    const out = [];
+    if (curriculum && curriculum.check && Array.isArray(curriculum.check.questions)) out.push(...curriculum.check.questions);
+    const practice = curriculum && curriculum.practice;
+    if (practice && typeof practice === 'object') {
+      for (const section of Object.values(practice)) {
+        if (section && Array.isArray(section.questions)) out.push(...section.questions);
+      }
+    }
+    return out;
+  }
+
+  const curriculumFiles = jsonFiles.filter(f => f.startsWith('curriculum') && parsed[f]);
+  for (const file of curriculumFiles) {
+    const sections = introSectionsOf(parsed[file]);
+    const ids = new Set();
+    let idsOk = true;
+    for (const s of sections) {
+      if (!s || !s.id) { fail(file + ': intro section "' + ((s && s.title) || '(untitled)') + '" is missing an id'); idsOk = false; continue; }
+      if (ids.has(s.id)) { fail(file + ': duplicate intro section id "' + s.id + '"'); idsOk = false; }
+      ids.add(s.id);
+    }
+    if (idsOk && sections.length) pass(file + ': ' + sections.length + ' intro section id(s) present and unique');
+
+    let refCount = 0;
+    for (const q of questionsOf(parsed[file])) {
+      if (q && q.intro_ref != null) {
+        refCount++;
+        if (!ids.has(q.intro_ref)) {
+          fail(file + ': intro_ref "' + q.intro_ref + '" does not match any intro section id');
+        }
+      }
+    }
+    if (refCount) pass(file + ': ' + refCount + ' intro_ref link(s) resolve to a section');
+  }
+}
+
 // ── Summary ────────────────────────────────────────────────────────────────
 
 console.log('\n────────────────────────────────');

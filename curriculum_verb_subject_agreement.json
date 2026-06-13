@@ -3,6 +3,7 @@
     "title": "Verb–subject agreement",
     "sections": [
       {
+        "id": "what-is-verb-subject-agreement",
         "title": "What is verb–subject agreement?",
         "content": "The **verb** must match the **subject** in number:\n**Singular subject** → singular verb: *The cat is here. He works every day.*\n**Plural subject** → plural verb: *The cats are here. They work every day.*\nWrong: *The cat are here.* *They works.* Right: *The cat is; They work.*",
         "root_ids": [
@@ -11,6 +12,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "third-person-singular-the-s",
         "title": "Third person singular: the -s",
         "content": "In the **present simple**, when the subject is **third person singular** (he, she, it, or one person/thing), add **-s** or **-es** to the verb:\n*I/you/we/they have → he/she/it has. I/you/we/they go → he/she/it goes. I/you/we/they do → he/she/it does. I/you/we/they are → he/she/it is.*\nWrong: *He have been. She don't know. It go wrong.* Right: *He has been. She doesn't know. It goes wrong.*",
         "root_ids": [
@@ -19,6 +21,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "don-t-be-fooled-by-words-in-between",
         "title": "Don't be fooled by words in between",
         "content": "The verb agrees with the **subject**, not with a noun that comes between them:\n*The list of items is on the table.* (subject = list, singular)\n*One of the students was late.* (subject = one)\n*The people in the room are waiting.* (subject = people, plural)\nWrong: *The list of items are on the table.* Right: *The list is.*",
         "root_ids": [
@@ -27,6 +30,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "compound-subjects",
         "title": "Compound subjects",
         "content": "**A and B** (joined by *and*) → usually **plural**: *Tom and Anna are friends.*\n**A or B / Neither A nor B** → verb agrees with the **nearest** subject: *Neither the teacher nor the students were there.* (nearest = students, plural)\n**Each / Every** → singular: *Each of us has a copy. Every student takes the test.*",
         "root_ids": [
@@ -35,6 +39,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "agreement-rules",
         "title": "Agreement rules",
         "content": "",
         "diagram": {
@@ -79,6 +84,7 @@
         "cefr_level": "B1"
       },
       {
+        "id": "reference",
         "title": "Reference",
         "content": "For more on third person forms, see the Auxiliary Verbs topic under Choose Grammar Topic.",
         "root_ids": [

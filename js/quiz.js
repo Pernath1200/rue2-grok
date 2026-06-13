@@ -345,6 +345,22 @@ export function showQuestion() {
 }
 
 
+// "Review the lesson" link from a question's explanation back to the intro card
+// that teaches it. Only renders when a curriculum is loaded (the guided course /
+// practice flow) and the question's `intro_ref` resolves to a real section, so
+// it stays silent in cross-topic review and topic-bank practice.
+function buildLessonLinkHtml(q) {
+  const ref = q && q.intro_ref;
+  if (!ref) return '';
+  const intro = state.courseCurriculum && state.courseCurriculum.intro;
+  const sections = Array.isArray(intro) ? intro : (intro && Array.isArray(intro.sections) ? intro.sections : []);
+  const section = sections.find(s => s && s.id === ref);
+  if (!section) return '';
+  const escId = String(section.id).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+  const label = escapeHtml(section.title || 'the lesson');
+  return '<p class="lesson-ref-line"><a href="#" class="intro-content-link intro-ref-link" data-section-id="' + escId + '">Review the lesson: ' + label + '</a></p>';
+}
+
 export function submitAnswer() {
   const q = state.currentQuestions[state.currentIndex];
   let correct = false;
@@ -379,15 +395,17 @@ export function submitAnswer() {
       explanationHtml = '<span class="topic-label">' + escapedTopicLabel + ':</span> ' + explanationHtml;
     }
   }
+  const lessonLinkHtml = buildLessonLinkHtml(q);
   if (correct) {
     document.getElementById('feedbackText').innerHTML = '<span class="result-ok">Correct.</span>';
-    document.getElementById('explanation').innerHTML = explanationHtml ? '<span class="explanation-label">Explanation</span> ' + explanationHtml : '';
+    document.getElementById('explanation').innerHTML =
+      (explanationHtml ? '<span class="explanation-label">Explanation</span> ' + explanationHtml : '') + lessonLinkHtml;
   } else {
     document.getElementById('feedbackText').innerHTML =
       '<span class="result-fail">Incorrect.</span>' +
       (correctAnswerText ? '<p class="correct-answer-line"><strong>Correct answer:</strong> ' + escapeAndBold(correctAnswerText) + '</p>' : '') +
       (explanationHtml ? '<p class="explanation-label">Why?</p>' : '');
-    document.getElementById('explanation').innerHTML = explanationHtml || '';
+    document.getElementById('explanation').innerHTML = (explanationHtml || '') + lessonLinkHtml;
   }
   document.getElementById('submitBtn').classList.add('hidden');
   document.getElementById('feedbackBlock').classList.remove('hidden');

@@ -3,6 +3,7 @@
     "title": "Prepositions",
     "sections": [
       {
+        "id": "what-prepositions-do-core-logic",
         "title": "What prepositions do (core logic)",
         "content": "Prepositions link nouns to the rest of the sentence. They express **relationships** in time, place, movement, manner, or cause.\n\n**Why it matters (roots-first)**: These tiny words are part of the Prepositions & Particles root (#6 in the Tree Model). They are rule-face logic (spatial/temporal relations) + lexical-face chunks. Wrong preposition = wrong meaning or unnatural English. English prepositions rarely translate word-for-word from Czech or other L1s — learn the distinctions, not lists.\n\n**Key principle**: Start with the big systematic contrasts (at/on/in for time & place, movement pairs). Then add fixed uses.",
         "root_ids": [
@@ -11,6 +12,7 @@
         "cefr_level": "A1"
       },
       {
+        "id": "time-at-on-in",
         "title": "Time: at / on / in",
         "content": "**The big three for time** — one of the highest-impact distinctions in English.\n\n**Why it matters**: Scheduling, stories, and exams all turn on this. \"Meet at 5\" vs \"on Monday\" vs \"in July\" tells the listener exactly when — or confuses them completely.\n\n**Contrast examples**:\n- I wake up **at** 7 o'clock. (exact clock time / night / weekend)\n- The lesson is **on** Monday 15 March. (specific day or date)\n- She was born **in** 2020 / **in** the morning / **in** summer. (longer periods, months, years, parts of day)\n\n**Rule of thumb**: at = point in time; on = day surface; in = container/period.",
         "diagram": {
@@ -45,6 +47,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "place-at-on-in",
         "title": "Place: at / on / in",
         "content": "**The big three for place** — the same three prepositions, completely different logic from time.\n\n**Why it matters**: Location errors are among the most common and noticeable. \"The keys are in the car\" (inside) is not the same as \"on the car\" (surface).\n\n**Contrast examples**:\n- The book is **in** the box / **in** London / **in** the room. (enclosed space or area)\n- The picture is **on** the wall / **on** the table. (surface or line)\n- Meet me **at** the door / **at** the bus stop / **at** home. (specific point or location)\n\n**Cities & countries**: usually **in**. Specific points/addresses: often **at**.",
         "diagram": {
@@ -79,6 +82,7 @@
         "cefr_level": "A1"
       },
       {
+        "id": "movement-and-direction",
         "title": "Movement and direction",
         "content": "Movement prepositions describe **change of position** (vs static place).\n\n**Core families & contrasts**:\n- **to / into** = direction toward or inside a goal (go to school, get into the car)\n- **from / out of** = origin or leaving (from London, get out of the car)\n- **through** = crossing an enclosed space side-to-side (through the tunnel / park)\n- **across** = crossing a surface side-to-side (across the road / bridge)\n- **along** = following the length of something (along the river)\n\n**Why it matters**: \"I walked **to** the park\" (I arrived) vs \"I walked **in** the park\" (I was already inside). Direction vs location is fundamental.\n\n**Practice contrast**: across the bridge (surface) vs through the forest (inside area).",
         "root_ids": [
@@ -87,6 +91,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "duration-deadlines-periods",
         "title": "Duration, deadlines & periods",
         "content": "Time expressions that answer \"How long?\" or \"By when?\"\n\n**Key contrasts**:\n- **for** + duration (how long something lasts): for two hours, for a week\n- **since** + starting point (still continuing): since 2020, since Monday\n- **by** = no later than (deadline): by Friday, by 5 pm\n- **until** = continues up to that point: until midnight, wait until tomorrow\n- **during** = at some point within a known period: during the meeting, during the film\n\n**Why it matters**: \"I've studied English **for** six months\" (length) tells a different story from \"**since** January\" (when it began). These are high-frequency in real life and gap-fills.\n\n**Bonus pair**: **before** / **after** (earlier/later than a point).",
         "root_ids": [
@@ -95,6 +100,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "common-errors-traps",
         "title": "Common errors & traps",
         "content": "**High-frequency mistakes** (often L1 interference):\n\n- interested **on** music → **interested in**\n- It depends **from** you → **depends on**\n- She arrived **to** Prague → **arrived in** Prague (cities) / **at** the station (points)\n- I go **to** home every day → **I go home** (no preposition with home, school, work in this sense)\n- good **in** maths → **good at** maths\n\n**Why it matters**: These appear constantly in speaking, writing, and every exam gap-fill / open cloze. Fixing them gives immediate visible progress.\n\nMany more are fixed \"dependent\" combinations — see the separate Dependent Prepositions topic.",
         "root_ids": [
@@ -104,6 +110,7 @@
         "cefr_level": "A2"
       },
       {
+        "id": "other-high-frequency-uses-roadmap",
         "title": "Other high-frequency uses + roadmap",
         "content": "**Useful everyday prepositions** (beyond the big groups):\n\n- **by** = means of transport or author (by train, written by...)\n- **with / without** = together or using / lacking (with a friend, cut with a knife, without help)\n- **of** = belonging, material, or part (the capital of France, made of wood, cup of tea)\n- **as** = role or function (work as a teacher, use as a tool)\n- **like** = similarity (looks like, sounds like)\n\n**Why it matters**: These are in almost every paragraph you read or write.\n\n**Direct practice in this curriculum** (start here after the cards):\n- Guided MC (core at/on/in + time/place)\n- Gap fill – Simple (time & place basics)\n- Gap fill – Advanced & Tricky (movement, deadlines, idioms)\n- Gap fill – Top 40 (all common prepositions in context)\n\n**Next steps**: [[topic:prepositions_dependent|Dependent Prepositions]] (B2 fixed verb/noun/adjective + prep chunks — critical for exams). Full reference list: [[preplist|Prepositions list]].",
         "root_ids": [
