@@ -173,26 +173,58 @@ export function getCourseIntroSections() {
   return Array.isArray(raw) ? raw : [];
 }
 
-/** Find a loaded intro section by its stable `id` (the `intro_ref` target). */
-export function getIntroSectionById(id) {
-  if (!id) return null;
-  return getCourseIntroSections().find(s => s && s.id === id) || null;
+// Curricula cached by topic id so the lesson modal can resolve any topic's intro
+// sections on demand — the link fires from cross-topic review and quick practice
+// too, where that topic's lesson isn't the one currently loaded.
+const _curriculumByTopic = {};
+
+function introSectionsOf(curriculum) {
+  const intro = curriculum && curriculum.intro;
+  if (Array.isArray(intro)) return intro;
+  if (intro && Array.isArray(intro.sections)) return intro.sections;
+  return [];
 }
 
-// Pops the relevant intro card over the quiz (a question's `intro_ref` link →
-// "Review the lesson"). Renders the same content/diagrams as the intro screen,
-// but in an overlay so the quiz state underneath is untouched — closing returns
-// the learner to exactly where they were.
-export function openIntroRefModal(sectionId) {
-  const section = getIntroSectionById(sectionId);
-  if (!section) return;
+function sectionHtml(section) {
+  const introHtml = renderIntroContentHtml(section.content || '');
+  const diagramHtml = [].concat(section.diagrams || section.diagram || []).map(renderDiagram).join('');
+  return '<div class="intro-section">' + introHtml + '</div>' + diagramHtml;
+}
+
+async function loadCurriculumForTopic(topicId) {
+  if (state.courseCurriculum && state.currentTopic && state.currentTopic.id === topicId) return state.courseCurriculum;
+  if (_curriculumByTopic[topicId]) return _curriculumByTopic[topicId];
+  const topic = (state.topics || []).find(t => t && t.id === topicId);
+  if (!topic || !topic.curriculum) return null;
+  try {
+    const data = await fetchJSON(topic.curriculum);
+    _curriculumByTopic[topicId] = data;
+    return data;
+  } catch (e) {
+    return null;
+  }
+}
+
+// Pops a topic's lesson over the quiz without disturbing it (close → back exactly
+// where you were). Jumps to `sectionId` when given (a question's intro_ref);
+// otherwise shows the whole lesson. Loads the topic's curriculum on demand, so it
+// works from any flow regardless of what's currently loaded.
+export async function openLessonModal(topicId, sectionId) {
+  if (!topicId) return;
   const titleEl = document.getElementById('introRefTitle');
   const bodyEl = document.getElementById('introRefBody');
-  if (titleEl) titleEl.textContent = section.title || 'Lesson';
-  if (bodyEl) {
-    const introHtml = renderIntroContentHtml(section.content || '');
-    const diagramHtml = [].concat(section.diagrams || section.diagram || []).map(renderDiagram).join('');
-    bodyEl.innerHTML = '<div class="intro-section">' + introHtml + '</div>' + diagramHtml;
+  const curriculum = await loadCurriculumForTopic(topicId);
+  const sections = introSectionsOf(curriculum);
+  if (!sections.length) return;
+  const section = sectionId ? sections.find(s => s && s.id === sectionId) : null;
+  if (section) {
+    if (titleEl) titleEl.textContent = section.title || 'Lesson';
+    if (bodyEl) bodyEl.innerHTML = sectionHtml(section);
+  } else {
+    if (titleEl) titleEl.textContent = (curriculum.intro && curriculum.intro.title) || 'Lesson';
+    if (bodyEl) bodyEl.innerHTML = sections
+      .map(s => '<h4 class="lesson-modal-section-title">' + escapeAndBold(s.title || '') + '</h4>' + sectionHtml(s))
+      .join('');
   }
   openOverlay('introRefOverlay');
 }

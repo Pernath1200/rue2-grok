@@ -345,20 +345,21 @@ export function showQuestion() {
 }
 
 
-// "Review the lesson" link from a question's explanation back to the intro card
-// that teaches it. Only renders when a curriculum is loaded (the guided course /
-// practice flow) and the question's `intro_ref` resolves to a real section, so
-// it stays silent in cross-topic review and topic-bank practice.
+// "Review the lesson" link shown under every answer's explanation. It resolves
+// the question's topic (its own tag, else the current topic) and links to that
+// topic's lesson — jumping to a specific section when the question carries an
+// `intro_ref`, otherwise opening the whole lesson. The target curriculum is
+// loaded on demand when clicked, so this works in every flow (review, practice,
+// course) without the lesson having been opened first.
 function buildLessonLinkHtml(q) {
-  const ref = q && q.intro_ref;
-  if (!ref) return '';
-  const intro = state.courseCurriculum && state.courseCurriculum.intro;
-  const sections = Array.isArray(intro) ? intro : (intro && Array.isArray(intro.sections) ? intro.sections : []);
-  const section = sections.find(s => s && s.id === ref);
-  if (!section) return '';
-  const escId = String(section.id).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
-  const label = escapeHtml(section.title || 'the lesson');
-  return '<p class="lesson-ref-line"><a href="#" class="intro-content-link intro-ref-link" data-section-id="' + escId + '">Review the lesson: ' + label + '</a></p>';
+  const topicId = (q && q.topic) || (state.currentTopic && state.currentTopic.id) || '';
+  if (!topicId) return '';
+  const topic = (state.topics || []).find(t => t && t.id === topicId);
+  if (!topic || !topic.curriculum) return '';
+  const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+  const ref = q && q.intro_ref ? String(q.intro_ref) : '';
+  const refAttr = ref ? ' data-section-id="' + esc(ref) + '"' : '';
+  return '<p class="lesson-ref-line"><a href="#" class="intro-content-link intro-ref-link" data-topic-id="' + esc(topicId) + '"' + refAttr + '>Review the lesson</a></p>';
 }
 
 export function submitAnswer() {
